@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q040",
+      "randomization_seed": "20260706:Q040:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q040",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q040",
+      "error": null,
+      "id": "batch_req_6a4d52ba06588190a9bd2c3c86ddf336",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452177,
+          "created_at": 1783452165,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_003ac56fef64aa74006a4d52050314819fafd7e58068a2db1b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q040"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_003ac56fef64aa74006a4d5206d7e8819faeb3466a786d003e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether rs4679956 is in a regulatory element and whether one is identified.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the supplied graph and abstracts do not annotate rs4679956 as overlapping a regulatory element.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers both parts of the question and clearly states that no specific regulatory element is identified.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making an unsupported claim.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question using the provided data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly notes that rs4679956 is not mentioned in the supplied evidence, so regulatory-element status cannot be determined.\"},\"completeness\":{\"score\":4,\"rationale\":\"Gives the key conclusion, though it does not explicitly restate that no regulatory element name is available.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids unsupported inference.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Unsupportedly claims rs4679956 overlaps a predicted enhancer/regulatory region, which is not present in the provided evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides an answer, but the named element is vague and unsupported.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents a conclusion despite insufficient evidence.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Partially addresses the question but shifts to generic database-checking advice rather than evaluating the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Does not make a clear biomedical false claim, but fails to use the provided evidence to state that no annotation is supplied.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not clearly answer whether the integrated data contain a regulatory-element annotation for rs4679956.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids claiming a regulatory element without supporting evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_003ac56fef64aa74006a4d520cb334819fa9555bdcb588358d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2952,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1029,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3981
+          },
+          "user": null
+        },
+        "request_id": "52714ea7-9357-4d86-a499-a00837ab2112",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Unsupportedly claims rs4679956 overlaps a predicted enhancer/regulatory region, which is not present in the provided evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Provides an answer, but the named element is vague and unsupported.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Invents a conclusion despite insufficient evidence.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q040",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q040.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.138115+00:00"
+}

@@ -1,0 +1,186 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.9023,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated evidence does not directly link FOXA2 to any treatments used or investigated for hair loss. The provided graph and literature context focus on FOXA2 as a gene involved in interactions with other proteins, but there is no mention of its role in hair loss or any associated therapeutic interventions.\n\nThe literature abstracts discuss topics such as cancer prognosis, epidermal differentiation, and endometriosis, but none of them reference FOXA2 in the context of hair loss or related treatments. Therefore, based on the available information, there is no evidence to suggest that FOXA2 is associated with treatments for hair loss.",
+  "question_id": "Q093",
+  "question_text": "Does the integrated evidence link FOXA2 to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 124,
+    "prompt_token_count": 1659,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not directly link FOXA2 to any treatments used or investigated for hair loss. The provided graph and literature context focus on FOXA2 as a gene involved in interactions with other proteins, but there is no mention of its role in hair loss or any associated therapeutic interventions.\n\nThe literature abstracts discuss topics such as cancer prognosis, epidermal differentiation, and endometriosis, but none of them reference FOXA2 in the context of hair loss or related treatments. Therefore, based on the available information, there is no evidence to suggest that FOXA2 is associated with treatments for hair loss."
+      }
+    ],
+    "created": 1783432180,
+    "id": "cmpl-4cddd76c-45e3-4082-b6e3-ad2f5f47bf0e",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 124,
+      "prompt_tokens": 1638,
+      "total_tokens": 1762
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      30.609027862548828,
+      31.596527099609375,
+      32.09238052368164,
+      32.212825775146484,
+      32.25962448120117,
+      33.30801773071289,
+      33.665733337402344,
+      34.21931076049805,
+      34.2289924621582,
+      35.09671401977539,
+      35.41636657714844,
+      35.43284225463867,
+      35.76512145996094,
+      35.794517517089844,
+      35.79571533203125
+    ],
+    "candidate_pmids": [
+      "34984527",
+      "39234173",
+      "41296172",
+      "41417529",
+      "33741282",
+      "38123340",
+      "29220522",
+      "38255677",
+      "37690223",
+      "42255426",
+      "35719909",
+      "33133644",
+      "40510016",
+      "42190016",
+      "31580512"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence link FOXA2 to any treatments used or investigated for hair loss? If so, which ones? Entity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)",
+    "final_context": "Graph Context:\nEntity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)\n\nVector Context:\n--- Abstract 1 (PMID: 35719909, relevance: -7.4368) ---\nBACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.\n\n--- Abstract 2 (PMID: 33133644, relevance: -8.6615) ---\nEpidermal differentiation is a complex process that requires the regulated and sequential expression of various genes. Most fused-type S100 proteins are expressed in the granular layer and it is hypothesized that these proteins may be associated with cornification and barrier formation. We previously identified a member of the fused-type S100 proteins, Trichohyalin-like 1 (TCHHL1) protein. TCHHL1 is distributed in the basal layer of the normal epidermis. Furthermore, the expression is markedly increased in cancerous/non-cancerous skin samples with the hyperproliferation of keratinocytes. We herein examined the role of TCHHL1 in normal human keratinocytes (NHKs) and squamous cell carcinoma (SCC). The knockdown of TCHHL1 by transfection with TCHHL1 siRNA significantly inhibited proliferation and induced the early apoptosis of NHKs. In TCHHL1-knockdown NHKs, the level of extracellular signal-regulated kinase 1/2 (ERK1/2) phosphorylation was markedly decreased. In addition, the slight inhibition of v-akt murine thymoma viral oncogene homolog (AKT) phosphorylation and upregulation of forkhead box-containing protein O1(FOXO1), B-cell lymphoma2 (BCL2) and Bcl2-like protein 11 (BCL2L11) was observed. Skin-equivalent models built by TCHHL1-knockdown NHKs showed a markedly hypoplastic epidermis. These findings highlight that TCHHL1 plays an important role in homeostasis of the normal epidermis. TCHHL1 was expressed in the growing cells of cutaneous SCC; therefore, we next examined an association with the cell growth in HSC-1 cells (a human SCC line). In HSC-1 cells, the knockdown of TCHHL1 also suppressed cell proliferation and induced apoptosis. These cells showed an inhibition of phosphorylation of ERK1/2, AKT and signal transducers and activator of transcription 3, and the significant upregulation of FOXO1, BCL2, and BCL2L11. Accordingly, TCHHL1 is associated with survival of cutaneous SCC. In addition, we hypothesize that TCHHL1 may be a novel therapeutic target in cutaneous SCC.\n\n--- Abstract 3 (PMID: 42255426, relevance: -8.9506) ---\nBACKGROUND: Endometriosis is a complex gynecological disorder lacking reliable biomarkers. This study aimed to identify core diagnostic genes through integrated computational approaches. Multiple endometriosis transcriptomic datasets were analyzed. METHODS: Differential expression analysis and Weighted Gene Co-expression Network Analysis (WGCNA) screened disease-associated genes. Functional enrichment, Protein-Protein Interaction (PPI) network construction, and an ensemble machine learning framework (113 algorithm combinations) were employed to refine hub genes. Diagnostic performance was validated via ROC analysis. Immune infiltration was characterized using CIBERSORT. RESULTS: Four genes (COL6A3, BGN, LAMA4, THBS2) were identified as robust candidate tissue diagnostic markers, showing consistent upregulation and high discriminatory power (AUC > 0.80). They are implicated in extracellular matrix remodeling. Immune dysregulation was observed, featuring elevated M1 macrophages and plasma cells, alongside reduced resting NK cells, with hub genes correlating with specific immune subsets. To functionally validate these findings, a mice endometriosis model was established and exhibited histopathological features consistent with the disease, including ectopic lesion formation and altered glandular architecture. qPCR and Western blot analyses confirmed significant upregulation of COL6A3, BGN, LAMA4, and THBS2 at both transcriptional and protein levels in ectopic endometrium, further supporting their role in disease pathogenesis. CONCLUSION: COL6A3, BGN, LAMA4, and THBS2 represent promising candidate tissue diagnostic markers for endometriosis, linked to extracellular matrix and immune microenvironment alterations, providing novel insights for future research and clinical translation.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)",
+    "graph_context_length": 238,
+    "graph_context_present": true,
+    "rerank_seconds": 0.332,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "foxa2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "treatments"
+      },
+      {
+        "label": "ENTITY",
+        "text": "investigated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair loss"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q093.json",
+    "retrieval_total_seconds": 0.383,
+    "score_max": -7.436777114868164,
+    "score_mean": -8.349605878194174,
+    "scores": [
+      -7.436777114868164,
+      -8.661478042602539,
+      -8.950562477111816
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.",
+      "Epidermal differentiation is a complex process that requires the regulated and sequential expression of various genes. Most fused-type S100 proteins are expressed in the granular layer and it is hypothesized that these proteins may be associated with cornification and barrier formation. We previously identified a member of the fused-type S100 proteins, Trichohyalin-like 1 (TCHHL1) protein. TCHHL1 is distributed in the basal layer of the normal epidermis. Furthermore, the expression is markedly increased in cancerous/non-cancerous skin samples with the hyperproliferation of keratinocytes. We herein examined the role of TCHHL1 in normal human keratinocytes (NHKs) and squamous cell carcinoma (SCC). The knockdown of TCHHL1 by transfection with TCHHL1 siRNA significantly inhibited proliferation and induced the early apoptosis of NHKs. In TCHHL1-knockdown NHKs, the level of extracellular signal-regulated kinase 1/2 (ERK1/2) phosphorylation was markedly decreased. In addition, the slight inhibition of v-akt murine thymoma viral oncogene homolog (AKT) phosphorylation and upregulation of forkhead box-containing protein O1(FOXO1), B-cell lymphoma2 (BCL2) and Bcl2-like protein 11 (BCL2L11) was observed. Skin-equivalent models built by TCHHL1-knockdown NHKs showed a markedly hypoplastic epidermis. These findings highlight that TCHHL1 plays an important role in homeostasis of the normal epidermis. TCHHL1 was expressed in the growing cells of cutaneous SCC; therefore, we next examined an association with the cell growth in HSC-1 cells (a human SCC line). In HSC-1 cells, the knockdown of TCHHL1 also suppressed cell proliferation and induced apoptosis. These cells showed an inhibition of phosphorylation of ERK1/2, AKT and signal transducers and activator of transcription 3, and the significant upregulation of FOXO1, BCL2, and BCL2L11. Accordingly, TCHHL1 is associated with survival of cutaneous SCC. In addition, we hypothesize that TCHHL1 may be a novel therapeutic target in cutaneous SCC.",
+      "BACKGROUND: Endometriosis is a complex gynecological disorder lacking reliable biomarkers. This study aimed to identify core diagnostic genes through integrated computational approaches. Multiple endometriosis transcriptomic datasets were analyzed. METHODS: Differential expression analysis and Weighted Gene Co-expression Network Analysis (WGCNA) screened disease-associated genes. Functional enrichment, Protein-Protein Interaction (PPI) network construction, and an ensemble machine learning framework (113 algorithm combinations) were employed to refine hub genes. Diagnostic performance was validated via ROC analysis. Immune infiltration was characterized using CIBERSORT. RESULTS: Four genes (COL6A3, BGN, LAMA4, THBS2) were identified as robust candidate tissue diagnostic markers, showing consistent upregulation and high discriminatory power (AUC > 0.80). They are implicated in extracellular matrix remodeling. Immune dysregulation was observed, featuring elevated M1 macrophages and plasma cells, alongside reduced resting NK cells, with hub genes correlating with specific immune subsets. To functionally validate these findings, a mice endometriosis model was established and exhibited histopathological features consistent with the disease, including ectopic lesion formation and altered glandular architecture. qPCR and Western blot analyses confirmed significant upregulation of COL6A3, BGN, LAMA4, and THBS2 at both transcriptional and protein levels in ectopic endometrium, further supporting their role in disease pathogenesis. CONCLUSION: COL6A3, BGN, LAMA4, and THBS2 represent promising candidate tissue diagnostic markers for endometriosis, linked to extracellular matrix and immune microenvironment alterations, providing novel insights for future research and clinical translation."
+    ],
+    "selected_pmids": [
+      "35719909",
+      "33133644",
+      "42255426"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.038
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:49:40.617155+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 35719909, relevance: -7.4368) ---\nBACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.\n\n--- Abstract 2 (PMID: 33133644, relevance: -8.6615) ---\nEpidermal differentiation is a complex process that requires the regulated and sequential expression of various genes. Most fused-type S100 proteins are expressed in the granular layer and it is hypothesized that these proteins may be associated with cornification and barrier formation. We previously identified a member of the fused-type S100 proteins, Trichohyalin-like 1 (TCHHL1) protein. TCHHL1 is distributed in the basal layer of the normal epidermis. Furthermore, the expression is markedly increased in cancerous/non-cancerous skin samples with the hyperproliferation of keratinocytes. We herein examined the role of TCHHL1 in normal human keratinocytes (NHKs) and squamous cell carcinoma (SCC). The knockdown of TCHHL1 by transfection with TCHHL1 siRNA significantly inhibited proliferation and induced the early apoptosis of NHKs. In TCHHL1-knockdown NHKs, the level of extracellular signal-regulated kinase 1/2 (ERK1/2) phosphorylation was markedly decreased. In addition, the slight inhibition of v-akt murine thymoma viral oncogene homolog (AKT) phosphorylation and upregulation of forkhead box-containing protein O1(FOXO1), B-cell lymphoma2 (BCL2) and Bcl2-like protein 11 (BCL2L11) was observed. Skin-equivalent models built by TCHHL1-knockdown NHKs showed a markedly hypoplastic epidermis. These findings highlight that TCHHL1 plays an important role in homeostasis of the normal epidermis. TCHHL1 was expressed in the growing cells of cutaneous SCC; therefore, we next examined an association with the cell growth in HSC-1 cells (a human SCC line). In HSC-1 cells, the knockdown of TCHHL1 also suppressed cell proliferation and induced apoptosis. These cells showed an inhibition of phosphorylation of ERK1/2, AKT and signal transducers and activator of transcription 3, and the significant upregulation of FOXO1, BCL2, and BCL2L11. Accordingly, TCHHL1 is associated with survival of cutaneous SCC. In addition, we hypothesize that TCHHL1 may be a novel therapeutic target in cutaneous SCC.\n\n--- Abstract 3 (PMID: 42255426, relevance: -8.9506) ---\nBACKGROUND: Endometriosis is a complex gynecological disorder lacking reliable biomarkers. This study aimed to identify core diagnostic genes through integrated computational approaches. Multiple endometriosis transcriptomic datasets were analyzed. METHODS: Differential expression analysis and Weighted Gene Co-expression Network Analysis (WGCNA) screened disease-associated genes. Functional enrichment, Protein-Protein Interaction (PPI) network construction, and an ensemble machine learning framework (113 algorithm combinations) were employed to refine hub genes. Diagnostic performance was validated via ROC analysis. Immune infiltration was characterized using CIBERSORT. RESULTS: Four genes (COL6A3, BGN, LAMA4, THBS2) were identified as robust candidate tissue diagnostic markers, showing consistent upregulation and high discriminatory power (AUC > 0.80). They are implicated in extracellular matrix remodeling. Immune dysregulation was observed, featuring elevated M1 macrophages and plasma cells, alongside reduced resting NK cells, with hub genes correlating with specific immune subsets. To functionally validate these findings, a mice endometriosis model was established and exhibited histopathological features consistent with the disease, including ectopic lesion formation and altered glandular architecture. qPCR and Western blot analyses confirmed significant upregulation of COL6A3, BGN, LAMA4, and THBS2 at both transcriptional and protein levels in ectopic endometrium, further supporting their role in disease pathogenesis. CONCLUSION: COL6A3, BGN, LAMA4, and THBS2 represent promising candidate tissue diagnostic markers for endometriosis, linked to extracellular matrix and immune microenvironment alterations, providing novel insights for future research and clinical translation.\n\n\n\n**Question:**\nDoes the integrated evidence link FOXA2 to any treatments used or investigated for hair loss? If so, which ones?"
+}

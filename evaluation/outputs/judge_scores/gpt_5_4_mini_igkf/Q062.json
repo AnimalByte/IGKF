@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q062",
+      "randomization_seed": "20260706:Q062:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q062",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q062",
+      "error": null,
+      "id": "batch_req_6a4d52badf20819088729090a32e3223",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452244,
+          "created_at": 1783452232,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0499f928163b5e58006a4d524828848192948927767b37144f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q062"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0499f928163b5e58006a4d5248ae908192bc479a6e48704e02",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the need for study-specific variant annotations but does not directly use the supplied context to state that no high-impact SRD5A2 variants are identified.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Does not make unsupported biomedical claims and correctly avoids identifying variants without adequate evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Partially complete; it appropriately abstains but omits the relevant caveat that the provided abstracts mention SRD5A2 variants/haplotypes without high-impact annotation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately expresses uncertainty and refrains from inventing high-impact variant calls.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly attempts to answer which SRD5A2 variants are high impact.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Incorrectly treats c.265C>G and c.680G>A as high-impact annotated variants; the supplied evidence describes a haplotype and functional effects but does not provide high-impact variant annotation.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Includes relevant SRD5A2 variants from the abstract but fails to distinguish functional significance from formal high-impact annotation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Despite acknowledging that 'high impact' is not explicitly used, it still concludes the variants are high-impact, which is unsupported.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question by stating that no SRD5A2 variants can be confidently reported as high-impact from the provided context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the evidence: SRD5A2 variants/haplotypes are mentioned, but no high-impact annotation is provided.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Complete and well scoped; notes the absence of variant-level high-impact annotation and distinguishes this from mentioned haplotypes and variant counts.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the conclusion and avoids unsupported claims.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Generally addresses the question by abstaining, but does not engage with the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The core claim that high-impact SRD5A2 variants cannot be reliably identified is consistent with the evidence, though it inaccurately implies no study context was provided.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Partially complete; it abstains appropriately but does not mention that the provided context includes SRD5A2 haplotypes/variants without high-impact annotation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids inventing unsupported variant annotations.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0499f928163b5e58006a4d524e4be08192abd2b7d61f0b1ec0",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2987,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1345,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4332
+          },
+          "user": null
+        },
+        "request_id": "0d91985c-f718-4a90-97fc-999e2f5a1117",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "3b123706c07ce44cfb0629d4bace21765752942078b0f298648443b4a822b872",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q062",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q062.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q062::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q062::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b129908190bf2198fd2ff33d55",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437463,
+          "created_at": 1783437458,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00b158b40cbbae40006a4d1892e6808190a1b16b50743de3d7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q062"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00b158b40cbbae40006a4d18937ac0819084cb18f3d2eef0dc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": \"5\",\n    \"rationale\": \"The answer accurately states that the supplied graph contains no SRD5A2 variant-level high-impact annotations and that the abstracts mention SRD5A2 variants/haplotypes without labeling any as high impact.\"\n  },\n  \"context_utilization\": {\n    \"score\": \"5\",\n    \"rationale\": \"The answer appropriately uses the graph and vector context, citing the relevant haplotype and the report of 16 SRD5A2 variants while correctly noting the absence of high-impact annotation.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00b158b40cbbae40006a4d189601208190a165a4c18a148198",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2165,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 366,
+            "output_tokens_details": {
+              "reasoning_tokens": 224
+            },
+            "total_tokens": 2531
+          },
+          "user": null
+        },
+        "request_id": "1f816c18-53fc-4862-addc-91b714c417bc",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question by stating that no SRD5A2 variants can be confidently reported as high-impact from the provided context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the evidence: SRD5A2 variants/haplotypes are mentioned, but no high-impact annotation is provided.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Complete and well scoped; notes the absence of variant-level high-impact annotation and distinguishes this from mentioned haplotypes and variant counts.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that the supplied graph contains no SRD5A2 variant-level high-impact annotations and that the abstracts mention SRD5A2 variants/haplotypes without labeling any as high impact.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the graph and vector context, citing the relevant haplotype and the report of 16 SRD5A2 variants while correctly noting the absence of high-impact annotation.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the conclusion and avoids unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q062",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q062.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.290010+00:00"
+}

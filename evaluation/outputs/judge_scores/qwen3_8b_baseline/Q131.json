@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q131",
+      "randomization_seed": "20260706:Q131:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q131",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q131",
+      "error": null,
+      "id": "batch_req_6a4d54089d548190a2b17c7acaef3d38",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452592,
+          "created_at": 1783452567,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0046271166d08e48006a4d5397e2c081939f2dcbefcf343c53",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q131"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0046271166d08e48006a4d53994e94819396d899f98bbfbb53",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the link between finasteride and androgen metabolism via 5-alpha reductase/SRD5A2 and testosterone-to-DHT conversion.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mechanism is scientifically consistent with the evidence, though some claims about downstream biomarkers are broader than the provided integrated data.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main SRD5A2-androgen metabolism connection but omits the graph evidence that AR is also listed as a target and gives limited detail from the abstracts.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly appropriately framed, but includes some generalized evidence categories not explicitly present in the supplied data.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and specifically explains the integrated evidence connecting finasteride to androgen metabolism.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the graph and abstracts: finasteride targets SRD5A2, SRD5A2 converts testosterone to DHT, and this is central to androgen biosynthesis/metabolism.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes structured evidence, pathway mapping, mechanistic literature support, AR context, and related androgen-mediated conditions.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Does not overstate beyond the evidence and appropriately identifies SRD5A2 as the clearest mechanistic link.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses finasteride and androgen metabolism generally, but does not focus on the supplied integrated graph and abstract evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The main mechanism is accurate, but several claims about clinical trials, meta-analyses, and large cohort studies are not supported by the provided evidence packet.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Mentions the key DHT mechanism but omits important integrated-data specifics such as SRD5A2 as a graph target, AR as a target, and androgen biosynthesis pathway annotation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Presents unsupported external evidence sources and quantitative claims without qualification.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question using both structured and literature evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Accurately explains the SRD5A2-mediated testosterone-to-DHT link, though it slightly overattributes some details to specific abstracts and has potentially ambiguous wording about covalent inhibition.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the main graph target, pathway mechanism, DHT biology, and supporting abstract themes.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly stays within the supplied evidence, with minor overstatements about clinical implications and abstract-specific support.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0046271166d08e48006a4d53aa4bf48193bf8ce33478189f7c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3206,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2529,
+            "output_tokens_details": {
+              "reasoning_tokens": 1688
+            },
+            "total_tokens": 5735
+          },
+          "user": null
+        },
+        "request_id": "24fe0f23-634d-4eed-9d5f-10327eea6709",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses finasteride and androgen metabolism generally, but does not focus on the supplied integrated graph and abstract evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The main mechanism is accurate, but several claims about clinical trials, meta-analyses, and large cohort studies are not supported by the provided evidence packet.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Mentions the key DHT mechanism but omits important integrated-data specifics such as SRD5A2 as a graph target, AR as a target, and androgen biosynthesis pathway annotation.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Presents unsupported external evidence sources and quantitative claims without qualification.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q131",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q131.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.223610+00:00"
+}

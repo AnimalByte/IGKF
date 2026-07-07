@@ -1,0 +1,73 @@
+{
+  "benchmark_path": "data/testset.jsonl",
+  "benchmark_sha256": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "config_path": "evaluation/configs/paper_experiment.yaml",
+  "config_sha256": "70733f8a2c6285d67ba65c33956de640fa4cfcf3c3c6fdab5854f37a79958966",
+  "created_at": "2026-07-07T04:19:12.671236+00:00",
+  "cuda_gpu": "NVIDIA GeForce RTX 3080, 580.159.03, 12288 MiB",
+  "dry_run": false,
+  "git_commit": null,
+  "git_status_short": null,
+  "local_model": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "openai": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.4-2026-03-05",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "package_versions": {
+    "chromadb": "1.3.4",
+    "llama_cpp_python": "0.3.33",
+    "openai": "2.7.2",
+    "ragas": "0.4.3",
+    "scispacy": "0.5.5",
+    "spacy": "3.7.4",
+    "torch": "2.6.0",
+    "transformers": "4.57.1"
+  },
+  "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+  "python_version": "3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]",
+  "retrieval": {
+    "embedding_model": "pritamdeka/S-PubMedBert-MS-MARCO",
+    "initial_k": 15,
+    "rerank_top_n": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "retrieval_model_device": "cpu"
+  },
+  "selected_conditions": [
+    "qwen3_8b_baseline"
+  ],
+  "statistics": {
+    "multiple_comparison_correction": "holm",
+    "wilcoxon_zero_method": "wilcox"
+  },
+  "system_ram": "31Gi"
+}

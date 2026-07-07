@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q027",
+      "randomization_seed": "20260706:Q027:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q027",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q027",
+      "error": null,
+      "id": "batch_req_6a4d52b956bc8190907ad5543287cc3d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452206,
+          "created_at": 1783452193,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0bf5ca7b10dfae0a006a4d5221ea9081a0a4b762d02e770c5f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q027"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0bf5ca7b10dfae0a006a4d5222659481a0b66d12c2d3e8d9e9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses rs1160312 annotations in general, but largely not the annotations present in the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Introduces many unsupported or apparently incorrect claims, including genomic location, nearby genes, allele frequencies, ClinVar/GWAS/ENCODE annotations, and disease links not in the reference evidence; omits LINC01432 and the listed Open Targets scores.\"},\"completeness\":{\"score\":1,\"rationale\":\"Misses the key provided components: implicated gene LINC01432 and the specific Open Targets disease associations with scores.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported details as fact with little qualification.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly summarizes the available annotations for rs1160312 and distinguishes supplied graph annotations from the literature context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reports LINC01432 and the Open Targets disease associations with scores, and correctly notes that the abstracts do not directly mention rs1160312 or LINC01432.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the important study-specific/integrated elements available in the evidence without excessive unsupported detail.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies mechanistic interpretation as inferred and notes the absence of direct literature evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Responds to the general task but does not summarize the annotations available in the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Avoids substantive false biomedical claims, but incorrectly implies no usable source context is available for a summary.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not provide the implicated gene, disease associations, scores, or the absence of direct abstract evidence.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Safely avoids inventing details, though it over-abstains despite sufficient supplied evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses rs1160312 annotations and includes both gene and disease-association information.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly reports LINC01432 and the listed Open Targets disease associations with scores, but adds speculative mechanisms such as eQTL/sQTL/apaQTL effects not directly shown for rs1160312.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the key annotations, though the answer is partially padded with generalized functional interpretation and appears truncated at the end.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Some uncertainty is acknowledged, but unsupported mechanistic implications are still expanded beyond the evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0bf5ca7b10dfae0a006a4d52298b9081a0a6690ebf4ed63af6",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4023,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1145,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5168
+          },
+          "user": null
+        },
+        "request_id": "7ef5498d-aa7a-4871-81fa-5b91dccd4086",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "761d62cbf5901556816b484973f1e5a25eeb1c53a4dced112c4507858a280bb7",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q027",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q027.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q027::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q027::R1",
+      "error": null,
+      "id": "batch_req_6a4d19ac6d208190ae96dea88c761d6d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437580,
+          "created_at": 1783437572,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_075de9c107dee061006a4d19048f40819687cd3832487b6e62",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q027"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_075de9c107dee061006a4d19051ed08196b69aeefd95f49550",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":3,\"rationale\":\"The implicated gene and Open Targets disease associations/scores are correctly taken from the graph context, but many added disease descriptions and mechanistic claims about regulatory effects are unsupported or speculative from the supplied context.\"},\"context_utilization\":{\"score\":3,\"rationale\":\"The answer uses the key graph annotations, but it overextends the vector abstracts, which do not provide direct rs1160312-specific evidence, instead extrapolating from unrelated variants and studies.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_075de9c107dee061006a4d190b3d348196a5221fdbebd3ce35",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2416,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 583,
+            "output_tokens_details": {
+              "reasoning_tokens": 468
+            },
+            "total_tokens": 2999
+          },
+          "user": null
+        },
+        "request_id": "85802bd5-f2ab-49cd-b107-dc0480099af7",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses rs1160312 annotations and includes both gene and disease-association information.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly reports LINC01432 and the listed Open Targets disease associations with scores, but adds speculative mechanisms such as eQTL/sQTL/apaQTL effects not directly shown for rs1160312.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Includes the key annotations, though the answer is partially padded with generalized functional interpretation and appears truncated at the end.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The implicated gene and Open Targets disease associations/scores are correctly taken from the graph context, but many added disease descriptions and mechanistic claims about regulatory effects are unsupported or speculative from the supplied context.",
+      "score": 3.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key graph annotations, but it overextends the vector abstracts, which do not provide direct rs1160312-specific evidence, instead extrapolating from unrelated variants and studies.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Some uncertainty is acknowledged, but unsupported mechanistic implications are still expanded beyond the evidence.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q027",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q027.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.268324+00:00"
+}

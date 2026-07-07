@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q001",
+      "randomization_seed": "20260706:Q001:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q001",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q001",
+      "error": null,
+      "id": "batch_req_6a4d52b8a9488190bbd0b2e89794ee49",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452267,
+          "created_at": 1783452250,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f6d7f0a6b7042c7006a4d525a6dec819db916d412e8f6d402",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q001"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f6d7f0a6b7042c7006a4d525b149c819d9d284c8a4a6c8fd0",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses whether rs6152 has clinical significance, but frames it around an incorrect gene/context.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Contradicts the supplied evidence by placing rs6152 in SLC25A48 rather than AR and by denying reported associations present in the reference context.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the AR implication and reported androgen-related disease/phenotype associations from the evidence packet.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some cautious wording, but makes unsupported claims about databases and no associations despite contrary supplied evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses reported clinical implications for rs6152.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly identifies AR and listed disease/phenotype associations, but overstates them as variant-level causal clinical implications and speculates about functional effects from protein interactions.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main AR-related disease associations and phenotypic categories, though with some unnecessary mechanistic padding.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Does not sufficiently qualify that the evidence supports associations rather than established pathogenicity or clinical actionability.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the clinical-significance question using the supplied AR-related associations.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly consistent with the evidence packet, including AR, androgen insensitivity, prostate cancer/carcinoma, Kennedy disease, and phenotype categories; slightly overstates association data as clinical significance.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the principal reported disease associations, broader phenotypes, AR pathway context, and notes the lack of direct experimental characterization.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately notes that no specific experimental paper directly characterizing rs6152 is provided, though it still somewhat over-interprets associations.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly discusses clinical significance and practical interpretation of rs6152.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correctly links rs6152 to AR and prostate/androgen-related associations, but introduces unsupported and likely incorrect details such as V89L/p.Val89Leu and missense status, and adds associations not in the supplied evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions AR-related associations and non-actionability, but omits key supplied associations such as androgen insensitivity syndrome, partial AIS, Kennedy disease, and listed phenotype categories.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately qualifies that associations may be inconsistent and not clinically actionable, but the unsupported variant annotation weakens the response.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f6d7f0a6b7042c7006a4d5265f2a4819da298141190c7f595",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3014,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1682,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 4696
+          },
+          "user": null
+        },
+        "request_id": "c3ebd611-bfe7-42cc-b804-235cb2cbc383",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "8220197154522906dc58555aa7a9725fdec0dabefa50e2d5d7aba810f144ffa5",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q001",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q001.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q001::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q001::R1",
+      "error": null,
+      "id": "batch_req_6a4d19a975688190b347984b291197e3",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437511,
+          "created_at": 1783437502,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b930cc875c6447f006a4d18bec35c8196a1f081cf9e7d9365",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q001"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b930cc875c6447f006a4d18bf58788196b6ca8a6df48223b0",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": \"3\",\n    \"rationale\": \"The answer is partly supported by the graph context, especially the AR gene link, listed Open Targets disease associations, phenotypes, pathways, and PPI entries. However, it overstates causal/clinical significance and adds unsupported mechanistic claims about pathophysiology and modulation of AR activity.\"\n  },\n  \"context_utilization\": {\n    \"score\": \"4\",\n    \"rationale\": \"It uses much of the relevant graph evidence, particularly disease associations and AR-related context, while largely avoiding the irrelevant vector abstracts. It does not clearly note that no direct clinical classification for rs6152 is provided.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b930cc875c6447f006a4d18c521c88196864ca03f63058a12",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2118,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 609,
+            "output_tokens_details": {
+              "reasoning_tokens": 447
+            },
+            "total_tokens": 2727
+          },
+          "user": null
+        },
+        "request_id": "cb1bbd3a-d1d7-41ac-991d-34b7353d6e54",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses reported clinical implications for rs6152.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly identifies AR and listed disease/phenotype associations, but overstates them as variant-level causal clinical implications and speculates about functional effects from protein interactions.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers the main AR-related disease associations and phenotypic categories, though with some unnecessary mechanistic padding.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is partly supported by the graph context, especially the AR gene link, listed Open Targets disease associations, phenotypes, pathways, and PPI entries. However, it overstates causal/clinical significance and adds unsupported mechanistic claims about pathophysiology and modulation of AR activity.",
+      "score": 3.0
+    },
+    "context_utilization": {
+      "rationale": "It uses much of the relevant graph evidence, particularly disease associations and AR-related context, while largely avoiding the irrelevant vector abstracts. It does not clearly note that no direct clinical classification for rs6152 is provided.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not sufficiently qualify that the evidence supports associations rather than established pathogenicity or clinical actionability.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q001",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q001.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.251489+00:00"
+}

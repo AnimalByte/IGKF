@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q140",
+      "randomization_seed": "20260706:Q140:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q140",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q140",
+      "error": null,
+      "id": "batch_req_6a4d54093dfc8190b1eec50a19392849",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452590,
+          "created_at": 1783452577,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c5de540e57bb867006a4d53a1040c8195a62861909cbd839f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q140"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c5de540e57bb867006a4d53a1b0b8819595ae3593e7c6e298",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the requested distinction between direct annotations and inferred pathway links, but frames unsupported links as present.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"The supplied graph context does not show rs2180439-LHX2 or LHX2-Wnt annotations; it only lists LHX2 PPIs, and the abstracts do not mention rs2180439 or LHX2.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers the conceptual direct-versus-inferred distinction, but omits the actual supplied LHX2 PPI evidence and relies on absent annotations.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some conditional language, but still asserts unsupported graph links and literature connections.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and clearly separates direct graph evidence from indirect or speculative pathway-level context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph only shows LHX2 PPIs and that rs2180439 and an LHX2-Wnt link are not directly supported by the supplied graph or abstracts.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the relevant LHX2 interactors, notes absence of rs2180439 and LHX2-Wnt evidence, and explains that Wnt abstracts involve unrelated genes.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits conclusions and labels any broader developmental/pathway connection as speculative.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"It attempts to address rs2180439, LHX2, Wnt signaling, and direct versus inferred links, but much of the response is unsupported by the provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Invents or imports unsupported claims about rs2180439 location, dbSNP/GWAS associations, LHX2-Wnt relationships, and pathway database evidence not present in the supplied packet.\"},\"completeness\":{\"score\":2,\"rationale\":\"Discusses many possible links but fails to reflect the actual supplied graph evidence, namely LHX2 PPIs and absence of rs2180439 or LHX2-Wnt annotations.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported conclusions as established evidence rather than abstaining or qualifying them.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the graph and literature connect rs2180439, LHX2, and Wnt signaling.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly states that rs2180439 is absent and that Wnt abstracts concern LGR4/RSPO/ZNRF3 and FZD7/WNT3 rather than LHX2; minor unsupported generalizations about LHX2 developmental roles are included.\"},\"completeness\":{\"score\":4,\"rationale\":\"Captures the key absence of direct evidence and mentions major Wnt literature context, though it does not list all LHX2 interactors from the graph.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately concludes that any link is speculative and not supported by the provided data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c5de540e57bb867006a4d53a81b0c8195b2383c54c40d652e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4397,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1236,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5633
+          },
+          "user": null
+        },
+        "request_id": "0af2716f-540f-4a5f-9c75-c25c0d41c532",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "d4228f6c3318e7c69412a37cf5113a947991ad1de31d2bd3a5ee409f5de8e66c",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q140",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q140.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q140::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q140::R2",
+      "error": null,
+      "id": "batch_req_6a4d19bb24648190abf364417c32001b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437548,
+          "created_at": 1783437540,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0128b0165a1ca81e006a4d18e4069c8194a95db13617a20b07",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q140"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0128b0165a1ca81e006a4d18e481a88194a7805d15301d0577",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately reflects the supplied graph: LHX2 is present with listed PPI edges, while rs2180439 and a direct LHX2-Wnt link are absent. It also correctly notes that the abstracts discuss Wnt-related genes/pathways but do not mention LHX2 or rs2180439. Minor external phrasing about LHX2 as developmental is not central to the conclusion.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer uses the key graph evidence and the relevant Wnt-related abstract evidence, while appropriately distinguishing direct annotations from unsupported or speculative pathway-level inference.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0128b0165a1ca81e006a4d18ea8e5881948a947a3d7ea77a13",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2174,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 687,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2861
+          },
+          "user": null
+        },
+        "request_id": "571f18be-e42e-4a1f-9bf4-3e281c55c805",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question and clearly separates direct graph evidence from indirect or speculative pathway-level context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided graph only shows LHX2 PPIs and that rs2180439 and an LHX2-Wnt link are not directly supported by the supplied graph or abstracts.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the relevant LHX2 interactors, notes absence of rs2180439 and LHX2-Wnt evidence, and explains that Wnt abstracts involve unrelated genes.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately reflects the supplied graph: LHX2 is present with listed PPI edges, while rs2180439 and a direct LHX2-Wnt link are absent. It also correctly notes that the abstracts discuss Wnt-related genes/pathways but do not mention LHX2 or rs2180439. Minor external phrasing about LHX2 as developmental is not central to the conclusion.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key graph evidence and the relevant Wnt-related abstract evidence, while appropriately distinguishing direct annotations from unsupported or speculative pathway-level inference.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately limits conclusions and labels any broader developmental/pathway connection as speculative.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q140",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q140.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.343383+00:00"
+}

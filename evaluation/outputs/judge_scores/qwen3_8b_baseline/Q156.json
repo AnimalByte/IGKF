@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q156",
+      "randomization_seed": "20260706:Q156:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q156",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q156",
+      "error": null,
+      "id": "batch_req_6a4d540a6190819094865e8083986bd6",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452572,
+          "created_at": 1783452559,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_08f93c65199a941e006a4d538ef7948195b9f200f4247c0fa6",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q156"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_08f93c65199a941e006a4d538f7c3081958979c68ec60fd723",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the requested topic, but does so by asserting hair-cycle evidence that is not present in the supplied dataset.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Claims the dataset shows anagen-specific Wnt activation, stem-cell effects, knockouts, and pharmacologic evidence, none of which appear in the reference evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides a broad mechanistic narrative, but omits the key conclusion that the supplied evidence is insufficient and includes unsupported details.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Does not qualify the lack of hair-cycle evidence and instead invents dataset-supported conclusions.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the supplied dataset supports a role for Wnt signaling in anagen maintenance.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the graph has no relevant data and the vector context concerns Wnt signaling in cancer and general growth regulation, not hair-cycle biology.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers what can be inferred, what is missing, and the appropriate bottom-line conclusion.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from making an anagen-specific claim unsupported by the supplied evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately answers that the dataset lacks hair-cycle or anagen evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly characterizes the supplied evidence as unrelated to anagen and focused on Wnt signaling in cancer or pathway regulation.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Captures the essential conclusion, though with less detail about the limited general biological context than A4.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly avoids unsupported synthesis and concludes that the dataset does not support the requested role.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the requested topic, but not appropriately because it claims the dataset supports anagen-related findings that are absent.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Misrepresents the reference evidence by stating that the dataset contains Wnt/anagen, follicular proliferation, and matrix-cell findings not present in the supplied context.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides a plausible generic hair-biology synthesis but omits the crucial limitation that the dataset lacks hair-cycle evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Fails to acknowledge insufficient evidence and presents unsupported conclusions confidently.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_08f93c65199a941e006a4d5395e0408195b0f04cd057eaefef",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2980,
+            "input_tokens_details": {
+              "cached_tokens": 2816
+            },
+            "output_tokens": 1304,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4284
+          },
+          "user": null
+        },
+        "request_id": "913398ca-a851-4745-a455-fa7d22f321e2",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the requested topic, but does so by asserting hair-cycle evidence that is not present in the supplied dataset.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Claims the dataset shows anagen-specific Wnt activation, stem-cell effects, knockouts, and pharmacologic evidence, none of which appear in the reference evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Provides a broad mechanistic narrative, but omits the key conclusion that the supplied evidence is insufficient and includes unsupported details.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not qualify the lack of hair-cycle evidence and instead invents dataset-supported conclusions.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q156",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q156.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.241496+00:00"
+}

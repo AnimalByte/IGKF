@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q006",
+      "randomization_seed": "20260706:Q006:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q006",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q006",
+      "error": null,
+      "id": "batch_req_6a4d52b8a4588190b9345c2ded575d28",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452280,
+          "created_at": 1783452269,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_009a427cb6fc1a88006a4d526d017c81a1906762dc8ff4a1f0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q006"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_009a427cb6fc1a88006a4d526d817881a1997e7b55a5e6d032",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly summarizes the requested study-specific/integrated annotations for rs6152.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the provided evidence: AR implication, pathways, GO terms, PPIs, phenotypes, disease links, drug evidence, and regulatory element.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers nearly all important annotation categories and notes that the abstracts do not add rs6152-specific evidence.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Generally qualifies appropriately; slightly over-interprets the regulatory element as implying a regulatory variant, but remains cautious overall.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Mentions rs6152 and the annotation categories but does not answer the requested summary despite provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Contains no major biomedical false claims, but fails to use the supplied reference evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits essentially all available annotations for rs6152.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Unnecessarily abstains and asks for clarification when the evidence packet supplies the needed source information.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Attempts to summarize rs6152 annotations, but the content is largely about an incorrect gene/context.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Materially contradicts the evidence by assigning rs6152 to SLC25A48 with unsupported chromosome, position, alleles, functional claims, and database interpretations instead of AR.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key provided AR annotations, disease associations, PPIs, pathways, drugs, and regulatory element.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents many unsupported details with little appropriate qualification.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested summary of rs6152 annotations.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly accurate against the graph evidence, including AR, pathways, GO terms, phenotypes, PPIs, diseases, and several drugs; however it overstates that listed drugs interact with the variant and the answer is truncated.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers most major annotation categories, but the Open Targets drug evidence section is incomplete due to truncation and omits the regulatory element.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Some language appropriately says 'may,' but it also implies mechanistic drug-variant effects not supported by the evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_009a427cb6fc1a88006a4d5273915c81a199198f8b9d84cd63",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5036,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1120,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 6156
+          },
+          "user": null
+        },
+        "request_id": "c154e13c-31bc-4f40-a1a9-f5354afca536",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Attempts to summarize rs6152 annotations, but the content is largely about an incorrect gene/context.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Materially contradicts the evidence by assigning rs6152 to SLC25A48 with unsupported chromosome, position, alleles, functional claims, and database interpretations instead of AR.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Omits the key provided AR annotations, disease associations, PPIs, pathways, drugs, and regulatory element.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Invents many unsupported details with little appropriate qualification.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q006",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q006.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.114624+00:00"
+}

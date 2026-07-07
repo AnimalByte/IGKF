@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q119",
+      "randomization_seed": "20260706:Q119:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q119",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q119",
+      "error": null,
+      "id": "batch_req_6a4d540805a08190b95ae0d457a9614f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452539,
+          "created_at": 1783452528,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b5eb5e9af89ce17006a4d537005fc81979a0ff8f946e0dba4",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q119"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b5eb5e9af89ce17006a4d53708dc08197a32173eb731e6975",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses male-pattern baldness genes but draws mainly from broader literature/abstracts rather than the specified study graph.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Genes listed are associated with MPHL in other contexts, but they are not the genes linked to the most strongly associated variants in the provided study evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the expected study-linked genes: KANSL1, FAM186A, OPHN1, SPAG17, and CIROZ.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Confidently presents unsupported genes as the answer for this study without adequate qualification.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question using the supplied GWAS graph context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies KANSL1, FAM186A, OPHN1, SPAG17, and CIROZ as the genes linked to the most strongly associated variants.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes all key genes from the reference evidence and notes the limited detail for CIROZ.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately distinguishes graph-supported findings from broader literature context and qualifies uncertainty.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Discusses genes associated with male pattern baldness generally, but not the specific study asked about.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Does not identify any of the study-linked genes from the reference evidence and instead lists unsupported genes.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits all expected genes from the study evidence.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes a generic caveat, but still provides unsupported study-specific claims.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Gives a direct list of male-pattern baldness genes, but it is not aligned with the supplied study evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"The listed genes are not the genes linked to the most strongly associated variants in the provided study context.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits all expected genes: KANSL1, FAM186A, OPHN1, SPAG17, and CIROZ.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Confidently asserts unsupported genes as the study findings without qualification.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b5eb5e9af89ce17006a4d5375826c8197a50be497094b1cac",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3148,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1038,
+            "output_tokens_details": {
+              "reasoning_tokens": 456
+            },
+            "total_tokens": 4186
+          },
+          "user": null
+        },
+        "request_id": "c87d52a0-a8c9-4b43-b829-dfb92a996f0d",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Discusses genes associated with male pattern baldness generally, but not the specific study asked about.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Does not identify any of the study-linked genes from the reference evidence and instead lists unsupported genes.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Omits all expected genes from the study evidence.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Includes a generic caveat, but still provides unsupported study-specific claims.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q119",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q119.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.215553+00:00"
+}

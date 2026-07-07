@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q039",
+      "randomization_seed": "20260706:Q039:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q039",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q039",
+      "error": null,
+      "id": "batch_req_6a4d52b9f27c819084efbcb0f693ee29",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452242,
+          "created_at": 1783452231,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0245b71f47a8dc01006a4d52470a58819ca5b04ca590c42e5c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q039"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0245b71f47a8dc01006a4d5247a450819ca8802886bb6b3e1f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the provided study/context supports an association for rs4679956.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that rs4679956 is not mentioned and that the supplied evidence does not support a conclusion of association.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the relevant findings in the abstract and clearly distinguishes them from evidence for the specific SNP.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming an association due to insufficient evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by stating that no evidence is provided for rs4679956.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the reference evidence, which contains no data or mention of rs4679956.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the key conclusion but does not summarize the broader study context or what was reported instead.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids unsupported claims and limits the conclusion to available information.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the need for study details but does not use the supplied evidence to answer the specific question.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Does not make a false biomedical claim, but is less accurate than noting that the provided context lacks rs4679956 evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the available conclusion that the provided evidence does not support an association for rs4679956.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately refrains from making unsupported claims.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Discusses rs4679956 and androgenetic alopecia but does not answer what evidence the supplied study provides.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Claims rs4679956 has been reported in genetic studies of androgenetic alopecia, which is unsupported by the supplied reference evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not state the key reference-based conclusion that no association evidence is provided in the context.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Partly qualifies uncertainty and asks for more information, but includes an unsupported association-related statement.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0245b71f47a8dc01006a4d524e28d0819cbbfb85a0a43aa807",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2113,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1071,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3184
+          },
+          "user": null
+        },
+        "request_id": "4571760d-b492-40cf-86ed-4be19765a032",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the need for study details but does not use the supplied evidence to answer the specific question.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Does not make a false biomedical claim, but is less accurate than noting that the provided context lacks rs4679956 evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Omits the available conclusion that the provided evidence does not support an association for rs4679956.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately refrains from making unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q039",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q039.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.137410+00:00"
+}

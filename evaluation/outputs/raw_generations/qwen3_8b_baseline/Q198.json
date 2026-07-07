@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.8226,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The APOE \u03b54 allele is a well-established genetic risk factor for Alzheimer's disease (AD). It is the strongest known genetic risk factor for late-onset Alzheimer's disease, which typically manifests after the age of 65.\n\nIndividuals who carry the APOE \u03b54 allele have a significantly increased risk of developing Alzheimer's disease compared to those who do not carry it. The risk increases with the number of \u03b54 alleles inherited: individuals with one \u03b54 allele (heterozygous) have about 3-5 times the risk of those without it, while those with two \u03b54 alleles (homozygous) have up to 12 times the risk.\n\nThe exact mechanisms by which APOE \u03b54 contributes to Alzheimer's disease are not fully understood, but it is believed to involve several pathways, including:\n\n- Impaired clearance of amyloid-beta plaques, which are a hallmark of Alzheimer's disease.\n- Increased oxidative stress and neuroinflammation.\n- Disruption of lipid metabolism and synaptic function.\n\nIt is important to note that while the APOE \u03b54 allele increases the risk of Alzheimer's disease, it does not guarantee that an individual will develop the disease. Many people with the \u03b54 allele never develop Alzheimer's, and some people without the allele do develop it. Therefore, the presence of the APOE \u03b54 allele is a risk factor, not a definitive predictor.",
+  "question_id": "Q198",
+  "question_text": "What is the role of the APOE \u03b54 allele in Alzheimer's disease risk?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 290,
+    "prompt_token_count": 77,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The APOE \u03b54 allele is a well-established genetic risk factor for Alzheimer's disease (AD). It is the strongest known genetic risk factor for late-onset Alzheimer's disease, which typically manifests after the age of 65.\n\nIndividuals who carry the APOE \u03b54 allele have a significantly increased risk of developing Alzheimer's disease compared to those who do not carry it. The risk increases with the number of \u03b54 alleles inherited: individuals with one \u03b54 allele (heterozygous) have about 3-5 times the risk of those without it, while those with two \u03b54 alleles (homozygous) have up to 12 times the risk.\n\nThe exact mechanisms by which APOE \u03b54 contributes to Alzheimer's disease are not fully understood, but it is believed to involve several pathways, including:\n\n- Impaired clearance of amyloid-beta plaques, which are a hallmark of Alzheimer's disease.\n- Increased oxidative stress and neuroinflammation.\n- Disruption of lipid metabolism and synaptic function.\n\nIt is important to note that while the APOE \u03b54 allele increases the risk of Alzheimer's disease, it does not guarantee that an individual will develop the disease. Many people with the \u03b54 allele never develop Alzheimer's, and some people without the allele do develop it. Therefore, the presence of the APOE \u03b54 allele is a risk factor, not a definitive predictor."
+      }
+    ],
+    "created": 1783431020,
+    "id": "cmpl-e0163343-491b-4da8-a1a6-77f16a4eaec7",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 290,
+      "prompt_tokens": 56,
+      "total_tokens": 346
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:30:20.683164+00:00",
+  "user_prompt": "What is the role of the APOE \u03b54 allele in Alzheimer's disease risk?"
+}

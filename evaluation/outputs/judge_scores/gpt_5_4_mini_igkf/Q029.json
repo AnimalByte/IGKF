@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q029",
+      "randomization_seed": "20260706:Q029:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q029",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q029",
+      "error": null,
+      "id": "batch_req_6a4d52b999888190a0e9d5ef7a39c235",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452215,
+          "created_at": 1783452204,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05fbb9b0f1db317c006a4d522c84b4819dae6c3c026a67f009",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q029"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05fbb9b0f1db317c006a4d522d267c819d99e90e6258f8af11",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the reported clinical significance for rs929626 using the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately identifies EBF1, the dELS regulatory context, Open Targets disease associations and scores, and notes lack of direct abstract evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key disease associations, strongest signal, regulatory context, and limitations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately frames the evidence as suggestive rather than causal or clinically definitive.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses clinical significance generally but does not report the supplied disease-association evidence for rs929626.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The caution about lack of established clinical actionability may be reasonable, but it omits the reported Open Targets associations in the reference packet.\"},\"completeness\":{\"score\":2,\"rationale\":\"Misses the key supplied findings: EBF1 implication, regulatory element, and disease associations.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately cautious, but over-abstains despite available reported association evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by distinguishing lack of direct literature evidence from graph-reported associations.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately lists the EBF1 association, Open Targets disease associations and scores, and avoids claiming causality.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the main reported clinical associations and important limitation about insufficient direct evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly qualifies the associations as potential and not confirmed causal clinical significance.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"It attempts to answer the clinical significance question, but for an unsupported gene/trait context.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly places rs929626 in FTO and claims BMI/obesity associations not supported by the supplied evidence, which implicates EBF1 and other disease associations.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits all reference-supported information and replaces it with unrelated unsupported claims.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported conclusions confidently without appropriate qualification.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05fbb9b0f1db317c006a4d5232b32c819d812e3d664bbe5b96",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3430,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1072,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4502
+          },
+          "user": null
+        },
+        "request_id": "6c3576ec-97e4-43d5-9a1f-77087afc9c21",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "f433ae1cb3139fccef5b61cbb1316dd7be8d1c52b2d50c8512eb7fa4d27d80cf",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q029",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q029.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q029::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q029::R2",
+      "error": null,
+      "id": "batch_req_6a4d19ac8864819080abf10511f7277b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437627,
+          "created_at": 1783437621,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0dfa45ba5e66e257006a4d1935e62c8190a29e58ecbfc62652",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q029"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0dfa45ba5e66e257006a4d193680748190a53b4207ae306583",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately reflects the supplied graph context: rs929626 is linked to EBF1, lies in dELS EH38D3783439, and has the listed Open Targets disease associations with correct scores. It appropriately notes that the abstracts do not directly study rs929626.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer uses the most relevant supplied evidence, especially the graph disease associations and regulatory annotation, and avoids relying on the unrelated abstracts except to state their limitation.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0dfa45ba5e66e257006a4d1939bb588190b1e96187aced25b0",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2344,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 433,
+            "output_tokens_details": {
+              "reasoning_tokens": 284
+            },
+            "total_tokens": 2777
+          },
+          "user": null
+        },
+        "request_id": "ca4c6c47-0495-45ef-b86f-d4210c29c903",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the reported clinical significance for rs929626 using the supplied evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately identifies EBF1, the dELS regulatory context, Open Targets disease associations and scores, and notes lack of direct abstract evidence.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key disease associations, strongest signal, regulatory context, and limitations.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately reflects the supplied graph context: rs929626 is linked to EBF1, lies in dELS EH38D3783439, and has the listed Open Targets disease associations with correct scores. It appropriately notes that the abstracts do not directly study rs929626.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the most relevant supplied evidence, especially the graph disease associations and regulatory annotation, and avoids relying on the unrelated abstracts except to state their limitation.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately frames the evidence as suggestive rather than causal or clinically definitive.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q029",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q029.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.269908+00:00"
+}

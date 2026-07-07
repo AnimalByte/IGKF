@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q003",
+      "randomization_seed": "20260706:Q003:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q003",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q003",
+      "error": null,
+      "id": "batch_req_6a4d52b89e6081909dbaf601429e6101",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452266,
+          "created_at": 1783452253,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_093fe3ad239cfe7c006a4d525daed481a092422c7ac7cde27a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q003"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_093fe3ad239cfe7c006a4d525e1ee881a0b377dbe24a369980",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by identifying the lack of a specific molecular consequence and the regulatory-element annotation.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied evidence: rs6152 is associated with AR and lies in a pELS regulatory element, with no direction or magnitude of effect specified.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key points: associated gene, regulatory annotation, plausible expression effect, and limits of the evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the interpretation and avoids claiming a proven functional effect.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Attempts to answer the functional-consequence question but centers on the wrong gene and unsupported details.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly states that rs6152 is in TGFBR2; the supplied evidence implicates AR. The claimed nucleotide and disease details are unsupported.\"},\"completeness\":{\"score\":2,\"rationale\":\"Includes general categories of possible effects, but omits the key supplied regulatory-element annotation for AR.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Some uncertainty is expressed, but the answer makes major unsupported assertions as facts.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses rs6152, AR, and the pELS regulatory element, but includes many tangential associations.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly identifies AR and the pELS element, but overstates graph associations as direct functional consequences and makes unsupported claims about drugs, PPIs, and disease causality.\"},\"completeness\":{\"score\":3,\"rationale\":\"Contains the main regulatory interpretation, but it is diluted by unnecessary and sometimes misleading details; the answer is also incomplete/truncated.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Does not sufficiently qualify speculative effects and presents associations as if they imply functional impact.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Directly discusses functional consequence and possible gene effects, but not the regulatory-element annotation emphasized in the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The synonymous-variant claim is not supported by the provided evidence, which only annotates AR association and a pELS regulatory element. General statements about synonymous effects are biologically plausible.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers coding-synonymous implications but misses the supplied pELS regulatory annotation and potential AR expression modulation.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately frames indirect effects as uncertain, though it asserts an unsupported primary annotation.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_093fe3ad239cfe7c006a4d5264804c81a08fb5e73d442eec48",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3851,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1133,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4984
+          },
+          "user": null
+        },
+        "request_id": "adcf4e43-985c-4537-9d8c-cd6db4448823",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "9abd483f768c42239311f4b4682cbafbb8cf46b8c7c34b9a196118a347dc55c6",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q003",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q003.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q003::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q003::R2",
+      "error": null,
+      "id": "batch_req_6a4d19a976548190b7c52253ad259be4",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437420,
+          "created_at": 1783437411,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_071b4dd6b4b7e10c006a4d18636b20819593325b6a736aeac1",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q003"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_071b4dd6b4b7e10c006a4d1864026c8195867c8f9dd92d860e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The answer is largely supported by the supplied graph context: rs6152 is implicated with AR and lies in regulatory element EH38D6112128 labeled pELS, and the response correctly notes that no direct molecular consequence is annotated. The proposed effect on AR expression is a reasonable inference from pELS/regulatory-element placement, though not explicitly stated in the context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer uses the key relevant evidence: AR implication, regulatory element pELS annotation, associated diseases/phenotypes, and the absence of a specified direction or magnitude of effect. It appropriately avoids relying on the irrelevant vector abstracts.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_071b4dd6b4b7e10c006a4d186aabbc8195bf0df3df4b928d22",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2174,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 695,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2869
+          },
+          "user": null
+        },
+        "request_id": "afab0937-e3e8-43d0-8f3c-64381bab2ebf",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question by identifying the lack of a specific molecular consequence and the regulatory-element annotation.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the supplied evidence: rs6152 is associated with AR and lies in a pELS regulatory element, with no direction or magnitude of effect specified.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key points: associated gene, regulatory annotation, plausible expression effect, and limits of the evidence.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is largely supported by the supplied graph context: rs6152 is implicated with AR and lies in regulatory element EH38D6112128 labeled pELS, and the response correctly notes that no direct molecular consequence is annotated. The proposed effect on AR expression is a reasonable inference from pELS/regulatory-element placement, though not explicitly stated in the context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key relevant evidence: AR implication, regulatory element pELS annotation, associated diseases/phenotypes, and the absence of a specified direction or magnitude of effect. It appropriately avoids relying on the irrelevant vector abstracts.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the interpretation and avoids claiming a proven functional effect.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q003",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q003.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.253286+00:00"
+}

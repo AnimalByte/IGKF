@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q017",
+      "randomization_seed": "20260706:Q017:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q017",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q017",
+      "error": null,
+      "id": "batch_req_6a4d52b8f5e88190bb189278572d04d6",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452181,
+          "created_at": 1783452163,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_066dbdf59f781a11006a4d52034bd0819d960ee806f3501f47",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q017"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_066dbdf59f781a11006a4d52040dd0819dad349e4f7a6f2c46",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Addresses the general idea of variant consequences but does not answer the specific rs756853/HDAC9 context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Mostly avoids false specific claims, but misses the provided regulatory-element annotation and associated gene.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits HDAC9 and the dELS regulatory element, which are central to the supplied evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately cautious and does not invent a consequence, though it over-abstains despite relevant context being supplied.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Discusses rs756853 and HDAC9 but largely substitutes pathways and GO terms for the requested functional consequence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Correctly names HDAC9 and some contextual biology, but incorrectly implies annotated functional effects and therapeutic targeting of the variant.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not identify the key supplied annotation: location in a dELS regulatory element with no explicit coding consequence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents speculative regulatory and therapeutic conclusions as if established.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Attempts to answer the consequence-and-gene-effect question, but uses the wrong associated gene.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Materially incorrect because the supplied evidence links rs756853 to HDAC9, not TTC3, and it omits the dELS regulatory annotation.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Notes uncertainty about consequence but misses the relevant HDAC9 and regulatory-element information.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Uses some cautious language, but invents an unsupported gene assignment.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question by identifying the lack of a specific molecular consequence and the regulatory-element context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence: rs756853 is linked to HDAC9 and lies in a dELS regulatory element.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key consequence annotation and plausible effect on HDAC9 expression without overclaiming.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly qualifies the inference and avoids claiming a coding or experimentally proven effect.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_066dbdf59f781a11006a4d520fb558819db83954b8e30bf968",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3485,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1569,
+            "output_tokens_details": {
+              "reasoning_tokens": 810
+            },
+            "total_tokens": 5054
+          },
+          "user": null
+        },
+        "request_id": "b9edb5cb-48a5-4139-8e80-a33705f3f0a7",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "c5d2e95b3902da09a4024f1eaa561152847ad6f2f9d4c29fec6133c183e49bad",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q017",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q017.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q017::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q017::R2",
+      "error": null,
+      "id": "batch_req_6a4d19ab4f30819083d020d39ac2e7cd",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437448,
+          "created_at": 1783437441,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f2e217a5d175d55006a4d188121788195a697bc52cea86fdf",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q017"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f2e217a5d175d55006a4d1881aa948195b8bb736ccdf6d2be",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is well grounded in the supplied context: rs756853 is linked to HDAC9 and is annotated as being in regulatory element EH38D3950895 labeled dELS, with no explicit coding or molecular consequence provided. The suggested regulatory effect on HDAC9 expression/enhancer activity is a reasonable inference from the dELS annotation.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer uses the key relevant context for the question, especially the implicated gene HDAC9 and the regulatory element/dELS annotation, and appropriately notes the absence of a more specific functional consequence.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f2e217a5d175d55006a4d18871c8481958b575c3a9ca53ffd",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2274,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 604,
+            "output_tokens_details": {
+              "reasoning_tokens": 435
+            },
+            "total_tokens": 2878
+          },
+          "user": null
+        },
+        "request_id": "10a90b3d-bfa1-4a70-88fe-ea810200660b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question by identifying the lack of a specific molecular consequence and the regulatory-element context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the supplied evidence: rs756853 is linked to HDAC9 and lies in a dELS regulatory element.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key consequence annotation and plausible effect on HDAC9 expression without overclaiming.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is well grounded in the supplied context: rs756853 is linked to HDAC9 and is annotated as being in regulatory element EH38D3950895 labeled dELS, with no explicit coding or molecular consequence provided. The suggested regulatory effect on HDAC9 expression/enhancer activity is a reasonable inference from the dELS annotation.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key relevant context for the question, especially the implicated gene HDAC9 and the regulatory element/dELS annotation, and appropriately notes the absence of a more specific functional consequence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly qualifies the inference and avoids claiming a coding or experimentally proven effect.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q017",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q017.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.262434+00:00"
+}

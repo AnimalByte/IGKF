@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q030",
+      "randomization_seed": "20260706:Q030:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q030",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q030",
+      "error": null,
+      "id": "batch_req_6a4d52b9ea0081909eb0962f53b76aa0",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452216,
+          "created_at": 1783452208,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_028f1e19e10f4802006a4d5230497c81919527ce1c95cec41d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q030"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_028f1e19e10f4802006a4d5230e9b481919221c165116edf62",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which gene is associated with rs929626.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies EBF1 as the implicated gene in the provided evidence and does not add unsupported associated genes.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the expected gene and notes no other direct gene association is provided.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately confines the answer to the supplied structured evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses the general task but does not answer the specific question despite sufficient provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Does not state the correct gene EBF1; the response is not directly factually responsive to the evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the central required answer, EBF1.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains unnecessarily because the needed evidence is present.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Partially addresses the question but does not provide the correct study-specific annotation.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly states rs929626 is located in or associated with TERT, while the provided evidence annotates it with EBF1.\"},\"completeness\":{\"score\":1,\"rationale\":\"Misses the required gene EBF1 and adds an unsupported alternative.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents an unsupported conclusion rather than using the provided evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies EBF1 as the gene annotated with rs929626 in the provided context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the important component, the associated gene EBF1, without unnecessary additions.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Accurately limits the claim to the provided context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_028f1e19e10f4802006a4d5234a82481919ba3265e20e875d6",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2528,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 900,
+            "output_tokens_details": {
+              "reasoning_tokens": 404
+            },
+            "total_tokens": 3428
+          },
+          "user": null
+        },
+        "request_id": "e7d0d079-f63f-46fa-9605-1949fcb30159",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partially addresses the question but does not provide the correct study-specific annotation.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly states rs929626 is located in or associated with TERT, while the provided evidence annotates it with EBF1.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Misses the required gene EBF1 and adds an unsupported alternative.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Invents an unsupported conclusion rather than using the provided evidence.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q030",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q030.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.131072+00:00"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q009",
+      "randomization_seed": "20260706:Q009:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q009",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q009",
+      "error": null,
+      "id": "batch_req_6a4d52b883bc8190b12b18661f490158",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452310,
+          "created_at": 1783452280,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_08b746ea0678fc3f006a4d5278598881a28df6b42672deb0b2",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q009"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_08b746ea0678fc3f006a4d5278c7ac81a2be4cec30c8b754e6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether rs2180439 is annotated to any gene in the supplied study context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph and abstracts do not explicitly link rs2180439 to any gene.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key point and notes the listed genes, though it cannot provide a gene annotation because none is present in the evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making an unsupported gene assignment.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Responds generally to the need for study-specific context, but does not use the supplied study context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Does not make unsupported biomedical claims, but incorrectly implies that no study context was provided.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not answer the question from the available evidence or state that rs2180439 is absent from the provided context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inventing a gene association.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Attempts to answer the variant-gene question but does not address the supplied study context.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Introduces an unsupported claim that rs2180439 is located in SLC16A1, which is not supported by the provided evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides speculative background rather than the requested study-specific annotation.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Partly qualifies uncertainty but still asserts an unsupported gene assignment.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that no associated gene can be determined from the provided context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the evidence packet, which does not mention rs2180439 or a gene annotation for it.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the essential conclusion, though with minimal supporting detail.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from assigning a gene without evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_08b746ea0678fc3f006a4d5292b51481a29be245acc6237019",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2794,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2601,
+            "output_tokens_details": {
+              "reasoning_tokens": 2070
+            },
+            "total_tokens": 5395
+          },
+          "user": null
+        },
+        "request_id": "0248078a-a5f2-49fb-a927-8761c1528695",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Responds generally to the need for study-specific context, but does not use the supplied study context.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Does not make unsupported biomedical claims, but incorrectly implies that no study context was provided.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Does not answer the question from the available evidence or state that rs2180439 is absent from the provided context.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inventing a gene association.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q009",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q009.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.116547+00:00"
+}

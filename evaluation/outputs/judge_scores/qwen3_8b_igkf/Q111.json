@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q111",
+      "randomization_seed": "20260706:Q111:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q111",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q111",
+      "error": null,
+      "id": "batch_req_6a4d540763d08190a24eaa5f402c59de",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452519,
+          "created_at": 1783452508,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f2e5e47d6383c48006a4d535c32f081968f0a77286db046b9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q111"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f2e5e47d6383c48006a4d535cec788196a7688ccca4a454d5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether any drugs are linked to Hedgehog pathway targets in the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the graph found no relevant data and the abstracts mention pathway components but no drugs.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers both graph and vector contexts and gives the appropriate conclusion that no drugs are identified.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from naming drugs not supported by the provided evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses Hedgehog-pathway drugs generally but does not answer based on the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Some listed drug-target associations are generally plausible, but they are unsupported by the provided evidence and not linked in the integrated data.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key conclusion from the supplied context: no drugs are identified in the integrated data.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Although it qualifies the list as general, it introduces unsupported drug associations instead of abstaining based on the evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question using the supplied graph and abstract contexts.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that no drugs are explicitly linked and accurately summarizes the pathway components mentioned.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the essential evidence from both graph and vector contexts and reaches the correct conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids unsupported claims and limits the conclusion to the available evidence.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"It attempts to answer by listing drugs, but the response is not grounded in the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Contradicts the reference evidence by claiming integrated drug-target links exist and includes multiple unsupported or erroneous biomedical claims.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides a list, but it misses the required conclusion that no relevant integrated-data drug links were found.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents unsupported conclusions and presents them as confirmed by integration.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f2e5e47d6383c48006a4d53626cac81968019e4d8e7db3347",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2697,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1063,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3760
+          },
+          "user": null
+        },
+        "request_id": "9fdc7057-221b-4982-964f-547439523d8a",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "0548199fed148008da184d7334267a373207f7374f5e4837854029ba358f106b",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q111",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q111.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q111::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q111::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b72bfc8190b1208d80fafbf1e6",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437578,
+          "created_at": 1783437575,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00efa9833919d632006a4d1907582c8197ae98e31fb70a5f80",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q111"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00efa9833919d632006a4d1907d45081978671477a76a8eb14",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The supplied graph context states no relevant data was found, and the abstracts mention Hedgehog pathway components but no drugs.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately relies on both the lack of graph evidence and the vector abstracts' absence of drug mentions.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00efa9833919d632006a4d1909d6bc8197b3eabd3ad369d302",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1287,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 283,
+            "output_tokens_details": {
+              "reasoning_tokens": 177
+            },
+            "total_tokens": 1570
+          },
+          "user": null
+        },
+        "request_id": "8b495966-8d98-95ca-9f16-339833eb91e0",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately answers the question using the supplied graph and abstract contexts.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly states that no drugs are explicitly linked and accurately summarizes the pathway components mentioned.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the essential evidence from both graph and vector contexts and reaches the correct conclusion.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The supplied graph context states no relevant data was found, and the abstracts mention Hedgehog pathway components but no drugs.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately relies on both the lack of graph evidence and the vector abstracts' absence of drug mentions.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly avoids unsupported claims and limits the conclusion to the available evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q111",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q111.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.324028+00:00"
+}

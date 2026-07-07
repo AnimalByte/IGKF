@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q109",
+      "randomization_seed": "20260706:Q109:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q109",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q109",
+      "error": null,
+      "id": "batch_req_6a4d54076c2c8190830d4faee4977107",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452510,
+          "created_at": 1783452493,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ecb46dac46c1908006a4d534d427c8194a3d3aae9564f8bb0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q109"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ecb46dac46c1908006a4d534ef2f88194bae3168eedd0d27e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"It addresses the general task but does not answer the specific question using the provided graph context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"It makes no substantive biomedical claims, but it misses the key evidence that the graph contains no relevant data.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"It does not provide the expected conclusion that no genes can be confirmed from the integrated graph.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"It appropriately avoids inventing genes, though it frames the issue as missing information rather than no graph evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"It directly attempts to answer which genes are connected to Hedgehog signaling, but not specifically supported by the integrated graph.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"The listed genes are Hedgehog-pathway-related in the abstract, but the claim that they are connected in the integrated graph is unsupported because the graph had no relevant data.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"It omits some pathway genes mentioned in the study and fails to state that the graph provides no confirmable connections.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"It presents unsupported graph connections as fact despite insufficient graph evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"It is generally related to the question but does not answer it using the available evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"It makes no substantial biomedical claims, but it does not reflect the reference evidence that the graph found no relevant data.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"It omits the key answer: no genes can be identified as connected in the integrated graph.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"It avoids unsupported conclusions, though the abstention is less precise than stating the graph has no relevant data.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"It directly answers that no genes can be confirmed from the integrated graph.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"It correctly reflects the graph context and accurately distinguishes literature-mentioned Hedgehog-pathway genes from graph-confirmed connections.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"It provides the key conclusion and also lists the relevant study genes as contextual information.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"It appropriately qualifies that the literature genes cannot be confirmed as connected in the graph.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ecb46dac46c1908006a4d5357fa508194b10690ce25cb69f9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2693,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1651,
+            "output_tokens_details": {
+              "reasoning_tokens": 890
+            },
+            "total_tokens": 4344
+          },
+          "user": null
+        },
+        "request_id": "fce817d8-2c5d-4491-b51f-ff2012245cd7",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "e03a2bec4cb41b39c66146cb765a6502b755b9689a0ac2da0f3b1e9d717c8ec0",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q109",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q109.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q109::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q109::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b6ed708190b2b0a01599ad3469",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437563,
+          "created_at": 1783437554,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0256a21741d50b67006a4d18f2e0b88195952c5d784495a14a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q109"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0256a21741d50b67006a4d18f3787081958425d33abc636ca9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R2\",\"context_groundedness\":{\"score\":5,\"rationale\":\"The answer is grounded in the supplied graph context, which states that no relevant graph data were found, and it accurately separates unsupported graph connections from literature-only gene mentions.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"It appropriately prioritizes the graph context for the integrated-graph question while using the vector abstract only to identify the study genes as literature context, not as confirmed graph connections.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0256a21741d50b67006a4d18fa152481958334d65ced5be43c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1873,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 621,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2494
+          },
+          "user": null
+        },
+        "request_id": "d60e02e5-216c-461d-8cdd-6d8d2241daec",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It directly answers that no genes can be confirmed from the integrated graph.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "It correctly reflects the graph context and accurately distinguishes literature-mentioned Hedgehog-pathway genes from graph-confirmed connections.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "It provides the key conclusion and also lists the relevant study genes as contextual information.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is grounded in the supplied graph context, which states that no relevant graph data were found, and it accurately separates unsupported graph connections from literature-only gene mentions.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "It appropriately prioritizes the graph context for the integrated-graph question while using the vector abstract only to identify the study genes as literature context, not as confirmed graph connections.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "It appropriately qualifies that the literature genes cannot be confirmed as connected in the graph.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q109",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q109.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.322826+00:00"
+}

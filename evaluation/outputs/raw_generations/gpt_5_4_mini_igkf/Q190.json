@@ -1,0 +1,257 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437060,
+    "created_at": 1783437058,
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q190",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "56a1889e-3e74-4d43-a127-e16a775e0d25",
+    "response_id": "resp_0f8518090be345b5006a4d17021cf08196a332743126ba2353",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 1923,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2148
+    }
+  },
+  "parsed_answer": "Yes \u2014 **rs6152 is a protein-coding variant in AR** in the sense that it is mapped to the **androgen receptor (AR)** gene, but the supplied context does **not** provide enough evidence to assign a specific **AR protein region or domain** for this variant.\n\nWhy domain assignment is not applicable from the provided data:\n- The graph places rs6152 **in a regulatory element (EH38D6112128, labeled pELS)**, which indicates a **putative enhancer/promoter-like noncoding regulatory region**, not a coding exon.\n- The available context does **not** describe an amino-acid substitution, frameshift, stop-gain, or other protein-level consequence.\n- The literature abstracts provided are about other genes/variants and do not mention rs6152 or an AR protein-domain effect.\n\nSo the best synthesis is:\n- **rs6152 is associated with AR, but it appears to be a regulatory noncoding variant rather than a protein-altering coding variant.**\n- Therefore, **a protein-domain assignment is not supported by the supplied context**.",
+  "question_id": "Q190",
+  "question_text": "Is rs6152 a protein-coding variant? If so, identify the affected AR protein region or domain; if not, explain why a protein-domain assignment is not applicable.",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q190",
+    "error": null,
+    "id": "batch_req_6a4d1763fde08190b2dd2d60cf79d403",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437060,
+        "created_at": 1783437058,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_0f8518090be345b5006a4d17021cf08196a332743126ba2353",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_igkf",
+          "question_id": "Q190"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "Yes \u2014 **rs6152 is a protein-coding variant in AR** in the sense that it is mapped to the **androgen receptor (AR)** gene, but the supplied context does **not** provide enough evidence to assign a specific **AR protein region or domain** for this variant.\n\nWhy domain assignment is not applicable from the provided data:\n- The graph places rs6152 **in a regulatory element (EH38D6112128, labeled pELS)**, which indicates a **putative enhancer/promoter-like noncoding regulatory region**, not a coding exon.\n- The available context does **not** describe an amino-acid substitution, frameshift, stop-gain, or other protein-level consequence.\n- The literature abstracts provided are about other genes/variants and do not mention rs6152 or an AR protein-domain effect.\n\nSo the best synthesis is:\n- **rs6152 is associated with AR, but it appears to be a regulatory noncoding variant rather than a protein-altering coding variant.**\n- Therefore, **a protein-domain assignment is not supported by the supplied context**.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_0f8518090be345b5006a4d17029c288196a1de670398783e62",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 1923,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 225,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2148
+        },
+        "user": null
+      },
+      "request_id": "56a1889e-3e74-4d43-a127-e16a775e0d25",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      23.053050994873047,
+      23.822467803955078,
+      24.16105842590332,
+      24.290616989135742,
+      24.822803497314453,
+      25.222063064575195,
+      25.264863967895508,
+      25.431934356689453,
+      25.497501373291016,
+      25.591167449951172,
+      25.756977081298828,
+      25.81294822692871,
+      26.001644134521484,
+      26.01354217529297,
+      26.01613998413086
+    ],
+    "candidate_pmids": [
+      "42361668",
+      "42260572",
+      "38342435",
+      "41296172",
+      "32329860",
+      "42019823",
+      "40518752",
+      "37986797",
+      "37579195",
+      "37143720",
+      "41796107",
+      "41722875",
+      "42339980",
+      "41640146",
+      "42371149"
+    ],
+    "expanded_retrieval_query": "Is rs6152 a protein-coding variant? If so, identify the affected AR protein region or domain; if not, explain why a protein-domain assignment is not applicable. Entity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS",
+    "final_context": "Graph Context:\nEntity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS\n\nVector Context:\n--- Abstract 1 (PMID: 32329860, relevance: -0.2808) ---\nOBJECTIVE: The RIB43A domain with coiled-coils 2 (RIBC2) encodes an uncharacterized vertebrate protein exhibiting similarity with Chlamydomonas protofilament ribbon proteins, required for ciliary motility. To date, no functional variants capable of triggering a change in the expression of RIBC2 have been reported. PATIENTS AND METHODS: The genotypes of rs2272804 in 30 individuals were identified with Sanger sequencing to estimate allele frequencies. Dual-Luciferase and mutagenesis assays were carried out to investigate the impact of rs2272804 on transcriptional and translational levels. The microarray data of 7 types of cancer were obtained from the Gene Expression Omnibus (GEO) to explore the role of rs2272804 in those diseases. RESULTS: In this study, we identified a common variant in the 5'UTR of RIBC2, rs2272804, which can create an upstream open reading frame (uORF) in the 5'UTR significantly inhibiting the expression of its host gene. Using Dual-Luciferase constructs, we found that this variant leads to an 85% reduction in translational efficiency, but only a 20% decrease was observed at the transcriptional level. In terms of population studies, mRNA levels of RIBC2 varied according to their rs2272804 genotypes. The \"A\" allele homozygotes, which created a uORF, showed the lowest transcriptional levels while the transcriptional activity of the \"C\" allele homozygotes without an uORF was the highest, consistent with the in-vitro studies. Furthermore, we explored its role in 7 types of cancer and identified RIBC2 as a significantly differentially expressed gene (DEG) in breast cancer (BRCA), ovarian serous cystadenocarcinoma (OV), and kidney renal clear cell carcinoma (KIRC). Finally, we showed that the overexpression of RIBC2 enhanced the expression of TRIM37 and down-regulated TRAF2. TRIM37 is a member of the tripartite motif (TRIM) family involved in developmental patterning and oncogenesis while TRAF2 is associated with the signal transduction from members of the TNF receptor superfamily. CONCLUSIONS: Our reports identified a common variant that exerts a dramatic impact on expression efficiency and provides further functional insight into RIBC2.\n\n--- Abstract 2 (PMID: 38342435, relevance: -2.8549) ---\nThe p90 ribosomal S6 kinases (RSK) family of serine/threonine kinases comprises four isoforms (RSK1-4) that lie downstream of the ERK1/2 mitogen-activated protein kinase pathway. RSKs are implicated in fine tuning of cellular processes such as translation, transcription, proliferation, and motility. Previous work showed that pathogens such as Cardioviruses could hijack any of the four RSK isoforms to inhibit PKR activation or to disrupt cellular nucleocytoplasmic trafficking. In contrast, some reports suggest nonredundant functions for distinct RSK isoforms, whereas Coffin-Lowry syndrome has only been associated with mutations in the gene encoding RSK2. In this work, we used the analog-sensitive kinase strategy to ask whether the cellular substrates of distinct RSK isoforms differ. We compared the substrates of two of the most distant RSK isoforms: RSK1 and RSK4. We identified a series of potential substrates for both RSKs in cells and validated RanBP3, PDCD4, IRS2, and ZC3H11A as substrates of both RSK1 and RSK4, and SORBS2 as an RSK1 substrate. In addition, using mutagenesis and inhibitors, we confirmed analog-sensitive kinase data showing that endogenous RSKs phosphorylate TRIM33 at S1119. Our data thus identify a series of potential RSK substrates and suggest that the substrates of RSK1 and RSK4 largely overlap and that the specificity of the various RSK isoforms likely depends on their cell- or tissue-specific expression pattern.\n\n--- Abstract 3 (PMID: 42260572, relevance: -3.3718) ---\nBACKGROUND: NR5A1 encodes a transcription factor essential for adrenal and gonadal development. Gene variants are a known cause of heterogeneous 46,XY disorders of sex development (DSD), but the mechanisms underlying the phenotypic variability remain unclear. We investigated how different NR5A1 variants affect downstream gene regulation and contribute to DSD pathogenesis. METHODS: We analyzed four naturally occurring NR5A1 variants identified in patients with 46,XY DSD-two novel (p.Cys65Ser, p.His310Arg) and two previously reported (p.Cys30Ser, p.Gln329*). We performed protein and transcriptomic analyses to characterize variant effects and identify dysregulated and candidate target genes, validated by qPCR and luciferase assays. Transcriptomic and CUT&Tag analyses focused on the p.Gln329* truncating variant. RESULTS: All four variants occurred at conserved residues and resulted in reduced NR5A1 protein expression and impaired nuclear localization upon transfection in HEK293T cells. Transcriptomic analysis using the p.Gln329* variant revealed broad downregulation of genes involved in steroidogenesis, including CYP11A1, STAR, and CYP17A1. Notably, AMHR2 and STARD8 were significantly downregulated and showed reduced CUT&Tag signal in variant-transfected cells. Promoter assays confirmed that all variants diminished CYP11A1 and AMHR2 promoter activity. Only the p.Gln329* variant affected STARD8 promoter activity. CONCLUSIONS: These findings indicate that NR5A1 variants impair protein expression and localization, leading to transcriptional dysregulation of genes involved in steroid hormone biosynthesis and sexual development. Based on analysis of the p.Gln329* truncating variant, AMHR2 and STARD8 are strong candidate novel downstream targets of NR5A1, offering further insight into the mechanisms driving 46,XY DSD.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS",
+    "graph_context_length": 1912,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3462,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "rs6152"
+      },
+      {
+        "label": "ENTITY",
+        "text": "protein-coding variant"
+      },
+      {
+        "label": "ENTITY",
+        "text": "affected"
+      },
+      {
+        "label": "ENTITY",
+        "text": "ar protein region"
+      },
+      {
+        "label": "ENTITY",
+        "text": "domain"
+      },
+      {
+        "label": "ENTITY",
+        "text": "protein-domain"
+      },
+      {
+        "label": "ENTITY",
+        "text": "assignment"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q190.json",
+    "retrieval_total_seconds": 0.47,
+    "score_max": -0.2808452248573303,
+    "score_mean": -2.169181684652964,
+    "scores": [
+      -0.2808452248573303,
+      -2.8549413681030273,
+      -3.371758460998535
+    ],
+    "selected_abstracts": [
+      "OBJECTIVE: The RIB43A domain with coiled-coils 2 (RIBC2) encodes an uncharacterized vertebrate protein exhibiting similarity with Chlamydomonas protofilament ribbon proteins, required for ciliary motility. To date, no functional variants capable of triggering a change in the expression of RIBC2 have been reported. PATIENTS AND METHODS: The genotypes of rs2272804 in 30 individuals were identified with Sanger sequencing to estimate allele frequencies. Dual-Luciferase and mutagenesis assays were carried out to investigate the impact of rs2272804 on transcriptional and translational levels. The microarray data of 7 types of cancer were obtained from the Gene Expression Omnibus (GEO) to explore the role of rs2272804 in those diseases. RESULTS: In this study, we identified a common variant in the 5'UTR of RIBC2, rs2272804, which can create an upstream open reading frame (uORF) in the 5'UTR significantly inhibiting the expression of its host gene. Using Dual-Luciferase constructs, we found that this variant leads to an 85% reduction in translational efficiency, but only a 20% decrease was observed at the transcriptional level. In terms of population studies, mRNA levels of RIBC2 varied according to their rs2272804 genotypes. The \"A\" allele homozygotes, which created a uORF, showed the lowest transcriptional levels while the transcriptional activity of the \"C\" allele homozygotes without an uORF was the highest, consistent with the in-vitro studies. Furthermore, we explored its role in 7 types of cancer and identified RIBC2 as a significantly differentially expressed gene (DEG) in breast cancer (BRCA), ovarian serous cystadenocarcinoma (OV), and kidney renal clear cell carcinoma (KIRC). Finally, we showed that the overexpression of RIBC2 enhanced the expression of TRIM37 and down-regulated TRAF2. TRIM37 is a member of the tripartite motif (TRIM) family involved in developmental patterning and oncogenesis while TRAF2 is associated with the signal transduction from members of the TNF receptor superfamily. CONCLUSIONS: Our reports identified a common variant that exerts a dramatic impact on expression efficiency and provides further functional insight into RIBC2.",
+      "The p90 ribosomal S6 kinases (RSK) family of serine/threonine kinases comprises four isoforms (RSK1-4) that lie downstream of the ERK1/2 mitogen-activated protein kinase pathway. RSKs are implicated in fine tuning of cellular processes such as translation, transcription, proliferation, and motility. Previous work showed that pathogens such as Cardioviruses could hijack any of the four RSK isoforms to inhibit PKR activation or to disrupt cellular nucleocytoplasmic trafficking. In contrast, some reports suggest nonredundant functions for distinct RSK isoforms, whereas Coffin-Lowry syndrome has only been associated with mutations in the gene encoding RSK2. In this work, we used the analog-sensitive kinase strategy to ask whether the cellular substrates of distinct RSK isoforms differ. We compared the substrates of two of the most distant RSK isoforms: RSK1 and RSK4. We identified a series of potential substrates for both RSKs in cells and validated RanBP3, PDCD4, IRS2, and ZC3H11A as substrates of both RSK1 and RSK4, and SORBS2 as an RSK1 substrate. In addition, using mutagenesis and inhibitors, we confirmed analog-sensitive kinase data showing that endogenous RSKs phosphorylate TRIM33 at S1119. Our data thus identify a series of potential RSK substrates and suggest that the substrates of RSK1 and RSK4 largely overlap and that the specificity of the various RSK isoforms likely depends on their cell- or tissue-specific expression pattern.",
+      "BACKGROUND: NR5A1 encodes a transcription factor essential for adrenal and gonadal development. Gene variants are a known cause of heterogeneous 46,XY disorders of sex development (DSD), but the mechanisms underlying the phenotypic variability remain unclear. We investigated how different NR5A1 variants affect downstream gene regulation and contribute to DSD pathogenesis. METHODS: We analyzed four naturally occurring NR5A1 variants identified in patients with 46,XY DSD-two novel (p.Cys65Ser, p.His310Arg) and two previously reported (p.Cys30Ser, p.Gln329*). We performed protein and transcriptomic analyses to characterize variant effects and identify dysregulated and candidate target genes, validated by qPCR and luciferase assays. Transcriptomic and CUT&Tag analyses focused on the p.Gln329* truncating variant. RESULTS: All four variants occurred at conserved residues and resulted in reduced NR5A1 protein expression and impaired nuclear localization upon transfection in HEK293T cells. Transcriptomic analysis using the p.Gln329* variant revealed broad downregulation of genes involved in steroidogenesis, including CYP11A1, STAR, and CYP17A1. Notably, AMHR2 and STARD8 were significantly downregulated and showed reduced CUT&Tag signal in variant-transfected cells. Promoter assays confirmed that all variants diminished CYP11A1 and AMHR2 promoter activity. Only the p.Gln329* variant affected STARD8 promoter activity. CONCLUSIONS: These findings indicate that NR5A1 variants impair protein expression and localization, leading to transcriptional dysregulation of genes involved in steroid hormone biosynthesis and sexual development. Based on analysis of the p.Gln329* truncating variant, AMHR2 and STARD8 are strong candidate novel downstream targets of NR5A1, offering further insight into the mechanisms driving 46,XY DSD."
+    ],
+    "selected_pmids": [
+      "32329860",
+      "38342435",
+      "42260572"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1071
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T15:14:46.518869+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 32329860, relevance: -0.2808) ---\nOBJECTIVE: The RIB43A domain with coiled-coils 2 (RIBC2) encodes an uncharacterized vertebrate protein exhibiting similarity with Chlamydomonas protofilament ribbon proteins, required for ciliary motility. To date, no functional variants capable of triggering a change in the expression of RIBC2 have been reported. PATIENTS AND METHODS: The genotypes of rs2272804 in 30 individuals were identified with Sanger sequencing to estimate allele frequencies. Dual-Luciferase and mutagenesis assays were carried out to investigate the impact of rs2272804 on transcriptional and translational levels. The microarray data of 7 types of cancer were obtained from the Gene Expression Omnibus (GEO) to explore the role of rs2272804 in those diseases. RESULTS: In this study, we identified a common variant in the 5'UTR of RIBC2, rs2272804, which can create an upstream open reading frame (uORF) in the 5'UTR significantly inhibiting the expression of its host gene. Using Dual-Luciferase constructs, we found that this variant leads to an 85% reduction in translational efficiency, but only a 20% decrease was observed at the transcriptional level. In terms of population studies, mRNA levels of RIBC2 varied according to their rs2272804 genotypes. The \"A\" allele homozygotes, which created a uORF, showed the lowest transcriptional levels while the transcriptional activity of the \"C\" allele homozygotes without an uORF was the highest, consistent with the in-vitro studies. Furthermore, we explored its role in 7 types of cancer and identified RIBC2 as a significantly differentially expressed gene (DEG) in breast cancer (BRCA), ovarian serous cystadenocarcinoma (OV), and kidney renal clear cell carcinoma (KIRC). Finally, we showed that the overexpression of RIBC2 enhanced the expression of TRIM37 and down-regulated TRAF2. TRIM37 is a member of the tripartite motif (TRIM) family involved in developmental patterning and oncogenesis while TRAF2 is associated with the signal transduction from members of the TNF receptor superfamily. CONCLUSIONS: Our reports identified a common variant that exerts a dramatic impact on expression efficiency and provides further functional insight into RIBC2.\n\n--- Abstract 2 (PMID: 38342435, relevance: -2.8549) ---\nThe p90 ribosomal S6 kinases (RSK) family of serine/threonine kinases comprises four isoforms (RSK1-4) that lie downstream of the ERK1/2 mitogen-activated protein kinase pathway. RSKs are implicated in fine tuning of cellular processes such as translation, transcription, proliferation, and motility. Previous work showed that pathogens such as Cardioviruses could hijack any of the four RSK isoforms to inhibit PKR activation or to disrupt cellular nucleocytoplasmic trafficking. In contrast, some reports suggest nonredundant functions for distinct RSK isoforms, whereas Coffin-Lowry syndrome has only been associated with mutations in the gene encoding RSK2. In this work, we used the analog-sensitive kinase strategy to ask whether the cellular substrates of distinct RSK isoforms differ. We compared the substrates of two of the most distant RSK isoforms: RSK1 and RSK4. We identified a series of potential substrates for both RSKs in cells and validated RanBP3, PDCD4, IRS2, and ZC3H11A as substrates of both RSK1 and RSK4, and SORBS2 as an RSK1 substrate. In addition, using mutagenesis and inhibitors, we confirmed analog-sensitive kinase data showing that endogenous RSKs phosphorylate TRIM33 at S1119. Our data thus identify a series of potential RSK substrates and suggest that the substrates of RSK1 and RSK4 largely overlap and that the specificity of the various RSK isoforms likely depends on their cell- or tissue-specific expression pattern.\n\n--- Abstract 3 (PMID: 42260572, relevance: -3.3718) ---\nBACKGROUND: NR5A1 encodes a transcription factor essential for adrenal and gonadal development. Gene variants are a known cause of heterogeneous 46,XY disorders of sex development (DSD), but the mechanisms underlying the phenotypic variability remain unclear. We investigated how different NR5A1 variants affect downstream gene regulation and contribute to DSD pathogenesis. METHODS: We analyzed four naturally occurring NR5A1 variants identified in patients with 46,XY DSD-two novel (p.Cys65Ser, p.His310Arg) and two previously reported (p.Cys30Ser, p.Gln329*). We performed protein and transcriptomic analyses to characterize variant effects and identify dysregulated and candidate target genes, validated by qPCR and luciferase assays. Transcriptomic and CUT&Tag analyses focused on the p.Gln329* truncating variant. RESULTS: All four variants occurred at conserved residues and resulted in reduced NR5A1 protein expression and impaired nuclear localization upon transfection in HEK293T cells. Transcriptomic analysis using the p.Gln329* variant revealed broad downregulation of genes involved in steroidogenesis, including CYP11A1, STAR, and CYP17A1. Notably, AMHR2 and STARD8 were significantly downregulated and showed reduced CUT&Tag signal in variant-transfected cells. Promoter assays confirmed that all variants diminished CYP11A1 and AMHR2 promoter activity. Only the p.Gln329* variant affected STARD8 promoter activity. CONCLUSIONS: These findings indicate that NR5A1 variants impair protein expression and localization, leading to transcriptional dysregulation of genes involved in steroid hormone biosynthesis and sexual development. Based on analysis of the p.Gln329* truncating variant, AMHR2 and STARD8 are strong candidate novel downstream targets of NR5A1, offering further insight into the mechanisms driving 46,XY DSD.\n\n\n\n**Question:**\nIs rs6152 a protein-coding variant? If so, identify the affected AR protein region or domain; if not, explain why a protein-domain assignment is not applicable."
+}

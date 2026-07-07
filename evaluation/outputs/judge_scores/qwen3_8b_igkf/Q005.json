@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q005",
+      "randomization_seed": "20260706:Q005:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q005",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q005",
+      "error": null,
+      "id": "batch_req_6a4d52b888508190bf0f6235c842da01",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452279,
+          "created_at": 1783452267,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0677afa32dd4d422006a4d526b9850819d9cd5778a5202870d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q005"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0677afa32dd4d422006a4d526c0544819d8d84c5b71b097ca6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly answers that rs6152 is in a regulatory element, but does not identify the specific element requested.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Consistent with the reference that rs6152 is in a pELS regulatory element, but omits the element ID EH38D6112128.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Provides the yes/no answer and a broad enhancer annotation, but misses the key identifier EH38D6112128.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Does not overstate beyond the supplied evidence except for a reasonable shorthand description of pELS as enhancer-like.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question and identifies the regulatory element.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Matches the reference evidence: rs6152 is in EH38D6112128 labeled pELS.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes both the regulatory element ID and its label.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"States the supported conclusion without unsupported speculation.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Discusses how one might answer the question but does not answer it using the provided integrated data.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Contains material errors, including incorrectly placing rs6152 in TP53, and misses the provided regulatory element EH38D6112128.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the necessary answer that rs6152 is in EH38D6112128 labeled pELS.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Abstains despite sufficient supplied evidence and introduces unsupported incorrect claims.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that rs6152 is located in a regulatory element and names it.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly identifies EH38D6112128 and its pELS annotation, matching the reference.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the yes/no answer, the specific regulatory element ID, and the annotation label.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states the supported finding and appropriately uses cautious language for functional implication.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0677afa32dd4d422006a4d5272000c819da18339bcc192efaf",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2828,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1242,
+            "output_tokens_details": {
+              "reasoning_tokens": 504
+            },
+            "total_tokens": 4070
+          },
+          "user": null
+        },
+        "request_id": "208044ef-69e3-4939-8dc7-7c8e7f27f2ed",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "ea2a48135b0d21fdadf1202347b4b89029fd3eeb3a93f94835b7cc6c7b621ad5",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q005",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q005.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q005::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q005::R1",
+      "error": null,
+      "id": "batch_req_6a4d19a994188190ac937a87693b3b18",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437417,
+          "created_at": 1783437411,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f3e2f64288161a3006a4d18636f0c8195bb1f638da1f1f20e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q005"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f3e2f64288161a3006a4d186401988195a8e027ad595beb69",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":5,\"rationale\":\"The supplied graph context explicitly states that rs6152 is 'In Regulatory Element: EH38D6112128' with label 'pELS.' The answer correctly identifies this element.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer directly uses the relevant integrated graph evidence and identifies both the regulatory element ID and its label.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f3e2f64288161a3006a4d186892908195a564df1cd5de3ec9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2164,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 394,
+            "output_tokens_details": {
+              "reasoning_tokens": 300
+            },
+            "total_tokens": 2558
+          },
+          "user": null
+        },
+        "request_id": "1df4b51e-5808-49a3-a86f-df1b91e09f7c",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that rs6152 is located in a regulatory element and names it.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly identifies EH38D6112128 and its pELS annotation, matching the reference.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the yes/no answer, the specific regulatory element ID, and the annotation label.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The supplied graph context explicitly states that rs6152 is 'In Regulatory Element: EH38D6112128' with label 'pELS.' The answer correctly identifies this element.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer directly uses the relevant integrated graph evidence and identifies both the regulatory element ID and its label.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Accurately states the supported finding and appropriately uses cautious language for functional implication.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q005",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q005.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.254287+00:00"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q070",
+      "randomization_seed": "20260706:Q070:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q070",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q070",
+      "error": null,
+      "id": "batch_req_6a4d52bb38908190851166b2deef61d8",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452178,
+          "created_at": 1783452166,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_056a84b35b4cc6cc006a4d5205fec481918e50093c265e7c4a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q070"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_056a84b35b4cc6cc006a4d5206a9048191bedd0c59687759e5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses WNT10A in hair follicle biology and cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Correctly links WNT10A to Wnt signaling and hair follicle morphogenesis, but makes several specific claims about stem-cell activation, anagen maintenance, BMP/FGF crosstalk, and matrix differentiation that are not supported by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers development and cycling broadly, but relies on general Wnt biology rather than evidence specific to WNT10A and omits the limited nature of direct cycle-specific evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Includes some caveats, but still presents unsupported mechanistic and cycle-specific statements as likely facts.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question and focuses on what the provided context supports.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the supplied evidence supports involvement in hair follicle morphogenesis but does not define specific hair-cycle phase mechanisms.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Captures the key supported point and the evidence gap; could additionally mention ectodermal dysplasia-associated alopecia/hair abnormalities from the provided literature.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies inference and avoids overclaiming beyond the supplied evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses hair follicle development, maintenance, and cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Some statements are consistent with WNT10A involvement in hair follicle morphogenesis and ectodermal hair phenotypes, but claims about anagen entry, follicular stem/progenitor activation, and specific differentiation roles are not established by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides a broad synthesis including development, cycling, differentiation, and human phenotypes, but some components exceed the available evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Acknowledges uncertainty and redundancy, but still asserts several specific functions without adequate support.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately addresses WNT10A function in hair follicle biology and cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence: WNT10A is linked to hair follicle and epidermal morphogenesis, but detailed phase-specific cycling evidence is not provided.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key supported biological roles, related skin appendage context, pathway framing, and the absence of direct anagen/catagen/telogen evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Carefully distinguishes supported conclusions from plausible but unproven cycle-specific roles.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_056a84b35b4cc6cc006a4d520c422c8191b7097aa86a08c3fa",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3474,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1371,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4845
+          },
+          "user": null
+        },
+        "request_id": "28f1464b-b56b-4cad-a2ec-785ccdd45e91",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses hair follicle development, maintenance, and cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Some statements are consistent with WNT10A involvement in hair follicle morphogenesis and ectodermal hair phenotypes, but claims about anagen entry, follicular stem/progenitor activation, and specific differentiation roles are not established by the supplied evidence.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Provides a broad synthesis including development, cycling, differentiation, and human phenotypes, but some components exceed the available evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Acknowledges uncertainty and redundancy, but still asserts several specific functions without adequate support.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q070",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q070.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.159438+00:00"
+}

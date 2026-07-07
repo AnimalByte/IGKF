@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q168",
+      "randomization_seed": "20260706:Q168:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q168",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q168",
+      "error": null,
+      "id": "batch_req_6a4d540b2dc08190a4efa024a3519acf",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452597,
+          "created_at": 1783452580,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d2fa1c5607faa76006a4d53a436fc8196bf35349146dbd239",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q168"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d2fa1c5607faa76006a4d53a50d988196be152b9758656b9a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the evidence linking EDA2R to male pattern baldness.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the provided GWAS evidence: baldness-associated SNPs near EDA2R and appropriate caveats about association versus causality.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key genetic association evidence, population context, biological plausibility, and limitations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies that the evidence is association-based and not direct functional proof.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the relationship between EDA2R and male pattern baldness.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Generally accurate, but extends beyond the supplied evidence by claiming multiple GWAS/replication and emphasizing X-linked inheritance despite the provided African GWAS noting limited X-chromosome impact.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes genetic association, chromosomal context, biological plausibility, and caveats, but lacks the specific supplied African GWAS details.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Includes appropriate caution about association and linkage disequilibrium, though some claims are stated more broadly than supported.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses EDA2R and male pattern baldness, but includes substantial tangential mechanistic narrative.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Contains the correct core point about SNPs near EDA2R, but adds unsupported or erroneous claims about androgen signaling, TNFSF4 as an EDA2R ligand, and disease associations.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions the main association evidence and some biology, but the answer is diluted by unsupported mechanisms and misses a clear distinction between association and causality.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Over-interprets associative evidence into a mechanistic biological narrative, with only limited qualification at the end.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses evidence for EDA2R in male pattern baldness.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Provides unsupported specifics not present in the evidence packet, including particular studies, populations, SNPs, functional evidence, and replication claims; it also overstates functional proof.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers categories of evidence but does not use the specific supplied GWAS evidence and includes unverified details.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"States conclusions strongly and presents functional and replicated evidence without adequate caveats.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d2fa1c5607faa76006a4d53afa8248196aac282ce5c904950",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3311,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1660,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 4971
+          },
+          "user": null
+        },
+        "request_id": "15d8723c-a0bb-41b2-aa97-cb2154ad98d4",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses evidence for EDA2R in male pattern baldness.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Provides unsupported specifics not present in the evidence packet, including particular studies, populations, SNPs, functional evidence, and replication claims; it also overstates functional proof.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Covers categories of evidence but does not use the specific supplied GWAS evidence and includes unverified details.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States conclusions strongly and presents functional and replicated evidence without adequate caveats.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q168",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q168.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.250555+00:00"
+}

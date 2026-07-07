@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q177",
+      "randomization_seed": "20260706:Q177:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q177",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q177",
+      "error": null,
+      "id": "batch_req_6a4d540bb400819087b2ac80d412e45c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452669,
+          "created_at": 1783452655,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0df229fb749aa682006a4d53ef40508194bea2b5bbbe5db8df",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q177"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0df229fb749aa682006a4d53f03ad48194b10d9088b07d870a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and explicitly distinguishes absence of direct regulatory evidence from absence of supported inferred links.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied evidence: FOXA2 has only listed PPI associations, abstracts do not mention FOXA2, and no regulatory FOXA2-to-hair-gene relationship is supported.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the graph interactions, the relevant abstract context, and the direct versus inferred distinction.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming unsupported regulatory links and frames conclusions as evidence-limited.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses FOXA2, downstream hair-growth relevance, and separates direct from inferred/speculative links.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the packet: PPIs are not regulatory evidence, FOXA2 is absent from the abstracts, and no direct FOXA2-hair gene regulation is shown.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the listed FOXA2 interactors, explains the abstracts' limited relevance, and clearly labels direct versus speculative inference.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately identifies possible JAG1 speculation as unsupported and does not overclaim.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the direct versus inferred distinction, but is less tied to the provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly states no direct evidence, but introduces unsupported inferred links to Wnt, SHH, BMP, TGF-beta, coexpression, and network proximity not present in the packet.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers the general distinction but omits the actual FOXA2 PPI evidence and the hair-follicle/BCC abstract details.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Uses qualifying language, but still suggests inferred pathway connections without support from the supplied evidence.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses whether FOXA2 regulates hair-growth genes and distinguishes direct versus inferred links, but only generally.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The conclusion of no direct evidence is consistent with the packet, but it adds unsupported claims about FOXA2 expression in skin, interactions with hair-related transcription factors, and broad pathway examples not in the evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Does not discuss the provided FOXA2 PPI list or the specific hair-follicle keratin/BCC evidence, so important components of the packet are missing.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Qualifies indirect links as speculative, but still introduces unsupported inferences beyond the integrated evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0df229fb749aa682006a4d53f7e6c48194828553da3e845f97",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3726,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1410,
+            "output_tokens_details": {
+              "reasoning_tokens": 751
+            },
+            "total_tokens": 5136
+          },
+          "user": null
+        },
+        "request_id": "1aa33d02-459d-42e2-9ffe-24ac1a6a02c0",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "eb8f059290a0b5758f7f09bbf7ce946c4ce0b7c447d4b90e99312cfe40c63e78",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q177",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q177.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q177::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q177::R1",
+      "error": null,
+      "id": "batch_req_6a4d19bfd6408190983b668430002419",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437656,
+          "created_at": 1783437651,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b01dbc599efde66006a4d1953200081968e76a4a802b58d7d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q177"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b01dbc599efde66006a4d1953c9ec81969a0d57c8961beb29",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is well grounded in the supplied context: FOXA2 only has PPI edges listed, with no regulatory annotations, and the vector abstracts do not mention FOXA2 or establish FOXA2-to-hair-growth gene regulation.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses both graph and vector evidence, distinguishes PPI interactions from regulatory evidence, and correctly notes that hair follicle-related abstract content does not connect back to FOXA2.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b01dbc599efde66006a4d1957085c8196966dc5f936a7b6c2",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2304,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 408,
+            "output_tokens_details": {
+              "reasoning_tokens": 262
+            },
+            "total_tokens": 2712
+          },
+          "user": null
+        },
+        "request_id": "09de8c3e-4047-4585-a818-22d90cb7308b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question and explicitly distinguishes absence of direct regulatory evidence from absence of supported inferred links.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the supplied evidence: FOXA2 has only listed PPI associations, abstracts do not mention FOXA2, and no regulatory FOXA2-to-hair-gene relationship is supported.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the graph interactions, the relevant abstract context, and the direct versus inferred distinction.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is well grounded in the supplied context: FOXA2 only has PPI edges listed, with no regulatory annotations, and the vector abstracts do not mention FOXA2 or establish FOXA2-to-hair-growth gene regulation.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses both graph and vector evidence, distinguishes PPI interactions from regulatory evidence, and correctly notes that hair follicle-related abstract content does not connect back to FOXA2.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from claiming unsupported regulatory links and frames conclusions as evidence-limited.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q177",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q177.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.366182+00:00"
+}

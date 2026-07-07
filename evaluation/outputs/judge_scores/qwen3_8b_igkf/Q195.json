@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q195",
+      "randomization_seed": "20260706:Q195:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q195",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q195",
+      "error": null,
+      "id": "batch_req_6a4d540d06088190b2f89edd7cfa8feb",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452595,
+          "created_at": 1783452576,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03c49f79c83012da006a4d53a02d1881978746b3078d18935f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q195"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03c49f79c83012da006a4d53a0d8048197a9d6ff57dec390d1",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and clearly separates lack of direct dutasteride-LGR4 evidence from indirect pathway plausibility.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly identifies dutasteride targets as androgen-axis related and LGR4 as Wnt/R-spondin related, but adds some phenotype/pathway claims beyond the supplied evidence and slightly overstates plausibility.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers direct evidence, indirect mechanisms, and interpretation, though some discussion is broader than necessary and not fully grounded in the provided packet.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately qualifies the connection as indirect/speculative, but uses moderately strong plausibility language despite limited supplied evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers whether dutasteride is relevant to LGR4-linked phenotypes and distinguishes evidence levels.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied graph and abstracts: dutasteride targets SRD5A2/AR, LGR4 abstracts concern Wnt/R-spondin biology, and no direct link is shown.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers direct drug-gene evidence, disease/phenotype context, lack of LGR4 involvement, and weak speculative pathway-level connection.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Very appropriately limits conclusions to the supplied evidence and labels the pathway bridge as speculative.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses the main question and distinguishes direct evidence from speculative pathway-level ideas.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main conclusion is correct, but several LGR4 phenotype claims and the GPCR/androgen speculation are not supported by the provided evidence; it also does not explicitly cite the supplied SRD5A2/AR graph facts.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers dutasteride mechanism, LGR4 biology, direct evidence, and speculation, but omits some key supplied specifics such as LGR4/5/6 in CRC/neuroblastoma and dutasteride graph targets.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Generally cautious and clear that evidence is lacking, though it makes broad claims such as no published evidence without limiting to the supplied context.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question using the graph and literature context and separates direct from speculative evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that dutasteride targets SRD5A2/AR rather than LGR4 and that LGR4 evidence concerns Wnt/R-spondin signaling in CRC/neuroblastoma; speculative crosstalk is properly qualified.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes direct drug-gene assessment, pathway-level speculation, LGR4-linked disease/phenotype examples from the abstracts, and a clear conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly labels the dutasteride-LGR4 connection as unproven and speculative rather than asserted as established.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03c49f79c83012da006a4d53ad15448197aae5b5cce6b3ad4f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4086,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1766,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 5852
+          },
+          "user": null
+        },
+        "request_id": "3a91a7ed-1042-4945-874e-012bbf9d498c",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "077e11aeae3709105c322105563be219e6605886e03de530d24aaa05e4e838c0",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q195",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q195.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q195::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q195::R1",
+      "error": null,
+      "id": "batch_req_6a4d19c1e2848190ab85c58c90ec8a9a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437635,
+          "created_at": 1783437627,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07f75174ea7e745f006a4d193bd8a0819693f4d2c0a7901fe7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q195"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07f75174ea7e745f006a4d193c6e7481969feb0171cb0f802d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The main claims are grounded: Dutasteride targets SRD5A2 and AR, not LGR4, and LGR4 is linked in the supplied abstracts to CRC, high-risk neuroblastoma, Wnt/beta-catenin signaling, tumor heterogeneity, and plasticity. The speculative androgen-Wnt crosstalk claim is only weakly supported by the supplied context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"The answer appropriately uses the graph and the LGR4/RSPO/Wnt cancer abstracts to separate direct drug-gene evidence from speculation. It could have better used the SRD5A2/androgen synthesis abstract to clarify that Dutasteride-relevant androgen biology is distinct from the LGR4-linked disease evidence.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07f75174ea7e745f006a4d19419a6c8196970efbdfb7fbc9fe",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2045,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 722,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2767
+          },
+          "user": null
+        },
+        "request_id": "df60ef1c-78fe-46a5-ad09-0d7dbdb5dbd1",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question using the graph and literature context and separates direct from speculative evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that dutasteride targets SRD5A2/AR rather than LGR4 and that LGR4 evidence concerns Wnt/R-spondin signaling in CRC/neuroblastoma; speculative crosstalk is properly qualified.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes direct drug-gene assessment, pathway-level speculation, LGR4-linked disease/phenotype examples from the abstracts, and a clear conclusion.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The main claims are grounded: Dutasteride targets SRD5A2 and AR, not LGR4, and LGR4 is linked in the supplied abstracts to CRC, high-risk neuroblastoma, Wnt/beta-catenin signaling, tumor heterogeneity, and plasticity. The speculative androgen-Wnt crosstalk claim is only weakly supported by the supplied context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the graph and the LGR4/RSPO/Wnt cancer abstracts to separate direct drug-gene evidence from speculation. It could have better used the SRD5A2/androgen synthesis abstract to clarify that Dutasteride-relevant androgen biology is distinct from the LGR4-linked disease evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly labels the dutasteride-LGR4 connection as unproven and speculative rather than asserted as established.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q195",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q195.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.377812+00:00"
+}

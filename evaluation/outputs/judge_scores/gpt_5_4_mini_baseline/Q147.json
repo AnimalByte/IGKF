@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q147",
+      "randomization_seed": "20260706:Q147:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q147",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q147",
+      "error": null,
+      "id": "batch_req_6a4d5409c9108190bb93bb6a39bcbca3",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452612,
+          "created_at": 1783452600,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_023d145b347f4ac8006a4d53b824d08197aef78507a1e0019b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q147"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_023d145b347f4ac8006a4d53b8c6e08197ab9a9263d0d38ace",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses the balding versus non-balding scalp comparison and discusses sources and limitations.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Claims increased FGF5 in balding scalp and cites studies not present in the supplied abstracts; this is unsupported by the reference evidence, which contains no scalp or alopecia comparison.\"},\"completeness\":{\"score\":2,\"rationale\":\"Includes a conclusion, evidence, and limitations, but the key evidence is fabricated or unsupported by the provided abstracts.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not appropriately abstain despite insufficient evidence; instead asserts a specific expression difference.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the requested expression comparison and notes limitations.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"States that FGF5 is higher in balding scalp, but the supplied abstracts provide no direct evidence about balding or non-balding scalp.\"},\"completeness\":{\"score\":2,\"rationale\":\"Mentions evidence and limitations only generically and does not identify actual supporting abstracts because none are provided.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some qualifying language, but still makes an unsupported directional claim rather than abstaining.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the supplied abstracts do not support a balding versus non-balding scalp comparison.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the reference packet: the provided abstracts concern NPC, FGF19 cartilage biology, and tilapia FGF family analysis, not scalp or alopecia expression.\"},\"completeness\":{\"score\":5,\"rationale\":\"States the lack of direct evidence, identifies the relevant supplied sources, and explains the limitation clearly.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making a directional claim because the available evidence is insufficient.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the abstracts answer the expression-difference question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that the provided abstracts do not discuss FGF5 expression in balding versus non-balding scalp.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main conclusion and evidence limitations, though it could more explicitly name the specific PMID sources.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids unsupported inference and concludes the question cannot be answered from the supplied data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_023d145b347f4ac8006a4d53bdfb0c8197b4579e9ea17e794b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3262,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1105,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4367
+          },
+          "user": null
+        },
+        "request_id": "8bfd0f11-bdb3-4b78-931b-7342e71fe909",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the requested expression comparison and notes limitations.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "States that FGF5 is higher in balding scalp, but the supplied abstracts provide no direct evidence about balding or non-balding scalp.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Mentions evidence and limitations only generically and does not identify actual supporting abstracts because none are provided.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Uses some qualifying language, but still makes an unsupported directional claim rather than abstaining.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q147",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q147.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.235158+00:00"
+}

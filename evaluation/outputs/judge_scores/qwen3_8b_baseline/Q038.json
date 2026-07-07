@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q038",
+      "randomization_seed": "20260706:Q038:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q038",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q038",
+      "error": null,
+      "id": "batch_req_6a4d52b9bcd08190a0b0021b06895306",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452237,
+          "created_at": 1783452224,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09533d06d550a16e006a4d52402154819ca382580b14bd10be",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q038"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09533d06d550a16e006a4d5240bc20819c989ee46c9affc4df",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether rs4679956 has an annotated functional consequence and how it might affect the gene.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that rs4679956 is not mentioned in the supplied evidence and that no functional consequence can be determined from it.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers both requested parts: annotated consequence and possible gene effect, appropriately concluding that neither is supported by the provided data.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly abstains from unsupported inference due to lack of evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question and discusses possible impact on associated genes.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly notes that no functional consequence is annotated in the supplied context, but adds speculative regulatory interpretation involving KANSL1 that is not established by the evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Addresses absence of annotation, possible mechanisms, and limitations of the evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Clearly labels the regulatory interpretation as inference, though it still introduces unsupported speculation.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question directly but asserts a consequence not supported by the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Claims rs4679956 is annotated as a regulatory variant affecting expression, whereas the provided evidence contains no such annotation.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Provides a mechanism for gene impact but omits the key evidence-based point that no annotation is supplied.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Some qualification is included, but the core claim is unsupported.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Attempts to answer the question but shifts to unsupported gene-location and disease claims.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Introduces unsupported and likely erroneous claims about rs4679956 being in TTC3/TCTEX1D and associated biology, none of which appears in the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"States that the specific consequence is unclear, but the answer is dominated by unsupported details and does not rely on the provided context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Although it says the specific impact is unclear, it invents unsupported contextual claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09533d06d550a16e006a4d5247d248819caa519903033798be",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3168,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1425,
+            "output_tokens_details": {
+              "reasoning_tokens": 663
+            },
+            "total_tokens": 4593
+          },
+          "user": null
+        },
+        "request_id": "581ebfcf-b89c-48ae-a952-62d5b8871fc2",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Attempts to answer the question but shifts to unsupported gene-location and disease claims.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Introduces unsupported and likely erroneous claims about rs4679956 being in TTC3/TCTEX1D and associated biology, none of which appears in the supplied evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "States that the specific consequence is unclear, but the answer is dominated by unsupported details and does not rely on the provided context.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Although it says the specific impact is unclear, it invents unsupported contextual claims.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q038",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q038.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.136897+00:00"
+}

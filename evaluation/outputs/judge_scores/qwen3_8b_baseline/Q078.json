@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q078",
+      "randomization_seed": "20260706:Q078:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q078",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q078",
+      "error": null,
+      "id": "batch_req_6a4d52bba48c8190b72dd3cebb7bddb4",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452191,
+          "created_at": 1783452180,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01985e1008254a1f006a4d5214d3748191bb06cbfb3e6986ec",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q078"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01985e1008254a1f006a4d52157d8081919df2e800926883c8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether HDAC9 is linked to hair-loss treatments and concludes no.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Conclusion is consistent with the supplied evidence, but it includes an error classifying HDAC9 as class III and makes broader claims beyond the packet.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main answer, but adds unnecessary general hair-loss treatment discussion and does not focus tightly on the supplied evidence.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately abstains from claiming a link, though it overstates scope by referring to latest available evidence beyond the provided context.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and distinguishes HDAC9-targeting drugs from hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the evidence lists HDAC/HDAC9-related compounds but does not connect them to hair loss.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point and names the HDAC9-linked compounds while clarifying they are not shown as hair-loss therapies.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the conclusion based on the supplied evidence and avoids unsupported claims.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and provides treatment names.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Claims links to minoxidil, finasteride, dutasteride, latanoprost, and bimatoprost that are not supported by the reference evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides a list of treatments, but the listed links are unsupported and it omits the actual evidence context.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents unsupported conclusions and presents them confidently.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the evidence does not link HDAC9 to hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the supplied graph and abstracts, which do not mention hair loss treatments in relation to HDAC9.\"},\"completeness\":{\"score\":5,\"rationale\":\"Adequately states there is no direct link and identifies that the listed HDAC9-related drugs are for other contexts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the available evidence and does not overclaim.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01985e1008254a1f006a4d521b2570819191fc8e144675ae4f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3159,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1096,
+            "output_tokens_details": {
+              "reasoning_tokens": 508
+            },
+            "total_tokens": 4255
+          },
+          "user": null
+        },
+        "request_id": "2cb9feea-f788-4945-b5bc-193cbf4951e1",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether HDAC9 is linked to hair-loss treatments and concludes no.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Conclusion is consistent with the supplied evidence, but it includes an error classifying HDAC9 as class III and makes broader claims beyond the packet.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the main answer, but adds unnecessary general hair-loss treatment discussion and does not focus tightly on the supplied evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from claiming a link, though it overstates scope by referring to latest available evidence beyond the provided context.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q078",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q078.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.164886+00:00"
+}

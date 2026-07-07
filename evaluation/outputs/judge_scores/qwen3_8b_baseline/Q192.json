@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q192",
+      "randomization_seed": "20260706:Q192:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q192",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q192",
+      "error": null,
+      "id": "batch_req_6a4d540cecf08190b3f2c5eb63ab6e16",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452647,
+          "created_at": 1783452636,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a4c277ad1d4ee5e006a4d53dcc4d481968b293e6379021a0f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q192"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a4c277ad1d4ee5e006a4d53dd73e08196a01e796777e67559",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether the integrated data include conservation evidence and states the limitation.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately distinguishes available functional/phenotypic evidence from absent evolutionary-conservation evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the absence of conservation evidence and identifies what kinds of conservation data are missing.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inferring conservation from unrelated annotations.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the topic but does not give a definite answer about the integrated data.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Scientifically reasonable and avoids unsupported claims, but does not reflect the specific limitation as directly as needed.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions relevant types of conservation evidence and the possible limitation, but remains conditional and incomplete for the asked dataset.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing evidence when the dataset is not specified.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Discusses conservation evidence for LGR4 generally, but does not answer the integrated-data question directly.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Introduces unsupported claims about LGR4 conservation scores and regulatory conservation rather than relying on the provided integrated data.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not clearly state the dataset-specific limitation and adds generic, unnecessary material.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Some qualification is present, but it still provides an unsupported conservation summary.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the integrated data do not include evolutionary-conservation evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the described evidence types do not include comparative genomics or conservation annotations.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the key limitation, though with less detail than a fuller answer.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids making conservation claims beyond the available evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a4c277ad1d4ee5e006a4d53e2b2b4819684ac3201b3bbcf3b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1320,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1036,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2356
+          },
+          "user": null
+        },
+        "request_id": "778edc0e-0876-469c-9a83-7f8e2ce8ae6e",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Discusses conservation evidence for LGR4 generally, but does not answer the integrated-data question directly.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Introduces unsupported claims about LGR4 conservation scores and regulatory conservation rather than relying on the provided integrated data.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Does not clearly state the dataset-specific limitation and adds generic, unnecessary material.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Some qualification is present, but it still provides an unsupported conservation summary.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q192",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.266795+00:00"
+}

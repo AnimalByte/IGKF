@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q100",
+      "randomization_seed": "20260706:Q100:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q100",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q100",
+      "error": null,
+      "id": "batch_req_6a4d52bc7cdc8190b9c96c8f356335db",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452178,
+          "created_at": 1783452166,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0fd008d3eacdf2f4006a4d5206bd1481a3b4153c052129b2ce",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q100"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0fd008d3eacdf2f4006a4d52075be881a3b8306e895fa83c8d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses possible links between Wnt signaling and androgenetic alopecia, but does not ground the answer in the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Many claims are biologically plausible, but the supplied packet provides no direct AGA evidence; several statements are unsupported by the reference context.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers several mechanistic categories, but omits the key limitation that the provided evidence does not directly mention androgenetic alopecia.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Presents unsupported conclusions as established despite insufficient direct evidence in the supplied context.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether the provided evidence links Wnt signaling to androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the graph and abstracts do not directly mention or support androgenetic alopecia.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly covers the absence of direct evidence, though it could mention the limited skin-morphology relevance in the graph.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from inferring a link beyond the supplied evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly discusses Wnt signaling and androgenetic alopecia mechanisms.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Several claims are plausible in broader biomedical literature, but they are not supported by the supplied evidence packet, which lacks AGA-specific data.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Provides a broad mechanistic discussion, but fails to address that the supplied context contains no direct AGA evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Strongly asserts a disease mechanism and specific evidence such as DKK-1 without support from the provided packet.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the evidence question and distinguishes direct from indirect relevance.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied graph and abstracts: Wnt genes relate to skin-related phenotypes, but no direct androgenetic alopecia evidence is provided.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers both the available indirect biological relevance and the absence of direct AGA-specific evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the conclusion and avoids unsupported claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0fd008d3eacdf2f4006a4d520cb34081a3a0555228dea649ad",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3460,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1286,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4746
+          },
+          "user": null
+        },
+        "request_id": "4edccb94-b702-4e1b-a504-9b9d88a9c5d1",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly discusses Wnt signaling and androgenetic alopecia mechanisms.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Several claims are plausible in broader biomedical literature, but they are not supported by the supplied evidence packet, which lacks AGA-specific data.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Provides a broad mechanistic discussion, but fails to address that the supplied context contains no direct AGA evidence.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Strongly asserts a disease mechanism and specific evidence such as DKK-1 without support from the provided packet.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q100",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q100.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.180183+00:00"
+}

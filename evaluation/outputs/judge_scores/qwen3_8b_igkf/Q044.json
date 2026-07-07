@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q044",
+      "randomization_seed": "20260706:Q044:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q044",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q044",
+      "error": null,
+      "id": "batch_req_6a4d52ba280c819094f1978f6b273e30",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452186,
+          "created_at": 1783452165,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0774f6ab0e8c3f43006a4d52050778819fb330849585ab484f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q044"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0774f6ab0e8c3f43006a4d5205a404819f86e0b32c74e5149e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question by listing the genes from the supplied study context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"The listed genes match the genes present in the reference evidence: KANSL1, FAM186A, OPHN1, SPAG17, and CIROZ.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes all genes supported by the provided graph context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately notes that the context does not explicitly show the rs7313338-to-gene mapping while still providing the supported gene list.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question, but answers negatively despite relevant gene annotations being present in the supplied graph context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Incorrectly states that none of the listed genes are associated, whereas the reference context provides KANSL1, FAM186A, OPHN1, SPAG17, and CIROZ as relevant genes.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Mentions the available genes but fails to provide them as the answer.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Shows caution about insufficient explicit evidence, but overstates the absence of any association.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Does not use the supplied study context and asks for information that is already provided.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Introduces unsupported and likely erroneous claims about TTC3/TCTN3 and disease associations, none of which appear in the reference evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the relevant genes from the reference context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Although it asks for clarification, it also invents unsupported conclusions about the variant.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Responds to the general task but does not answer the specific question despite the study context being supplied.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Does not make a biomedical factual claim beyond a general statement about variant annotations differing by study.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Provides none of the genes requested.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Avoids unsupported guessing, but unnecessarily abstains given the provided reference context.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0774f6ab0e8c3f43006a4d5215a7d8819fac9b6c3cb6814361",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2876,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2304,
+            "output_tokens_details": {
+              "reasoning_tokens": 1552
+            },
+            "total_tokens": 5180
+          },
+          "user": null
+        },
+        "request_id": "8e77a4e1-4a12-46ac-8935-701d4dc18a25",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "6494dc980d8eef1ad93bca1dd92b4b46989a9640a92c9ce4f33594f4469ce386",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q044",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q044.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q044::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q044::R1",
+      "error": null,
+      "id": "batch_req_6a4d19aeb68081908a61af77779571f2",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437619,
+          "created_at": 1783437614,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_062e5d58fdb0f73a006a4d192e434c819799b24334f10d57d6",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q044"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_062e5d58fdb0f73a006a4d192f2dd08197b72fe04a9be13c91",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately states that rs7313338 is not mentioned in the supplied graph or vector context and limits the conclusion to the provided data.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the absence of rs7313338 in both the graph context and abstracts, without relying on external unsupported claims.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_062e5d58fdb0f73a006a4d19329c608197b07449681e8dc874",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2169,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 365,
+            "output_tokens_details": {
+              "reasoning_tokens": 249
+            },
+            "total_tokens": 2534
+          },
+          "user": null
+        },
+        "request_id": "d75dab50-4860-4742-98a6-2b39cd01e91f",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question, but answers negatively despite relevant gene annotations being present in the supplied graph context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly states that none of the listed genes are associated, whereas the reference context provides KANSL1, FAM186A, OPHN1, SPAG17, and CIROZ as relevant genes.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Mentions the available genes but fails to provide them as the answer.",
+      "score": 2.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that rs7313338 is not mentioned in the supplied graph or vector context and limits the conclusion to the provided data.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the absence of rs7313338 in both the graph context and abstracts, without relying on external unsupported claims.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Shows caution about insufficient explicit evidence, but overstates the absence of any association.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q044",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q044.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.278805+00:00"
+}

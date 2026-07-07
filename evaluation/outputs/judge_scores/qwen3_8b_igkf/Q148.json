@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q148",
+      "randomization_seed": "20260706:Q148:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q148",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q148",
+      "error": null,
+      "id": "batch_req_6a4d5409cbf0819082d159f2fb1c360d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452573,
+          "created_at": 1783452559,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01a9326e39acf91b006a4d538efe2481949973713638a8dfb9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q148"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01a9326e39acf91b006a4d539226308194aa4e042990fb5288",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses shared upstream regulators and distinguishes direct regulation from association, but reports an unsupported regulator.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"The supplied evidence does not support AR as a common direct regulator of AR, SRD5A2, and EDA2R; EDA2R is not represented.\"},\"completeness\":{\"score\":2,\"rationale\":\"Includes the requested categories, but the key conclusion is unsupported and omits the evidence limitation for EDA2R.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported direct regulation and autoregulation as supported rather than abstaining.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question format and distinguishes direct regulation from association.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Lists multiple regulators not supported by the provided evidence and asserts direct regulatory relationships absent from the packet.\"},\"completeness\":{\"score\":2,\"rationale\":\"Structurally complete, but the reported regulators are unsupported and no evidence-based common regulator is identified.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents unsupported conclusions instead of limiting claims to the supplied evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses whether common upstream regulators are supported, though with unnecessary gene-by-gene discussion.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Main conclusion that no shared upstream regulators are supported is consistent with the evidence, but it includes unsupported or imprecise claims about SRD5A2 direct regulation and EDA2R associations.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion and notes lack of EDA2R evidence, but adds unsupported details and does not cleanly separate association versus regulation throughout.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly abstains appropriately on common regulators, but some unsupported mechanistic statements reduce the score.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and distinguishes common direct regulators from associated upstream factors.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied evidence does not identify supported shared upstream regulators for AR, SRD5A2, and EDA2R, especially given no EDA2R evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers common direct regulators, associated factors, and the AR-SRD5A2 relationship without overclaiming.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits conclusions to the supplied evidence and abstains from unsupported regulator claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01a9326e39acf91b006a4d53982d748194b1dd7b078e6030e1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3835,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1124,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4959
+          },
+          "user": null
+        },
+        "request_id": "ddb1e4d7-b3ed-420c-a73b-39a3d3abd3ac",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "26b0c5c3347c520f548c0e5af5fb0ff48fad081d8b16a8ceca8c9782e711a188",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q148",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q148.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q148::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q148::R1",
+      "error": null,
+      "id": "batch_req_6a4d19bbf9c481908a04adc765864c5e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437676,
+          "created_at": 1783437669,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_083632dd211e3d08006a4d1965a3548190b161f074d67191dc",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q148"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_083632dd211e3d08006a4d196659748190a8207244e06f765a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": \"3\",\n    \"rationale\": \"The main conclusion that no shared upstream regulator of AR, SRD5A2, and EDA2R is supported is consistent with the supplied context, which contains AR evidence and SRD5A2 evidence but no EDA2R regulator evidence. However, several details are unsupported or overstated, including direct regulation of SRD5A2 by androgenic signaling, EDA2R hair follicle/disease claims, and treating some drug interactions or pathway associations as regulatory evidence.\"\n  },\n  \"context_utilization\": {\n    \"score\": \"3\",\n    \"rationale\": \"The answer uses some relevant AR and SRD5A2 evidence and recognizes the absence of support for a common regulator across all three genes. However, it relies partly on external knowledge, does not strictly report only supported common regulators, and does not cleanly distinguish upstream regulation from drug targeting, enzymatic activity, disease association, or pathway association.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_083632dd211e3d08006a4d196a73a8819094bc5ee6698dbd39",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2444,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 599,
+            "output_tokens_details": {
+              "reasoning_tokens": 370
+            },
+            "total_tokens": 3043
+          },
+          "user": null
+        },
+        "request_id": "54102f88-865f-41d0-8792-d08debce9b8b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses whether common upstream regulators are supported, though with unnecessary gene-by-gene discussion.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Main conclusion that no shared upstream regulators are supported is consistent with the evidence, but it includes unsupported or imprecise claims about SRD5A2 direct regulation and EDA2R associations.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers the key conclusion and notes lack of EDA2R evidence, but adds unsupported details and does not cleanly separate association versus regulation throughout.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The main conclusion that no shared upstream regulator of AR, SRD5A2, and EDA2R is supported is consistent with the supplied context, which contains AR evidence and SRD5A2 evidence but no EDA2R regulator evidence. However, several details are unsupported or overstated, including direct regulation of SRD5A2 by androgenic signaling, EDA2R hair follicle/disease claims, and treating some drug interactions or pathway associations as regulatory evidence.",
+      "score": 3.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses some relevant AR and SRD5A2 evidence and recognizes the absence of support for a common regulator across all three genes. However, it relies partly on external knowledge, does not strictly report only supported common regulators, and does not cleanly distinguish upstream regulation from drug targeting, enzymatic activity, disease association, or pathway association.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Mostly abstains appropriately on common regulators, but some unsupported mechanistic statements reduce the score.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q148",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q148.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.348174+00:00"
+}

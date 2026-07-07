@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.7361,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The question is outside the dataset's scope. The dataset focuses specifically on androgenetic alopecia (pattern hair loss) and does not contain evidence or data related to treatment options for breast cancer. Therefore, it is not possible to summarize breast cancer treatment options based on this dataset.",
+  "question_id": "Q203",
+  "question_text": "Does this androgenetic-alopecia-focused dataset contain sufficient evidence to summarize treatment options for breast cancer? If not, state that the question is outside the dataset's scope rather than answering from general knowledge.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 56,
+    "prompt_token_count": 100,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The question is outside the dataset's scope. The dataset focuses specifically on androgenetic alopecia (pattern hair loss) and does not contain evidence or data related to treatment options for breast cancer. Therefore, it is not possible to summarize breast cancer treatment options based on this dataset."
+      }
+    ],
+    "created": 1783431042,
+    "id": "cmpl-81bd5870-453e-46ac-b1c8-9325e79de04a",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 56,
+      "prompt_tokens": 79,
+      "total_tokens": 135
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:30:42.635310+00:00",
+  "user_prompt": "Does this androgenetic-alopecia-focused dataset contain sufficient evidence to summarize treatment options for breast cancer? If not, state that the question is outside the dataset's scope rather than answering from general knowledge."
+}

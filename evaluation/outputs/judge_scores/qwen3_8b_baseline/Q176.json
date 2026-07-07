@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q176",
+      "randomization_seed": "20260706:Q176:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q176",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q176",
+      "error": null,
+      "id": "batch_req_6a4d540bc1b08190a5c6c86aaf2778ed",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452628,
+          "created_at": 1783452599,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0818f2376ddd4909006a4d53b79f408193a6c21e3c9afae3fe",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q176"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0818f2376ddd4909006a4d53b83aa88193af2f709b44dad9fe",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly attempts to answer by listing genes linked to skin development or skin-related processes.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Includes the well-supported PDGFA and WNT10A, but adds many genes not shown to be identified in the study and makes unsupported or incorrect extensions from the evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Contains the key graph-supported genes but is overinclusive and diluted by unsupported additions.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents speculative and unsupported gene inclusions as definitive.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Recognizes the type of comparison needed but does not answer despite supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Makes no substantive biomedical claims, but incorrectly treats the provided evidence as insufficient.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the answer entirely.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains unnecessarily given that the evidence packet supports an answer.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question with the genes linked to skin development in the integrated evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies PDGFA and WNT10A as the graph-supported genes associated with skin development.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key supported genes without adding unsupported candidates.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the best-supported evidence.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":1,\"rationale\":\"Does not answer the question and instead requests information already provided in the evidence packet.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Contains no substantive biomedical claims, but the refusal is not justified by the supplied evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the supported genes entirely.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains unnecessarily rather than using the available evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0818f2376ddd4909006a4d53d07b2081939aaad8d8319dbdf0",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2762,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2564,
+            "output_tokens_details": {
+              "reasoning_tokens": 2070
+            },
+            "total_tokens": 5326
+          },
+          "user": null
+        },
+        "request_id": "60eef823-978d-41dd-ac1e-0a1ffd607c25",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Does not answer the question and instead requests information already provided in the evidence packet.",
+      "score": 1.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Contains no substantive biomedical claims, but the refusal is not justified by the supplied evidence.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Omits the supported genes entirely.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Abstains unnecessarily rather than using the available evidence.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q176",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q176.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.256179+00:00"
+}

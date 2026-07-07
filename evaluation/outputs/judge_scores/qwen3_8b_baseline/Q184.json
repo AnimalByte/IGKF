@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q184",
+      "randomization_seed": "20260706:Q184:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q184",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q184",
+      "error": null,
+      "id": "batch_req_6a4d540c4c0c8190a35c2b9598e36508",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452634,
+          "created_at": 1783452624,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_053f144214e64bc9006a4d53d07bf48194968035270e7e933d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q184"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_053f144214e64bc9006a4d53d13fec8194846a30875dca9b2f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether population allele-frequency information is reported for rs756853.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence, which contains no allele-frequency source or population context for rs756853.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"States the absence of allele-frequency information and explains the relevant limitation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids inventing a frequency, source, or population context.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and clearly addresses the question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly states that the provided graph and literature context do not report population allele-frequency information.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes the key limitation: no allele-frequency source, dataset, or population group is specified.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly qualifies the conclusion based on the available context without unsupported claims.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Answers the core question by stating that population allele-frequency information is not reported.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The main conclusion is correct, but the statement about being limited to genotyping results from specific studies or cohorts is not supported by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides the key limitation, though with an unsupported additional characterization of the available data.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Does not invent allele frequencies, but adds an unsupported claim about study/cohort genotyping data.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Partially addresses the question but does not provide the expected conclusion from the supplied integrated context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"It avoids false allele-frequency claims, but incorrectly frames the issue as lack of access rather than using the provided evidence to state that no allele-frequency information is reported.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not clearly state the dataset limitation supported by the evidence and instead requests additional information.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Abstains rather than inventing information, but overstates uncertainty despite sufficient supplied context to answer.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_053f144214e64bc9006a4d53d53a848194ba8b447e443621f5",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3080,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1143,
+            "output_tokens_details": {
+              "reasoning_tokens": 411
+            },
+            "total_tokens": 4223
+          },
+          "user": null
+        },
+        "request_id": "ac9e254d-9270-4767-99da-e490026cd6d3",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Answers the core question by stating that population allele-frequency information is not reported.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The main conclusion is correct, but the statement about being limited to genotyping results from specific studies or cohorts is not supported by the supplied evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Provides the key limitation, though with an unsupported additional characterization of the available data.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not invent allele frequencies, but adds an unsupported claim about study/cohort genotyping data.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q184",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q184.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.261752+00:00"
+}

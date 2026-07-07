@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.3166,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The comparison of the genetic basis between androgenetic alopecia (AGA) and telogen effluvium (TE) based on a single dataset is not supported. While both conditions involve hair loss, they have distinct etiologies and genetic underpinnings.\n\n- **Androgenetic Alopecia (AGA):** This is a genetically complex condition with a strong hereditary component. It is influenced by multiple genes, including those involved in androgen receptor function (e.g., *AR*), hair follicle biology, and hormonal regulation. Genome-wide association studies (GWAS) have identified several loci associated with AGA, such as *WNT16*, *FGF5*, and *EDAR*.\n\n- **Telogen Effluvium (TE):** This is typically a non-scarring, temporary form of hair loss triggered by stress, nutritional deficiencies, hormonal changes, or other systemic factors. It is not primarily a genetic disorder, though some genetic predispositions may influence an individual's susceptibility to stress-induced hair loss. However, there is limited evidence of specific genetic variants directly linked to TE.\n\n**Overlap:** There is no strong evidence of shared genetic loci between AGA and TE in the dataset. While both conditions involve hair follicle biology, the genetic mechanisms appear to be distinct. The dataset does not provide sufficient evidence to support a meaningful comparison of their genetic bases.\n\n**Conclusion:** The comparison of the genetic basis between androgenetic alopecia and telogen effluvium is not supported by the dataset. The genetic underpinnings of these two conditions are distinct, and the dataset lacks the necessary genetic markers or associations to draw a valid comparison.",
+  "question_id": "Q117",
+  "question_text": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare its genetic basis with telogen effluvium? Summarize supported overlap, or state that the comparison is not supported.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 343,
+    "prompt_token_count": 99,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The comparison of the genetic basis between androgenetic alopecia (AGA) and telogen effluvium (TE) based on a single dataset is not supported. While both conditions involve hair loss, they have distinct etiologies and genetic underpinnings.\n\n- **Androgenetic Alopecia (AGA):** This is a genetically complex condition with a strong hereditary component. It is influenced by multiple genes, including those involved in androgen receptor function (e.g., *AR*), hair follicle biology, and hormonal regulation. Genome-wide association studies (GWAS) have identified several loci associated with AGA, such as *WNT16*, *FGF5*, and *EDAR*.\n\n- **Telogen Effluvium (TE):** This is typically a non-scarring, temporary form of hair loss triggered by stress, nutritional deficiencies, hormonal changes, or other systemic factors. It is not primarily a genetic disorder, though some genetic predispositions may influence an individual's susceptibility to stress-induced hair loss. However, there is limited evidence of specific genetic variants directly linked to TE.\n\n**Overlap:** There is no strong evidence of shared genetic loci between AGA and TE in the dataset. While both conditions involve hair follicle biology, the genetic mechanisms appear to be distinct. The dataset does not provide sufficient evidence to support a meaningful comparison of their genetic bases.\n\n**Conclusion:** The comparison of the genetic basis between androgenetic alopecia and telogen effluvium is not supported by the dataset. The genetic underpinnings of these two conditions are distinct, and the dataset lacks the necessary genetic markers or associations to draw a valid comparison."
+      }
+    ],
+    "created": 1783430587,
+    "id": "cmpl-e1a4abaf-7c6d-4151-91bc-dc56303604e3",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 343,
+      "prompt_tokens": 78,
+      "total_tokens": 421
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:23:07.758105+00:00",
+  "user_prompt": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare its genetic basis with telogen effluvium? Summarize supported overlap, or state that the comparison is not supported."
+}

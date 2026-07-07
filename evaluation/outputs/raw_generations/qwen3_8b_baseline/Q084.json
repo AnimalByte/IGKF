@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.2397,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "LGR4 (Leucine-rich repeat-containing G-protein-coupled receptor 4) is involved in several biological pathways, and its inclusion in an \"integrated graph\" would depend on the specific context of the graph, such as whether it is a biological pathway map, a protein-protein interaction network, or a systems biology model. However, based on well-documented biological knowledge, LGR4 is known to be part of the following key pathways:\n\n1. **Wnt/\u03b2-catenin Signaling Pathway**  \n   LGR4 is a co-receptor for Wnt ligands and plays a critical role in modulating Wnt signaling by interacting with Frizzled receptors. This pathway is involved in cell proliferation, differentiation, and tissue homeostasis.\n\n2. **G Protein-Coupled Receptor (GPCR) Signaling Pathways**  \n   As a GPCR, LGR4 activates intracellular signaling cascades through G proteins, including Gs, Gi, and Gq, leading to various downstream effects such as cAMP production, calcium signaling, and MAPK activation.\n\n3. **LGR4 Signaling in Development and Disease**  \n   LGR4 is implicated in developmental processes, including intestinal stem cell renewal, and has been linked to diseases such as cancer (e.g., colorectal cancer) and metabolic disorders.\n\nIf you are referring to a specific integrated graph (e.g., from a systems biology database like Cytoscape, STRING, or a pathway database like KEGG or Reactome), please provide more details about the graph or its source so I can give a more precise answer.",
+  "question_id": "Q084",
+  "question_text": "Which pathways in the integrated graph include LGR4?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 335,
+    "prompt_token_count": 70,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "LGR4 (Leucine-rich repeat-containing G-protein-coupled receptor 4) is involved in several biological pathways, and its inclusion in an \"integrated graph\" would depend on the specific context of the graph, such as whether it is a biological pathway map, a protein-protein interaction network, or a systems biology model. However, based on well-documented biological knowledge, LGR4 is known to be part of the following key pathways:\n\n1. **Wnt/\u03b2-catenin Signaling Pathway**  \n   LGR4 is a co-receptor for Wnt ligands and plays a critical role in modulating Wnt signaling by interacting with Frizzled receptors. This pathway is involved in cell proliferation, differentiation, and tissue homeostasis.\n\n2. **G Protein-Coupled Receptor (GPCR) Signaling Pathways**  \n   As a GPCR, LGR4 activates intracellular signaling cascades through G proteins, including Gs, Gi, and Gq, leading to various downstream effects such as cAMP production, calcium signaling, and MAPK activation.\n\n3. **LGR4 Signaling in Development and Disease**  \n   LGR4 is implicated in developmental processes, including intestinal stem cell renewal, and has been linked to diseases such as cancer (e.g., colorectal cancer) and metabolic disorders.\n\nIf you are referring to a specific integrated graph (e.g., from a systems biology database like Cytoscape, STRING, or a pathway database like KEGG or Reactome), please provide more details about the graph or its source so I can give a more precise answer."
+      }
+    ],
+    "created": 1783430405,
+    "id": "cmpl-46304adb-edf1-4051-a0c1-e3f77242ecb7",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 335,
+      "prompt_tokens": 49,
+      "total_tokens": 384
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:20:05.940872+00:00",
+  "user_prompt": "Which pathways in the integrated graph include LGR4?"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "insufficient_evidence_likely",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q155",
+      "randomization_seed": "20260706:Q155:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q155",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q155",
+      "error": null,
+      "id": "batch_req_6a4d540a5e988190a33cc8d2aa60616d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452622,
+          "created_at": 1783452610,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0879937893e6e533006a4d53c273988195a7b79ffc05469b7b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q155"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0879937893e6e533006a4d53c300708195a4999e7dee48052d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses what would be required for haplotype analysis but does not directly evaluate the provided dataset.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"General statements about phased haplotypes, coverage, and annotation are scientifically accurate, but the answer is not well grounded in the supplied evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers general requirements and limitations but omits the key dataset-specific conclusion that the provided evidence lacks phased variant or haplotype data.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids unsupported claims, though it over-relies on conditional framing instead of concluding from the supplied dataset.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly discusses whether phased information is sufficient and states the key limitation, but is somewhat noncommittal about the provided dataset.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately states that unphased genotypes or summary data are insufficient to reconstruct haplotypes or infer haplotype-specific effects.\"},\"completeness\":{\"score\":4,\"rationale\":\"Identifies the central limitation: lack of explicit phase across the EDA2R locus. It does not fully reference the actual supplied dataset contents.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately qualifies uncertainty, though the supplied evidence is sufficient to say the dataset does not provide phased haplotype information.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset does not provide phased haplotype information for EDA2R.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the supplied evidence, which contains gene-level annotations and literature context but no phased variants or haplotype data.\"},\"completeness\":{\"score\":5,\"rationale\":\"States both the negative conclusion and the relevant limitation: absence of haplotype and genetic variation details.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not overstate; appropriately limits the conclusion to what can be inferred from the dataset.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and specifically answers the question for the EDA2R dataset.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately describes the supplied evidence as gene-level annotations and literature context lacking phased variants, haplotype blocks, or functional haplotype testing.\"},\"completeness\":{\"score\":5,\"rationale\":\"Clearly states the conclusion and gives a detailed limitation covering missing phased calls, linked SNPs, co-inheritance, and functional testing.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inferring a haplotype or functional consequence not supported by the evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0879937893e6e533006a4d53c8f2a881959e59765d7c1d34f9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3019,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1148,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4167
+          },
+          "user": null
+        },
+        "request_id": "1f93df1c-b910-4f25-b512-a31bde1e0ba0",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses what would be required for haplotype analysis but does not directly evaluate the provided dataset.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "General statements about phased haplotypes, coverage, and annotation are scientifically accurate, but the answer is not well grounded in the supplied evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers general requirements and limitations but omits the key dataset-specific conclusion that the provided evidence lacks phased variant or haplotype data.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids unsupported claims, though it over-relies on conditional framing instead of concluding from the supplied dataset.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q155",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q155.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.240750+00:00"
+}

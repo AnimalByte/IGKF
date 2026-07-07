@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q092",
+      "randomization_seed": "20260706:Q092:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q092",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q092",
+      "error": null,
+      "id": "batch_req_6a4d52bc16048190a0cf59d803a9f101",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452275,
+          "created_at": 1783452225,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06998cbf343c698c006a4d5240c87881a2b8baa2f07f82b7c7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q092"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06998cbf343c698c006a4d5242aed481a2886054eb088622b5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the general task of identifying high-impact variants in FOXA2 but does not answer using the provided study context.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The abstention is broadly appropriate given missing FOXA2 evidence, but it includes imprecise statements about high-impact annotations, such as implying missense or regulatory variants are typically high impact.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides a generic workflow rather than stating that no FOXA2 high-impact variants are supported by the supplied evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not invent variants and clearly states that a definitive list cannot be provided without study data.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether high-impact variants are mapped to FOXA2.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly notes that FOXA2 and FOXA2 variants are absent from the supplied evidence, though saying there are definitively no variants slightly overstates what absence of evidence proves.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key evidence: graph does not include FOXA2 and abstracts mention other FOX genes but not FOXA2.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly grounded in the provided context, but could more explicitly state that the conclusion is limited to the supplied evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately addresses the question about high-impact variants mapped to FOXA2.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied evidence contains no FOXA2-specific variant annotations and no identifiable high-impact FOXA2 variants.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the essential supporting points and the key caveat that the context is insufficient for a variant-level FOXA2 answer.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids claiming unsupported variants and clearly qualifies the conclusion based on the available context.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Recognizes the need for study data but does not use the provided context or answer whether any FOXA2 variants are identifiable.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"It makes no unsupported biomedical claims and appropriately indicates that variant-level data would be needed, though it omits the available evidence that FOXA2 is not mentioned.\"},\"completeness\":{\"score\":2,\"rationale\":\"Incomplete because it does not state that no high-impact FOXA2 variants can be identified from the supplied evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains from inventing variants and asks for the necessary data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06998cbf343c698c006a4d5258cfe881a2bdea6be472e078fb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2808,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1147,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3955
+          },
+          "user": null
+        },
+        "request_id": "f2e8cd1a-ef74-4be5-8a8a-11e2c6e1d84c",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the general task of identifying high-impact variants in FOXA2 but does not answer using the provided study context.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The abstention is broadly appropriate given missing FOXA2 evidence, but it includes imprecise statements about high-impact annotations, such as implying missense or regulatory variants are typically high impact.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Provides a generic workflow rather than stating that no FOXA2 high-impact variants are supported by the supplied evidence.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not invent variants and clearly states that a definitive list cannot be provided without study data.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q092",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q092.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.174810+00:00"
+}

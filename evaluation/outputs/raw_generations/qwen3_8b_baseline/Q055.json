@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.9752,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "EDA2R (Ectodysplasin A2 Receptor) is a member of the tumor necrosis factor (TNF) receptor superfamily and plays a role in hair follicle biology and cycling. It is primarily known for its involvement in the development of hair follicles and the regulation of hair growth cycles.\n\nEDA2R is expressed in hair follicle stem cells and is involved in the signaling pathways that regulate hair follicle development and cycling. It interacts with its ligand, EDA (Ectodysplasin A), which is crucial for the development of ectodermal structures, including hair follicles. The EDA-EDA2R signaling pathway is essential for the initiation of hair follicle development during embryogenesis and for the maintenance of hair follicle stem cells.\n\nIn the context of hair follicle cycling, EDA2R has been implicated in the regulation of the hair growth cycle, particularly in the anagen (growth) phase. It may contribute to the maintenance of the hair follicle stem cell population and the transition between different phases of the hair cycle.\n\nMutations in the EDA2R gene have been associated with certain genetic disorders, such as hypohidrotic ectodermal dysplasia, which can affect hair growth and other ectodermal structures.\n\nIn summary, EDA2R is involved in hair follicle development and cycling, particularly through its interaction with EDA, and plays a role in maintaining hair follicle stem cells and regulating the hair growth cycle.",
+  "question_id": "Q055",
+  "question_text": "What is known about the function of EDA2R in hair-follicle biology and cycling?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 306,
+    "prompt_token_count": 80,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "EDA2R (Ectodysplasin A2 Receptor) is a member of the tumor necrosis factor (TNF) receptor superfamily and plays a role in hair follicle biology and cycling. It is primarily known for its involvement in the development of hair follicles and the regulation of hair growth cycles.\n\nEDA2R is expressed in hair follicle stem cells and is involved in the signaling pathways that regulate hair follicle development and cycling. It interacts with its ligand, EDA (Ectodysplasin A), which is crucial for the development of ectodermal structures, including hair follicles. The EDA-EDA2R signaling pathway is essential for the initiation of hair follicle development during embryogenesis and for the maintenance of hair follicle stem cells.\n\nIn the context of hair follicle cycling, EDA2R has been implicated in the regulation of the hair growth cycle, particularly in the anagen (growth) phase. It may contribute to the maintenance of the hair follicle stem cell population and the transition between different phases of the hair cycle.\n\nMutations in the EDA2R gene have been associated with certain genetic disorders, such as hypohidrotic ectodermal dysplasia, which can affect hair growth and other ectodermal structures.\n\nIn summary, EDA2R is involved in hair follicle development and cycling, particularly through its interaction with EDA, and plays a role in maintaining hair follicle stem cells and regulating the hair growth cycle."
+      }
+    ],
+    "created": 1783430260,
+    "id": "cmpl-002fa5f6-b711-40ba-9e46-4539f3dbab2d",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 306,
+      "prompt_tokens": 59,
+      "total_tokens": 365
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:17:40.070467+00:00",
+  "user_prompt": "What is known about the function of EDA2R in hair-follicle biology and cycling?"
+}

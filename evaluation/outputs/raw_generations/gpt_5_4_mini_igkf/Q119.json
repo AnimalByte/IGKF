@@ -1,0 +1,228 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437058,
+    "created_at": 1783437057,
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q119",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "9f8f839f-bd3f-4d11-a397-6d473bf74004",
+    "response_id": "resp_0eb323ed4e1ec769006a4d17010d388196bf0f72d58ac10297",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 1675,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1912
+    }
+  },
+  "parsed_answer": "Based on the supplied GWAS graph for **Hair/balding pattern: Pattern 1 (male pattern baldness)**, the **most strongly associated variants** map to these genes:\n\n- **KANSL1**\n- **FAM186A**\n- **OPHN1**\n- **SPAG17**\n- **CIROZ**\n\nAmong these, **KANSL1, FAM186A, OPHN1, and SPAG17** are the clearest gene links in the graph context. **CIROZ** is also listed but has no PPI/pathway detail provided.\n\nBiologically, the connected genes suggest possible involvement of:\n- **chromatin/histone regulation** via **KANSL1**\n- **Rho GTPase signaling** and cytoskeletal regulation via **OPHN1**\n- and more limited/unclear mechanisms for **FAM186A** and **SPAG17**\n\nThe literature context reinforces that male-pattern baldness is highly heritable and genetically complex, but it does **not** specifically name these graph genes as established MPHL loci. So, the answer supported by the graph is the set above.",
+  "question_id": "Q119",
+  "question_text": "Which genes are linked to the most strongly associated variants for male pattern baldness in this study?",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q119",
+    "error": null,
+    "id": "batch_req_6a4d175fed4c819093b169896b941fc3",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437058,
+        "created_at": 1783437057,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_0eb323ed4e1ec769006a4d17010d388196bf0f72d58ac10297",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_igkf",
+          "question_id": "Q119"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "Based on the supplied GWAS graph for **Hair/balding pattern: Pattern 1 (male pattern baldness)**, the **most strongly associated variants** map to these genes:\n\n- **KANSL1**\n- **FAM186A**\n- **OPHN1**\n- **SPAG17**\n- **CIROZ**\n\nAmong these, **KANSL1, FAM186A, OPHN1, and SPAG17** are the clearest gene links in the graph context. **CIROZ** is also listed but has no PPI/pathway detail provided.\n\nBiologically, the connected genes suggest possible involvement of:\n- **chromatin/histone regulation** via **KANSL1**\n- **Rho GTPase signaling** and cytoskeletal regulation via **OPHN1**\n- and more limited/unclear mechanisms for **FAM186A** and **SPAG17**\n\nThe literature context reinforces that male-pattern baldness is highly heritable and genetically complex, but it does **not** specifically name these graph genes as established MPHL loci. So, the answer supported by the graph is the set above.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_0eb323ed4e1ec769006a4d17019cd881968244e2bc430ba034",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 1675,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 237,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1912
+        },
+        "user": null
+      },
+      "request_id": "9f8f839f-bd3f-4d11-a397-6d473bf74004",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      23.414688110351562,
+      23.541269302368164,
+      24.82781410217285,
+      26.849119186401367,
+      26.92091941833496,
+      27.597984313964844,
+      28.502342224121094,
+      28.8715763092041,
+      29.014026641845703,
+      29.14295196533203,
+      29.20952796936035,
+      29.270164489746094,
+      29.308469772338867,
+      29.49303436279297,
+      29.536252975463867
+    ],
+    "candidate_pmids": [
+      "37737258",
+      "29220522",
+      "40134218",
+      "41710014",
+      "32776659",
+      "39245941",
+      "39267058",
+      "42269416",
+      "33593615",
+      "39032379",
+      "41645416",
+      "34984527",
+      "34980917",
+      "39523115",
+      "36207305"
+    ],
+    "expanded_retrieval_query": "Which genes are linked to the most strongly associated variants for male pattern baldness in this study? This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "final_context": "Graph Context:\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\nVector Context:\n--- Abstract 1 (PMID: 40134218, relevance: 4.4151) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 37737258, relevance: 4.1577) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 3 (PMID: 39267058, relevance: -0.2030) ---\nBACKGROUND: Spermatogenic failure is one of the leading causes of male infertility and its genetic etiology has not yet been fully understood. METHODS: The study screened a cohort of patients (n = 167) with primary male infertility in contrast to 210 normally fertile men using whole exome sequencing (WES). The expression analysis of the candidate genes based on public single cell sequencing data was performed using the R language Seurat package. RESULTS: No pathogenic copy number variations (CNVs) related to male infertility were identified using the the GATK-gCNV tool. Accordingly, variants of 17 known causative (five X-linked and twelve autosomal) genes, including ACTRT1, ADAD2, AR, BCORL1, CFAP47, CFAP54, DNAH17, DNAH6, DNAH7, DNAH8, DNAH9, FSIP2, MSH4, SLC9C1, TDRD9, TTC21A, and WNK3, were identified in 23 patients. Variants of 12 candidate (seven X-linked and five autosomal) genes were identified, among which CHTF18, DDB1, DNAH12, FANCB, GALNT3, OPHN1, SCML2, UPF3A, and ZMYM3 had altered fertility and semen characteristics in previously described knockout mouse models, whereas MAGEC1,RBMXL3, and ZNF185 were recurrently detected in patients with male factor infertility. The human testis single cell-sequencing database reveals that CHTF18, DDB1 and MAGEC1 are preferentially expressed in spermatogonial stem cells. DNAH12 and GALNT3 are found primarily in spermatocytes and early spermatids. UPF3A is present at a high level throughout spermatogenesis except in elongating spermatids. The testicular expression profiles of these candidate genes underlie their potential roles in spermatogenesis and the pathogenesis of male infertility. CONCLUSION: WES is an effective tool in the genetic diagnosis of primary male infertility. Our findings provide useful information on precise treatment, genetic counseling, and birth defect prevention for male factor infertility.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "graph_context_length": 1378,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3547,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q119.json",
+    "retrieval_total_seconds": 34.5282,
+    "score_max": 4.415096282958984,
+    "score_mean": 2.789926807085673,
+    "scores": [
+      4.415096282958984,
+      4.157658100128174,
+      -0.20297396183013916
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "Male-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.",
+      "BACKGROUND: Spermatogenic failure is one of the leading causes of male infertility and its genetic etiology has not yet been fully understood. METHODS: The study screened a cohort of patients (n = 167) with primary male infertility in contrast to 210 normally fertile men using whole exome sequencing (WES). The expression analysis of the candidate genes based on public single cell sequencing data was performed using the R language Seurat package. RESULTS: No pathogenic copy number variations (CNVs) related to male infertility were identified using the the GATK-gCNV tool. Accordingly, variants of 17 known causative (five X-linked and twelve autosomal) genes, including ACTRT1, ADAD2, AR, BCORL1, CFAP47, CFAP54, DNAH17, DNAH6, DNAH7, DNAH8, DNAH9, FSIP2, MSH4, SLC9C1, TDRD9, TTC21A, and WNK3, were identified in 23 patients. Variants of 12 candidate (seven X-linked and five autosomal) genes were identified, among which CHTF18, DDB1, DNAH12, FANCB, GALNT3, OPHN1, SCML2, UPF3A, and ZMYM3 had altered fertility and semen characteristics in previously described knockout mouse models, whereas MAGEC1,RBMXL3, and ZNF185 were recurrently detected in patients with male factor infertility. The human testis single cell-sequencing database reveals that CHTF18, DDB1 and MAGEC1 are preferentially expressed in spermatogonial stem cells. DNAH12 and GALNT3 are found primarily in spermatocytes and early spermatids. UPF3A is present at a high level throughout spermatogenesis except in elongating spermatids. The testicular expression profiles of these candidate genes underlie their potential roles in spermatogenesis and the pathogenesis of male infertility. CONCLUSION: WES is an effective tool in the genetic diagnosis of primary male infertility. Our findings provide useful information on precise treatment, genetic counseling, and birth defect prevention for male factor infertility."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "37737258",
+      "39267058"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1086
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T15:14:46.497493+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: 4.4151) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 37737258, relevance: 4.1577) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 3 (PMID: 39267058, relevance: -0.2030) ---\nBACKGROUND: Spermatogenic failure is one of the leading causes of male infertility and its genetic etiology has not yet been fully understood. METHODS: The study screened a cohort of patients (n = 167) with primary male infertility in contrast to 210 normally fertile men using whole exome sequencing (WES). The expression analysis of the candidate genes based on public single cell sequencing data was performed using the R language Seurat package. RESULTS: No pathogenic copy number variations (CNVs) related to male infertility were identified using the the GATK-gCNV tool. Accordingly, variants of 17 known causative (five X-linked and twelve autosomal) genes, including ACTRT1, ADAD2, AR, BCORL1, CFAP47, CFAP54, DNAH17, DNAH6, DNAH7, DNAH8, DNAH9, FSIP2, MSH4, SLC9C1, TDRD9, TTC21A, and WNK3, were identified in 23 patients. Variants of 12 candidate (seven X-linked and five autosomal) genes were identified, among which CHTF18, DDB1, DNAH12, FANCB, GALNT3, OPHN1, SCML2, UPF3A, and ZMYM3 had altered fertility and semen characteristics in previously described knockout mouse models, whereas MAGEC1,RBMXL3, and ZNF185 were recurrently detected in patients with male factor infertility. The human testis single cell-sequencing database reveals that CHTF18, DDB1 and MAGEC1 are preferentially expressed in spermatogonial stem cells. DNAH12 and GALNT3 are found primarily in spermatocytes and early spermatids. UPF3A is present at a high level throughout spermatogenesis except in elongating spermatids. The testicular expression profiles of these candidate genes underlie their potential roles in spermatogenesis and the pathogenesis of male infertility. CONCLUSION: WES is an effective tool in the genetic diagnosis of primary male infertility. Our findings provide useful information on precise treatment, genetic counseling, and birth defect prevention for male factor infertility.\n\n\n\n**Question:**\nWhich genes are linked to the most strongly associated variants for male pattern baldness in this study?"
+}

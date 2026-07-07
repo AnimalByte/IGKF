@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.0488,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Dutasteride is a 5-alpha-reductase inhibitor used in the treatment of androgenetic alopecia (pattern hair loss). Its mechanism of action involves inhibiting the conversion of testosterone to dihydrotestosterone (DHT), a hormone implicated in hair loss.\n\nDutasteride works by inhibiting both isoforms of the 5-alpha-reductase enzyme: 5-alpha-reductase type 1 and type 2. While finasteride (another 5-alpha-reductase inhibitor) primarily inhibits type 2, dutasteride inhibits both isoforms more effectively. This dual inhibition leads to a more significant reduction in DHT levels in the scalp, which is associated with the miniaturization of hair follicles in androgenetic alopecia.\n\nBy reducing DHT levels, dutasteride helps to prevent further miniaturization of hair follicles and may promote the growth of thicker, healthier hair. It is typically applied topically or taken orally, depending on the formulation.",
+  "question_id": "Q132",
+  "question_text": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 204,
+    "prompt_token_count": 77,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Dutasteride is a 5-alpha-reductase inhibitor used in the treatment of androgenetic alopecia (pattern hair loss). Its mechanism of action involves inhibiting the conversion of testosterone to dihydrotestosterone (DHT), a hormone implicated in hair loss.\n\nDutasteride works by inhibiting both isoforms of the 5-alpha-reductase enzyme: 5-alpha-reductase type 1 and type 2. While finasteride (another 5-alpha-reductase inhibitor) primarily inhibits type 2, dutasteride inhibits both isoforms more effectively. This dual inhibition leads to a more significant reduction in DHT levels in the scalp, which is associated with the miniaturization of hair follicles in androgenetic alopecia.\n\nBy reducing DHT levels, dutasteride helps to prevent further miniaturization of hair follicles and may promote the growth of thicker, healthier hair. It is typically applied topically or taken orally, depending on the formulation."
+      }
+    ],
+    "created": 1783430653,
+    "id": "cmpl-ca467b80-b344-493c-8333-e3da03b40daf",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 204,
+      "prompt_tokens": 56,
+      "total_tokens": 260
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:24:13.507852+00:00",
+  "user_prompt": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?"
+}

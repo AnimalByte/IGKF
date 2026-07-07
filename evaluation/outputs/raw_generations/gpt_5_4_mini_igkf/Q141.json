@@ -1,0 +1,265 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437070,
+    "created_at": 1783437068,
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q141",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "5b152e81-b566-48d0-9fa9-1ae741da94de",
+    "response_id": "resp_00065616beb99ca2006a4d170c9a7481959db875a75f7b17ea",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 1596,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 381,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1977
+    }
+  },
+  "parsed_answer": "Based on the supplied graph and abstracts, **no direct connection between FGF5 and Hedgehog signaling is supported**, and **no direct connection between FGF5 and Wnt signaling is supported**.\n\n### What is supported for FGF5\n- **FGF5** is a growth factor gene with functions in:\n  - regulation of cell migration\n  - positive regulation of cell division/proliferation\n  - neurogenesis\n- It is associated with disease/phenotype signals including **cancer**, **trichomegaly**, and **ocular/orbital abnormalities**.\n\n### Hedgehog signaling\n- The only Hedgehog-related abstract is about **Gli2**, **FoxM1**, and renal fibrosis.\n- **FGF5 is not mentioned** in that study and the graph provides **no Hedgehog pathway interaction or GO annotation for FGF5**.\n- So, **a Hedgehog connection for FGF5 is absent in the provided evidence**.\n\n### Wnt signaling\n- The only Wnt-related content appears indirectly in the limb-development abstract, which mentions **Wnt7** as part of embryologic limb patterning.\n- **FGF5 is not linked to Wnt in the graph**, and none of the abstracts provide a direct mechanistic or interaction-based connection between **FGF5** and Wnt signaling.\n- So, **a Wnt connection for FGF5 is also absent in the provided evidence**.\n\n### Bottom line\n- **Supported:** FGF5 is a growth factor involved in cell migration and proliferation, with disease associations including cancer.\n- **Not supported:** direct links from **FGF5 to Hedgehog signaling** or **FGF5 to Wnt signaling**.\n\nIf you want, I can also turn this into a one-sentence \u201cevidence summary\u201d suitable for a manuscript or table.",
+  "question_id": "Q141",
+  "question_text": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent.",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q141",
+    "error": null,
+    "id": "batch_req_6a4d1761604c81908d225b14dd0ccb43",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437070,
+        "created_at": 1783437068,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_00065616beb99ca2006a4d170c9a7481959db875a75f7b17ea",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_igkf",
+          "question_id": "Q141"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "Based on the supplied graph and abstracts, **no direct connection between FGF5 and Hedgehog signaling is supported**, and **no direct connection between FGF5 and Wnt signaling is supported**.\n\n### What is supported for FGF5\n- **FGF5** is a growth factor gene with functions in:\n  - regulation of cell migration\n  - positive regulation of cell division/proliferation\n  - neurogenesis\n- It is associated with disease/phenotype signals including **cancer**, **trichomegaly**, and **ocular/orbital abnormalities**.\n\n### Hedgehog signaling\n- The only Hedgehog-related abstract is about **Gli2**, **FoxM1**, and renal fibrosis.\n- **FGF5 is not mentioned** in that study and the graph provides **no Hedgehog pathway interaction or GO annotation for FGF5**.\n- So, **a Hedgehog connection for FGF5 is absent in the provided evidence**.\n\n### Wnt signaling\n- The only Wnt-related content appears indirectly in the limb-development abstract, which mentions **Wnt7** as part of embryologic limb patterning.\n- **FGF5 is not linked to Wnt in the graph**, and none of the abstracts provide a direct mechanistic or interaction-based connection between **FGF5** and Wnt signaling.\n- So, **a Wnt connection for FGF5 is also absent in the provided evidence**.\n\n### Bottom line\n- **Supported:** FGF5 is a growth factor involved in cell migration and proliferation, with disease associations including cancer.\n- **Not supported:** direct links from **FGF5 to Hedgehog signaling** or **FGF5 to Wnt signaling**.\n\nIf you want, I can also turn this into a one-sentence \u201cevidence summary\u201d suitable for a manuscript or table.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_00065616beb99ca2006a4d170ce7dc8195ab59bd498d592c2a",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 1596,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 381,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1977
+        },
+        "user": null
+      },
+      "request_id": "5b152e81-b566-48d0-9fa9-1ae741da94de",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      22.76681137084961,
+      23.665325164794922,
+      23.69634246826172,
+      24.209049224853516,
+      24.55134391784668,
+      25.11722183227539,
+      25.838071823120117,
+      26.801042556762695,
+      26.806076049804688,
+      26.897951126098633,
+      26.898496627807617,
+      27.004596710205078,
+      27.204845428466797,
+      27.670955657958984,
+      27.689685821533203
+    ],
+    "candidate_pmids": [
+      "40765829",
+      "40001587",
+      "41296172",
+      "34275739",
+      "41056281",
+      "35186941",
+      "41689580",
+      "40835866",
+      "33741282",
+      "41422176",
+      "42295123",
+      "42228139",
+      "34564982",
+      "37690223",
+      "40209540"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent. Entity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)",
+    "final_context": "Graph Context:\nEntity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)\n\nVector Context:\n--- Abstract 1 (PMID: 42295123, relevance: -3.5884) ---\nAbnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.\n\n--- Abstract 2 (PMID: 40001587, relevance: -3.7695) ---\nBACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.\n\n--- Abstract 3 (PMID: 41689580, relevance: -4.3646) ---\nCongenital upper limb differences occur in approximately 20-30 per 10,000 live births. These differences frequently prompt reconstructive surgery and may present in isolation or as markers of systemic syndromes. Embryologically, limb development depends on coordinated signaling along the proximal-distal (apical ectodermal ridge/fibroblast growth factor [FGF]), radial-ulnar (zone of polarizing activity/sonic hedgehog), and dorsal-ventral (wingless-related integration site 7) axes, whose disruptions lead to specific phenotypic patterns. Among upper limb differences, those with a well-established genetic basis can be subcategorized as radial longitudinal deficiency, polydactyly, syndactyly, brachydactyly, ectrodactyly, and macrodactyly. Each phenotype exhibits distinctive radiographic features and associated clinical presentations, which guide syndrome-specific diagnosis. Notable genetic associations include TBX5 (Holt-Oram), FANCA (Fanconi anemia), GLI3 (Greig cephalopolysyndactyly), FGFR2 (Apert), and TP63 (ectrodactyly-ectodermal dysplasia clefting), as well as somatic mosaic mutations (eg, PIK3CA, AKT1, and RASA1) linked to overgrowth syndromes (eg, congenital lipomatous overgrowth, vascular differences, epidermal nevi, and spinal/skeletal differences; Proteus; and Parkes-Weber). Recognition of these patterns relies on imaging and targeted genetic testing. Advances in genomic sequencing have clarified the etiologies of previously classified associations, revealing monogenic or mosaic origins. Early and accurate syndromic identification enables coordinated care, informs management planning, and facilitates multidisciplinary collaboration to optimize functional and psychosocial outcomes.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)",
+    "graph_context_length": 758,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3296,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "connections"
+      },
+      {
+        "label": "ENTITY",
+        "text": "fgf5"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hedgehog"
+      },
+      {
+        "label": "ENTITY",
+        "text": "wnt signaling"
+      },
+      {
+        "label": "ENTITY",
+        "text": "links"
+      },
+      {
+        "label": "ENTITY",
+        "text": "state"
+      },
+      {
+        "label": "ENTITY",
+        "text": "connection"
+      },
+      {
+        "label": "ENTITY",
+        "text": "absent"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q141.json",
+    "retrieval_total_seconds": 0.4083,
+    "score_max": -3.5883874893188477,
+    "score_mean": -3.907502015431722,
+    "scores": [
+      -3.5883874893188477,
+      -3.769519329071045,
+      -4.364599227905273
+    ],
+    "selected_abstracts": [
+      "Abnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.",
+      "BACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.",
+      "Congenital upper limb differences occur in approximately 20-30 per 10,000 live births. These differences frequently prompt reconstructive surgery and may present in isolation or as markers of systemic syndromes. Embryologically, limb development depends on coordinated signaling along the proximal-distal (apical ectodermal ridge/fibroblast growth factor [FGF]), radial-ulnar (zone of polarizing activity/sonic hedgehog), and dorsal-ventral (wingless-related integration site 7) axes, whose disruptions lead to specific phenotypic patterns. Among upper limb differences, those with a well-established genetic basis can be subcategorized as radial longitudinal deficiency, polydactyly, syndactyly, brachydactyly, ectrodactyly, and macrodactyly. Each phenotype exhibits distinctive radiographic features and associated clinical presentations, which guide syndrome-specific diagnosis. Notable genetic associations include TBX5 (Holt-Oram), FANCA (Fanconi anemia), GLI3 (Greig cephalopolysyndactyly), FGFR2 (Apert), and TP63 (ectrodactyly-ectodermal dysplasia clefting), as well as somatic mosaic mutations (eg, PIK3CA, AKT1, and RASA1) linked to overgrowth syndromes (eg, congenital lipomatous overgrowth, vascular differences, epidermal nevi, and spinal/skeletal differences; Proteus; and Parkes-Weber). Recognition of these patterns relies on imaging and targeted genetic testing. Advances in genomic sequencing have clarified the etiologies of previously classified associations, revealing monogenic or mosaic origins. Early and accurate syndromic identification enables coordinated care, informs management planning, and facilitates multidisciplinary collaboration to optimize functional and psychosocial outcomes."
+    ],
+    "selected_pmids": [
+      "42295123",
+      "40001587",
+      "41689580"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0667
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T15:14:46.503870+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42295123, relevance: -3.5884) ---\nAbnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.\n\n--- Abstract 2 (PMID: 40001587, relevance: -3.7695) ---\nBACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.\n\n--- Abstract 3 (PMID: 41689580, relevance: -4.3646) ---\nCongenital upper limb differences occur in approximately 20-30 per 10,000 live births. These differences frequently prompt reconstructive surgery and may present in isolation or as markers of systemic syndromes. Embryologically, limb development depends on coordinated signaling along the proximal-distal (apical ectodermal ridge/fibroblast growth factor [FGF]), radial-ulnar (zone of polarizing activity/sonic hedgehog), and dorsal-ventral (wingless-related integration site 7) axes, whose disruptions lead to specific phenotypic patterns. Among upper limb differences, those with a well-established genetic basis can be subcategorized as radial longitudinal deficiency, polydactyly, syndactyly, brachydactyly, ectrodactyly, and macrodactyly. Each phenotype exhibits distinctive radiographic features and associated clinical presentations, which guide syndrome-specific diagnosis. Notable genetic associations include TBX5 (Holt-Oram), FANCA (Fanconi anemia), GLI3 (Greig cephalopolysyndactyly), FGFR2 (Apert), and TP63 (ectrodactyly-ectodermal dysplasia clefting), as well as somatic mosaic mutations (eg, PIK3CA, AKT1, and RASA1) linked to overgrowth syndromes (eg, congenital lipomatous overgrowth, vascular differences, epidermal nevi, and spinal/skeletal differences; Proteus; and Parkes-Weber). Recognition of these patterns relies on imaging and targeted genetic testing. Advances in genomic sequencing have clarified the etiologies of previously classified associations, revealing monogenic or mosaic origins. Early and accurate syndromic identification enables coordinated care, informs management planning, and facilitates multidisciplinary collaboration to optimize functional and psychosocial outcomes.\n\n\n\n**Question:**\nDoes the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent."
+}

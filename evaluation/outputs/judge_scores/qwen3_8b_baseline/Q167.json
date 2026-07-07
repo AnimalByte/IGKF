@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q167",
+      "randomization_seed": "20260706:Q167:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q167",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q167",
+      "error": null,
+      "id": "batch_req_6a4d540b22e881909364740ab2d3c62f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452653,
+          "created_at": 1783452629,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c6554fd1d1f31f5006a4d53d563908195847828b1a666027d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q167"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c6554fd1d1f31f5006a4d53d5dc58819594113c0e4da61799",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the dataset supports shared genetics and clearly states the comparison is unsupported.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Main conclusion is accurate; external discussion is mostly reasonable but includes a vague claim about possible shared immune/inflammatory genes without support.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers direct study evidence, external knowledge, and the unsupported nature of the comparison.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately qualifies lack of dataset evidence, though the speculative external statement could be more cautious.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question and distinguishes dataset evidence from broader knowledge.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correct overall conclusion, but the statement that the dataset does not include genetic data may be overbroad if it contains MPHL genetic studies.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the key components, but lacks dataset-specific detail and slightly overgeneralizes external evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly avoids claiming shared genetic basis without direct comparative evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and specifically answers the dataset-based question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that MPHL genetics may be present but no FFA or cross-condition genetic comparison is supplied.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Fully distinguishes direct evidence, external knowledge, and unsupported comparison.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from unsupported inference and confines conclusions to the supplied context.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses what kind of evidence would be needed but does not definitively evaluate the provided dataset.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Scientifically reasonable and avoids false biomedical claims, but remains generic rather than applying the available evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Mentions direct evidence and external knowledge but does not clearly state that this dataset lacks FFA evidence and that the comparison is unsupported here.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately cautious, but over-abstains instead of making the dataset-specific unsupported conclusion requested.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c6554fd1d1f31f5006a4d53e73ea48195ae33258acd2394d8",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1635,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2046,
+            "output_tokens_details": {
+              "reasoning_tokens": 1310
+            },
+            "total_tokens": 3681
+          },
+          "user": null
+        },
+        "request_id": "e375a411-a755-44c9-a387-f0dda96f1638",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question and distinguishes dataset evidence from broader knowledge.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correct overall conclusion, but the statement that the dataset does not include genetic data may be overbroad if it contains MPHL genetic studies.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Addresses the key components, but lacks dataset-specific detail and slightly overgeneralizes external evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly avoids claiming shared genetic basis without direct comparative evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q167",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.249534+00:00"
+}

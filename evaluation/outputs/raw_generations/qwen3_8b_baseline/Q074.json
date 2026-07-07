@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 6.4208,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "To determine which pathways in an integrated graph include **WNT10A**, you would typically need to:\n\n1. **Identify the integrated graph**: This could be a biological pathway database (e.g., KEGG, Reactome, STRING, or a custom network) that includes gene-protein interactions, signaling pathways, or other molecular relationships.\n\n2. **Locate WNT10A in the graph**: Search for the gene or protein **WNT10A** within the graph or database.\n\n3. **Review associated pathways**: Check which pathways or biological processes are connected to **WNT10A** in the graph.\n\n### Common pathways associated with **WNT10A** (based on known biological data):\n\n- **Wnt signaling pathway** (KEGG ID: `hsa04340`)\n- **Wnt signaling pathway - beta-catenin-dependent** (KEGG ID: `hsa04341`)\n- **Wnt signaling pathway - beta-catenin-independent** (KEGG ID: `hsa04342`)\n- **Gastrulation (Wnt signaling)** (KEGG ID: `hsa04852`)\n- **Development of tooth** (KEGG ID: `hsa04955`)\n- **Development of eye** (KEGG ID: `hsa04956`)\n- **Development of heart** (KEGG ID: `hsa04957`)\n- **Development of limb** (KEGG ID: `hsa04958`)\n- **Development of kidney and bladder** (KEGG ID: `hsa04959`)\n- **Development of nervous system** (KEGG ID: `hsa04960`)\n\n### Notes:\n- **WNT10A** is a member of the Wnt family of signaling proteins and is involved in various developmental processes and cellular functions.\n- The exact pathways included in an \"integrated graph\" depend on the specific database or network being used.\n\nIf you are using a specific tool or database (e.g., STRING, Cytoscape, or a custom network), please provide more details so I can give a more precise answer.",
+  "question_id": "Q074",
+  "question_text": "Which pathways in the integrated graph include WNT10A?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 466,
+    "prompt_token_count": 72,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "To determine which pathways in an integrated graph include **WNT10A**, you would typically need to:\n\n1. **Identify the integrated graph**: This could be a biological pathway database (e.g., KEGG, Reactome, STRING, or a custom network) that includes gene-protein interactions, signaling pathways, or other molecular relationships.\n\n2. **Locate WNT10A in the graph**: Search for the gene or protein **WNT10A** within the graph or database.\n\n3. **Review associated pathways**: Check which pathways or biological processes are connected to **WNT10A** in the graph.\n\n### Common pathways associated with **WNT10A** (based on known biological data):\n\n- **Wnt signaling pathway** (KEGG ID: `hsa04340`)\n- **Wnt signaling pathway - beta-catenin-dependent** (KEGG ID: `hsa04341`)\n- **Wnt signaling pathway - beta-catenin-independent** (KEGG ID: `hsa04342`)\n- **Gastrulation (Wnt signaling)** (KEGG ID: `hsa04852`)\n- **Development of tooth** (KEGG ID: `hsa04955`)\n- **Development of eye** (KEGG ID: `hsa04956`)\n- **Development of heart** (KEGG ID: `hsa04957`)\n- **Development of limb** (KEGG ID: `hsa04958`)\n- **Development of kidney and bladder** (KEGG ID: `hsa04959`)\n- **Development of nervous system** (KEGG ID: `hsa04960`)\n\n### Notes:\n- **WNT10A** is a member of the Wnt family of signaling proteins and is involved in various developmental processes and cellular functions.\n- The exact pathways included in an \"integrated graph\" depend on the specific database or network being used.\n\nIf you are using a specific tool or database (e.g., STRING, Cytoscape, or a custom network), please provide more details so I can give a more precise answer."
+      }
+    ],
+    "created": 1783430359,
+    "id": "cmpl-8a4f6199-09b5-42b5-84eb-8002340cba06",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 466,
+      "prompt_tokens": 51,
+      "total_tokens": 517
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:19:19.278968+00:00",
+  "user_prompt": "Which pathways in the integrated graph include WNT10A?"
+}

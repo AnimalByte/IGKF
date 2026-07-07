@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q018",
+      "randomization_seed": "20260706:Q018:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q018",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q018",
+      "error": null,
+      "id": "batch_req_6a4d52b90f0c819082b82232a6443d27",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452173,
+          "created_at": 1783452163,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e31bfaf4d4b24ee006a4d5203277481a38bf40bfc0544cf73",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q018"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e31bfaf4d4b24ee006a4d5204418c81a3b447134cd2b37f3c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by stating that the provided study/context does not support an rs756853-androgenetic alopecia association.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the reference evidence: rs756853 is linked to HDAC9-related annotations, but no abstract or graph evidence connects it to androgenetic alopecia.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key relevant graph annotations and explains why the AGA abstract is unrelated to rs756853.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming an association and qualifies the conclusion as limited to the supplied context.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question topic directly, but gives a generic association-study interpretation rather than using the provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly asserts that the study provides statistical association evidence for rs756853 and AGA, which is not supported by the reference evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the crucial point that no provided abstract or graph evidence mentions rs756853 in relation to androgenetic alopecia.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents an unsupported association rather than abstaining when the evidence is absent.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Responds by requesting more information, but does not use the supplied context to answer the question.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Does not make a biomedical error, but misses the evidence-based conclusion that the supplied context provides no association evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Incomplete because it fails to summarize the available evidence or state that the provided study/context lacks support for the association.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Avoids unsupported claims, though it over-abstains despite sufficient supplied context to conclude no evidence is provided.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers whether the provided data support an rs756853-AGA association.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the graph and abstracts do not provide direct evidence linking rs756853 to androgenetic alopecia.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the relevant HDAC9/pathway context and explains that the AGA abstract concerns DPSC-Exos rather than rs756853.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly limits the conclusion to the provided data and avoids inferring an unsupported association.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e31bfaf4d4b24ee006a4d52085e2081a39ee3db65435b28ba",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3220,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1003,
+            "output_tokens_details": {
+              "reasoning_tokens": 390
+            },
+            "total_tokens": 4223
+          },
+          "user": null
+        },
+        "request_id": "6eb3b6ff-cfd3-4f2c-b846-4256351fef9e",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question topic directly, but gives a generic association-study interpretation rather than using the provided evidence.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly asserts that the study provides statistical association evidence for rs756853 and AGA, which is not supported by the reference evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Omits the crucial point that no provided abstract or graph evidence mentions rs756853 in relation to androgenetic alopecia.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Invents an unsupported association rather than abstaining when the evidence is absent.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q018",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q018.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.122660+00:00"
+}

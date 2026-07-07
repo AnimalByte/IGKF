@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q175",
+      "randomization_seed": "20260706:Q175:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q175",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q175",
+      "error": null,
+      "id": "batch_req_6a4d540bb7b4819084e94a43f8d3ef20",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452654,
+          "created_at": 1783452643,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c3614d112ad0aaf006a4d53e39f488194b51e4b17750173d9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q175"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c3614d112ad0aaf006a4d53e474f08194aa6e5caec550db43",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses both the comparison and combined-effect question, but relies on information not present in the provided dataset.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Unsupported claims that both variants are associated with male pattern baldness and that rs929626 is stronger; the reference evidence provides no MPB association data and does not include rs929626.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers the requested elements conceptually, but lacks dataset-supported effect sizes and gives speculative interpretation.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes some caveats, but still asserts unsupported associations and relative strength.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the requested comparison and combined-effect question.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Incorrectly states that the dataset shows both variants are associated with male pattern baldness and that rs929626 is stronger; this is not supported by the supplied evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Addresses both individual and combined effects, but omits the key evidence limitation that rs929626 is absent and rs756853 lacks MPB evidence.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Appropriately rejects a combined-effect estimate, but makes unsupported confident claims about individual associations.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether individual strengths can be compared and whether a combined-effect estimate is supported.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied evidence: rs756853 is present without MPB association, rs929626 is absent, and no joint analysis is provided.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers all important components, including the lack of MPB evidence, absence of rs929626, and lack of combined-effect support.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported comparison or combined-effect estimation.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the comparison and combined-effect questions.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided data do not support associations with male pattern baldness or a combined-effect estimate.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusions, though it does not explicitly note that rs756853 appears only in unrelated contexts and rs929626 is absent.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making unsupported claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c3614d112ad0aaf006a4d53e845188194b7aa01bfa7d4b011",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3130,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1019,
+            "output_tokens_details": {
+              "reasoning_tokens": 424
+            },
+            "total_tokens": 4149
+          },
+          "user": null
+        },
+        "request_id": "3a060c53-a83a-4d32-8287-1a8081e0b56a",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the requested comparison and combined-effect question.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly states that the dataset shows both variants are associated with male pattern baldness and that rs929626 is stronger; this is not supported by the supplied evidence.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Addresses both individual and combined effects, but omits the key evidence limitation that rs929626 is absent and rs756853 lacks MPB evidence.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately rejects a combined-effect estimate, but makes unsupported confident claims about individual associations.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q175",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q175.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.255183+00:00"
+}

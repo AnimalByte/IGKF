@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q181",
+      "randomization_seed": "20260706:Q181:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q181",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q181",
+      "error": null,
+      "id": "batch_req_6a4d540c421481908cb59a11e8e00a01",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452627,
+          "created_at": 1783452609,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_02758d1a73534953006a4d53c1a2508197aeee8ee7e376ae80",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q181"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_02758d1a73534953006a4d53c25f1881978b3193d638d6525e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses SRD5A2 conversion of testosterone to DHT and links this to androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence that SRD5A2 converts testosterone to DHT and is clinically relevant to androgenic alopecia, with appropriate mechanistic extrapolation.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the key pathway and therapeutic relevance, though follicle-level androgen receptor and hair-cycle details are limited.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Explicitly notes that the supplied context lacks follicle-specific mechanistic detail and avoids overclaiming.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly explains the proposed role of SRD5A2-mediated DHT production in AGA.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Core mechanism is scientifically accurate, but some claims about altered SRD5A2 regulation affecting AGA risk are extrapolated beyond the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes DHT synthesis, androgen receptor signaling, hair-cycle effects, and therapeutic targeting.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Some unsupported extensions are presented confidently, with limited qualification about evidence gaps.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the biological mechanism connecting SRD5A2, DHT, and AGA.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states the core testosterone-to-DHT pathway and the established relationship between DHT signaling and follicular miniaturization.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the main mechanistic steps, including DHT production, androgen signaling, anagen shortening, miniaturization, and treatment relevance.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly appropriate, though it does not explicitly acknowledge that the supplied evidence provides limited follicle-specific detail.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Addresses the question and gives a mechanistic account of SRD5A2 in AGA.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The central DHT mechanism is accurate, but several detailed claims about follicular localization, genetic associations, animal studies, and expression correlations are unsupported by the supplied evidence and partly overstated.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Includes many relevant components but adds substantial unsupported detail and padding beyond the evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Presents multiple unsupported or weakly supported conclusions as established without qualification.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_02758d1a73534953006a4d53cdbad48197a324fde3d3f693bf",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3441,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1805,
+            "output_tokens_details": {
+              "reasoning_tokens": 1003
+            },
+            "total_tokens": 5246
+          },
+          "user": null
+        },
+        "request_id": "6734edd3-da9c-44c1-9997-4d722c8ea688",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question and gives a mechanistic account of SRD5A2 in AGA.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The central DHT mechanism is accurate, but several detailed claims about follicular localization, genetic associations, animal studies, and expression correlations are unsupported by the supplied evidence and partly overstated.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Includes many relevant components but adds substantial unsupported detail and padding beyond the evidence.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Presents multiple unsupported or weakly supported conclusions as established without qualification.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q181",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q181.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.259689+00:00"
+}

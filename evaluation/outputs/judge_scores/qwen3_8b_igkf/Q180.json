@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q180",
+      "randomization_seed": "20260706:Q180:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q180",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q180",
+      "error": null,
+      "id": "batch_req_6a4d540c0ad8819093c836e86bba59a9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452622,
+          "created_at": 1783452606,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a36be9296058322006a4d53bef7388197995ea7c3e3fa32c5",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q180"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a36be9296058322006a4d53bfaa5c8197ae99e27800e6a087",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset is not sufficient and states the missing data types.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately identifies that individual-level age-of-onset and per-individual variant-burden data are required to test the correlation.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers both required components and explains the limitation clearly.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately states the limitation, though it asserts absence rather than framing it strictly as absence from the supplied evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the requirements for testing the correlation but does not definitively answer whether the dataset contains them.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate about the need for linked individual-level age-at-onset and AR-region burden data.\"},\"completeness\":{\"score\":4,\"rationale\":\"Lists the necessary data elements and limitation, but remains conditional rather than directly assessing the dataset.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making unsupported claims without the dataset schema.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question and states the relevant limitation, but is somewhat generic and not fully definitive.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly identifies the needed data types, though the final limitation is stated more assertively than the preceding uncertainty supports.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the two key missing components but provides limited explanation of individual-level linkage or burden computation.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly qualifies uncertainty, but partially shifts into an unsupported definitive limitation.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers no and explains why the dataset is insufficient.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that variant calls, impact annotations, per-individual burden, and linked age-at-onset data are needed.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the missing data elements, the need for individual linkage, and relevant covariates without major omissions.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the supplied context and does not overclaim beyond the available data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a36be9296058322006a4d53c9896c819787a73bf07c7ab100",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1370,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1426,
+            "output_tokens_details": {
+              "reasoning_tokens": 872
+            },
+            "total_tokens": 2796
+          },
+          "user": null
+        },
+        "request_id": "b3b7bd04-6d05-42c7-a279-ea5b116e319c",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "9b4f0f5a4ce2a31403078cc0dab184d0416fdc0008284d1ee581ecd7e184ee20",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q180",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q180.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q180::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q180::R1",
+      "error": null,
+      "id": "batch_req_6a4d19bff8a481908bffa471a99b42b7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437715,
+          "created_at": 1783437705,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0bf1c30d17b029e4006a4d1989a0a881938c30da62d5a427fc",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q180"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0bf1c30d17b029e4006a4d198c3c008193a1e15476ede231bc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is supported by the supplied graph and abstracts: the graph contains only PPI-style gene interactions, and the abstracts provide aggregate literature context rather than individual-level age-of-onset or variant-burden data for AR-region high-impact variants.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the key limitation in the supplied context: age-of-onset is mentioned in abstracts, but no per-individual variant burdens or dataset-level records are provided to test the proposed correlation.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0bf1c30d17b029e4006a4d1991aa0881938d1c94d5c04e31fb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1991,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 586,
+            "output_tokens_details": {
+              "reasoning_tokens": 435
+            },
+            "total_tokens": 2577
+          },
+          "user": null
+        },
+        "request_id": "544d4b8f-f102-45f4-84eb-8506a7ca5c3c",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that the dataset is not sufficient and states the missing data types.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately identifies that individual-level age-of-onset and per-individual variant-burden data are required to test the correlation.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers both required components and explains the limitation clearly.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is supported by the supplied graph and abstracts: the graph contains only PPI-style gene interactions, and the abstracts provide aggregate literature context rather than individual-level age-of-onset or variant-burden data for AR-region high-impact variants.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key limitation in the supplied context: age-of-onset is mentioned in abstracts, but no per-individual variant burdens or dataset-level records are provided to test the proposed correlation.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately states the limitation, though it asserts absence rather than framing it strictly as absence from the supplied evidence.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q180",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.368077+00:00"
+}

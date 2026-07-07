@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q134",
+      "randomization_seed": "20260706:Q134:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q134",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q134",
+      "error": null,
+      "id": "batch_req_6a4d54092a2c8190a2daa3ebfb717a3f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452574,
+          "created_at": 1783452558,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_045d54cba09650b2006a4d538e9c74819083000cf9382641e6",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q134"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_045d54cba09650b2006a4d538fef10819091c4610f8a93385c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the integrated graph and literature evidence linking dutasteride to androgen metabolism.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately identifies SRD5A2 as a dutasteride target, its testosterone-to-DHT role, androgen biosynthesis pathway annotation, and AR-related signaling link from the graph.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key evidence: SRD5A2 targeting, DHT synthesis, androgen biosynthesis pathway, AR/nuclear receptor signaling, and disease relevance.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly stays within the supplied evidence; minor mechanistic wording is confident but well supported by the packet.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Clearly answers how dutasteride is connected to androgen metabolism using target and pathway evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main SRD5A2/DHT/androgen biosynthesis claims are accurate, but discussion of other genes and indirect pathway influence is speculative and not supported by the graph evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the main target/pathway and clinical relevance, but adds unnecessary unsupported discussion of nonvalidated interactions.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Overextends beyond the supplied evidence by suggesting indirect effects through other genes/pathways despite zero interaction support in the graph.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses dutasteride and androgen metabolism generally, but does not specifically use the integrated graph/vector evidence provided.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The general pharmacology is mostly accurate, but several cited evidence types such as clinical trials, metabolomics, and tissue assays are not present in the supplied evidence packet.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions the central testosterone-to-DHT mechanism but omits the specific integrated evidence: SRD5A2 graph target, AR target, and androgen biosynthesis pathway annotation.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Presents unsupported categories of evidence as if they are part of the integrated data rather than qualifying them.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly explains the androgen metabolism connection, though in a generic way rather than tied closely to the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately describes 5-alpha-reductase-mediated testosterone-to-DHT conversion and SRD5A2 linkage, but includes SRD5A1 and broad annotations not specifically shown in the graph.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers the main SRD5A/DHT mechanism but misses specific graph evidence such as AR targeting and the explicit androgen biosynthesis pathway.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Uses some qualifying language and avoids major unsupported claims, though it remains somewhat generic.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_045d54cba09650b2006a4d53991cd881909ed6fcda2ecd886e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3164,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1636,
+            "output_tokens_details": {
+              "reasoning_tokens": 962
+            },
+            "total_tokens": 4800
+          },
+          "user": null
+        },
+        "request_id": "116198e2-a2de-4d45-8141-8101e1305657",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "5f5845998b378ca06d64a30834d55ea0f4afcc2419b7dc381d58bd3a1f4e6e00",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q134",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q134.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q134::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q134::R1",
+      "error": null,
+      "id": "batch_req_6a4d19ba28848190a8eddc30ca0d4e1d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437650,
+          "created_at": 1783437639,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0cdb7def3cbbb613006a4d1947b4948190a954199f71195ccb",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q134"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0cdb7def3cbbb613006a4d1949bb2481908f57e8c8af28b534",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"Core claims are supported: DUTASTERIDE targets SRD5A2/AR, SRD5A2 is tied to androgen metabolism via testosterone-to-DHT conversion, and androgen biosynthesis is listed as a pathway. Some statements add unsupported specificity, such as Dutasteride being widely used to reduce prostate size and speculative indirect effects on other genes/pathways.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"Uses the main graph and vector evidence well, especially SRD5A2, androgen biosynthesis, DHT conversion, and clinical relevance. However, it underuses the AR target and includes speculative discussion of nonvalidated PPI genes beyond what the context supports.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0cdb7def3cbbb613006a4d1950560c8190900ddf01a10f3899",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2058,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 702,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2760
+          },
+          "user": null
+        },
+        "request_id": "35e09e36-154e-416f-bd58-e6ae2ca74bec",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Clearly answers how dutasteride is connected to androgen metabolism using target and pathway evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Main SRD5A2/DHT/androgen biosynthesis claims are accurate, but discussion of other genes and indirect pathway influence is speculative and not supported by the graph evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Includes the main target/pathway and clinical relevance, but adds unnecessary unsupported discussion of nonvalidated interactions.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "Core claims are supported: DUTASTERIDE targets SRD5A2/AR, SRD5A2 is tied to androgen metabolism via testosterone-to-DHT conversion, and androgen biosynthesis is listed as a pathway. Some statements add unsupported specificity, such as Dutasteride being widely used to reduce prostate size and speculative indirect effects on other genes/pathways.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "Uses the main graph and vector evidence well, especially SRD5A2, androgen biosynthesis, DHT conversion, and clinical relevance. However, it underuses the AR target and includes speculative discussion of nonvalidated PPI genes beyond what the context supports.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Overextends beyond the supplied evidence by suggesting indirect effects through other genes/pathways despite zero interaction support in the graph.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q134",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q134.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.339022+00:00"
+}

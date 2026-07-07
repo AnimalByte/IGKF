@@ -1,0 +1,178 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.7569,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The provided graph and literature context do not contain any information about the function of the AR (Androgen Receptor) in hair-follicle biology or cycling. The data focuses on the gene AR's involvement in pathways, phenotypes, drug interactions, and disease associations, but it does not mention hair follicles or related biological processes. Therefore, based on the available information, nothing is known about the role of AR in hair-follicle biology and cycling.",
+  "question_id": "Q050",
+  "question_text": "What is known about the function of AR in hair-follicle biology and cycling?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 94,
+    "prompt_token_count": 2119,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided graph and literature context do not contain any information about the function of the AR (Androgen Receptor) in hair-follicle biology or cycling. The data focuses on the gene AR's involvement in pathways, phenotypes, drug interactions, and disease associations, but it does not mention hair follicles or related biological processes. Therefore, based on the available information, nothing is known about the role of AR in hair-follicle biology and cycling."
+      }
+    ],
+    "created": 1783431941,
+    "id": "cmpl-705c03e8-7f9b-496a-bfe4-7d9d70d54948",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 94,
+      "prompt_tokens": 2098,
+      "total_tokens": 2192
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      23.09227180480957,
+      25.627521514892578,
+      25.742643356323242,
+      26.090681076049805,
+      26.1929874420166,
+      26.29612159729004,
+      26.30855941772461,
+      26.722492218017578,
+      26.988426208496094,
+      27.028181076049805,
+      27.152883529663086,
+      27.208826065063477,
+      27.35494613647461,
+      27.45513916015625,
+      27.61793327331543
+    ],
+    "candidate_pmids": [
+      "41296172",
+      "42361668",
+      "38057852",
+      "40835866",
+      "41722875",
+      "34794894",
+      "36617158",
+      "34552771",
+      "33133644",
+      "40868166",
+      "38123340",
+      "39863862",
+      "37860011",
+      "41640146",
+      "37143720"
+    ],
+    "expanded_retrieval_query": "What is known about the function of AR in hair-follicle biology and cycling? Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "final_context": "Graph Context:\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n\nVector Context:\n--- Abstract 1 (PMID: 36617158, relevance: -6.8326) ---\nThe formation of fertilisation-competent sperm requires spermatid morphogenesis (spermiogenesis), a poorly understood program that involves complex coordinated restructuring and specialised cytoskeletal structures. A major class of cytoskeletal regulators are the actin-related proteins (ARPs), which include conventional actin variants, and related proteins that play essential roles in complexes regulating actin dynamics, intracellular transport, and chromatin remodeling. Multiple testis-specific ARPs are well conserved among mammals, but their functional roles are unknown. One of these is actin-like 7b (Actl7b) that encodes an orphan ARP highly similar to the ubiquitously expressed beta actin (ACTB). Here we report ACTL7B is expressed in human and mouse spermatids through the elongation phase of spermatid development. In mice, ACTL7B specifically localises to the developing acrosome, within the nucleus of early spermatids, and to the flagellum connecting region. Based on this localisation pattern and high level of sequence conservation in mice, humans, and other mammals, we examined the requirement for ACTL7B in spermiogenesis by generating and characterising the reproductive phenotype of male Actl7b KO mice. KO mice were infertile, with severe and variable oligoteratozoospermia (OAT) and multiple morphological abnormalities of the flagellum (MMAF) and sperm head. These defects phenocopy human OAT and MMAF, which are leading causes of idiopathic male infertility. In conclusion, this work identifies ACTL7B as a key regulator of spermiogenesis that is required for male fertility.\n\n--- Abstract 2 (PMID: 38057852, relevance: -7.3831) ---\nBACKGROUND: Advanced prostate cancer (PCa) will develop into castration-resistant prostate cancer (CRPC) and lead to poor prognosis. As the primary subtype of CRPC, CRPC-AR accounts for the major induction of PCa heterogeneity. CRPC-AR is mainly driven by 25 transcription factors (TFs), which we speculate may be the key factors driving PCa toward CRPC. Therefore, it is necessary to clarify the key regulator and its molecular mechanism mediating PCa progression. METHODS: Firstly, we downloaded transcriptomic data and clinical information from TCGA-PRAD. The characteristic gene cluster was identified by PPI clustering, GO enrichment, co-expression correlation and clinical feature analyses for 25 TFs. Then, the effects of 25 TFs expression on prognosis of PCa patients was analyzed using univariate Cox regression, and the target gene was identified. The expression properties of the target gene in PCa tissues were verified using tissue microarray. Meanwhile, the related mechanistic pathway of the target gene was mined based on its function. Next, the target gene was silenced by small interfering RNAs (siRNAs) for cellular function and mechanistic pathway validation. Finally, CIBERSORT algorithm was used to analyze the infiltration levels of 22 immune cells in PCa patients with low and high expression of target gene, and validated by assaying the expression of related immunomodulatory factor. RESULTS: We found that HOX family existed independently in 25 TFs, among which HOXC10, HOXC12 and HOXC13 had unique clinical features and the PCa patients with high HOXC13 expression had the worst prognosis. In addition, HOXC13 was highly expressed in tumor tissues and correlated with Gleason score and pathological grade. In vitro experiments demonstrated that silencing HOXC13 inhibited 22RV1 and DU145 cell function by inducing cellular DNA damage and activating cGAS/STING/IRF3 pathway. Immune infiltration analysis revealed that high HOXC13 expression suppressed infiltration of gammadelta T cells and plasma cells and recruited M2 macrophages. Consistent with these results, silencing HOXC13 up-regulated the transcriptional expression of IFN-beta, CCL2, CCL5 and CXCL10. CONCLUSION: HOXC13 regulates PCa progression by mediating the DNA damage-induced cGAS/STING/IRF3 pathway and remodels TIME through regulation of the transcription of the immune factors IFN-beta, CCL2, CCL5 and CXCL10.\n\n--- Abstract 3 (PMID: 37860011, relevance: -8.3404) ---\nBACKGROUND: Osteoarthritis (OA) progression involves multiple factors, including cartilage erosion as the basic pathological mechanism of degeneration, and is closely related to chondrocyte apoptosis. To analyze the correlation between apoptosis and OA development, we selected apoptosis genes from the differentially expressed genes (DEGs) between OA and normal samples from the Gene Expression Omnibus (GEO) database, used lasso regression analysis to identify characteristic genes, and performed consensus cluster analysis to further explore the pathogenesis of this disease. METHODS: The Gene expression profile datasets of OA samples, GSE12021 and GSE55235, were downloaded from GEO. The datasets were combined and analyzed for DEGs. Apoptosis-related genes (ARGs) were collected from the GeneCards database and intersected with DEGs for apoptosis-related DEGs (ARDEGs). Least absolute shrinkage and selection operator (LASSO) regression analysis was performed to obtain characteristic genes, and a nomogram was constructed based on these genes. A consensus cluster analysis was performed to divide the patients into clusters. The immune characteristics, functional enrichment, and immune infiltration statuses of the clusters were compared. In addition, a protein-protein interaction network of mRNA drugs, mRNA-transcription factors (TFs), and mRNA-miRNAs was constructed. RESULTS: A total of 95 DEGs were identified, of which 47 were upregulated and 48 were downregulated, and 31 hub genes were selected as ARDEGs. LASSO regression analysis revealed nine characteristic genes: growth differentiation factor 15 (GDF15), NAMPT, TLR7, CXCL2, KLF2, REV3L, KLF9, THBD, and MTHFD2. Clusters A and B were identified, and neutrophil activation and neutrophil activation involved in the immune response were highly enriched in Cluster B, whereas protein repair and purine salvage signal pathways were enriched in Cluster A. The number of activated natural killer cells in Cluster B was significantly higher than that in Cluster A. GDF15 and KLF9 interacted with 193 and 32 TFs, respectively, and CXCL2 and REV3L interacted with 48 and 82 miRNAs, respectively. CONCLUSION: ARGs could predict the occurrence of OA and may be related to different degrees of OA progression.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "graph_context_length": 1823,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3374,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "function"
+      },
+      {
+        "label": "ENTITY",
+        "text": "ar"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair-follicle biology"
+      },
+      {
+        "label": "ENTITY",
+        "text": "cycling"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q050.json",
+    "retrieval_total_seconds": 0.4681,
+    "score_max": -6.832557678222656,
+    "score_mean": -7.518674214680989,
+    "scores": [
+      -6.832557678222656,
+      -7.383075714111328,
+      -8.340389251708984
+    ],
+    "selected_abstracts": [
+      "The formation of fertilisation-competent sperm requires spermatid morphogenesis (spermiogenesis), a poorly understood program that involves complex coordinated restructuring and specialised cytoskeletal structures. A major class of cytoskeletal regulators are the actin-related proteins (ARPs), which include conventional actin variants, and related proteins that play essential roles in complexes regulating actin dynamics, intracellular transport, and chromatin remodeling. Multiple testis-specific ARPs are well conserved among mammals, but their functional roles are unknown. One of these is actin-like 7b (Actl7b) that encodes an orphan ARP highly similar to the ubiquitously expressed beta actin (ACTB). Here we report ACTL7B is expressed in human and mouse spermatids through the elongation phase of spermatid development. In mice, ACTL7B specifically localises to the developing acrosome, within the nucleus of early spermatids, and to the flagellum connecting region. Based on this localisation pattern and high level of sequence conservation in mice, humans, and other mammals, we examined the requirement for ACTL7B in spermiogenesis by generating and characterising the reproductive phenotype of male Actl7b KO mice. KO mice were infertile, with severe and variable oligoteratozoospermia (OAT) and multiple morphological abnormalities of the flagellum (MMAF) and sperm head. These defects phenocopy human OAT and MMAF, which are leading causes of idiopathic male infertility. In conclusion, this work identifies ACTL7B as a key regulator of spermiogenesis that is required for male fertility.",
+      "BACKGROUND: Advanced prostate cancer (PCa) will develop into castration-resistant prostate cancer (CRPC) and lead to poor prognosis. As the primary subtype of CRPC, CRPC-AR accounts for the major induction of PCa heterogeneity. CRPC-AR is mainly driven by 25 transcription factors (TFs), which we speculate may be the key factors driving PCa toward CRPC. Therefore, it is necessary to clarify the key regulator and its molecular mechanism mediating PCa progression. METHODS: Firstly, we downloaded transcriptomic data and clinical information from TCGA-PRAD. The characteristic gene cluster was identified by PPI clustering, GO enrichment, co-expression correlation and clinical feature analyses for 25 TFs. Then, the effects of 25 TFs expression on prognosis of PCa patients was analyzed using univariate Cox regression, and the target gene was identified. The expression properties of the target gene in PCa tissues were verified using tissue microarray. Meanwhile, the related mechanistic pathway of the target gene was mined based on its function. Next, the target gene was silenced by small interfering RNAs (siRNAs) for cellular function and mechanistic pathway validation. Finally, CIBERSORT algorithm was used to analyze the infiltration levels of 22 immune cells in PCa patients with low and high expression of target gene, and validated by assaying the expression of related immunomodulatory factor. RESULTS: We found that HOX family existed independently in 25 TFs, among which HOXC10, HOXC12 and HOXC13 had unique clinical features and the PCa patients with high HOXC13 expression had the worst prognosis. In addition, HOXC13 was highly expressed in tumor tissues and correlated with Gleason score and pathological grade. In vitro experiments demonstrated that silencing HOXC13 inhibited 22RV1 and DU145 cell function by inducing cellular DNA damage and activating cGAS/STING/IRF3 pathway. Immune infiltration analysis revealed that high HOXC13 expression suppressed infiltration of gammadelta T cells and plasma cells and recruited M2 macrophages. Consistent with these results, silencing HOXC13 up-regulated the transcriptional expression of IFN-beta, CCL2, CCL5 and CXCL10. CONCLUSION: HOXC13 regulates PCa progression by mediating the DNA damage-induced cGAS/STING/IRF3 pathway and remodels TIME through regulation of the transcription of the immune factors IFN-beta, CCL2, CCL5 and CXCL10.",
+      "BACKGROUND: Osteoarthritis (OA) progression involves multiple factors, including cartilage erosion as the basic pathological mechanism of degeneration, and is closely related to chondrocyte apoptosis. To analyze the correlation between apoptosis and OA development, we selected apoptosis genes from the differentially expressed genes (DEGs) between OA and normal samples from the Gene Expression Omnibus (GEO) database, used lasso regression analysis to identify characteristic genes, and performed consensus cluster analysis to further explore the pathogenesis of this disease. METHODS: The Gene expression profile datasets of OA samples, GSE12021 and GSE55235, were downloaded from GEO. The datasets were combined and analyzed for DEGs. Apoptosis-related genes (ARGs) were collected from the GeneCards database and intersected with DEGs for apoptosis-related DEGs (ARDEGs). Least absolute shrinkage and selection operator (LASSO) regression analysis was performed to obtain characteristic genes, and a nomogram was constructed based on these genes. A consensus cluster analysis was performed to divide the patients into clusters. The immune characteristics, functional enrichment, and immune infiltration statuses of the clusters were compared. In addition, a protein-protein interaction network of mRNA drugs, mRNA-transcription factors (TFs), and mRNA-miRNAs was constructed. RESULTS: A total of 95 DEGs were identified, of which 47 were upregulated and 48 were downregulated, and 31 hub genes were selected as ARDEGs. LASSO regression analysis revealed nine characteristic genes: growth differentiation factor 15 (GDF15), NAMPT, TLR7, CXCL2, KLF2, REV3L, KLF9, THBD, and MTHFD2. Clusters A and B were identified, and neutrophil activation and neutrophil activation involved in the immune response were highly enriched in Cluster B, whereas protein repair and purine salvage signal pathways were enriched in Cluster A. The number of activated natural killer cells in Cluster B was significantly higher than that in Cluster A. GDF15 and KLF9 interacted with 193 and 32 TFs, respectively, and CXCL2 and REV3L interacted with 48 and 82 miRNAs, respectively. CONCLUSION: ARGs could predict the occurrence of OA and may be related to different degrees of OA progression."
+    ],
+    "selected_pmids": [
+      "36617158",
+      "38057852",
+      "37860011"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1136
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:45:41.663101+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 36617158, relevance: -6.8326) ---\nThe formation of fertilisation-competent sperm requires spermatid morphogenesis (spermiogenesis), a poorly understood program that involves complex coordinated restructuring and specialised cytoskeletal structures. A major class of cytoskeletal regulators are the actin-related proteins (ARPs), which include conventional actin variants, and related proteins that play essential roles in complexes regulating actin dynamics, intracellular transport, and chromatin remodeling. Multiple testis-specific ARPs are well conserved among mammals, but their functional roles are unknown. One of these is actin-like 7b (Actl7b) that encodes an orphan ARP highly similar to the ubiquitously expressed beta actin (ACTB). Here we report ACTL7B is expressed in human and mouse spermatids through the elongation phase of spermatid development. In mice, ACTL7B specifically localises to the developing acrosome, within the nucleus of early spermatids, and to the flagellum connecting region. Based on this localisation pattern and high level of sequence conservation in mice, humans, and other mammals, we examined the requirement for ACTL7B in spermiogenesis by generating and characterising the reproductive phenotype of male Actl7b KO mice. KO mice were infertile, with severe and variable oligoteratozoospermia (OAT) and multiple morphological abnormalities of the flagellum (MMAF) and sperm head. These defects phenocopy human OAT and MMAF, which are leading causes of idiopathic male infertility. In conclusion, this work identifies ACTL7B as a key regulator of spermiogenesis that is required for male fertility.\n\n--- Abstract 2 (PMID: 38057852, relevance: -7.3831) ---\nBACKGROUND: Advanced prostate cancer (PCa) will develop into castration-resistant prostate cancer (CRPC) and lead to poor prognosis. As the primary subtype of CRPC, CRPC-AR accounts for the major induction of PCa heterogeneity. CRPC-AR is mainly driven by 25 transcription factors (TFs), which we speculate may be the key factors driving PCa toward CRPC. Therefore, it is necessary to clarify the key regulator and its molecular mechanism mediating PCa progression. METHODS: Firstly, we downloaded transcriptomic data and clinical information from TCGA-PRAD. The characteristic gene cluster was identified by PPI clustering, GO enrichment, co-expression correlation and clinical feature analyses for 25 TFs. Then, the effects of 25 TFs expression on prognosis of PCa patients was analyzed using univariate Cox regression, and the target gene was identified. The expression properties of the target gene in PCa tissues were verified using tissue microarray. Meanwhile, the related mechanistic pathway of the target gene was mined based on its function. Next, the target gene was silenced by small interfering RNAs (siRNAs) for cellular function and mechanistic pathway validation. Finally, CIBERSORT algorithm was used to analyze the infiltration levels of 22 immune cells in PCa patients with low and high expression of target gene, and validated by assaying the expression of related immunomodulatory factor. RESULTS: We found that HOX family existed independently in 25 TFs, among which HOXC10, HOXC12 and HOXC13 had unique clinical features and the PCa patients with high HOXC13 expression had the worst prognosis. In addition, HOXC13 was highly expressed in tumor tissues and correlated with Gleason score and pathological grade. In vitro experiments demonstrated that silencing HOXC13 inhibited 22RV1 and DU145 cell function by inducing cellular DNA damage and activating cGAS/STING/IRF3 pathway. Immune infiltration analysis revealed that high HOXC13 expression suppressed infiltration of gammadelta T cells and plasma cells and recruited M2 macrophages. Consistent with these results, silencing HOXC13 up-regulated the transcriptional expression of IFN-beta, CCL2, CCL5 and CXCL10. CONCLUSION: HOXC13 regulates PCa progression by mediating the DNA damage-induced cGAS/STING/IRF3 pathway and remodels TIME through regulation of the transcription of the immune factors IFN-beta, CCL2, CCL5 and CXCL10.\n\n--- Abstract 3 (PMID: 37860011, relevance: -8.3404) ---\nBACKGROUND: Osteoarthritis (OA) progression involves multiple factors, including cartilage erosion as the basic pathological mechanism of degeneration, and is closely related to chondrocyte apoptosis. To analyze the correlation between apoptosis and OA development, we selected apoptosis genes from the differentially expressed genes (DEGs) between OA and normal samples from the Gene Expression Omnibus (GEO) database, used lasso regression analysis to identify characteristic genes, and performed consensus cluster analysis to further explore the pathogenesis of this disease. METHODS: The Gene expression profile datasets of OA samples, GSE12021 and GSE55235, were downloaded from GEO. The datasets were combined and analyzed for DEGs. Apoptosis-related genes (ARGs) were collected from the GeneCards database and intersected with DEGs for apoptosis-related DEGs (ARDEGs). Least absolute shrinkage and selection operator (LASSO) regression analysis was performed to obtain characteristic genes, and a nomogram was constructed based on these genes. A consensus cluster analysis was performed to divide the patients into clusters. The immune characteristics, functional enrichment, and immune infiltration statuses of the clusters were compared. In addition, a protein-protein interaction network of mRNA drugs, mRNA-transcription factors (TFs), and mRNA-miRNAs was constructed. RESULTS: A total of 95 DEGs were identified, of which 47 were upregulated and 48 were downregulated, and 31 hub genes were selected as ARDEGs. LASSO regression analysis revealed nine characteristic genes: growth differentiation factor 15 (GDF15), NAMPT, TLR7, CXCL2, KLF2, REV3L, KLF9, THBD, and MTHFD2. Clusters A and B were identified, and neutrophil activation and neutrophil activation involved in the immune response were highly enriched in Cluster B, whereas protein repair and purine salvage signal pathways were enriched in Cluster A. The number of activated natural killer cells in Cluster B was significantly higher than that in Cluster A. GDF15 and KLF9 interacted with 193 and 32 TFs, respectively, and CXCL2 and REV3L interacted with 48 and 82 miRNAs, respectively. CONCLUSION: ARGs could predict the occurrence of OA and may be related to different degrees of OA progression.\n\n\n\n**Question:**\nWhat is known about the function of AR in hair-follicle biology and cycling?"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q089",
+      "randomization_seed": "20260706:Q089:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q089",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q089",
+      "error": null,
+      "id": "batch_req_6a4d52bc38548190a2ca0ca47d2b9337",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452230,
+          "created_at": 1783452217,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e28b26240ca2ce6006a4d5239be90819d8a3c5b5774c3decc",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q089"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e28b26240ca2ce6006a4d523a92b4819dbd99a6084340f80f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses PAX1-associated pathway-like annotations, but adds broad inferred pathways beyond the provided graph.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Some listed items match the supplied GO annotations, but craniofacial/limb, Wnt/BMP, immune response, and osteoclast differentiation are unsupported for PAX1 in the evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Includes several relevant GO functions/processes but mixes them with speculative additions and does not cleanly distinguish graph evidence from inference.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"States that pathways are not explicitly listed, but still presents unsupported inferred pathways.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Acknowledges the need for graph annotations but does not use the supplied graph context to answer.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Does not make substantive incorrect biomedical claims, but incorrectly implies that no relevant graph context is available.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the supplied PAX1 GO/process annotations entirely.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Avoids inventing pathways, but over-abstains despite available evidence in the prompt.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Discusses how one might find pathways for PAX1 generally, but does not answer based on the supplied integrated graph.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Invents unsupported pathway memberships such as TGF-beta, Wnt, Notch, KEGG actin cytoskeleton, CAMs, and Reactome pathways not present in the evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Fails to report the actual supplied PAX1 annotations and substitutes generic recommendations and unsupported examples.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents speculative and unsupported pathway claims as if they were established.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers using the supplied graph context and identifies the pathway-like GO annotations involving PAX1.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the provided PAX1 GO functions/processes and correctly notes that the abstracts add no PAX1-specific pathways.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the important supplied pathway-like annotations without adding unsupported claims.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately limits the answer to the provided evidence and qualifies that these are pathway-like annotations rather than explicit pathways.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e28b26240ca2ce6006a4d524052a8819db82946933704563f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3100,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1303,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4403
+          },
+          "user": null
+        },
+        "request_id": "19c0d798-d5ef-4dfe-98f7-6115383b8c2b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "dbb4d13c326de6bd24170a12c6b9a322d8dc9ea933a6afddfb41e6ad7a8a3bb2",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q089",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q089.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q089::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q089::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b46ec48190a7559c90246572c7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437511,
+          "created_at": 1783437504,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_019f024ab2ca1bd9006a4d18c01a3c81969a5219bca6e051f7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q089"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_019f024ab2ca1bd9006a4d18c098dc819686a2abb335a02360",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 2,\n    \"rationale\": \"The context does not list any pathways for PAX1; it only provides GO terms, phenotypes, PPIs, and diseases. The answer correctly notes that explicit pathways are absent but then presents unsupported inferred pathways and unsupported links to Wnt/BMP/Hox and immune/osteoclast processes.\"\n  },\n  \"context_utilization\": {\n    \"score\": 2,\n    \"rationale\": \"The answer uses some supplied GO and disease information, but it does not directly answer that no integrated-graph pathways include PAX1 and relies heavily on inference and irrelevant vector-context material.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_019f024ab2ca1bd9006a4d18c63b688196a2d8ed40a6dc2341",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2070,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 651,
+            "output_tokens_details": {
+              "reasoning_tokens": 492
+            },
+            "total_tokens": 2721
+          },
+          "user": null
+        },
+        "request_id": "077bad09-192f-4356-a084-ce857c69daef",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses PAX1-associated pathway-like annotations, but adds broad inferred pathways beyond the provided graph.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Some listed items match the supplied GO annotations, but craniofacial/limb, Wnt/BMP, immune response, and osteoclast differentiation are unsupported for PAX1 in the evidence.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Includes several relevant GO functions/processes but mixes them with speculative additions and does not cleanly distinguish graph evidence from inference.",
+      "score": 3.0
+    },
+    "context_groundedness": {
+      "rationale": "The context does not list any pathways for PAX1; it only provides GO terms, phenotypes, PPIs, and diseases. The answer correctly notes that explicit pathways are absent but then presents unsupported inferred pathways and unsupported links to Wnt/BMP/Hox and immune/osteoclast processes.",
+      "score": 2.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses some supplied GO and disease information, but it does not directly answer that no integrated-graph pathways include PAX1 and relies heavily on inference and irrelevant vector-context material.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States that pathways are not explicitly listed, but still presents unsupported inferred pathways.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q089",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q089.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.307478+00:00"
+}

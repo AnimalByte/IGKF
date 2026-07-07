@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q200",
+      "randomization_seed": "20260706:Q200:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q200",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q200",
+      "error": null,
+      "id": "batch_req_6a4d540d71388190ab1e357682ec2ed0",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452607,
+          "created_at": 1783452590,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_08d0775221ecb8fd006a4d53ae1a208190846d978afecdceaf",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q200"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_08d0775221ecb8fd006a4d53aec0e08190be24e80de1ed401d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the CFTR gene\u2019s role in cystic fibrosis.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately describes CFTR as an epithelial chloride channel whose mutations disrupt salt/water transport and cause CF manifestations.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers gene function, mutation effects, mucus pathology, organ involvement, and examples of common mutations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Confident statements are appropriate and scientifically supported.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Provides a direct answer to the biomedical question after a brief caveat.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies CFTR as a chloride and bicarbonate channel and links mutations to impaired epithelial ion/water transport and thick mucus.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the core mechanism and major clinical consequences, though in relatively brief form.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies scope while still giving an accurate general answer.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and clearly answers the role of CFTR in cystic fibrosis.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately explains CFTR chloride transport, salt-water balance, and effects of CFTR mutations.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the essential gene-protein relationship, transport function, mucus changes, obstruction, and organ complications.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not overclaim and presents well-established information.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":1,\"rationale\":\"Does not answer the biomedical question about CFTR\u2019s role.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Contains no substantive biomedical claims about CFTR to assess beyond declining to answer.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key facts about CFTR function, mutations, and cystic fibrosis pathophysiology.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing unsupported biomedical content.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_08d0775221ecb8fd006a4d53b83cc881909b20a8fa2d571429",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1204,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1031,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2235
+          },
+          "user": null
+        },
+        "request_id": "c0993c42-640c-4f78-a013-38104494b0c7",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and clearly answers the role of CFTR in cystic fibrosis.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately explains CFTR chloride transport, salt-water balance, and effects of CFTR mutations.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the essential gene-protein relationship, transport function, mucus changes, obstruction, and organ complications.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not overclaim and presents well-established information.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q200",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.272458+00:00"
+}

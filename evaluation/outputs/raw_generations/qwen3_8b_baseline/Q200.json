@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.3005,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The **CFTR gene** (Cystic Fibrosis Transmembrane Conductance Regulator) plays a critical role in the normal function of the **CFTR protein**, which is a **chloride channel** located in the cell membrane of various epithelial cells throughout the body. In healthy individuals, the CFTR protein helps regulate the movement of salt and water in and out of cells, particularly in the lungs, pancreas, liver, and intestines.\n\nIn **cystic fibrosis (CF)**, mutations in the **CFTR gene** lead to the production of a defective or absent CFTR protein. This results in:\n\n- **Thick, sticky mucus** that clogs airways and ducts, leading to chronic lung infections and digestive problems.\n- **Impaired chloride ion transport**, which disrupts the balance of salt and water in cells.\n- **Pancreatic insufficiency**, where the pancreas cannot deliver digestive enzymes to the intestines.\n- **Liver and intestinal complications**, including liver disease and intestinal blockages.\n\nThe most common mutations in the CFTR gene are **\u0394F508** (a deletion of three nucleotides that results in the absence of a phenylalanine residue at position 508) and **G551D** (a substitution of glycine with aspartic acid at position 551). These mutations disrupt the structure, function, or trafficking of the CFTR protein, leading to the clinical manifestations of cystic fibrosis.\n\nIn summary, the **CFTR gene** is essential for normal chloride ion transport, and mutations in this gene are the **primary cause of cystic fibrosis**.",
+  "question_id": "Q200",
+  "question_text": "What is the role of the CFTR gene in cystic fibrosis?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 344,
+    "prompt_token_count": 74,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The **CFTR gene** (Cystic Fibrosis Transmembrane Conductance Regulator) plays a critical role in the normal function of the **CFTR protein**, which is a **chloride channel** located in the cell membrane of various epithelial cells throughout the body. In healthy individuals, the CFTR protein helps regulate the movement of salt and water in and out of cells, particularly in the lungs, pancreas, liver, and intestines.\n\nIn **cystic fibrosis (CF)**, mutations in the **CFTR gene** lead to the production of a defective or absent CFTR protein. This results in:\n\n- **Thick, sticky mucus** that clogs airways and ducts, leading to chronic lung infections and digestive problems.\n- **Impaired chloride ion transport**, which disrupts the balance of salt and water in cells.\n- **Pancreatic insufficiency**, where the pancreas cannot deliver digestive enzymes to the intestines.\n- **Liver and intestinal complications**, including liver disease and intestinal blockages.\n\nThe most common mutations in the CFTR gene are **\u0394F508** (a deletion of three nucleotides that results in the absence of a phenylalanine residue at position 508) and **G551D** (a substitution of glycine with aspartic acid at position 551). These mutations disrupt the structure, function, or trafficking of the CFTR protein, leading to the clinical manifestations of cystic fibrosis.\n\nIn summary, the **CFTR gene** is essential for normal chloride ion transport, and mutations in this gene are the **primary cause of cystic fibrosis**."
+      }
+    ],
+    "created": 1783431028,
+    "id": "cmpl-03ec416f-eadb-4d4d-aa5a-8a1cc180fc23",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 344,
+      "prompt_tokens": 53,
+      "total_tokens": 397
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:30:28.113236+00:00",
+  "user_prompt": "What is the role of the CFTR gene in cystic fibrosis?"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q094",
+      "randomization_seed": "20260706:Q094:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q094",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q094",
+      "error": null,
+      "id": "batch_req_6a4d52bc39548190864943b25e4072e2",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452241,
+          "created_at": 1783452231,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04c77011a5e402bb006a4d524709a4819db56f30050d77bdce",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q094"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04c77011a5e402bb006a4d5247aac8819d9615394abb52985b",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses FOXA2 pathways generally, but not the pathways in the supplied integrated graph.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Provides plausible general FOXA2 biology but invents pathway memberships not supported by the provided graph evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not answer the evidence-based question; includes broad unsupported pathway categories instead of noting absence of pathway annotations.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Some caveats are present, but it still lists unsupported likely pathways.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Appropriately says the specific pathways cannot be listed, though it does not use the supplied graph context explicitly.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly avoids naming unsupported pathways, but inaccurately implies no integrated graph context is available at all.\"},\"completeness\":{\"score\":3,\"rationale\":\"Captures the need for pathway data but omits the provided fact that FOXA2 only has listed PPI interactors and no pathway annotations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported pathway claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that no explicit FOXA2 pathways are listed in the supplied graph context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the evidence: FOXA2 has listed PPI interactors but no pathway membership annotations, and the abstracts do not mention FOXA2.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key graph information and clearly states the limitation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids inferring pathways beyond the supplied context.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that no specific pathways involving FOXA2 can be identified from the provided graph.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the graph only provides FOXA2 interactors and that the literature context concerns FOXL2 and FOXP4-AS1, not FOXA2.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the important point that no pathway annotations are provided and mentions the available interaction context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the provided graph and literature context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04c77011a5e402bb006a4d524c0aec819da503305e9d1a1963",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2669,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1032,
+            "output_tokens_details": {
+              "reasoning_tokens": 467
+            },
+            "total_tokens": 3701
+          },
+          "user": null
+        },
+        "request_id": "09036e6e-7d4e-487c-8cb1-9145f551afc9",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Appropriately says the specific pathways cannot be listed, though it does not use the supplied graph context explicitly.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly avoids naming unsupported pathways, but inaccurately implies no integrated graph context is available at all.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Captures the need for pathway data but omits the provided fact that FOXA2 only has listed PPI interactors and no pathway annotations.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from unsupported pathway claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q094",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q094.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.176400+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.7497,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "LHX2 (LIM homeobox 2) is a transcription factor that plays a critical role in hair follicle biology and cycling. It is a member of the LIM-homeodomain family of transcription factors and is known to regulate the development and maintenance of various tissues, including the nervous system and hair follicles.\n\nIn the context of hair follicle biology, LHX2 is involved in the regulation of the hair follicle stem cell niche and the differentiation of hair follicle cells. It has been shown to be expressed in the bulge region of the hair follicle, which is a reservoir of multipotent stem cells. LHX2 is thought to contribute to the maintenance of these stem cells and their ability to regenerate the hair follicle during the hair growth (anagen) phase.\n\nResearch has also indicated that LHX2 may interact with other key regulators of hair follicle cycling, such as Wnt and Hedgehog signaling pathways, which are essential for the regulation of hair follicle development and regeneration. Mutations or dysregulation of LHX2 have been associated with defects in hair follicle development and cycling, suggesting its importance in maintaining the proper function of the hair follicle.\n\nIn summary, LHX2 is a key transcription factor involved in the regulation of hair follicle stem cell maintenance, differentiation, and cycling, and its function is essential for normal hair follicle biology.",
+  "question_id": "Q095",
+  "question_text": "What is known about the function of LHX2 in hair-follicle biology and cycling?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 281,
+    "prompt_token_count": 79,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "LHX2 (LIM homeobox 2) is a transcription factor that plays a critical role in hair follicle biology and cycling. It is a member of the LIM-homeodomain family of transcription factors and is known to regulate the development and maintenance of various tissues, including the nervous system and hair follicles.\n\nIn the context of hair follicle biology, LHX2 is involved in the regulation of the hair follicle stem cell niche and the differentiation of hair follicle cells. It has been shown to be expressed in the bulge region of the hair follicle, which is a reservoir of multipotent stem cells. LHX2 is thought to contribute to the maintenance of these stem cells and their ability to regenerate the hair follicle during the hair growth (anagen) phase.\n\nResearch has also indicated that LHX2 may interact with other key regulators of hair follicle cycling, such as Wnt and Hedgehog signaling pathways, which are essential for the regulation of hair follicle development and regeneration. Mutations or dysregulation of LHX2 have been associated with defects in hair follicle development and cycling, suggesting its importance in maintaining the proper function of the hair follicle.\n\nIn summary, LHX2 is a key transcription factor involved in the regulation of hair follicle stem cell maintenance, differentiation, and cycling, and its function is essential for normal hair follicle biology."
+      }
+    ],
+    "created": 1783430461,
+    "id": "cmpl-99c45881-67ba-4d1a-9647-8dbbb57bbc76",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 281,
+      "prompt_tokens": 58,
+      "total_tokens": 339
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:21:01.818276+00:00",
+  "user_prompt": "What is known about the function of LHX2 in hair-follicle biology and cycling?"
+}

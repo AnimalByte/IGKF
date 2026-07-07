@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q199",
+      "randomization_seed": "20260706:Q199:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q199",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q199",
+      "error": null,
+      "id": "batch_req_6a4d540d618881909144898d86f9c470",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452589,
+          "created_at": 1783452579,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09babe2e0e5080fb006a4d53a315d88190a6cc6d56bbcf9378",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q199"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09babe2e0e5080fb006a4d53a399fc8190a549f2008a11ea88",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset is out of scope for Alzheimer's treatment options.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately avoids unsupported biomedical claims and correctly identifies the alopecia-focused scope as insufficient for Alzheimer's treatment evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key elements: no sufficient evidence, alopecia focus, and Alzheimer's treatment question outside scope.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than providing general Alzheimer's treatment information.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the dataset supports Alzheimer's treatment summaries and states it is outside scope.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Core conclusion is scientifically and contextually correct, though references to graph/abstract details add unsupported specificity.\"},\"completeness\":{\"score\":5,\"rationale\":\"Fully covers dataset focus, lack of relevant Alzheimer's treatment data, and out-of-scope conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly abstains from summarizing unsupported treatment options.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the scope mismatch and insufficiency for Alzheimer's treatment options.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main conclusion is correct, but it includes potentially unsupported or internally tensioned details about Alzheimer's biomarker abstracts.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the essential abstention, though extra dataset-description details are unnecessary and somewhat confusing.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately states the dataset cannot be used to summarize Alzheimer's treatments.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and concisely answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states insufficiency and avoids making unsupported biomedical claims.\"},\"completeness\":{\"score\":5,\"rationale\":\"Contains all necessary components without unnecessary detail.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains because the question is outside the dataset's scope.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09babe2e0e5080fb006a4d53a92a7c81909aae612a6bd1bdfb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 778,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1018,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1796
+          },
+          "user": null
+        },
+        "request_id": "dd6d5ebb-17e4-4115-9fb3-5a05149918cb",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and concisely answers the question.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states insufficiency and avoids making unsupported biomedical claims.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Contains all necessary components without unnecessary detail.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly abstains because the question is outside the dataset's scope.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q199",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.271967+00:00"
+}

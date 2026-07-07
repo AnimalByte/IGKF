@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.4123,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "FOXA2 (Forkhead Box A2) is a transcription factor that plays a role in various developmental processes, including the regulation of gene expression in the gastrointestinal tract and the kidney. While FOXA2 is well-documented in these contexts, its direct regulatory relationships with downstream genes relevant to hair growth are not well-established in the current integrated evidence.\n\n### Direct Regulatory Evidence:\nThere is **no direct evidence** in the integrated evidence that FOXA2 directly regulates downstream genes specifically associated with hair growth. No studies have identified FOXA2 as a direct regulator of hair follicle development, cycling, or related genes such as *Wnt*, *BMP*, *FGF*, or *Keratin* genes.\n\n### Inferred Links:\nSome **indirect or inferred links** between FOXA2 and hair growth may exist through broader developmental pathways or tissue-specific gene regulatory networks. For example:\n- FOXA2 is expressed in the skin and may interact with other transcription factors involved in hair follicle development.\n- There is potential for FOXA2 to influence hair growth through its role in epithelial development, which is a shared process with hair follicle formation.\n- However, these links are **not supported by direct experimental evidence** (e.g., ChIP-seq, reporter assays, or gene knockout studies) showing FOXA2 binding to or regulating hair-related genes.\n\n### Conclusion:\nIn the integrated evidence, **FOXA2 does not have direct regulatory relationships with downstream genes relevant to hair growth**. Any connections between FOXA2 and hair growth are **inferred** and not supported by direct experimental data. Further research would be needed to determine if FOXA2 plays a role in hair growth through more complex regulatory networks or interactions with other transcription factors.",
+  "question_id": "Q177",
+  "question_text": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 356,
+    "prompt_token_count": 91,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "FOXA2 (Forkhead Box A2) is a transcription factor that plays a role in various developmental processes, including the regulation of gene expression in the gastrointestinal tract and the kidney. While FOXA2 is well-documented in these contexts, its direct regulatory relationships with downstream genes relevant to hair growth are not well-established in the current integrated evidence.\n\n### Direct Regulatory Evidence:\nThere is **no direct evidence** in the integrated evidence that FOXA2 directly regulates downstream genes specifically associated with hair growth. No studies have identified FOXA2 as a direct regulator of hair follicle development, cycling, or related genes such as *Wnt*, *BMP*, *FGF*, or *Keratin* genes.\n\n### Inferred Links:\nSome **indirect or inferred links** between FOXA2 and hair growth may exist through broader developmental pathways or tissue-specific gene regulatory networks. For example:\n- FOXA2 is expressed in the skin and may interact with other transcription factors involved in hair follicle development.\n- There is potential for FOXA2 to influence hair growth through its role in epithelial development, which is a shared process with hair follicle formation.\n- However, these links are **not supported by direct experimental evidence** (e.g., ChIP-seq, reporter assays, or gene knockout studies) showing FOXA2 binding to or regulating hair-related genes.\n\n### Conclusion:\nIn the integrated evidence, **FOXA2 does not have direct regulatory relationships with downstream genes relevant to hair growth**. Any connections between FOXA2 and hair growth are **inferred** and not supported by direct experimental data. Further research would be needed to determine if FOXA2 plays a role in hair growth through more complex regulatory networks or interactions with other transcription factors."
+      }
+    ],
+    "created": 1783430907,
+    "id": "cmpl-8c28e428-820b-477e-a68f-0df6b4fccd5c",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 356,
+      "prompt_tokens": 70,
+      "total_tokens": 426
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:28:27.918169+00:00",
+  "user_prompt": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links."
+}

@@ -1,0 +1,161 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.8028,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Based on the provided graph and vector contexts, there is no direct or indirect mention of any genes from the study being linked to **Minoxidil** in the integrated drug\u2013gene evidence. The genes identified in the GWAS study (KANSL1, FAM186A, OPHN1, SPAG17, and CIROZ) are associated with hair/balding pattern, but none of the abstracts or structured data provided reference Minoxidil or any related drug\u2013gene interactions.\n\nTherefore, **no genes from this study are explicitly linked to Minoxidil** in the integrated drug\u2013gene evidence.",
+  "question_id": "Q127",
+  "question_text": "Which genes from this study, if any, are linked to Minoxidil in the integrated drug\u2013gene evidence?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 132,
+    "prompt_token_count": 2172,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided graph and vector contexts, there is no direct or indirect mention of any genes from the study being linked to **Minoxidil** in the integrated drug\u2013gene evidence. The genes identified in the GWAS study (KANSL1, FAM186A, OPHN1, SPAG17, and CIROZ) are associated with hair/balding pattern, but none of the abstracts or structured data provided reference Minoxidil or any related drug\u2013gene interactions.\n\nTherefore, **no genes from this study are explicitly linked to Minoxidil** in the integrated drug\u2013gene evidence."
+      }
+    ],
+    "created": 1783432889,
+    "id": "cmpl-0daf4574-dcd4-482f-ba2d-139d390b7950",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 132,
+      "prompt_tokens": 2151,
+      "total_tokens": 2283
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      30.53522300720215,
+      32.69719696044922,
+      33.001399993896484,
+      33.315643310546875,
+      33.46446228027344,
+      33.687652587890625,
+      33.73024368286133,
+      33.82179641723633,
+      34.05483627319336,
+      34.162757873535156,
+      34.535919189453125,
+      34.67149353027344,
+      34.690494537353516,
+      34.712127685546875,
+      34.72813415527344
+    ],
+    "candidate_pmids": [
+      "34504491",
+      "37690223",
+      "36250278",
+      "34984527",
+      "42247190",
+      "42219787",
+      "40752378",
+      "42187511",
+      "40604025",
+      "38342585",
+      "38886911",
+      "35637434",
+      "35642741",
+      "42217088",
+      "36988711"
+    ],
+    "expanded_retrieval_query": "Which genes from this study, if any, are linked to Minoxidil in the integrated drug\u2013gene evidence? This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "final_context": "Graph Context:\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\nVector Context:\n--- Abstract 1 (PMID: 42187511, relevance: -3.2014) ---\nRecent evidence has established a significant link between N4 acetylcytidine (ac4C) mRNA modification, mediated by N Acetyltransferase 10 (NAT10), and bone metabolism. Nonetheless, the precise role and regulatory targets of NAT10, along with its associated ac4C modification in human bone formation, remain inadequately characterized. This study employed bioinformatics analysis of transcriptomic datasets from primary osteoblasts of individuals with high versus low bone mineral density (BMD), alongside a curated set of ac4C-modified genes, to identify key differentially expressed genes (DEGs) regulated by this pathway within an osteogenic context. Overall, eleven key NAT10/ac4C-associated DEGs linked to BMD status were identified: CFD, CTSF, DCXR, FADS1, GOLIM4, IMPA2, MLEC, NCLN, NT5DC2, PTGFRN, and VASP. Notably, FADS1, NT5DC2, and PTGFRN emerged as crucial ac4C-modified genes across three machine learning models. Furthermore, the tri-gene signature (FADS1/NT5DC2/PTGFRN) showed excellent diagnostic performance in distinguishing different BMD statuses. In vitro validation using MC3T3-E1 osteoblastic cells revealed that the knockdown of NAT10 via lentiviral delivery markedly impaired cell proliferation and osteogenic differentiation. This impairment was evidenced by the results of the CCK-8 proliferation assay, alkaline phosphatase staining, and Alizarin Red staining. Additionally, qRT PCR analysis demonstrated a significant downregulation of FADS1 and NT5DC2 expression subsequent to NAT10 knockdown. These findings underscore the role of NAT10-mediated ac4C modification as a pivotal regulator of osteoblast activity and gene expression programs associated with BMD. This research offers novel insights into the regulation of bone metabolism and proposes potential diagnostic markers and therapeutic targets for osteoporosis.\n\n--- Abstract 2 (PMID: 42219787, relevance: -5.2781) ---\nArsenic poisoning significantly elevates the risk of cancer and other chronic illnesses. The goal of this research is to identify important genes whose expression changes in response to arsenic toxicity, and the molecular pathways affected by arsenic, using computational analysis of arsenic toxicity profiles. This approach will computationally identify and analyze genes whose expression changes in response to arsenic, thereby elucidating the heightened risk of carcinogenesis in arsenic-exposed individuals. This work employed high-throughput arsenic toxicity profiles to computationally identify and analyze expressed genes (DEGs) differentially in Affymetrix microarray datasets from the Gene Expression Omnibus (GEO) database, which were screened using the GEO2R program. A protein-protein interaction (PPI) network was constructed using STRING to elucidate the functional links between these DEGs and DNA repair genes. Interactions between the seven central genes (E2F1, EXO1, EZH2, FEN1, HIST1H3A, POLA1, and TIMELESS) and the repair genes PARP1, NBN, PMS1, MSH3, XRCC5, XRCC6, MGMT, and MLH1 were discovered. We employed the DAVID and Enrichr-KG platforms to investigate the functions of these genes and their associations with cellular and molecular processes in greater detail. Two hundred eighty-one non-synonymous single-nucleotide polymorphisms (nsSNPs) in the 07 genes linked to arsenic toxicity were found using the COSMIC database. Based on our analysis, mutations in E2F1, EXO1, EZH2, FEN1, HIST1H3A, POLA1, and TIMELESS can hinder DNA repair mechanisms, ultimately leading to cancer. Our computational analysis demonstrated that these non-synonymous SNPs can affect gene function, potentially altering protein stability and activity. Furthermore, according to Metal-Protein docking and protein-protein docking, these genes and their mutations appear to affect interactions with repair proteins substantially. Specific dietary consumption may lessen the detrimental effects of arsenic poisoning on protein function. We hypothesized that the mutations might be reversed by attaching particular molecules to these mutants. The protective effects of six curcumin compounds were examined using molecular docking with AutoDock 4.2.6 to assess protein dynamics and binding interactions. Optimal complexes were selected for dynamics simulation using GROMACS, and potential strategies for long-term cancer prevention related to arsenic exposure were identified.\n\n--- Abstract 3 (PMID: 35642741, relevance: -5.7473) ---\nMental disorders present a global health concern and have limited treatment options. In today's medical practice, medications such as antidepressants are prescribed not only for depression but also for conditions such as anxiety and attention deficit hyperactivity disorder (ADHD). Therefore, identifying gene targets for specific disorders is important and offers improved precision. In this study, we performed a genetic analysis of six common mental disorders-ADHD, anxiety, depression, delays in mental development, intellectual disabilities (IDs) and speech/language disorder-in the ethnic minority of African Americans (AAs) using whole genome sequencing (WGS). WGS data were generated from blood-derived DNA from 4178 AA individuals, including 1384 patients with the diagnosis of at least one mental disorder. Mutation burden analysis was applied based on rare and deleterious mutations in the AA population between cases and controls, and further analyzed in the context of patients with single mental disorder diagnosis. Certain genes uncovered demonstrated significant P-values in mutation burden analysis. In addition, exclusive recurrences in specific type of disorder were scanned through gene-drug interaction databases to assess for availability of potential medications. We uncovered 15 genes harboring deleterious mutations, including 3-Hydroxy-3-Methylglutaryl-CoA Reductase (HMGCR) and Uronyl 2-Sulfotransferase (UST) for ADHD; Farnesyltransferase, CAAX Box, Beta (FNTB) for anxiety; Xin Actin Binding Repeat Containing 2 (XIRP2), Natriuretic Peptide C (NPPC), Serine/Threonine Kinase 33 (STK33), Pannexin 1 (PANX1) and Neurotensin (NTS) for depression; RUNX Family Transcription Factor 3 (RUNX3), Tachykinin Receptor 1 (TACR1) and NADH:Ubiquinone Oxidoreductase Core Subunit S7 (NDUFS7) for delays in mental development; Hepsin (HPN) for ID and Collagen Type VI Alpha 3 Chain (COL6A3), Damage Specific DNA Binding Protein 1 (DDB1) and NADH:Ubiquinone Oxidoreductase Subunit A11 (NDUFA11) for speech/language disorder. Taken together, we have established critical insights into the development of new precision medicine approaches for mental disorders in AAs.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "graph_context_length": 1378,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3411,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q127.json",
+    "retrieval_total_seconds": 34.9499,
+    "score_max": -3.2014055252075195,
+    "score_mean": -4.742273807525635,
+    "scores": [
+      -3.2014055252075195,
+      -5.278099060058594,
+      -5.747316837310791
+    ],
+    "selected_abstracts": [
+      "Recent evidence has established a significant link between N4 acetylcytidine (ac4C) mRNA modification, mediated by N Acetyltransferase 10 (NAT10), and bone metabolism. Nonetheless, the precise role and regulatory targets of NAT10, along with its associated ac4C modification in human bone formation, remain inadequately characterized. This study employed bioinformatics analysis of transcriptomic datasets from primary osteoblasts of individuals with high versus low bone mineral density (BMD), alongside a curated set of ac4C-modified genes, to identify key differentially expressed genes (DEGs) regulated by this pathway within an osteogenic context. Overall, eleven key NAT10/ac4C-associated DEGs linked to BMD status were identified: CFD, CTSF, DCXR, FADS1, GOLIM4, IMPA2, MLEC, NCLN, NT5DC2, PTGFRN, and VASP. Notably, FADS1, NT5DC2, and PTGFRN emerged as crucial ac4C-modified genes across three machine learning models. Furthermore, the tri-gene signature (FADS1/NT5DC2/PTGFRN) showed excellent diagnostic performance in distinguishing different BMD statuses. In vitro validation using MC3T3-E1 osteoblastic cells revealed that the knockdown of NAT10 via lentiviral delivery markedly impaired cell proliferation and osteogenic differentiation. This impairment was evidenced by the results of the CCK-8 proliferation assay, alkaline phosphatase staining, and Alizarin Red staining. Additionally, qRT PCR analysis demonstrated a significant downregulation of FADS1 and NT5DC2 expression subsequent to NAT10 knockdown. These findings underscore the role of NAT10-mediated ac4C modification as a pivotal regulator of osteoblast activity and gene expression programs associated with BMD. This research offers novel insights into the regulation of bone metabolism and proposes potential diagnostic markers and therapeutic targets for osteoporosis.",
+      "Arsenic poisoning significantly elevates the risk of cancer and other chronic illnesses. The goal of this research is to identify important genes whose expression changes in response to arsenic toxicity, and the molecular pathways affected by arsenic, using computational analysis of arsenic toxicity profiles. This approach will computationally identify and analyze genes whose expression changes in response to arsenic, thereby elucidating the heightened risk of carcinogenesis in arsenic-exposed individuals. This work employed high-throughput arsenic toxicity profiles to computationally identify and analyze expressed genes (DEGs) differentially in Affymetrix microarray datasets from the Gene Expression Omnibus (GEO) database, which were screened using the GEO2R program. A protein-protein interaction (PPI) network was constructed using STRING to elucidate the functional links between these DEGs and DNA repair genes. Interactions between the seven central genes (E2F1, EXO1, EZH2, FEN1, HIST1H3A, POLA1, and TIMELESS) and the repair genes PARP1, NBN, PMS1, MSH3, XRCC5, XRCC6, MGMT, and MLH1 were discovered. We employed the DAVID and Enrichr-KG platforms to investigate the functions of these genes and their associations with cellular and molecular processes in greater detail. Two hundred eighty-one non-synonymous single-nucleotide polymorphisms (nsSNPs) in the 07 genes linked to arsenic toxicity were found using the COSMIC database. Based on our analysis, mutations in E2F1, EXO1, EZH2, FEN1, HIST1H3A, POLA1, and TIMELESS can hinder DNA repair mechanisms, ultimately leading to cancer. Our computational analysis demonstrated that these non-synonymous SNPs can affect gene function, potentially altering protein stability and activity. Furthermore, according to Metal-Protein docking and protein-protein docking, these genes and their mutations appear to affect interactions with repair proteins substantially. Specific dietary consumption may lessen the detrimental effects of arsenic poisoning on protein function. We hypothesized that the mutations might be reversed by attaching particular molecules to these mutants. The protective effects of six curcumin compounds were examined using molecular docking with AutoDock 4.2.6 to assess protein dynamics and binding interactions. Optimal complexes were selected for dynamics simulation using GROMACS, and potential strategies for long-term cancer prevention related to arsenic exposure were identified.",
+      "Mental disorders present a global health concern and have limited treatment options. In today's medical practice, medications such as antidepressants are prescribed not only for depression but also for conditions such as anxiety and attention deficit hyperactivity disorder (ADHD). Therefore, identifying gene targets for specific disorders is important and offers improved precision. In this study, we performed a genetic analysis of six common mental disorders-ADHD, anxiety, depression, delays in mental development, intellectual disabilities (IDs) and speech/language disorder-in the ethnic minority of African Americans (AAs) using whole genome sequencing (WGS). WGS data were generated from blood-derived DNA from 4178 AA individuals, including 1384 patients with the diagnosis of at least one mental disorder. Mutation burden analysis was applied based on rare and deleterious mutations in the AA population between cases and controls, and further analyzed in the context of patients with single mental disorder diagnosis. Certain genes uncovered demonstrated significant P-values in mutation burden analysis. In addition, exclusive recurrences in specific type of disorder were scanned through gene-drug interaction databases to assess for availability of potential medications. We uncovered 15 genes harboring deleterious mutations, including 3-Hydroxy-3-Methylglutaryl-CoA Reductase (HMGCR) and Uronyl 2-Sulfotransferase (UST) for ADHD; Farnesyltransferase, CAAX Box, Beta (FNTB) for anxiety; Xin Actin Binding Repeat Containing 2 (XIRP2), Natriuretic Peptide C (NPPC), Serine/Threonine Kinase 33 (STK33), Pannexin 1 (PANX1) and Neurotensin (NTS) for depression; RUNX Family Transcription Factor 3 (RUNX3), Tachykinin Receptor 1 (TACR1) and NADH:Ubiquinone Oxidoreductase Core Subunit S7 (NDUFS7) for delays in mental development; Hepsin (HPN) for ID and Collagen Type VI Alpha 3 Chain (COL6A3), Damage Specific DNA Binding Protein 1 (DDB1) and NADH:Ubiquinone Oxidoreductase Subunit A11 (NDUFA11) for speech/language disorder. Taken together, we have established critical insights into the development of new precision medicine approaches for mental disorders in AAs."
+    ],
+    "selected_pmids": [
+      "42187511",
+      "42219787",
+      "35642741"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1106
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:01:29.785384+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42187511, relevance: -3.2014) ---\nRecent evidence has established a significant link between N4 acetylcytidine (ac4C) mRNA modification, mediated by N Acetyltransferase 10 (NAT10), and bone metabolism. Nonetheless, the precise role and regulatory targets of NAT10, along with its associated ac4C modification in human bone formation, remain inadequately characterized. This study employed bioinformatics analysis of transcriptomic datasets from primary osteoblasts of individuals with high versus low bone mineral density (BMD), alongside a curated set of ac4C-modified genes, to identify key differentially expressed genes (DEGs) regulated by this pathway within an osteogenic context. Overall, eleven key NAT10/ac4C-associated DEGs linked to BMD status were identified: CFD, CTSF, DCXR, FADS1, GOLIM4, IMPA2, MLEC, NCLN, NT5DC2, PTGFRN, and VASP. Notably, FADS1, NT5DC2, and PTGFRN emerged as crucial ac4C-modified genes across three machine learning models. Furthermore, the tri-gene signature (FADS1/NT5DC2/PTGFRN) showed excellent diagnostic performance in distinguishing different BMD statuses. In vitro validation using MC3T3-E1 osteoblastic cells revealed that the knockdown of NAT10 via lentiviral delivery markedly impaired cell proliferation and osteogenic differentiation. This impairment was evidenced by the results of the CCK-8 proliferation assay, alkaline phosphatase staining, and Alizarin Red staining. Additionally, qRT PCR analysis demonstrated a significant downregulation of FADS1 and NT5DC2 expression subsequent to NAT10 knockdown. These findings underscore the role of NAT10-mediated ac4C modification as a pivotal regulator of osteoblast activity and gene expression programs associated with BMD. This research offers novel insights into the regulation of bone metabolism and proposes potential diagnostic markers and therapeutic targets for osteoporosis.\n\n--- Abstract 2 (PMID: 42219787, relevance: -5.2781) ---\nArsenic poisoning significantly elevates the risk of cancer and other chronic illnesses. The goal of this research is to identify important genes whose expression changes in response to arsenic toxicity, and the molecular pathways affected by arsenic, using computational analysis of arsenic toxicity profiles. This approach will computationally identify and analyze genes whose expression changes in response to arsenic, thereby elucidating the heightened risk of carcinogenesis in arsenic-exposed individuals. This work employed high-throughput arsenic toxicity profiles to computationally identify and analyze expressed genes (DEGs) differentially in Affymetrix microarray datasets from the Gene Expression Omnibus (GEO) database, which were screened using the GEO2R program. A protein-protein interaction (PPI) network was constructed using STRING to elucidate the functional links between these DEGs and DNA repair genes. Interactions between the seven central genes (E2F1, EXO1, EZH2, FEN1, HIST1H3A, POLA1, and TIMELESS) and the repair genes PARP1, NBN, PMS1, MSH3, XRCC5, XRCC6, MGMT, and MLH1 were discovered. We employed the DAVID and Enrichr-KG platforms to investigate the functions of these genes and their associations with cellular and molecular processes in greater detail. Two hundred eighty-one non-synonymous single-nucleotide polymorphisms (nsSNPs) in the 07 genes linked to arsenic toxicity were found using the COSMIC database. Based on our analysis, mutations in E2F1, EXO1, EZH2, FEN1, HIST1H3A, POLA1, and TIMELESS can hinder DNA repair mechanisms, ultimately leading to cancer. Our computational analysis demonstrated that these non-synonymous SNPs can affect gene function, potentially altering protein stability and activity. Furthermore, according to Metal-Protein docking and protein-protein docking, these genes and their mutations appear to affect interactions with repair proteins substantially. Specific dietary consumption may lessen the detrimental effects of arsenic poisoning on protein function. We hypothesized that the mutations might be reversed by attaching particular molecules to these mutants. The protective effects of six curcumin compounds were examined using molecular docking with AutoDock 4.2.6 to assess protein dynamics and binding interactions. Optimal complexes were selected for dynamics simulation using GROMACS, and potential strategies for long-term cancer prevention related to arsenic exposure were identified.\n\n--- Abstract 3 (PMID: 35642741, relevance: -5.7473) ---\nMental disorders present a global health concern and have limited treatment options. In today's medical practice, medications such as antidepressants are prescribed not only for depression but also for conditions such as anxiety and attention deficit hyperactivity disorder (ADHD). Therefore, identifying gene targets for specific disorders is important and offers improved precision. In this study, we performed a genetic analysis of six common mental disorders-ADHD, anxiety, depression, delays in mental development, intellectual disabilities (IDs) and speech/language disorder-in the ethnic minority of African Americans (AAs) using whole genome sequencing (WGS). WGS data were generated from blood-derived DNA from 4178 AA individuals, including 1384 patients with the diagnosis of at least one mental disorder. Mutation burden analysis was applied based on rare and deleterious mutations in the AA population between cases and controls, and further analyzed in the context of patients with single mental disorder diagnosis. Certain genes uncovered demonstrated significant P-values in mutation burden analysis. In addition, exclusive recurrences in specific type of disorder were scanned through gene-drug interaction databases to assess for availability of potential medications. We uncovered 15 genes harboring deleterious mutations, including 3-Hydroxy-3-Methylglutaryl-CoA Reductase (HMGCR) and Uronyl 2-Sulfotransferase (UST) for ADHD; Farnesyltransferase, CAAX Box, Beta (FNTB) for anxiety; Xin Actin Binding Repeat Containing 2 (XIRP2), Natriuretic Peptide C (NPPC), Serine/Threonine Kinase 33 (STK33), Pannexin 1 (PANX1) and Neurotensin (NTS) for depression; RUNX Family Transcription Factor 3 (RUNX3), Tachykinin Receptor 1 (TACR1) and NADH:Ubiquinone Oxidoreductase Core Subunit S7 (NDUFS7) for delays in mental development; Hepsin (HPN) for ID and Collagen Type VI Alpha 3 Chain (COL6A3), Damage Specific DNA Binding Protein 1 (DDB1) and NADH:Ubiquinone Oxidoreductase Subunit A11 (NDUFA11) for speech/language disorder. Taken together, we have established critical insights into the development of new precision medicine approaches for mental disorders in AAs.\n\n\n\n**Question:**\nWhich genes from this study, if any, are linked to Minoxidil in the integrated drug\u2013gene evidence?"
+}

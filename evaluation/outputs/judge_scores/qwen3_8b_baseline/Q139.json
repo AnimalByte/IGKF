@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q139",
+      "randomization_seed": "20260706:Q139:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q139",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q139",
+      "error": null,
+      "id": "batch_req_6a4d5409495c81909de5aae5010cdd49",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452588,
+          "created_at": 1783452573,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e8e396fda3f4898006a4d539d62d481978da61f0855ce6754",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q139"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e8e396fda3f4898006a4d539e149c8197b03cfc517cf65b36",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether the association is physical or functional and describes evidence type and strength.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately identifies an indirect functional androgen-axis relationship via SRD5A2 production of DHT for AR signaling, with no direct PPI evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key distinction between functional and physical association, though it does not explicitly reference the supplied PPI absence or disease/drug-context evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the relationship as functional/pathway-level and not direct physical binding.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and organizes the evidence by pathway, drug, and disease context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Core conclusion is correct, but it somewhat overstates shared disease and drug-target evidence and blurs SRD5A2 deficiency with androgen insensitivity.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes physical absence, functional pathway evidence, pharmacological context, and clinical/genetic context.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"States the association is indirect and no physical interaction is reported, but strength is somewhat overcalled as strong across multiple lines.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses both physical and functional association and discusses evidence strength.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly notes no physical interaction and describes the DHT-mediated link, but underestimates the functional association supported by the integrated evidence by calling it weak and not a direct functional association.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main components, though it gives limited detail on the supplied integrated evidence beyond the pathway relationship.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Generally avoids unsupported claims, but is overly dismissive of the indirect functional evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question with evidence type and strength.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that SRD5A2 is not in the AR PPI list and that the supported relationship is an indirect functional androgen-metabolism/signaling link.\"},\"completeness\":{\"score\":5,\"rationale\":\"Uses both graph and literature context and clearly distinguishes physical interaction from pathway-level functional association.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the evidence as absent for physical interaction and moderate/indirect for functional linkage.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e8e396fda3f4898006a4d53a73c288197a852ba6a1f1c9837",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3609,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1536,
+            "output_tokens_details": {
+              "reasoning_tokens": 929
+            },
+            "total_tokens": 5145
+          },
+          "user": null
+        },
+        "request_id": "01183e62-30d8-43e1-94b6-47e3f3d92bed",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses both physical and functional association and discusses evidence strength.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes no physical interaction and describes the DHT-mediated link, but underestimates the functional association supported by the integrated evidence by calling it weak and not a direct functional association.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers the main components, though it gives limited detail on the supplied integrated evidence beyond the pathway relationship.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Generally avoids unsupported claims, but is overly dismissive of the indirect functional evidence.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q139",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q139.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.229565+00:00"
+}

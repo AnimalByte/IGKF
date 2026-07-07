@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q187",
+      "randomization_seed": "20260706:Q187:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q187",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q187",
+      "error": null,
+      "id": "batch_req_6a4d540d146c8190aaf80c2057708c7d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452576,
+          "created_at": 1783452559,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_02388f924b194e39006a4d538f153c81939840b07f52e43f1c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q187"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_02388f924b194e39006a4d538f9b488193a774a79518a14c48",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question by stating the dataset is not available and outlining what would be needed to test the interaction.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly identifies that genotype, phenotype, environmental exposure, and an interaction test are needed for a gene-environment interaction claim.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the key requirements, though it does not assess any dataset-specific evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from making unsupported claims without the dataset.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses insufficiency of unspecified data and lists needed components for testing.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Scientifically accurate about requirements for testing SRD5A2 gene-environment interaction with hair loss.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes genotype, exposure, phenotype, confounding, and statistical modeling, but lacks dataset-specific assessment.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly qualifies that the dataset is not specified and avoids unsupported conclusions.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that the dataset does not show a gene-environment interaction and explains why.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly distinguishes SRD5A2-hair loss association and drug targeting from evidence of a gene-environment interaction.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers why existing evidence is insufficient and lists the main data and analysis needed to test interaction.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Does not overclaim; appropriately limits the conclusion to association rather than interaction.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the dataset contains evidence and explains the distinction from gene-environment interaction.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Generally accurate, though it includes specific dataset details and somewhat overstates that longitudinal or expression data would be required.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides a thorough synthesis and needed environmental data, but is less explicit about individual-level genotype, hair-loss phenotype, and formal interaction modeling.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately concludes that association and pharmacological relevance do not establish gene-environment interaction.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_02388f924b194e39006a4d539a971c8193b3211b2b84e17c1e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2147,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1537,
+            "output_tokens_details": {
+              "reasoning_tokens": 790
+            },
+            "total_tokens": 3684
+          },
+          "user": null
+        },
+        "request_id": "35aaa573-96b0-455f-8610-1621942300f5",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses insufficiency of unspecified data and lists needed components for testing.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Scientifically accurate about requirements for testing SRD5A2 gene-environment interaction with hair loss.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes genotype, exposure, phenotype, confounding, and statistical modeling, but lacks dataset-specific assessment.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly qualifies that the dataset is not specified and avoids unsupported conclusions.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q187",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.263716+00:00"
+}

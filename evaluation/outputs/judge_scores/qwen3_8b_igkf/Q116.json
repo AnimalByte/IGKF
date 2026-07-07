@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q116",
+      "randomization_seed": "20260706:Q116:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q116",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q116",
+      "error": null,
+      "id": "batch_req_6a4d5407fa2c8190864296855c87e130",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452531,
+          "created_at": 1783452521,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0eb8d0453bbeea96006a4d536910408195a6187a830ebfbe9c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q116"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0eb8d0453bbeea96006a4d536a05888195b6a604004fc11ff3",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the gene-identification question, but not the specific study described in the evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Names WNT10A and FGF5 as the main genes, which is unsupported by the provided study context; the evidence highlights EDA2R and AR.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key genes supported by the reference evidence and adds unrelated candidates.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes some general qualification, but still presents unsupported genes as the main answer.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which genes are linked to the highlighted variants in the study.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies EDA2R and AR, matching the provided evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key supported genes and relevant study context without excessive unsupported additions.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately frames the answer as based on the provided context and avoids overclaiming.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question and includes some correct genes, but broadens beyond the study evidence.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Includes AR and EDA2R, but also lists several genes not supported by the provided evidence as strongest associations.\"},\"completeness\":{\"score\":3,\"rationale\":\"Contains the key supported genes but dilutes the answer with unsupported additions.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"States unsupported genes as reported strongest associations with little qualification.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question using the genes linked to the study's highlighted variants.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies EDA2R and AR as the genes near the baldness-associated SNPs emphasized in the evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the key genes and concise supporting context from the study.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Generally well-qualified, though it states 'most strongly associated' more definitively than the abstract alone establishes.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0eb8d0453bbeea96006a4d536ebd788195b20547c015365a50",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2338,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1051,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3389
+          },
+          "user": null
+        },
+        "request_id": "9219aa07-7ea1-4260-ae82-28dbfb6461a3",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "6f1d7bb0bdec9b6bf9ecefb2cbafb9112f85b1524dd0b7905b1efb0c25e786f9",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q116",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q116.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q116::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q116::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b7c26c819081a057f4c1500b23",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437475,
+          "created_at": 1783437466,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0012b4772ebb5b65006a4d189aad748195b8ac1a39461b3d32",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q116"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0012b4772ebb5b65006a4d189b388c81959ad4703e493822a5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":4,\"rationale\":\"The answer is largely supported by the supplied abstract, which states that baldness-associated SNPs near EDA2R and AR had large allele-frequency differences and were relevant to the study. However, the context does not explicitly say these were the 'most strongly associated variants,' so that phrasing is a slight overclaim.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer appropriately uses the key relevant evidence from the androgenetic alopecia abstract and ignores unrelated abstracts.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0012b4772ebb5b65006a4d18a1d1ac8195b7109e204017c2f0",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1579,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 627,
+            "output_tokens_details": {
+              "reasoning_tokens": 505
+            },
+            "total_tokens": 2206
+          },
+          "user": null
+        },
+        "request_id": "6bd64103-667d-411c-940f-767997fb8d34",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question using the genes linked to the study's highlighted variants.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly identifies EDA2R and AR as the genes near the baldness-associated SNPs emphasized in the evidence.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the key genes and concise supporting context from the study.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is largely supported by the supplied abstract, which states that baldness-associated SNPs near EDA2R and AR had large allele-frequency differences and were relevant to the study. However, the context does not explicitly say these were the 'most strongly associated variants,' so that phrasing is a slight overclaim.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key relevant evidence from the androgenetic alopecia abstract and ignores unrelated abstracts.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Generally well-qualified, though it states 'most strongly associated' more definitively than the abstract alone establishes.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q116",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q116.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.327396+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.4282,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "HDAC9 (Histone Deacetylase 9) is a member of the class III (sirtuin) family of histone deacetylases. In the context of an integrated biological graph, HDAC9 would be included in pathways related to:\n\n1. **Sirtuin signaling pathways** \u2013 HDAC9 is a sirtuin enzyme, and its activity is regulated by NAD+ and is involved in various cellular processes such as metabolism, stress response, and aging.\n\n2. **Transcriptional regulation pathways** \u2013 As a histone deacetylase, HDAC9 modulates chromatin structure and gene expression by deacetylating histones and other proteins, influencing transcriptional activity.\n\n3. **Apoptosis and cell survival pathways** \u2013 HDAC9 has been implicated in the regulation of apoptosis and cell survival, particularly in the context of cancer and neurodegenerative diseases.\n\n4. **Neurodevelopmental pathways** \u2013 HDAC9 is expressed in the brain and has been associated with neurodevelopment and synaptic plasticity.\n\n5. **Metabolic pathways** \u2013 HDAC9 is involved in metabolic regulation, particularly in the context of energy homeostasis and mitochondrial function.\n\n6. **Cancer-related pathways** \u2013 HDAC9 has been linked to various cancers, including leukemia and lymphoma, and is involved in tumor progression and drug resistance.\n\nTo identify the exact pathways in a specific integrated graph (such as those from databases like KEGG, Reactome, or STRING), you would need to query the graph using HDAC9 as a node and examine its associated pathways. If you have access to a specific integrated graph or database, you can use tools like Cytoscape or pathway analysis software to explore the connections.",
+  "question_id": "Q079",
+  "question_text": "Which pathways in the integrated graph include HDAC9?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 358,
+    "prompt_token_count": 70,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "HDAC9 (Histone Deacetylase 9) is a member of the class III (sirtuin) family of histone deacetylases. In the context of an integrated biological graph, HDAC9 would be included in pathways related to:\n\n1. **Sirtuin signaling pathways** \u2013 HDAC9 is a sirtuin enzyme, and its activity is regulated by NAD+ and is involved in various cellular processes such as metabolism, stress response, and aging.\n\n2. **Transcriptional regulation pathways** \u2013 As a histone deacetylase, HDAC9 modulates chromatin structure and gene expression by deacetylating histones and other proteins, influencing transcriptional activity.\n\n3. **Apoptosis and cell survival pathways** \u2013 HDAC9 has been implicated in the regulation of apoptosis and cell survival, particularly in the context of cancer and neurodegenerative diseases.\n\n4. **Neurodevelopmental pathways** \u2013 HDAC9 is expressed in the brain and has been associated with neurodevelopment and synaptic plasticity.\n\n5. **Metabolic pathways** \u2013 HDAC9 is involved in metabolic regulation, particularly in the context of energy homeostasis and mitochondrial function.\n\n6. **Cancer-related pathways** \u2013 HDAC9 has been linked to various cancers, including leukemia and lymphoma, and is involved in tumor progression and drug resistance.\n\nTo identify the exact pathways in a specific integrated graph (such as those from databases like KEGG, Reactome, or STRING), you would need to query the graph using HDAC9 as a node and examine its associated pathways. If you have access to a specific integrated graph or database, you can use tools like Cytoscape or pathway analysis software to explore the connections."
+      }
+    ],
+    "created": 1783430383,
+    "id": "cmpl-d519e683-d441-4239-b16d-025c64b8ea86",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 358,
+      "prompt_tokens": 49,
+      "total_tokens": 407
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:19:43.936213+00:00",
+  "user_prompt": "Which pathways in the integrated graph include HDAC9?"
+}

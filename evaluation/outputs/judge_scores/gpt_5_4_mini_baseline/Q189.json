@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q189",
+      "randomization_seed": "20260706:Q189:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q189",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q189",
+      "error": null,
+      "id": "batch_req_6a4d540c9a8881908e1a79b3a2f9e33f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452588,
+          "created_at": 1783452559,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a0914a94f9e66ae006a4d538f28848190a20b63f2af9ec9c6",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q189"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a0914a94f9e66ae006a4d5390a2b8819090a8b896762dccd3",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether SRD5A2 genotype supports differential dutasteride response and clearly separates mechanism from pharmacogenomic evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence: SRD5A2 is mechanistically relevant to DHT synthesis, but the abstracts concern SRD5A2 deficiency rather than dutasteride response by genotype.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers pharmacologic mechanism, disease-genotype evidence, and the absence of clinical pharmacogenomic response evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from claiming genotype-stratified dutasteride response where the evidence is insufficient.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question and distinguishes drug mechanism from pharmacogenomic evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly accurate, including dutasteride inhibition of 5-alpha-reductase and lack of direct pharmacogenomic evidence, but the statement that response is not expected to vary by genotype is somewhat stronger than the supplied evidence supports.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the key points, though it could more explicitly emphasize that the cited SRD5A2 variant evidence is disease-genotype rather than drug-response evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Generally cautious, but somewhat overstates the conclusion by implying genotype would not affect response rather than saying the evidence does not demonstrate it.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question and separates mechanism from pharmacogenomic interpretation.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The overall conclusion is consistent with the reference evidence, but it introduces unsupported claims about heterogeneous pharmacogenomic studies, common variants, and finasteride-focused literature not present in the evidence packet.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes mechanism, pharmacogenomic interpretation, and clinical actionability, but some added discussion is not grounded in the supplied evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately qualifies the evidence as not clinically actionable, but implies the existence of weak/inconsistent pharmacogenomic data beyond the supplied evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question and presents separate sections for mechanism and pharmacogenomic evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The main conclusion is broadly consistent with the reference evidence, but it introduces unsupported specific SRD5A2 polymorphisms and speculative response associations not present in the evidence packet.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the needed distinction between mechanism and pharmacogenomics, but includes unnecessary unsupported details.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"It qualifies the evidence as weak, but still invents or implies specific pharmacogenomic associations not supported by the supplied evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a0914a94f9e66ae006a4d539c0ac08190a385519e50f0edbc",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4299,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1905,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 6204
+          },
+          "user": null
+        },
+        "request_id": "71d95ac1-8d3c-49e7-87cc-096c7a368305",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question and separates mechanism from pharmacogenomic interpretation.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The overall conclusion is consistent with the reference evidence, but it introduces unsupported claims about heterogeneous pharmacogenomic studies, common variants, and finasteride-focused literature not present in the evidence packet.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Includes mechanism, pharmacogenomic interpretation, and clinical actionability, but some added discussion is not grounded in the supplied evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the evidence as not clinically actionable, but implies the existence of weak/inconsistent pharmacogenomic data beyond the supplied evidence.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q189",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q189.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.265357+00:00"
+}

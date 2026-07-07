@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q144",
+      "randomization_seed": "20260706:Q144:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q144",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q144",
+      "error": null,
+      "id": "batch_req_6a4d5409c7cc819089b001461c086ca4",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452601,
+          "created_at": 1783452590,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ee348df143c5660006a4d53ae6ac4819398a464b2bbbbde7e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q144"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ee348df143c5660006a4d53aeecd08193a3cdd18805d5111a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether EDA2R and LGR4 have a physical or functional association and summarizes evidence strength.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly concludes that the supplied data do not support an EDA2R-LGR4 association, but adds unsupported tissue-expression claims not present in the evidence packet.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers physical and functional association and gives a strength assessment, but does not cite the specific provided PPI list or lack of relevant abstracts.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids claiming an association, though the unsupported expression comment slightly weakens the abstention.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the provided graph and literature context: LGR4 is not listed as an EDA2R interactor and the abstracts do not support a link.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers physical association, functional association, evidence type, and evidence strength using the supplied data.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly states that evidence is absent or insufficient and avoids unsupported claims.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses the question directly, including evidence type and strength.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly claims that the integrated data provide evidence for a functional EDA2R-LGR4 association, which is not supported by the supplied graph or abstracts.\"},\"completeness\":{\"score\":2,\"rationale\":\"Mentions physical versus functional association and strength, but the main conclusion and evidence categories are unsupported.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents an unsupported functional association despite the absence of evidence in the packet.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and explains the rationale.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that LGR4 is not among EDA2R PPI partners and that the supplied pathways, disease associations, and abstracts do not support a link.\"},\"completeness\":{\"score\":5,\"rationale\":\"Thoroughly covers interaction data, pathway/function overlap, disease/phenotype context, literature context, and evidence strength.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately frames the conclusion as absence of evidence within the provided integrated data and avoids unsupported association claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ee348df143c5660006a4d53b4e5988193b356ce42a93fe69b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3202,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1106,
+            "output_tokens_details": {
+              "reasoning_tokens": 507
+            },
+            "total_tokens": 4308
+          },
+          "user": null
+        },
+        "request_id": "936783be-0a2c-446a-b4e2-d608cf11c988",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether EDA2R and LGR4 have a physical or functional association and summarizes evidence strength.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly concludes that the supplied data do not support an EDA2R-LGR4 association, but adds unsupported tissue-expression claims not present in the evidence packet.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers physical and functional association and gives a strength assessment, but does not cite the specific provided PPI list or lack of relevant abstracts.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids claiming an association, though the unsupported expression comment slightly weakens the abstention.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q144",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q144.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.232840+00:00"
+}

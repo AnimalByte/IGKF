@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q112",
+      "randomization_seed": "20260706:Q112:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q112",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q112",
+      "error": null,
+      "id": "batch_req_6a4d540758188190a22a96c0e2e8a141",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452521,
+          "created_at": 1783452508,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_082e6d178f4cb4a1006a4d535caa2c8196b754c12416d9ffcc",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q112"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_082e6d178f4cb4a1006a4d535d5d948196b53553190fab7696",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses the question, but provides an unsupported evidence narrative rather than recognizing the lack of supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Many claims about FGF involvement in androgenetic alopecia are not supported by the provided reference evidence, which contains no AGA-related data.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers plausible categories of evidence, but the necessary component here is acknowledging that the supplied evidence does not establish the link.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Some qualification is included, but it still asserts several unsupported links instead of abstaining based on insufficient evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the requested relationship between FGF signaling and androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"The provided evidence does not support the asserted links to AGA, androgen receptor interaction, DHT response, animal models, or genetic susceptibility.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Lists multiple possible evidence types, but omits the key point that the supplied context contains no direct evidence for AGA.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Includes mild caveats, but largely presents unsupported conclusions as evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately answers that the supplied context provides no direct evidence linking FGF signaling to androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the reference evidence: the abstracts concern FGF5 in nasopharyngeal carcinoma and FGF19 in cartilage, not AGA.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly explains what the context does and does not show, and identifies the missing AGA-relevant elements.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from making an unsupported biological claim and clearly qualifies the evidence gap.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question by stating that the provided literature does not support a link.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately summarizes that the provided abstracts do not mention androgenetic alopecia or a relationship with FGF signaling.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main absence of evidence and briefly summarizes the unrelated topics, though with less detail than possible.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly abstains from unsupported inference and confines the conclusion to the provided information.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_082e6d178f4cb4a1006a4d5362b4e481969dee4964856a2474",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3093,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1303,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4396
+          },
+          "user": null
+        },
+        "request_id": "1e519d6a-3ebd-4f9c-85b0-def7560d9aba",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question, but provides an unsupported evidence narrative rather than recognizing the lack of supplied evidence.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Many claims about FGF involvement in androgenetic alopecia are not supported by the provided reference evidence, which contains no AGA-related data.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Covers plausible categories of evidence, but the necessary component here is acknowledging that the supplied evidence does not establish the link.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Some qualification is included, but it still asserts several unsupported links instead of abstaining based on insufficient evidence.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q112",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q112.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.210469+00:00"
+}

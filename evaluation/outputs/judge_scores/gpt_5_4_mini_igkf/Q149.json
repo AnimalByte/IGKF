@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q149",
+      "randomization_seed": "20260706:Q149:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q149",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q149",
+      "error": null,
+      "id": "batch_req_6a4d5409ecb081908c8212d48d676fac",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452621,
+          "created_at": 1783452608,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0af99c0f7a564e9c006a4d53c082988197980fed919d231018",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q149"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0af99c0f7a564e9c006a4d53c1371881979978dc111c5fd4c5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses reduced-risk variants and effect direction, but does not appropriately answer based on the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Unsupportedly claims protective variants in AR; the provided context does not give per-variant effect directions or identify reduced-risk variants.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not identify specific variants and only vaguely notes a limitation after making an unsupported claim.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes some caveats, but primarily invents an unsupported protective association.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether reduced-risk variants can be identified from effect directions.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the relevant abstract reports associations but lacks per-variant effect directions needed to identify protective variants.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key answer: no reduced-risk variants are identifiable and the limitation is unavailable effect-direction data.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from naming variants because the evidence is insufficient.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question and concludes no reduced-risk variants are identified from the context.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correct that no protective variants are described in the provided context, but it overstates that the study focuses on increased-risk variants rather than noting effect directions are unavailable.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions no reduced-risk variants are identified, but does not clearly state the central limitation that per-variant effect directions are unavailable.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Somewhat cautious by saying based on the provided context, but implies absence of protective variants rather than insufficient effect-direction information.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the need for effect-direction data to identify protective variants, though it does not explicitly use the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Scientifically accurate that variants cannot be classified as protective without beta/OR direction, but less specific to the provided androgenetic alopecia abstract.\"},\"completeness\":{\"score\":3,\"rationale\":\"States that effect-direction data are needed, but does not explicitly conclude that the supplied abstract/context lacks this information and therefore no variants can be identified.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from identifying variants without the necessary effect-direction table or summary.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0af99c0f7a564e9c006a4d53c849008197ae4fbaf6695e483d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2302,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1110,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3412
+          },
+          "user": null
+        },
+        "request_id": "3b56194b-1bd6-462a-a44e-f53e850ac05f",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "e4dbbf0a845d2811581d89f4d25b2d77a6793138dd63696afb26b0162e1d3f92",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q149",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q149.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q149::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q149::R2",
+      "error": null,
+      "id": "batch_req_6a4d19bc2c6c819096345b40f189f6c8",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437458,
+          "created_at": 1783437452,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a1b43cec82fa153006a4d188cd2848194adee87a213879d76",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q149"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a1b43cec82fa153006a4d188d3e9881948b997f955ce23b85",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately states that the androgenetic alopecia abstract reports associations and independent signals but does not provide per-variant effect directions or protective variants.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"It appropriately uses the relevant androgenetic alopecia abstract and the absence of graph evidence, while avoiding unsupported identification of reduced-risk variants.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a1b43cec82fa153006a4d189149448194845c6153bb219770",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1627,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 450,
+            "output_tokens_details": {
+              "reasoning_tokens": 333
+            },
+            "total_tokens": 2077
+          },
+          "user": null
+        },
+        "request_id": "5c71f521-8b36-455c-bdbb-34c461576b0d",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether reduced-risk variants can be identified from effect directions.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the relevant abstract reports associations but lacks per-variant effect directions needed to identify protective variants.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key answer: no reduced-risk variants are identifiable and the limitation is unavailable effect-direction data.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that the androgenetic alopecia abstract reports associations and independent signals but does not provide per-variant effect directions or protective variants.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "It appropriately uses the relevant androgenetic alopecia abstract and the absence of graph evidence, while avoiding unsupported identification of reduced-risk variants.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from naming variants because the evidence is insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q149",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q149.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.349147+00:00"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q031",
+      "randomization_seed": "20260706:Q031:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q031",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q031",
+      "error": null,
+      "id": "batch_req_6a4d52b9af3c8190b7ec3a0ff0615904",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452221,
+          "created_at": 1783452210,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00e7d9fe784f699b006a4d5232f4a481a096d972b6717c25d2",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q031"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00e7d9fe784f699b006a4d5233891c81a0a40f8508d58f4a9e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses functional consequence and gene effect, but for the wrong gene and mechanism.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly identifies rs929626 as a TERT variant and invents promoter/splicing/telomere effects unsupported by the provided evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the supplied EBF1 and distal enhancer-like regulatory element annotation.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported claims with high confidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly answers that the variant is regulatory and may affect expression, but lacks specific details.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Consistent with the annotation that rs929626 lies in a regulatory element, though it does not mention the specific dELS element or EBF1.\"},\"completeness\":{\"score\":3,\"rationale\":\"Captures the general consequence but omits the implicated gene EBF1 and the EH38D3783439 dELS annotation.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately uses cautious language about possible effects on expression.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the annotated consequence and possible effect on the associated gene.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that rs929626 is in regulatory element EH38D3783439 labeled dELS and may affect EBF1 expression.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key annotation, implicated gene, plausible mechanism, and caveat about lack of direct evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly distinguishes annotation from unproven functional effect.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Partially addresses the question but misses the key regulatory element annotation.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly identifies EBF1 and uncertainty, but omits the dELS annotation and includes irrelevant extrapolation from rs4792800/TNFRSF13B.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not report the main supplied functional annotation that rs929626 lies in a distal enhancer-like regulatory element.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Generally qualifies the lack of direct evidence, though some speculative context is included.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00e7d9fe784f699b006a4d523882a881a0bf32e5b8d4d01e6d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3280,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1067,
+            "output_tokens_details": {
+              "reasoning_tokens": 506
+            },
+            "total_tokens": 4347
+          },
+          "user": null
+        },
+        "request_id": "d98f6999-a3d7-4048-b083-41f90e59f558",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "881e1eb32bb3f5244451b42eba773e312022e77176fdfb7963cf0df896029ceb",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q031",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q031.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q031::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q031::R2",
+      "error": null,
+      "id": "batch_req_6a4d19acfa748190992db617a2b0a643",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437440,
+          "created_at": 1783437432,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0671afc67456f9c0006a4d1878bd188190b90c3c1af71c5131",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q031"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0671afc67456f9c0006a4d1879623481908c748badd47caa91",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is well grounded in the supplied graph: rs929626 is annotated as being in regulatory element EH38D3783439 labeled dELS, and EBF1 is the implicated gene. The proposed effect on EBF1 expression is appropriately framed as plausible rather than proven.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"It uses the key relevant supplied evidence\u2014the regulatory element annotation, dELS label, implicated gene EBF1, and relevant EBF1 functional/pathway context\u2014while correctly noting the absence of direct experimental evidence in the context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0671afc67456f9c0006a4d187eb8048190986c12c4b7bf5a2a",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2218,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 573,
+            "output_tokens_details": {
+              "reasoning_tokens": 410
+            },
+            "total_tokens": 2791
+          },
+          "user": null
+        },
+        "request_id": "5663d044-7d99-4068-82b7-321c59d99057",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the annotated consequence and possible effect on the associated gene.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that rs929626 is in regulatory element EH38D3783439 labeled dELS and may affect EBF1 expression.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the key annotation, implicated gene, plausible mechanism, and caveat about lack of direct evidence.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is well grounded in the supplied graph: rs929626 is annotated as being in regulatory element EH38D3783439 labeled dELS, and EBF1 is the implicated gene. The proposed effect on EBF1 expression is appropriately framed as plausible rather than proven.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "It uses the key relevant supplied evidence\u2014the regulatory element annotation, dELS label, implicated gene EBF1, and relevant EBF1 functional/pathway context\u2014while correctly noting the absence of direct experimental evidence in the context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly distinguishes annotation from unproven functional effect.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q031",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q031.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.271117+00:00"
+}

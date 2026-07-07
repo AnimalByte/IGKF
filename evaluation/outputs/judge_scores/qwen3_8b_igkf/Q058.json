@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q058",
+      "randomization_seed": "20260706:Q058:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q058",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q058",
+      "error": null,
+      "id": "batch_req_6a4d52bac9f88190a528961757e0285f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452228,
+          "created_at": 1783452217,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_026c7330dac6d029006a4d5239bdc08192a0bc825ecef558af",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q058"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_026c7330dac6d029006a4d523a3a7c81929a1869fd2f853671",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether EDA2R is linked to hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly concludes no direct treatment link in the supplied evidence, though it adds some broader claims about EDA2R/HED and common therapies not directly established by the packet.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion and gives relevant context, but does not explicitly distinguish the treatments mentioned in the evidence as unlinked to EDA2R.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming an unsupported EDA2R-treatment association.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately addresses the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence does not link EDA2R to hair-loss treatments and correctly contextualizes DPSC-Exos/minoxidil as unrelated to EDA2R.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the absence of an EDA2R link and explains the relevant treatment context from the abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the conclusion based on the supplied evidence without inventing associations.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and identifies treatments mentioned in the evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately concludes there is no direct EDA2R-treatment link and correctly notes minoxidil and DPSC-Exos are mentioned but not connected to EDA2R.\"},\"completeness\":{\"score\":5,\"rationale\":\"Fully addresses the important distinction between treatments in the context and treatments linked to EDA2R.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported claims and clearly limits the conclusion to the supplied evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question, but the answer is unsupported.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly claims EDA2R is linked to androgenetic alopecia and bicalutamide; neither is supported by the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides a treatment name but omits the correct conclusion that no EDA2R-linked hair-loss treatment is evidenced.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents an unsupported treatment association rather than abstaining.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_026c7330dac6d029006a4d523f1c7c81928f88ccf232a305c9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2998,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1028,
+            "output_tokens_details": {
+              "reasoning_tokens": 436
+            },
+            "total_tokens": 4026
+          },
+          "user": null
+        },
+        "request_id": "478dec75-3c8c-48a0-864d-3a996b16267a",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "856dd93318ad96cb7482328da2645de818aa2ca5aeeac48d35a4874fb09173c4",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q058",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q058.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q058::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_failed_only_1783452903_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q058::R1",
+      "error": null,
+      "id": "batch_req_6a4d55a5a2ec819097233b6a412e12f5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452972,
+          "created_at": 1783452964,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ebdd602d01b6c6c006a4d552463ec8193af28b84ba9532037",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q058"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ebdd602d01b6c6c006a4d5524d0a08193af12bc98d54879b3",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The conclusion that the supplied integrated evidence does not directly link EDA2R to hair-loss treatments is supported. The answer correctly identifies DPSC-Exos and minoxidil as AGA-related treatments in the context and notes they are not tied to EDA2R. Minor overstatement appears in saying HED is associated with different genes, since the graph also associates EDA2R with HED.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"The answer uses the key graph facts about EDA2R and the relevant AGA treatment abstract. It also uses the HED genetics abstract. It does not fully address Abstract 1's mention of MK-801/CRISPR-related investigation, but this omission does not materially affect the main conclusion because those are not linked to EDA2R as hair-loss treatments.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ebdd602d01b6c6c006a4d552a27bc8193a294cdc1ecfb2e1c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2057,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 735,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2792
+          },
+          "user": null
+        },
+        "request_id": "b6739a38-a110-4f5a-8790-700414ea94f3",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately addresses the question.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided evidence does not link EDA2R to hair-loss treatments and correctly contextualizes DPSC-Exos/minoxidil as unrelated to EDA2R.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the absence of an EDA2R link and explains the relevant treatment context from the abstracts.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The conclusion that the supplied integrated evidence does not directly link EDA2R to hair-loss treatments is supported. The answer correctly identifies DPSC-Exos and minoxidil as AGA-related treatments in the context and notes they are not tied to EDA2R. Minor overstatement appears in saying HED is associated with different genes, since the graph also associates EDA2R with HED.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key graph facts about EDA2R and the relevant AGA treatment abstract. It also uses the HED genetics abstract. It does not fully address Abstract 1's mention of MK-801/CRISPR-related investigation, but this omission does not materially affect the main conclusion because those are not linked to EDA2R as hair-loss treatments.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly qualifies the conclusion based on the supplied evidence without inventing associations.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q058",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q058.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:41.380372+00:00"
+}

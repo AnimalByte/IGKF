@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q059",
+      "randomization_seed": "20260706:Q059:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q059",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q059",
+      "error": null,
+      "id": "batch_req_6a4d52bac890819094c664add5bd6d72",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452230,
+          "created_at": 1783452220,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0fbde79c42a08019006a4d523cc74c819fbe4a8aa19b4f3d62",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q059"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0fbde79c42a08019006a4d523d7318819f845bff73d36e1e2f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which pathway includes EDA2R.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Matches the graph context exactly: EDA2R is listed under 'TNFs bind their physiological receptors'.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the only pathway explicitly listed and notes no others are given.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the answer to the supplied graph evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Mentions EDA2R and pathways but does not answer the question despite sufficient provided context.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Incorrectly implies the needed graph data are unavailable and omits the pathway present in the evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Fails to provide the required pathway.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains unnecessarily when the evidence packet contains the answer.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Provides a general approach and speculative pathways rather than the pathway in the integrated graph.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Lists several unsupported possible pathways; only TNF-related signaling is partially aligned with the evidence, but the exact graph pathway is missed.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not identify the explicit pathway 'TNFs bind their physiological receptors' and adds unnecessary unsupported content.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some qualifying language but still suggests unsupported pathways instead of relying on the supplied graph.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the pathway question for EDA2R.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reports the graph-listed pathway and provides consistent TNF receptor context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the only explicit pathway and clarifies that no additional pathways are listed.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately constrains the conclusion to pathways explicitly present in the graph context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0fbde79c42a08019006a4d5242c4fc819f988e701d23d6dc20",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2604,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1025,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3629
+          },
+          "user": null
+        },
+        "request_id": "e70b8878-b686-42aa-b87a-9c64342c66cd",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Mentions EDA2R and pathways but does not answer the question despite sufficient provided context.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly implies the needed graph data are unavailable and omits the pathway present in the evidence.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Fails to provide the required pathway.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Abstains unnecessarily when the evidence packet contains the answer.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q059",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q059.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.151460+00:00"
+}

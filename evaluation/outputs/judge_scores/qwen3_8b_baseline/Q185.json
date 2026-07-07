@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q185",
+      "randomization_seed": "20260706:Q185:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q185",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q185",
+      "error": null,
+      "id": "batch_req_6a4d540c5dcc8190bd836e2883039881",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452570,
+          "created_at": 1783452559,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06d2c2ad2d3ff69c006a4d538f0e888190b31b1b9fa9b6c613",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q185"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06d2c2ad2d3ff69c006a4d539091908190883498d22f9a9aa3",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Acknowledges the question but does not use the supplied evidence to answer whether any FGF5 loss-of-function variants are mapped.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Does not make a specific incorrect biomedical claim, but misses the evidence-supported conclusion that no FGF5 loss-of-function variants are reported in the provided context.\"},\"completeness\":{\"score\":1,\"rationale\":\"Fails to identify whether any variants are mapped to FGF5 and provides no variant-level answer.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Qualifies uncertainty, but abstention is overly cautious given the supplied evidence packet.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Responds to the general need for study context but does not answer the provided question using the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"No material biomedical error is stated, but it fails to report the evidence-based answer that no FGF5 loss-of-function variants are present in the provided context.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not provide the requested determination or list of variants.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Appropriately notes ambiguity in general, but unnecessary abstention because the evidence packet contains enough information to answer.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether loss-of-function variants are mapped to FGF5.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied graph and abstracts do not report FGF5 loss-of-function variants.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key conclusion and briefly explains why no variants are identified from the provided evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly limits the conclusion to the supplied context without inventing unsupported variants.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and states that no loss-of-function variants are mapped to FGF5.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the evidence: the provided abstracts do not mention FGF5 loss-of-function variants, while loss-of-function variants in other genes appear in the autism study.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the conclusion and relevant supporting distinctions across the supplied abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately confines the claim to the provided graph and literature context and avoids unsupported variant calls.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06d2c2ad2d3ff69c006a4d53959ea881909293c96d20dead5c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2847,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1101,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3948
+          },
+          "user": null
+        },
+        "request_id": "7361c75a-e8d0-44e5-ac75-12d0b38af678",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Acknowledges the question but does not use the supplied evidence to answer whether any FGF5 loss-of-function variants are mapped.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Does not make a specific incorrect biomedical claim, but misses the evidence-supported conclusion that no FGF5 loss-of-function variants are reported in the provided context.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Fails to identify whether any variants are mapped to FGF5 and provides no variant-level answer.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Qualifies uncertainty, but abstention is overly cautious given the supplied evidence packet.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q185",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q185.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.262237+00:00"
+}

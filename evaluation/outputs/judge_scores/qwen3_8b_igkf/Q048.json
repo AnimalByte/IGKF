@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q048",
+      "randomization_seed": "20260706:Q048:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q048",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q048",
+      "error": null,
+      "id": "batch_req_6a4d52ba46148190a6d09a199960b000",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452190,
+          "created_at": 1783452178,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_032ec2262f59462b006a4d52128f8881a2a3faed43d38e1f69",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q048"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_032ec2262f59462b006a4d5213112881a295a9ee218837bd18",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses rs7313338 and the lack of direct mention, but does not summarize the available graph-level study/gene annotations.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly notes that rs7313338 is not directly mentioned and that the abstracts are unrelated, though it overstates that there is no usable contextual information at all.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the available hair/balding GWAS context and implicated genes/pathways from the graph.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inventing variant-specific annotations not present in the evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers by distinguishing absent rs7313338-specific evidence from available integrated GWAS/gene context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied graph context, including the hair/balding study, KANSL1 and OPHN1 pathway annotations, and the irrelevance of the abstracts.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main available annotations and limitations, though it does not enumerate all listed PPI details.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies that no direct variant-specific annotation is provided and avoids unsupported claims.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Responds generally about what could be summarized but does not use the provided evidence to answer the specific question.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The general description of possible annotation sources is reasonable, but it provides no factual assessment of rs7313338 against the supplied evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not summarize the available study-specific or integrated annotations from the provided context.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Avoids inventing unsupported details, but unnecessarily asks for information despite relevant context being supplied.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Attempts to summarize study-specific and integrated annotations for rs7313338, but the content is not supported by the provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Introduces unsupported claims about genomic location, alleles, MAF, functional predictions, disease associations, and nearby genes not present in the reference evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides a structured summary, but it omits the actual supplied hair/balding GWAS gene/pathway context and replaces it with unsupported information.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not appropriately abstain; it invents detailed variant annotations despite insufficient evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_032ec2262f59462b006a4d5219751081a2a51ded838179993d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3629,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1135,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4764
+          },
+          "user": null
+        },
+        "request_id": "1e2d3a79-6fc8-416c-84b0-238a8a7e0e43",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "9bcfdd379ccd85d4635b4413c1b15e8efb0be0a9d0d4ce7461aad669b775183c",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q048",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q048.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q048::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q048::R1",
+      "error": null,
+      "id": "batch_req_6a4d19af2f0c81909bda21f71670535c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437450,
+          "created_at": 1783437446,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09bd42f5e723b669006a4d1886f48481909a456cf5b6c2cd11",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q048"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09bd42f5e723b669006a4d1887b5088190836ec086c51df230",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":\"5\",\"rationale\":\"The answer accurately states that rs7313338 is not mentioned in the supplied graph or vector contexts and avoids unsupported annotations.\"},\"context_utilization\":{\"score\":\"5\",\"rationale\":\"It appropriately uses the provided graph and vector contexts to determine that no study-specific or integrated annotations for rs7313338 are available.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09bd42f5e723b669006a4d1889a5e08190b62c7153f98bf120",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2187,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 221,
+            "output_tokens_details": {
+              "reasoning_tokens": 133
+            },
+            "total_tokens": 2408
+          },
+          "user": null
+        },
+        "request_id": "1d4442e6-3f4f-46fc-a0cd-5efd197a6f5b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses rs7313338 and the lack of direct mention, but does not summarize the available graph-level study/gene annotations.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes that rs7313338 is not directly mentioned and that the abstracts are unrelated, though it overstates that there is no usable contextual information at all.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Omits the available hair/balding GWAS context and implicated genes/pathways from the graph.",
+      "score": 2.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that rs7313338 is not mentioned in the supplied graph or vector contexts and avoids unsupported annotations.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "It appropriately uses the provided graph and vector contexts to determine that no study-specific or integrated annotations for rs7313338 are available.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inventing variant-specific annotations not present in the evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q048",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q048.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.281255+00:00"
+}

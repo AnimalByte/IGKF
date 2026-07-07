@@ -1,0 +1,166 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 6.7032,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Based on the integrated data from the provided abstracts, several drugs are linked to genes or targets in the FGF signaling pathway. Here is a coherent biological narrative:\n\nThe FGF (Fibroblast Growth Factor) signaling pathway is a critical regulatory network involved in various biological processes, including cell proliferation, differentiation, and tissue repair. In the context of schizophrenia (SCZ), a study identified six druggable genes significantly associated with SCZ through genome-wide association studies (GWAS) and expression quantitative trait loci (eQTL) analyses. Among these, **FGFR1** (Fibroblast Growth Factor Receptor 1) emerged as a particularly promising therapeutic target. The study further demonstrated that FGFR1 is predominantly expressed in mural cells, suggesting its potential role in SCZ pathogenesis.\n\nTo explore potential therapeutic agents for FGFR1, molecular docking studies were conducted, revealing that three drugs exhibit favorable binding affinities with FGFR1:\n- **PD 173074** with a binding energy of **-8.1407 kcal/mol**\n- **WZ-7043** with a binding energy of **-7.8027 kcal/mol**\n- **Lenvatinib** with a binding energy of **-7.3075 kcal/mol**\n\nThese drugs are known to be tyrosine kinase inhibitors and are primarily used in the treatment of cancers, particularly those involving FGFR overexpression. Their ability to bind to FGFR1 suggests that they may be repurposed or further developed for the treatment of schizophrenia, especially given the association of FGFR1 with SCZ.\n\nIn addition, the study on human immunodeficiency virus encephalitis (HIVE) identified **FGF12** and **FGF13** as hub genes associated with HIVE. While the abstract does not explicitly mention drugs targeting these genes, the identification of these genes as part of the FGF signaling pathway implies that drugs targeting other members of the FGF family may also be relevant in the context of HIVE.\n\nIn summary, the integrated data link **PD 173074**, **WZ-7043**, and **lenvatinib** to **FGFR1**, a key component of the FGF signaling pathway, suggesting their potential as therapeutic agents for diseases associated with this pathway, such as schizophrenia and possibly HIVE. Further research is warranted to validate these findings and explore their clinical applications.",
+  "question_id": "Q115",
+  "question_text": "Which drugs, if any, are linked in the integrated data to genes or targets in the FGF signaling pathway?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 509,
+    "prompt_token_count": 1085,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the integrated data from the provided abstracts, several drugs are linked to genes or targets in the FGF signaling pathway. Here is a coherent biological narrative:\n\nThe FGF (Fibroblast Growth Factor) signaling pathway is a critical regulatory network involved in various biological processes, including cell proliferation, differentiation, and tissue repair. In the context of schizophrenia (SCZ), a study identified six druggable genes significantly associated with SCZ through genome-wide association studies (GWAS) and expression quantitative trait loci (eQTL) analyses. Among these, **FGFR1** (Fibroblast Growth Factor Receptor 1) emerged as a particularly promising therapeutic target. The study further demonstrated that FGFR1 is predominantly expressed in mural cells, suggesting its potential role in SCZ pathogenesis.\n\nTo explore potential therapeutic agents for FGFR1, molecular docking studies were conducted, revealing that three drugs exhibit favorable binding affinities with FGFR1:\n- **PD 173074** with a binding energy of **-8.1407 kcal/mol**\n- **WZ-7043** with a binding energy of **-7.8027 kcal/mol**\n- **Lenvatinib** with a binding energy of **-7.3075 kcal/mol**\n\nThese drugs are known to be tyrosine kinase inhibitors and are primarily used in the treatment of cancers, particularly those involving FGFR overexpression. Their ability to bind to FGFR1 suggests that they may be repurposed or further developed for the treatment of schizophrenia, especially given the association of FGFR1 with SCZ.\n\nIn addition, the study on human immunodeficiency virus encephalitis (HIVE) identified **FGF12** and **FGF13** as hub genes associated with HIVE. While the abstract does not explicitly mention drugs targeting these genes, the identification of these genes as part of the FGF signaling pathway implies that drugs targeting other members of the FGF family may also be relevant in the context of HIVE.\n\nIn summary, the integrated data link **PD 173074**, **WZ-7043**, and **lenvatinib** to **FGFR1**, a key component of the FGF signaling pathway, suggesting their potential as therapeutic agents for diseases associated with this pathway, such as schizophrenia and possibly HIVE. Further research is warranted to validate these findings and explore their clinical applications."
+      }
+    ],
+    "created": 1783432593,
+    "id": "cmpl-5670893a-3b85-471d-a7d9-eab3dfebbcd4",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 509,
+      "prompt_tokens": 1064,
+      "total_tokens": 1573
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      36.04414367675781,
+      36.479042053222656,
+      37.35054397583008,
+      37.56707000732422,
+      37.74866485595703,
+      37.777862548828125,
+      37.830013275146484,
+      38.51554489135742,
+      38.65823745727539,
+      39.09088897705078,
+      39.17291259765625,
+      39.79277801513672,
+      39.79331970214844,
+      40.00720977783203,
+      40.56261444091797
+    ],
+    "candidate_pmids": [
+      "36979151",
+      "40001587",
+      "37891420",
+      "41936598",
+      "38827116",
+      "40869924",
+      "40685484",
+      "40765829",
+      "42247190",
+      "36178221",
+      "41296172",
+      "42016510",
+      "33741282",
+      "40138723",
+      "34320404"
+    ],
+    "expanded_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the FGF signaling pathway? No relevant data found in the graph.",
+    "final_context": "Graph Context:\nNo relevant data found in the graph.\n\nVector Context:\n--- Abstract 1 (PMID: 40685484, relevance: 1.6199) ---\nSchizophrenia (SCZ) is a chronic, relapsing mental disorder with a complex and poorly understood etiology. Identifying novel therapeutic targets is essential for advancing treatment options. Druggable genes were sourced from the eQTLGen consortium and integrated with SCZ-related GWAS data. Two-sample Mendelian randomization (MR) and co-localization analyses assessed the likelihood of shared pathogenic variants between the expression quantitative trait loci (eQTL) of these genes and SCZ. Positive results were further validated using Summary-based MR (SMR). Phenome-wide association studies, drug prediction, and molecular docking analyses were also conducted to identify potential therapeutic targets among these genes. SMR analysis revealed six druggable genes significantly associated with SCZ: NMB, IK, FGFR1, SERPING1, EDEM2, and CTSS. Molecular docking studies demonstrated favorable binding energies for PD 173074-FGFR1 (- 8.1407 kcal/mol), WZ-7043-FGFR1 (- 7.8027 kcal/mol), and lenvatinib-FGFR1 (- 7.3075 kcal/mol). Single-cell expression analysis further indicated that FGFR1 is predominantly expressed in mural cells, suggesting its potential role in SCZ pathogenesis. This study identifies six druggable genes as potential therapeutic targets for SCZ, with FGFR1 emerging as a particularly promising candidate. These findings provide valuable insights for SCZ treatment development and position FGFR1 as a viable target for future therapeutic strategies.\n\n--- Abstract 2 (PMID: 37891420, relevance: 0.9452) ---\nHuman immunodeficiency virus encephalitis (HIVE) is a severe neurological complication after HIV infection. Evidence shows that genetic factors play an important role in HIVE. The aim of the present study was to identify new potential therapeutic targets for HIVE. Differentially expressed gene (DEG), functional annotation and pathway, and protein-protein interaction analyses were performed to identify the hub genes associated with HIVE. Gene co-expression analysis was carried out to confirm the association between the hub genes and HIVE. Finally, the role of the hub genes in HIVE therapy was evaluated by conducting drug-gene interaction analysis. A total of 20 overlapping DEGs closely related to HIVE were identified. Functional annotation and pathway enrichment analysis indicated that the markedly enriched DEG terms included ion transport, type II interferon signaling, and synaptic signaling. Moreover, protein-protein interaction analysis revealed that 10 key HIVE-related genes were hub genes, including SCN8A, CDK5R2, GRM5, SCN2B, IFI44L, STAT1, SLC17A7, ISG15, FGF12, and FGF13. Furthermore, six hub genes were co-expressed with HIVE-associated host genes in human brain tissue. Finally, three hub genes (STAT1, ISG15, and SCN2B) interacted with several inflammation-associated drugs. These findings suggested that SCN8A, CDK5R2, GRM5, SCN2B, IFI44L, STAT1, SLC17A7, ISG15, FGF12, and FGF13 may be new targets for diagnosis and therapy of HIVE.\n\n--- Abstract 3 (PMID: 36979151, relevance: -0.6751) ---\nMicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "rerank_seconds": 0.3301,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "signaling"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q115.json",
+    "retrieval_total_seconds": 34.5651,
+    "score_max": 1.6199170351028442,
+    "score_mean": 0.6300257841746012,
+    "scores": [
+      1.6199170351028442,
+      0.9452440738677979,
+      -0.6750837564468384
+    ],
+    "selected_abstracts": [
+      "Schizophrenia (SCZ) is a chronic, relapsing mental disorder with a complex and poorly understood etiology. Identifying novel therapeutic targets is essential for advancing treatment options. Druggable genes were sourced from the eQTLGen consortium and integrated with SCZ-related GWAS data. Two-sample Mendelian randomization (MR) and co-localization analyses assessed the likelihood of shared pathogenic variants between the expression quantitative trait loci (eQTL) of these genes and SCZ. Positive results were further validated using Summary-based MR (SMR). Phenome-wide association studies, drug prediction, and molecular docking analyses were also conducted to identify potential therapeutic targets among these genes. SMR analysis revealed six druggable genes significantly associated with SCZ: NMB, IK, FGFR1, SERPING1, EDEM2, and CTSS. Molecular docking studies demonstrated favorable binding energies for PD 173074-FGFR1 (- 8.1407 kcal/mol), WZ-7043-FGFR1 (- 7.8027 kcal/mol), and lenvatinib-FGFR1 (- 7.3075 kcal/mol). Single-cell expression analysis further indicated that FGFR1 is predominantly expressed in mural cells, suggesting its potential role in SCZ pathogenesis. This study identifies six druggable genes as potential therapeutic targets for SCZ, with FGFR1 emerging as a particularly promising candidate. These findings provide valuable insights for SCZ treatment development and position FGFR1 as a viable target for future therapeutic strategies.",
+      "Human immunodeficiency virus encephalitis (HIVE) is a severe neurological complication after HIV infection. Evidence shows that genetic factors play an important role in HIVE. The aim of the present study was to identify new potential therapeutic targets for HIVE. Differentially expressed gene (DEG), functional annotation and pathway, and protein-protein interaction analyses were performed to identify the hub genes associated with HIVE. Gene co-expression analysis was carried out to confirm the association between the hub genes and HIVE. Finally, the role of the hub genes in HIVE therapy was evaluated by conducting drug-gene interaction analysis. A total of 20 overlapping DEGs closely related to HIVE were identified. Functional annotation and pathway enrichment analysis indicated that the markedly enriched DEG terms included ion transport, type II interferon signaling, and synaptic signaling. Moreover, protein-protein interaction analysis revealed that 10 key HIVE-related genes were hub genes, including SCN8A, CDK5R2, GRM5, SCN2B, IFI44L, STAT1, SLC17A7, ISG15, FGF12, and FGF13. Furthermore, six hub genes were co-expressed with HIVE-associated host genes in human brain tissue. Finally, three hub genes (STAT1, ISG15, and SCN2B) interacted with several inflammation-associated drugs. These findings suggested that SCN8A, CDK5R2, GRM5, SCN2B, IFI44L, STAT1, SLC17A7, ISG15, FGF12, and FGF13 may be new targets for diagnosis and therapy of HIVE.",
+      "MicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension."
+    ],
+    "selected_pmids": [
+      "40685484",
+      "37891420",
+      "36979151"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0224
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:56:33.455608+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40685484, relevance: 1.6199) ---\nSchizophrenia (SCZ) is a chronic, relapsing mental disorder with a complex and poorly understood etiology. Identifying novel therapeutic targets is essential for advancing treatment options. Druggable genes were sourced from the eQTLGen consortium and integrated with SCZ-related GWAS data. Two-sample Mendelian randomization (MR) and co-localization analyses assessed the likelihood of shared pathogenic variants between the expression quantitative trait loci (eQTL) of these genes and SCZ. Positive results were further validated using Summary-based MR (SMR). Phenome-wide association studies, drug prediction, and molecular docking analyses were also conducted to identify potential therapeutic targets among these genes. SMR analysis revealed six druggable genes significantly associated with SCZ: NMB, IK, FGFR1, SERPING1, EDEM2, and CTSS. Molecular docking studies demonstrated favorable binding energies for PD 173074-FGFR1 (- 8.1407 kcal/mol), WZ-7043-FGFR1 (- 7.8027 kcal/mol), and lenvatinib-FGFR1 (- 7.3075 kcal/mol). Single-cell expression analysis further indicated that FGFR1 is predominantly expressed in mural cells, suggesting its potential role in SCZ pathogenesis. This study identifies six druggable genes as potential therapeutic targets for SCZ, with FGFR1 emerging as a particularly promising candidate. These findings provide valuable insights for SCZ treatment development and position FGFR1 as a viable target for future therapeutic strategies.\n\n--- Abstract 2 (PMID: 37891420, relevance: 0.9452) ---\nHuman immunodeficiency virus encephalitis (HIVE) is a severe neurological complication after HIV infection. Evidence shows that genetic factors play an important role in HIVE. The aim of the present study was to identify new potential therapeutic targets for HIVE. Differentially expressed gene (DEG), functional annotation and pathway, and protein-protein interaction analyses were performed to identify the hub genes associated with HIVE. Gene co-expression analysis was carried out to confirm the association between the hub genes and HIVE. Finally, the role of the hub genes in HIVE therapy was evaluated by conducting drug-gene interaction analysis. A total of 20 overlapping DEGs closely related to HIVE were identified. Functional annotation and pathway enrichment analysis indicated that the markedly enriched DEG terms included ion transport, type II interferon signaling, and synaptic signaling. Moreover, protein-protein interaction analysis revealed that 10 key HIVE-related genes were hub genes, including SCN8A, CDK5R2, GRM5, SCN2B, IFI44L, STAT1, SLC17A7, ISG15, FGF12, and FGF13. Furthermore, six hub genes were co-expressed with HIVE-associated host genes in human brain tissue. Finally, three hub genes (STAT1, ISG15, and SCN2B) interacted with several inflammation-associated drugs. These findings suggested that SCN8A, CDK5R2, GRM5, SCN2B, IFI44L, STAT1, SLC17A7, ISG15, FGF12, and FGF13 may be new targets for diagnosis and therapy of HIVE.\n\n--- Abstract 3 (PMID: 36979151, relevance: -0.6751) ---\nMicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.\n\n\n\n**Question:**\nWhich drugs, if any, are linked in the integrated data to genes or targets in the FGF signaling pathway?"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q052",
+      "randomization_seed": "20260706:Q052:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q052",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q052",
+      "error": null,
+      "id": "batch_req_6a4d52ba965c8190b6e8ee5cbc1370ea",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452202,
+          "created_at": 1783452191,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0afc1a4560399fc8006a4d521fdcc0819ea90e3fe3e6209fa3",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q052"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0afc1a4560399fc8006a4d52205184819ea02da3b16728817f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether high-impact variants mapped to AR can be identified from the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that the provided evidence does not mention AR or high-impact AR-mapped variants.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point that no such variants are supported by the provided graph or abstracts and qualifies the limitation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming specific variants without supporting evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the insufficiency of evidence but misframes AR as autism spectrum disorder rather than likely a gene symbol.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The conclusion that the context is insufficient is supported, but identifying AR as autism spectrum disorder is inaccurate and potentially misleading.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions lack of high-impact variant evidence, but the AR misinterpretation and discussion of unrelated abstracts weaken completeness.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly appropriately abstains, though the unsupported AR interpretation reduces the quality of qualification.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Relevant to the question and correctly treats AR as the androgen receptor gene, but does not explicitly use the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"No biomedical inaccuracies; correctly states that the available information is insufficient to identify variants.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides an appropriate abstention but omits the explicit observation that the supplied context contains no AR or high-impact AR variant evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly avoids inventing variants and requests additional study details.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Relevantly asks for more information but does not directly answer based on the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that AR can have multiple meanings and avoids unsupported biomedical claims.\"},\"completeness\":{\"score\":3,\"rationale\":\"Appropriately highlights ambiguity but does not state that the provided evidence lacks high-impact variants mapped to AR.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains and requests the needed study or variant table rather than fabricating an answer.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0afc1a4560399fc8006a4d5225d174819e9c10b7c0ecc00893",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2488,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1042,
+            "output_tokens_details": {
+              "reasoning_tokens": 484
+            },
+            "total_tokens": 3530
+          },
+          "user": null
+        },
+        "request_id": "efcaae12-5202-4786-a96a-d61423ecaa8a",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Relevantly asks for more information but does not directly answer based on the supplied context.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately notes that AR can have multiple meanings and avoids unsupported biomedical claims.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Appropriately highlights ambiguity but does not state that the provided evidence lacks high-impact variants mapped to AR.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly abstains and requests the needed study or variant table rather than fabricating an answer.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q052",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q052.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.146768+00:00"
+}

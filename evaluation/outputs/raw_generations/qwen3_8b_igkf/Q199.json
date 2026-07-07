@@ -1,0 +1,170 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.3671,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The question is outside the dataset's scope. The androgenetic-alopecia-focused dataset does not contain any information related to Alzheimer's disease or treatment options for it. The provided abstracts discuss genetic associations with androgenetic alopecia and a multi-omics approach to identify potential biomarkers for Alzheimer's disease, but there is no overlap or connection between the two datasets in the context provided. Therefore, the dataset cannot be used to summarize treatment options for Alzheimer's disease.",
+  "question_id": "Q199",
+  "question_text": "Does this androgenetic-alopecia-focused dataset contain sufficient evidence to summarize treatment options for Alzheimer's disease? If not, state that the question is outside the dataset's scope rather than answering from general knowledge.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 95,
+    "prompt_token_count": 1326,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The question is outside the dataset's scope. The androgenetic-alopecia-focused dataset does not contain any information related to Alzheimer's disease or treatment options for it. The provided abstracts discuss genetic associations with androgenetic alopecia and a multi-omics approach to identify potential biomarkers for Alzheimer's disease, but there is no overlap or connection between the two datasets in the context provided. Therefore, the dataset cannot be used to summarize treatment options for Alzheimer's disease."
+      }
+    ],
+    "created": 1783433778,
+    "id": "cmpl-7f79311e-7fa5-4780-ac5b-91fe200aa661",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 95,
+      "prompt_tokens": 1305,
+      "total_tokens": 1400
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      36.69380569458008,
+      38.5790901184082,
+      38.7393913269043,
+      39.67863082885742,
+      39.95641326904297,
+      40.335262298583984,
+      40.42073440551758,
+      40.66069412231445,
+      40.6626091003418,
+      41.02936553955078,
+      41.096412658691406,
+      41.35915756225586,
+      41.591529846191406,
+      41.72721481323242,
+      41.86945724487305
+    ],
+    "candidate_pmids": [
+      "39433822",
+      "36009085",
+      "32054832",
+      "42364669",
+      "41279801",
+      "40134218",
+      "36776048",
+      "37354922",
+      "42323462",
+      "35066432",
+      "39633006",
+      "39713210",
+      "42337598",
+      "38464521",
+      "35637434"
+    ],
+    "expanded_retrieval_query": "Does this androgenetic-alopecia-focused dataset contain sufficient evidence to summarize treatment options for Alzheimer's disease? If not, state that the question is outside the dataset's scope rather than answering from general knowledge. No relevant data found in the graph.",
+    "final_context": "Graph Context:\nNo relevant data found in the graph.\n\nVector Context:\n--- Abstract 1 (PMID: 39433822, relevance: -1.9289) ---\nAlzheimer's disease (AD) poses a major challenge due to its impact on the elderly population and the lack of effective early diagnosis and treatment options. In an effort to address this issue, a study focused on identifying potential biomarkers and therapeutic agents for AD was carried out. Using RNA-Seq data from AD patients and healthy individuals, 12 differentially expressed genes (DEGs) were identified, with 9 expressing upregulation (ISG15, HRNR, MTATP8P1, MTCO3P12, DTHD1, DCX, ST8SIA2, NNAT, and PCDH11Y) and 3 expressing downregulation (LTF, XIST, and TTR). Among them, TTR exhibited the lowest gene expression profile. Interestingly, functional analysis tied TTR to amyloid fiber formation and neutrophil degranulation through enrichment analysis. These findings suggested the potential of TTR as a diagnostic biomarker for AD. Additionally, druggability analysis revealed that the FDA-approved drug Levothyroxine might be effective against the Transthyretin protein encoded by the TTR gene. Molecular docking and dynamics simulation studies of Levothyroxine and Transthyretin suggested that this drug could be repurposed to treat AD. However, additional studies using in vitro and in vivo models are necessary before these findings can be applied in clinical applications.\n\n--- Abstract 2 (PMID: 40134218, relevance: -2.2329) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 3 (PMID: 36009085, relevance: -2.9045) ---\nBlood-based proteomic analysis is a routine practice for detecting the biomarkers of human disease. The results obtained from blood alone cannot fully reflect the alterations of nerve cells, including neurons and glia cells, in Alzheimer's disease (AD) brains. Therefore, the present study aimed to investigate novel potential AD biomarker candidates, through an integrated multi-omics approach in AD. We propose a comprehensive strategy to identify high-confidence candidate biomarkers by integrating multi-omics data from AD, including single-nuclei RNA sequencing (snRNA-seq) datasets of the prefrontal and entorhinal cortices, as wells as serum proteomic datasets. We first quantified a total of 124,658 nuclei, 8 cell types, and 3701 differentially expressed genes (DEGs) from snRNA-seq dataset of 30 human cortices, as well as 1291 differentially expressed proteins (DEPs) from serum proteomic dataset of 11 individuals. Then, ten DEGs/DEPs (NEBL, CHSY3, STMN2, MARCKS, VIM, FGD4, EPB41L2, PLEKHG1, PTPRZ1, and PPP1R14A) were identified by integration analysis of snRNA-seq and proteomics data. Finally, four novel candidate biomarkers (NEBL, EPB41L2, FGD4, and MARCKS) for AD further stood out, according to bioinformatics analysis, and they were verified by enzyme-linked immunosorbent assay (ELISA) verification. These candidate biomarkers are related to the regulation process of the actin cytoskeleton, which is involved in the regulation of synaptic loss in the AD brain tissue. Collectively, this study identified novel cell type-related biomarkers for AD by integrating multi-omics datasets from brains and serum. Our findings provided new targets for the clinical treatment and prognosis of AD.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "rerank_seconds": 0.3318,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "alopecia"
+      },
+      {
+        "label": "KEYWORD",
+        "text": "disease"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q199.json",
+    "retrieval_total_seconds": 36.8899,
+    "score_max": -1.9288620948791504,
+    "score_mean": -2.355393091837565,
+    "scores": [
+      -1.9288620948791504,
+      -2.232863187789917,
+      -2.904453992843628
+    ],
+    "selected_abstracts": [
+      "Alzheimer's disease (AD) poses a major challenge due to its impact on the elderly population and the lack of effective early diagnosis and treatment options. In an effort to address this issue, a study focused on identifying potential biomarkers and therapeutic agents for AD was carried out. Using RNA-Seq data from AD patients and healthy individuals, 12 differentially expressed genes (DEGs) were identified, with 9 expressing upregulation (ISG15, HRNR, MTATP8P1, MTCO3P12, DTHD1, DCX, ST8SIA2, NNAT, and PCDH11Y) and 3 expressing downregulation (LTF, XIST, and TTR). Among them, TTR exhibited the lowest gene expression profile. Interestingly, functional analysis tied TTR to amyloid fiber formation and neutrophil degranulation through enrichment analysis. These findings suggested the potential of TTR as a diagnostic biomarker for AD. Additionally, druggability analysis revealed that the FDA-approved drug Levothyroxine might be effective against the Transthyretin protein encoded by the TTR gene. Molecular docking and dynamics simulation studies of Levothyroxine and Transthyretin suggested that this drug could be repurposed to treat AD. However, additional studies using in vitro and in vivo models are necessary before these findings can be applied in clinical applications.",
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "Blood-based proteomic analysis is a routine practice for detecting the biomarkers of human disease. The results obtained from blood alone cannot fully reflect the alterations of nerve cells, including neurons and glia cells, in Alzheimer's disease (AD) brains. Therefore, the present study aimed to investigate novel potential AD biomarker candidates, through an integrated multi-omics approach in AD. We propose a comprehensive strategy to identify high-confidence candidate biomarkers by integrating multi-omics data from AD, including single-nuclei RNA sequencing (snRNA-seq) datasets of the prefrontal and entorhinal cortices, as wells as serum proteomic datasets. We first quantified a total of 124,658 nuclei, 8 cell types, and 3701 differentially expressed genes (DEGs) from snRNA-seq dataset of 30 human cortices, as well as 1291 differentially expressed proteins (DEPs) from serum proteomic dataset of 11 individuals. Then, ten DEGs/DEPs (NEBL, CHSY3, STMN2, MARCKS, VIM, FGD4, EPB41L2, PLEKHG1, PTPRZ1, and PPP1R14A) were identified by integration analysis of snRNA-seq and proteomics data. Finally, four novel candidate biomarkers (NEBL, EPB41L2, FGD4, and MARCKS) for AD further stood out, according to bioinformatics analysis, and they were verified by enzyme-linked immunosorbent assay (ELISA) verification. These candidate biomarkers are related to the regulation process of the actin cytoskeleton, which is involved in the regulation of synaptic loss in the AD brain tissue. Collectively, this study identified novel cell type-related biomarkers for AD by integrating multi-omics datasets from brains and serum. Our findings provided new targets for the clinical treatment and prognosis of AD."
+    ],
+    "selected_pmids": [
+      "39433822",
+      "40134218",
+      "36009085"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0285
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:16:18.870670+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 39433822, relevance: -1.9289) ---\nAlzheimer's disease (AD) poses a major challenge due to its impact on the elderly population and the lack of effective early diagnosis and treatment options. In an effort to address this issue, a study focused on identifying potential biomarkers and therapeutic agents for AD was carried out. Using RNA-Seq data from AD patients and healthy individuals, 12 differentially expressed genes (DEGs) were identified, with 9 expressing upregulation (ISG15, HRNR, MTATP8P1, MTCO3P12, DTHD1, DCX, ST8SIA2, NNAT, and PCDH11Y) and 3 expressing downregulation (LTF, XIST, and TTR). Among them, TTR exhibited the lowest gene expression profile. Interestingly, functional analysis tied TTR to amyloid fiber formation and neutrophil degranulation through enrichment analysis. These findings suggested the potential of TTR as a diagnostic biomarker for AD. Additionally, druggability analysis revealed that the FDA-approved drug Levothyroxine might be effective against the Transthyretin protein encoded by the TTR gene. Molecular docking and dynamics simulation studies of Levothyroxine and Transthyretin suggested that this drug could be repurposed to treat AD. However, additional studies using in vitro and in vivo models are necessary before these findings can be applied in clinical applications.\n\n--- Abstract 2 (PMID: 40134218, relevance: -2.2329) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 3 (PMID: 36009085, relevance: -2.9045) ---\nBlood-based proteomic analysis is a routine practice for detecting the biomarkers of human disease. The results obtained from blood alone cannot fully reflect the alterations of nerve cells, including neurons and glia cells, in Alzheimer's disease (AD) brains. Therefore, the present study aimed to investigate novel potential AD biomarker candidates, through an integrated multi-omics approach in AD. We propose a comprehensive strategy to identify high-confidence candidate biomarkers by integrating multi-omics data from AD, including single-nuclei RNA sequencing (snRNA-seq) datasets of the prefrontal and entorhinal cortices, as wells as serum proteomic datasets. We first quantified a total of 124,658 nuclei, 8 cell types, and 3701 differentially expressed genes (DEGs) from snRNA-seq dataset of 30 human cortices, as well as 1291 differentially expressed proteins (DEPs) from serum proteomic dataset of 11 individuals. Then, ten DEGs/DEPs (NEBL, CHSY3, STMN2, MARCKS, VIM, FGD4, EPB41L2, PLEKHG1, PTPRZ1, and PPP1R14A) were identified by integration analysis of snRNA-seq and proteomics data. Finally, four novel candidate biomarkers (NEBL, EPB41L2, FGD4, and MARCKS) for AD further stood out, according to bioinformatics analysis, and they were verified by enzyme-linked immunosorbent assay (ELISA) verification. These candidate biomarkers are related to the regulation process of the actin cytoskeleton, which is involved in the regulation of synaptic loss in the AD brain tissue. Collectively, this study identified novel cell type-related biomarkers for AD by integrating multi-omics datasets from brains and serum. Our findings provided new targets for the clinical treatment and prognosis of AD.\n\n\n\n**Question:**\nDoes this androgenetic-alopecia-focused dataset contain sufficient evidence to summarize treatment options for Alzheimer's disease? If not, state that the question is outside the dataset's scope rather than answering from general knowledge."
+}

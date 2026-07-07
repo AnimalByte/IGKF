@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q162",
+      "randomization_seed": "20260706:Q162:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q162",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q162",
+      "error": null,
+      "id": "batch_req_6a4d540af9548190b1c475504759d99a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452586,
+          "created_at": 1783452574,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06fda3f7482414e7006a4d539df4b48193b924609739627c1c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q162"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06fda3f7482414e7006a4d539ec17c81939587185b9cd292f8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the evidence supports a scalp or hair follicle inflammatory link and distinguishes general immune relevance from tissue-specific evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly accurate against the provided evidence, including cytokine regulation, Th2 differentiation, and lack of scalp/hair follicle evidence; however, some claims about HDAC inhibitors broadly modulating inflammation are not directly supported by the packet.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key supported inflammatory/immune signals and the major limitation that no scalp or follicle-specific evidence is provided.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids overclaiming and clearly states that the scalp/hair follicle connection is speculative or unsupported.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the core question and gives the correct bottom line, but remains generic and does not explicitly cite the provided evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The conclusion is consistent with the packet, but the answer is vague and conditional rather than grounded in the specific evidence such as Th2 differentiation, cytokine regulation, or immune signaling.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Identifies the main limitation but omits important supported evidence from the packet that HDAC9 has general immune/cytokine-related roles.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the evidence and avoids claiming a direct scalp or follicle-specific role.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately answers the question, distinguishing indirect inflammatory relevance from absence of scalp/hair follicle-specific evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately summarizes the supplied evidence, including negative regulation of cytokine production, Th2 differentiation, Notch-related pathways, immune signaling in the preeclampsia abstract, and lack of alopecia/scalp/hair follicle associations.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key supporting evidence and the key limitation without adding unsupported claims.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly states that any link is indirect and that direct tissue-specific evidence is lacking.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question and gives the broadly correct conclusion that no scalp or hair follicle-specific link is supported.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Contains a material error by calling HDAC9 a class III HDAC, and introduces unsupported claims about rheumatoid arthritis, neuroinflammation, and anti-inflammatory effects of HDAC9 inhibition that are not in the provided packet.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits the specific evidence supplied in the packet, such as Th2 differentiation, negative regulation of cytokine production, and immune signaling, while substituting unsupported examples.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Correctly qualifies the lack of scalp/hair follicle-specific evidence, but overstates or invents broader inflammatory evidence not supported by the provided data.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06fda3f7482414e7006a4d53a3637c81939a3e0754b055899a",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3569,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1379,
+            "output_tokens_details": {
+              "reasoning_tokens": 482
+            },
+            "total_tokens": 4948
+          },
+          "user": null
+        },
+        "request_id": "cd760beb-0fc7-4600-a976-dfc395aa9bba",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "3f4cde4d7950c94c1f2f77e4855e024f1d729067e202281db0aff26f34d632b2",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q162",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q162.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q162::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q162::R1",
+      "error": null,
+      "id": "batch_req_6a4d19bdce888190852072743ec1cb57",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437666,
+          "created_at": 1783437658,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_02aee908319ad833006a4d195a45dc8193b972d64a41dfacd6",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q162"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_02aee908319ad833006a4d195ae87c81938c500609c7ef67e6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The central conclusion is supported: the supplied context contains general immune/inflammatory evidence for HDAC9, such as negative regulation of cytokine production, Th2 differentiation, and immune signaling in preeclampsia, but no scalp or hair follicle-specific evidence. Some statements about HDAC inhibitors broadly modulating inflammation and Notch influencing inflammation are not directly supported by the supplied context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"The answer appropriately uses key graph evidence and the absence of scalp/hair follicle mentions to state the limitation. It could have more directly cited the preeclampsia abstract's immune signaling evidence, and it includes some unsupported external generalizations about inflammatory effects of HDAC inhibitors.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_02aee908319ad833006a4d1960cc208193a25acb444cdb4261",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2340,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 608,
+            "output_tokens_details": {
+              "reasoning_tokens": 413
+            },
+            "total_tokens": 2948
+          },
+          "user": null
+        },
+        "request_id": "68fab704-f0f8-4014-90b6-86b2d196c765",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether the evidence supports a scalp or hair follicle inflammatory link and distinguishes general immune relevance from tissue-specific evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Mostly accurate against the provided evidence, including cytokine regulation, Th2 differentiation, and lack of scalp/hair follicle evidence; however, some claims about HDAC inhibitors broadly modulating inflammation are not directly supported by the packet.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the key supported inflammatory/immune signals and the major limitation that no scalp or follicle-specific evidence is provided.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The central conclusion is supported: the supplied context contains general immune/inflammatory evidence for HDAC9, such as negative regulation of cytokine production, Th2 differentiation, and immune signaling in preeclampsia, but no scalp or hair follicle-specific evidence. Some statements about HDAC inhibitors broadly modulating inflammation and Notch influencing inflammation are not directly supported by the supplied context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses key graph evidence and the absence of scalp/hair follicle mentions to state the limitation. It could have more directly cited the preeclampsia abstract's immune signaling evidence, and it includes some unsupported external generalizations about inflammatory effects of HDAC inhibitors.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids overclaiming and clearly states that the scalp/hair follicle connection is speculative or unsupported.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q162",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q162.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.357144+00:00"
+}

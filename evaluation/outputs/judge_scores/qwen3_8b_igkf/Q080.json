@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q080",
+      "randomization_seed": "20260706:Q080:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q080",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q080",
+      "error": null,
+      "id": "batch_req_6a4d52bbc8f48190824091ca5103d0af",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452227,
+          "created_at": 1783452189,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04bedb53ff0e4d7a006a4d521d1d7881a2a57269e78c7de1da",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q080"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04bedb53ff0e4d7a006a4d521e0f3481a28f8ae7e81f8933f2",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses LGR4 in hair-follicle biology and cycling while tying it to the supplied Wnt/RSPO context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately describes LGR4 as an RSPO receptor that potentiates Wnt/beta-catenin signaling via ZNRF3/RNF43-related regulation, and correctly notes the androgenetic alopecia association.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the key supported mechanism and clinical association, but lacks direct follicle-specific experimental detail because none is present in the supplied evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies that the supplied context does not directly establish a hair-follicle-specific mechanism.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly discusses LGR4 in hair follicle stem cells and hair cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Contains unsupported follicle-specific claims and incorrectly frames LGR4 as a co-receptor for Wnt ligands rather than an RSPO receptor that modulates Wnt signaling.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Mentions Wnt signaling, stem cells, and anagen, but omits the supported RSPO-ZNRF3/RNF43 mechanism and the evidence limitations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"States several direct hair-follicle and cycling roles confidently despite lack of direct support in the supplied evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question by assessing whether the supplied evidence supports a hair-follicle role, though it gives little functional synthesis.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly notes the absence of direct hair-follicle cycling evidence in the supplied context, but overstates that nothing can be concluded despite Wnt signaling and alopecia association evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits the supported RSPO-LGR4-Wnt/ZNRF3 mechanism and the androgenetic alopecia association that are relevant to the question.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately cautious, but somewhat over-abstains by not drawing limited supported conclusions from the available evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and extensively addresses LGR4 function in hair-follicle development, stem/progenitor cells, and cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The central RSPO-LGR4-Wnt/ZNRF3 mechanism is consistent with the evidence, but the specific follicle expression, knockout phenotypes, cycling defects, and LGR4/LGR5 comparisons are not supported by the supplied context.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Broadly covers many biologically relevant components, but includes unsupported specifics and lacks an explicit evidence-limitation caveat.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Provides confident claims about follicle-specific studies and phenotypes without qualifying that the supplied evidence does not directly document them.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04bedb53ff0e4d7a006a4d523c8fdc81a2a0f574324b671c28",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3354,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 3884,
+            "output_tokens_details": {
+              "reasoning_tokens": 2978
+            },
+            "total_tokens": 7238
+          },
+          "user": null
+        },
+        "request_id": "76bb41b1-7634-44ca-bf8c-9f585f74cbda",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "37bc2be8d3481365aabe266b1c68ac83e1df89be825b61b04f147597c7a2ce62",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q080",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q080.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q080::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q080::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b34d388190bac2cf6ec9ae0254",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437458,
+          "created_at": 1783437446,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01e095a0c452f79d006a4d1886eeb0819792721173f0383f81",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q080"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01e095a0c452f79d006a4d1887b4e481979ee77126c2233f9a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The answer is mostly grounded: the supplied context supports LGR4 involvement in Wnt signaling and organ development/carcinogenesis, and it contains no direct mechanistic information about hair-follicle cycling. However, it slightly overstates with unsupported broader claims about regenerative processes.\"\n  },\n  \"context_utilization\": {\n    \"score\": 3,\n    \"rationale\": \"The answer uses the main Wnt-signaling evidence and appropriately notes the lack of direct hair-follicle cycling data, but it omits the supplied androgenetic alopecia association, which is relevant though not sufficient to establish function.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01e095a0c452f79d006a4d189007f48197b1599828af2a2315",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1805,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 681,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2486
+          },
+          "user": null
+        },
+        "request_id": "faa57595-20c7-4f8a-aad0-be94581259a3",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question by assessing whether the supplied evidence supports a hair-follicle role, though it gives little functional synthesis.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes the absence of direct hair-follicle cycling evidence in the supplied context, but overstates that nothing can be concluded despite Wnt signaling and alopecia association evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Omits the supported RSPO-LGR4-Wnt/ZNRF3 mechanism and the androgenetic alopecia association that are relevant to the question.",
+      "score": 2.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is mostly grounded: the supplied context supports LGR4 involvement in Wnt signaling and organ development/carcinogenesis, and it contains no direct mechanistic information about hair-follicle cycling. However, it slightly overstates with unsupported broader claims about regenerative processes.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the main Wnt-signaling evidence and appropriately notes the lack of direct hair-follicle cycling data, but it omits the supplied androgenetic alopecia association, which is relevant though not sufficient to establish function.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately cautious, but somewhat over-abstains by not drawing limited supported conclusions from the available evidence.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q080",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q080.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.300814+00:00"
+}

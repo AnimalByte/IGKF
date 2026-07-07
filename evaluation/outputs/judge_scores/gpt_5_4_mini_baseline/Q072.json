@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q072",
+      "randomization_seed": "20260706:Q072:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q072",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q072",
+      "error": null,
+      "id": "batch_req_6a4d52bb52588190b231e1cf96a428d4",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452179,
+          "created_at": 1783452166,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a174033f5b17773006a4d520609b481a2a3156cb62259e7ab",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q072"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a174033f5b17773006a4d5206fdf081a2bae2b4b0ec473b62",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses WNT10A and concludes that no specific high-impact variants are listed, but includes extra context not directly needed.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Generally consistent with the supplied abstracts, though it somewhat blurs distinctions between the specific HED study and broader WNT10A literature.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides the key conclusion that specific high-impact WNT10A variants are not available in the provided evidence, with some unnecessary padding.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately states that the exact high-impact variants are not detailed in the provided abstracts.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Partially addresses the question by saying more data are needed, but does not use the provided context to state that no such variants can be identified.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Does not make unsupported biomedical claims and correctly indicates that variant-level data are needed.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Reasonable abstention, but incomplete because it does not summarize what the supplied evidence does and does not contain.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains rather than inventing high-impact WNT10A variants.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether high-impact variants mapped to WNT10A can be identified from the supplied study context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects that the provided evidence mentions WNT10A but does not provide variant-level high-impact annotations.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the important points: WNT10A is mentioned, the graph is not variant-level for WNT10A, and no high-impact WNT10A variant is identifiable.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly qualifies the conclusion as based on the supplied context and avoids overclaiming absence in the underlying study.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the need for variant annotations but gives a generic response and does not engage with the provided evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the variants cannot be determined without relevant study data and does not invent findings.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omitted the key context-based conclusion that the supplied evidence does not list any high-impact variants mapped to WNT10A.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from making unsupported claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a174033f5b17773006a4d520d728481a28d410957de641536",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2504,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1316,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3820
+          },
+          "user": null
+        },
+        "request_id": "92792e6d-f910-49ea-b3b9-ed74551c1874",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partially addresses the question by saying more data are needed, but does not use the provided context to state that no such variants can be identified.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Does not make unsupported biomedical claims and correctly indicates that variant-level data are needed.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Reasonable abstention, but incomplete because it does not summarize what the supplied evidence does and does not contain.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inventing high-impact WNT10A variants.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q072",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q072.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.160736+00:00"
+}

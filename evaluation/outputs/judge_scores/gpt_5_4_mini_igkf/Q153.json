@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "insufficient_evidence_likely",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q153",
+      "randomization_seed": "20260706:Q153:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q153",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q153",
+      "error": null,
+      "id": "batch_req_6a4d540a67f48190813ba3c6a20f850c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452618,
+          "created_at": 1783452605,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01792851444aec7c006a4d53bdb8f081979f05767088f37f83",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q153"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01792851444aec7c006a4d53be7e3081979feb6286d696e407",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset/context does not show a PRS-to-age-of-onset link for hair loss.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate against the supplied evidence; abstracts discuss hair-loss genetics/PRS portability but not onset timing linked to PRS.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the negative conclusion and specifies needed evidence: onset data, PRS in same individuals, association testing, covariates, and validation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the supplied graph/abstract context and avoids unsupported claims.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the general question but does not give the evidence-based answer that the supplied dataset/context lacks the link.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Generally accurate about what would be needed, but underuses the supplied evidence and incorrectly remains noncommittal rather than concluding no relevant link is shown.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions metadata review, age-of-onset data, statistical analysis, and validation, but lacks a definitive conclusion from the provided evidence.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Avoids invention, but over-abstains despite the reference evidence supporting a negative answer.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly states that the provided dataset/abstracts do not explicitly link hair-loss PRS to age of onset.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the reference evidence; no abstract reports PRS association with hair-loss onset age.\"},\"completeness\":{\"score\":4,\"rationale\":\"Lists key required evidence, including onset variables and statistical association; could be stronger by specifying PRS and onset measured in the same individuals and relevant covariate adjustment.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the conclusion as based on the provided abstracts and avoids unsupported extrapolation.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Discusses requirements for linking PRS to onset age but does not answer the supplied evidence-based question with a clear no.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The general requirements are scientifically reasonable, but the response is not accurate to the evaluation context because the supplied evidence supports absence of such data.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers necessary data types and analysis in general terms, but omits the expected conclusion about the provided GWAS evidence.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Does not invent findings, but over-abstains by claiming inability to tell despite the provided reference context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01792851444aec7c006a4d53c570088197944b79fa8b1bb897",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2800,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1148,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3948
+          },
+          "user": null
+        },
+        "request_id": "700065ff-4493-4bc6-95b5-90eb9809eb47",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "980dc571e262d414423e714f71bd218efc725091e51df3e565ce2b9172f8b0e0",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q153",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q153.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q153::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q153::R2",
+      "error": null,
+      "id": "batch_req_6a4d19bcd2308190b764d527b1806efb",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437522,
+          "created_at": 1783437516,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_075c3d7954484446006a4d18ccc8108196a352c64ca44c1426",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q153"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_075c3d7954484446006a4d18cd6d5c8196822ffb528310d403",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is well supported by the supplied context: none of the abstracts or graph context provide evidence linking hair-loss PRS to age of onset. The answer accurately distinguishes genetic prediction/baldness GWAS evidence from onset analysis.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer uses the relevant supplied evidence appropriately, including the absence of graph data, the MPHL rare-variant study, the African ancestry genetic prediction study, and the unrelated PRS misalignment paper. It also correctly identifies the additional data and analysis needed.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_075c3d7954484446006a4d18d0da648196947dc01aef4370b4",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1684,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 463,
+            "output_tokens_details": {
+              "reasoning_tokens": 305
+            },
+            "total_tokens": 2147
+          },
+          "user": null
+        },
+        "request_id": "6f2e3b61-e481-4493-8de8-423070f04849",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that the dataset/context does not show a PRS-to-age-of-onset link for hair loss.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurate against the supplied evidence; abstracts discuss hair-loss genetics/PRS portability but not onset timing linked to PRS.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the negative conclusion and specifies needed evidence: onset data, PRS in same individuals, association testing, covariates, and validation.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is well supported by the supplied context: none of the abstracts or graph context provide evidence linking hair-loss PRS to age of onset. The answer accurately distinguishes genetic prediction/baldness GWAS evidence from onset analysis.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the relevant supplied evidence appropriately, including the absence of graph data, the MPHL rare-variant study, the African ancestry genetic prediction study, and the unrelated PRS misalignment paper. It also correctly identifies the additional data and analysis needed.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately limits the conclusion to the supplied graph/abstract context and avoids unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q153",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q153.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.351667+00:00"
+}

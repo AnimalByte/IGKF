@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q077",
+      "randomization_seed": "20260706:Q077:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q077",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q077",
+      "error": null,
+      "id": "batch_req_6a4d52bb7870819086e1422189d6d672",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452189,
+          "created_at": 1783452179,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_087d1d764367d52d006a4d5213dc1881a083df110dbe6261fb",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q077"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_087d1d764367d52d006a4d52147a7081a0a78fb2ce7cb47a92",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the general need for variant annotation data but does not answer whether any high-impact HDAC9 variants are present in the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately notes that a study/table would be needed to identify such variants, but does not use the supplied context to state that none are reported there.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not provide the requested result or summarize the absence of HDAC9 high-impact variant evidence in the provided context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing variant names.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Relevant to the question but provides only a general inability to determine the variants rather than an answer from the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The statement that variant-impact assignments depend on the study dataset is accurate, but it misses that the provided evidence contains no such variants.\"},\"completeness\":{\"score\":2,\"rationale\":\"Incomplete because it does not report the absence of high-impact HDAC9 variants in the supplied context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids making unsupported claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by stating that no high-impact HDAC9 variants are reported in the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the evidence packet, which contains no HDAC9 variant annotation data and no high-impact variants mapped to HDAC9.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point and explains why the supplied graph and abstracts do not support any variant report.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the conclusion as based on the supplied information.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether high-impact variants are explicitly mapped to HDAC9.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph and abstracts do not identify any high-impact HDAC9 variants.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the key conclusion and rationale, though the final statement that data are insufficient is slightly less decisive than simply saying none are reported in the supplied context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids naming unsupported variants and qualifies the conclusion based on available data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_087d1d764367d52d006a4d52196e7481a0a01ee460a019f93f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2122,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1103,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3225
+          },
+          "user": null
+        },
+        "request_id": "aeb5a88b-9e0a-4bb1-91b6-97666bd7eb64",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "3540f30847f8ad3d34e1a766297bb7fc85507a666babe56a91885e5771ce75f5",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q077",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q077.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q077::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q077::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b30be48190b207e2c8f26acaf8",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437432,
+          "created_at": 1783437425,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0789f7abdf19010b006a4d18716f3c81909becdbe6e708b60a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q077"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0789f7abdf19010b006a4d1871e1c88190a3b335fd57d0159e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": \"4\",\n    \"rationale\": \"The supplied context contains no variants, no high-impact annotations, and no mapping of variants to HDAC9. The answer is mostly grounded in this absence, though it somewhat overstates this as a definitive finding rather than simply saying the provided context does not report any such variants.\"\n  },\n  \"context_utilization\": {\n    \"score\": \"4\",\n    \"rationale\": \"The answer appropriately notes that the HDAC9 abstract concerns structure/flavonoid binding and that the graph concerns the IMPACT gene rather than variant impact annotations. It uses the relevant supplied evidence, but could be more concise and clearer that the conclusion is limited to the provided context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0789f7abdf19010b006a4d18770b748190bfd03573de6392df",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1594,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 587,
+            "output_tokens_details": {
+              "reasoning_tokens": 414
+            },
+            "total_tokens": 2181
+          },
+          "user": null
+        },
+        "request_id": "cb9ccf25-ce59-41c0-b40e-c755aa535bbf",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether high-impact variants are explicitly mapped to HDAC9.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided graph and abstracts do not identify any high-impact HDAC9 variants.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the key conclusion and rationale, though the final statement that data are insufficient is slightly less decisive than simply saying none are reported in the supplied context.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The supplied context contains no variants, no high-impact annotations, and no mapping of variants to HDAC9. The answer is mostly grounded in this absence, though it somewhat overstates this as a definitive finding rather than simply saying the provided context does not report any such variants.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately notes that the HDAC9 abstract concerns structure/flavonoid binding and that the graph concerns the IMPACT gene rather than variant impact annotations. It uses the relevant supplied evidence, but could be more concise and clearer that the conclusion is limited to the provided context.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids naming unsupported variants and qualifies the conclusion based on available data.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q077",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q077.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.298967+00:00"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q043",
+      "randomization_seed": "20260706:Q043:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q043",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q043",
+      "error": null,
+      "id": "batch_req_6a4d52ba0ea4819097d9efdc03cba037",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452175,
+          "created_at": 1783452165,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_019fa2ba7945c0d6006a4d5204fcf0819fb224d10c65bb521c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q043"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_019fa2ba7945c0d6006a4d52063050819f9343a5b381a1e419",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether rs7313338 has reported clinical significance.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The conclusion that no clinical significance is reported is consistent with the supplied evidence, but claims about major clinical variant resources and non-actionability are not supported by the provided context.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides a clear answer and appropriate caveat, but does not explicitly tie the conclusion to the supplied graph and abstract evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Generally qualifies uncertainty, though it overextends by referencing external resources not included in the evidence packet.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly attempts to answer the clinical significance question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Claims a TGFBR2/SLE association for rs7313338 that is not supported by the provided graph or literature context.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides details, but they are unsupported and omit the key evidence-based conclusion that no significance is reported in the supplied context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Invents a specific disease association rather than abstaining when evidence is insufficient.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately answers the question using the available information.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that rs7313338 is not mentioned in the supplied graph or abstracts and that no clinical significance can be reported from them.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the essential conclusion, though it provides minimal detail about the specific supplied evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from assigning clinical significance due to lack of evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the clinical significance of rs7313338 in the supplied context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reports that rs7313338 is not present in the graph or abstract evidence and that no clinical interpretation is supported.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Thoroughly explains the absence of rs7313338 from both graph and literature contexts and states the appropriate conclusion.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately limits the conclusion to the supplied evidence and avoids unsupported claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_019fa2ba7945c0d6006a4d5209c398819f9ce4da7e7f06493c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2906,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1170,
+            "output_tokens_details": {
+              "reasoning_tokens": 409
+            },
+            "total_tokens": 4076
+          },
+          "user": null
+        },
+        "request_id": "84553b3a-984a-49a9-b3a7-c0f31a3d81ef",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "02ddbd78107a2e889ab5f0f41d74d481e79b419c4ae2529a7db9ec5bc9df636d",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q043",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q043.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q043::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q043::R1",
+      "error": null,
+      "id": "batch_req_6a4d19ae54788190b676139892196109",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437606,
+          "created_at": 1783437603,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f4a9eb4d4606a70006a4d1923b1f48190a5c4c97d71560c6b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q043"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f4a9eb4d4606a70006a4d192453e08190b01700cb17cfb269",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately states that rs7313338 is not mentioned in the supplied graph or vector context and does not infer unsupported clinical significance.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the available context by recognizing the absence of evidence for rs7313338 and limiting the conclusion to the provided information.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f4a9eb4d4606a70006a4d19256d4881908bf739e0981b8ab7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2088,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 220,
+            "output_tokens_details": {
+              "reasoning_tokens": 104
+            },
+            "total_tokens": 2308
+          },
+          "user": null
+        },
+        "request_id": "78bce8e6-a09e-49d8-ab78-9c025cbbfd2b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately answers the question using the available information.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that rs7313338 is not mentioned in the supplied graph or abstracts and that no clinical significance can be reported from them.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the essential conclusion, though it provides minimal detail about the specific supplied evidence.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that rs7313338 is not mentioned in the supplied graph or vector context and does not infer unsupported clinical significance.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the available context by recognizing the absence of evidence for rs7313338 and limiting the conclusion to the provided information.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from assigning clinical significance due to lack of evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q043",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q043.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.278193+00:00"
+}

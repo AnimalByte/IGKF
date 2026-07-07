@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.8624,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Variant rs756853 is a single nucleotide polymorphism (SNP) located in the *FADS2* gene, which is involved in the metabolism of fatty acids. This SNP has been studied in the context of lipid metabolism and its potential association with cardiovascular disease risk.\n\nClinical significance reported for rs756853 includes:\n\n- **Association with lipid levels**: Some studies have reported that rs756853 is associated with levels of triglycerides and high-density lipoprotein cholesterol (HDL-C). For example, certain alleles of this SNP have been linked to lower triglyceride levels and higher HDL-C levels, which are protective factors against cardiovascular disease.\n\n- **Dietary interactions**: The effect of rs756853 on lipid metabolism may be influenced by dietary intake of polyunsaturated fatty acids (PUFAs). This suggests a potential role in personalized nutrition and dietary recommendations for individuals with specific genetic backgrounds.\n\n- **Population-specific effects**: The association of rs756853 with lipid profiles and cardiovascular risk may vary across different ethnic populations, indicating the importance of considering genetic diversity in clinical research and practice.\n\nHowever, the clinical significance of rs756853 is not universally consistent across all studies, and more research is needed to fully understand its role in disease risk and to determine whether it can be used as a predictive or therapeutic target in clinical settings.",
+  "question_id": "Q015",
+  "question_text": "What clinical significance, if any, is reported for variant rs756853?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 292,
+    "prompt_token_count": 78,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Variant rs756853 is a single nucleotide polymorphism (SNP) located in the *FADS2* gene, which is involved in the metabolism of fatty acids. This SNP has been studied in the context of lipid metabolism and its potential association with cardiovascular disease risk.\n\nClinical significance reported for rs756853 includes:\n\n- **Association with lipid levels**: Some studies have reported that rs756853 is associated with levels of triglycerides and high-density lipoprotein cholesterol (HDL-C). For example, certain alleles of this SNP have been linked to lower triglyceride levels and higher HDL-C levels, which are protective factors against cardiovascular disease.\n\n- **Dietary interactions**: The effect of rs756853 on lipid metabolism may be influenced by dietary intake of polyunsaturated fatty acids (PUFAs). This suggests a potential role in personalized nutrition and dietary recommendations for individuals with specific genetic backgrounds.\n\n- **Population-specific effects**: The association of rs756853 with lipid profiles and cardiovascular risk may vary across different ethnic populations, indicating the importance of considering genetic diversity in clinical research and practice.\n\nHowever, the clinical significance of rs756853 is not universally consistent across all studies, and more research is needed to fully understand its role in disease risk and to determine whether it can be used as a predictive or therapeutic target in clinical settings."
+      }
+    ],
+    "created": 1783430066,
+    "id": "cmpl-a3fd067c-3ab0-4369-a500-c94239059355",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 292,
+      "prompt_tokens": 57,
+      "total_tokens": 349
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:14:26.913473+00:00",
+  "user_prompt": "What clinical significance, if any, is reported for variant rs756853?"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q115",
+      "randomization_seed": "20260706:Q115:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q115",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q115",
+      "error": null,
+      "id": "batch_req_6a4d5407ee2081908553814b2b22d536",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452526,
+          "created_at": 1783452515,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0377b4811f14dd8a006a4d536339e88190a4a5479bab168614",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q115"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0377b4811f14dd8a006a4d5363afd08190ba53fc05d4231eb4",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses FGF-pathway drugs generally, but not the supplied integrated data specifically.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Invents many unsupported drug-target links relative to the evidence and omits two of the three supported drugs.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not provide the key supported set from the context, except lenvatinib, and adds extensive unsupported content.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported conclusions confidently rather than limiting claims to the available evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly answers with FGF/FGFR-targeting drugs, but not accurately tied to the supplied data.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Many listed drugs are plausible FGFR inhibitors, but they are not supported by the provided evidence; it also misses PD 173074 and WZ-7043.\"},\"completeness\":{\"score\":2,\"rationale\":\"Includes lenvatinib but omits two supported drugs and adds many unsupported ones.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"States unsupported drugs are in the integrated data without qualification.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers which drugs are linked to FGF-pathway targets in the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies PD 173074, WZ-7043, and lenvatinib as linked to FGFR1, and notes no drug links for FGF12/FGF13.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers all supported FGF-pathway drug links and distinguishes unsupported FGF genes.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits conclusions to the supplied data and notes insufficiency for additional links.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and identifies the relevant FGF-pathway target and drugs.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly reports PD 173074, WZ-7043, and lenvatinib linked to FGFR1, but adds some unsupported/general claims about cancer use and possible HIVE relevance.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes all key supported drug-target links and mentions FGF12/FGF13, though with some unnecessary extrapolation.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Mostly qualifies the lack of explicit HIVE drug links, but still speculates that other FGF-targeting drugs may be relevant.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0377b4811f14dd8a006a4d5368f4648190b54616ab44b5e712",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3010,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1128,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4138
+          },
+          "user": null
+        },
+        "request_id": "948c1aad-17a2-479b-bdec-866a6cd32c9a",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers with FGF/FGFR-targeting drugs, but not accurately tied to the supplied data.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Many listed drugs are plausible FGFR inhibitors, but they are not supported by the provided evidence; it also misses PD 173074 and WZ-7043.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Includes lenvatinib but omits two supported drugs and adds many unsupported ones.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States unsupported drugs are in the integrated data without qualification.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q115",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q115.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.212670+00:00"
+}

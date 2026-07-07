@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q128",
+      "randomization_seed": "20260706:Q128:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q128",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q128",
+      "error": null,
+      "id": "batch_req_6a4d5408cb3881908aae7581f33e8caf",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452565,
+          "created_at": 1783452556,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0faa2e7a490ed726006a4d538cb51c8194a15e717d73daba3d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q128"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0faa2e7a490ed726006a4d538d9d808194beb798a47ad9ccf2",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses whether Minoxidil is connected to androgen metabolism, but goes beyond the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The main conclusion of no strong direct evidence is compatible with the reference, but claims about possible pathway-level steroid/androgen associations are unsupported by the provided data.\"},\"completeness\":{\"score\":3,\"rationale\":\"Does not explicitly note that the graph has no relevant data and that the supplied abstracts do not mention Minoxidil or androgen metabolism.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly qualifies uncertainty appropriately, though it speculates about possible pathway-level associations not present in the evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question using the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the graph has no relevant data and the abstracts do not support a Minoxidil-androgen metabolism link.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the graph context, vector abstracts, and the resulting conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring a connection where evidence is absent.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question, but relies substantially on general background rather than the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The broad conclusion of no robust evidence is consistent with the reference, but statements about possible androgen receptor or gene-expression effects are unsupported by the provided evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Does not mention that the graph has no relevant data or that the provided abstracts are unrelated.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Includes some qualification, but introduces speculative unsupported claims instead of limiting itself to the absence of evidence in the dataset.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the integrated data do not connect Minoxidil to androgen metabolism.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the provided abstracts do not mention Minoxidil or androgen metabolism and provide no support for a link.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the abstract evidence and conclusion, though it does not explicitly mention the graph context having no relevant data.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately refrains from making unsupported claims beyond the supplied data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0faa2e7a490ed726006a4d5391890c8194bf77ccee7fff6f75",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2303,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 963,
+            "output_tokens_details": {
+              "reasoning_tokens": 381
+            },
+            "total_tokens": 3266
+          },
+          "user": null
+        },
+        "request_id": "8b7cc930-a29a-4660-961f-4352611ddc6f",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "5dcce4e88997c02c7ef04d8959cca2eb07deeccf9e2b52e8dfd4a8e8fac0a9d1",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q128",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q128.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q128::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q128::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b990fc819086728488196de515",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437539,
+          "created_at": 1783437536,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0704e12ef3cbd14a006a4d18e015fc8196ae43deee4141187e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q128"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0704e12ef3cbd14a006a4d18e1212081968f53f9b959d5bbfb",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R2\",\"context_groundedness\":{\"score\":5,\"rationale\":\"The answer accurately reflects the supplied context: the graph reports no relevant data, and the abstracts do not mention Minoxidil, androgen metabolism, or any connection between them.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer appropriately uses the key supplied evidence by noting the absence of relevant graph data and the irrelevance of all provided abstracts to the Minoxidil-androgen metabolism question.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0704e12ef3cbd14a006a4d18e22da88196ac0de5de95e8b5b9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1465,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 220,
+            "output_tokens_details": {
+              "reasoning_tokens": 114
+            },
+            "total_tokens": 1685
+          },
+          "user": null
+        },
+        "request_id": "42a52ee6-bb5f-4f40-b25c-681e65c57d25",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question using the supplied integrated data.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the graph has no relevant data and the abstracts do not support a Minoxidil-androgen metabolism link.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the graph context, vector abstracts, and the resulting conclusion.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately reflects the supplied context: the graph reports no relevant data, and the abstracts do not mention Minoxidil, androgen metabolism, or any connection between them.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key supplied evidence by noting the absence of relevant graph data and the irrelevance of all provided abstracts to the Minoxidil-androgen metabolism question.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inferring a connection where evidence is absent.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q128",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q128.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.335527+00:00"
+}

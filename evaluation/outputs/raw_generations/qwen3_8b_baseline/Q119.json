@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.8109,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "In a recent genome-wide association study (GWAS) on male pattern baldness (MPB), several genes have been identified as being strongly associated with the condition. One of the most notable genes linked to MPB is **WNT16**, which is involved in hair follicle development and maintenance. Variants in **WNT16** have been consistently associated with MPB in multiple studies.\n\nOther genes that have shown strong associations include:\n\n- **FGF5** (Fibroblast Growth Factor 5): This gene is involved in the regulation of hair growth cycles and has been linked to hair loss.\n- **EDAR** (Ectodysplasin A): This gene plays a role in the development of hair follicles and has been associated with MPB.\n- **WNT10A**: Another member of the Wnt signaling pathway, which is critical for hair follicle development.\n- **KRT15** (Keratin 15): Involved in the structure and function of hair follicles.\n\nThese genes are part of the complex genetic network that influences hair growth and loss. It is important to note that while these genes are strongly associated with MPB, the exact mechanisms by which they contribute to the condition are still under investigation.\n\nFor the most up-to-date and specific findings from a particular study, you would need to refer to the published paper or dataset from that study.",
+  "question_id": "Q119",
+  "question_text": "Which genes are linked to the most strongly associated variants for male pattern baldness in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 288,
+    "prompt_token_count": 78,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "In a recent genome-wide association study (GWAS) on male pattern baldness (MPB), several genes have been identified as being strongly associated with the condition. One of the most notable genes linked to MPB is **WNT16**, which is involved in hair follicle development and maintenance. Variants in **WNT16** have been consistently associated with MPB in multiple studies.\n\nOther genes that have shown strong associations include:\n\n- **FGF5** (Fibroblast Growth Factor 5): This gene is involved in the regulation of hair growth cycles and has been linked to hair loss.\n- **EDAR** (Ectodysplasin A): This gene plays a role in the development of hair follicles and has been associated with MPB.\n- **WNT10A**: Another member of the Wnt signaling pathway, which is critical for hair follicle development.\n- **KRT15** (Keratin 15): Involved in the structure and function of hair follicles.\n\nThese genes are part of the complex genetic network that influences hair growth and loss. It is important to note that while these genes are strongly associated with MPB, the exact mechanisms by which they contribute to the condition are still under investigation.\n\nFor the most up-to-date and specific findings from a particular study, you would need to refer to the published paper or dataset from that study."
+      }
+    ],
+    "created": 1783430600,
+    "id": "cmpl-ff7a3519-0e66-45fa-b036-3ea43d3b50f2",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 288,
+      "prompt_tokens": 57,
+      "total_tokens": 345
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:23:20.373637+00:00",
+  "user_prompt": "Which genes are linked to the most strongly associated variants for male pattern baldness in this study?"
+}

@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.4655,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "In a study on androgenetic alopecia (male pattern baldness), the most strongly associated genetic variants are typically found in the **WNT10A** and **FGF5** genes. These genes are part of the signaling pathways involved in hair follicle development and maintenance.\n\n- **WNT10A**: Variants in this gene have been consistently associated with androgenetic alopecia in multiple genome-wide association studies (GWAS). It plays a role in the Wnt signaling pathway, which is critical for hair follicle development and cycling.\n  \n- **FGF5**: This gene encodes fibroblast growth factor 5, which is involved in the regulation of hair growth. Variants in FGF5 have also been linked to androgenetic alopecia, particularly in the context of hair follicle regression.\n\nOther genes that have shown associations in some studies include **EDAR**, **EDARADD**, and **WNT16**, but **WNT10A** and **FGF5** are generally considered the most strongly associated.\n\nFor the most up-to-date and specific findings, it is recommended to consult the latest published GWAS results or meta-analyses on androgenetic alopecia.",
+  "question_id": "Q116",
+  "question_text": "Which genes are linked to the most strongly associated variants in this androgenetic alopecia study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 250,
+    "prompt_token_count": 78,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "In a study on androgenetic alopecia (male pattern baldness), the most strongly associated genetic variants are typically found in the **WNT10A** and **FGF5** genes. These genes are part of the signaling pathways involved in hair follicle development and maintenance.\n\n- **WNT10A**: Variants in this gene have been consistently associated with androgenetic alopecia in multiple genome-wide association studies (GWAS). It plays a role in the Wnt signaling pathway, which is critical for hair follicle development and cycling.\n  \n- **FGF5**: This gene encodes fibroblast growth factor 5, which is involved in the regulation of hair growth. Variants in FGF5 have also been linked to androgenetic alopecia, particularly in the context of hair follicle regression.\n\nOther genes that have shown associations in some studies include **EDAR**, **EDARADD**, and **WNT16**, but **WNT10A** and **FGF5** are generally considered the most strongly associated.\n\nFor the most up-to-date and specific findings, it is recommended to consult the latest published GWAS results or meta-analyses on androgenetic alopecia."
+      }
+    ],
+    "created": 1783430583,
+    "id": "cmpl-8700d956-02f1-46bf-9cf2-578db0b84d41",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 250,
+      "prompt_tokens": 57,
+      "total_tokens": 307
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:23:03.292365+00:00",
+  "user_prompt": "Which genes are linked to the most strongly associated variants in this androgenetic alopecia study?"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q193",
+      "randomization_seed": "20260706:Q193:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q193",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q193",
+      "error": null,
+      "id": "batch_req_6a4d540cdd0481908edd185d13ca6900",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452587,
+          "created_at": 1783452572,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07c2a9d26ed24a80006a4d539c38b481968aa0fa14d852ff99",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q193"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07c2a9d26ed24a80006a4d539d24588196a79abbb62a647dc4",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether HDAC9 is linked to androgen metabolism and distinguishes direct pathway membership from indirect association.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence: HDAC9 is annotated to Notch/Th2/chromatin-related functions, with no androgen metabolism pathway or explicit androgen-related evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the key conclusion and distinction, though it could more explicitly cite the supplied pathway/abstract evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids overclaiming and notes that only broad speculative indirect effects are possible but not supported by the provided data.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Addresses the question and separates direct pathway membership from indirect associations.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The main conclusion of no direct androgen metabolism evidence is consistent with the supplied packet, but it includes unsupported claims about prostate cancer literature and incorrectly describes HDAC9 as a class III histone deacetylase.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides a reasonably complete framework, including examples of androgen-related factors, but includes extra unsupported material.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Qualifies some points as indirect, but overextends beyond the supplied evidence with broad literature claims.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question using the supplied evidence and clearly distinguishes direct from indirect evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided graph and abstracts do not show HDAC9 membership in androgen metabolism or androgen-related pathways.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the relevant pathway annotations, GO/function context, drug/disease context, and the absence of androgen-specific evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately limits conclusions to the supplied evidence and labels indirect links as only possible but not demonstrated.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses direct pathway membership versus indirect association.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Correctly states that HDAC9 is not a direct androgen metabolism enzyme or canonical pathway member, but asserts literature-supported indirect links to prostate cancer, AR target genes, and steroidogenic programs that are not supported by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Thoroughly distinguishes metabolic enzymes from indirect regulatory biology, but adds unsupported details.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Uses some cautious language, but still presents indirect associations as established beyond what the evidence packet supports.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07c2a9d26ed24a80006a4d53a331a08196b7790f7c723452c5",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4119,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1331,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5450
+          },
+          "user": null
+        },
+        "request_id": "0622bf40-0d3b-441c-b82a-a2b5ab9b8f21",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "2c827e3083389798c7da62e9ca55e1ee23cd24db5431b7ae1f1da062110f3520",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q193",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q193.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q193::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q193::R2",
+      "error": null,
+      "id": "batch_req_6a4d19c1c8fc8190a70b47fdd908b0df",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437514,
+          "created_at": 1783437506,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b0716ce5c38b78d006a4d18c2f3948196a47f054a8362450a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q193"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b0716ce5c38b78d006a4d18c364408196a6b5fbc535ecce9c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The main conclusion that the supplied context provides no direct evidence linking HDAC9 to androgen metabolism is well supported by the graph and abstracts. The listed HDAC9 pathways, GO terms, drugs, and disease associations are accurately reflected. Minor speculation about broad overlap with hormone-regulated biology and possible influence on hormone-responsive programs is not directly supported by the supplied context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"The answer appropriately uses the key supplied graph evidence and recognizes that the HDAC9 abstract concerns cancer pharmacology rather than androgen metabolism. It correctly distinguishes absence of direct pathway membership from weak indirect association, though it could have more explicitly noted that none of the vector abstracts mention androgen metabolism.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b0716ce5c38b78d006a4d18c8caa0819684bf46079f15acc1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2493,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 650,
+            "output_tokens_details": {
+              "reasoning_tokens": 460
+            },
+            "total_tokens": 3143
+          },
+          "user": null
+        },
+        "request_id": "aff6c720-653c-481d-b445-41be6621d54e",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question using the supplied evidence and clearly distinguishes direct from indirect evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided graph and abstracts do not show HDAC9 membership in androgen metabolism or androgen-related pathways.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the relevant pathway annotations, GO/function context, drug/disease context, and the absence of androgen-specific evidence.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The main conclusion that the supplied context provides no direct evidence linking HDAC9 to androgen metabolism is well supported by the graph and abstracts. The listed HDAC9 pathways, GO terms, drugs, and disease associations are accurately reflected. Minor speculation about broad overlap with hormone-regulated biology and possible influence on hormone-responsive programs is not directly supported by the supplied context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key supplied graph evidence and recognizes that the HDAC9 abstract concerns cancer pharmacology rather than androgen metabolism. It correctly distinguishes absence of direct pathway membership from weak indirect association, though it could have more explicitly noted that none of the vector abstracts mention androgen metabolism.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately limits conclusions to the supplied evidence and labels indirect links as only possible but not demonstrated.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q193",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q193.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.376789+00:00"
+}

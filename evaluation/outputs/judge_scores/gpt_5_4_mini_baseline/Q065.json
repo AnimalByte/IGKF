@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q065",
+      "randomization_seed": "20260706:Q065:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q065",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q065",
+      "error": null,
+      "id": "batch_req_6a4d52bae8b08190bcc83cbb8fe9153b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452264,
+          "created_at": 1783452246,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a5ebba4b37ddd08006a4d52560bec819c8b6a760d05664ba4",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q065"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a5ebba4b37ddd08006a4d5256835c819c8673e32dd782f75f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Addresses the question only by saying the supplied context is insufficient, but does not provide the known hair-follicle role.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"It is overly dismissive; the graph includes a trichomegaly association, and established biology supports FGF5 involvement in hair-cycle regulation.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the central known function of FGF5 in limiting anagen and promoting catagen.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately notes limited direct evidence in the provided abstracts, but overstates that no relevant information exists.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses FGF5 function in hair-follicle cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly identifies FGF5 as a negative regulator of anagen and promoter of catagen; some pathway details such as Wnt interaction are not supported by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main biological role, knockout phenotype, expression, and therapeutic relevance, though with some extra unsupported detail.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Provides a confident answer without noting that the supplied abstracts do not directly discuss hair follicles.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately answers the question about FGF5 in hair-follicle cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that FGF5 promotes exit from anagen, limits hair length, and that loss of function prolongs anagen, consistent with known biology and the trichomegaly association.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the central functional points, though it does not mention classic animal knockout/long-hair evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly distinguishes direct supplied evidence from broader biological interpretation and appropriately qualifies the evidence base.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question with hair-cycle phase terminology and biological consequences.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Main claims are accurate: FGF5 promotes catagen, limits anagen, and loss of function causes long-hair phenotypes. Some mechanistic comparisons with other FGFs are simplified.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes the central role, cycle phases, loss- and gain-of-function implications, animal evidence, and therapeutic relevance.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Generally appropriately framed, especially regarding therapeutic development, though it does not explicitly note the limited direct support in the supplied abstracts.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a5ebba4b37ddd08006a4d5262a42c819cb0a529bdcef1ab54",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3276,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1858,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 5134
+          },
+          "user": null
+        },
+        "request_id": "10916bf8-1480-436a-bf85-c5cb3040223e",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question with hair-cycle phase terminology and biological consequences.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Main claims are accurate: FGF5 promotes catagen, limits anagen, and loss of function causes long-hair phenotypes. Some mechanistic comparisons with other FGFs are simplified.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Includes the central role, cycle phases, loss- and gain-of-function implications, animal evidence, and therapeutic relevance.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Generally appropriately framed, especially regarding therapeutic development, though it does not explicitly note the limited direct support in the supplied abstracts.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q065",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q065.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.156063+00:00"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q095",
+      "randomization_seed": "20260706:Q095:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q095",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783453166_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q095",
+      "error": null,
+      "id": "batch_req_6a4d56c6c454819089e9cfab34751942",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783453257,
+          "created_at": 1783453201,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_041cce7d286abd93006a4d5611e12081a2b1fc1b818c48b575",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 8192,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q095"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_041cce7d286abd93006a4d56129fc881a2807f744eaeaa0001",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses LHX2 function in hair-follicle development, stem cells, and cycling.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Broadly consistent with known LHX2 roles in hair-follicle stem-cell regulation and cycling, though some cycle-transition claims are generalized and not supported by the supplied evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers development, bulge/stem-cell maintenance, cycling, and transcriptional regulation, but lacks specific mechanisms or key targets.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"States conclusions confidently despite the supplied evidence lacking direct LHX2 hair-follicle data.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the question only by saying the supplied context is insufficient, rather than summarizing known biology.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly notes that the supplied abstracts do not provide direct information on LHX2 in hair follicles.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not provide the known biological roles of LHX2 in hair-follicle stem cells or cycling.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains given the lack of direct supporting evidence in the provided packet.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly explains that the supplied evidence does not support conclusions about LHX2 hair-follicle biology.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately characterizes the supplied graph and abstracts as lacking direct LHX2 hair-follicle evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides a clear evidence-based abstention and summarizes the available context, but omits known external biology of LHX2.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly avoids unsupported conclusions and qualifies the lack of direct evidence.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the biological question about LHX2 in hair follicles and cycling.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly accurate at a high level, but some claims about Wnt/Hedgehog interactions and mutation associations are vague or insufficiently supported by the provided evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers stem-cell niche, differentiation, and cycling, but remains generic and lacks important nuance about quiescence and specific phenotypes.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Uses some qualifiers such as 'may' and 'thought,' but does not acknowledge that the supplied evidence lacks direct support.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_041cce7d286abd93006a4d5645045c81a2b258dc8844ab2e77",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2575,
+            "input_tokens_details": {
+              "cached_tokens": 2304
+            },
+            "output_tokens": 4631,
+            "output_tokens_details": {
+              "reasoning_tokens": 4018
+            },
+            "total_tokens": 7206
+          },
+          "user": null
+        },
+        "request_id": "7116de17-22de-4bc4-84ea-e3b3b3e31320",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses LHX2 function in hair-follicle development, stem cells, and cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Broadly consistent with known LHX2 roles in hair-follicle stem-cell regulation and cycling, though some cycle-transition claims are generalized and not supported by the supplied evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers development, bulge/stem-cell maintenance, cycling, and transcriptional regulation, but lacks specific mechanisms or key targets.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States conclusions confidently despite the supplied evidence lacking direct LHX2 hair-follicle data.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q095",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q095.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:35.274275+00:00"
+}

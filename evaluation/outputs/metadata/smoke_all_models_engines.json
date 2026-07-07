@@ -1,0 +1,79 @@
+{
+  "created_at": 1783400132.4717908,
+  "results": {
+    "chroma": {
+      "collection": "pubmed_abstracts",
+      "documents": 3248,
+      "ok": true,
+      "path": "chroma_db"
+    },
+    "config_and_benchmark": {
+      "benchmark_records": 205,
+      "benchmark_sha256": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+      "conditions": [
+        "qwen3_8b_baseline",
+        "qwen3_8b_igkf",
+        "gpt_5_4_mini_baseline",
+        "gpt_5_4_mini_igkf"
+      ],
+      "ok": true,
+      "unique_question_ids": 205
+    },
+    "graphrag_retrieval": {
+      "error": "An instance of Chroma already exists for chroma_db with different settings",
+      "error_type": "ValueError",
+      "ok": false
+    },
+    "neo4j_graph": {
+      "TARGETS_OT": 140,
+      "nodes": 2547861,
+      "ok": true,
+      "relationships": 7075727,
+      "variant_regulatory_links": 4862
+    },
+    "openai_generator_model": {
+      "model": "gpt-5.4-mini-2026-03-17",
+      "ok": true,
+      "output_text": "generator smoke ok",
+      "reasoning_effort": "none",
+      "usage": {
+        "input_tokens": 24,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 7,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 31
+      }
+    },
+    "openai_judge_model": {
+      "model": "gpt-5.4-2026-03-05",
+      "ok": true,
+      "output_text": "{\"smoke\":\"ok\"}",
+      "reasoning_effort": "high",
+      "usage": {
+        "input_tokens": 16,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 41
+      }
+    },
+    "qwen3_local_non_thinking": {
+      "answer_preview": "The gene directly affected by rs6152 is **TCF4**.",
+      "backend": "llama-cpp-python",
+      "backend_version": "0.3.33",
+      "has_think_tags": false,
+      "ok": true,
+      "output_tokens": 17,
+      "prompt_tokens": 62,
+      "thinking_mode": false
+    }
+  }
+}

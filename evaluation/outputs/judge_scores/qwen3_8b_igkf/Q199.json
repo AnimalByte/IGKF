@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q199",
+      "randomization_seed": "20260706:Q199:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q199",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q199",
+      "error": null,
+      "id": "batch_req_6a4d540d618881909144898d86f9c470",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452589,
+          "created_at": 1783452579,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09babe2e0e5080fb006a4d53a315d88190a6cc6d56bbcf9378",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q199"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09babe2e0e5080fb006a4d53a399fc8190a549f2008a11ea88",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset is out of scope for Alzheimer's treatment options.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately avoids unsupported biomedical claims and correctly identifies the alopecia-focused scope as insufficient for Alzheimer's treatment evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key elements: no sufficient evidence, alopecia focus, and Alzheimer's treatment question outside scope.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than providing general Alzheimer's treatment information.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the dataset supports Alzheimer's treatment summaries and states it is outside scope.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Core conclusion is scientifically and contextually correct, though references to graph/abstract details add unsupported specificity.\"},\"completeness\":{\"score\":5,\"rationale\":\"Fully covers dataset focus, lack of relevant Alzheimer's treatment data, and out-of-scope conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly abstains from summarizing unsupported treatment options.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the scope mismatch and insufficiency for Alzheimer's treatment options.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main conclusion is correct, but it includes potentially unsupported or internally tensioned details about Alzheimer's biomarker abstracts.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the essential abstention, though extra dataset-description details are unnecessary and somewhat confusing.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately states the dataset cannot be used to summarize Alzheimer's treatments.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and concisely answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states insufficiency and avoids making unsupported biomedical claims.\"},\"completeness\":{\"score\":5,\"rationale\":\"Contains all necessary components without unnecessary detail.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains because the question is outside the dataset's scope.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09babe2e0e5080fb006a4d53a92a7c81909aae612a6bd1bdfb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 778,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1018,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1796
+          },
+          "user": null
+        },
+        "request_id": "dd6d5ebb-17e4-4115-9fb3-5a05149918cb",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "7134a1963a6e4aa043712217b246a4204299af337c29c6d32afac0ee4c01648d",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q199",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q199.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q199::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q199::R1",
+      "error": null,
+      "id": "batch_req_6a4d19c270b08190a8dda472fb4f9505",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437677,
+          "created_at": 1783437668,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0759a4c7ef734636006a4d196496dc8197bb61681bcb01e7bb",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q199"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0759a4c7ef734636006a4d196645048197ba2faf8f2eb841ab",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": \"3\",\n    \"rationale\": \"The overall conclusion that Alzheimer's treatment options are outside the androgenetic-alopecia dataset's scope is appropriate, but the claim that the supplied context contains no Alzheimer's-related information is contradicted by AD abstracts, including one mentioning Levothyroxine as a possible repurposing candidate.\"\n  },\n  \"context_utilization\": {\n    \"score\": \"3\",\n    \"rationale\": \"The answer follows the scope-limitation instruction and does not provide general treatment advice, but it underuses and partly mischaracterizes the supplied AD-related vector context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0759a4c7ef734636006a4d196b77d88197a63d333fb03dd294",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1487,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 623,
+            "output_tokens_details": {
+              "reasoning_tokens": 473
+            },
+            "total_tokens": 2110
+          },
+          "user": null
+        },
+        "request_id": "6c382fb8-8c41-4dea-bdbf-7a404c89663d",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the scope mismatch and insufficiency for Alzheimer's treatment options.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Main conclusion is correct, but it includes potentially unsupported or internally tensioned details about Alzheimer's biomarker abstracts.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the essential abstention, though extra dataset-description details are unnecessary and somewhat confusing.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The overall conclusion that Alzheimer's treatment options are outside the androgenetic-alopecia dataset's scope is appropriate, but the claim that the supplied context contains no Alzheimer's-related information is contradicted by AD abstracts, including one mentioning Levothyroxine as a possible repurposing candidate.",
+      "score": 3.0
+    },
+    "context_utilization": {
+      "rationale": "The answer follows the scope-limitation instruction and does not provide general treatment advice, but it underuses and partly mischaracterizes the supplied AD-related vector context.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately states the dataset cannot be used to summarize Alzheimer's treatments.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q199",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.380374+00:00"
+}

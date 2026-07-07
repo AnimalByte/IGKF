@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q102",
+      "randomization_seed": "20260706:Q102:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q102",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q102",
+      "error": null,
+      "id": "batch_req_6a4d52bc8f688190bd9cb67ee4145c54",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452191,
+          "created_at": 1783452166,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c213f9651f8bf6d006a4d5206dc3481a1a42d4777304c7bd9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q102"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c213f9651f8bf6d006a4d52076afc81a1b1693cb459e3c2bc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses Wnt signaling in hair-follicle growth and cycling.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Many statements are broadly consistent with known hair-follicle biology, but they are largely unsupported by the supplied evidence and include some over-specific claims.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers development, anagen entry, stem cells, differentiation, and regeneration, though with unsupported detail.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents strong conclusions without acknowledging that the provided evidence is indirect and not hair-follicle-specific.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question by explaining that the supplied evidence does not directly support a hair-follicle-specific narrative.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the provided abstracts and graph mainly support general Wnt roles in proliferation, stem-cell maintenance, skin morphology, and cancer rather than direct hair cycling evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Appropriately summarizes the limitation, though it could mention the indirect relevance of skin morphology and stem/progenitor regulation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains from unsupported hair-follicle conclusions given the available evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers how Wnt signaling may regulate follicle development, anagen, and stem-cell activation.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The biological narrative is generally plausible, but most specific claims are not supported by the supplied evidence packet and are presented as if directly evidenced.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers major expected mechanisms, including beta-catenin signaling, stem/progenitor activation, and pathway cross-talk.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes a general caveat about context dependence, but does not acknowledge the lack of direct hair-follicle evidence in the supplied context.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question while tying the explanation to the supplied graph and abstracts.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately uses the provided evidence on Wnt components, skin morphology, stem/progenitor proliferation, and pathway regulation, though the hair-follicle connection remains inferential.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides a coherent mechanism, names relevant pathway components, maps them to hair-cycle biology, and notes the limits of the evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly states that the supplied evidence is indirect and that hair-follicle-specific conclusions are biologically grounded inferences rather than direct demonstrations.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c213f9651f8bf6d006a4d5219c1c081a1aa6692ec68e293f7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3309,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2103,
+            "output_tokens_details": {
+              "reasoning_tokens": 1457
+            },
+            "total_tokens": 5412
+          },
+          "user": null
+        },
+        "request_id": "5c1e89fd-6474-40c4-b790-f7124c7729ae",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "754f28caa1a778b37b3c42f51cc3c9887767d3b5c7e219eb40b8aa94e7805f53",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q102",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q102.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q102::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q102::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b60a1c819082c338b9cf312690",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437451,
+          "created_at": 1783437446,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_08a4f4c1f3d8535e006a4d188698408193b1e653b53917177d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q102"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_08a4f4c1f3d8535e006a4d1887274c8193b740f848394e8a82",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is well grounded in the supplied context: the abstracts discuss Wnt signaling in proliferation, stem cell maintenance, cancer, development, and related phenotypes, but do not provide direct evidence about hair-follicle growth or cycling.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the available evidence and correctly avoids overextending it to hair-follicle biology beyond what is supplied.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_08a4f4c1f3d8535e006a4d188a27bc81939e69f1807d2606cd",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1281,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 370,
+            "output_tokens_details": {
+              "reasoning_tokens": 234
+            },
+            "total_tokens": 1651
+          },
+          "user": null
+        },
+        "request_id": "1b5c8e90-cff1-4a1f-a981-0429f9e8bcec",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question by explaining that the supplied evidence does not directly support a hair-follicle-specific narrative.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects that the provided abstracts and graph mainly support general Wnt roles in proliferation, stem-cell maintenance, skin morphology, and cancer rather than direct hair cycling evidence.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Appropriately summarizes the limitation, though it could mention the indirect relevance of skin morphology and stem/progenitor regulation.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is well grounded in the supplied context: the abstracts discuss Wnt signaling in proliferation, stem cell maintenance, cancer, development, and related phenotypes, but do not provide direct evidence about hair-follicle growth or cycling.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the available evidence and correctly avoids overextending it to hair-follicle biology beyond what is supplied.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly abstains from unsupported hair-follicle conclusions given the available evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q102",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q102.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.317195+00:00"
+}

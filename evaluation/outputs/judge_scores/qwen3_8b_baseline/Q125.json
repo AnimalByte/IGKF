@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q125",
+      "randomization_seed": "20260706:Q125:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q125",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q125",
+      "error": null,
+      "id": "batch_req_6a4d54088d0081908dba7301a4736506",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452557,
+          "created_at": 1783452548,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e13cb3bf2e55c72006a4d5383f5b08193a8136802a344d3a9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q125"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e13cb3bf2e55c72006a4d538493988193bf96bcef5dba11ef",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the general task but does not answer whether telogen effluvium was reported.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Does not make a false biomedical claim, but fails to provide the expected determination.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the requested conclusion about variant association statistics and study scope.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains given its stated lack of study details.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and states telogen effluvium is outside scope.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that no telogen effluvium variant association statistics are reported and the phenotype is outside scope.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes both required elements: no reported statistics and outside-scope statement.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Provides a clear conclusion without unsupported overextension.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that telogen effluvium statistics are not reported and the phenotype is outside scope.\"},\"completeness\":{\"score\":5,\"rationale\":\"Fully covers the requested response concisely.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately gives the required conclusion without embellishment.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Discusses how to assess the study but does not answer the specific question.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"No clear biomedical error, but it does not provide the expected factual conclusion.\"},\"completeness\":{\"score\":2,\"rationale\":\"Missing the required statement about absence of telogen effluvium statistics and study scope.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies uncertainty based on lack of study details.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e13cb3bf2e55c72006a4d538a350c8193b5440ef133f87a08",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 727,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 997,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1724
+          },
+          "user": null
+        },
+        "request_id": "80d9a538-f938-4aa9-9089-56da85f0582d",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Discusses how to assess the study but does not answer the specific question.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "No clear biomedical error, but it does not provide the expected factual conclusion.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Missing the required statement about absence of telogen effluvium statistics and study scope.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies uncertainty based on lack of study details.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q125",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.219573+00:00"
+}

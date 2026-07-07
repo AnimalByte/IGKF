@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.9457,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "LGR4 (Leucine-rich repeat-containing G-protein-coupled receptor 4) is a member of the G-protein-coupled receptor (GPCR) family and has been implicated in various biological processes, including development, tissue regeneration, and stem cell biology. In the context of hair-follicle biology and cycling, LGR4 has been shown to play a role in the regulation of hair follicle stem cell (HFSC) activity and the hair cycle.\n\nResearch has indicated that LGR4 is expressed in hair follicle stem cells and is involved in the maintenance of the stem cell niche. It has been shown to interact with the Wnt signaling pathway, which is a key regulator of hair follicle development and cycling. Specifically, LGR4 acts as a co-receptor for Wnt ligands, enhancing the signaling activity of the Wnt pathway. This interaction is crucial for the activation of hair follicle stem cells during the anagen (growth) phase of the hair cycle.\n\nAdditionally, studies have suggested that LGR4 may be involved in the transition between the quiescent and active states of hair follicle stem cells. The regulation of LGR4 expression may influence the timing and progression of the hair cycle, thereby affecting hair growth and regeneration.\n\nIn summary, LGR4 is involved in the regulation of hair follicle stem cell activity and the hair cycle through its interaction with the Wnt signaling pathway, contributing to the maintenance and regeneration of hair follicles.",
+  "question_id": "Q080",
+  "question_text": "What is known about the function of LGR4 in hair-follicle biology and cycling?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 303,
+    "prompt_token_count": 79,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "LGR4 (Leucine-rich repeat-containing G-protein-coupled receptor 4) is a member of the G-protein-coupled receptor (GPCR) family and has been implicated in various biological processes, including development, tissue regeneration, and stem cell biology. In the context of hair-follicle biology and cycling, LGR4 has been shown to play a role in the regulation of hair follicle stem cell (HFSC) activity and the hair cycle.\n\nResearch has indicated that LGR4 is expressed in hair follicle stem cells and is involved in the maintenance of the stem cell niche. It has been shown to interact with the Wnt signaling pathway, which is a key regulator of hair follicle development and cycling. Specifically, LGR4 acts as a co-receptor for Wnt ligands, enhancing the signaling activity of the Wnt pathway. This interaction is crucial for the activation of hair follicle stem cells during the anagen (growth) phase of the hair cycle.\n\nAdditionally, studies have suggested that LGR4 may be involved in the transition between the quiescent and active states of hair follicle stem cells. The regulation of LGR4 expression may influence the timing and progression of the hair cycle, thereby affecting hair growth and regeneration.\n\nIn summary, LGR4 is involved in the regulation of hair follicle stem cell activity and the hair cycle through its interaction with the Wnt signaling pathway, contributing to the maintenance and regeneration of hair follicles."
+      }
+    ],
+    "created": 1783430389,
+    "id": "cmpl-89e1f166-7885-43f7-b2b2-4e4d56c3c048",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 303,
+      "prompt_tokens": 58,
+      "total_tokens": 361
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:19:49.364712+00:00",
+  "user_prompt": "What is known about the function of LGR4 in hair-follicle biology and cycling?"
+}

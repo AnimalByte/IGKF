@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q057",
+      "randomization_seed": "20260706:Q057:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q057",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q057",
+      "error": null,
+      "id": "batch_req_6a4d52baa3dc8190b74bdef5b05d4887",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452225,
+          "created_at": 1783452214,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01fb524149d0c871006a4d5236255481a0b1a7e18b63a18c87",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q057"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01fb524149d0c871006a4d5236c27881a0a45c79020a9643b4",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the need for study-specific variant data but does not directly answer based on the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"No biomedical errors; appropriately notes that variant-impact mapping cannot be determined without relevant data.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not state that the provided evidence contains no EDA2R high-impact variants.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly avoids inventing variants and clearly abstains due to insufficient information.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly discusses whether high-impact variants are mapped to EDA2R, though with some unnecessary context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Consistent with the supplied evidence that no EDA2R variants are shown, but somewhat overstates absence as a definitive study finding.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main point and explains that EDA2R is not present in the provided contexts.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly qualifies the conclusion based on provided context, though the initial definitive statement is stronger than warranted.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Relevant to the question but does not use the supplied evidence to provide an answer.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"No factual biomedical error; correctly notes that variant status depends on the dataset.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits the key observation that no EDA2R high-impact variants are identifiable from the provided evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately refuses to guess and requests the relevant variant table or study details.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question in relation to the supplied graph and literature context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects that the provided evidence contains no EDA2R variant annotations or high-impact variants.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly states what evidence is available and the resulting conclusion that no high-impact EDA2R variants can be identified.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately limits the conclusion to the supplied information and avoids unsupported claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01fb524149d0c871006a4d523b9b2081a0a7fb2ec5f34f1bd4",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2280,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1256,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3536
+          },
+          "user": null
+        },
+        "request_id": "726491ee-27a2-4789-a317-fd1a0ff7be88",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Relevant to the question but does not use the supplied evidence to provide an answer.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "No factual biomedical error; correctly notes that variant status depends on the dataset.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Omits the key observation that no EDA2R high-impact variants are identifiable from the provided evidence.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately refuses to guess and requests the relevant variant table or study details.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q057",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q057.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.150191+00:00"
+}

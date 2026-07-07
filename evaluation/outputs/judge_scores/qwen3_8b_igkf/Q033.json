@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q033",
+      "randomization_seed": "20260706:Q033:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q033",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q033",
+      "error": null,
+      "id": "batch_req_6a4d52b99e948190a598e8f90abc19f6",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452222,
+          "created_at": 1783452212,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06cefa2d46ea2e81006a4d5234d11c819eab53cb77cb21c5ea",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q033"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06cefa2d46ea2e81006a4d523585b0819e9f0003c49c2f56b6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether rs929626 is in a regulatory element and names it.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Matches the reference evidence: rs929626 is in EH38D3783439 labeled dELS.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes both the regulatory element identifier and its dELS label.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately states the finding as based on the integrated data without unsupported claims.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Discusses the need for context but does not answer the specific question.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"No clear biomedical falsehoods, but it fails to report the supplied integrated-data finding.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key answer: EH38D3783439 and dELS.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains despite sufficient evidence being provided in the prompt.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and concisely answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies EH38D3783439 as the regulatory element and dELS as the label.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides all necessary components: yes, element ID, and regulatory label.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"States the integrated-data result without unnecessary uncertainty or unsupported extrapolation.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the general topic but does not answer using the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Gives unsupported and conflicting information, including FGFR2 and a different regulatory-region claim, while missing the reference element.\"},\"completeness\":{\"score\":1,\"rationale\":\"Fails to identify EH38D3783439 or its dELS label.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Claims uncertainty but also invents unsupported specific conclusions.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06cefa2d46ea2e81006a4d523a6128819e9d3ef91521f5cbc2",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2771,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 989,
+            "output_tokens_details": {
+              "reasoning_tokens": 491
+            },
+            "total_tokens": 3760
+          },
+          "user": null
+        },
+        "request_id": "9de74aef-3bf1-4557-bacd-925c3e1a6c14",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "efa7e4f86836cf917259ad319092ab9c09da666de1dd7eb3adbd948d065e56bb",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q033",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q033.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q033::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q033::R1",
+      "error": null,
+      "id": "batch_req_6a4d19ad1ccc8190a0c28508447d7e5a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437465,
+          "created_at": 1783437459,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c069af8911ceb85006a4d1893e3c08195aa0868830b40d892",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q033"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c069af8911ceb85006a4d1894751c8195b707c28b1214227d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":4,\"rationale\":\"The core claim is directly supported: the supplied graph states rs929626 is in regulatory element EH38D3783439 with label dELS. Minor extra statements about potential gene-expression influence/interactions are plausible but not explicitly supported by the supplied context.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer uses the key relevant graph evidence, identifying both the regulatory element ID and its dELS label.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c069af8911ceb85006a4d1897ef888195976ab9ff281de696",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2079,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 396,
+            "output_tokens_details": {
+              "reasoning_tokens": 287
+            },
+            "total_tokens": 2475
+          },
+          "user": null
+        },
+        "request_id": "536be29f-05ee-4744-b18a-4f227135b153",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether rs929626 is in a regulatory element and names it.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Matches the reference evidence: rs929626 is in EH38D3783439 labeled dELS.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes both the regulatory element identifier and its dELS label.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The core claim is directly supported: the supplied graph states rs929626 is in regulatory element EH38D3783439 with label dELS. Minor extra statements about potential gene-expression influence/interactions are plausible but not explicitly supported by the supplied context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key relevant graph evidence, identifying both the regulatory element ID and its dELS label.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately states the finding as based on the integrated data without unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q033",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q033.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.272040+00:00"
+}

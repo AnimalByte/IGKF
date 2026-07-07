@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q137",
+      "randomization_seed": "20260706:Q137:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q137",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q137",
+      "error": null,
+      "id": "batch_req_6a4d5409347c8190b06817c1b8eb7dca",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452571,
+          "created_at": 1783452558,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04f71637e90065b2006a4d538ea0208195b366683508c5fe09",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q137"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04f71637e90065b2006a4d538f25a481959e754d3abf025c9a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether a SRD5A2-mapped variant overlapping a hair-follicle regulatory element can be identified.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Ultimately correctly states that no specific supporting variant is present in the supplied evidence, but the opening claim that the context supports such a regulatory variant indirectly is unsupported and contradictory.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key absence of variant-level and regulatory-element evidence, though the contradictory framing reduces clarity.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Includes appropriate caveats and abstention, but begins with an unsupported affirmative claim.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by stating that no such SRD5A2 variant is identified in the provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the supplied abstracts mention SRD5A2 coding/pathogenic variants but do not describe regulatory-element overlap in hair-follicle-relevant cells.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the relevant negative finding and explains why the listed variants do not satisfy the requested evidence criterion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inventing a variant or regulatory annotation not present in the evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question but gives only a vague variant description rather than a specific identifiable variant.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Unsupported by the reference evidence; no noncoding SRD5A2 regulatory variant or hair-follicle regulatory overlap is reported in the supplied material.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not identify an exact variant and provides generic unsupported evidence.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Confidently asserts an unsupported conclusion instead of abstaining.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Responds generally but does not answer based on the supplied study/evidence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"General statements about SRD5A2 and hair biology are plausible, but the answer does not accurately resolve the evidence-specific question and suggests possible findings without support.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key evidence-based conclusion that no such variant is identified in the provided packet.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly avoids making a definitive unsupported claim, though it speculates generally beyond the supplied evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04f71637e90065b2006a4d5395d56c81958670a545765f242d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3309,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1114,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4423
+          },
+          "user": null
+        },
+        "request_id": "e3479dc2-34e6-49ef-ab23-e45c6ce4b6cd",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "c4f280c68cb549e665b70a1434c18ed770fe4e9a4bbe23a7488e354b8fabec7e",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q137",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q137.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q137::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q137::R1",
+      "error": null,
+      "id": "batch_req_6a4d19ba903481908d0e779de849027f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437466,
+          "created_at": 1783437455,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0bed621541af10ef006a4d188fbffc8190b57349b728d35096",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q137"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0bed621541af10ef006a4d189050648190a8bd52d862b7a5ec",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is supported by the supplied context: SRD5A2 variants are listed only in the deficiency cohort abstract, and no supplied graph or vector evidence describes any SRD5A2-mapped variant overlapping a hair-follicle-relevant regulatory element.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"It appropriately uses the variant list and absence of regulatory-element evidence, though it could more explicitly note that the SRD5A2 androgenetic alopecia association does not provide variant-regulatory overlap evidence.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0bed621541af10ef006a4d1898577481908d9ad4c5c0b9307c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2305,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 671,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2976
+          },
+          "user": null
+        },
+        "request_id": "fb7e0d2b-fff7-4e39-beb5-188e69a08853",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question by stating that no such SRD5A2 variant is identified in the provided evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects that the supplied abstracts mention SRD5A2 coding/pathogenic variants but do not describe regulatory-element overlap in hair-follicle-relevant cells.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the relevant negative finding and explains why the listed variants do not satisfy the requested evidence criterion.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is supported by the supplied context: SRD5A2 variants are listed only in the deficiency cohort abstract, and no supplied graph or vector evidence describes any SRD5A2-mapped variant overlapping a hair-follicle-relevant regulatory element.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "It appropriately uses the variant list and absence of regulatory-element evidence, though it could more explicitly note that the SRD5A2 androgenetic alopecia association does not provide variant-regulatory overlap evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inventing a variant or regulatory annotation not present in the evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q137",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q137.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.341090+00:00"
+}

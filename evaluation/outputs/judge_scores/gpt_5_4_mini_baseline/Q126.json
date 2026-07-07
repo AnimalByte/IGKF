@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q126",
+      "randomization_seed": "20260706:Q126:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q126",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q126",
+      "error": null,
+      "id": "batch_req_6a4d5408a9788190862126deec33739c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452565,
+          "created_at": 1783452552,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d9d8ec24a791afa006a4d5388c8848196b84297d3c6ebd2d2",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q126"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d9d8ec24a791afa006a4d53894e7881968cdb2bc71fd79af5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Partially addresses the question but mainly discusses the provided hair-loss GWAS context rather than Minoxidil\u2019s actual mechanism.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately notes that the supplied evidence does not describe Minoxidil and avoids unsupported mechanistic claims; the brief general statement that it promotes growth phase is accurate but incomplete.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits key known mechanisms such as potassium-channel opening, minoxidil sulfate activation, anagen prolongation, and possible vascular/growth-factor effects.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the lack of Minoxidil-specific evidence in the supplied context and avoids overclaiming.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question with the main proposed mechanisms relevant to hair-loss treatment.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate: Minoxidil\u2019s hair-growth mechanism is incompletely understood and is associated with potassium-channel opening, follicle cycling effects, and vasodilation.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the major clinically relevant mechanisms, though it could add details such as conversion to minoxidil sulfate and possible VEGF/growth-factor effects.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly states uncertainty about the exact mechanism and appropriately frames actions as proposed.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses Minoxidil\u2019s mechanism in hair-loss treatment.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Contains several accurate points, including potassium-channel opening, vasodilation, and anagen prolongation, but includes a material error suggesting DHT-related effects and mischaracterizes 5-alpha-reductase.\"},\"completeness\":{\"score\":4,\"rationale\":\"Broadly covers many relevant components, but includes unnecessary and inaccurate DHT-related material.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Notes that the exact mechanism is not fully understood, but still asserts unsupported DHT-related mechanisms.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses the absence of Minoxidil in the supplied context but does not answer the biomedical question about Minoxidil\u2019s mechanism.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph and abstracts do not mention Minoxidil or its mechanism.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not provide the known mechanism of Minoxidil in hair-loss treatment.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring a mechanism from insufficient supplied evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d9d8ec24a791afa006a4d538fe7a88196bed3c2fc59ce5777",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3182,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1139,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4321
+          },
+          "user": null
+        },
+        "request_id": "6395e249-7a0f-4e70-8229-aa3021a2241e",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question with the main proposed mechanisms relevant to hair-loss treatment.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Scientifically accurate: Minoxidil\u2019s hair-growth mechanism is incompletely understood and is associated with potassium-channel opening, follicle cycling effects, and vasodilation.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the major clinically relevant mechanisms, though it could add details such as conversion to minoxidil sulfate and possible VEGF/growth-factor effects.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly states uncertainty about the exact mechanism and appropriately frames actions as proposed.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q126",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q126.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.219969+00:00"
+}

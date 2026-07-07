@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q129",
+      "randomization_seed": "20260706:Q129:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q129",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q129",
+      "error": null,
+      "id": "batch_req_6a4d5408a4708190ab18805a3a58fb3d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452568,
+          "created_at": 1783452556,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05f1ac650fde3b7c006a4d538cd1a0819393242e47e7ddfc68",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q129"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05f1ac650fde3b7c006a4d538da1e88193b4e9568076bfc75c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses finasteride\u2019s mechanism in hair-loss treatment.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately identifies inhibition of SRD5A2/5-alpha-reductase, reduced DHT production, and reduced androgen-driven follicle miniaturization; appropriately contextualizes AR.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key enzyme, substrate/product, hormonal effect, and hair-follicle consequence without overclaiming.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly distinguishes the central established mechanism from broader or less-supported context.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly discusses the mechanism of finasteride for androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Core DHT/SRD5A2 mechanism is correct, but it incorrectly attributes the 1.70 \u00b5M IC50 finding to finasteride rather than MK-0773 and overstates AR interaction as potentially mechanistic.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the major mechanistic components but adds unsupported or erroneous details.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Makes unsupported claims about finasteride\u2019s IC50 and AR contribution, though it partially qualifies the AR point.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the mechanism question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states inhibition of 5-alpha-reductase type II, reduced conversion of testosterone to DHT, and reduced follicle miniaturization.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the essential mechanism and clinical consequence in hair loss succinctly.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Avoids unsupported mechanistic claims and appropriately notes that benefits depend on continued use.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses finasteride\u2019s mechanism in pattern hair loss.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main mechanism is correct, but it includes an incorrect typical male-pattern hair-loss dose of 0.5 mg daily; approved/common dose is generally 1 mg daily.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the important mechanistic components but includes unnecessary treatment-use details and a dosing error.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly avoids overclaiming and qualifies female use, but presents the incorrect dosing detail without qualification.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05f1ac650fde3b7c006a4d539328a0819385508a720f98ba59",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2823,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1108,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3931
+          },
+          "user": null
+        },
+        "request_id": "0dde8d4e-3125-41b4-9e60-1f12771ca3f6",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "35f18a175fdcde71cb0162841f4257c0cc47ef693573c1bf6bd55b40035a3fd5",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q129",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q129.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q129::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q129::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b996c88190b94f79761f8f4182",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437548,
+          "created_at": 1783437541,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05ca6c994cc6e983006a4d18e53b048196944c14401a796003",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q129"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05ca6c994cc6e983006a4d18e5c3148196a46e9bce7653e056",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":3,\"rationale\":\"Core claim that finasteride targets/inhibits SRD5A2 and thereby reduces DHT synthesis from testosterone is supported by the graph and Abstract 1. However, the answer incorrectly attributes the IC50 value of 1.70 \u00b5M to finasteride; the supplied abstract assigns that value to MK-0773. Several hair-loss-specific claims and AR-mediated effects are not directly supported by the supplied context.\"},\"context_utilization\":{\"score\":3,\"rationale\":\"The answer uses relevant supplied evidence about SRD5A2, DHT synthesis, androgen biosynthesis, and AR as a listed target gene. However, it misuses the IC50 evidence and extends beyond the context for clinical hair-loss effects and AR contribution.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05ca6c994cc6e983006a4d18ea71e88196b3da21e2f4caa309",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1839,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 608,
+            "output_tokens_details": {
+              "reasoning_tokens": 433
+            },
+            "total_tokens": 2447
+          },
+          "user": null
+        },
+        "request_id": "e0248599-eb6b-45bc-b9e2-352aad3ad41b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly discusses the mechanism of finasteride for androgenetic alopecia.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Core DHT/SRD5A2 mechanism is correct, but it incorrectly attributes the 1.70 \u00b5M IC50 finding to finasteride rather than MK-0773 and overstates AR interaction as potentially mechanistic.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Includes the major mechanistic components but adds unsupported or erroneous details.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "Core claim that finasteride targets/inhibits SRD5A2 and thereby reduces DHT synthesis from testosterone is supported by the graph and Abstract 1. However, the answer incorrectly attributes the IC50 value of 1.70 \u00b5M to finasteride; the supplied abstract assigns that value to MK-0773. Several hair-loss-specific claims and AR-mediated effects are not directly supported by the supplied context.",
+      "score": 3.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses relevant supplied evidence about SRD5A2, DHT synthesis, androgen biosynthesis, and AR as a listed target gene. However, it misuses the IC50 evidence and extends beyond the context for clinical hair-loss effects and AR contribution.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Makes unsupported claims about finasteride\u2019s IC50 and AR contribution, though it partially qualifies the AR point.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q129",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q129.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.335876+00:00"
+}

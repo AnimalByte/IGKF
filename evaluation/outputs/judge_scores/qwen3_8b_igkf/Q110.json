@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q110",
+      "randomization_seed": "20260706:Q110:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q110",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q110",
+      "error": null,
+      "id": "batch_req_6a4d540762b88190a517457107d37621",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452506,
+          "created_at": 1783452493,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_037cc5f48d36d126006a4d534d5dbc8194b88ec7951b943f63",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q110"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_037cc5f48d36d126006a4d534e43748194aae86db6b6631906",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question while recognizing that the supplied evidence lacks hair-follicle-specific data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately summarizes the provided Hedgehog/Gli/Sufu phosphorylation mechanism and clearly separates it from speculative hair-follicle implications.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the supported molecular mechanism, explains the limitation, and identifies what cannot be concluded from the evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies all hair-follicle claims and explicitly notes insufficient direct evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the available evidence does not address hair-follicle growth or cycling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the provided evidence on Ci/Gli regulation, phosphorylation, Sufu, and lack of hair-follicle data.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides a solid summary and appropriate abstention, though it gives less biological framing than possible from the general pathway evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains from making unsupported hair-follicle-specific claims.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses hair-follicle growth and cycling directly.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Introduces many hair-follicle-specific claims not supported by the supplied evidence, and some details such as dermal-papilla Shh secretion and stem-cell maintenance roles are potentially inaccurate or overstated.\"},\"completeness\":{\"score\":3,\"rationale\":\"Broadly covers hair development, cycling, stem cells, and disease, but much of this is unsupported by the available evidence and includes unnecessary extrapolation.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not acknowledge that the provided evidence lacks hair-follicle-specific data and presents unsupported conclusions as established.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses Hedgehog signaling in hair-follicle development and cycling.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The hair-follicle claims are broadly plausible biologically, but they are not supported by the provided evidence packet, which contains no direct hair-follicle data.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers several relevant hair-follicle concepts, but omits the critical limitation that the supplied evidence does not establish them.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"States unsupported hair-follicle conclusions as evidence-backed rather than qualifying or abstaining.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_037cc5f48d36d126006a4d535596bc81949ea8e940fb8f6811",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3279,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1141,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4420
+          },
+          "user": null
+        },
+        "request_id": "f76f1c49-75c3-408a-ad5b-da630c4dbf54",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "a7d094b0d01689b27f0070af63b9a5891ac6e52bbdaa9032f0f15360978ebbde",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q110",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q110.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q110::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q110::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b70aec8190ab6b4868e45b56fc",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437463,
+          "created_at": 1783437459,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a430123b49d66d6006a4d1893bdbc8196a9bf90556750f6aa",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q110"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a430123b49d66d6006a4d1894656c81968ab088cdbf9edb75",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":5,\"rationale\":\"The answer is well grounded in the supplied context: the graph has no relevant data, the abstracts discuss general Hedgehog signaling mechanisms and non-hair contexts, and none provide direct evidence about hair-follicle growth or cycling.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer appropriately uses the available evidence by summarizing the relevant Hedgehog signaling mechanisms while correctly declining to infer a hair-follicle-specific role unsupported by the context.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a430123b49d66d6006a4d189610dc819681a93c9b7cf3de36",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1456,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 240,
+            "output_tokens_details": {
+              "reasoning_tokens": 122
+            },
+            "total_tokens": 1696
+          },
+          "user": null
+        },
+        "request_id": "a87515ab-5d3c-4fc7-b60e-94d23ba67de1",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that the available evidence does not address hair-follicle growth or cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the provided evidence on Ci/Gli regulation, phosphorylation, Sufu, and lack of hair-follicle data.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides a solid summary and appropriate abstention, though it gives less biological framing than possible from the general pathway evidence.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is well grounded in the supplied context: the graph has no relevant data, the abstracts discuss general Hedgehog signaling mechanisms and non-hair contexts, and none provide direct evidence about hair-follicle growth or cycling.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the available evidence by summarizing the relevant Hedgehog signaling mechanisms while correctly declining to infer a hair-follicle-specific role unsupported by the context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly abstains from making unsupported hair-follicle-specific claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q110",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q110.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.323281+00:00"
+}

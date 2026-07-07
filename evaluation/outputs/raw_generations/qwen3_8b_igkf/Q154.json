@@ -1,0 +1,161 @@
+{
+  "benchmark_annotations": {
+    "answerability": "insufficient_evidence_likely",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.0037,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated evidence from the provided data does not directly support specific gene\u2013environment interactions affecting hair thinning. The knowledge graph and abstracts focus on genetic associations with hair thinning (specifically male-pattern hair loss) and other conditions such as cleft lip/palate and COPD. While the abstracts mention environmental factors (e.g., maternal smoking, vitamin use) in the context of other conditions, there is no explicit mention of environmental factors interacting with the genes associated with hair thinning (e.g., KANSL1, FAM186A, OPHN1, SPAG17, CIROZ) in the provided data.\n\nTherefore, based on the given dataset, specific gene\u2013environment interactions affecting hair thining cannot be inferred.",
+  "question_id": "Q154",
+  "question_text": "Does the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 155,
+    "prompt_token_count": 1754,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence from the provided data does not directly support specific gene\u2013environment interactions affecting hair thinning. The knowledge graph and abstracts focus on genetic associations with hair thinning (specifically male-pattern hair loss) and other conditions such as cleft lip/palate and COPD. While the abstracts mention environmental factors (e.g., maternal smoking, vitamin use) in the context of other conditions, there is no explicit mention of environmental factors interacting with the genes associated with hair thinning (e.g., KANSL1, FAM186A, OPHN1, SPAG17, CIROZ) in the provided data.\n\nTherefore, based on the given dataset, specific gene\u2013environment interactions affecting hair thining cannot be inferred."
+      }
+    ],
+    "created": 1783433192,
+    "id": "cmpl-3df435b6-c142-410c-912e-8cda19a262ba",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 1733,
+      "total_tokens": 1888
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      26.310813903808594,
+      27.202198028564453,
+      27.934982299804688,
+      30.51323699951172,
+      30.592041015625,
+      30.60729217529297,
+      31.471900939941406,
+      31.625518798828125,
+      31.875713348388672,
+      32.104278564453125,
+      32.15925598144531,
+      32.21726989746094,
+      32.407737731933594,
+      32.466041564941406,
+      32.53731918334961
+    ],
+    "candidate_pmids": [
+      "29220522",
+      "34984527",
+      "37737258",
+      "33133644",
+      "32776659",
+      "41417529",
+      "31078570",
+      "40869924",
+      "42190016",
+      "37860011",
+      "39245941",
+      "42269416",
+      "34356054",
+      "30610764",
+      "37690223"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset. This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "final_context": "Graph Context:\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\nVector Context:\n--- Abstract 1 (PMID: 37737258, relevance: -6.8384) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 2 (PMID: 40869924, relevance: -7.0705) ---\nBACKGROUND/OBJECTIVES: Maternal exposures are known to influence the risk of isolated cleft lip with or without cleft palate (CL/P)-a common and highly heritable birth defect with a multifactorial etiology. METHODS: To identify new risk loci, we conducted a genome-wide gene-environment interaction (GEI) analysis of CL/P with maternal smoking and vitamin use in Filipinos (N(cases) = 540, N(controls) = 260). Since GEI analyses are typically low in power and the results can be difficult to interpret, we applied multiple testing frameworks to evaluate potential GEI effects: a one degree-of-freedom (1df) GxE test, the 3df joint test, and the two-step EDGE approach. RESULTS: While no genome-wide significant interactions were detected, we identified 11 suggestive GEIs with smoking and 24 with vitamin use. Several implicated loci contain biologically plausible genes. Notable interactions with smoking include loci near FEZF1, TWIST2, and NET1. While FEZF1 is involved in early neuronal development, TWIST2 and NET1 regulate epithelial-mesenchymal transition, which is required for proper lip and palate fusion. Interactions with vitamins encompass CECR2-a chromatin remodeling protein required for neural tube closure-and FURIN, a critical protease during early embryogenesis that activates various growth factors and extracellular matrix proteins. The activity of both proteins is influenced by folic acid. CONCLUSIONS: Our findings highlight the critical role of maternal exposures in identifying genes associated with structural birth defects such as CL/P and provide new paths to explore for CL/P genetics.\n\n--- Abstract 3 (PMID: 42269416, relevance: -8.4787) ---\nBACKGROUND: Chronic obstructive pulmonary disease (COPD) is a progressive lung disorder influenced by environmental exposures and genetic susceptibility. Despite numerous studies, the effects of key susceptibility genes remain inconsistent across populations, and their overall clinical relevance is unclear. METHODS: Following PRISMA guidelines and registered in PROSPERO (ID: CRD420251077565), we conducted a systematic review and meta-analysis of studies published between 2010 and 2025. Eighteen unique studies were included, ranging from small cohorts (n\u202f=\u202f36) to large biobank analyses ( approximately 4.5 million participants), collectively evaluating five candidate genes: SERPINA1, HHIP, IREB2, SFTPD, and FAM13A. Pooled hazard ratios (HRs) were calculated, with subgroup analyses by ethnicity and variant-level differences. Associations with spirometric parameters (FEV(1), FEV(1)/FVC) were examined to assess clinical relevance. RESULTS: SERPINA1 demonstrated the strongest significant with COPD (HR\u202f=\u202f2.47). A significant association was also observed for SFTPD, although based on fewer studies. Subgroup analysis by ethnicity/geographical region revealed the highest pooled risk in East Asians (HR\u202f=\u202f2.18), significant associations in Europeans (HR\u202f=\u202f1.46) and Americans (HR\u202f=\u202f1.47), and a weaker or potentially protective effect in Oceania (HR\u202f=\u202f0.67). SERPINA1 risk correlated with lung function decline (FEV(1): r\u202f=\u202f-0.64; FEV(1)/FVC: r\u202f=\u202f-0.71), highlighting translational relevance. CONCLUSIONS: SERPINA1 emerges as the most clinically relevant genetic determinant of COPD, linking susceptibility to measurable spirometric impairment, with effects varying by ethnicity. These findings emphasize the need for genetic screening integrated with lung function assessment and ethnicity-specific risk stratification to advance precision management of COPD.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "graph_context_length": 1378,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3295,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q154.json",
+    "retrieval_total_seconds": 35.9911,
+    "score_max": -6.838414192199707,
+    "score_mean": -7.462526639302571,
+    "scores": [
+      -6.838414192199707,
+      -7.070450782775879,
+      -8.478714942932129
+    ],
+    "selected_abstracts": [
+      "Male-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.",
+      "BACKGROUND/OBJECTIVES: Maternal exposures are known to influence the risk of isolated cleft lip with or without cleft palate (CL/P)-a common and highly heritable birth defect with a multifactorial etiology. METHODS: To identify new risk loci, we conducted a genome-wide gene-environment interaction (GEI) analysis of CL/P with maternal smoking and vitamin use in Filipinos (N(cases) = 540, N(controls) = 260). Since GEI analyses are typically low in power and the results can be difficult to interpret, we applied multiple testing frameworks to evaluate potential GEI effects: a one degree-of-freedom (1df) GxE test, the 3df joint test, and the two-step EDGE approach. RESULTS: While no genome-wide significant interactions were detected, we identified 11 suggestive GEIs with smoking and 24 with vitamin use. Several implicated loci contain biologically plausible genes. Notable interactions with smoking include loci near FEZF1, TWIST2, and NET1. While FEZF1 is involved in early neuronal development, TWIST2 and NET1 regulate epithelial-mesenchymal transition, which is required for proper lip and palate fusion. Interactions with vitamins encompass CECR2-a chromatin remodeling protein required for neural tube closure-and FURIN, a critical protease during early embryogenesis that activates various growth factors and extracellular matrix proteins. The activity of both proteins is influenced by folic acid. CONCLUSIONS: Our findings highlight the critical role of maternal exposures in identifying genes associated with structural birth defects such as CL/P and provide new paths to explore for CL/P genetics.",
+      "BACKGROUND: Chronic obstructive pulmonary disease (COPD) is a progressive lung disorder influenced by environmental exposures and genetic susceptibility. Despite numerous studies, the effects of key susceptibility genes remain inconsistent across populations, and their overall clinical relevance is unclear. METHODS: Following PRISMA guidelines and registered in PROSPERO (ID: CRD420251077565), we conducted a systematic review and meta-analysis of studies published between 2010 and 2025. Eighteen unique studies were included, ranging from small cohorts (n\u202f=\u202f36) to large biobank analyses ( approximately 4.5 million participants), collectively evaluating five candidate genes: SERPINA1, HHIP, IREB2, SFTPD, and FAM13A. Pooled hazard ratios (HRs) were calculated, with subgroup analyses by ethnicity and variant-level differences. Associations with spirometric parameters (FEV(1), FEV(1)/FVC) were examined to assess clinical relevance. RESULTS: SERPINA1 demonstrated the strongest significant with COPD (HR\u202f=\u202f2.47). A significant association was also observed for SFTPD, although based on fewer studies. Subgroup analysis by ethnicity/geographical region revealed the highest pooled risk in East Asians (HR\u202f=\u202f2.18), significant associations in Europeans (HR\u202f=\u202f1.46) and Americans (HR\u202f=\u202f1.47), and a weaker or potentially protective effect in Oceania (HR\u202f=\u202f0.67). SERPINA1 risk correlated with lung function decline (FEV(1): r\u202f=\u202f-0.64; FEV(1)/FVC: r\u202f=\u202f-0.71), highlighting translational relevance. CONCLUSIONS: SERPINA1 emerges as the most clinically relevant genetic determinant of COPD, linking susceptibility to measurable spirometric impairment, with effects varying by ethnicity. These findings emphasize the need for genetic screening integrated with lung function assessment and ethnicity-specific risk stratification to advance precision management of COPD."
+    ],
+    "selected_pmids": [
+      "37737258",
+      "40869924",
+      "42269416"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1081
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:06:32.497720+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 37737258, relevance: -6.8384) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 2 (PMID: 40869924, relevance: -7.0705) ---\nBACKGROUND/OBJECTIVES: Maternal exposures are known to influence the risk of isolated cleft lip with or without cleft palate (CL/P)-a common and highly heritable birth defect with a multifactorial etiology. METHODS: To identify new risk loci, we conducted a genome-wide gene-environment interaction (GEI) analysis of CL/P with maternal smoking and vitamin use in Filipinos (N(cases) = 540, N(controls) = 260). Since GEI analyses are typically low in power and the results can be difficult to interpret, we applied multiple testing frameworks to evaluate potential GEI effects: a one degree-of-freedom (1df) GxE test, the 3df joint test, and the two-step EDGE approach. RESULTS: While no genome-wide significant interactions were detected, we identified 11 suggestive GEIs with smoking and 24 with vitamin use. Several implicated loci contain biologically plausible genes. Notable interactions with smoking include loci near FEZF1, TWIST2, and NET1. While FEZF1 is involved in early neuronal development, TWIST2 and NET1 regulate epithelial-mesenchymal transition, which is required for proper lip and palate fusion. Interactions with vitamins encompass CECR2-a chromatin remodeling protein required for neural tube closure-and FURIN, a critical protease during early embryogenesis that activates various growth factors and extracellular matrix proteins. The activity of both proteins is influenced by folic acid. CONCLUSIONS: Our findings highlight the critical role of maternal exposures in identifying genes associated with structural birth defects such as CL/P and provide new paths to explore for CL/P genetics.\n\n--- Abstract 3 (PMID: 42269416, relevance: -8.4787) ---\nBACKGROUND: Chronic obstructive pulmonary disease (COPD) is a progressive lung disorder influenced by environmental exposures and genetic susceptibility. Despite numerous studies, the effects of key susceptibility genes remain inconsistent across populations, and their overall clinical relevance is unclear. METHODS: Following PRISMA guidelines and registered in PROSPERO (ID: CRD420251077565), we conducted a systematic review and meta-analysis of studies published between 2010 and 2025. Eighteen unique studies were included, ranging from small cohorts (n\u202f=\u202f36) to large biobank analyses ( approximately 4.5 million participants), collectively evaluating five candidate genes: SERPINA1, HHIP, IREB2, SFTPD, and FAM13A. Pooled hazard ratios (HRs) were calculated, with subgroup analyses by ethnicity and variant-level differences. Associations with spirometric parameters (FEV(1), FEV(1)/FVC) were examined to assess clinical relevance. RESULTS: SERPINA1 demonstrated the strongest significant with COPD (HR\u202f=\u202f2.47). A significant association was also observed for SFTPD, although based on fewer studies. Subgroup analysis by ethnicity/geographical region revealed the highest pooled risk in East Asians (HR\u202f=\u202f2.18), significant associations in Europeans (HR\u202f=\u202f1.46) and Americans (HR\u202f=\u202f1.47), and a weaker or potentially protective effect in Oceania (HR\u202f=\u202f0.67). SERPINA1 risk correlated with lung function decline (FEV(1): r\u202f=\u202f-0.64; FEV(1)/FVC: r\u202f=\u202f-0.71), highlighting translational relevance. CONCLUSIONS: SERPINA1 emerges as the most clinically relevant genetic determinant of COPD, linking susceptibility to measurable spirometric impairment, with effects varying by ethnicity. These findings emphasize the need for genetic screening integrated with lung function assessment and ethnicity-specific risk stratification to advance precision management of COPD.\n\n\n\n**Question:**\nDoes the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset."
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q068",
+      "randomization_seed": "20260706:Q068:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q068",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q068",
+      "error": null,
+      "id": "batch_req_6a4d52bb1f948190bf62d9f70964de16",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452275,
+          "created_at": 1783452263,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0791c246cea8bd5b006a4d526796d4819c92f9bd5cbdfd58cc",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q068"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0791c246cea8bd5b006a4d52680418819c835bbf0caf1b2814",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether FGF5 is linked to hair-loss treatments in the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly concludes that no specific hair-loss treatment is clearly linked to FGF5 in the provided context, though the opening 'Yes' is somewhat inconsistent with the conclusion.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the graph association, lack of treatment evidence, and MPHL abstract context; minor overstatement of hair-related biology beyond trichomegaly.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the evidence and avoids naming unsupported treatments.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and focuses on whether treatments are linked to FGF5.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence does not directly link FGF5 to hair-loss treatments and identifies trichomegaly as a phenotype rather than a treatment.\"},\"completeness\":{\"score\":5,\"rationale\":\"Adequately covers the relevant evidence and distinguishes biological/phenotypic associations from treatment links.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported treatment claims.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested relationship between FGF5 and hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Claims links to AGA treatments, FGF5 inhibitors, neutralizing antibodies, minoxidil, finasteride, and clinical trials that are not supported by the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides many treatment-related details, but they are unsupported and misses the key conclusion that the provided evidence does not identify such treatments.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Overstates unsupported conclusions and does not appropriately qualify the lack of evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses treatments used or investigated for hair loss in relation to FGF5.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Asserts links to FGF5 inhibition, anti-FGF5 antibodies, botanicals, and minoxidil-related mechanisms that are not present in the reference evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Lists possible treatment categories but omits the evidence-based conclusion that no such treatments are linked in the provided packet.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Some language is mildly qualified, but it still asserts unsupported treatment links contrary to the supplied evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0791c246cea8bd5b006a4d526e2860819cb2b9e8da0842814f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3092,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1126,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4218
+          },
+          "user": null
+        },
+        "request_id": "d36d4879-2c4e-4d5c-a8c1-5c6ece340836",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses treatments used or investigated for hair loss in relation to FGF5.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Asserts links to FGF5 inhibition, anti-FGF5 antibodies, botanicals, and minoxidil-related mechanisms that are not present in the reference evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Lists possible treatment categories but omits the evidence-based conclusion that no such treatments are linked in the provided packet.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Some language is mildly qualified, but it still asserts unsupported treatment links contrary to the supplied evidence.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q068",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q068.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.158134+00:00"
+}

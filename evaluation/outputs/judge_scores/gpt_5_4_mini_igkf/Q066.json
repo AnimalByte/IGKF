@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q066",
+      "randomization_seed": "20260706:Q066:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q066",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q066",
+      "error": null,
+      "id": "batch_req_6a4d52bbc0208190aa2cd5d167bfe8ac",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452267,
+          "created_at": 1783452249,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03cdb63ead26b665006a4d5259951481919f08618f57ee40a0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q066"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03cdb63ead26b665006a4d525a08b8819180c6c91d396315a1",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether FGF5 is linked to androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided evidence does not directly connect FGF5 to androgenetic alopecia and identifies that the alopecia GWAS highlights other loci.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main abstracts and correctly concludes no direct link, though it omits the graph association with trichomegaly as a hair-related but non-AGA phenotype.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the evidence as limited and avoids claiming a direct association.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly summarizes the possible relationship between FGF5 and androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The general biology of FGF5 as a hair-cycle regulator is broadly accurate, but much of it is not supported by the supplied evidence packet.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides a useful mechanistic summary and notes limited direct human AGA evidence, but does not explicitly discuss the supplied alopecia GWAS or graph findings.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly distinguishes indirect biological plausibility from a proven causal role in androgenetic alopecia.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately answers the question using the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects that the context supports only broad hair-growth relevance, not a direct FGF5-androgenetic alopecia association.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the graph evidence, Open Targets trichomegaly association, the alopecia GWAS, and the non-human FGF context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately emphasizes the lack of direct evidence and limits conclusions to biological plausibility.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses FGF5 and androgenetic alopecia directly, but with several unsupported claims.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Contains material errors and unsupported assertions, including reversed or misleading claims about FGF5 effects on anagen and animal hair growth.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not summarize the supplied evidence accurately and omits key points such as the lack of FGF5 in the alopecia GWAS.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Although it includes some caveats, it invents or overstates androgen-signaling and clinical evidence not supported by the reference packet.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03cdb63ead26b665006a4d526371708191bbf791420b31bf28",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3974,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1671,
+            "output_tokens_details": {
+              "reasoning_tokens": 859
+            },
+            "total_tokens": 5645
+          },
+          "user": null
+        },
+        "request_id": "0edf4ab3-e938-4370-be0b-aaf32b0212eb",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "2645112a13fa456cd781fba06e07bd9e1399b387f29b4cf65e717cfb30c2b785",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q066",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q066.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q066::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q066::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b1b0f48190b9b0436152551460",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437538,
+          "created_at": 1783437533,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_08194e83607d90cf006a4d18dd2d648193a643bd5d1f7f80a2",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q066"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_08194e83607d90cf006a4d18ddb3588193b38808029a169fb1",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The answer is largely supported by the supplied context: FGF5 has Open Targets association with trichomegaly and GO terms related to proliferation/migration, while the androgenetic alopecia abstract highlights EDA2R and AR rather than FGF5. Minor overstatements include phrasing trichomegaly as a graph phenotype and implying broader hair-follicle relevance beyond what is directly stated.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the key supplied graph evidence and all relevant abstracts, especially noting the absence of a direct FGF5-androgenetic alopecia link and distinguishing general hair/growth relevance from disease-specific evidence.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_08194e83607d90cf006a4d18e0d25c8193ba563db428e6cb00",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2195,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 485,
+            "output_tokens_details": {
+              "reasoning_tokens": 298
+            },
+            "total_tokens": 2680
+          },
+          "user": null
+        },
+        "request_id": "cdd0a5c7-c068-4724-b443-28d9f2df424c",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately answers the question using the supplied evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects that the context supports only broad hair-growth relevance, not a direct FGF5-androgenetic alopecia association.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the graph evidence, Open Targets trichomegaly association, the alopecia GWAS, and the non-human FGF context.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is largely supported by the supplied context: FGF5 has Open Targets association with trichomegaly and GO terms related to proliferation/migration, while the androgenetic alopecia abstract highlights EDA2R and AR rather than FGF5. Minor overstatements include phrasing trichomegaly as a graph phenotype and implying broader hair-follicle relevance beyond what is directly stated.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key supplied graph evidence and all relevant abstracts, especially noting the absence of a direct FGF5-androgenetic alopecia link and distinguishing general hair/growth relevance from disease-specific evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately emphasizes the lack of direct evidence and limits conclusions to biological plausibility.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q066",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q066.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.292474+00:00"
+}

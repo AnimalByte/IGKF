@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q045",
+      "randomization_seed": "20260706:Q045:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q045",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q045",
+      "error": null,
+      "id": "batch_req_6a4d52ba21d881908ffe8ca94b89e6d9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452188,
+          "created_at": 1783452175,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0cb86688f16309aa006a4d520fec3481a29206c7af52e2e88c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q045"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0cb86688f16309aa006a4d52104dfc81a292486cb2ac66806c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses the requested functional consequence and possible gene effect.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Claims rs7313338 is annotated as a regulatory variant, but the supplied evidence contains no such variant-level annotation.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Provides a plausible regulatory mechanism but omits that the provided context does not support this annotation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Uses some cautious wording but still presents an unsupported functional annotation as reported.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether a functional consequence is annotated and discusses possible gene effects.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided graph and abstracts do not annotate a specific consequence for rs7313338.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the absence of annotation, notes implicated genes from the context, and appropriately frames possible effects as speculative.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly abstains from unsupported conclusions and distinguishes evidence-based statements from speculation.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question by naming a putative consequence and possible gene-level effects.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Introduces unsupported claims that rs7313338 is in the 3' UTR of TSPAN12; TSPAN12 is not among the supplied implicated genes, and no such annotation is present in the evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Discusses possible UTR-mediated mechanisms, but the key evidence-based answer is that no functional consequence is annotated in the provided context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Qualifies the functional effect as uncertain, but still asserts an unsupported location and gene association.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that the provided data do not support determining a functional consequence or gene effect.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Consistent with the supplied evidence, which does not mention rs7313338 or annotate its consequence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly identifies the lack of evidence, though it does not mention the genes listed in the graph or possible speculative interpretation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from inferring unsupported functional impact.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0cb86688f16309aa006a4d5216642081a285e885a90d33037d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3027,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1275,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4302
+          },
+          "user": null
+        },
+        "request_id": "51777346-8dfb-4630-922b-9105df40282a",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "c88b70cfeda4ff61a0b7776582773b8bed399818827ee3c5b626654f0334d796",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q045",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q045.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q045::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q045::R2",
+      "error": null,
+      "id": "batch_req_6a4d19aeef5c819099d89a8e0e743d0a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437642,
+          "created_at": 1783437634,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_094cd30d4a73ffd3006a4d19421c588190b42ddd17727a60c3",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q045"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_094cd30d4a73ffd3006a4d1942ab588190ab046b6c210b25a1",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The main conclusion that no functional consequence is annotated for rs7313338 is well supported because the supplied context does not mention rs7313338 or any consequence annotation. Some biological interpretation, such as a likely regulatory effect and SPAG17 functional implications, is speculative and not directly supported, though it is clearly caveated.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the graph context to identify the associated trait and implicated genes, recognizes the absence of variant-level annotation, and correctly notes that the abstracts do not provide evidence about rs7313338.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_094cd30d4a73ffd3006a4d1948abe08190a0a33e27f17df383",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2406,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 682,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3088
+          },
+          "user": null
+        },
+        "request_id": "49ae8a0e-848d-442d-b134-ac87d36d9dd0",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether a functional consequence is annotated and discusses possible gene effects.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided graph and abstracts do not annotate a specific consequence for rs7313338.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the absence of annotation, notes implicated genes from the context, and appropriately frames possible effects as speculative.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The main conclusion that no functional consequence is annotated for rs7313338 is well supported because the supplied context does not mention rs7313338 or any consequence annotation. Some biological interpretation, such as a likely regulatory effect and SPAG17 functional implications, is speculative and not directly supported, though it is clearly caveated.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the graph context to identify the associated trait and implicated genes, recognizes the absence of variant-level annotation, and correctly notes that the abstracts do not provide evidence about rs7313338.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly abstains from unsupported conclusions and distinguishes evidence-based statements from speculation.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q045",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q045.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.279723+00:00"
+}

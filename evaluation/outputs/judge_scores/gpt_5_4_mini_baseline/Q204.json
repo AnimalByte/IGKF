@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q204",
+      "randomization_seed": "20260706:Q204:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q204",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q204",
+      "error": null,
+      "id": "batch_req_6a4d540da9508190b6b99b37bcf75941",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452602,
+          "created_at": 1783452591,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e4d9869805bbd41006a4d53af5cdc819784ac9d47bb59dc9f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q204"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e4d9869805bbd41006a4d53b02e60819789ac9fa04dcddf87",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses TP53/p53 tumor-suppressor functions.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately describes p53 as a transcription factor regulating cell-cycle arrest, DNA repair, apoptosis, senescence, and genomic stability.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the major mechanisms and consequences of TP53 loss.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Makes standard, well-supported biomedical claims without overextending.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Answers the main question but includes extra disease-specific and tangential material.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Core p53 biology is accurate; added specific marker and cancer-context claims are less clearly supported and not necessary.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes key mechanisms, but unnecessary padding reduces focus.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Some additional claims are asserted without clear support, though several are qualified.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and clearly explains TP53/p53 tumor suppression.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate description of p53 activation by stress and downstream arrest, repair, senescence, and apoptosis pathways.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the essential mechanisms and impact of mutation or inhibition.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Main claims are well supported; minor contextual literature statements are not essential but not materially misleading.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the role of TP53 and p53 in tumor suppression.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate summary of p53 stress responses and cancer relevance.\"},\"completeness\":{\"score\":5,\"rationale\":\"Concise but includes all central components: cell-cycle arrest, repair, senescence, apoptosis, mutation/loss in cancer.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately states established facts without unsupported speculation.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e4d9869805bbd41006a4d53b572a48197a31e0c3f6cb1908b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2093,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1021,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3114
+          },
+          "user": null
+        },
+        "request_id": "b2de0437-599b-4cf3-adbe-b124935123b4",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the role of TP53 and p53 in tumor suppression.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Scientifically accurate summary of p53 stress responses and cancer relevance.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Concise but includes all central components: cell-cycle arrest, repair, senescence, apoptosis, mutation/loss in cancer.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately states established facts without unsupported speculation.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q204",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.275317+00:00"
+}

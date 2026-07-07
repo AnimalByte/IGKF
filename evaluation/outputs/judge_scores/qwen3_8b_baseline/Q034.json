@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q034",
+      "randomization_seed": "20260706:Q034:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q034",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q034",
+      "error": null,
+      "id": "batch_req_6a4d52b9a91c81909c0ec1ab2e94d599",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452230,
+          "created_at": 1783452216,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b9fe68363170b28006a4d5238f7448192988cca7cf57df2be",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q034"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b9fe68363170b28006a4d523987448192b8b75176d08da573",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Attempts to summarize study-specific and integrated annotations, but much of the content is not relevant to the supplied evidence for rs929626.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Contains major unsupported and incorrect claims, including assigning rs929626 to MLLT10/KMT2D and asserting lipid, cardiovascular, eQTL, and functional prediction annotations not present in the reference evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the key supplied annotations such as EBF1, the dELS regulatory element, Open Targets disease associations, PPI data, pathways, drugs, and the lack of direct study-specific abstract evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents unsupported assertions confidently without acknowledging the absence of direct rs929626 study evidence in the supplied abstracts.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses rs929626 and distinguishes graph-based annotations from the lack of direct variant-specific literature evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Accurately reports most supplied integrated annotations, including EBF1, regulatory element, GO terms, PPI evidence, and disease associations. The discussion of rs4792800/EBF1 as broader context is somewhat speculative but qualified.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers most important annotations but omits the listed drug targets TRAIL and SC-67655 and does not provide disease association scores.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately notes that abstracts do not directly mention rs929626 and qualifies the indirect lymphoma-related interpretation, though it still offers some speculative linkage.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Discusses study-specific versus integrated annotations in general terms but does not summarize the actual annotations available for rs929626 from the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Mostly generic rather than explicitly false, but implies possible rs929626 annotations such as eQTLs, allele frequencies, and GWAS study details that are not provided in the reference evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits nearly all key supplied rs929626-specific annotations, including EBF1, pathways, regulatory element, GO terms, PPI data, drugs, and disease associations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Uses cautious language such as 'may include,' but fails to use the available evidence and unnecessarily suggests that the source was not provided.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately summarizes both the absence of study-specific rs929626 abstract evidence and the integrated graph annotations.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence, including EBF1, regulatory element EH38D3783439/dELS, pathways, GO terms, PPI data, drug targets, and Open Targets disease scores.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers all major available components and clearly notes that no direct rs929626 study-specific abstract evidence was provided.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately limits conclusions to the supplied evidence and clearly qualifies the biological interpretation as inferential rather than directly demonstrated.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b9fe68363170b28006a4d523ee19c8192912ed5cf475ef3d7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4252,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1449,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5701
+          },
+          "user": null
+        },
+        "request_id": "b97202db-f204-49d4-b964-f24e4af86725",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Attempts to summarize study-specific and integrated annotations, but much of the content is not relevant to the supplied evidence for rs929626.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Contains major unsupported and incorrect claims, including assigning rs929626 to MLLT10/KMT2D and asserting lipid, cardiovascular, eQTL, and functional prediction annotations not present in the reference evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Omits the key supplied annotations such as EBF1, the dELS regulatory element, Open Targets disease associations, PPI data, pathways, drugs, and the lack of direct study-specific abstract evidence.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Presents unsupported assertions confidently without acknowledging the absence of direct rs929626 study evidence in the supplied abstracts.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q034",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q034.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.133460+00:00"
+}

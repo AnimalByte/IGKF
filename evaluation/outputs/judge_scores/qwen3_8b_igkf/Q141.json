@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q141",
+      "randomization_seed": "20260706:Q141:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q141",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q141",
+      "error": null,
+      "id": "batch_req_6a4d5409605c8190b7e2a8951396b8c4",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452594,
+          "created_at": 1783452582,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_064d83058d53e01c006a4d53a63ff48196b7293ce24ec4f529",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q141"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_064d83058d53e01c006a4d53a7b94c81969ce6703d46e30581",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses Hedgehog and Wnt connections for FGF5.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correctly notes no Wnt evidence, but incorrectly concludes Hedgehog support from speculative functional overlap despite no FGF5-Hedgehog link in the evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers both pathways, but the Hedgehog discussion is unsupported and misleading.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Acknowledges FGF5 is not explicitly mentioned in the Hedgehog abstract but still infers an unsupported connection.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether FGF5 is connected to Hedgehog and Wnt signaling.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correctly says no supported direct Hedgehog connection, but incorrectly asserts a Wnt connection absent from the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Mentions both pathways but gives no valid evidentiary basis and omits that Wnt support is absent.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"States an unsupported Wnt link without qualification.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested FGF5-Hedgehog and FGF5-Wnt relationships.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Invents unsupported connections between FGF5 and both Hedgehog and Wnt signaling; the provided evidence supports neither.\"},\"completeness\":{\"score\":2,\"rationale\":\"Covers both requested pathways but with mostly unsupported claims and confusing qualification.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not abstain where evidence is absent and instead presents unsupported mechanistic claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question for both Hedgehog and Wnt signaling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied graph and abstracts do not support direct FGF5 links to Hedgehog or Wnt signaling.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the supported FGF5 information and clearly states absence of evidence for both requested pathway links.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported inference and distinguishes absent evidence from supported findings.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_064d83058d53e01c006a4d53ad52548196805b637ac90e6ee7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3113,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1071,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4184
+          },
+          "user": null
+        },
+        "request_id": "1532813c-1395-4927-9fe1-8e316220cf06",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "6492711e6fd9c07132749bdc518437f6845c522a81270e87192abe595cbaf579",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q141",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q141.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q141::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q141::R1",
+      "error": null,
+      "id": "batch_req_6a4d19bb24f48190a047cee2ef1dbe39",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437557,
+          "created_at": 1783437550,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_027b7f42532fdf22006a4d18ee0c908190a0719e8c42f78c2a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q141"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_027b7f42532fdf22006a4d18eeb8c88190ba41418f55e8f33a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":2,\"rationale\":\"The answer correctly notes absence of FGF5-Wnt evidence, but its claimed FGF5-Hedgehog connection is unsupported. Abstract 1 discusses Hedgehog/Gli2 without FGF5, and the supplied graph provides no FGF5-Hedgehog link.\"},\"context_utilization\":{\"score\":2,\"rationale\":\"It uses some context from Abstracts 1 and 2 but overinterprets Abstract 1 and relies on unsupported external/general pathway assumptions. It does not appropriately treat the absence of direct FGF5-Hedgehog evidence in the graph and abstracts.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_027b7f42532fdf22006a4d18f3eb588190a4af6ed6b2de0286",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2069,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 550,
+            "output_tokens_details": {
+              "reasoning_tokens": 408
+            },
+            "total_tokens": 2619
+          },
+          "user": null
+        },
+        "request_id": "8faadc0d-e294-4d8a-9743-2e653b7db7b4",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses Hedgehog and Wnt connections for FGF5.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes no Wnt evidence, but incorrectly concludes Hedgehog support from speculative functional overlap despite no FGF5-Hedgehog link in the evidence.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Covers both pathways, but the Hedgehog discussion is unsupported and misleading.",
+      "score": 3.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer correctly notes absence of FGF5-Wnt evidence, but its claimed FGF5-Hedgehog connection is unsupported. Abstract 1 discusses Hedgehog/Gli2 without FGF5, and the supplied graph provides no FGF5-Hedgehog link.",
+      "score": 2.0
+    },
+    "context_utilization": {
+      "rationale": "It uses some context from Abstracts 1 and 2 but overinterprets Abstract 1 and relies on unsupported external/general pathway assumptions. It does not appropriately treat the absence of direct FGF5-Hedgehog evidence in the graph and abstracts.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Acknowledges FGF5 is not explicitly mentioned in the Hedgehog abstract but still infers an unsupported connection.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q141",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q141.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.343702+00:00"
+}

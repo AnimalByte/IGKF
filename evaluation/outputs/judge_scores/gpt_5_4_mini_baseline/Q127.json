@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q127",
+      "randomization_seed": "20260706:Q127:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q127",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q127",
+      "error": null,
+      "id": "batch_req_6a4d5408a0488190b2cd9e089a6ce67e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452565,
+          "created_at": 1783452555,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_025e3a35d8284883006a4d538b54848196bbfcf443c38a5718",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q127"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_025e3a35d8284883006a4d538bcee081969f911a7b3b286931",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether any study genes are linked to Minoxidil.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided evidence contains no Minoxidil links for the listed study genes.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Identifies the relevant study genes and gives the correct conclusion.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately limits the conclusion to the supplied evidence without overclaiming.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately addresses the Minoxidil gene-link question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Consistent with the reference evidence: no drug-gene association with Minoxidil is present for the study genes.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Lists the highlighted genes and clearly states that none are linked to Minoxidil.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly qualifies the conclusion as based on the supplied graph and abstracts.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Acknowledges the topic but does not answer using the provided study context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Fails to provide the correct evidence-based conclusion that no listed genes are linked to Minoxidil.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the study genes and the required conclusion.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Abstains unnecessarily despite sufficient supplied evidence to answer.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Discusses Minoxidil generally but does not answer the supplied study-specific question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"General statements about Minoxidil are mostly accurate, but it misses the evidence-based answer and makes a broad unsupported claim.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not list the study genes or clearly conclude from the provided evidence that none are linked.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Requests more information unnecessarily and overgeneralizes beyond the supplied evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_025e3a35d8284883006a4d5390f084819684e0bba8a43cba76",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3067,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1119,
+            "output_tokens_details": {
+              "reasoning_tokens": 424
+            },
+            "total_tokens": 4186
+          },
+          "user": null
+        },
+        "request_id": "43192348-e486-4027-b7e2-6de264d727c4",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Acknowledges the topic but does not answer using the provided study context.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Fails to provide the correct evidence-based conclusion that no listed genes are linked to Minoxidil.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Omits the study genes and the required conclusion.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Abstains unnecessarily despite sufficient supplied evidence to answer.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q127",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q127.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.220852+00:00"
+}

@@ -1,0 +1,182 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.7335,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated dataset does not report population allele-frequency information for rs756853. The graph context provided includes details about the variant rs756853, such as its implicated gene (HDAC9), associated phenotypes, drug targets, and pathway interactions, but it does not mention allele frequencies or population-specific data. Therefore, based on the available information, the population allele-frequency context for rs756853 is not provided.",
+  "question_id": "Q184",
+  "question_text": "Does the integrated dataset report population allele-frequency information for rs756853? If so, state the source and population context; otherwise state the limitation.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 94,
+    "prompt_token_count": 2556,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated dataset does not report population allele-frequency information for rs756853. The graph context provided includes details about the variant rs756853, such as its implicated gene (HDAC9), associated phenotypes, drug targets, and pathway interactions, but it does not mention allele frequencies or population-specific data. Therefore, based on the available information, the population allele-frequency context for rs756853 is not provided."
+      }
+    ],
+    "created": 1783433583,
+    "id": "cmpl-fda9ed6c-3b05-46b1-8b92-4bb151f6e89c",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 94,
+      "prompt_tokens": 2535,
+      "total_tokens": 2629
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      20.836652755737305,
+      22.683687210083008,
+      23.887771606445312,
+      24.566232681274414,
+      25.02004051208496,
+      25.038650512695312,
+      25.223045349121094,
+      25.397241592407227,
+      25.56337547302246,
+      25.604639053344727,
+      25.675434112548828,
+      25.767108917236328,
+      25.772315979003906,
+      25.861499786376953,
+      25.896583557128906
+    ],
+    "candidate_pmids": [
+      "37987107",
+      "38734673",
+      "40510016",
+      "40244254",
+      "42227435",
+      "41673758",
+      "42238393",
+      "42219787",
+      "37394087",
+      "37496384",
+      "41513972",
+      "42231094",
+      "39103847",
+      "36250278",
+      "42192612"
+    ],
+    "expanded_retrieval_query": "Does the integrated dataset report population allele-frequency information for rs756853? If so, state the source and population context; otherwise state the limitation. Entity: rs756853 (Type: Variant)\n  - Implicated Gene: HDAC9\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n  - In Regulatory Element: EH38D3950895\n    - Label: dELS",
+    "final_context": "Graph Context:\nEntity: rs756853 (Type: Variant)\n  - Implicated Gene: HDAC9\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n  - In Regulatory Element: EH38D3950895\n    - Label: dELS\n\nVector Context:\n--- Abstract 1 (PMID: 41673758, relevance: -7.4626) ---\nThe varepsilon4 allele of the apolipoprotein E gene (APOE4) has been identified as a significant risk factor for late-onset AD. However, the specific genetic differences in T lymphocytes between APOE4 and APOE3 carriers are poorly understood. This study aimed to identify these important genetic distinctions and investigate the causal relationship between these differences and the risk of Alzheimer's disease (AD), offering insights that could lead to novel treatment approaches. We sequenced single peripheral blood cells from three APOE3 and three APOE4 patients using the BD Rhapsody sequencing technology. We conducted a single-cell locus analysis, explored cell communication and signaling pathways. Finally, we selected CD8 central memory cells (CD8_CM) for differential gene, enrichment, and protein interaction analyses. Mendelian randomization (MR) analysis of expression quantitative trait loci (eQTLs) of differential genes and a genome-wide association study (GWAS) of AD were performed to verify causality and sensitivity. We selected CD8_CM as the primary target and identified 108 differentially expressed genes (DEGs). Through MR analysis, we identified nine genes with causal relationships with AD: ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, and CAPNS1. In the replication phase, based on Wald ratios or the IVW method, the causal relationships of five genes (RUNX3, ATP2B4, C1orf21, AHNAK, and CD3G) with AD were successfully validated in another GWAS dataset. We identified the core role of CD8_CM, yielding 108 DEGs. Our integrative analysis suggests that genetically determined levels of circulating BHLHE40, ANXA1, and RUNX3, may be promising biomarkers for AD and warrant further clinical investigation.\n\n--- Abstract 2 (PMID: 42238393, relevance: -8.5945) ---\nOBJECTIVE: To define CSC genetic architecture and identify implicated ocular tissues, cell types, genes, and circulating proteins. DATA SOURCES: Genome-wide data were assembled from FinnGen, All of Us, Mass General Brigham Biobank, Million Veteran Program, and a Dutch chronic CSC cohort. Serum protein quantitative trait loci, human single-cell ocular atlases, and UK Biobank macular optical coherence tomography (OCT) imaging were used for downstream analyses. STUDY SELECTION: Five European-ancestry cohorts with genome-wide data and cohort-specific CSC case-control definitions were included, comprising 2,584 cases and 1,044,455 controls. Variants present in at least 2 cohorts were meta-analyzed. DATA EXTRACTION AND SYNTHESIS: Cohort-level GWASs were adjusted for age, age squared, sex, genotyping array or batch, and 10 genetic principal components, then combined using fixed-effects inverse-variance meta-analysis. Post-GWAS analyses included gene prioritization, colocalization, Mendelian randomization, single-cell disease-relevance scoring, and testing of a CSC genetic risk score in UK Biobank OCT images. MAIN OUTCOMES AND MEASURES: Genome-wide significant CSC loci, effector genes and proteins, tissue and cell-type enrichment, and CSC-relevant OCT abnormalities. RESULTS: Across 11,068,938 variants, 10 loci reached genome-wide significance ( P < 5 x 10-8), including 3 novel loci near TGFB1, LINC00551 , and LOC105375630 and 7 replicated loci near CFH, CD46, NOTCH4, PREX1, PTPRB, GATA5 , and TNFRSF10A . Integrative analyses prioritized 10 candidate effector genes. Colocalization and Mendelian randomization implicated circulating TNFRSF10A, TGFB1, and CASP10 levels. Single-cell analyses localized genetic risk to sclera ( P = 2.0 x 10-4) and vascular endothelial cells ( P = 4.0 x 10-4), with fibroblast enrichment. In UK Biobank, OCT abnormalities were more frequent in the top vs bottom 1% of CSC genetic risk (18 of 109 [16.5%] vs 8 of 134 [6.0%]; odds ratio, 4.05; 95% CI, 1.65-10.87; P = .002). CONCLUSIONS AND RELEVANCE: In this GWAS meta-analysis, CSC susceptibility localized predominantly to scleral and vascular biology rather than primary retinal pigment epithelial dysfunction. These findings support CSC as a sclerovascular disorder and nominate complement regulation, endothelial signaling, and extracellular matrix pathways for future study. KEY POINTS: Question: What genetic loci, genes, proteins, and ocular cell types underlie susceptibility to central serous chorioretinopathy (CSC)?Findings: In this GWAS meta-analysis of 2,584 CSC cases and 1,044,455 controls, 10 genome-wide significant loci were identified, including 3 novel loci. Integrative analyses implicated scleral fibroblasts and vascular endothelial cells, prioritized candidate effector genes and circulating proteins, and showed that high CSC genetic risk was associated with more frequent RPE abnormalities on macular OCT.Meaning: These findings support CSC as a primary sclerovascular disorder and nominate mechanism-linked pathways for future translational studies.Importance: The primary site of dysfunction in central serous chorioretinopathy (CSC) remains uncertain.\n\n--- Abstract 3 (PMID: 40244254, relevance: -8.6645) ---\nMultiple myeloma ranks as the second most common hematopoietic malignancy in terms of both incidence and mortality. Prognostic stratification is critical for optimizing therapeutic strategies, as certain genetic alterations can significantly influence disease progression and treatment response. The meta-analysis analyzed data from 3421 multiple myeloma patients and 14,720 controls. PubMed, Web of Science, and Scopus were used as databases. Associations between the SNPs and multiple myeloma were calculated as a measure of pooled odds ratios (ORs) and 95% confidence intervals. Statistical analysis was performed using Review Manager (RevMan). DNAH11 rs4487645 A/C genotype (OR = 1.35; 95% CI: 1.24-1.46; p < 0.00001; I(2) = 0%), ULK4 rs1052501 G/G genotype (OR = 1.21; 95% CI: 0.98-1.50; p = 0.08; I(2) = 64%), ULK4 rs1052501 A/G genotype (OR = 1.23; 95% CI: 1.13-1.34; p < 0.00001; I(2) = 0%), DTNB rs6746082 A/A genotype (OR = 1.10; 95% CI: 1.01-1.20; p = 0.03; I(2) = 45%), and VDR rs1544410 A/G genotype (OR = 1.87; 95% CI: 1.04-3.36; p = 0.04; I(2) = 0%) increased multiple myeloma risk. Our study concludes that DNAH11, ULK4, DTNB, and VDR may serve as predictive biomarkers for MM risk.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: rs756853 (Type: Variant)\n  - Implicated Gene: HDAC9\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n  - In Regulatory Element: EH38D3950895\n    - Label: dELS",
+    "graph_context_length": 2268,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3414,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "information"
+      },
+      {
+        "label": "ENTITY",
+        "text": "rs756853"
+      },
+      {
+        "label": "ENTITY",
+        "text": "source"
+      },
+      {
+        "label": "ENTITY",
+        "text": "population context"
+      },
+      {
+        "label": "ENTITY",
+        "text": "limitation"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q184.json",
+    "retrieval_total_seconds": 0.4622,
+    "score_max": -7.462571620941162,
+    "score_mean": -8.240514596303305,
+    "scores": [
+      -7.462571620941162,
+      -8.594451904296875,
+      -8.664520263671875
+    ],
+    "selected_abstracts": [
+      "The varepsilon4 allele of the apolipoprotein E gene (APOE4) has been identified as a significant risk factor for late-onset AD. However, the specific genetic differences in T lymphocytes between APOE4 and APOE3 carriers are poorly understood. This study aimed to identify these important genetic distinctions and investigate the causal relationship between these differences and the risk of Alzheimer's disease (AD), offering insights that could lead to novel treatment approaches. We sequenced single peripheral blood cells from three APOE3 and three APOE4 patients using the BD Rhapsody sequencing technology. We conducted a single-cell locus analysis, explored cell communication and signaling pathways. Finally, we selected CD8 central memory cells (CD8_CM) for differential gene, enrichment, and protein interaction analyses. Mendelian randomization (MR) analysis of expression quantitative trait loci (eQTLs) of differential genes and a genome-wide association study (GWAS) of AD were performed to verify causality and sensitivity. We selected CD8_CM as the primary target and identified 108 differentially expressed genes (DEGs). Through MR analysis, we identified nine genes with causal relationships with AD: ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, and CAPNS1. In the replication phase, based on Wald ratios or the IVW method, the causal relationships of five genes (RUNX3, ATP2B4, C1orf21, AHNAK, and CD3G) with AD were successfully validated in another GWAS dataset. We identified the core role of CD8_CM, yielding 108 DEGs. Our integrative analysis suggests that genetically determined levels of circulating BHLHE40, ANXA1, and RUNX3, may be promising biomarkers for AD and warrant further clinical investigation.",
+      "OBJECTIVE: To define CSC genetic architecture and identify implicated ocular tissues, cell types, genes, and circulating proteins. DATA SOURCES: Genome-wide data were assembled from FinnGen, All of Us, Mass General Brigham Biobank, Million Veteran Program, and a Dutch chronic CSC cohort. Serum protein quantitative trait loci, human single-cell ocular atlases, and UK Biobank macular optical coherence tomography (OCT) imaging were used for downstream analyses. STUDY SELECTION: Five European-ancestry cohorts with genome-wide data and cohort-specific CSC case-control definitions were included, comprising 2,584 cases and 1,044,455 controls. Variants present in at least 2 cohorts were meta-analyzed. DATA EXTRACTION AND SYNTHESIS: Cohort-level GWASs were adjusted for age, age squared, sex, genotyping array or batch, and 10 genetic principal components, then combined using fixed-effects inverse-variance meta-analysis. Post-GWAS analyses included gene prioritization, colocalization, Mendelian randomization, single-cell disease-relevance scoring, and testing of a CSC genetic risk score in UK Biobank OCT images. MAIN OUTCOMES AND MEASURES: Genome-wide significant CSC loci, effector genes and proteins, tissue and cell-type enrichment, and CSC-relevant OCT abnormalities. RESULTS: Across 11,068,938 variants, 10 loci reached genome-wide significance ( P < 5 x 10-8), including 3 novel loci near TGFB1, LINC00551 , and LOC105375630 and 7 replicated loci near CFH, CD46, NOTCH4, PREX1, PTPRB, GATA5 , and TNFRSF10A . Integrative analyses prioritized 10 candidate effector genes. Colocalization and Mendelian randomization implicated circulating TNFRSF10A, TGFB1, and CASP10 levels. Single-cell analyses localized genetic risk to sclera ( P = 2.0 x 10-4) and vascular endothelial cells ( P = 4.0 x 10-4), with fibroblast enrichment. In UK Biobank, OCT abnormalities were more frequent in the top vs bottom 1% of CSC genetic risk (18 of 109 [16.5%] vs 8 of 134 [6.0%]; odds ratio, 4.05; 95% CI, 1.65-10.87; P = .002). CONCLUSIONS AND RELEVANCE: In this GWAS meta-analysis, CSC susceptibility localized predominantly to scleral and vascular biology rather than primary retinal pigment epithelial dysfunction. These findings support CSC as a sclerovascular disorder and nominate complement regulation, endothelial signaling, and extracellular matrix pathways for future study. KEY POINTS: Question: What genetic loci, genes, proteins, and ocular cell types underlie susceptibility to central serous chorioretinopathy (CSC)?Findings: In this GWAS meta-analysis of 2,584 CSC cases and 1,044,455 controls, 10 genome-wide significant loci were identified, including 3 novel loci. Integrative analyses implicated scleral fibroblasts and vascular endothelial cells, prioritized candidate effector genes and circulating proteins, and showed that high CSC genetic risk was associated with more frequent RPE abnormalities on macular OCT.Meaning: These findings support CSC as a primary sclerovascular disorder and nominate mechanism-linked pathways for future translational studies.Importance: The primary site of dysfunction in central serous chorioretinopathy (CSC) remains uncertain.",
+      "Multiple myeloma ranks as the second most common hematopoietic malignancy in terms of both incidence and mortality. Prognostic stratification is critical for optimizing therapeutic strategies, as certain genetic alterations can significantly influence disease progression and treatment response. The meta-analysis analyzed data from 3421 multiple myeloma patients and 14,720 controls. PubMed, Web of Science, and Scopus were used as databases. Associations between the SNPs and multiple myeloma were calculated as a measure of pooled odds ratios (ORs) and 95% confidence intervals. Statistical analysis was performed using Review Manager (RevMan). DNAH11 rs4487645 A/C genotype (OR = 1.35; 95% CI: 1.24-1.46; p < 0.00001; I(2) = 0%), ULK4 rs1052501 G/G genotype (OR = 1.21; 95% CI: 0.98-1.50; p = 0.08; I(2) = 64%), ULK4 rs1052501 A/G genotype (OR = 1.23; 95% CI: 1.13-1.34; p < 0.00001; I(2) = 0%), DTNB rs6746082 A/A genotype (OR = 1.10; 95% CI: 1.01-1.20; p = 0.03; I(2) = 45%), and VDR rs1544410 A/G genotype (OR = 1.87; 95% CI: 1.04-3.36; p = 0.04; I(2) = 0%) increased multiple myeloma risk. Our study concludes that DNAH11, ULK4, DTNB, and VDR may serve as predictive biomarkers for MM risk."
+    ],
+    "selected_pmids": [
+      "41673758",
+      "42238393",
+      "40244254"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1088
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:13:03.471365+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: rs756853 (Type: Variant)\n  - Implicated Gene: HDAC9\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n  - In Regulatory Element: EH38D3950895\n    - Label: dELS\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 41673758, relevance: -7.4626) ---\nThe varepsilon4 allele of the apolipoprotein E gene (APOE4) has been identified as a significant risk factor for late-onset AD. However, the specific genetic differences in T lymphocytes between APOE4 and APOE3 carriers are poorly understood. This study aimed to identify these important genetic distinctions and investigate the causal relationship between these differences and the risk of Alzheimer's disease (AD), offering insights that could lead to novel treatment approaches. We sequenced single peripheral blood cells from three APOE3 and three APOE4 patients using the BD Rhapsody sequencing technology. We conducted a single-cell locus analysis, explored cell communication and signaling pathways. Finally, we selected CD8 central memory cells (CD8_CM) for differential gene, enrichment, and protein interaction analyses. Mendelian randomization (MR) analysis of expression quantitative trait loci (eQTLs) of differential genes and a genome-wide association study (GWAS) of AD were performed to verify causality and sensitivity. We selected CD8_CM as the primary target and identified 108 differentially expressed genes (DEGs). Through MR analysis, we identified nine genes with causal relationships with AD: ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, and CAPNS1. In the replication phase, based on Wald ratios or the IVW method, the causal relationships of five genes (RUNX3, ATP2B4, C1orf21, AHNAK, and CD3G) with AD were successfully validated in another GWAS dataset. We identified the core role of CD8_CM, yielding 108 DEGs. Our integrative analysis suggests that genetically determined levels of circulating BHLHE40, ANXA1, and RUNX3, may be promising biomarkers for AD and warrant further clinical investigation.\n\n--- Abstract 2 (PMID: 42238393, relevance: -8.5945) ---\nOBJECTIVE: To define CSC genetic architecture and identify implicated ocular tissues, cell types, genes, and circulating proteins. DATA SOURCES: Genome-wide data were assembled from FinnGen, All of Us, Mass General Brigham Biobank, Million Veteran Program, and a Dutch chronic CSC cohort. Serum protein quantitative trait loci, human single-cell ocular atlases, and UK Biobank macular optical coherence tomography (OCT) imaging were used for downstream analyses. STUDY SELECTION: Five European-ancestry cohorts with genome-wide data and cohort-specific CSC case-control definitions were included, comprising 2,584 cases and 1,044,455 controls. Variants present in at least 2 cohorts were meta-analyzed. DATA EXTRACTION AND SYNTHESIS: Cohort-level GWASs were adjusted for age, age squared, sex, genotyping array or batch, and 10 genetic principal components, then combined using fixed-effects inverse-variance meta-analysis. Post-GWAS analyses included gene prioritization, colocalization, Mendelian randomization, single-cell disease-relevance scoring, and testing of a CSC genetic risk score in UK Biobank OCT images. MAIN OUTCOMES AND MEASURES: Genome-wide significant CSC loci, effector genes and proteins, tissue and cell-type enrichment, and CSC-relevant OCT abnormalities. RESULTS: Across 11,068,938 variants, 10 loci reached genome-wide significance ( P < 5 x 10-8), including 3 novel loci near TGFB1, LINC00551 , and LOC105375630 and 7 replicated loci near CFH, CD46, NOTCH4, PREX1, PTPRB, GATA5 , and TNFRSF10A . Integrative analyses prioritized 10 candidate effector genes. Colocalization and Mendelian randomization implicated circulating TNFRSF10A, TGFB1, and CASP10 levels. Single-cell analyses localized genetic risk to sclera ( P = 2.0 x 10-4) and vascular endothelial cells ( P = 4.0 x 10-4), with fibroblast enrichment. In UK Biobank, OCT abnormalities were more frequent in the top vs bottom 1% of CSC genetic risk (18 of 109 [16.5%] vs 8 of 134 [6.0%]; odds ratio, 4.05; 95% CI, 1.65-10.87; P = .002). CONCLUSIONS AND RELEVANCE: In this GWAS meta-analysis, CSC susceptibility localized predominantly to scleral and vascular biology rather than primary retinal pigment epithelial dysfunction. These findings support CSC as a sclerovascular disorder and nominate complement regulation, endothelial signaling, and extracellular matrix pathways for future study. KEY POINTS: Question: What genetic loci, genes, proteins, and ocular cell types underlie susceptibility to central serous chorioretinopathy (CSC)?Findings: In this GWAS meta-analysis of 2,584 CSC cases and 1,044,455 controls, 10 genome-wide significant loci were identified, including 3 novel loci. Integrative analyses implicated scleral fibroblasts and vascular endothelial cells, prioritized candidate effector genes and circulating proteins, and showed that high CSC genetic risk was associated with more frequent RPE abnormalities on macular OCT.Meaning: These findings support CSC as a primary sclerovascular disorder and nominate mechanism-linked pathways for future translational studies.Importance: The primary site of dysfunction in central serous chorioretinopathy (CSC) remains uncertain.\n\n--- Abstract 3 (PMID: 40244254, relevance: -8.6645) ---\nMultiple myeloma ranks as the second most common hematopoietic malignancy in terms of both incidence and mortality. Prognostic stratification is critical for optimizing therapeutic strategies, as certain genetic alterations can significantly influence disease progression and treatment response. The meta-analysis analyzed data from 3421 multiple myeloma patients and 14,720 controls. PubMed, Web of Science, and Scopus were used as databases. Associations between the SNPs and multiple myeloma were calculated as a measure of pooled odds ratios (ORs) and 95% confidence intervals. Statistical analysis was performed using Review Manager (RevMan). DNAH11 rs4487645 A/C genotype (OR = 1.35; 95% CI: 1.24-1.46; p < 0.00001; I(2) = 0%), ULK4 rs1052501 G/G genotype (OR = 1.21; 95% CI: 0.98-1.50; p = 0.08; I(2) = 64%), ULK4 rs1052501 A/G genotype (OR = 1.23; 95% CI: 1.13-1.34; p < 0.00001; I(2) = 0%), DTNB rs6746082 A/A genotype (OR = 1.10; 95% CI: 1.01-1.20; p = 0.03; I(2) = 45%), and VDR rs1544410 A/G genotype (OR = 1.87; 95% CI: 1.04-3.36; p = 0.04; I(2) = 0%) increased multiple myeloma risk. Our study concludes that DNAH11, ULK4, DTNB, and VDR may serve as predictive biomarkers for MM risk.\n\n\n\n**Question:**\nDoes the integrated dataset report population allele-frequency information for rs756853? If so, state the source and population context; otherwise state the limitation."
+}

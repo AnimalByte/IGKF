@@ -1,0 +1,182 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.9733,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The p-value for the association between rs2180439 and androgenetic alopecia is not reported in the provided context.",
+  "question_id": "Q014",
+  "question_text": "What p-value is reported for the association between rs2180439 and androgenetic alopecia in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 29,
+    "prompt_token_count": 1550,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The p-value for the association between rs2180439 and androgenetic alopecia is not reported in the provided context."
+      }
+    ],
+    "created": 1783431286,
+    "id": "cmpl-b1ce89cd-9aa9-495c-8227-20cc23f59e5d",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 29,
+      "prompt_tokens": 1529,
+      "total_tokens": 1558
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      30.545581817626953,
+      32.661376953125,
+      32.940731048583984,
+      34.21842956542969,
+      35.78987121582031,
+      36.17192840576172,
+      36.670047760009766,
+      37.028282165527344,
+      37.07465744018555,
+      37.75861358642578,
+      38.00847244262695,
+      38.095863342285156,
+      38.312469482421875,
+      38.4417839050293,
+      38.499717712402344
+    ],
+    "candidate_pmids": [
+      "40134218",
+      "42114689",
+      "32776659",
+      "35274129",
+      "42373232",
+      "34984527",
+      "39245941",
+      "42378135",
+      "42361668",
+      "41606982",
+      "42315371",
+      "41161132",
+      "42260572",
+      "41096790",
+      "29220522"
+    ],
+    "expanded_retrieval_query": "What p-value is reported for the association between rs2180439 and androgenetic alopecia in this study? No relevant data found in the graph.",
+    "final_context": "Graph Context:\nNo relevant data found in the graph.\n\nVector Context:\n--- Abstract 1 (PMID: 40134218, relevance: -0.6538) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41161132, relevance: -1.8462) ---\nBACKGROUND: While miR-100 is a tumor suppressor in several malignancies, its role in pediatric acute lymphoblastic leukemia (ALL) remains poorly understood. This study investigated the relationship between two miR-100 single-nucleotide polymorphisms (SNPs), rs543412 and rs183430, and ALL susceptibility in North African Tunisian children. METHODS: We conducted a case-control study involving 128 pediatric ALL patients and 157 healthy controls. Genotyping of rs543412 and rs183430 was performed using TaqMan SNP assays. Logistic regression analysis was used to assess associations between genotypes, haplotypes, and ALL risk, with multiple corrections applied. RESULTS: The rs543412 T allele was more frequent in ALL cases than controls (41 % vs. 32 %, p = 0.046), and increased ALL risk was seen with C/T (OR=2.20, 95 %CI=1.03-4.70) and T/T (OR=2.48, 95 %CI=1.16- 5.28) genotypes. However, this association did not survive multiple testing correction. The rs183430 G allele showed stronger association with ALL (57 % vs. 41 %, p < 0.001), and with G/G homozygosity conferring a markedly elevated risk (OR=2.94, 95 %CI:1.56-5.54). Two-locus haplotype analysis revealed that C approximately G (aOR=1.77, 95 %CI=1.09-2.88) and T approximately G (aOR=2.59, 95 %CI=1.51-4.44) haplotypes significantly increased ALL risk. However, no significant associations were observed between these polymorphisms and the clinicopathological features. CONCLUSIONS: This exploratory study identifies rs183430 as significantly associated with pediatric ALL susceptibility in North African children. These preliminary results suggest that miR-100 SNPs could serve as potential ALL biomarkers, although validation in independent cohorts is needed before clinical use.\n\n--- Abstract 3 (PMID: 32776659, relevance: -2.3982) ---\nAIM: Osteoarthritis (OA) is a chronic degenerative joint disease. Early studies have indicated that genetic and environmental factors contribute to the risk of OA. However, the etiology of OA remains unknown. Our study aimed to evaluate the association of DNMT3B gene with the risk of hip OA in Han Chinese individuals. METHODS: A total of 2070 subjects were recruited into the study, including 658 patients with hip OA and 1412 healthy controls. Twelve tag single nucleotide polymorphisms (SNPs) were selected and genotyped in our samples. Genetic associations between DNMT3B gene and the risk of hip OA were examined at both the single marker and haplotype levels. Cis-expression quantitative trait loci signals that achieve genome-wide significance of targeted SNPs from multiple types of human tissues were extracted from the GTEx database. RESULTS: Significant signals were identified for SNP rs2424905 in 4 genetic models. The T allele was significantly associated with an increased risk of hip OA (odds ratio = 1.53; 95% CI = 1.28-1.83). The T allele was also significantly associated with higher Kellgren-Lawrence grade in the patients with hip OA (chi(2)  = 32.70, P = 1.37 x 10(-6) ). Moreover, SNP rs2424905 was significantly associated with the gene expression level of multiple genes, including DNMT3B, C20orf203, COMMD7, EFCAB8, MAPRE1, and RP5-1085F17.3, from several types of human tissues. CONCLUSION: Our results indicated that rs2424905 of DNMT3B gene contributed to the risk of hip OA and its clinical severity in a Han Chinese population. These findings suggested that rs2424905 of DNMT3B could be a promising genetic marker to assess susceptibility to hip OA in Han Chinese populations.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "rerank_seconds": 0.3318,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "p-value"
+      },
+      {
+        "label": "ENTITY",
+        "text": "association"
+      },
+      {
+        "label": "ENTITY",
+        "text": "rs2180439"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgenetic alopecia"
+      },
+      {
+        "label": "ENTITY",
+        "text": "study"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q014.json",
+    "retrieval_total_seconds": 0.367,
+    "score_max": -0.6537559628486633,
+    "score_mean": -1.6327007015546162,
+    "scores": [
+      -0.6537559628486633,
+      -1.8461790084838867,
+      -2.398167133331299
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "BACKGROUND: While miR-100 is a tumor suppressor in several malignancies, its role in pediatric acute lymphoblastic leukemia (ALL) remains poorly understood. This study investigated the relationship between two miR-100 single-nucleotide polymorphisms (SNPs), rs543412 and rs183430, and ALL susceptibility in North African Tunisian children. METHODS: We conducted a case-control study involving 128 pediatric ALL patients and 157 healthy controls. Genotyping of rs543412 and rs183430 was performed using TaqMan SNP assays. Logistic regression analysis was used to assess associations between genotypes, haplotypes, and ALL risk, with multiple corrections applied. RESULTS: The rs543412 T allele was more frequent in ALL cases than controls (41 % vs. 32 %, p = 0.046), and increased ALL risk was seen with C/T (OR=2.20, 95 %CI=1.03-4.70) and T/T (OR=2.48, 95 %CI=1.16- 5.28) genotypes. However, this association did not survive multiple testing correction. The rs183430 G allele showed stronger association with ALL (57 % vs. 41 %, p < 0.001), and with G/G homozygosity conferring a markedly elevated risk (OR=2.94, 95 %CI:1.56-5.54). Two-locus haplotype analysis revealed that C approximately G (aOR=1.77, 95 %CI=1.09-2.88) and T approximately G (aOR=2.59, 95 %CI=1.51-4.44) haplotypes significantly increased ALL risk. However, no significant associations were observed between these polymorphisms and the clinicopathological features. CONCLUSIONS: This exploratory study identifies rs183430 as significantly associated with pediatric ALL susceptibility in North African children. These preliminary results suggest that miR-100 SNPs could serve as potential ALL biomarkers, although validation in independent cohorts is needed before clinical use.",
+      "AIM: Osteoarthritis (OA) is a chronic degenerative joint disease. Early studies have indicated that genetic and environmental factors contribute to the risk of OA. However, the etiology of OA remains unknown. Our study aimed to evaluate the association of DNMT3B gene with the risk of hip OA in Han Chinese individuals. METHODS: A total of 2070 subjects were recruited into the study, including 658 patients with hip OA and 1412 healthy controls. Twelve tag single nucleotide polymorphisms (SNPs) were selected and genotyped in our samples. Genetic associations between DNMT3B gene and the risk of hip OA were examined at both the single marker and haplotype levels. Cis-expression quantitative trait loci signals that achieve genome-wide significance of targeted SNPs from multiple types of human tissues were extracted from the GTEx database. RESULTS: Significant signals were identified for SNP rs2424905 in 4 genetic models. The T allele was significantly associated with an increased risk of hip OA (odds ratio = 1.53; 95% CI = 1.28-1.83). The T allele was also significantly associated with higher Kellgren-Lawrence grade in the patients with hip OA (chi(2)  = 32.70, P = 1.37 x 10(-6) ). Moreover, SNP rs2424905 was significantly associated with the gene expression level of multiple genes, including DNMT3B, C20orf203, COMMD7, EFCAB8, MAPRE1, and RP5-1085F17.3, from several types of human tissues. CONCLUSION: Our results indicated that rs2424905 of DNMT3B gene contributed to the risk of hip OA and its clinical severity in a Han Chinese population. These findings suggested that rs2424905 of DNMT3B could be a promising genetic marker to assess susceptibility to hip OA in Han Chinese populations."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "41161132",
+      "32776659"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.017
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:34:46.836807+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: -0.6538) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41161132, relevance: -1.8462) ---\nBACKGROUND: While miR-100 is a tumor suppressor in several malignancies, its role in pediatric acute lymphoblastic leukemia (ALL) remains poorly understood. This study investigated the relationship between two miR-100 single-nucleotide polymorphisms (SNPs), rs543412 and rs183430, and ALL susceptibility in North African Tunisian children. METHODS: We conducted a case-control study involving 128 pediatric ALL patients and 157 healthy controls. Genotyping of rs543412 and rs183430 was performed using TaqMan SNP assays. Logistic regression analysis was used to assess associations between genotypes, haplotypes, and ALL risk, with multiple corrections applied. RESULTS: The rs543412 T allele was more frequent in ALL cases than controls (41 % vs. 32 %, p = 0.046), and increased ALL risk was seen with C/T (OR=2.20, 95 %CI=1.03-4.70) and T/T (OR=2.48, 95 %CI=1.16- 5.28) genotypes. However, this association did not survive multiple testing correction. The rs183430 G allele showed stronger association with ALL (57 % vs. 41 %, p < 0.001), and with G/G homozygosity conferring a markedly elevated risk (OR=2.94, 95 %CI:1.56-5.54). Two-locus haplotype analysis revealed that C approximately G (aOR=1.77, 95 %CI=1.09-2.88) and T approximately G (aOR=2.59, 95 %CI=1.51-4.44) haplotypes significantly increased ALL risk. However, no significant associations were observed between these polymorphisms and the clinicopathological features. CONCLUSIONS: This exploratory study identifies rs183430 as significantly associated with pediatric ALL susceptibility in North African children. These preliminary results suggest that miR-100 SNPs could serve as potential ALL biomarkers, although validation in independent cohorts is needed before clinical use.\n\n--- Abstract 3 (PMID: 32776659, relevance: -2.3982) ---\nAIM: Osteoarthritis (OA) is a chronic degenerative joint disease. Early studies have indicated that genetic and environmental factors contribute to the risk of OA. However, the etiology of OA remains unknown. Our study aimed to evaluate the association of DNMT3B gene with the risk of hip OA in Han Chinese individuals. METHODS: A total of 2070 subjects were recruited into the study, including 658 patients with hip OA and 1412 healthy controls. Twelve tag single nucleotide polymorphisms (SNPs) were selected and genotyped in our samples. Genetic associations between DNMT3B gene and the risk of hip OA were examined at both the single marker and haplotype levels. Cis-expression quantitative trait loci signals that achieve genome-wide significance of targeted SNPs from multiple types of human tissues were extracted from the GTEx database. RESULTS: Significant signals were identified for SNP rs2424905 in 4 genetic models. The T allele was significantly associated with an increased risk of hip OA (odds ratio = 1.53; 95% CI = 1.28-1.83). The T allele was also significantly associated with higher Kellgren-Lawrence grade in the patients with hip OA (chi(2)  = 32.70, P = 1.37 x 10(-6) ). Moreover, SNP rs2424905 was significantly associated with the gene expression level of multiple genes, including DNMT3B, C20orf203, COMMD7, EFCAB8, MAPRE1, and RP5-1085F17.3, from several types of human tissues. CONCLUSION: Our results indicated that rs2424905 of DNMT3B gene contributed to the risk of hip OA and its clinical severity in a Han Chinese population. These findings suggested that rs2424905 of DNMT3B could be a promising genetic marker to assess susceptibility to hip OA in Han Chinese populations.\n\n\n\n**Question:**\nWhat p-value is reported for the association between rs2180439 and androgenetic alopecia in this study?"
+}

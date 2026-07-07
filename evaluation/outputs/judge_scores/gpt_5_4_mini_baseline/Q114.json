@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q114",
+      "randomization_seed": "20260706:Q114:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q114",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q114",
+      "error": null,
+      "id": "batch_req_6a4d5407f9ac8190bf9d519e9db0ca80",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452529,
+          "created_at": 1783452512,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_02552a3dc98f9306006a4d5360998481978d1ae77f08ea4b4e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q114"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_02552a3dc98f9306006a4d53615d388197b059fd9332e8b3d1",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses FGF signaling in hair-follicle growth/cycling and frames the answer around the limited supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately notes that direct FGF-hair follicle evidence is absent and uses only indirect links through Wnt/\u03b2-catenin and general FGF signaling, though it slightly overstates a likely contribution.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key available points: no graph evidence, Wnt evidence for hair growth, indirect FGF-Wnt relevance, and lack of direct support.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately emphasizes that the conclusion is inferential and that no specific FGF member is directly supported by the provided context.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly discusses FGF signaling in hair-follicle growth and cycling.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Many statements are biologically plausible, but they are not supported by the supplied evidence, which contains no direct FGF-hair follicle data.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides a broad overview of FGF roles but does not address the main limitation of the evidence packet and introduces unsupported specific ligands.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Mentions context dependence but presents unsupported claims as evidence-backed rather than acknowledging insufficient direct evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Discusses hair-follicle growth and cycling, but largely substitutes Wnt/EV biology for FGF signaling.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correctly describes the htSKP-EV/miR-221-3p/DKK2/Wnt hair-growth mechanism, but incorrectly claims this is direct evidence for FGF signaling.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the absence of direct FGF-hair evidence and fails to distinguish Wnt-mediated hair growth from FGF signaling.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Assertively invents a role for FGF signaling from evidence that does not actually involve FGF.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses FGF signaling in hair-follicle growth and cycling.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Contains some generally plausible background, such as FGF5 effects on anagen, but these claims are unsupported by the supplied evidence and some ligand-specific developmental claims are uncertain.\"},\"completeness\":{\"score\":3,\"rationale\":\"Broadly covers development, cycling, pathway interactions, and regeneration, but much of this is unnecessary and not grounded in the provided evidence.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not acknowledge that the available evidence lacks direct support for most of the claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_02552a3dc98f9306006a4d536af22c8197894c5cb4733b0cde",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3508,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1587,
+            "output_tokens_details": {
+              "reasoning_tokens": 919
+            },
+            "total_tokens": 5095
+          },
+          "user": null
+        },
+        "request_id": "f488cdb5-cabf-4ee6-9325-efc6548ad858",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly discusses FGF signaling in hair-follicle growth and cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Many statements are biologically plausible, but they are not supported by the supplied evidence, which contains no direct FGF-hair follicle data.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Provides a broad overview of FGF roles but does not address the main limitation of the evidence packet and introduces unsupported specific ligands.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Mentions context dependence but presents unsupported claims as evidence-backed rather than acknowledging insufficient direct evidence.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q114",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q114.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.211993+00:00"
+}

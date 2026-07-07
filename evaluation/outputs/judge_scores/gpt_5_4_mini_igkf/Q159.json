@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q159",
+      "randomization_seed": "20260706:Q159:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q159",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q159",
+      "error": null,
+      "id": "batch_req_6a4d540a8b1481908f5d16aa39b289aa",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452640,
+          "created_at": 1783452620,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_013952dde0463a61006a4d53cbf6f481979952f983f3853851",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q159"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_013952dde0463a61006a4d53ccbd488197ab60ee7ed0778dc5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses a plausible non-coding regulatory mechanism, but does not use the supplied study-specific gene/pathway evidence well.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Presents unsupported items as observed, including eQTLs, specific chromatin marks, expression correlations, and genes not annotated in the provided graph.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes observed-versus-hypothesis structure and plausible mechanisms, but misses key supplied annotations such as KANSL1 histone modification and OPHN1 Rho GTPase pathways.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Overstates speculative regulatory annotations as study observations with little qualification.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly answers with a plausible regulatory mechanism and distinguishes observation from hypothesis, but remains generic.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The regulatory mechanism is scientifically plausible, but enhancer/promoter/open-chromatin annotations are not provided in the evidence packet.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers the main conceptual mechanism but omits the actual supplied gene and pathway annotations.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Uses some qualifying language, but still implies unprovided annotations were likely observed.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question using the supplied genes and pathway annotations.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately separates observed annotations for KANSL1 and OPHN1 from plausible regulatory hypotheses and notes key limitations.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers observed evidence, mechanistic interpretation, relevance to non-coding variants, and limitations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly states that causal variant, effector gene, cell type, and direction of effect are not demonstrated.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses possible mechanisms for non-coding variants and references some supplied genes.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Mixes correct supplied annotations with unsupported or misleading claims, including coding-variant emphasis, hair follicle development annotations, alternative splicing, and functions for interaction partners.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes observed and hypothetical sections, but the evidence use is uneven and includes unnecessary unsupported mechanisms.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Acknowledges inference in the conclusion, but several unsupported statements are presented too confidently.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_013952dde0463a61006a4d53db51688197b89632ca31865d40",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5017,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2140,
+            "output_tokens_details": {
+              "reasoning_tokens": 1552
+            },
+            "total_tokens": 7157
+          },
+          "user": null
+        },
+        "request_id": "2616f226-b470-494a-b309-2e969d5a1a56",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "2f1194a60de08378bb51c2e63136ea65486b49de247c269e2b415d4c2d5dbe86",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q159",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q159.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q159::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q159::R2",
+      "error": null,
+      "id": "batch_req_6a4d19bd976c8190a2797498a648ccbd",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437616,
+          "created_at": 1783437607,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00b0ada398dabc38006a4d192739d08195bae49732878d490c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q159"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00b0ada398dabc38006a4d1927e41c8195bf9d8520b8931231",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The answer accurately reports key observed graph annotations for KANSL1 and OPHN1 and clearly labels downstream regulatory and follicle-cell mechanisms as hypotheses. Some mechanistic details, such as enhancer/promoter effects, follicular cell types, miniaturization, and regulatory architecture, are plausible but not directly demonstrated in the supplied context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"The answer uses the most relevant supplied evidence, especially the hair/balding GWAS context and pathway annotations for KANSL1 and OPHN1, and acknowledges limitations. It only lightly uses the vector abstracts and somewhat overextends them regarding regulatory architecture.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00b0ada398dabc38006a4d192ead6c81959dbe157f243a64c0",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2798,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 695,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3493
+          },
+          "user": null
+        },
+        "request_id": "7d3394b7-56a4-4b24-b52d-131b8c3e8014",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question using the supplied genes and pathway annotations.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately separates observed annotations for KANSL1 and OPHN1 from plausible regulatory hypotheses and notes key limitations.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers observed evidence, mechanistic interpretation, relevance to non-coding variants, and limitations.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately reports key observed graph annotations for KANSL1 and OPHN1 and clearly labels downstream regulatory and follicle-cell mechanisms as hypotheses. Some mechanistic details, such as enhancer/promoter effects, follicular cell types, miniaturization, and regulatory architecture, are plausible but not directly demonstrated in the supplied context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the most relevant supplied evidence, especially the hair/balding GWAS context and pathway annotations for KANSL1 and OPHN1, and acknowledges limitations. It only lightly uses the vector abstracts and somewhat overextends them regarding regulatory architecture.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly states that causal variant, effector gene, cell type, and direction of effect are not demonstrated.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q159",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q159.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.355418+00:00"
+}

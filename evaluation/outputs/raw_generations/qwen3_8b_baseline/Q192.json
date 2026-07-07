@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.4479,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The inclusion of evolutionary-conservation evidence for the *LGR4* locus in integrated data depends on the specific dataset or resource being referenced. For example:\n\n- In **genomic databases** such as **UCSC Genome Browser**, **Ensembl**, or **NCBI**, conservation data (e.g., phyloP scores, phastCons scores) are often integrated for genes like *LGR4*. These scores reflect the degree of sequence conservation across species, providing evidence for functional importance.\n- In **functional genomic datasets** (e.g., from the **Roadmap Epigenomics Project** or **ENCODE**), conservation data may be included as part of broader functional annotations, though the focus is typically on regulatory elements rather than the coding sequence itself.\n- In **clinical or translational datasets**, conservation evidence is less commonly included unless explicitly annotated for variant interpretation (e.g., in **ClinVar** or **HGMD**).\n\n**Summary of conservation evidence for *LGR4* (if included):**\n- *LGR4* is a conserved gene across vertebrates, with high sequence similarity in its coding and regulatory regions.\n- Conservation scores (e.g., phyloP or phastCons) for *LGR4* are typically moderate to high, reflecting its functional importance in developmental and signaling pathways.\n- Conservation data for *LGR4* is often used to prioritize variants for functional studies or disease association analyses.\n\n**Limitation:**\n- Conservation data may not be explicitly integrated in all datasets, particularly in clinical or transcriptomic datasets focused on expression or variant calling.\n- Conservation evidence may not capture functional divergence in specific lineages or tissues.\n\nIf you are referring to a specific dataset or resource, please provide more context for a more precise answer.",
+  "question_id": "Q192",
+  "question_text": "Does the integrated data include evolutionary-conservation evidence for the LGR4 locus? If so, summarize it; otherwise state the limitation.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 358,
+    "prompt_token_count": 86,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The inclusion of evolutionary-conservation evidence for the *LGR4* locus in integrated data depends on the specific dataset or resource being referenced. For example:\n\n- In **genomic databases** such as **UCSC Genome Browser**, **Ensembl**, or **NCBI**, conservation data (e.g., phyloP scores, phastCons scores) are often integrated for genes like *LGR4*. These scores reflect the degree of sequence conservation across species, providing evidence for functional importance.\n- In **functional genomic datasets** (e.g., from the **Roadmap Epigenomics Project** or **ENCODE**), conservation data may be included as part of broader functional annotations, though the focus is typically on regulatory elements rather than the coding sequence itself.\n- In **clinical or translational datasets**, conservation evidence is less commonly included unless explicitly annotated for variant interpretation (e.g., in **ClinVar** or **HGMD**).\n\n**Summary of conservation evidence for *LGR4* (if included):**\n- *LGR4* is a conserved gene across vertebrates, with high sequence similarity in its coding and regulatory regions.\n- Conservation scores (e.g., phyloP or phastCons) for *LGR4* are typically moderate to high, reflecting its functional importance in developmental and signaling pathways.\n- Conservation data for *LGR4* is often used to prioritize variants for functional studies or disease association analyses.\n\n**Limitation:**\n- Conservation data may not be explicitly integrated in all datasets, particularly in clinical or transcriptomic datasets focused on expression or variant calling.\n- Conservation evidence may not capture functional divergence in specific lineages or tissues.\n\nIf you are referring to a specific dataset or resource, please provide more context for a more precise answer."
+      }
+    ],
+    "created": 1783430985,
+    "id": "cmpl-1034eaae-363f-40d8-9ddb-78080edac7fe",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 358,
+      "prompt_tokens": 65,
+      "total_tokens": 423
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:29:45.310124+00:00",
+  "user_prompt": "Does the integrated data include evolutionary-conservation evidence for the LGR4 locus? If so, summarize it; otherwise state the limitation."
+}

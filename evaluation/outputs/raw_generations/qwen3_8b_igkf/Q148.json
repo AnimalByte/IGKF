@@ -1,0 +1,202 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 7.2786,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated evidence does not identify shared upstream regulators of AR, SRD5A2, and EDA2R that are directly regulating all three genes. However, the data does highlight some common regulatory associations and direct regulators for subsets of these genes:\n\n1. **AR (Androgen Receptor):**\n   - **Direct Regulation:** AR is directly regulated by androgenic ligands such as testosterone and dihydrotestosterone (DHT), which are metabolized by SRD5A2. The androgen receptor modulators listed in the graph, such as LGD-2941, GSK2849466, and VK5211, directly interact with AR.\n   - **Associated Genes/Pathways:** AR is involved in the Nuclear Receptor transcription pathway and interacts with proteins such as RBL1, SRPK1, and UBE2D1. It is also associated with diseases like androgen insensitivity syndrome and prostate cancer.\n\n2. **SRD5A2 (Steroid 5\u03b1-reductase 2):**\n   - **Direct Regulation:** SRD5A2 is directly regulated by androgenic signaling and is a key enzyme in the conversion of testosterone to DHT. It is inhibited by compounds like MK-0773 and finasteride, as shown in the abstracts.\n   - **Associated Genes/Pathways:** SRD5A2 is involved in male sexual development and is implicated in 5\u03b1-reductase type 2 deficiency and androgen insensitivity syndrome. It is also associated with conditions like prostate cancer and benign prostatic hyperplasia (BPH).\n\n3. **EDA2R (Ectodysplasin A2 Receptor):**\n   - **Direct Regulation:** The graph does not provide direct regulatory information for EDA2R. However, EDA2R is known to be involved in hair follicle development and is associated with conditions like hypohidrotic ectodermal dysplasia.\n   - **Associated Genes/Pathways:** EDA2R is not explicitly linked to AR or SRD5A2 in the graph, and no shared upstream regulators are identified for all three genes.\n\n**Conclusion:** The integrated evidence does not support shared upstream regulators of AR, SRD5A2, and EDA2R. While AR and SRD5A2 share some regulatory associations, particularly in androgen metabolism and prostate-related conditions, EDA2R does not appear to be directly or indirectly regulated by the same upstream factors as the other two genes. Therefore, no common regulators are supported for all three genes.",
+  "question_id": "Q148",
+  "question_text": "Does the integrated evidence identify shared upstream regulators of AR, SRD5A2, and EDA2R? Report only supported common regulators and distinguish direct regulation from association.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 541,
+    "prompt_token_count": 1864,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not identify shared upstream regulators of AR, SRD5A2, and EDA2R that are directly regulating all three genes. However, the data does highlight some common regulatory associations and direct regulators for subsets of these genes:\n\n1. **AR (Androgen Receptor):**\n   - **Direct Regulation:** AR is directly regulated by androgenic ligands such as testosterone and dihydrotestosterone (DHT), which are metabolized by SRD5A2. The androgen receptor modulators listed in the graph, such as LGD-2941, GSK2849466, and VK5211, directly interact with AR.\n   - **Associated Genes/Pathways:** AR is involved in the Nuclear Receptor transcription pathway and interacts with proteins such as RBL1, SRPK1, and UBE2D1. It is also associated with diseases like androgen insensitivity syndrome and prostate cancer.\n\n2. **SRD5A2 (Steroid 5\u03b1-reductase 2):**\n   - **Direct Regulation:** SRD5A2 is directly regulated by androgenic signaling and is a key enzyme in the conversion of testosterone to DHT. It is inhibited by compounds like MK-0773 and finasteride, as shown in the abstracts.\n   - **Associated Genes/Pathways:** SRD5A2 is involved in male sexual development and is implicated in 5\u03b1-reductase type 2 deficiency and androgen insensitivity syndrome. It is also associated with conditions like prostate cancer and benign prostatic hyperplasia (BPH).\n\n3. **EDA2R (Ectodysplasin A2 Receptor):**\n   - **Direct Regulation:** The graph does not provide direct regulatory information for EDA2R. However, EDA2R is known to be involved in hair follicle development and is associated with conditions like hypohidrotic ectodermal dysplasia.\n   - **Associated Genes/Pathways:** EDA2R is not explicitly linked to AR or SRD5A2 in the graph, and no shared upstream regulators are identified for all three genes.\n\n**Conclusion:** The integrated evidence does not support shared upstream regulators of AR, SRD5A2, and EDA2R. While AR and SRD5A2 share some regulatory associations, particularly in androgen metabolism and prostate-related conditions, EDA2R does not appear to be directly or indirectly regulated by the same upstream factors as the other two genes. Therefore, no common regulators are supported for all three genes."
+      }
+    ],
+    "created": 1783433049,
+    "id": "cmpl-52e04c35-bb63-4a07-8d31-52f73d43fec0",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 541,
+      "prompt_tokens": 1843,
+      "total_tokens": 2384
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      21.031944274902344,
+      23.42180061340332,
+      24.268478393554688,
+      24.490699768066406,
+      24.651981353759766,
+      24.875377655029297,
+      25.236526489257812,
+      25.401599884033203,
+      25.845333099365234,
+      25.892166137695312,
+      25.999164581298828,
+      26.030906677246094,
+      26.144737243652344,
+      26.723892211914062,
+      27.064701080322266
+    ],
+    "candidate_pmids": [
+      "41296172",
+      "41796107",
+      "41640146",
+      "37860011",
+      "41722875",
+      "42361668",
+      "41860956",
+      "37579195",
+      "37140276",
+      "42371149",
+      "38057852",
+      "40835866",
+      "34968235",
+      "41501168",
+      "37143720"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence identify shared upstream regulators of AR, SRD5A2, and EDA2R? Report only supported common regulators and distinguish direct regulation from association. Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "final_context": "Graph Context:\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n\nVector Context:\n--- Abstract 1 (PMID: 41722875, relevance: -2.3802) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 41796107, relevance: -3.8973) ---\nBACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.\n\n--- Abstract 3 (PMID: 41501168, relevance: -4.4452) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "graph_context_length": 1823,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3312,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "upstream regulators"
+      },
+      {
+        "label": "ENTITY",
+        "text": "ar"
+      },
+      {
+        "label": "ENTITY",
+        "text": "srd5a2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "eda2r"
+      },
+      {
+        "label": "ENTITY",
+        "text": "report"
+      },
+      {
+        "label": "ENTITY",
+        "text": "regulators"
+      },
+      {
+        "label": "ENTITY",
+        "text": "regulation"
+      },
+      {
+        "label": "ENTITY",
+        "text": "association"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q148.json",
+    "retrieval_total_seconds": 0.4556,
+    "score_max": -2.380246639251709,
+    "score_mean": -3.574251413345337,
+    "scores": [
+      -2.380246639251709,
+      -3.8973066806793213,
+      -4.4452009201049805
+    ],
+    "selected_abstracts": [
+      "5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.",
+      "BACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.",
+      "Benign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments."
+    ],
+    "selected_pmids": [
+      "41722875",
+      "41796107",
+      "41501168"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1097
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:04:09.594255+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 41722875, relevance: -2.3802) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 41796107, relevance: -3.8973) ---\nBACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.\n\n--- Abstract 3 (PMID: 41501168, relevance: -4.4452) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n\n\n**Question:**\nDoes the integrated evidence identify shared upstream regulators of AR, SRD5A2, and EDA2R? Report only supported common regulators and distinguish direct regulation from association."
+}

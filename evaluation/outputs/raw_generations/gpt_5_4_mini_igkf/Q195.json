@@ -1,0 +1,273 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437064,
+    "created_at": 1783437061,
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q195",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "c485fe72-304b-4285-9802-bfed6599f1b5",
+    "response_id": "resp_0e590165669518c6006a4d1705481c8193a1a087685ea85caa",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 1348,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1779
+    }
+  },
+  "parsed_answer": "Using only the supplied graph and abstracts, there is **no direct evidence that dutasteride is relevant to LGR4-linked diseases or phenotypes**.\n\n### What is directly supported\n- **Dutasteride targets SRD5A2 and AR** in the graph.\n- The **known pathways** for these targets are:\n  - androgen biosynthesis\n  - ubiquitin-specific processing proteases\n  - nuclear receptor transcription pathway\n\nThe only disease/phenotype-relevant abstract in the context is **SRD5A2 deficiency / 46,XY DSD**, which is about **loss-of-function in SRD5A2**, not dutasteride use. Dutasteride inhibits **SRD5A2**, so it is biologically related to **androgen metabolism**, but this is **not evidence of LGR4 involvement**.\n\n### What is not directly supported\n- There is **no direct graph evidence** linking dutasteride to **LGR4** itself.\n- There is **no direct drug\u2013gene interaction** between dutasteride and **LGR4** in the provided data.\n- The abstracts about **LGR4/5/6 and R-spondins** describe **Wnt signaling and cancer biology**, but they do **not mention dutasteride**.\n\n### Possible speculative connection\nA very indirect, speculative bridge could be:\n- dutasteride alters **androgen signaling** via **SRD5A2/AR**\n- androgen signaling can sometimes intersect with broader transcriptional or developmental programs\n- LGR4 is implicated in **Wnt/beta-catenin signaling** and tumor biology\n\nBut this is **only a pathway-level plausibility argument**, not evidence of a real dutasteride\u2013LGR4 association.\n\n### Bottom line\n- **Direct evidence:** **No**\n- **Speculative pathway-level connection:** **Weak/indirect at best**\n- **Conclusion:** Based on the supplied context, dutasteride is **not evidenced to be relevant to LGR4-linked diseases or phenotypes**, beyond nonspecific biological overlap in signaling pathways.",
+  "question_id": "Q195",
+  "question_text": "Is there evidence that Dutasteride is relevant to diseases or phenotypes linked with LGR4? Distinguish direct drug\u2013gene evidence from speculative pathway-level connections.",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q195",
+    "error": null,
+    "id": "batch_req_6a4d17645ba48190b326a89da18897af",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437064,
+        "created_at": 1783437061,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_0e590165669518c6006a4d1705481c8193a1a087685ea85caa",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_igkf",
+          "question_id": "Q195"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "Using only the supplied graph and abstracts, there is **no direct evidence that dutasteride is relevant to LGR4-linked diseases or phenotypes**.\n\n### What is directly supported\n- **Dutasteride targets SRD5A2 and AR** in the graph.\n- The **known pathways** for these targets are:\n  - androgen biosynthesis\n  - ubiquitin-specific processing proteases\n  - nuclear receptor transcription pathway\n\nThe only disease/phenotype-relevant abstract in the context is **SRD5A2 deficiency / 46,XY DSD**, which is about **loss-of-function in SRD5A2**, not dutasteride use. Dutasteride inhibits **SRD5A2**, so it is biologically related to **androgen metabolism**, but this is **not evidence of LGR4 involvement**.\n\n### What is not directly supported\n- There is **no direct graph evidence** linking dutasteride to **LGR4** itself.\n- There is **no direct drug\u2013gene interaction** between dutasteride and **LGR4** in the provided data.\n- The abstracts about **LGR4/5/6 and R-spondins** describe **Wnt signaling and cancer biology**, but they do **not mention dutasteride**.\n\n### Possible speculative connection\nA very indirect, speculative bridge could be:\n- dutasteride alters **androgen signaling** via **SRD5A2/AR**\n- androgen signaling can sometimes intersect with broader transcriptional or developmental programs\n- LGR4 is implicated in **Wnt/beta-catenin signaling** and tumor biology\n\nBut this is **only a pathway-level plausibility argument**, not evidence of a real dutasteride\u2013LGR4 association.\n\n### Bottom line\n- **Direct evidence:** **No**\n- **Speculative pathway-level connection:** **Weak/indirect at best**\n- **Conclusion:** Based on the supplied context, dutasteride is **not evidenced to be relevant to LGR4-linked diseases or phenotypes**, beyond nonspecific biological overlap in signaling pathways.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_0e590165669518c6006a4d1705c66c8193861ad69946f13c78",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 1348,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 431,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1779
+        },
+        "user": null
+      },
+      "request_id": "c485fe72-304b-4285-9802-bfed6599f1b5",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      22.513477325439453,
+      22.66264533996582,
+      25.130233764648438,
+      25.590106964111328,
+      26.56906509399414,
+      27.148544311523438,
+      28.0463809967041,
+      28.380321502685547,
+      29.11734962463379,
+      29.238521575927734,
+      29.473859786987305,
+      29.50250244140625,
+      29.75836181640625,
+      29.824771881103516,
+      30.082517623901367
+    ],
+    "candidate_pmids": [
+      "41722875",
+      "41501168",
+      "41640146",
+      "42260572",
+      "41796107",
+      "42315371",
+      "41673742",
+      "41954225",
+      "40305445",
+      "42361668",
+      "41493898",
+      "41522353",
+      "37143720",
+      "42151883",
+      "32561905"
+    ],
+    "expanded_retrieval_query": "Is there evidence that Dutasteride is relevant to diseases or phenotypes linked with LGR4? Distinguish direct drug\u2013gene evidence from speculative pathway-level connections. Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "final_context": "Graph Context:\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\nVector Context:\n--- Abstract 1 (PMID: 41954225, relevance: -4.1671) ---\nLeucine-rich repeat-containing, G protein-coupled receptors 4, 5, and 6 (LGR4/5/6) are coexpressed or alternately expressed at high levels in tumor cells of colorectal cancer (CRC) and high-risk neuroblastoma (NB). Simultaneous targeting of all three homologous receptors may improve efficacy or overcome drug resistance due to tumor heterogeneity and cancer cell plasticity. R-spondins (RSPOs) bind to LGR4/5/6 with a high affinity and potentiate Wnt/beta-catenin signaling. We previously reported that a mutant RSPO4 furin domain-based peptibody that binds to LGR4/5/6 without potentiating Wnt/beta-catenin signaling was able to deliver cytotoxins into cancer cells that express any of the three receptors. Here, we generated a mutant RSPO2 furin domain that retains high-affinity LGR4/5/6 binding without any signaling activity. RSPO2 furin mutant peptibodies conjugated with pyrrolobenzodiazepine dimer (PBD) or camptothecin derivative (CPT2) yielded potent, target-selective cytotoxicity in LGR4/5/6-positive CRC and high-risk NB cell lines in vitro and robust antitumor activity in vivo.\n\n--- Abstract 2 (PMID: 41522353, relevance: -4.9334) ---\nR-spondins are a family of four secretory proteins reported to be Wnt agonists. Among them, R-spondin 4 (RSPO4) is unique, with the lowest binding affinity towards ZNRF3/RNF43 and the lowest efficacy in regulating Wnt/beta-catenin signaling. RSPO4 has been shown to play important roles in nail development, liver fibrogenesis and periodontitis, while its role in cancerous context remains largely unknown. In this study, we performed multi-omic analysis on transcriptional expression and methylation pattern of RSPO4. In vitro cell-based assays were performed to evaluate the functionality of RSPO4. Through cancer epigenomics, we identified RSPO4 as a candidate tumor suppressor with tumor-specific epigenetic inactivation. We further found that RSPO4 is readily expressed in human normal tissues, but frequently downregulated or silenced in multiple cancer types due to its promoter CpG methylation. Functional studies showed that RSPO4 inhibited tumor cell proliferation, migration, invasion and stemness, through antagonizing canonical and non-canonical Wnt signaling. Mechanistically, RSPO4 exerted suppressive effects on Wnt signaling in an LGR4/5- and ZNRF3- dependent manner, through promoting LRP6 degradation and ZNRF3 stabilization. Our study revealed a novel role of RSPO4 as a tumor suppressor through antagonizing Wnt signaling, which provides important implications for development of diagnostic biomarkers and targeted therapy.\n\n--- Abstract 3 (PMID: 41640146, relevance: -5.3554) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "graph_context_length": 416,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3291,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "dutasteride"
+      },
+      {
+        "label": "ENTITY",
+        "text": "diseases"
+      },
+      {
+        "label": "ENTITY",
+        "text": "phenotypes"
+      },
+      {
+        "label": "ENTITY",
+        "text": "lgr4"
+      },
+      {
+        "label": "ENTITY",
+        "text": "distinguish"
+      },
+      {
+        "label": "ENTITY",
+        "text": "direct drug"
+      },
+      {
+        "label": "ENTITY",
+        "text": "gene"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "pathway-level"
+      },
+      {
+        "label": "ENTITY",
+        "text": "connections"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q195.json",
+    "retrieval_total_seconds": 0.4002,
+    "score_max": -4.167115211486816,
+    "score_mean": -4.818641185760498,
+    "scores": [
+      -4.167115211486816,
+      -4.933403491973877,
+      -5.355404853820801
+    ],
+    "selected_abstracts": [
+      "Leucine-rich repeat-containing, G protein-coupled receptors 4, 5, and 6 (LGR4/5/6) are coexpressed or alternately expressed at high levels in tumor cells of colorectal cancer (CRC) and high-risk neuroblastoma (NB). Simultaneous targeting of all three homologous receptors may improve efficacy or overcome drug resistance due to tumor heterogeneity and cancer cell plasticity. R-spondins (RSPOs) bind to LGR4/5/6 with a high affinity and potentiate Wnt/beta-catenin signaling. We previously reported that a mutant RSPO4 furin domain-based peptibody that binds to LGR4/5/6 without potentiating Wnt/beta-catenin signaling was able to deliver cytotoxins into cancer cells that express any of the three receptors. Here, we generated a mutant RSPO2 furin domain that retains high-affinity LGR4/5/6 binding without any signaling activity. RSPO2 furin mutant peptibodies conjugated with pyrrolobenzodiazepine dimer (PBD) or camptothecin derivative (CPT2) yielded potent, target-selective cytotoxicity in LGR4/5/6-positive CRC and high-risk NB cell lines in vitro and robust antitumor activity in vivo.",
+      "R-spondins are a family of four secretory proteins reported to be Wnt agonists. Among them, R-spondin 4 (RSPO4) is unique, with the lowest binding affinity towards ZNRF3/RNF43 and the lowest efficacy in regulating Wnt/beta-catenin signaling. RSPO4 has been shown to play important roles in nail development, liver fibrogenesis and periodontitis, while its role in cancerous context remains largely unknown. In this study, we performed multi-omic analysis on transcriptional expression and methylation pattern of RSPO4. In vitro cell-based assays were performed to evaluate the functionality of RSPO4. Through cancer epigenomics, we identified RSPO4 as a candidate tumor suppressor with tumor-specific epigenetic inactivation. We further found that RSPO4 is readily expressed in human normal tissues, but frequently downregulated or silenced in multiple cancer types due to its promoter CpG methylation. Functional studies showed that RSPO4 inhibited tumor cell proliferation, migration, invasion and stemness, through antagonizing canonical and non-canonical Wnt signaling. Mechanistically, RSPO4 exerted suppressive effects on Wnt signaling in an LGR4/5- and ZNRF3- dependent manner, through promoting LRP6 degradation and ZNRF3 stabilization. Our study revealed a novel role of RSPO4 as a tumor suppressor through antagonizing Wnt signaling, which provides important implications for development of diagnostic biomarkers and targeted therapy.",
+      "INTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY."
+    ],
+    "selected_pmids": [
+      "41954225",
+      "41522353",
+      "41640146"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0485
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T15:14:46.520506+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 41954225, relevance: -4.1671) ---\nLeucine-rich repeat-containing, G protein-coupled receptors 4, 5, and 6 (LGR4/5/6) are coexpressed or alternately expressed at high levels in tumor cells of colorectal cancer (CRC) and high-risk neuroblastoma (NB). Simultaneous targeting of all three homologous receptors may improve efficacy or overcome drug resistance due to tumor heterogeneity and cancer cell plasticity. R-spondins (RSPOs) bind to LGR4/5/6 with a high affinity and potentiate Wnt/beta-catenin signaling. We previously reported that a mutant RSPO4 furin domain-based peptibody that binds to LGR4/5/6 without potentiating Wnt/beta-catenin signaling was able to deliver cytotoxins into cancer cells that express any of the three receptors. Here, we generated a mutant RSPO2 furin domain that retains high-affinity LGR4/5/6 binding without any signaling activity. RSPO2 furin mutant peptibodies conjugated with pyrrolobenzodiazepine dimer (PBD) or camptothecin derivative (CPT2) yielded potent, target-selective cytotoxicity in LGR4/5/6-positive CRC and high-risk NB cell lines in vitro and robust antitumor activity in vivo.\n\n--- Abstract 2 (PMID: 41522353, relevance: -4.9334) ---\nR-spondins are a family of four secretory proteins reported to be Wnt agonists. Among them, R-spondin 4 (RSPO4) is unique, with the lowest binding affinity towards ZNRF3/RNF43 and the lowest efficacy in regulating Wnt/beta-catenin signaling. RSPO4 has been shown to play important roles in nail development, liver fibrogenesis and periodontitis, while its role in cancerous context remains largely unknown. In this study, we performed multi-omic analysis on transcriptional expression and methylation pattern of RSPO4. In vitro cell-based assays were performed to evaluate the functionality of RSPO4. Through cancer epigenomics, we identified RSPO4 as a candidate tumor suppressor with tumor-specific epigenetic inactivation. We further found that RSPO4 is readily expressed in human normal tissues, but frequently downregulated or silenced in multiple cancer types due to its promoter CpG methylation. Functional studies showed that RSPO4 inhibited tumor cell proliferation, migration, invasion and stemness, through antagonizing canonical and non-canonical Wnt signaling. Mechanistically, RSPO4 exerted suppressive effects on Wnt signaling in an LGR4/5- and ZNRF3- dependent manner, through promoting LRP6 degradation and ZNRF3 stabilization. Our study revealed a novel role of RSPO4 as a tumor suppressor through antagonizing Wnt signaling, which provides important implications for development of diagnostic biomarkers and targeted therapy.\n\n--- Abstract 3 (PMID: 41640146, relevance: -5.3554) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n\n\n**Question:**\nIs there evidence that Dutasteride is relevant to diseases or phenotypes linked with LGR4? Distinguish direct drug\u2013gene evidence from speculative pathway-level connections."
+}

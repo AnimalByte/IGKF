@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q071",
+      "randomization_seed": "20260706:Q071:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q071",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q071",
+      "error": null,
+      "id": "batch_req_6a4d52bb4dd88190b05e63e5111e052c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452181,
+          "created_at": 1783452165,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07ebad3c3c2cc6d4006a4d5205f08081919feaf525f5f596fe",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q071"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07ebad3c3c2cc6d4006a4d52067ad0819186b710cd9505d086",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the WNT10A-AGA link and distinguishes indirect biological plausibility from direct evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied evidence: WNT10A is tied to hair follicle/ectodermal biology, but no direct AGA association is shown.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers WNT10A functions, Wnt signaling, ectodermal/hair phenotypes, and the absence of direct AGA genetic evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids overclaiming and clearly states that the evidence is indirect only.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses the requested link between WNT10A and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Claims WNT10A has been identified in AGA GWAS and discusses animal-model evidence, neither of which is supported by the supplied evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions Wnt biology and uncertainty, but omits the key point that the provided AGA evidence does not mention WNT10A and includes unsupported components.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Although somewhat qualified, it invents or overstates direct genetic evidence not present in the reference.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly summarizes the possible relationship between WNT10A and AGA.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The main conclusion is accurate and appropriately cautious, but some claims about expression studies and candidate-gene evidence are not supported by the supplied packet.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers biological plausibility, genetic uncertainty, and lack of strong replication, but does not explicitly tie the summary to the specific supplied AGA abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly states that WNT10A is not a confirmed major AGA gene and frames the evidence as suggestive.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the evidence linking WNT10A to AGA.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly emphasizes indirect evidence and WNT10A's role in ectodermal and hair follicle biology, but adds speculative pathway crosstalk not established in the supplied evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the major relevant elements: Wnt signaling, ectodermal phenotypes, hair follicle biology, and absence of direct AGA association.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately qualifies the link as indirect, though it somewhat speculates about contribution to AGA pathophysiology.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07ebad3c3c2cc6d4006a4d52103154819192c68defabfb29b6",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4119,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1468,
+            "output_tokens_details": {
+              "reasoning_tokens": 814
+            },
+            "total_tokens": 5587
+          },
+          "user": null
+        },
+        "request_id": "6666c5a7-9333-4d10-bf9c-a47d6561a05a",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly summarizes the possible relationship between WNT10A and AGA.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The main conclusion is accurate and appropriately cautious, but some claims about expression studies and candidate-gene evidence are not supported by the supplied packet.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers biological plausibility, genetic uncertainty, and lack of strong replication, but does not explicitly tie the summary to the specific supplied AGA abstracts.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly states that WNT10A is not a confirmed major AGA gene and frames the evidence as suggestive.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q071",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q071.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.160172+00:00"
+}

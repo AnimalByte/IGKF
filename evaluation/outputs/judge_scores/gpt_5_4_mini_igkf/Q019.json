@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q019",
+      "randomization_seed": "20260706:Q019:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q019",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q019",
+      "error": null,
+      "id": "batch_req_6a4d52b926288190939d1e38f7d3b9b4",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452184,
+          "created_at": 1783452174,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0beba1dcbfffd409006a4d520e4440819eb6643cd353d46c75",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q019"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0beba1dcbfffd409006a4d520ebccc819ea64f4752668bee72",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"It discusses how one might check regulatory-element overlap but does not answer the specific question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"It incorrectly states that the determination cannot be made, despite the provided evidence indicating rs756853 is in EH38D3950895.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"It omits the key answer: the regulatory element EH38D3950895 and its dELS label.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"It abstains even though the supplied evidence is sufficient to answer.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"It addresses the topic but fails to provide the requested determination.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"It says the answer cannot be determined from the provided information, contradicting the reference evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"It does not include the regulatory element EH38D3950895 or the dELS annotation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"The abstention is inappropriate because the integrated graph explicitly provides the answer.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"It directly answers that rs756853 is within a regulatory element and identifies it.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"It correctly identifies EH38D3950895 and the dELS label, though its explanation of dELS as possibly promoter-related is imprecise.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"It includes the yes/no answer, the regulatory element ID, and the dELS label.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"It appropriately answers confidently based on sufficient evidence and qualifies downstream functional implications as possible.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"It directly and succinctly answers the question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"It accurately states that rs756853 is in regulatory element EH38D3950895 labeled dELS.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"It provides all necessary components without unnecessary information.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"It gives a confident answer where the evidence is sufficient.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0beba1dcbfffd409006a4d5213f370819eb4366ef032a64246",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2969,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1180,
+            "output_tokens_details": {
+              "reasoning_tokens": 465
+            },
+            "total_tokens": 4149
+          },
+          "user": null
+        },
+        "request_id": "eb5503f6-e615-4e47-a1bc-84a5b1c42d16",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "ea05e9b7f3b63a19ff16d1bd92afd963fe1f903b4304e7473609a915e67e4135",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q019",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q019.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q019::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q019::R2",
+      "error": null,
+      "id": "batch_req_6a4d19ab62248190ab999d8e8afe5565",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437476,
+          "created_at": 1783437473,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f90ee5c5e80ca34006a4d18a1f0a08194bd9a19a544b6297b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q019"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f90ee5c5e80ca34006a4d18a2976881948c6e5b9230e3a8e6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is directly supported by the supplied graph context, which states that rs756853 is in regulatory element EH38D3950895 with label dELS.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the key relevant graph evidence and does not rely on unsupported external information.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f90ee5c5e80ca34006a4d18a388c88194b82d81fc9ad4f3e6",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2213,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 198,
+            "output_tokens_details": {
+              "reasoning_tokens": 86
+            },
+            "total_tokens": 2411
+          },
+          "user": null
+        },
+        "request_id": "db037a4d-2f69-4d49-bb80-f66a56744ddb",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It directly and succinctly answers the question.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "It accurately states that rs756853 is in regulatory element EH38D3950895 labeled dELS.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "It provides all necessary components without unnecessary information.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is directly supported by the supplied graph context, which states that rs756853 is in regulatory element EH38D3950895 with label dELS.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key relevant graph evidence and does not rely on unsupported external information.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "It gives a confident answer where the evidence is sufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q019",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q019.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.263706+00:00"
+}

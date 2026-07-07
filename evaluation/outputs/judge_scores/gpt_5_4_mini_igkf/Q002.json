@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q002",
+      "randomization_seed": "20260706:Q002:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q002",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q002",
+      "error": null,
+      "id": "batch_req_6a4d52b8a2b881909238af733ef3228b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452261,
+          "created_at": 1783452253,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a5d4ba2174c600d006a4d525d71a881a183ad078907852e03",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q002"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a5d4ba2174c600d006a4d525e045c81a1ac1366b73f55076a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which gene is annotated for rs6152.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies AR as the implicated gene and notes no other implicated gene is listed.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key gene and expands AR as androgen receptor without unnecessary omissions.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the answer to the supplied evidence.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Discusses the need for study context but does not answer the question.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Does not provide an incorrect gene, but fails to state the supplied correct association with AR.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the required gene annotation entirely.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains despite sufficient evidence being provided.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Refers to rs6152 and gene annotation but does not answer the question.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"No wrong gene is given, but it misses the evidence-supported answer AR.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not identify any associated gene.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Unnecessarily requests more information when the provided context is sufficient.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the gene associated with rs6152.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that rs6152 is associated with AR, the Androgen Receptor gene.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the required gene and its full name.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Gives a confident answer supported by the supplied evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a5d4ba2174c600d006a4d52621aa081a194c490e2aa7aad5d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2501,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 860,
+            "output_tokens_details": {
+              "reasoning_tokens": 403
+            },
+            "total_tokens": 3361
+          },
+          "user": null
+        },
+        "request_id": "46325ebd-ba44-4521-8fe6-1fff8de40f99",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "bddae3ee4534c5defc62493a82872a39fc50d4bc81c801459b102d02b016074a",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q002",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q002.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q002::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q002::R2",
+      "error": null,
+      "id": "batch_req_6a4d19a96ed881908c270589237cc58c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437519,
+          "created_at": 1783437517,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07021a4177a6429e006a4d18cd873c8190bece7975a185a2fd",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q002"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07021a4177a6429e006a4d18ce13ac8190ae59f99ed15c576b",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R2\",\"context_groundedness\":{\"score\":5,\"rationale\":\"The answer directly matches the supplied graph context, which lists rs6152 with Implicated Gene: AR, and correctly notes no other implicated gene is provided.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer uses the key relevant evidence from the graph context and does not rely on unsupported external claims.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07021a4177a6429e006a4d18cf09688190b8ed07890874ac73",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2006,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 177,
+            "output_tokens_details": {
+              "reasoning_tokens": 88
+            },
+            "total_tokens": 2183
+          },
+          "user": null
+        },
+        "request_id": "2658f5b9-d949-46e3-86ce-1bdac14f8751",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers which gene is annotated for rs6152.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly identifies AR as the implicated gene and notes no other implicated gene is listed.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the key gene and expands AR as androgen receptor without unnecessary omissions.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer directly matches the supplied graph context, which lists rs6152 with Implicated Gene: AR, and correctly notes no other implicated gene is provided.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key relevant evidence from the graph context and does not rely on unsupported external claims.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately limits the answer to the supplied evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q002",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q002.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.252599+00:00"
+}

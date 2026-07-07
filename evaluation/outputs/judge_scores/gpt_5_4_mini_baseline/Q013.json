@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q013",
+      "randomization_seed": "20260706:Q013:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q013",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q013",
+      "error": null,
+      "id": "batch_req_6a4d52b8d41c8190bfcc4ef97519c2f5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452342,
+          "created_at": 1783452330,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0eb38723a2fdf137006a4d52aa65d081a28ab8eecfa6dfcd9d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q013"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0eb38723a2fdf137006a4d52aae65481a2a7c813717ba7fd9f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses rs2180439 and appropriately states that the supplied context lacks variant-specific annotations.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that rs2180439 is not present in the graph or abstracts and does not invent annotations.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key point that no study-specific or integrated annotations are available from the provided evidence, with brief context on the GWAS genes.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported interpretation and qualifies the limitation clearly.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Discusses possible annotation sources generally but does not answer using the provided evidence or state that rs2180439 is absent from it.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Contains mostly accurate generic statements about annotation resources, with no major biomedical errors, but is not grounded in the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not summarize available annotations and omits the key finding that none are provided for rs2180439 in the context.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Avoids fabricating rs2180439-specific claims, though it asks for clarification rather than using the available evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by stating that no annotations for rs2180439 are available in the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly notes that rs2180439 is absent from the graph and vector contexts and avoids unsupported claims.\"},\"completeness\":{\"score\":5,\"rationale\":\"Clearly covers both study-specific and integrated annotations by explaining that neither can be provided from the given data.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains from making unsupported variant-specific conclusions.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Attempts to answer about rs2180439 but provides generic and unsupported annotation content rather than using the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Invents specific claims about rs2180439, including gene location and trait associations, none of which are supported by the reference evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Lists many possible annotation categories but fails to provide the actual evidence-based answer that no annotations are available in the supplied context.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not acknowledge uncertainty and presents unsupported details as factual.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0eb38723a2fdf137006a4d52b1938881a28857e1a2158cf037",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3975,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1109,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5084
+          },
+          "user": null
+        },
+        "request_id": "cad4ec93-b11b-4810-835b-9dade7651d0d",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Discusses possible annotation sources generally but does not answer using the provided evidence or state that rs2180439 is absent from it.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Contains mostly accurate generic statements about annotation resources, with no major biomedical errors, but is not grounded in the supplied evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Does not summarize available annotations and omits the key finding that none are provided for rs2180439 in the context.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Avoids fabricating rs2180439-specific claims, though it asks for clarification rather than using the available evidence.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q013",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q013.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.119241+00:00"
+}

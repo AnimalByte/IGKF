@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.4531,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated evidence does **not support a direct link** between **Minoxidil** and **regulation of HDAC9 expression**.\n\n### Summary of Evidence:\n\n- **Direct evidence**: There is **no published research** that directly demonstrates that **Minoxidil modulates HDAC9 expression**. No studies have explicitly shown that Minoxidil upregulates or downregulates HDAC9 at the transcriptional or translational level.\n\n- **Indirect evidence**: While Minoxidil is known to affect various signaling pathways (e.g., PPAR\u03b3, KATP channels, and nitric oxide), these pathways are not directly linked to HDAC9 in the literature. Some studies suggest that Minoxidil may influence histone modifications in general, but these effects are not specific to HDAC9.\n\n- **Absence of evidence**: No studies have specifically investigated the interaction between Minoxidil and HDAC9. Therefore, the evidence for such a link is **absent**.\n\n### Conclusion:\nThere is **no direct evidence** linking Minoxidil to regulation of HDAC9 expression. The available evidence is **indirect or absent**, and thus, the link cannot be supported.",
+  "question_id": "Q143",
+  "question_text": "Does the integrated evidence support a link between Minoxidil and regulation of HDAC9 expression? Distinguish direct evidence from indirect or absent evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 249,
+    "prompt_token_count": 89,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does **not support a direct link** between **Minoxidil** and **regulation of HDAC9 expression**.\n\n### Summary of Evidence:\n\n- **Direct evidence**: There is **no published research** that directly demonstrates that **Minoxidil modulates HDAC9 expression**. No studies have explicitly shown that Minoxidil upregulates or downregulates HDAC9 at the transcriptional or translational level.\n\n- **Indirect evidence**: While Minoxidil is known to affect various signaling pathways (e.g., PPAR\u03b3, KATP channels, and nitric oxide), these pathways are not directly linked to HDAC9 in the literature. Some studies suggest that Minoxidil may influence histone modifications in general, but these effects are not specific to HDAC9.\n\n- **Absence of evidence**: No studies have specifically investigated the interaction between Minoxidil and HDAC9. Therefore, the evidence for such a link is **absent**.\n\n### Conclusion:\nThere is **no direct evidence** linking Minoxidil to regulation of HDAC9 expression. The available evidence is **indirect or absent**, and thus, the link cannot be supported."
+      }
+    ],
+    "created": 1783430711,
+    "id": "cmpl-cc8583f6-f3e0-4bc7-8865-ec8d3c2b6145",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 249,
+      "prompt_tokens": 68,
+      "total_tokens": 317
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:25:11.815149+00:00",
+  "user_prompt": "Does the integrated evidence support a link between Minoxidil and regulation of HDAC9 expression? Distinguish direct evidence from indirect or absent evidence."
+}

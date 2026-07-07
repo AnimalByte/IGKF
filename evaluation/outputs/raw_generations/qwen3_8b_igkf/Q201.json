@@ -1,0 +1,194 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.9223,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The question is outside the dataset's scope. The provided data focuses exclusively on androgenetic alopecia (male-pattern baldness) and does not contain any information related to cystic fibrosis or treatment options for this condition.",
+  "question_id": "Q201",
+  "question_text": "Does this androgenetic-alopecia-focused dataset contain sufficient evidence to summarize treatment options for cystic fibrosis? If not, state that the question is outside the dataset's scope rather than answering from general knowledge.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 45,
+    "prompt_token_count": 1283,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The question is outside the dataset's scope. The provided data focuses exclusively on androgenetic alopecia (male-pattern baldness) and does not contain any information related to cystic fibrosis or treatment options for this condition."
+      }
+    ],
+    "created": 1783433785,
+    "id": "cmpl-dac3e895-5367-4474-8f11-16749fafbc91",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 45,
+      "prompt_tokens": 1262,
+      "total_tokens": 1307
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      38.423866271972656,
+      42.96828079223633,
+      43.0024299621582,
+      43.628440856933594,
+      44.18434143066406,
+      44.52881622314453,
+      44.76169204711914,
+      45.50788116455078,
+      45.58100891113281,
+      45.724510192871094,
+      45.943519592285156,
+      46.29158020019531,
+      46.7818717956543,
+      46.791969299316406,
+      46.81890869140625
+    ],
+    "candidate_pmids": [
+      "34552771",
+      "42196345",
+      "40134218",
+      "42382900",
+      "39032379",
+      "42269416",
+      "34984527",
+      "39267058",
+      "42402309",
+      "37690223",
+      "40868166",
+      "41242654",
+      "41224025",
+      "42192217",
+      "35462437"
+    ],
+    "expanded_retrieval_query": "Does this androgenetic-alopecia-focused dataset contain sufficient evidence to summarize treatment options for cystic fibrosis? If not, state that the question is outside the dataset's scope rather than answering from general knowledge. No relevant data found in the graph.",
+    "final_context": "Graph Context:\nNo relevant data found in the graph.\n\nVector Context:\n--- Abstract 1 (PMID: 40134218, relevance: -1.6780) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41242654, relevance: -4.8944) ---\nCentral centrifugal cicatricial alopecia (CCCA) is the most common form of primary scarring alopecia in women of African descent, typically characterized by progressive hair loss originating at the vertex of the scalp. Although genetic susceptibility has been implicated in the pathogenesis of CCCA, only 1 gene (PADI3, encoding peptidyl arginine deiminase 3) has been thus far associated with CCCA. This study aimed to broaden our understanding of the genetic basis of CCCA by analyzing whole-exome sequences from 75 patients with clinically and histologically confirmed CCCA. We identified 9 pathogenic heterozygous variants in PADI3, including, to our knowledge, 4 previously unreported missense variants, all predicted to disrupt protein function. Functional analyses revealed reduced expression, abnormal intracellular localization, and diminished enzymatic activity in cells transfected with constructs expressing the PADI3 variants. More interestingly, pathogenic variants were identified in 2 additional genes, S100A3 and TCHH, which encode the main substrates of PADI3, S100 calcium-binding protein A3 and trichohyalin. Both proteins play critical roles in hair shaft integrity. The S100A3 variant was found to cause reduced citrullination by PADI3, whereas TCHH variants altered intracellular localization and resulted in significantly reduced expression of the protein. These findings provide further insights into disease mechanisms and may inform future strategies for genetic testing and targeted therapies.\n\n--- Abstract 3 (PMID: 42192217, relevance: -5.7767) ---\nThe use of single-cell RNA sequencing and spatial transcriptomics has recently challenged and refined concepts in the field of wound healing by enabling detailed characterisation of cellular heterogeneity while providing spatial context. Previously used separately, these methods are now increasingly applied together due to the advent of newer platforms, enabling delineation of discrete subpopulations of cutaneous cells, including epidermal basal stem cells, fibroblasts, neutrophils, macrophages, and T cells. Detailed transcriptional profiling of these subpopulations has revealed upregulation of either pro-regenerative or pro-fibrotic pathways. For example, fibroblast heterogeneity significantly influences wound healing outcomes, with Lef1+ and Trps1+ fibroblasts promoting regeneration through Wnt and Hedgehog pathway activation, whereas fibroblasts isolated from scars show upregulation of genes that promote excessive fibroblast activation, such as the YAP mechanotransduction pathway. Despite these insights, clinical translation can be challenging due to platform variability, computational demands, and biological heterogeneity inherent to models of wound healing. Ultimately, integration of multiomic data and public databases such as the Human Skin Atlas is necessary to increase biomarker reliability and mechanistic clarity. As these technologies become more accessible and standardised, they hold great potential for personalised wound care management by enabling molecular risk stratification and targeted therapeutic interventions. This literature review aimed to elucidate the latest advancements in gene expression analysis, with particular focus on the use of scRNA-seq and ST in the context of wound healing. The goal is to summarise previous efforts that contribute to the understanding of the cellular mechanisms of wound healing and reflect on how these insights could influence future therapeutic development.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "rerank_seconds": 0.3324,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "androgenetic-alopecia-focused dataset"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "treatment options"
+      },
+      {
+        "label": "ENTITY",
+        "text": "cystic fibrosis"
+      },
+      {
+        "label": "ENTITY",
+        "text": "state"
+      },
+      {
+        "label": "ENTITY",
+        "text": "question"
+      },
+      {
+        "label": "ENTITY",
+        "text": "dataset's"
+      },
+      {
+        "label": "ENTITY",
+        "text": "general knowledge"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q201.json",
+    "retrieval_total_seconds": 0.3745,
+    "score_max": -1.6779588460922241,
+    "score_mean": -4.116343140602112,
+    "scores": [
+      -1.6779588460922241,
+      -4.894397258758545,
+      -5.776673316955566
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "Central centrifugal cicatricial alopecia (CCCA) is the most common form of primary scarring alopecia in women of African descent, typically characterized by progressive hair loss originating at the vertex of the scalp. Although genetic susceptibility has been implicated in the pathogenesis of CCCA, only 1 gene (PADI3, encoding peptidyl arginine deiminase 3) has been thus far associated with CCCA. This study aimed to broaden our understanding of the genetic basis of CCCA by analyzing whole-exome sequences from 75 patients with clinically and histologically confirmed CCCA. We identified 9 pathogenic heterozygous variants in PADI3, including, to our knowledge, 4 previously unreported missense variants, all predicted to disrupt protein function. Functional analyses revealed reduced expression, abnormal intracellular localization, and diminished enzymatic activity in cells transfected with constructs expressing the PADI3 variants. More interestingly, pathogenic variants were identified in 2 additional genes, S100A3 and TCHH, which encode the main substrates of PADI3, S100 calcium-binding protein A3 and trichohyalin. Both proteins play critical roles in hair shaft integrity. The S100A3 variant was found to cause reduced citrullination by PADI3, whereas TCHH variants altered intracellular localization and resulted in significantly reduced expression of the protein. These findings provide further insights into disease mechanisms and may inform future strategies for genetic testing and targeted therapies.",
+      "The use of single-cell RNA sequencing and spatial transcriptomics has recently challenged and refined concepts in the field of wound healing by enabling detailed characterisation of cellular heterogeneity while providing spatial context. Previously used separately, these methods are now increasingly applied together due to the advent of newer platforms, enabling delineation of discrete subpopulations of cutaneous cells, including epidermal basal stem cells, fibroblasts, neutrophils, macrophages, and T cells. Detailed transcriptional profiling of these subpopulations has revealed upregulation of either pro-regenerative or pro-fibrotic pathways. For example, fibroblast heterogeneity significantly influences wound healing outcomes, with Lef1+ and Trps1+ fibroblasts promoting regeneration through Wnt and Hedgehog pathway activation, whereas fibroblasts isolated from scars show upregulation of genes that promote excessive fibroblast activation, such as the YAP mechanotransduction pathway. Despite these insights, clinical translation can be challenging due to platform variability, computational demands, and biological heterogeneity inherent to models of wound healing. Ultimately, integration of multiomic data and public databases such as the Human Skin Atlas is necessary to increase biomarker reliability and mechanistic clarity. As these technologies become more accessible and standardised, they hold great potential for personalised wound care management by enabling molecular risk stratification and targeted therapeutic interventions. This literature review aimed to elucidate the latest advancements in gene expression analysis, with particular focus on the use of scRNA-seq and ST in the context of wound healing. The goal is to summarise previous efforts that contribute to the understanding of the cellular mechanisms of wound healing and reflect on how these insights could influence future therapeutic development."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "41242654",
+      "42192217"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.024
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:16:25.871551+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: -1.6780) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41242654, relevance: -4.8944) ---\nCentral centrifugal cicatricial alopecia (CCCA) is the most common form of primary scarring alopecia in women of African descent, typically characterized by progressive hair loss originating at the vertex of the scalp. Although genetic susceptibility has been implicated in the pathogenesis of CCCA, only 1 gene (PADI3, encoding peptidyl arginine deiminase 3) has been thus far associated with CCCA. This study aimed to broaden our understanding of the genetic basis of CCCA by analyzing whole-exome sequences from 75 patients with clinically and histologically confirmed CCCA. We identified 9 pathogenic heterozygous variants in PADI3, including, to our knowledge, 4 previously unreported missense variants, all predicted to disrupt protein function. Functional analyses revealed reduced expression, abnormal intracellular localization, and diminished enzymatic activity in cells transfected with constructs expressing the PADI3 variants. More interestingly, pathogenic variants were identified in 2 additional genes, S100A3 and TCHH, which encode the main substrates of PADI3, S100 calcium-binding protein A3 and trichohyalin. Both proteins play critical roles in hair shaft integrity. The S100A3 variant was found to cause reduced citrullination by PADI3, whereas TCHH variants altered intracellular localization and resulted in significantly reduced expression of the protein. These findings provide further insights into disease mechanisms and may inform future strategies for genetic testing and targeted therapies.\n\n--- Abstract 3 (PMID: 42192217, relevance: -5.7767) ---\nThe use of single-cell RNA sequencing and spatial transcriptomics has recently challenged and refined concepts in the field of wound healing by enabling detailed characterisation of cellular heterogeneity while providing spatial context. Previously used separately, these methods are now increasingly applied together due to the advent of newer platforms, enabling delineation of discrete subpopulations of cutaneous cells, including epidermal basal stem cells, fibroblasts, neutrophils, macrophages, and T cells. Detailed transcriptional profiling of these subpopulations has revealed upregulation of either pro-regenerative or pro-fibrotic pathways. For example, fibroblast heterogeneity significantly influences wound healing outcomes, with Lef1+ and Trps1+ fibroblasts promoting regeneration through Wnt and Hedgehog pathway activation, whereas fibroblasts isolated from scars show upregulation of genes that promote excessive fibroblast activation, such as the YAP mechanotransduction pathway. Despite these insights, clinical translation can be challenging due to platform variability, computational demands, and biological heterogeneity inherent to models of wound healing. Ultimately, integration of multiomic data and public databases such as the Human Skin Atlas is necessary to increase biomarker reliability and mechanistic clarity. As these technologies become more accessible and standardised, they hold great potential for personalised wound care management by enabling molecular risk stratification and targeted therapeutic interventions. This literature review aimed to elucidate the latest advancements in gene expression analysis, with particular focus on the use of scRNA-seq and ST in the context of wound healing. The goal is to summarise previous efforts that contribute to the understanding of the cellular mechanisms of wound healing and reflect on how these insights could influence future therapeutic development.\n\n\n\n**Question:**\nDoes this androgenetic-alopecia-focused dataset contain sufficient evidence to summarize treatment options for cystic fibrosis? If not, state that the question is outside the dataset's scope rather than answering from general knowledge."
+}

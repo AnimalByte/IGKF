@@ -1,0 +1,166 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.4954,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The androgenetic-alopecia dataset described in the provided literature does not contain sufficient evidence to compare male pattern baldness with frontal fibrosing alopecia. The dataset focuses specifically on androgenetic alopecia (male-pattern baldness) in African populations, examining genetic associations, polygenic scores, and population-specific genetic architecture. It does not mention frontal fibrosing alopecia, nor does it provide any data or analysis comparing the two conditions. Therefore, the comparison is not supported by the given data.",
+  "question_id": "Q120",
+  "question_text": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare male pattern baldness with frontal fibrosing alopecia? Summarize supported overlap, or state that the comparison is not supported.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 102,
+    "prompt_token_count": 1542,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The androgenetic-alopecia dataset described in the provided literature does not contain sufficient evidence to compare male pattern baldness with frontal fibrosing alopecia. The dataset focuses specifically on androgenetic alopecia (male-pattern baldness) in African populations, examining genetic associations, polygenic scores, and population-specific genetic architecture. It does not mention frontal fibrosing alopecia, nor does it provide any data or analysis comparing the two conditions. Therefore, the comparison is not supported by the given data."
+      }
+    ],
+    "created": 1783432690,
+    "id": "cmpl-72f31a09-ffc0-408e-a29c-76117aa321f5",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 102,
+      "prompt_tokens": 1521,
+      "total_tokens": 1623
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.919639587402344,
+      46.36376953125,
+      46.482322692871094,
+      47.24116897583008,
+      48.237449645996094,
+      48.47792434692383,
+      48.98942565917969,
+      49.058658599853516,
+      49.35280227661133,
+      49.53515625,
+      49.54508972167969,
+      49.62354278564453,
+      50.031551361083984,
+      50.30793380737305,
+      50.35748291015625
+    ],
+    "candidate_pmids": [
+      "40134218",
+      "34552771",
+      "42196345",
+      "41996197",
+      "35914715",
+      "41733882",
+      "38123340",
+      "34984527",
+      "41299483",
+      "41805460",
+      "42151883",
+      "35719909",
+      "40063181",
+      "41912056",
+      "35462437"
+    ],
+    "expanded_retrieval_query": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare male pattern baldness with frontal fibrosing alopecia? Summarize supported overlap, or state that the comparison is not supported. No relevant data found in the graph.",
+    "final_context": "Graph Context:\nNo relevant data found in the graph.\n\nVector Context:\n--- Abstract 1 (PMID: 40134218, relevance: 4.4317) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 35914715, relevance: -6.2998) ---\nUnderstanding molecular mechanisms that underpin azoospermia and discovery of biomarkers that could enable reliable, non-invasive diagnosis are highly needed. Using label-free data-independent LC-MS/MS acquisition coupled with ion mobility, we compared the FFPE testicular proteome of patients with obstructive (OA) and non-obstructive azoospermia (NOA) subtypes hypospermatogenesis (Hyp) and Sertoli cell-only syndrome (SCO). Out of 2044 proteins identified based on >/=2 peptides, 61 proteins had the power to quantitatively discriminate OA from NOA and 30 to quantitatively discriminate SCO from Hyp and OA. Among these, H1-6, RANBP1 and TKTL2 showed superior potential for quantitative discrimination among OA, Hyp and SCO. Integrin signaling pathway, adherens junction, planar cell polarity/convergent extension pathway and Dectin-1 mediated noncanonical NF-kB signaling were significantly associated with the proteins that could discriminate OA from NOA. Comparison with 2 transcriptome datasets revealed 278 and 55 co-differentially expressed proteins/genes with statistically significant positive correlation. Gene expression analysis by qPCR of 6 genes (H1-6, RANBP1, TKTL2, TKTL1, H2BC1, and ACTL7B) with the highest discriminatory power on protein level and the same regulation trend with transcriptomic datasets, confirmed the proteomics results. In summary, our results suggest some underlying pathways in azoospermia and broaden the range of potential novel candidates for diagnosis. SIGNIFICANCE: Using a comparative proteomics approach on testicular tissue we have identified several pathways associated with azoospermia and a number of testis-specific and germ cell-specific proteins that have the potential to pinpoint the type of spermatogenesis failure. Furthermore, comparison with transcriptomics datasets based on genome-wide gene expression analyses of human testis specimens from azoospermia patients identified proteins that could discriminate between obstructive and non-obstructive azoospermia subtypes on both protein and mRNA levels. Up to our knowledge, this is the first integrated comparative analysis of proteomics and transcriptomics data from testicular tissues. We believe that the data from our study contributes significantly to increase the knowledge of molecular mechanisms of azoospermia and pave the way for new investigations in regards to non-invasive diagnosis.\n\n--- Abstract 3 (PMID: 41299483, relevance: -7.1113) ---\nBACKGROUND: Angiomatoid fibrous histiocytoma (AFH) is a rare low-grade neoplasm, typically arising in pediatric/adolescent extremity subcutaneous tissues. Adrenal AFH is extremely uncommon, with limited reported cases. Investigating the correlation between clinicopathological features (such as histomorphology and immunophenotype) and molecular findings (including genetic alterations like EWSR1 rearrangements) in adrenal AFH is essential for refining diagnostic accuracy and guiding targeted management strategies. CASE PRESENTATION: Two adrenal AFH cases (18-year-old male, 50-year-old female) from Guangxi Medical University Second Hospital were retrospectively analyzed, focusing on clinical features, histopathology, immunohistochemistry (IHC), fluorescence in situ hybridization (FISH), and follow-up. Case 1: Classic AFH morphology with unique features: diffuse intratumoral lymphoid tissue (with follicles) instead of capsular lymphoid cuffs, and lymphangioma-like cystic spaces (lacking angiomatoid hemorrhage).Case 2: Cystic tumor misdiagnosed as \"adrenal pseudocyst\"; true parenchyma resided in the cyst wall, with nodular lymphoid aggregates (no lymphoid cuff) and erythrocyte/hemosiderin-filled vascular clefts. Marked hyaline fibrosis was noted. Molecular: Both cases showed EWSR1 break-apart (FISH +), negative for EWSR1::CREB1/ATF1 fusions. IHC revealed desmin positivity (both), ALK-D5F3 expression (Case 2). CONCLUSIONS: Atypical-location AFH (e.g., adrenal) exhibits divergent pathologic phenotypes. Diagnosis requires integrated IHC/molecular analysis (e.g., EWSR1 status). Prognostic implications of genetic alterations (e.g., ALK expression) highlight the need for molecular profiling to guide therapy and prognosis.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "rerank_seconds": 0.3527,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "alopecia"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q120.json",
+    "retrieval_total_seconds": 37.2637,
+    "score_max": 4.43166446685791,
+    "score_mean": -2.9931534131368003,
+    "scores": [
+      4.43166446685791,
+      -6.299775123596191,
+      -7.111349582672119
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "Understanding molecular mechanisms that underpin azoospermia and discovery of biomarkers that could enable reliable, non-invasive diagnosis are highly needed. Using label-free data-independent LC-MS/MS acquisition coupled with ion mobility, we compared the FFPE testicular proteome of patients with obstructive (OA) and non-obstructive azoospermia (NOA) subtypes hypospermatogenesis (Hyp) and Sertoli cell-only syndrome (SCO). Out of 2044 proteins identified based on >/=2 peptides, 61 proteins had the power to quantitatively discriminate OA from NOA and 30 to quantitatively discriminate SCO from Hyp and OA. Among these, H1-6, RANBP1 and TKTL2 showed superior potential for quantitative discrimination among OA, Hyp and SCO. Integrin signaling pathway, adherens junction, planar cell polarity/convergent extension pathway and Dectin-1 mediated noncanonical NF-kB signaling were significantly associated with the proteins that could discriminate OA from NOA. Comparison with 2 transcriptome datasets revealed 278 and 55 co-differentially expressed proteins/genes with statistically significant positive correlation. Gene expression analysis by qPCR of 6 genes (H1-6, RANBP1, TKTL2, TKTL1, H2BC1, and ACTL7B) with the highest discriminatory power on protein level and the same regulation trend with transcriptomic datasets, confirmed the proteomics results. In summary, our results suggest some underlying pathways in azoospermia and broaden the range of potential novel candidates for diagnosis. SIGNIFICANCE: Using a comparative proteomics approach on testicular tissue we have identified several pathways associated with azoospermia and a number of testis-specific and germ cell-specific proteins that have the potential to pinpoint the type of spermatogenesis failure. Furthermore, comparison with transcriptomics datasets based on genome-wide gene expression analyses of human testis specimens from azoospermia patients identified proteins that could discriminate between obstructive and non-obstructive azoospermia subtypes on both protein and mRNA levels. Up to our knowledge, this is the first integrated comparative analysis of proteomics and transcriptomics data from testicular tissues. We believe that the data from our study contributes significantly to increase the knowledge of molecular mechanisms of azoospermia and pave the way for new investigations in regards to non-invasive diagnosis.",
+      "BACKGROUND: Angiomatoid fibrous histiocytoma (AFH) is a rare low-grade neoplasm, typically arising in pediatric/adolescent extremity subcutaneous tissues. Adrenal AFH is extremely uncommon, with limited reported cases. Investigating the correlation between clinicopathological features (such as histomorphology and immunophenotype) and molecular findings (including genetic alterations like EWSR1 rearrangements) in adrenal AFH is essential for refining diagnostic accuracy and guiding targeted management strategies. CASE PRESENTATION: Two adrenal AFH cases (18-year-old male, 50-year-old female) from Guangxi Medical University Second Hospital were retrospectively analyzed, focusing on clinical features, histopathology, immunohistochemistry (IHC), fluorescence in situ hybridization (FISH), and follow-up. Case 1: Classic AFH morphology with unique features: diffuse intratumoral lymphoid tissue (with follicles) instead of capsular lymphoid cuffs, and lymphangioma-like cystic spaces (lacking angiomatoid hemorrhage).Case 2: Cystic tumor misdiagnosed as \"adrenal pseudocyst\"; true parenchyma resided in the cyst wall, with nodular lymphoid aggregates (no lymphoid cuff) and erythrocyte/hemosiderin-filled vascular clefts. Marked hyaline fibrosis was noted. Molecular: Both cases showed EWSR1 break-apart (FISH +), negative for EWSR1::CREB1/ATF1 fusions. IHC revealed desmin positivity (both), ALK-D5F3 expression (Case 2). CONCLUSIONS: Atypical-location AFH (e.g., adrenal) exhibits divergent pathologic phenotypes. Diagnosis requires integrated IHC/molecular analysis (e.g., EWSR1 status). Prognostic implications of genetic alterations (e.g., ALK expression) highlight the need for molecular profiling to guide therapy and prognosis."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "35914715",
+      "41299483"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0262
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:58:10.761443+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: 4.4317) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 35914715, relevance: -6.2998) ---\nUnderstanding molecular mechanisms that underpin azoospermia and discovery of biomarkers that could enable reliable, non-invasive diagnosis are highly needed. Using label-free data-independent LC-MS/MS acquisition coupled with ion mobility, we compared the FFPE testicular proteome of patients with obstructive (OA) and non-obstructive azoospermia (NOA) subtypes hypospermatogenesis (Hyp) and Sertoli cell-only syndrome (SCO). Out of 2044 proteins identified based on >/=2 peptides, 61 proteins had the power to quantitatively discriminate OA from NOA and 30 to quantitatively discriminate SCO from Hyp and OA. Among these, H1-6, RANBP1 and TKTL2 showed superior potential for quantitative discrimination among OA, Hyp and SCO. Integrin signaling pathway, adherens junction, planar cell polarity/convergent extension pathway and Dectin-1 mediated noncanonical NF-kB signaling were significantly associated with the proteins that could discriminate OA from NOA. Comparison with 2 transcriptome datasets revealed 278 and 55 co-differentially expressed proteins/genes with statistically significant positive correlation. Gene expression analysis by qPCR of 6 genes (H1-6, RANBP1, TKTL2, TKTL1, H2BC1, and ACTL7B) with the highest discriminatory power on protein level and the same regulation trend with transcriptomic datasets, confirmed the proteomics results. In summary, our results suggest some underlying pathways in azoospermia and broaden the range of potential novel candidates for diagnosis. SIGNIFICANCE: Using a comparative proteomics approach on testicular tissue we have identified several pathways associated with azoospermia and a number of testis-specific and germ cell-specific proteins that have the potential to pinpoint the type of spermatogenesis failure. Furthermore, comparison with transcriptomics datasets based on genome-wide gene expression analyses of human testis specimens from azoospermia patients identified proteins that could discriminate between obstructive and non-obstructive azoospermia subtypes on both protein and mRNA levels. Up to our knowledge, this is the first integrated comparative analysis of proteomics and transcriptomics data from testicular tissues. We believe that the data from our study contributes significantly to increase the knowledge of molecular mechanisms of azoospermia and pave the way for new investigations in regards to non-invasive diagnosis.\n\n--- Abstract 3 (PMID: 41299483, relevance: -7.1113) ---\nBACKGROUND: Angiomatoid fibrous histiocytoma (AFH) is a rare low-grade neoplasm, typically arising in pediatric/adolescent extremity subcutaneous tissues. Adrenal AFH is extremely uncommon, with limited reported cases. Investigating the correlation between clinicopathological features (such as histomorphology and immunophenotype) and molecular findings (including genetic alterations like EWSR1 rearrangements) in adrenal AFH is essential for refining diagnostic accuracy and guiding targeted management strategies. CASE PRESENTATION: Two adrenal AFH cases (18-year-old male, 50-year-old female) from Guangxi Medical University Second Hospital were retrospectively analyzed, focusing on clinical features, histopathology, immunohistochemistry (IHC), fluorescence in situ hybridization (FISH), and follow-up. Case 1: Classic AFH morphology with unique features: diffuse intratumoral lymphoid tissue (with follicles) instead of capsular lymphoid cuffs, and lymphangioma-like cystic spaces (lacking angiomatoid hemorrhage).Case 2: Cystic tumor misdiagnosed as \"adrenal pseudocyst\"; true parenchyma resided in the cyst wall, with nodular lymphoid aggregates (no lymphoid cuff) and erythrocyte/hemosiderin-filled vascular clefts. Marked hyaline fibrosis was noted. Molecular: Both cases showed EWSR1 break-apart (FISH +), negative for EWSR1::CREB1/ATF1 fusions. IHC revealed desmin positivity (both), ALK-D5F3 expression (Case 2). CONCLUSIONS: Atypical-location AFH (e.g., adrenal) exhibits divergent pathologic phenotypes. Diagnosis requires integrated IHC/molecular analysis (e.g., EWSR1 status). Prognostic implications of genetic alterations (e.g., ALK expression) highlight the need for molecular profiling to guide therapy and prognosis.\n\n\n\n**Question:**\nDoes this androgenetic-alopecia dataset contain sufficient evidence to compare male pattern baldness with frontal fibrosing alopecia? Summarize supported overlap, or state that the comparison is not supported."
+}

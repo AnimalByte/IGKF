@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.4151,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Currently, there is no well-established evidence linking the transcription factor **FOXA2** (Forkhead Box A2) to any treatments specifically used or investigated for **hair loss** (androgenetic alopecia or other forms of alopecia). \n\nFOXA2 is primarily known for its role in **embryonic development**, particularly in the **pancreas**, **kidneys**, and **gastrointestinal tract**. It is also involved in **metabolic regulation** and **cell differentiation**. While it has been studied in the context of **developmental biology** and **disease pathogenesis**, its direct involvement in **hair follicle biology** or **hair growth regulation** is not well documented in the literature.\n\nSome research has explored the role of **FOXA2** in **stem cell biology** and **tissue regeneration**, which could, in theory, have implications for regenerative therapies. However, these studies have not specifically targeted hair loss or hair follicle regeneration.\n\nIn summary, **FOXA2 is not currently linked to any treatments for hair loss** based on the available integrated evidence. Research on its role in hair biology is limited and not yet translated into clinical applications.",
+  "question_id": "Q093",
+  "question_text": "Does the integrated evidence link FOXA2 to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 243,
+    "prompt_token_count": 83,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Currently, there is no well-established evidence linking the transcription factor **FOXA2** (Forkhead Box A2) to any treatments specifically used or investigated for **hair loss** (androgenetic alopecia or other forms of alopecia). \n\nFOXA2 is primarily known for its role in **embryonic development**, particularly in the **pancreas**, **kidneys**, and **gastrointestinal tract**. It is also involved in **metabolic regulation** and **cell differentiation**. While it has been studied in the context of **developmental biology** and **disease pathogenesis**, its direct involvement in **hair follicle biology** or **hair growth regulation** is not well documented in the literature.\n\nSome research has explored the role of **FOXA2** in **stem cell biology** and **tissue regeneration**, which could, in theory, have implications for regenerative therapies. However, these studies have not specifically targeted hair loss or hair follicle regeneration.\n\nIn summary, **FOXA2 is not currently linked to any treatments for hair loss** based on the available integrated evidence. Research on its role in hair biology is limited and not yet translated into clinical applications."
+      }
+    ],
+    "created": 1783430450,
+    "id": "cmpl-ef447ac4-3c21-49ab-b280-dcd6b98b0456",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 243,
+      "prompt_tokens": 62,
+      "total_tokens": 305
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:20:50.789487+00:00",
+  "user_prompt": "Does the integrated evidence link FOXA2 to any treatments used or investigated for hair loss? If so, which ones?"
+}

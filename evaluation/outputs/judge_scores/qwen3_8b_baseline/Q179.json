@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q179",
+      "randomization_seed": "20260706:Q179:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q179",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q179",
+      "error": null,
+      "id": "batch_req_6a4d540c7d148190a96c099f83436e9f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452647,
+          "created_at": 1783452607,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c964bbcaafab2ec006a4d53bfa6548195a5dc5808d213fefb",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q179"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c964bbcaafab2ec006a4d53c07a90819589c7a1d7ec6c0a53",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses LHX2, hair loss, biological relevance, druggability, and clinical evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Accurately notes that the supplied graph and abstracts provide no direct support for LHX2 as a hair-loss therapeutic target. However, it may overstate the absence of any biological relevance if considering broader LHX2 hair-follicle literature.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the requested distinctions, but does not discuss possible broader biological evidence for LHX2 in hair-follicle biology.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly appropriately abstains due to insufficient supplied evidence, though some conclusions are phrased more definitively than warranted.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question and separates biological relevance from druggability and clinical evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The claims about LHX2 hair-follicle biology are broadly plausible, but they are not supported by the supplied evidence packet; the lack of druggability and clinical evidence is consistent with the packet.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the major components requested, but lacks specific evidence citations and does not acknowledge that the provided references do not support the biological claims.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Appropriately qualifies therapeutic and clinical translation, but asserts biological evidence not present in the supplied context.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and clearly addresses the question using the supplied graph and abstracts.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the supplied evidence provides no direct LHX2 hair-loss, druggability, or clinical validation data.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Thoroughly distinguishes biological plausibility from druggability and clinical evidence, though it does not discuss broader external literature on LHX2 hair biology.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately limits conclusions to the evidence provided and avoids unsupported therapeutic claims.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question and clearly separates biological relevance, druggability, and clinical evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The description of LHX2 as a hair-follicle stem-cell regulator is scientifically plausible, and the absence of clinical/druggability evidence is appropriate; however, the biological claims are not supported by the supplied evidence packet.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers biological evidence, translational limitations, druggability issues, and lack of clinical validation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Strongly qualifies the lack of therapeutic validation, but presents unsupported biological details as established evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c964bbcaafab2ec006a4d53e1731c8195bb7d333e4908e898",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3730,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 3961,
+            "output_tokens_details": {
+              "reasoning_tokens": 3106
+            },
+            "total_tokens": 7691
+          },
+          "user": null
+        },
+        "request_id": "534087da-3037-493d-8a7f-db656f2d34f9",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question and separates biological relevance from druggability and clinical evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The claims about LHX2 hair-follicle biology are broadly plausible, but they are not supported by the supplied evidence packet; the lack of druggability and clinical evidence is consistent with the packet.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Addresses the major components requested, but lacks specific evidence citations and does not acknowledge that the provided references do not support the biological claims.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies therapeutic and clinical translation, but asserts biological evidence not present in the supplied context.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q179",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q179.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.258028+00:00"
+}

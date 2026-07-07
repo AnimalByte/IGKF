@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q172",
+      "randomization_seed": "20260706:Q172:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q172",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q172",
+      "error": null,
+      "id": "batch_req_6a4d540ba00c8190bbca423ed856684e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452604,
+          "created_at": 1783452588,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0737fdc1632aba0e006a4d53ac48648197b94a8371f4f1d410",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q172"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0737fdc1632aba0e006a4d53acda7c8197bbe6a0694ddf2e7c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the supplied evidence supports Wnt-androgen cross-talk in hair-follicle regulation.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence is not hair-follicle-specific and only supports a general Wnt-AR interaction in prostate cancer.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the lack of direct follicle evidence, identifies the limited indirect AR-Wnt evidence, and specifies what evidence would be needed.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the conclusion and avoids overclaiming beyond the supplied context.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly discusses Wnt-androgen cross-talk in hair follicles and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Provides many follicle-specific claims not supported by the supplied evidence packet, which contains no direct hair-follicle data.\"},\"completeness\":{\"score\":3,\"rationale\":\"Broadly covers plausible mechanisms, but the response is unsupported by the provided evidence and appears truncated.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported follicle-specific conclusions as established evidence despite the lack of relevant supplied data.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses Wnt, androgen signaling, and hair-follicle regulation, but in a generic way.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Many statements are broadly plausible, but the claimed evidence is not supported by the supplied packet and some assertions are vague or overstated.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions key concepts but lacks concrete evidence from the provided context and does not clearly distinguish supported from unsupported claims.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some cautious language but still asserts cross-talk evidence beyond what the supplied context supports.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly states that the provided context does not answer the hair-follicle-specific question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the supplied evidence lacks hair-follicle-specific Wnt-androgen metabolism data.\"},\"completeness\":{\"score\":4,\"rationale\":\"Correctly abstains based on insufficient evidence, though it omits the limited indirect Wnt-AR interaction evidence from prostate cancer.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported conclusions and states that the question cannot be answered from the available data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0737fdc1632aba0e006a4d53b79fac819793b237fdfc6eff4d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3402,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1441,
+            "output_tokens_details": {
+              "reasoning_tokens": 840
+            },
+            "total_tokens": 4843
+          },
+          "user": null
+        },
+        "request_id": "8c433d1e-b8b4-4568-984b-10dfa8b3f6cb",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses Wnt, androgen signaling, and hair-follicle regulation, but in a generic way.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Many statements are broadly plausible, but the claimed evidence is not supported by the supplied packet and some assertions are vague or overstated.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Mentions key concepts but lacks concrete evidence from the provided context and does not clearly distinguish supported from unsupported claims.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Uses some cautious language but still asserts cross-talk evidence beyond what the supplied context supports.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q172",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q172.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.253157+00:00"
+}

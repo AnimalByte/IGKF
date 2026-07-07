@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q083",
+      "randomization_seed": "20260706:Q083:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q083",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q083",
+      "error": null,
+      "id": "batch_req_6a4d52bbb67c8190b2961e8eb13fc090",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452205,
+          "created_at": 1783452193,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05ebb77498c6db20006a4d5221dfd4819faefdd8d0211abc76",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q083"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05ebb77498c6db20006a4d52229590819f82dfabedbe45205a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses the question and names a hair-loss treatment, but the named treatment is unsupported by the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Minoxidil is not mentioned or linked to LGR4 in the reference evidence; this is an unsupported biomedical claim.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides a specific answer but omits the actual supplied context: LGR4 has an androgenetic alopecia association and rosmantuzumab targets RSPO3-LGR4 for colorectal cancer, not hair loss.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"States an unsupported positive link to minoxidil rather than abstaining or qualifying that no hair-loss treatment is evidenced.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses whether LGR4 is linked to hair-loss treatments and gives the broadly correct negative answer.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correct that no specific hair-loss treatment is directly linked to LGR4 in the supplied evidence, though it underplays the provided LGR4 association with androgenetic alopecia.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Does not mention the key evidence details: androgenetic alopecia association and rosmantuzumab as an LGR4-pathway drug for colorectal cancer rather than hair loss.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids inventing hair-loss treatments and frames the absence of direct evidence cautiously.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question and discusses the disease association and drug evidence, but the treatment answer is somewhat indirect.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Accurately notes the androgenetic alopecia association and rosmantuzumab evidence, but overstates by suggesting a link to hair-loss treatments through disease association and speculative therapeutic implications.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main supplied evidence, including androgenetic alopecia and rosmantuzumab, and notes that no hair-loss treatment is explicitly stated.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Includes some qualification, but still speculates beyond the evidence about broader hair-loss therapeutic implications.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question and distinguishes disease association from treatment evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Consistent with the supplied evidence: LGR4 is associated with androgenetic alopecia, but no hair-loss treatment targeting LGR4 is identified; rosmantuzumab is for colorectal cancer.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the relevant disease association, the only LGR4-linked drug, and why it does not count as a hair-loss treatment.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the evidence as limited and indirect and avoids unsupported claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05ebb77498c6db20006a4d52270418819f99f7227036ba62fa",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2963,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1379,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4342
+          },
+          "user": null
+        },
+        "request_id": "12cafa25-90c6-41b8-b272-a1631b925e26",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question and names a hair-loss treatment, but the named treatment is unsupported by the supplied evidence.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Minoxidil is not mentioned or linked to LGR4 in the reference evidence; this is an unsupported biomedical claim.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Provides a specific answer but omits the actual supplied context: LGR4 has an androgenetic alopecia association and rosmantuzumab targets RSPO3-LGR4 for colorectal cancer, not hair loss.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States an unsupported positive link to minoxidil rather than abstaining or qualifying that no hair-loss treatment is evidenced.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q083",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q083.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.168411+00:00"
+}

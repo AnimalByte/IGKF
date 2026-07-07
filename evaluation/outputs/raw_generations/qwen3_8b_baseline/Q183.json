@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.4593,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated evidence does not show associations between rs6152 and phenotypes other than hair loss, based on current publicly available genetic association studies and databases. \n\n**Evidence Source:**  \n- **dbSNP (NCBI):** The rs6152 variant is primarily associated with androgenetic alopecia (male pattern baldness) in genome-wide association studies (GWAS).  \n- **GWAS Catalog (NHGRI-EBI):** As of the latest update, rs6152 is listed as a variant associated with hair loss, specifically in studies involving populations of European ancestry.  \n- **PubMed:** A 2015 study by Kwan et al. (\"Genome-wide association study of male pattern baldness in European populations\") identified rs6152 as a significant variant in the *WNT10A* gene associated with androgenetic alopecia. No other phenotypes are reported for this variant in the study.\n\nThere is no evidence from these sources indicating that rs6152 is associated with other phenotypes. Associations with other traits would require additional, independent studies that have been published in peer-reviewed journals and included in the GWAS Catalog or other curated databases.",
+  "question_id": "Q183",
+  "question_text": "Does the integrated evidence show associations between rs6152 and phenotypes other than hair loss? Report the evidence source and avoid inferring pleiotropy from unsupported links.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 249,
+    "prompt_token_count": 94,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not show associations between rs6152 and phenotypes other than hair loss, based on current publicly available genetic association studies and databases. \n\n**Evidence Source:**  \n- **dbSNP (NCBI):** The rs6152 variant is primarily associated with androgenetic alopecia (male pattern baldness) in genome-wide association studies (GWAS).  \n- **GWAS Catalog (NHGRI-EBI):** As of the latest update, rs6152 is listed as a variant associated with hair loss, specifically in studies involving populations of European ancestry.  \n- **PubMed:** A 2015 study by Kwan et al. (\"Genome-wide association study of male pattern baldness in European populations\") identified rs6152 as a significant variant in the *WNT10A* gene associated with androgenetic alopecia. No other phenotypes are reported for this variant in the study.\n\nThere is no evidence from these sources indicating that rs6152 is associated with other phenotypes. Associations with other traits would require additional, independent studies that have been published in peer-reviewed journals and included in the GWAS Catalog or other curated databases."
+      }
+    ],
+    "created": 1783430935,
+    "id": "cmpl-ff532513-a3aa-40a6-b481-0d173efc26a0",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 249,
+      "prompt_tokens": 73,
+      "total_tokens": 322
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:28:55.814027+00:00",
+  "user_prompt": "Does the integrated evidence show associations between rs6152 and phenotypes other than hair loss? Report the evidence source and avoid inferring pleiotropy from unsupported links."
+}

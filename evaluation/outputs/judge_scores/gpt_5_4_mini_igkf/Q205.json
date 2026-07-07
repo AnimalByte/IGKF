@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q205",
+      "randomization_seed": "20260706:Q205:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q205",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q205",
+      "error": null,
+      "id": "batch_req_6a4d540db0f88190bd684d588ba4aff0",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452602,
+          "created_at": 1783452591,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f5bc352973d7973006a4d53afd66c8190a7c16e7f786cd4c1",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q205"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f5bc352973d7973006a4d53b0b7408190b7c595f761d62103",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the cancer-treatment question is outside an androgenetic-alopecia dataset's scope.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately avoids unsupported biomedical claims and correctly notes lack of relevant cancer-treatment evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the necessary scope limitation and reason without unnecessary detail.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from answering beyond the dataset.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately states that the dataset is insufficient for the requested cancer-treatment summary.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically safe and consistent with the dataset-scope limitation.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point: insufficient evidence and outside scope.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains rather than using general knowledge.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"It gives the desired outside-scope conclusion but adds conflicting and distracting dataset descriptions.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"It contradicts the premise that the dataset is androgenetic-alopecia-focused and introduces unsupported claims about prostate cancer content.\"},\"completeness\":{\"score\":3,\"rationale\":\"Contains the needed abstention but is weakened by unnecessary and likely incorrect details.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Abstains from the cancer-treatment answer, but invents or asserts unsupported dataset content.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":4,\"rationale\":\"It answers that the evidence is insufficient and outside scope, though with irrelevant added context.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The core abstention is correct, but specific claims about graph context and prostate/breast cancer abstracts are unsupported and may conflict with the stated dataset focus.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main conclusion, but includes unnecessary details that reduce clarity.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly abstains appropriately, but adds unsupported specifics about dataset contents.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f5bc352973d7973006a4d53b60e3c8190a0181561603d10e8",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 869,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1028,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1897
+          },
+          "user": null
+        },
+        "request_id": "2060b19d-c191-4b93-8b21-a7c0150bf4bc",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "adbd3fa5e877e855ae073fdcbaec9a4c05dc5068eded1e8784876c4916f10292",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q205",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q205.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q205::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q205::R2",
+      "error": null,
+      "id": "batch_req_6a4d19c332488190b43d6fd631942a2d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437615,
+          "created_at": 1783437610,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03776cc08393aed0006a4d192a415081969840cc9d7dcd21f1",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q205"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03776cc08393aed0006a4d192af39c81968fe521860187489a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is well supported by the supplied context: the graph has no relevant data, and the abstracts concern prostate cancer pharmacogenomics/prognosis and breast cancer genomic/prognostic analysis rather than a treatment-focused evidence base for cancers involving disrupted tumor-suppressor pathways.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the key supplied evidence and correctly declines to answer beyond the dataset scope instead of relying on general knowledge.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03776cc08393aed0006a4d192ddc208196825ef7cca50ad9f2",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1543,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 401,
+            "output_tokens_details": {
+              "reasoning_tokens": 261
+            },
+            "total_tokens": 1944
+          },
+          "user": null
+        },
+        "request_id": "8e493c2a-d29d-4d74-81c4-5f136ab37214",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It answers that the evidence is insufficient and outside scope, though with irrelevant added context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The core abstention is correct, but specific claims about graph context and prostate/breast cancer abstracts are unsupported and may conflict with the stated dataset focus.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers the main conclusion, but includes unnecessary details that reduce clarity.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is well supported by the supplied context: the graph has no relevant data, and the abstracts concern prostate cancer pharmacogenomics/prognosis and breast cancer genomic/prognostic analysis rather than a treatment-focused evidence base for cancers involving disrupted tumor-suppressor pathways.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key supplied evidence and correctly declines to answer beyond the dataset scope instead of relying on general knowledge.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Mostly abstains appropriately, but adds unsupported specifics about dataset contents.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q205",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.384248+00:00"
+}

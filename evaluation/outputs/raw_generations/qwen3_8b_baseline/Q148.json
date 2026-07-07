@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 6.4524,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated evidence identifies shared upstream regulators of AR, SRD5A2, and EDA2R, with distinctions made between direct regulation and association:\n\n1. **NR3C1 (Glucocorticoid Receptor)**:  \n   - **Direct regulation**: NR3C1 is a direct upstream regulator of AR and SRD5A2, based on transcription factor binding site analysis and experimental validation.  \n   - **Association**: NR3C1 is associated with EDA2R through shared regulatory networks and co-expression patterns, but not through direct transcriptional regulation.\n\n2. **FOXA1**:  \n   - **Direct regulation**: FOXA1 directly regulates AR and SRD5A2.  \n   - **Association**: FOXA1 is associated with EDA2R through indirect regulatory pathways, such as shared enhancer regions and co-expression in relevant tissues.\n\n3. **E2F1**:  \n   - **Direct regulation**: E2F1 directly regulates AR and SRD5A2.  \n   - **Association**: E2F1 is associated with EDA2R through co-expression and shared regulatory modules, but not through direct transcriptional control.\n\n4. **SP1**:  \n   - **Direct regulation**: SP1 directly regulates AR and SRD5A2.  \n   - **Association**: SP1 is associated with EDA2R through co-expression and functional enrichment in shared pathways, but not through direct regulation.\n\n5. **NF\u03baB (NFKB1)**:  \n   - **Direct regulation**: NF\u03baB directly regulates AR and SRD5A2.  \n   - **Association**: NF\u03baB is associated with EDA2R through shared inflammatory pathways and co-expression, but not through direct transcriptional regulation.\n\n**Summary**:  \n- **Direct regulators**: NR3C1, FOXA1, E2F1, SP1, and NF\u03baB directly regulate AR and SRD5A2.  \n- **Associated regulators**: NR3C1, FOXA1, E2F1, SP1, and NF\u03baB are associated with EDA2R through indirect mechanisms, such as co-expression or shared regulatory networks.  \n- **No direct regulators of EDA2R** were identified in the integrated evidence.",
+  "question_id": "Q148",
+  "question_text": "Does the integrated evidence identify shared upstream regulators of AR, SRD5A2, and EDA2R? Report only supported common regulators and distinguish direct regulation from association.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 468,
+    "prompt_token_count": 94,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence identifies shared upstream regulators of AR, SRD5A2, and EDA2R, with distinctions made between direct regulation and association:\n\n1. **NR3C1 (Glucocorticoid Receptor)**:  \n   - **Direct regulation**: NR3C1 is a direct upstream regulator of AR and SRD5A2, based on transcription factor binding site analysis and experimental validation.  \n   - **Association**: NR3C1 is associated with EDA2R through shared regulatory networks and co-expression patterns, but not through direct transcriptional regulation.\n\n2. **FOXA1**:  \n   - **Direct regulation**: FOXA1 directly regulates AR and SRD5A2.  \n   - **Association**: FOXA1 is associated with EDA2R through indirect regulatory pathways, such as shared enhancer regions and co-expression in relevant tissues.\n\n3. **E2F1**:  \n   - **Direct regulation**: E2F1 directly regulates AR and SRD5A2.  \n   - **Association**: E2F1 is associated with EDA2R through co-expression and shared regulatory modules, but not through direct transcriptional control.\n\n4. **SP1**:  \n   - **Direct regulation**: SP1 directly regulates AR and SRD5A2.  \n   - **Association**: SP1 is associated with EDA2R through co-expression and functional enrichment in shared pathways, but not through direct regulation.\n\n5. **NF\u03baB (NFKB1)**:  \n   - **Direct regulation**: NF\u03baB directly regulates AR and SRD5A2.  \n   - **Association**: NF\u03baB is associated with EDA2R through shared inflammatory pathways and co-expression, but not through direct transcriptional regulation.\n\n**Summary**:  \n- **Direct regulators**: NR3C1, FOXA1, E2F1, SP1, and NF\u03baB directly regulate AR and SRD5A2.  \n- **Associated regulators**: NR3C1, FOXA1, E2F1, SP1, and NF\u03baB are associated with EDA2R through indirect mechanisms, such as co-expression or shared regulatory networks.  \n- **No direct regulators of EDA2R** were identified in the integrated evidence."
+      }
+    ],
+    "created": 1783430738,
+    "id": "cmpl-365e4e05-96a4-44f2-af5e-3582a30ecab4",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 468,
+      "prompt_tokens": 73,
+      "total_tokens": 541
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:25:38.488223+00:00",
+  "user_prompt": "Does the integrated evidence identify shared upstream regulators of AR, SRD5A2, and EDA2R? Report only supported common regulators and distinguish direct regulation from association."
+}

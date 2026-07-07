@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q136",
+      "randomization_seed": "20260706:Q136:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q136",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q136",
+      "error": null,
+      "id": "batch_req_6a4d5409303481909e6d866f7eeef60d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452569,
+          "created_at": 1783452558,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c19b54db1f371c6006a4d538e9bfc81948924e29ac02d8f66",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q136"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c19b54db1f371c6006a4d538f353c819491b0b7c3f066350f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses both Wnt signaling and androgen metabolism.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Claims unsupported EDA2R links to Wnt/beta-catenin, androgen receptor signaling, and SRD5A2 that are absent from the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Mentions both requested domains but fails to distinguish supported from unsupported links and omits the supported TNF/NF-kappaB context.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Overstates unsupported conclusions rather than abstaining where evidence is absent.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether EDA2R is connected to Wnt signaling and androgen metabolism.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence supports EDA2R in TNF receptor/NF-kappaB signaling but not Wnt signaling or androgen metabolism.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the supported EDA2R links and explicitly states the absence of Wnt and androgen-metabolism evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inferring unsupported mechanisms and clearly qualifies absent connections.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses both requested domains, but gives an incorrect conclusion for Wnt signaling.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correctly notes lack of androgen-metabolism support, but incorrectly says EDA2R-Wnt signaling is supported by the integrated evidence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Partially complete because it covers both categories, but omits the supported TNF receptor/NF-kappaB evidence and lacks detail.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Shows some caution for androgen metabolism but asserts an unsupported Wnt connection.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested EDA2R connections to Wnt signaling and androgen metabolism.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that EDA2R is supported in TNF receptor-related signaling and that no direct Wnt or androgen-metabolism link is established in the evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers both absent connections and mentions TNF receptor signaling, though with less detail than ideal about NF-kappaB/phenotype context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately refrains from inferring unsupported Wnt or androgen-metabolism connections.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c19b54db1f371c6006a4d5394b6d08194b71175083a54d37f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2852,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1122,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3974
+          },
+          "user": null
+        },
+        "request_id": "9fe78731-7e69-451b-b529-e9191a4ac77b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "134646dac171a3fe33af5739cebd16dfe105e8c47b0cd18ef0afda5249d61529",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q136",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q136.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q136::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q136::R2",
+      "error": null,
+      "id": "batch_req_6a4d19ba91cc819081855678923a6c32",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437453,
+          "created_at": 1783437444,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00ffb58de47705ef006a4d188491f481949ed063288ca31525",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q136"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00ffb58de47705ef006a4d188525688194aded465ed696d2f9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately reflects that EDA2R is supported for TNF receptor/NF-kappaB-related signaling and that the supplied context does not directly link EDA2R to Wnt signaling or androgen metabolism.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"It appropriately uses the graph annotations and relevant abstract evidence, distinguishes general tooth agenesis/Wnt context from EDA2R-specific evidence, and correctly identifies absent androgen metabolism support.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00ffb58de47705ef006a4d188bc40c8194b12d5901608f4bd4",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2017,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 656,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2673
+          },
+          "user": null
+        },
+        "request_id": "0d5dca5e-d622-4691-9213-0c402741e239",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether EDA2R is connected to Wnt signaling and androgen metabolism.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided evidence supports EDA2R in TNF receptor/NF-kappaB signaling but not Wnt signaling or androgen metabolism.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the supported EDA2R links and explicitly states the absence of Wnt and androgen-metabolism evidence.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately reflects that EDA2R is supported for TNF receptor/NF-kappaB-related signaling and that the supplied context does not directly link EDA2R to Wnt signaling or androgen metabolism.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "It appropriately uses the graph annotations and relevant abstract evidence, distinguishes general tooth agenesis/Wnt context from EDA2R-specific evidence, and correctly identifies absent androgen metabolism support.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inferring unsupported mechanisms and clearly qualifies absent connections.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q136",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q136.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.340734+00:00"
+}

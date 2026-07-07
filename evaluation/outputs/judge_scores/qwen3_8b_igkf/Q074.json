@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q074",
+      "randomization_seed": "20260706:Q074:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q074",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q074",
+      "error": null,
+      "id": "batch_req_6a4d52bb61588190a25594439c6e3a09",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452176,
+          "created_at": 1783452165,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b994f9e3758a1a9006a4d5205f3a081a3b7b788afc5f9e1f0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q074"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b994f9e3758a1a9006a4d5206929081a39dd485b60d13f7eb",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses pathways involving WNT10A, but does not answer the integrated graph pathway field specifically.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the two graph-listed pathways and instead presents multiple literature-associated or inferred pathways as if they include WNT10A in the graph.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Fails to include the required graph pathways: Class B/2 (Secretin family receptors) and WNT ligand biogenesis and trafficking.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"States unsupported conclusions confidently without distinguishing graph evidence from broader biological context.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Partially addresses WNT10A-associated pathways but does not use the provided integrated graph information.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"The general Wnt-related associations are plausible, but the answer incorrectly says the graph is unavailable and omits the graph-listed pathways.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Does not provide either of the pathways specified in the graph context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Appropriately qualifies its speculative pathway list, but abstains unnecessarily despite the graph evidence being provided.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers which integrated graph pathways include WNT10A.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly lists the two pathways from the graph context and accurately distinguishes broader literature context.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes both graph-listed pathways without adding unsupported graph claims.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly qualifies that canonical Wnt/beta-catenin signaling is contextual rather than a listed graph pathway.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Discusses how to find WNT10A pathways generally but does not answer the specific integrated graph question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the graph-listed pathways and provides unsupported pathway and identifier claims not present in the reference evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Does not include the necessary graph pathways.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Includes some caveats about database dependence, but still supplies unsupported specific pathway claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b994f9e3758a1a9006a4d520b156081a39d1d17282fe316de",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3174,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1168,
+            "output_tokens_details": {
+              "reasoning_tokens": 432
+            },
+            "total_tokens": 4342
+          },
+          "user": null
+        },
+        "request_id": "d2974c60-2469-4f2a-b613-ae04a2155d33",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "171cf00bd6114444f2b7f5cdc8ed577b85f025f7fc38ef2e6c4543e1b2314708",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q074",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q074.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q074::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q074::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b2a31c8190980e9ed66188729c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437677,
+          "created_at": 1783437669,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04564b382de0d48f006a4d196527b0819690d4422113df902c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q074"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04564b382de0d48f006a4d1965bfcc8196849339ba88410359",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 2,\n    \"rationale\": \"The integrated graph explicitly lists WNT10A pathways as Class B/2 (Secretin family receptors) and WNT ligand biogenesis and trafficking. The answer omits these and instead lists mostly literature-mentioned signaling pathways, many not shown as graph pathways including WNT10A.\"\n  },\n  \"context_utilization\": {\n    \"score\": 2,\n    \"rationale\": \"It uses some relevant vector-context mentions such as Wnt/beta-catenin, BMP, VEGF, FGF, and SHH, but largely ignores the key graph evidence directly answering the question.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04564b382de0d48f006a4d196c1e588196902d6e09f77c699b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2168,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 675,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2843
+          },
+          "user": null
+        },
+        "request_id": "46a81b99-2267-4cd3-aac9-bb4ea07a1706",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses pathways involving WNT10A, but does not answer the integrated graph pathway field specifically.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Omits the two graph-listed pathways and instead presents multiple literature-associated or inferred pathways as if they include WNT10A in the graph.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Fails to include the required graph pathways: Class B/2 (Secretin family receptors) and WNT ligand biogenesis and trafficking.",
+      "score": 1.0
+    },
+    "context_groundedness": {
+      "rationale": "The integrated graph explicitly lists WNT10A pathways as Class B/2 (Secretin family receptors) and WNT ligand biogenesis and trafficking. The answer omits these and instead lists mostly literature-mentioned signaling pathways, many not shown as graph pathways including WNT10A.",
+      "score": 2.0
+    },
+    "context_utilization": {
+      "rationale": "It uses some relevant vector-context mentions such as Wnt/beta-catenin, BMP, VEGF, FGF, and SHH, but largely ignores the key graph evidence directly answering the question.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States unsupported conclusions confidently without distinguishing graph evidence from broader biological context.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q074",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q074.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.297106+00:00"
+}

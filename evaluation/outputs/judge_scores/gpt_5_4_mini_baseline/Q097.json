@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q097",
+      "randomization_seed": "20260706:Q097:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q097",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q097",
+      "error": null,
+      "id": "batch_req_6a4d52bc7c608190a8bdbc2d97060f40",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452249,
+          "created_at": 1783452238,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_082ff6c8ed09b59f006a4d524eeb8c819d84ea5d210ecd2097",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q097"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_082ff6c8ed09b59f006a4d524f7458819d97b11b20b31107ae",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether high-impact variants are mapped to LHX2.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the provided evidence, which does not mention LHX2 or any LHX2-mapped high-impact variants.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the conclusion and briefly explains the absence of supporting evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the provided context and does not invent variants.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the need to identify LHX2 high-impact variants but does not answer using the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Does not make incorrect biomedical claims, but misses that the provided context contains no LHX2 evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not state whether any variants are present or absent in the given context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing unsupported variant information.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Generally addresses the question but does not provide an answer from the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"No clear biomedical errors, but it overlooks that the provided evidence supports no LHX2-mapped high-impact variants being identified.\"},\"completeness\":{\"score\":2,\"rationale\":\"Fails to provide the requested variants or a context-based absence statement.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids making unsupported claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether LHX2 high-impact variants are present in the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that LHX2 and related high-impact variants are not mentioned in the evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Gives the key conclusion with an appropriate caveat about the available data.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies the conclusion and avoids unsupported specificity.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_082ff6c8ed09b59f006a4d52557a28819db7d9d6e9a177acd5",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2406,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1027,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3433
+          },
+          "user": null
+        },
+        "request_id": "b74c2dff-4f08-4a60-b4ac-212d9a0a472f",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the need to identify LHX2 high-impact variants but does not answer using the supplied evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Does not make incorrect biomedical claims, but misses that the provided context contains no LHX2 evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Does not state whether any variants are present or absent in the given context.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inventing unsupported variant information.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q097",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q097.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.177826+00:00"
+}

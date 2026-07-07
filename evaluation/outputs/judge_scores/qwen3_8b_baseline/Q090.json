@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q090",
+      "randomization_seed": "20260706:Q090:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q090",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q090",
+      "error": null,
+      "id": "batch_req_6a4d52bc23c48190b0774629410b2ef7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452229,
+          "created_at": 1783452218,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e9c9f0a24bf4c9a006a4d5239fa88819d8d62f9f9ef0eda2c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q090"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e9c9f0a24bf4c9a006a4d523a7ebc819db27015ab4b0f6edb",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question and appropriately concludes that the supplied context does not support a role for FOXA2 in hair follicles.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The overall abstention is consistent with the evidence, but it incorrectly states that the graph concerns FOXP4-AS1 rather than FOXA2.\"},\"completeness\":{\"score\":3,\"rationale\":\"Captures the key lack of hair-follicle evidence, but misdescribes part of the provided graph context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids making unsupported claims about FOXA2 function in hair-follicle biology.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly discusses FOXA2 in hair-follicle biology and cycling.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Claims roles in stem-cell niche maintenance, anagen/catagen transitions, Wnt/Hedgehog interactions, and follicular metabolism that are not supported by the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides a broad answer, but the key evidence-based conclusion should be that the supplied context does not establish FOXA2 hair-follicle function.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents unsupported functional conclusions despite insufficient evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question in the context of the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph gives FOXA2 interaction partners but no hair-follicle-specific evidence, and that the abstracts are not about FOXA2 hair biology.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the available graph and abstract evidence and gives a clear evidence-based conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly qualifies uncertainty and avoids overstating any FOXA2 role in hair-follicle cycling.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses FOXA2 and hair-follicle biology/cycling.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The cautious conclusion that FOXA2 is not well established as a hair-cycle regulator is compatible with the evidence, but several claims about expression and possible epithelial roles are unsupported by the supplied context.\"},\"completeness\":{\"score\":3,\"rationale\":\"Gives a plausible general summary but does not explicitly ground the answer in the provided evidence, which contains no direct hair-follicle information.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly qualifies uncertainty, though it still introduces unsupported details about reported expression and contextual roles.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e9c9f0a24bf4c9a006a4d5240e364819daa1b905b4db009b9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3165,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1146,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4311
+          },
+          "user": null
+        },
+        "request_id": "af6c5550-c943-4453-854a-fd161751d16f",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly discusses FOXA2 in hair-follicle biology and cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Claims roles in stem-cell niche maintenance, anagen/catagen transitions, Wnt/Hedgehog interactions, and follicular metabolism that are not supported by the supplied evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Provides a broad answer, but the key evidence-based conclusion should be that the supplied context does not establish FOXA2 hair-follicle function.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Invents unsupported functional conclusions despite insufficient evidence.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q090",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q090.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.173492+00:00"
+}

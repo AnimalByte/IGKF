@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q026",
+      "randomization_seed": "20260706:Q026:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q026",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q026",
+      "error": null,
+      "id": "batch_req_6a4d52b94fc88190a8b033988d6802c5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452210,
+          "created_at": 1783452193,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ec423f911a3dd7e006a4d52217860819294ae4b9a89db53a3",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q026"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ec423f911a3dd7e006a4d52220cf88192960e54004bc1e059",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses whether rs1160312 may overlap regulatory elements, but does not answer using the supplied integrated data.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Introduces unsupported and likely incorrect claims that rs1160312 is in TERT on chromosome 5, whereas the supplied graph implicates LINC01432 and provides no regulatory annotation.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not provide a determination from the given evidence and adds irrelevant external workflow details.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Partly qualifies uncertainty, but also invents unsupported genomic annotations.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the provided integrated data support a regulatory element assignment.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the supplied context lists rs1160312 as a variant implicated in LINC01432 but provides no regulatory element annotation.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key evidence present and explains why the regulatory element cannot be determined.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from making an unsupported claim.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that the provided data are insufficient to identify a regulatory element.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Consistent with the supplied graph and abstracts, which do not mention a regulatory element for rs1160312.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes the relevant graph details and notes that the abstracts do not mention rs1160312 or regulatory overlap.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly qualifies the conclusion and avoids unsupported inference.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the yes/no question and names a regulatory element type.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"The claim that rs1160312 is within an enhancer is unsupported by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides a terse answer, but omits the key limitation that no regulatory annotation is present in the evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Invents a specific regulatory element despite insufficient evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ec423f911a3dd7e006a4d5227d0888192af53abb1ff365212",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2711,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1247,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3958
+          },
+          "user": null
+        },
+        "request_id": "213967db-8ef7-45e1-be2b-1450b1f4c9d1",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "5fa6b91ce85f8348e57ddc02dc85cac9ed808ca1e0de54d859ccf92eb2af2970",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q026",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q026.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q026::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q026::R2",
+      "error": null,
+      "id": "batch_req_6a4d19ac651c8190bb883f4b5d05481c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437570,
+          "created_at": 1783437566,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f0df4ca0e7e05ad006a4d18fe590c8193bc8a668d0d527f1e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q026"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f0df4ca0e7e05ad006a4d18fee48c8193aeafc844655bddd1",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately states that the supplied graph context lists rs1160312 as a variant implicated in LINC01432 with disease associations, but provides no regulatory element annotation, and the abstracts do not mention rs1160312.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the relevant graph evidence and recognizes that the vector abstracts are not informative for this specific variant.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f0df4ca0e7e05ad006a4d190189e08193b1ea3b75c7eda80f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1861,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 370,
+            "output_tokens_details": {
+              "reasoning_tokens": 241
+            },
+            "total_tokens": 2231
+          },
+          "user": null
+        },
+        "request_id": "f7b99f1f-f33c-4e81-91da-6372ce1adc6c",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether the provided integrated data support a regulatory element assignment.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the supplied context lists rs1160312 as a variant implicated in LINC01432 but provides no regulatory element annotation.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key evidence present and explains why the regulatory element cannot be determined.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that the supplied graph context lists rs1160312 as a variant implicated in LINC01432 with disease associations, but provides no regulatory element annotation, and the abstracts do not mention rs1160312.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the relevant graph evidence and recognizes that the vector abstracts are not informative for this specific variant.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from making an unsupported claim.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q026",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q026.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.268021+00:00"
+}

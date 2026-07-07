@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q105",
+      "randomization_seed": "20260706:Q105:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q105",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q105",
+      "error": null,
+      "id": "batch_req_6a4d54075d148190a5efdc0ca585fd20",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452670,
+          "created_at": 1783452649,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d2046d7237506bc006a4d53e9e3d88195aa3733124ee18eb8",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q105"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d2046d7237506bc006a4d53eaa31881958821510e77e3840d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the graph-based question and notes that no gene-to-pathway connections can be verified from the graph.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that SRD5A2 is literature-supported for androgen metabolism while clearly separating that from the absent graph evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers both the lack of graph evidence and the relevant literature context without overstating the graph result.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from claiming a graph connection and qualifies the SRD5A2 point as literature-based.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the androgen metabolism gene question, but shifts from the integrated graph to vector-context inference.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"SRD5A2 is correctly described biologically, but the conclusion implies a connected gene despite the graph having no relevant data.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Mentions the lack of graph data and identifies SRD5A2, but does not clearly conclude that no graph-verified genes are available.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Some qualification is present, but it ultimately asserts SRD5A2 as the answer despite insufficient graph evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Partially addresses the question by saying the genes cannot be identified, but does not use the supplied graph context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Contains no biomedical inaccuracies and appropriately avoids unsupported gene claims.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits the key available finding that the graph contains no relevant data.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Abstains from unsupported conclusions, though it could have more specifically tied the uncertainty to the empty graph evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Partially addresses the task by requesting the graph or study information, but does not answer using the provided evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Makes no incorrect biomedical claims and avoids inventing gene-pathway connections.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Fails to state the important supplied result that no relevant graph data were found.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately abstains rather than fabricating an answer, but the abstention is generic rather than evidence-specific.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d2046d7237506bc006a4d53f8c3708195a6f8eee97616456d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2197,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2215,
+            "output_tokens_details": {
+              "reasoning_tokens": 1442
+            },
+            "total_tokens": 4412
+          },
+          "user": null
+        },
+        "request_id": "3a7885de-9c39-4983-8023-55de604b35bc",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partially addresses the task by requesting the graph or study information, but does not answer using the provided evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Makes no incorrect biomedical claims and avoids inventing gene-pathway connections.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Fails to state the important supplied result that no relevant graph data were found.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than fabricating an answer, but the abstention is generic rather than evidence-specific.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q105",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q105.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.206020+00:00"
+}

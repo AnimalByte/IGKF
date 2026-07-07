@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q050",
+      "randomization_seed": "20260706:Q050:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q050",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q050",
+      "error": null,
+      "id": "batch_req_6a4d52ba81f08190b185a2fe1b2e3c3c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452216,
+          "created_at": 1783452189,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05d7a710f19b292b006a4d521d779481a1b4a681202b5ef8fc",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q050"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05d7a710f19b292b006a4d521e195081a1b9cf3d3a757c4ecc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the supplied evidence supports AR function in hair-follicle biology or cycling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the provided packet, which contains no direct hair-follicle or hair-cycle evidence for AR.\"},\"completeness\":{\"score\":4,\"rationale\":\"Appropriately abstains based on missing evidence, though it could have briefly noted the broader supported AR skin/nuclear-receptor context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies the conclusion as based on the available information and avoids unsupported mechanistic claims.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly discusses AR in hair follicles, cycling, and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Many statements are broadly plausible biomedical knowledge, but they are not supported by the supplied evidence; some details such as stem-cell regulation and therapeutic framing are overextended relative to the packet.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers many possible hair-follicle mechanisms, but omits the key limitation that the provided evidence does not establish these claims.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported hair-follicle-specific conclusions confidently without acknowledging insufficient evidence in the packet.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses AR roles in hair-follicle biology, cycling, and site-dependent androgen responses.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The content is generally biologically plausible, but the supplied evidence does not support the hair-follicle-specific mechanisms or downstream mediators described.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides substantial mechanistic coverage, but the answer is unsupported by the packet and appears truncated; it also fails to state that direct evidence is absent.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Includes some qualifications such as context dependence and incomplete mechanisms, but still asserts many unsupported details.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question in relation to the supplied evidence and hair-follicle cycling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately summarizes supported AR roles from the packet and correctly states that no direct hair-follicle-specific evidence is provided.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the relevant supported background while clearly distinguishing it from the absent hair-follicle/cycling evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making direct mechanistic claims and clearly qualifies plausibility versus evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05d7a710f19b292b006a4d5233256881a1801b4a00129bd45f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4170,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2778,
+            "output_tokens_details": {
+              "reasoning_tokens": 2155
+            },
+            "total_tokens": 6948
+          },
+          "user": null
+        },
+        "request_id": "c9cb1f8a-c23d-4564-b52b-66ee09d3bb25",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "d922653aaedf03b3b415bd4127631c4ecf85533c16fc018c80da42e8f202450c",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q050",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q050.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q050::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q050::R2",
+      "error": null,
+      "id": "batch_req_6a4d19af88a48190bce84aec36f965f0",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437490,
+          "created_at": 1783437481,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b93646607386266006a4d18a95da88194b5917911414a84d5",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q050"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b93646607386266006a4d18a9ddd881948326ef95df316029",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"Most claims are supported by the supplied graph, especially AR links to nuclear receptor transcription, abnormal skin physiology, androgen-related diseases, and drug targeting. The answer correctly states there is no direct hair-follicle or cycling evidence. Minor overreach appears in extrapolating to androgen-responsive skin appendage biology and ligand-activated regulation beyond the explicit context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the relevant graph evidence and does not overuse the largely irrelevant abstracts. It correctly centers the absence of hair-follicle-specific evidence while summarizing the available AR-related context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b93646607386266006a4d18b109f081948d05ca87fdc633bc",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2500,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 689,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3189
+          },
+          "user": null
+        },
+        "request_id": "1300aa47-a258-452c-8eca-0ff200913a54",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question in relation to the supplied evidence and hair-follicle cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately summarizes supported AR roles from the packet and correctly states that no direct hair-follicle-specific evidence is provided.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the relevant supported background while clearly distinguishing it from the absent hair-follicle/cycling evidence.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "Most claims are supported by the supplied graph, especially AR links to nuclear receptor transcription, abnormal skin physiology, androgen-related diseases, and drug targeting. The answer correctly states there is no direct hair-follicle or cycling evidence. Minor overreach appears in extrapolating to androgen-responsive skin appendage biology and ligand-activated regulation beyond the explicit context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the relevant graph evidence and does not overuse the largely irrelevant abstracts. It correctly centers the absence of hair-follicle-specific evidence while summarizing the available AR-related context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from making direct mechanistic claims and clearly qualifies plausibility versus evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q050",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q050.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.282852+00:00"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q188",
+      "randomization_seed": "20260706:Q188:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q188",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q188",
+      "error": null,
+      "id": "batch_req_6a4d540c7b68819089a24e4821a9a770",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452646,
+          "created_at": 1783452631,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b9847fc83c3265d006a4d53d709e88194a664e11cd8b84412",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q188"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b9847fc83c3265d006a4d53d7a1bc8194bbc46eff3b8d22fd",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the requested distinction between direct LHX2 evidence and broader pathway context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly notes lack of direct LHX2 downstream evidence in the supplied context and identifies Wnt as hair-follicle relevant, but over-includes Hippo-YAP and Hedgehog as potentially relevant despite weak/no hair-follicle/LHX2 support here.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main supported conclusion, though it gives unnecessary emphasis to unrelated abstracts.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately qualifies the lack of direct LHX2 evidence, with minor overstatement of pathway relevance.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"It attempts to answer the question directly and separates direct evidence from association.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Invents multiple direct LHX2 downstream pathways and experimental details not supported by the provided evidence packet.\"},\"completeness\":{\"score\":2,\"rationale\":\"Although broad, it does not accurately reflect the supplied evidence and appears incomplete at the end.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported claims as established direct experimental evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and clearly separates direct LHX2 evidence from hair-follicle pathway association.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied context lacks direct LHX2 downstream hair-follicle pathway evidence and that Wnt/anagen/HFSC proliferation are only indirect hair-follicle associations.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the graph evidence, the Wnt-associated hair-follicle processes, and correctly excludes unsupported Hippo-YAP and Hedgehog links.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming direct LHX2 mechanisms where the evidence is insufficient.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the requested categories of direct evidence and pathway associations.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Lists many LHX2 downstream processes and pathways as experimentally supported despite absence of such evidence in the supplied packet.\"},\"completeness\":{\"score\":3,\"rationale\":\"Structurally complete but not complete relative to the actual evidence because it omits the key conclusion that direct supplied evidence is insufficient.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes some caveats but largely overstates unsupported LHX2-specific conclusions.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b9847fc83c3265d006a4d53e159dc8194bca4c4a845fb8f6b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4262,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1410,
+            "output_tokens_details": {
+              "reasoning_tokens": 802
+            },
+            "total_tokens": 5672
+          },
+          "user": null
+        },
+        "request_id": "80420dec-4f6c-4968-9af2-0c298e18d957",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "757f54680216890ccae47d60502f6436cdeeacbd294b24f753ea2d6513b45a2d",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q188",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q188.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q188::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q188::R1",
+      "error": null,
+      "id": "batch_req_6a4d19c11f4c81909344b46acb9a8e2b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437539,
+          "created_at": 1783437531,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d6aebba517c250a006a4d18db53e081938b570efea94e6d65",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q188"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d6aebba517c250a006a4d18dbcd788193a37035ee1e683dfe",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 3,\n    \"rationale\": \"The answer is grounded in stating that the supplied context does not directly link LHX2 to downstream hair-follicle pathways. The Wnt/miR-221-3p/DKK2 hair-growth association is supported by Abstract 1. However, presenting Hippo-YAP and Hedgehog as relevant to hair-follicle biology is weakly supported or unsupported by the supplied context, and none are shown downstream of LHX2.\"\n  },\n  \"context_utilization\": {\n    \"score\": 3,\n    \"rationale\": \"The answer uses some vector-context evidence, especially the Wnt hair-follicle abstract, and correctly distinguishes lack of direct LHX2 evidence. It underuses the graph context and includes less relevant Hippo-YAP and Hedgehog material rather than focusing tightly on pathways downstream of LHX2 versus unrelated pathway associations.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d6aebba517c250a006a4d18e28e5881938f5fdaf11c576d41",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1836,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 732,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2568
+          },
+          "user": null
+        },
+        "request_id": "95409957-1ab4-42bc-ae55-9bf459327de7",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the requested distinction between direct LHX2 evidence and broader pathway context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes lack of direct LHX2 downstream evidence in the supplied context and identifies Wnt as hair-follicle relevant, but over-includes Hippo-YAP and Hedgehog as potentially relevant despite weak/no hair-follicle/LHX2 support here.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the main supported conclusion, though it gives unnecessary emphasis to unrelated abstracts.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is grounded in stating that the supplied context does not directly link LHX2 to downstream hair-follicle pathways. The Wnt/miR-221-3p/DKK2 hair-growth association is supported by Abstract 1. However, presenting Hippo-YAP and Hedgehog as relevant to hair-follicle biology is weakly supported or unsupported by the supplied context, and none are shown downstream of LHX2.",
+      "score": 3.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses some vector-context evidence, especially the Wnt hair-follicle abstract, and correctly distinguishes lack of direct LHX2 evidence. It underuses the graph context and includes less relevant Hippo-YAP and Hedgehog material rather than focusing tightly on pathways downstream of LHX2 versus unrelated pathway associations.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the lack of direct LHX2 evidence, with minor overstatement of pathway relevance.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q188",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q188.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.373365+00:00"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q053",
+      "randomization_seed": "20260706:Q053:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q053",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q053",
+      "error": null,
+      "id": "batch_req_6a4d52ba7f70819097762a29ad7db813",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452247,
+          "created_at": 1783452201,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_084235c4325d1160006a4d522919c48192895f1dfc988f3438",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q053"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_084235c4325d1160006a4d522a74408192b374577d8cf739bc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether AR is linked to hair-loss treatments and lists candidate treatments.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Many listed treatments are broadly relevant to androgenetic alopecia, but they are not supported by the supplied evidence packet, which does not directly link AR to hair-loss treatments.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides many possible hair-loss therapies, but omits the key evidence-based conclusion that the supplied context lacks a direct hair-loss treatment link.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Overstates the evidence and presents unsupported links as established.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly discusses AR and hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Finasteride, dutasteride, and antiandrogens are biologically plausible or used in AGA, but the supplied evidence does not mention them or directly connect AR to hair-loss treatment.\"},\"completeness\":{\"score\":2,\"rationale\":\"Covers general hair-loss treatment concepts but not the specific conclusion warranted by the provided evidence.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Claims the integrated evidence clearly links AR to treatments despite insufficient support in the supplied context.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by assessing whether the provided evidence links AR to hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied graph and abstracts do not directly identify hair-loss treatments targeting AR.\"},\"completeness\":{\"score\":4,\"rationale\":\"Gives the correct conclusion and context, though it could have explicitly noted that listed AR drugs are for non-hair-loss indications.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the supplied evidence and avoids unsupported treatment claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the evidence and whether any AR-linked drugs are hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly notes that the supplied AR-targeting drugs are not linked to hair loss, though the opening 'yes, indirectly' slightly overstates the evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Lists several AR-targeting agents from the evidence and explains that none are hair-loss treatments, but could be clearer that the answer is essentially no direct link.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the evidence and avoids naming unsupported hair-loss therapies.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_084235c4325d1160006a4d5246b6488192a4e790aa4270d7a1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3783,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1978,
+            "output_tokens_details": {
+              "reasoning_tokens": 1380
+            },
+            "total_tokens": 5761
+          },
+          "user": null
+        },
+        "request_id": "8a4e87c6-00a4-4d86-9ed4-7c8de065c4b4",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "d41af42f1f08369b228d22d87bb90633eb005fc8062d6afdf6799da63f6c2c2a",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q053",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q053.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q053::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q053::R2",
+      "error": null,
+      "id": "batch_req_6a4d19afe8088190b914f5e674232325",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437551,
+          "created_at": 1783437543,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0546b3bca24ae73a006a4d18e6f50c819799dca446be5ca277",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q053"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0546b3bca24ae73a006a4d18e78bd08197a46cf4ddc1ccd1b0",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"Mostly supported: the supplied context lists AR-targeting/modulating drugs and none are indicated for hair loss, and the abstracts do not mention hair loss. Minor issues include the unsupported phrasing that AR is linked 'indirectly' to hair-loss relevance and mechanism-based speculation about androgen-related hair biology.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"Uses the key Open Targets drug evidence and correctly notes absence of hair-loss indications in the abstracts/context. It omits the separate 'Targeted by Drugs' list from the graph, but this omission does not materially change the answer.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0546b3bca24ae73a006a4d18ed25888197a581d48bf7b86e82",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2302,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 684,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2986
+          },
+          "user": null
+        },
+        "request_id": "c9b92e2f-d509-4636-b743-1e35bf87146f",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the evidence and whether any AR-linked drugs are hair-loss treatments.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes that the supplied AR-targeting drugs are not linked to hair loss, though the opening 'yes, indirectly' slightly overstates the evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Lists several AR-targeting agents from the evidence and explains that none are hair-loss treatments, but could be clearer that the answer is essentially no direct link.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "Mostly supported: the supplied context lists AR-targeting/modulating drugs and none are indicated for hair loss, and the abstracts do not mention hair loss. Minor issues include the unsupported phrasing that AR is linked 'indirectly' to hair-loss relevance and mechanism-based speculation about androgen-related hair biology.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "Uses the key Open Targets drug evidence and correctly notes absence of hair-loss indications in the abstracts/context. It omits the separate 'Targeted by Drugs' list from the graph, but this omission does not materially change the answer.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the evidence and avoids naming unsupported hair-loss therapies.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q053",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q053.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.284676+00:00"
+}

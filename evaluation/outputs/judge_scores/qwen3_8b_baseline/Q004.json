@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q004",
+      "randomization_seed": "20260706:Q004:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q004",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q004",
+      "error": null,
+      "id": "batch_req_6a4d52b8864c81908353f06163668edf",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452275,
+          "created_at": 1783452263,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03270984077243ba006a4d5267c220819dafe744384286e635",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q004"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03270984077243ba006a4d5268eef4819da4158479da4d88b6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"It acknowledges inability to assess the association but does not use the supplied evidence or answer whether the provided context supports an association.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"It does not make unsupported biomedical claims, but it misses that the supplied evidence already indicates no direct androgenetic alopecia association.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"It omits the key available points: rs6152 maps to AR, the context contains androgen-related evidence, but no direct androgenetic alopecia evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"It appropriately abstains rather than inventing evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question by distinguishing indirect AR-related plausibility from lack of direct androgenetic alopecia evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied packet: rs6152 is implicated in AR and androgen-related biology, but no provided abstract or annotation mentions androgenetic alopecia.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the central evidence, including AR mapping, regulatory context, androgen-related disease links, and the absence of direct association evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly qualifies the conclusion and avoids overstating the evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"It is generally about assessing a study but does not answer using the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"It does not assert false biomedical information, but it fails to state the key evidence-based conclusion that no direct association is shown in the provided context.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"It omits the supplied AR-related context and the absence of androgenetic alopecia evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"It appropriately requests more information rather than fabricating a genetic association.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the provided data support an association between rs6152 and androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly states that the supplied evidence links rs6152 to AR and androgen-related conditions but contains no direct androgenetic alopecia evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main conclusion and relevant AR context, though it gives less nuance about indirect biological plausibility than the best answer.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids claiming an unsupported association.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03270984077243ba006a4d526d30b0819db1435ed72a73e682",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2883,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1248,
+            "output_tokens_details": {
+              "reasoning_tokens": 467
+            },
+            "total_tokens": 4131
+          },
+          "user": null
+        },
+        "request_id": "2a8894c0-997c-4ca6-abdf-93a990f67cd8",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It acknowledges inability to assess the association but does not use the supplied evidence or answer whether the provided context supports an association.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "It does not make unsupported biomedical claims, but it misses that the supplied evidence already indicates no direct androgenetic alopecia association.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "It omits the key available points: rs6152 maps to AR, the context contains androgen-related evidence, but no direct androgenetic alopecia evidence.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "It appropriately abstains rather than inventing evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q004",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q004.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.112964+00:00"
+}

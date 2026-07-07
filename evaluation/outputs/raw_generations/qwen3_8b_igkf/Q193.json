@@ -1,0 +1,194 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.2558,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The provided data does not include direct evidence linking HDAC9 to androgen metabolism. HDAC9 is primarily associated with pathways such as the differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), the Notch-HLH transcription pathway, and constitutive signaling by NOTCH1 PEST domain mutants. These pathways are not directly related to androgen metabolism.\n\nIndirect associations may exist through its involvement in chromatin remodeling and regulation of gene expression, which could influence broader cellular processes, including hormonal regulation. However, there is no explicit mention of HDAC9 interacting with or being part of pathways directly involved in androgen synthesis, metabolism, or receptor activity.\n\nIn summary, there is no direct pathway membership linking HDAC9 to androgen metabolism, and the available data do not support an indirect association with this process.",
+  "question_id": "Q193",
+  "question_text": "What evidence, if any, links HDAC9 to androgen metabolism? Distinguish direct pathway membership from indirect association.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 172,
+    "prompt_token_count": 2140,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided data does not include direct evidence linking HDAC9 to androgen metabolism. HDAC9 is primarily associated with pathways such as the differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), the Notch-HLH transcription pathway, and constitutive signaling by NOTCH1 PEST domain mutants. These pathways are not directly related to androgen metabolism.\n\nIndirect associations may exist through its involvement in chromatin remodeling and regulation of gene expression, which could influence broader cellular processes, including hormonal regulation. However, there is no explicit mention of HDAC9 interacting with or being part of pathways directly involved in androgen synthesis, metabolism, or receptor activity.\n\nIn summary, there is no direct pathway membership linking HDAC9 to androgen metabolism, and the available data do not support an indirect association with this process."
+      }
+    ],
+    "created": 1783433674,
+    "id": "cmpl-03b21c06-b903-4bb4-bc06-f5c6a37fa144",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 172,
+      "prompt_tokens": 2119,
+      "total_tokens": 2291
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      22.095569610595703,
+      23.402122497558594,
+      24.163963317871094,
+      25.16118621826172,
+      25.920391082763672,
+      25.976184844970703,
+      25.978309631347656,
+      26.123477935791016,
+      26.408008575439453,
+      26.521665573120117,
+      26.532419204711914,
+      26.70269203186035,
+      26.962230682373047,
+      27.038217544555664,
+      27.80620574951172
+    ],
+    "candidate_pmids": [
+      "42100975",
+      "42091420",
+      "41672295",
+      "37987107",
+      "38076968",
+      "40812719",
+      "41962619",
+      "38574836",
+      "42361668",
+      "42352927",
+      "42187511",
+      "41935184",
+      "42146614",
+      "34275739",
+      "35186941"
+    ],
+    "expanded_retrieval_query": "What evidence, if any, links HDAC9 to androgen metabolism? Distinguish direct pathway membership from indirect association. Entity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma",
+    "final_context": "Graph Context:\nEntity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n\nVector Context:\n--- Abstract 1 (PMID: 42352927, relevance: -2.1101) ---\nHepatocellular carcinoma (HCC) remains a leading cause of cancer-related mortality worldwide, characterized by marked molecular heterogeneity, late-stage diagnosis, and limited therapeutic options. Emerging evidence highlights the interplay between cytoskeletal dynamics, epigenetic regulation, and oncogenic signaling pathways in hepatocarcinogenesis. Histone deacetylase 6 (HDAC6), a key regulator of cytoplasmic protein acetylation, modulates alpha-tubulin stability, while CTNNB1 (beta-catenin) serves as a central effector of the Wnt signaling pathway. However, the existence and functional relevance of a coordinated HDAC6-TUBA1A-CTNNB1 regulatory axis in HCC remain insufficiently explored. We conducted a comprehensive integrative bioinformatic analysis using multiple publicly available datasets and platforms, including TCGA, GEO, GEPIA3, TNMplot, UALCAN, TIMER2.0, STRING, ENCORI, HPA, TargetScan, miRDB, CRISPRdb, GSCALite, and exoRBase. Gene expression, promoter methylation, survival associations, immune infiltration, regulatory RNA interactions, and therapeutic targetability were systematically evaluated. HDAC6 expression was significantly downregulated in HCC tissues, whereas TUBA1A and CTNNB1 were upregulated. Reduced HDAC6 expression was associated with poorer survival outcomes, while TUBA1A and CTNNB1 showed no significant prognostic value. Methylation analysis revealed gene-specific epigenetic alterations, including hypomethylation of CTNNB1 and differential methylation patterns in HDAC6 and TUBA1A. Immune infiltration analysis demonstrated that HDAC6 expression positively correlated with cytotoxic immune cell populations and negatively with immunosuppressive subsets. Regulatory network analyses identified lncRNA-miRNA-mRNA interactions, particularly involving SNHG1. Furthermore, in silico CRISPR targetability and extracellular vesicle (EV) transcript profiling suggested potential translational applicability of this axis. Our findings support a hypothesis of the existence of a dysregulated HDAC6-alpha-tubulin-beta-catenin axis in HCC, linking cytoskeletal remodeling with oncogenic signaling and immune modulation. This axis may indicate a promising candidate for biomarker development and targeted therapeutic strategies, warranting further experimental validation.\n\n--- Abstract 2 (PMID: 42187511, relevance: -4.1669) ---\nRecent evidence has established a significant link between N4 acetylcytidine (ac4C) mRNA modification, mediated by N Acetyltransferase 10 (NAT10), and bone metabolism. Nonetheless, the precise role and regulatory targets of NAT10, along with its associated ac4C modification in human bone formation, remain inadequately characterized. This study employed bioinformatics analysis of transcriptomic datasets from primary osteoblasts of individuals with high versus low bone mineral density (BMD), alongside a curated set of ac4C-modified genes, to identify key differentially expressed genes (DEGs) regulated by this pathway within an osteogenic context. Overall, eleven key NAT10/ac4C-associated DEGs linked to BMD status were identified: CFD, CTSF, DCXR, FADS1, GOLIM4, IMPA2, MLEC, NCLN, NT5DC2, PTGFRN, and VASP. Notably, FADS1, NT5DC2, and PTGFRN emerged as crucial ac4C-modified genes across three machine learning models. Furthermore, the tri-gene signature (FADS1/NT5DC2/PTGFRN) showed excellent diagnostic performance in distinguishing different BMD statuses. In vitro validation using MC3T3-E1 osteoblastic cells revealed that the knockdown of NAT10 via lentiviral delivery markedly impaired cell proliferation and osteogenic differentiation. This impairment was evidenced by the results of the CCK-8 proliferation assay, alkaline phosphatase staining, and Alizarin Red staining. Additionally, qRT PCR analysis demonstrated a significant downregulation of FADS1 and NT5DC2 expression subsequent to NAT10 knockdown. These findings underscore the role of NAT10-mediated ac4C modification as a pivotal regulator of osteoblast activity and gene expression programs associated with BMD. This research offers novel insights into the regulation of bone metabolism and proposes potential diagnostic markers and therapeutic targets for osteoporosis.\n\n--- Abstract 3 (PMID: 42100975, relevance: -4.5775) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma",
+    "graph_context_length": 2177,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3307,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hdac9"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgen metabolism"
+      },
+      {
+        "label": "ENTITY",
+        "text": "distinguish"
+      },
+      {
+        "label": "ENTITY",
+        "text": "direct pathway"
+      },
+      {
+        "label": "ENTITY",
+        "text": "membership"
+      },
+      {
+        "label": "ENTITY",
+        "text": "indirect"
+      },
+      {
+        "label": "ENTITY",
+        "text": "association"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q193.json",
+    "retrieval_total_seconds": 0.4497,
+    "score_max": -2.1101105213165283,
+    "score_mean": -3.618152379989624,
+    "scores": [
+      -2.1101105213165283,
+      -4.1668901443481445,
+      -4.577456474304199
+    ],
+    "selected_abstracts": [
+      "Hepatocellular carcinoma (HCC) remains a leading cause of cancer-related mortality worldwide, characterized by marked molecular heterogeneity, late-stage diagnosis, and limited therapeutic options. Emerging evidence highlights the interplay between cytoskeletal dynamics, epigenetic regulation, and oncogenic signaling pathways in hepatocarcinogenesis. Histone deacetylase 6 (HDAC6), a key regulator of cytoplasmic protein acetylation, modulates alpha-tubulin stability, while CTNNB1 (beta-catenin) serves as a central effector of the Wnt signaling pathway. However, the existence and functional relevance of a coordinated HDAC6-TUBA1A-CTNNB1 regulatory axis in HCC remain insufficiently explored. We conducted a comprehensive integrative bioinformatic analysis using multiple publicly available datasets and platforms, including TCGA, GEO, GEPIA3, TNMplot, UALCAN, TIMER2.0, STRING, ENCORI, HPA, TargetScan, miRDB, CRISPRdb, GSCALite, and exoRBase. Gene expression, promoter methylation, survival associations, immune infiltration, regulatory RNA interactions, and therapeutic targetability were systematically evaluated. HDAC6 expression was significantly downregulated in HCC tissues, whereas TUBA1A and CTNNB1 were upregulated. Reduced HDAC6 expression was associated with poorer survival outcomes, while TUBA1A and CTNNB1 showed no significant prognostic value. Methylation analysis revealed gene-specific epigenetic alterations, including hypomethylation of CTNNB1 and differential methylation patterns in HDAC6 and TUBA1A. Immune infiltration analysis demonstrated that HDAC6 expression positively correlated with cytotoxic immune cell populations and negatively with immunosuppressive subsets. Regulatory network analyses identified lncRNA-miRNA-mRNA interactions, particularly involving SNHG1. Furthermore, in silico CRISPR targetability and extracellular vesicle (EV) transcript profiling suggested potential translational applicability of this axis. Our findings support a hypothesis of the existence of a dysregulated HDAC6-alpha-tubulin-beta-catenin axis in HCC, linking cytoskeletal remodeling with oncogenic signaling and immune modulation. This axis may indicate a promising candidate for biomarker development and targeted therapeutic strategies, warranting further experimental validation.",
+      "Recent evidence has established a significant link between N4 acetylcytidine (ac4C) mRNA modification, mediated by N Acetyltransferase 10 (NAT10), and bone metabolism. Nonetheless, the precise role and regulatory targets of NAT10, along with its associated ac4C modification in human bone formation, remain inadequately characterized. This study employed bioinformatics analysis of transcriptomic datasets from primary osteoblasts of individuals with high versus low bone mineral density (BMD), alongside a curated set of ac4C-modified genes, to identify key differentially expressed genes (DEGs) regulated by this pathway within an osteogenic context. Overall, eleven key NAT10/ac4C-associated DEGs linked to BMD status were identified: CFD, CTSF, DCXR, FADS1, GOLIM4, IMPA2, MLEC, NCLN, NT5DC2, PTGFRN, and VASP. Notably, FADS1, NT5DC2, and PTGFRN emerged as crucial ac4C-modified genes across three machine learning models. Furthermore, the tri-gene signature (FADS1/NT5DC2/PTGFRN) showed excellent diagnostic performance in distinguishing different BMD statuses. In vitro validation using MC3T3-E1 osteoblastic cells revealed that the knockdown of NAT10 via lentiviral delivery markedly impaired cell proliferation and osteogenic differentiation. This impairment was evidenced by the results of the CCK-8 proliferation assay, alkaline phosphatase staining, and Alizarin Red staining. Additionally, qRT PCR analysis demonstrated a significant downregulation of FADS1 and NT5DC2 expression subsequent to NAT10 knockdown. These findings underscore the role of NAT10-mediated ac4C modification as a pivotal regulator of osteoblast activity and gene expression programs associated with BMD. This research offers novel insights into the regulation of bone metabolism and proposes potential diagnostic markers and therapeutic targets for osteoporosis.",
+      "Aberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective."
+    ],
+    "selected_pmids": [
+      "42352927",
+      "42187511",
+      "42100975"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1069
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:14:34.649707+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42352927, relevance: -2.1101) ---\nHepatocellular carcinoma (HCC) remains a leading cause of cancer-related mortality worldwide, characterized by marked molecular heterogeneity, late-stage diagnosis, and limited therapeutic options. Emerging evidence highlights the interplay between cytoskeletal dynamics, epigenetic regulation, and oncogenic signaling pathways in hepatocarcinogenesis. Histone deacetylase 6 (HDAC6), a key regulator of cytoplasmic protein acetylation, modulates alpha-tubulin stability, while CTNNB1 (beta-catenin) serves as a central effector of the Wnt signaling pathway. However, the existence and functional relevance of a coordinated HDAC6-TUBA1A-CTNNB1 regulatory axis in HCC remain insufficiently explored. We conducted a comprehensive integrative bioinformatic analysis using multiple publicly available datasets and platforms, including TCGA, GEO, GEPIA3, TNMplot, UALCAN, TIMER2.0, STRING, ENCORI, HPA, TargetScan, miRDB, CRISPRdb, GSCALite, and exoRBase. Gene expression, promoter methylation, survival associations, immune infiltration, regulatory RNA interactions, and therapeutic targetability were systematically evaluated. HDAC6 expression was significantly downregulated in HCC tissues, whereas TUBA1A and CTNNB1 were upregulated. Reduced HDAC6 expression was associated with poorer survival outcomes, while TUBA1A and CTNNB1 showed no significant prognostic value. Methylation analysis revealed gene-specific epigenetic alterations, including hypomethylation of CTNNB1 and differential methylation patterns in HDAC6 and TUBA1A. Immune infiltration analysis demonstrated that HDAC6 expression positively correlated with cytotoxic immune cell populations and negatively with immunosuppressive subsets. Regulatory network analyses identified lncRNA-miRNA-mRNA interactions, particularly involving SNHG1. Furthermore, in silico CRISPR targetability and extracellular vesicle (EV) transcript profiling suggested potential translational applicability of this axis. Our findings support a hypothesis of the existence of a dysregulated HDAC6-alpha-tubulin-beta-catenin axis in HCC, linking cytoskeletal remodeling with oncogenic signaling and immune modulation. This axis may indicate a promising candidate for biomarker development and targeted therapeutic strategies, warranting further experimental validation.\n\n--- Abstract 2 (PMID: 42187511, relevance: -4.1669) ---\nRecent evidence has established a significant link between N4 acetylcytidine (ac4C) mRNA modification, mediated by N Acetyltransferase 10 (NAT10), and bone metabolism. Nonetheless, the precise role and regulatory targets of NAT10, along with its associated ac4C modification in human bone formation, remain inadequately characterized. This study employed bioinformatics analysis of transcriptomic datasets from primary osteoblasts of individuals with high versus low bone mineral density (BMD), alongside a curated set of ac4C-modified genes, to identify key differentially expressed genes (DEGs) regulated by this pathway within an osteogenic context. Overall, eleven key NAT10/ac4C-associated DEGs linked to BMD status were identified: CFD, CTSF, DCXR, FADS1, GOLIM4, IMPA2, MLEC, NCLN, NT5DC2, PTGFRN, and VASP. Notably, FADS1, NT5DC2, and PTGFRN emerged as crucial ac4C-modified genes across three machine learning models. Furthermore, the tri-gene signature (FADS1/NT5DC2/PTGFRN) showed excellent diagnostic performance in distinguishing different BMD statuses. In vitro validation using MC3T3-E1 osteoblastic cells revealed that the knockdown of NAT10 via lentiviral delivery markedly impaired cell proliferation and osteogenic differentiation. This impairment was evidenced by the results of the CCK-8 proliferation assay, alkaline phosphatase staining, and Alizarin Red staining. Additionally, qRT PCR analysis demonstrated a significant downregulation of FADS1 and NT5DC2 expression subsequent to NAT10 knockdown. These findings underscore the role of NAT10-mediated ac4C modification as a pivotal regulator of osteoblast activity and gene expression programs associated with BMD. This research offers novel insights into the regulation of bone metabolism and proposes potential diagnostic markers and therapeutic targets for osteoporosis.\n\n--- Abstract 3 (PMID: 42100975, relevance: -4.5775) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n\n\n**Question:**\nWhat evidence, if any, links HDAC9 to androgen metabolism? Distinguish direct pathway membership from indirect association."
+}

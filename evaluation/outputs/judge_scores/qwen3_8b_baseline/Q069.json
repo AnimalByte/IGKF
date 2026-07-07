@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q069",
+      "randomization_seed": "20260706:Q069:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q069",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q069",
+      "error": null,
+      "id": "batch_req_6a4d52bb79cc819093dac7e35898a31f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452277,
+          "created_at": 1783452265,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0dbbdb70369755ff006a4d52694864819dab6d402e908d86ed",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q069"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0dbbdb70369755ff006a4d526a1a8c819db1e382f053b29afa",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"It addresses the task only by requesting graph data, despite graph context being supplied.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Contains no major biomedical falsehoods, but incorrectly implies the provided evidence is insufficient to answer.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Does not identify any FGF5-associated pathways or processes from the supplied graph.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Abstains rather than inventing, but the abstention is not well justified given the available context.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Partially addresses FGF5 pathway membership but gives mostly generic guidance rather than using the supplied graph.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Includes unsupported pathway claims and an apparently incorrect KEGG identifier for FGF signaling; does not match the supplied graph evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits the graph-listed FGF5 processes and includes unsupported examples instead.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Qualifies that a specific graph is needed, but still adds unsupported pathway associations.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers which supplied graph-linked processes include FGF5.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately lists the GO functions/processes from the graph and correctly separates literature-derived findings.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the important graph-derived items, though it could more explicitly state that no separate pathway annotations are provided.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately distinguishes graph evidence from literature context and avoids overclaiming.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses FGF5-associated biological processes, but provides a broad narrative rather than a concise list of pathways.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly consistent with the supplied graph and abstract, but infers broader signaling-network implications not explicitly supported.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Includes the graph-listed functions/processes but adds substantial unnecessary material and does not clearly answer as a pathway list.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Some claims are appropriately framed, but it speculates about interaction implications beyond the supplied evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0dbbdb70369755ff006a4d52700c1c819d8256bc88038b4422",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3224,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1256,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4480
+          },
+          "user": null
+        },
+        "request_id": "842c281e-2d4d-4dfe-8ff9-ee578456b527",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partially addresses FGF5 pathway membership but gives mostly generic guidance rather than using the supplied graph.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Includes unsupported pathway claims and an apparently incorrect KEGG identifier for FGF signaling; does not match the supplied graph evidence.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Omits the graph-listed FGF5 processes and includes unsupported examples instead.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Qualifies that a specific graph is needed, but still adds unsupported pathway associations.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q069",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q069.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.158527+00:00"
+}

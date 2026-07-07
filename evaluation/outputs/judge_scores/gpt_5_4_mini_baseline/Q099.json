@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q099",
+      "randomization_seed": "20260706:Q099:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q099",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q099",
+      "error": null,
+      "id": "batch_req_6a4d52bc88548190b585eeda1229b279",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452257,
+          "created_at": 1783452246,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00a7e8e35a395e05006a4d5256376c81929162431a7216a762",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q099"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00a7e8e35a395e05006a4d5256d1c48192b8602682bb7b3318",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses LHX2 pathways generally, but does not answer based on the supplied integrated graph context.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Lists plausible general LHX2-related processes, but these pathway claims are not supported by the provided evidence, which contains no pathway annotations for LHX2.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not identify that the provided graph only contains PPI partners and no named pathways; includes unsupported extra pathways.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Acknowledges lack of access to a specific pathway dataset, but still speculates about pathways without evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly states that pathways cannot be reliably identified, which is appropriate given the lack of pathway annotations.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main conclusion is consistent with the evidence, though it inaccurately implies no graph data are available despite supplied PPI context.\"},\"completeness\":{\"score\":3,\"rationale\":\"Correctly abstains but omits the available information that LHX2 has listed PPI partners and no pathway annotations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inferring unsupported pathways.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question using the supplied graph and literature context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that no explicit pathway annotations are provided and correctly lists the LHX2 interaction partners.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point that pathways cannot be identified from the context and provides the relevant PPI information.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies uncertainty and avoids assigning LHX2 to unsupported pathways such as SHH.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Partially addresses the question but shifts from graph pathways to speculative biological roles.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correctly lists PPI partners, but incorrectly infers graph pathway inclusion from LHX4 and LHX6 literature that does not directly discuss LHX2.\"},\"completeness\":{\"score\":2,\"rationale\":\"Fails to clearly conclude that the integrated graph provides no named pathways and adds unsupported inferred pathways.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes some caveats, but ultimately asserts unsupported pathway involvement in the integrated graph.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00a7e8e35a395e05006a4d525bd820819290d87a22bbcb5434",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2860,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1071,
+            "output_tokens_details": {
+              "reasoning_tokens": 493
+            },
+            "total_tokens": 3931
+          },
+          "user": null
+        },
+        "request_id": "8ddeb6d6-be4a-4f3d-b7f0-0f055992f69d",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly states that pathways cannot be reliably identified, which is appropriate given the lack of pathway annotations.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Main conclusion is consistent with the evidence, though it inaccurately implies no graph data are available despite supplied PPI context.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Correctly abstains but omits the available information that LHX2 has listed PPI partners and no pathway annotations.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inferring unsupported pathways.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q099",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q099.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.179223+00:00"
+}

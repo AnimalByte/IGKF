@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q020",
+      "randomization_seed": "20260706:Q020:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q020",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q020",
+      "error": null,
+      "id": "batch_req_6a4d52b91a008190b7bb5b4c8d7798db",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452192,
+          "created_at": 1783452175,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0aa3278d996119e3006a4d520f3da8819cb2a82c947f578ecf",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q020"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0aa3278d996119e3006a4d520fe5e4819ca1920b69e00a65d9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses rs756853 and summarizes the relevant annotation categories.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly matches the reference annotations for HDAC9, pathways, GO terms, phenotypes, PPIs, diseases, and drugs, but includes some unsupported interpretation such as neurodegenerative relevance and is truncated before the regulatory element details.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers most major graph-derived annotations, but omits the regulatory element details and does not fully summarize the Open Targets drug evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Uses some cautious language, but also extrapolates beyond the supplied evidence in places.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately summarizes the available annotations for rs756853.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied graph evidence, including HDAC9, dELS regulatory context, pathways, GO processes, phenotypes, PPIs, disease associations, and drug evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the important study-specific and integrated annotation components without major omissions.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately notes that the supplied abstracts do not directly mention rs756853 or HDAC9 and bases interpretation on graph annotations.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Discusses generic categories of variant annotation but does not summarize the specific annotations available for rs756853.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The general description of study-specific and integrated annotations is broadly reasonable, but it provides no specific facts from the reference evidence for rs756853.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits nearly all required rs756853-specific content, including HDAC9, pathways, phenotypes, drugs, diseases, PPIs, and regulatory element information.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Avoids inventing specific unsupported annotations and effectively abstains, but does not provide the requested evidence-based summary.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Attempts to answer the requested annotation summary format, but the content is largely unrelated to the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Contains multiple unsupported and contradictory claims, including associations with CAD, triglycerides, Alzheimer disease, FADS2/FADS3, CLU, population frequencies, and functional scores not present in the reference evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Fails to include the key correct annotations for rs756853 such as HDAC9, dELS element EH38D3950895, relevant pathways, GO terms, phenotypes, PPIs, Open Targets diseases, and HDAC inhibitor evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents fabricated study-specific and integrated annotations as factual without qualification.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0aa3278d996119e3006a4d521a23c8819cbb2de2fe9201f304",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4799,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1895,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 6694
+          },
+          "user": null
+        },
+        "request_id": "32730335-a5f2-41dd-bdc2-0cbb547530ff",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Attempts to answer the requested annotation summary format, but the content is largely unrelated to the supplied evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Contains multiple unsupported and contradictory claims, including associations with CAD, triglycerides, Alzheimer disease, FADS2/FADS3, CLU, population frequencies, and functional scores not present in the reference evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Fails to include the key correct annotations for rs756853 such as HDAC9, dELS element EH38D3950895, relevant pathways, GO terms, phenotypes, PPIs, Open Targets diseases, and HDAC inhibitor evidence.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Presents fabricated study-specific and integrated annotations as factual without qualification.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q020",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q020.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.124419+00:00"
+}

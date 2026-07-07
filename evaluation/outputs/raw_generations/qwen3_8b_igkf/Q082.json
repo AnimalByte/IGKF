@@ -1,0 +1,186 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.3712,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Based on the provided graph and literature context, there are no variants annotated as high impact that are explicitly mapped to **LGR4** in this study. \n\nThe literature context includes several studies involving **LGR4**, such as its role in colorectal cancer, neuroblastoma, and bone metastasis, but none of the abstracts mention specific genetic variants (e.g., SNPs, indels) annotated as \"high impact\" that are directly associated with **LGR4**. The focus of the studies is on the functional roles of LGR4, its interactions with other proteins (e.g., RSPOs, RANKL), and its therapeutic targeting, rather than on genetic variants.\n\nTherefore, the available information does not support the identification of any high-impact variants mapped to **LGR4** in this study.",
+  "question_id": "Q082",
+  "question_text": "Which variants annotated as high impact, if any, are mapped to LGR4 in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 169,
+    "prompt_token_count": 1843,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided graph and literature context, there are no variants annotated as high impact that are explicitly mapped to **LGR4** in this study. \n\nThe literature context includes several studies involving **LGR4**, such as its role in colorectal cancer, neuroblastoma, and bone metastasis, but none of the abstracts mention specific genetic variants (e.g., SNPs, indels) annotated as \"high impact\" that are directly associated with **LGR4**. The focus of the studies is on the functional roles of LGR4, its interactions with other proteins (e.g., RSPOs, RANKL), and its therapeutic targeting, rather than on genetic variants.\n\nTherefore, the available information does not support the identification of any high-impact variants mapped to **LGR4** in this study."
+      }
+    ],
+    "created": 1783432125,
+    "id": "cmpl-ac601991-6fa5-43cd-9a36-2850c074d1e0",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 169,
+      "prompt_tokens": 1822,
+      "total_tokens": 1991
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      37.534515380859375,
+      38.71581268310547,
+      38.94366455078125,
+      39.22542190551758,
+      39.36025619506836,
+      39.460418701171875,
+      39.482139587402344,
+      39.53020477294922,
+      39.601036071777344,
+      40.012474060058594,
+      40.37090301513672,
+      40.3712272644043,
+      40.40442657470703,
+      40.58863830566406,
+      40.75126647949219
+    ],
+    "candidate_pmids": [
+      "41158885",
+      "37212325",
+      "34453499",
+      "41954225",
+      "41786677",
+      "35638461",
+      "39103847",
+      "42100494",
+      "42135153",
+      "41174051",
+      "42260572",
+      "42291126",
+      "37254524",
+      "39669628",
+      "41645416"
+    ],
+    "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to LGR4 in this study? Entity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+    "final_context": "Graph Context:\nEntity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)\n\nVector Context:\n--- Abstract 1 (PMID: 41954225, relevance: -1.9891) ---\nLeucine-rich repeat-containing, G protein-coupled receptors 4, 5, and 6 (LGR4/5/6) are coexpressed or alternately expressed at high levels in tumor cells of colorectal cancer (CRC) and high-risk neuroblastoma (NB). Simultaneous targeting of all three homologous receptors may improve efficacy or overcome drug resistance due to tumor heterogeneity and cancer cell plasticity. R-spondins (RSPOs) bind to LGR4/5/6 with a high affinity and potentiate Wnt/beta-catenin signaling. We previously reported that a mutant RSPO4 furin domain-based peptibody that binds to LGR4/5/6 without potentiating Wnt/beta-catenin signaling was able to deliver cytotoxins into cancer cells that express any of the three receptors. Here, we generated a mutant RSPO2 furin domain that retains high-affinity LGR4/5/6 binding without any signaling activity. RSPO2 furin mutant peptibodies conjugated with pyrrolobenzodiazepine dimer (PBD) or camptothecin derivative (CPT2) yielded potent, target-selective cytotoxicity in LGR4/5/6-positive CRC and high-risk NB cell lines in vitro and robust antitumor activity in vivo.\n\n--- Abstract 2 (PMID: 42291126, relevance: -4.7859) ---\nBACKGROUND: Bone metastasis is a severe complication of advanced cancers, disrupting bone remodeling by hijacking the RANK/RANKL/OPG axis, which leads to excessive osteoclast activation and bone resorption. Current therapies, such as bisphosphonates and denosumab, offer limited survival benefits and carry significant safety risks, highlighting the need for novel agents that effectively inhibit osteolytic progression. OBJECTIVE: This study aimed to evaluate the therapeutic potential of a recombinant extracellular domain of leucine-rich repeat-containing G-protein coupled receptor 4 (rLGR4-ECD), produced in CHO cells, to inhibit RANKL signaling, suppress osteoclastogenesis, and prevent bone metastasis in preclinical models. METHODS: The human LGR4-ECD (residues 25-540) was cloned into the pcDNA4/TO vector and expressed in CHO-K1 cells. Stable monoclonal lines were established, and recombinant protein was purified via Ni-NTA affinity chromatography. Binding affinity to RANKL and RSPO4 was assessed by co-immunoprecipitation (co-IP). In vitro, bone marrow-derived monocytes were treated with RANKL and varying concentrations of rLGR4-ECD (0-80 ng/mL), and osteoclast formation was evaluated by TRAP staining, qPCR, and Western blotting for osteoclast markers. For in vivo evaluation, a breast cancer bone metastasis model was established by intracardiac injection of 4 T1-Luc cells into BALB/c mice. Mice were treated daily with 1 mg/kg rLGR4-ECD or PBS via tail vein injection. Metastatic burden was monitored by bioluminescence imaging, osteoclast activity by TRAP staining of calvaria, and gene expression in bone tissue by qPCR. Survival was analyzed using Kaplan-Meier curves. RESULTS: rLGR4-ECD was successfully expressed and purified with over 95% purity and a yield of 2.38 mg/L. It bound specifically to RANKL and RSPO4 in co-IP assays. In vitro, rLGR4-ECD dose-dependently inhibited osteoclast formation, with near-complete suppression at 80 ng/mL (IC50 = 42.38 ng/mL). Expression of osteoclast genes Acp5, Ctsk, and Nfatc1 was reduced by 91.4% (***p < 0.001), 87.1% (***p < 0.001), and 81.2% (***p < 0.001), respectively, at 80 ng/mL. Protein levels of TRAP, Cathepsin K, and NFATc1 were also significantly suppressed. In vivo, rLGR4-ECD treatment reduced metastatic burden by 67.3% (***p < 0.001) and decreased osteoclast surface per bone surface by 56.2% (***p < 0.001). Gene expression in bone tissue showed reductions of 71.3% for Acp5 (***p < 0.001), 40.1% for Ctsk (***p < 0.001), and 86.5% for Nfatc1 (***p < 0.001). rLGR4-ECD median survival by 41.7% (12 vs. 17 days) without affecting lung metastasis. CONCLUSION: rLGR4-ECD effectively inhibits RANKL-induced osteoclastogenesis and reduces bone metastasis burden through specific suppression of osteoclast activity, leading to improved survival in a preclinical model. Its excellent efficacy and manufacturability support its potential as a novel therapeutic agent for bone metastatic disease.\n\n--- Abstract 3 (PMID: 41158885, relevance: -5.7842) ---\nThis report aimed to describe two families of Mennonite heritage affected with hypophosphatasia (HPP) and biallelic ALPL c.1001G>A/c.571G>A in four individuals. Additionally, we conduct a systematic review of studies considering the above compound heterozygous genotype and present novel insights and evidence inferred from in silico predictions using Ensembl's Variant Effect Predictor (VEP) platform and STRING protein-protein interaction (PPI) network analysis to explore these genetic variations and plausible interacting pathways for the disorder that remain for consideration in future studies. Intrafamilial and interfamilial variability of phenotypes was observed in the four patients affected with the identical ALPL c.1001G>A/c.571G>A mutation. In contrast, in the seven unaffected family members, a specific genotype was not available. Seven eligible studies exploring ALPL c.1001G>A/c.571G>A were identified, and significant heterogeneity (P < 0.05) was observed across four studies. Ensembl VEP inferred a dual effect for rs121918007 and rs121918009, involving 17 variants located in the exome and four classified as non-coding associated with all HPP presentations, as well as serum alkaline phosphatase levels, choline phosphate levels, osteogenesis imperfecta, and inborn genetic diseases. PPI network modeling predicted 10 genes (PTS, NBPF3, SLC30A7, TPK1, NTPCR, BGLAP, RUNX2, ENPP1, SLC30A6, GCH1) interacting with ALPL, highlighting their potential impact on bone formation and homeostasis, metabolism, and gene expression. These results may shed light on HPP variability by disrupting key metabolic and transcriptional pathways and provide a comprehensive view of their functional relevance, which suggests a complex genetic etiology for HPP.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+    "graph_context_length": 244,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3343,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "variants"
+      },
+      {
+        "label": "ENTITY",
+        "text": "annotated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "impact"
+      },
+      {
+        "label": "ENTITY",
+        "text": "mapped"
+      },
+      {
+        "label": "ENTITY",
+        "text": "lgr4"
+      },
+      {
+        "label": "ENTITY",
+        "text": "study"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q082.json",
+    "retrieval_total_seconds": 0.378,
+    "score_max": -1.9891207218170166,
+    "score_mean": -4.1863893667856855,
+    "scores": [
+      -1.9891207218170166,
+      -4.78585147857666,
+      -5.784195899963379
+    ],
+    "selected_abstracts": [
+      "Leucine-rich repeat-containing, G protein-coupled receptors 4, 5, and 6 (LGR4/5/6) are coexpressed or alternately expressed at high levels in tumor cells of colorectal cancer (CRC) and high-risk neuroblastoma (NB). Simultaneous targeting of all three homologous receptors may improve efficacy or overcome drug resistance due to tumor heterogeneity and cancer cell plasticity. R-spondins (RSPOs) bind to LGR4/5/6 with a high affinity and potentiate Wnt/beta-catenin signaling. We previously reported that a mutant RSPO4 furin domain-based peptibody that binds to LGR4/5/6 without potentiating Wnt/beta-catenin signaling was able to deliver cytotoxins into cancer cells that express any of the three receptors. Here, we generated a mutant RSPO2 furin domain that retains high-affinity LGR4/5/6 binding without any signaling activity. RSPO2 furin mutant peptibodies conjugated with pyrrolobenzodiazepine dimer (PBD) or camptothecin derivative (CPT2) yielded potent, target-selective cytotoxicity in LGR4/5/6-positive CRC and high-risk NB cell lines in vitro and robust antitumor activity in vivo.",
+      "BACKGROUND: Bone metastasis is a severe complication of advanced cancers, disrupting bone remodeling by hijacking the RANK/RANKL/OPG axis, which leads to excessive osteoclast activation and bone resorption. Current therapies, such as bisphosphonates and denosumab, offer limited survival benefits and carry significant safety risks, highlighting the need for novel agents that effectively inhibit osteolytic progression. OBJECTIVE: This study aimed to evaluate the therapeutic potential of a recombinant extracellular domain of leucine-rich repeat-containing G-protein coupled receptor 4 (rLGR4-ECD), produced in CHO cells, to inhibit RANKL signaling, suppress osteoclastogenesis, and prevent bone metastasis in preclinical models. METHODS: The human LGR4-ECD (residues 25-540) was cloned into the pcDNA4/TO vector and expressed in CHO-K1 cells. Stable monoclonal lines were established, and recombinant protein was purified via Ni-NTA affinity chromatography. Binding affinity to RANKL and RSPO4 was assessed by co-immunoprecipitation (co-IP). In vitro, bone marrow-derived monocytes were treated with RANKL and varying concentrations of rLGR4-ECD (0-80 ng/mL), and osteoclast formation was evaluated by TRAP staining, qPCR, and Western blotting for osteoclast markers. For in vivo evaluation, a breast cancer bone metastasis model was established by intracardiac injection of 4 T1-Luc cells into BALB/c mice. Mice were treated daily with 1 mg/kg rLGR4-ECD or PBS via tail vein injection. Metastatic burden was monitored by bioluminescence imaging, osteoclast activity by TRAP staining of calvaria, and gene expression in bone tissue by qPCR. Survival was analyzed using Kaplan-Meier curves. RESULTS: rLGR4-ECD was successfully expressed and purified with over 95% purity and a yield of 2.38 mg/L. It bound specifically to RANKL and RSPO4 in co-IP assays. In vitro, rLGR4-ECD dose-dependently inhibited osteoclast formation, with near-complete suppression at 80 ng/mL (IC50 = 42.38 ng/mL). Expression of osteoclast genes Acp5, Ctsk, and Nfatc1 was reduced by 91.4% (***p < 0.001), 87.1% (***p < 0.001), and 81.2% (***p < 0.001), respectively, at 80 ng/mL. Protein levels of TRAP, Cathepsin K, and NFATc1 were also significantly suppressed. In vivo, rLGR4-ECD treatment reduced metastatic burden by 67.3% (***p < 0.001) and decreased osteoclast surface per bone surface by 56.2% (***p < 0.001). Gene expression in bone tissue showed reductions of 71.3% for Acp5 (***p < 0.001), 40.1% for Ctsk (***p < 0.001), and 86.5% for Nfatc1 (***p < 0.001). rLGR4-ECD median survival by 41.7% (12 vs. 17 days) without affecting lung metastasis. CONCLUSION: rLGR4-ECD effectively inhibits RANKL-induced osteoclastogenesis and reduces bone metastasis burden through specific suppression of osteoclast activity, leading to improved survival in a preclinical model. Its excellent efficacy and manufacturability support its potential as a novel therapeutic agent for bone metastatic disease.",
+      "This report aimed to describe two families of Mennonite heritage affected with hypophosphatasia (HPP) and biallelic ALPL c.1001G>A/c.571G>A in four individuals. Additionally, we conduct a systematic review of studies considering the above compound heterozygous genotype and present novel insights and evidence inferred from in silico predictions using Ensembl's Variant Effect Predictor (VEP) platform and STRING protein-protein interaction (PPI) network analysis to explore these genetic variations and plausible interacting pathways for the disorder that remain for consideration in future studies. Intrafamilial and interfamilial variability of phenotypes was observed in the four patients affected with the identical ALPL c.1001G>A/c.571G>A mutation. In contrast, in the seven unaffected family members, a specific genotype was not available. Seven eligible studies exploring ALPL c.1001G>A/c.571G>A were identified, and significant heterogeneity (P < 0.05) was observed across four studies. Ensembl VEP inferred a dual effect for rs121918007 and rs121918009, involving 17 variants located in the exome and four classified as non-coding associated with all HPP presentations, as well as serum alkaline phosphatase levels, choline phosphate levels, osteogenesis imperfecta, and inborn genetic diseases. PPI network modeling predicted 10 genes (PTS, NBPF3, SLC30A7, TPK1, NTPCR, BGLAP, RUNX2, ENPP1, SLC30A6, GCH1) interacting with ALPL, highlighting their potential impact on bone formation and homeostasis, metabolism, and gene expression. These results may shed light on HPP variability by disrupting key metabolic and transcriptional pathways and provide a comprehensive view of their functional relevance, which suggests a complex genetic etiology for HPP."
+    ],
+    "selected_pmids": [
+      "41954225",
+      "42291126",
+      "41158885"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0345
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:48:45.797657+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 41954225, relevance: -1.9891) ---\nLeucine-rich repeat-containing, G protein-coupled receptors 4, 5, and 6 (LGR4/5/6) are coexpressed or alternately expressed at high levels in tumor cells of colorectal cancer (CRC) and high-risk neuroblastoma (NB). Simultaneous targeting of all three homologous receptors may improve efficacy or overcome drug resistance due to tumor heterogeneity and cancer cell plasticity. R-spondins (RSPOs) bind to LGR4/5/6 with a high affinity and potentiate Wnt/beta-catenin signaling. We previously reported that a mutant RSPO4 furin domain-based peptibody that binds to LGR4/5/6 without potentiating Wnt/beta-catenin signaling was able to deliver cytotoxins into cancer cells that express any of the three receptors. Here, we generated a mutant RSPO2 furin domain that retains high-affinity LGR4/5/6 binding without any signaling activity. RSPO2 furin mutant peptibodies conjugated with pyrrolobenzodiazepine dimer (PBD) or camptothecin derivative (CPT2) yielded potent, target-selective cytotoxicity in LGR4/5/6-positive CRC and high-risk NB cell lines in vitro and robust antitumor activity in vivo.\n\n--- Abstract 2 (PMID: 42291126, relevance: -4.7859) ---\nBACKGROUND: Bone metastasis is a severe complication of advanced cancers, disrupting bone remodeling by hijacking the RANK/RANKL/OPG axis, which leads to excessive osteoclast activation and bone resorption. Current therapies, such as bisphosphonates and denosumab, offer limited survival benefits and carry significant safety risks, highlighting the need for novel agents that effectively inhibit osteolytic progression. OBJECTIVE: This study aimed to evaluate the therapeutic potential of a recombinant extracellular domain of leucine-rich repeat-containing G-protein coupled receptor 4 (rLGR4-ECD), produced in CHO cells, to inhibit RANKL signaling, suppress osteoclastogenesis, and prevent bone metastasis in preclinical models. METHODS: The human LGR4-ECD (residues 25-540) was cloned into the pcDNA4/TO vector and expressed in CHO-K1 cells. Stable monoclonal lines were established, and recombinant protein was purified via Ni-NTA affinity chromatography. Binding affinity to RANKL and RSPO4 was assessed by co-immunoprecipitation (co-IP). In vitro, bone marrow-derived monocytes were treated with RANKL and varying concentrations of rLGR4-ECD (0-80 ng/mL), and osteoclast formation was evaluated by TRAP staining, qPCR, and Western blotting for osteoclast markers. For in vivo evaluation, a breast cancer bone metastasis model was established by intracardiac injection of 4 T1-Luc cells into BALB/c mice. Mice were treated daily with 1 mg/kg rLGR4-ECD or PBS via tail vein injection. Metastatic burden was monitored by bioluminescence imaging, osteoclast activity by TRAP staining of calvaria, and gene expression in bone tissue by qPCR. Survival was analyzed using Kaplan-Meier curves. RESULTS: rLGR4-ECD was successfully expressed and purified with over 95% purity and a yield of 2.38 mg/L. It bound specifically to RANKL and RSPO4 in co-IP assays. In vitro, rLGR4-ECD dose-dependently inhibited osteoclast formation, with near-complete suppression at 80 ng/mL (IC50 = 42.38 ng/mL). Expression of osteoclast genes Acp5, Ctsk, and Nfatc1 was reduced by 91.4% (***p < 0.001), 87.1% (***p < 0.001), and 81.2% (***p < 0.001), respectively, at 80 ng/mL. Protein levels of TRAP, Cathepsin K, and NFATc1 were also significantly suppressed. In vivo, rLGR4-ECD treatment reduced metastatic burden by 67.3% (***p < 0.001) and decreased osteoclast surface per bone surface by 56.2% (***p < 0.001). Gene expression in bone tissue showed reductions of 71.3% for Acp5 (***p < 0.001), 40.1% for Ctsk (***p < 0.001), and 86.5% for Nfatc1 (***p < 0.001). rLGR4-ECD median survival by 41.7% (12 vs. 17 days) without affecting lung metastasis. CONCLUSION: rLGR4-ECD effectively inhibits RANKL-induced osteoclastogenesis and reduces bone metastasis burden through specific suppression of osteoclast activity, leading to improved survival in a preclinical model. Its excellent efficacy and manufacturability support its potential as a novel therapeutic agent for bone metastatic disease.\n\n--- Abstract 3 (PMID: 41158885, relevance: -5.7842) ---\nThis report aimed to describe two families of Mennonite heritage affected with hypophosphatasia (HPP) and biallelic ALPL c.1001G>A/c.571G>A in four individuals. Additionally, we conduct a systematic review of studies considering the above compound heterozygous genotype and present novel insights and evidence inferred from in silico predictions using Ensembl's Variant Effect Predictor (VEP) platform and STRING protein-protein interaction (PPI) network analysis to explore these genetic variations and plausible interacting pathways for the disorder that remain for consideration in future studies. Intrafamilial and interfamilial variability of phenotypes was observed in the four patients affected with the identical ALPL c.1001G>A/c.571G>A mutation. In contrast, in the seven unaffected family members, a specific genotype was not available. Seven eligible studies exploring ALPL c.1001G>A/c.571G>A were identified, and significant heterogeneity (P < 0.05) was observed across four studies. Ensembl VEP inferred a dual effect for rs121918007 and rs121918009, involving 17 variants located in the exome and four classified as non-coding associated with all HPP presentations, as well as serum alkaline phosphatase levels, choline phosphate levels, osteogenesis imperfecta, and inborn genetic diseases. PPI network modeling predicted 10 genes (PTS, NBPF3, SLC30A7, TPK1, NTPCR, BGLAP, RUNX2, ENPP1, SLC30A6, GCH1) interacting with ALPL, highlighting their potential impact on bone formation and homeostasis, metabolism, and gene expression. These results may shed light on HPP variability by disrupting key metabolic and transcriptional pathways and provide a comprehensive view of their functional relevance, which suggests a complex genetic etiology for HPP.\n\n\n\n**Question:**\nWhich variants annotated as high impact, if any, are mapped to LGR4 in this study?"
+}

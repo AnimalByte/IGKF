@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q194",
+      "randomization_seed": "20260706:Q194:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q194",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q194",
+      "error": null,
+      "id": "batch_req_6a4d540cf89c8190911922199b13f347",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452660,
+          "created_at": 1783452646,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a2473c135e4b06b006a4d53e6989c8190930cc65e676f3c3a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q194"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a2473c135e4b06b006a4d53e72d6081908c7f2e18ae085218",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether rs6152 is associated with frontal fibrosing alopecia and separates direct from external evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that no direct FFA evidence is present and that AR-related associations are indirect and not sufficient to support an FFA link.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers direct evidence, external/indirect evidence, and provides a clear conclusion.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from claiming an association and qualifies indirect evidence as insufficient.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Addresses the question directly and includes direct study evidence, external evidence, and a conclusion.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The conclusion of no supported association is accurate, but it somewhat under-characterizes external evidence by saying it is not applicable despite mentioning AR and other phenotypic associations.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly complete, but the external evidence discussion is thinner and less precise than ideal.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Does not overclaim and appropriately states that no direct or indirect association is supported.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the association question and separates direct from external evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The main conclusion is accurate, but the discussion of external evidence is generic and does not reflect specific available AR/rs6152 context.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes the key components but lacks detail on the external evidence that may exist but is not FFA-specific.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids unsupported claims and clearly states no supported FFA association.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the central question and distinguishes direct from external evidence, but frames the answer more broadly than the supplied integrated evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The no-supported-link conclusion is likely correct, but it makes broad unsupported claims about all current scientific evidence and about the variant not being in genes or regulatory regions involved in FFA.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers the requested categories but omits relevant indirect AR-context and includes unsupported generalizations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"States no link appropriately, but overextends beyond the supplied evidence with definitive claims about published studies and biological pathways.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a2473c135e4b06b006a4d53edef74819081d19fe8ae9ea1a5",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1411,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1301,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2712
+          },
+          "user": null
+        },
+        "request_id": "bf4e0883-1e23-4982-ad4f-83f8c9b22b0f",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "50675cbc17e38be6ef0ed4c988335f6eeca9fbe28023974ba7e4c0c4cb144e0b",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q194",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q194.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q194::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q194::R2",
+      "error": null,
+      "id": "batch_req_6a4d19c1e81c81908d16f4f46e6c9d7e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437522,
+          "created_at": 1783437516,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c7716ac60aa9f17006a4d18ccca248195aabc3ab02648dbc7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q194"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c7716ac60aa9f17006a4d18cd5fd08195901b83e157ccae97",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": \"5\",\n    \"rationale\": \"The answer accurately states that the supplied abstracts do not mention rs6152 or frontal fibrosing alopecia and that the graph lists AR-related associations but none specific to FFA.\"\n  },\n  \"context_utilization\": {\n    \"score\": \"5\",\n    \"rationale\": \"The answer appropriately distinguishes direct literature evidence from graph-based external evidence and correctly concludes that no supported rs6152-FFA link is present in the supplied context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c7716ac60aa9f17006a4d18d0ecbc8195a332e76109cb4000",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2599,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 452,
+            "output_tokens_details": {
+              "reasoning_tokens": 323
+            },
+            "total_tokens": 3051
+          },
+          "user": null
+        },
+        "request_id": "fbfd695f-34a4-4493-9ddd-9483cc7fcd5b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether rs6152 is associated with frontal fibrosing alopecia and separates direct from external evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that no direct FFA evidence is present and that AR-related associations are indirect and not sufficient to support an FFA link.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers direct evidence, external/indirect evidence, and provides a clear conclusion.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that the supplied abstracts do not mention rs6152 or frontal fibrosing alopecia and that the graph lists AR-related associations but none specific to FFA.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately distinguishes direct literature evidence from graph-based external evidence and correctly concludes that no supported rs6152-FFA link is present in the supplied context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from claiming an association and qualifies indirect evidence as insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q194",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.377470+00:00"
+}

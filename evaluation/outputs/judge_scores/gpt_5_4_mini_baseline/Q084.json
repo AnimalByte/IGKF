@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q084",
+      "randomization_seed": "20260706:Q084:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q084",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q084",
+      "error": null,
+      "id": "batch_req_6a4d52bbe3b48190b3d8660fea2cde7d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452205,
+          "created_at": 1783452195,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_048942b2679473ee006a4d5223150881a2a2153fc3f126d1c0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q084"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_048942b2679473ee006a4d522395a881a2b98c5d74b61b4feb",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"It acknowledges the question but does not provide the pathway requested.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"It makes no substantive biomedical claim, but fails to identify the graph-supported pathway.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the only pathway listed for LGR4 in the integrated graph.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Unnecessarily abstains despite sufficient evidence being provided.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which integrated-graph pathway includes LGR4.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies the graph pathway as Regulation of FZD by ubiquitination and distinguishes broader literature context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the important graph-supported pathway without adding misleading extra pathways.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies that Wnt/RSPO context is broader literature rather than the explicit graph pathway.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses LGR4 pathways generally but not the specific integrated-graph pathway requested.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"LGR4 involvement in Wnt/beta-catenin signaling is supported by literature, but the graph pathway is specifically Regulation of FZD by ubiquitination; GO processes are misrepresented as pathways.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the explicit graph pathway and adds unsupported secondary pathway/process claims.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"States unsupported graph conclusions confidently with little qualification.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Provides generic LGR4 pathway information rather than answering the integrated-graph query.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Some broad Wnt-related context is plausible, but it omits the graph pathway and includes unsupported or overgeneralized claims such as GPCR signaling cascades.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not list the graph-supported pathway, Regulation of FZD by ubiquitination.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Includes some caveats about graph context, but still supplies unsupported pathway assertions.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_048942b2679473ee006a4d52297ae481a29701430403a0d194",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2701,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1047,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3748
+          },
+          "user": null
+        },
+        "request_id": "0546e3a8-f46c-493f-8122-f6f6c14bd78d",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It acknowledges the question but does not provide the pathway requested.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "It makes no substantive biomedical claim, but fails to identify the graph-supported pathway.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Omits the only pathway listed for LGR4 in the integrated graph.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Unnecessarily abstains despite sufficient evidence being provided.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q084",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q084.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.169122+00:00"
+}

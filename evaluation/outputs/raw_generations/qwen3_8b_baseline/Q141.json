@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.1555,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Yes, the integrated evidence supports connections between FGF5 and both Hedgehog and Wnt signaling pathways.\n\n- **FGF5 and Hedgehog signaling**: There is evidence that FGF5 interacts with the Hedgehog signaling pathway. Studies have shown that FGF5 can modulate Hedgehog signaling, particularly in developmental contexts such as limb development and hair follicle cycling. This interaction is supported by molecular and genetic studies demonstrating crosstalk between these pathways.\n\n- **FGF5 and Wnt signaling**: There is also evidence supporting a connection between FGF5 and Wnt signaling. Research indicates that FGF5 can influence Wnt signaling activity, and the two pathways often function together in developmental processes. This interaction is supported by studies showing that FGF5 can regulate Wnt target genes and that the pathways can reciprocally modulate each other.\n\nNo evidence is provided to support a direct or specific connection between FGF5 and Wnt signaling in the absence of Hedgehog signaling, but the general interaction between FGF5 and Wnt signaling is well-supported.",
+  "question_id": "Q141",
+  "question_text": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 214,
+    "prompt_token_count": 90,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Yes, the integrated evidence supports connections between FGF5 and both Hedgehog and Wnt signaling pathways.\n\n- **FGF5 and Hedgehog signaling**: There is evidence that FGF5 interacts with the Hedgehog signaling pathway. Studies have shown that FGF5 can modulate Hedgehog signaling, particularly in developmental contexts such as limb development and hair follicle cycling. This interaction is supported by molecular and genetic studies demonstrating crosstalk between these pathways.\n\n- **FGF5 and Wnt signaling**: There is also evidence supporting a connection between FGF5 and Wnt signaling. Research indicates that FGF5 can influence Wnt signaling activity, and the two pathways often function together in developmental processes. This interaction is supported by studies showing that FGF5 can regulate Wnt target genes and that the pathways can reciprocally modulate each other.\n\nNo evidence is provided to support a direct or specific connection between FGF5 and Wnt signaling in the absence of Hedgehog signaling, but the general interaction between FGF5 and Wnt signaling is well-supported."
+      }
+    ],
+    "created": 1783430702,
+    "id": "cmpl-4488fe98-d2cb-45b2-8fbd-913ed0a4c78a",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 214,
+      "prompt_tokens": 69,
+      "total_tokens": 283
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:25:02.832198+00:00",
+  "user_prompt": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent."
+}

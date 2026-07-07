@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.1253,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The location of rs2180439 within a regulatory element depends on the specific genomic region and the annotation data being used. To determine whether rs2180439 is located within a regulatory element, you would need to consult a genome browser or a regulatory annotation database such as:\n\n- **UCSC Genome Browser**\n- **ENCODE Project Data**\n- **Roadmap Epigenomics Project**\n- **CistromeDB**\n- **RegulomeDB**\n- **GENCODE**\n\nThese resources provide information on regulatory elements such as promoters, enhancers, silencers, insulators, and transcription factor binding sites.\n\nFor example, if you are analyzing the human genome, you can check the UCSC Genome Browser by entering the SNP rs2180439 and then using the \"Regulatory Features\" track to see if it overlaps with any regulatory elements.\n\nIf you provide the specific genomic region or the data source (e.g., a particular genome build or dataset), I can help you interpret the results more precisely.",
+  "question_id": "Q012",
+  "question_text": "Is rs2180439 located within a regulatory element in the integrated data? If so, which one?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 213,
+    "prompt_token_count": 84,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The location of rs2180439 within a regulatory element depends on the specific genomic region and the annotation data being used. To determine whether rs2180439 is located within a regulatory element, you would need to consult a genome browser or a regulatory annotation database such as:\n\n- **UCSC Genome Browser**\n- **ENCODE Project Data**\n- **Roadmap Epigenomics Project**\n- **CistromeDB**\n- **RegulomeDB**\n- **GENCODE**\n\nThese resources provide information on regulatory elements such as promoters, enhancers, silencers, insulators, and transcription factor binding sites.\n\nFor example, if you are analyzing the human genome, you can check the UCSC Genome Browser by entering the SNP rs2180439 and then using the \"Regulatory Features\" track to see if it overlaps with any regulatory elements.\n\nIf you provide the specific genomic region or the data source (e.g., a particular genome build or dataset), I can help you interpret the results more precisely."
+      }
+    ],
+    "created": 1783430050,
+    "id": "cmpl-ac6ec09a-ce1e-486c-8b17-f7d83790d9a5",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 213,
+      "prompt_tokens": 63,
+      "total_tokens": 276
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:14:10.415543+00:00",
+  "user_prompt": "Is rs2180439 located within a regulatory element in the integrated data? If so, which one?"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q067",
+      "randomization_seed": "20260706:Q067:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q067",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q067",
+      "error": null,
+      "id": "batch_req_6a4d52bb25048190aae2548c019f048f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452262,
+          "created_at": 1783452253,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0adc0051ec10ef9e006a4d525db40c81a1aa44a078174ff164",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q067"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0adc0051ec10ef9e006a4d525e32f881a1b8f5931e504d9996",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether high-impact variants are mapped to FGF5.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the provided evidence, which does not list any high-impact FGF5 variants.\"},\"completeness\":{\"score\":4,\"rationale\":\"Explains the absence of supporting evidence, though it could be slightly more concise.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids claiming variants that are not supported by the context.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the need for study-specific variant data but does not answer based on the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Factually reasonable that variant mapping depends on the dataset, but it omits the available evidence showing no listed FGF5 variants.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not provide the key conclusion that no high-impact FGF5 variants are identifiable from the provided context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing unsupported variants.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Relevant to identifying high-impact FGF5 variants but does not use the supplied evidence to answer.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately states that a variant table would be needed for exact identification, but misses that none are listed in the given context.\"},\"completeness\":{\"score\":2,\"rationale\":\"Incomplete because it does not state the evidence-supported conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids unsupported claims and requests source data.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question using the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that no high-impact variants mapped to FGF5 are provided in the evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the graph context, literature context, and conclusion without overclaiming.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies that no variants can be identified from the supplied information.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0adc0051ec10ef9e006a4d5262002881a1a2bf16fc0a434d2c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2268,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 907,
+            "output_tokens_details": {
+              "reasoning_tokens": 388
+            },
+            "total_tokens": 3175
+          },
+          "user": null
+        },
+        "request_id": "9b2d8418-62f4-4640-aa0b-20968c488c33",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the need for study-specific variant data but does not answer based on the supplied context.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Factually reasonable that variant mapping depends on the dataset, but it omits the available evidence showing no listed FGF5 variants.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Does not provide the key conclusion that no high-impact FGF5 variants are identifiable from the provided context.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inventing unsupported variants.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q067",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q067.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.157135+00:00"
+}

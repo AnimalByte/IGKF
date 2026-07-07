@@ -1,0 +1,245 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437058,
+    "created_at": 1783437056,
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q065",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "80316c28-88d8-4499-8bf3-513ed12500ce",
+    "response_id": "resp_04058d7db961aacd006a4d1700a27c81948f434244540c81fd",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 1588,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1870
+    }
+  },
+  "parsed_answer": "FGF5 is best known as a **key regulator of hair-follicle cycling**, with its major role being to **promote the transition out of the growth phase (anagen)** and into the regression phase. In practical terms, FGF5 acts as a **negative regulator of hair length and hair-follicle growth duration**: when FGF5 signaling is active, the anagen phase is shortened, limiting how long the hair shaft continues to elongate.\n\nFrom the supplied context, this fits with FGF5\u2019s broader biology as a **growth factor** involved in **cell proliferation, cell migration, and tissue development**. The disease associations also support a hair-growth role: **trichomegaly** is linked to FGF5, consistent with the idea that altered FGF5 activity affects eyelash/hair growth.\n\nA coherent biological narrative is:\n\n- **FGF5 is a secreted growth factor**\n- In hair follicles, it helps **terminate anagen**\n- This controls **hair shaft length and follicle cycling timing**\n- Loss or reduction of FGF5 function would be expected to **prolong anagen**, producing **longer hair / trichomegaly-like phenotypes**\n\nThe supplied abstracts do not directly discuss hair follicles, so this specific conclusion comes mainly from the graph context and known phenotype association rather than the abstracts.",
+  "question_id": "Q065",
+  "question_text": "What is known about the function of FGF5 in hair-follicle biology and cycling?",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q065",
+    "error": null,
+    "id": "batch_req_6a4d175cc5408190a911c4e754650c1f",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437058,
+        "created_at": 1783437056,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_04058d7db961aacd006a4d1700a27c81948f434244540c81fd",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_igkf",
+          "question_id": "Q065"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "FGF5 is best known as a **key regulator of hair-follicle cycling**, with its major role being to **promote the transition out of the growth phase (anagen)** and into the regression phase. In practical terms, FGF5 acts as a **negative regulator of hair length and hair-follicle growth duration**: when FGF5 signaling is active, the anagen phase is shortened, limiting how long the hair shaft continues to elongate.\n\nFrom the supplied context, this fits with FGF5\u2019s broader biology as a **growth factor** involved in **cell proliferation, cell migration, and tissue development**. The disease associations also support a hair-growth role: **trichomegaly** is linked to FGF5, consistent with the idea that altered FGF5 activity affects eyelash/hair growth.\n\nA coherent biological narrative is:\n\n- **FGF5 is a secreted growth factor**\n- In hair follicles, it helps **terminate anagen**\n- This controls **hair shaft length and follicle cycling timing**\n- Loss or reduction of FGF5 function would be expected to **prolong anagen**, producing **longer hair / trichomegaly-like phenotypes**\n\nThe supplied abstracts do not directly discuss hair follicles, so this specific conclusion comes mainly from the graph context and known phenotype association rather than the abstracts.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_04058d7db961aacd006a4d1700ed68819484fc6f3d21c9abcf",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 1588,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 282,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1870
+        },
+        "user": null
+      },
+      "request_id": "80316c28-88d8-4499-8bf3-513ed12500ce",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      22.38425064086914,
+      24.207048416137695,
+      26.095972061157227,
+      27.31527328491211,
+      28.086435317993164,
+      28.174713134765625,
+      28.504480361938477,
+      28.514955520629883,
+      28.540719985961914,
+      28.69863510131836,
+      28.959598541259766,
+      28.9882755279541,
+      29.297182083129883,
+      29.447593688964844,
+      29.531566619873047
+    ],
+    "candidate_pmids": [
+      "40001587",
+      "40765829",
+      "33133644",
+      "41296172",
+      "38342585",
+      "31580512",
+      "42016510",
+      "41422176",
+      "42196345",
+      "37690223",
+      "42400233",
+      "38123340",
+      "33741282",
+      "40913740",
+      "40063181"
+    ],
+    "expanded_retrieval_query": "What is known about the function of FGF5 in hair-follicle biology and cycling? Entity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)",
+    "final_context": "Graph Context:\nEntity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)\n\nVector Context:\n--- Abstract 1 (PMID: 40001587, relevance: 1.8162) ---\nBACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.\n\n--- Abstract 2 (PMID: 41422176, relevance: 0.0050) ---\nThe Fibroblast Growth Factor (FGF) gene family of Nile tilapia plays a central role in environmental adaptation and aquaculture resilience. This study integrated in silico analyses and molecular docking to comprehensively analyze the FGF gene family in Nile tilapia. Phylogenetic reconstruction identified three clades (A-C): In Group A, the subclade of genes (FGF19/21/23) revealed conserved endocrine and metabolic roles. Group B genes (FGF7/8a/8b/17/18/24) retained ancestral development functions linked to teleost-specific genome duplication. In Group C, the subclade of genes (FGF1/2/5) exhibiting sub-functionalization, such as FGF2 wound healing versus FGF5 mitogenic roles. The structural analysis highlighted the conserved beta-trefoil domain, critical for receptor binding, alongside lineage-specific innovation like heparin-binding motifs in FGF. Physicochemical properties observed a high aliphatic index (AI) of 101.68 in FGF19, which is crucial for climate adaptation. Molecular docking revealed novel predicted interactions, such as FGF4/17 with androgen receptor (AR), potentially influencing male reproduction, while KLF5/DDBI binding expanded FGF roles to gill regeneration and oxidative damage mitigation. Glucocorticoid (GR) exhibited the most potent predicted interaction with a high docking score (- 233.99 to - 313.15), particularly for FGF4 (- 310.86), and FGF8a (- 313.15), suggesting conserved GR-mediated regulation for metabolism, inflammation, and tissue repair. This study pioneers the exploration of potential cross-talk between FGF proteins and nuclear receptors, and provides insights into the link between FGF structural evolution and aquaculture resilience. By bridging genomic features and environmental adaptation, this research contributes to a better understanding of Nile tilapia's potential as a model for sustainable aquaculture.\n\n--- Abstract 3 (PMID: 40913740, relevance: -1.7526) ---\nRenal ischemic disease represents a severe clinical pathological condition commonly observed in acute kidney injury (AKI), renal transplantation, and kidney surgery. It leads to renal tubular epithelial cell damage, inflammatory responses, and cell death, potentially progressing to chronic kidney disease (CKD) or even renal failure, significantly impairing patients' quality of life and survival rates. Current therapeutic strategies for renal ischemia-reperfusion injury (IRI) include pharmacological interventions, cell therapy, and gene therapy, yet their efficacy remains limited and may be accompanied by adverse effects. Thus, there is an urgent need to explore novel therapeutic targets and strategies. Fibroblast growth factor 5 (FGF5), a key member of the FGF family, plays crucial roles in cell proliferation, differentiation, and tissue repair. However, its specific mechanism in renal IRI remains unclear. This study aimed to investigate the therapeutic effects of FGF5 on renal IRI and its underlying molecular mechanisms in vitro. Using normal rat kidney-52E (NRK-52E) and human kidney-2 (HK-2 cell) models, we evaluated the impact of FGF5 on cell viability, oxidative stress, inflammatory responses, and renal cell death. Our findings demonstrate that FGF5 exhibits significant biological activity and further reveal its regulatory role in suppressing ferroptosis through activation of the Mitophagy. In conclusion, this study identifies FGF5 as a potential therapeutic agent for renal IRI and provides a theoretical foundation for developing FGF5-based treatment strategies. These findings hold substantial scientific and clinical value, potentially opening new avenues for treating renal ischemic diseases.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)",
+    "graph_context_length": 758,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3411,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "function"
+      },
+      {
+        "label": "ENTITY",
+        "text": "fgf5"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair-follicle biology"
+      },
+      {
+        "label": "ENTITY",
+        "text": "cycling"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q065.json",
+    "retrieval_total_seconds": 0.4176,
+    "score_max": 1.8162081241607666,
+    "score_mean": 0.022888127714395523,
+    "scores": [
+      1.8162081241607666,
+      0.005035232752561569,
+      -1.7525789737701416
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.",
+      "The Fibroblast Growth Factor (FGF) gene family of Nile tilapia plays a central role in environmental adaptation and aquaculture resilience. This study integrated in silico analyses and molecular docking to comprehensively analyze the FGF gene family in Nile tilapia. Phylogenetic reconstruction identified three clades (A-C): In Group A, the subclade of genes (FGF19/21/23) revealed conserved endocrine and metabolic roles. Group B genes (FGF7/8a/8b/17/18/24) retained ancestral development functions linked to teleost-specific genome duplication. In Group C, the subclade of genes (FGF1/2/5) exhibiting sub-functionalization, such as FGF2 wound healing versus FGF5 mitogenic roles. The structural analysis highlighted the conserved beta-trefoil domain, critical for receptor binding, alongside lineage-specific innovation like heparin-binding motifs in FGF. Physicochemical properties observed a high aliphatic index (AI) of 101.68 in FGF19, which is crucial for climate adaptation. Molecular docking revealed novel predicted interactions, such as FGF4/17 with androgen receptor (AR), potentially influencing male reproduction, while KLF5/DDBI binding expanded FGF roles to gill regeneration and oxidative damage mitigation. Glucocorticoid (GR) exhibited the most potent predicted interaction with a high docking score (- 233.99 to - 313.15), particularly for FGF4 (- 310.86), and FGF8a (- 313.15), suggesting conserved GR-mediated regulation for metabolism, inflammation, and tissue repair. This study pioneers the exploration of potential cross-talk between FGF proteins and nuclear receptors, and provides insights into the link between FGF structural evolution and aquaculture resilience. By bridging genomic features and environmental adaptation, this research contributes to a better understanding of Nile tilapia's potential as a model for sustainable aquaculture.",
+      "Renal ischemic disease represents a severe clinical pathological condition commonly observed in acute kidney injury (AKI), renal transplantation, and kidney surgery. It leads to renal tubular epithelial cell damage, inflammatory responses, and cell death, potentially progressing to chronic kidney disease (CKD) or even renal failure, significantly impairing patients' quality of life and survival rates. Current therapeutic strategies for renal ischemia-reperfusion injury (IRI) include pharmacological interventions, cell therapy, and gene therapy, yet their efficacy remains limited and may be accompanied by adverse effects. Thus, there is an urgent need to explore novel therapeutic targets and strategies. Fibroblast growth factor 5 (FGF5), a key member of the FGF family, plays crucial roles in cell proliferation, differentiation, and tissue repair. However, its specific mechanism in renal IRI remains unclear. This study aimed to investigate the therapeutic effects of FGF5 on renal IRI and its underlying molecular mechanisms in vitro. Using normal rat kidney-52E (NRK-52E) and human kidney-2 (HK-2 cell) models, we evaluated the impact of FGF5 on cell viability, oxidative stress, inflammatory responses, and renal cell death. Our findings demonstrate that FGF5 exhibits significant biological activity and further reveal its regulatory role in suppressing ferroptosis through activation of the Mitophagy. In conclusion, this study identifies FGF5 as a potential therapeutic agent for renal IRI and provides a theoretical foundation for developing FGF5-based treatment strategies. These findings hold substantial scientific and clinical value, potentially opening new avenues for treating renal ischemic diseases."
+    ],
+    "selected_pmids": [
+      "40001587",
+      "41422176",
+      "40913740"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0648
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T15:14:46.482111+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40001587, relevance: 1.8162) ---\nBACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.\n\n--- Abstract 2 (PMID: 41422176, relevance: 0.0050) ---\nThe Fibroblast Growth Factor (FGF) gene family of Nile tilapia plays a central role in environmental adaptation and aquaculture resilience. This study integrated in silico analyses and molecular docking to comprehensively analyze the FGF gene family in Nile tilapia. Phylogenetic reconstruction identified three clades (A-C): In Group A, the subclade of genes (FGF19/21/23) revealed conserved endocrine and metabolic roles. Group B genes (FGF7/8a/8b/17/18/24) retained ancestral development functions linked to teleost-specific genome duplication. In Group C, the subclade of genes (FGF1/2/5) exhibiting sub-functionalization, such as FGF2 wound healing versus FGF5 mitogenic roles. The structural analysis highlighted the conserved beta-trefoil domain, critical for receptor binding, alongside lineage-specific innovation like heparin-binding motifs in FGF. Physicochemical properties observed a high aliphatic index (AI) of 101.68 in FGF19, which is crucial for climate adaptation. Molecular docking revealed novel predicted interactions, such as FGF4/17 with androgen receptor (AR), potentially influencing male reproduction, while KLF5/DDBI binding expanded FGF roles to gill regeneration and oxidative damage mitigation. Glucocorticoid (GR) exhibited the most potent predicted interaction with a high docking score (- 233.99 to - 313.15), particularly for FGF4 (- 310.86), and FGF8a (- 313.15), suggesting conserved GR-mediated regulation for metabolism, inflammation, and tissue repair. This study pioneers the exploration of potential cross-talk between FGF proteins and nuclear receptors, and provides insights into the link between FGF structural evolution and aquaculture resilience. By bridging genomic features and environmental adaptation, this research contributes to a better understanding of Nile tilapia's potential as a model for sustainable aquaculture.\n\n--- Abstract 3 (PMID: 40913740, relevance: -1.7526) ---\nRenal ischemic disease represents a severe clinical pathological condition commonly observed in acute kidney injury (AKI), renal transplantation, and kidney surgery. It leads to renal tubular epithelial cell damage, inflammatory responses, and cell death, potentially progressing to chronic kidney disease (CKD) or even renal failure, significantly impairing patients' quality of life and survival rates. Current therapeutic strategies for renal ischemia-reperfusion injury (IRI) include pharmacological interventions, cell therapy, and gene therapy, yet their efficacy remains limited and may be accompanied by adverse effects. Thus, there is an urgent need to explore novel therapeutic targets and strategies. Fibroblast growth factor 5 (FGF5), a key member of the FGF family, plays crucial roles in cell proliferation, differentiation, and tissue repair. However, its specific mechanism in renal IRI remains unclear. This study aimed to investigate the therapeutic effects of FGF5 on renal IRI and its underlying molecular mechanisms in vitro. Using normal rat kidney-52E (NRK-52E) and human kidney-2 (HK-2 cell) models, we evaluated the impact of FGF5 on cell viability, oxidative stress, inflammatory responses, and renal cell death. Our findings demonstrate that FGF5 exhibits significant biological activity and further reveal its regulatory role in suppressing ferroptosis through activation of the Mitophagy. In conclusion, this study identifies FGF5 as a potential therapeutic agent for renal IRI and provides a theoretical foundation for developing FGF5-based treatment strategies. These findings hold substantial scientific and clinical value, potentially opening new avenues for treating renal ischemic diseases.\n\n\n\n**Question:**\nWhat is known about the function of FGF5 in hair-follicle biology and cycling?"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q012",
+      "randomization_seed": "20260706:Q012:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q012",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q012",
+      "error": null,
+      "id": "batch_req_6a4d52b8d5508190994cbe07bade1e51",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452341,
+          "created_at": 1783452330,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01b24fea44738267006a4d52aa595081a29731b92b8ec3de39",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q012"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01b24fea44738267006a4d52aac3a081a2bec7c9598fd212f5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether rs2180439 can be identified as overlapping a regulatory element in the supplied integrated context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph and abstracts do not contain rs2180439 or a regulatory-element annotation for it.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers both parts of the question and explains why no regulatory element can be named from the evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making an unsupported claim.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Relevant to the general task but does not use the supplied integrated evidence or provide a direct conclusion from it.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly notes that regulatory annotations can depend on data source and genome build, but does not evaluate the provided evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not answer the yes/no question in the context given and does not mention that rs2180439 is absent from the supplied evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Avoids guessing and clearly requests more data rather than inventing an annotation.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Provides generic advice about how to check regulatory annotations but does not answer the specific question using the provided data.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The suggested resources and general statements are broadly accurate, but they do not address the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key conclusion that the provided integrated data do not mention rs2180439 or any overlapping regulatory element.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not invent a regulatory element and appropriately frames the answer as requiring additional annotation data.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question in relation to the provided graph and abstracts.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence does not mention rs2180439 or any associated regulatory element.\"},\"completeness\":{\"score\":4,\"rationale\":\"Answers the question and cites absence from both structured and unstructured data, though slightly less precisely than distinguishing absence of evidence from proof of non-overlap.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately concludes that the question cannot be answered with the available data rather than fabricating a regulatory element.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01b24fea44738267006a4d52b0975081a29c3b8e23e0880bc4",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3012,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1101,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4113
+          },
+          "user": null
+        },
+        "request_id": "e442de52-3e1f-4ff0-8fae-432e057113b1",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Relevant to the general task but does not use the supplied integrated evidence or provide a direct conclusion from it.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes that regulatory annotations can depend on data source and genome build, but does not evaluate the provided evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Does not answer the yes/no question in the context given and does not mention that rs2180439 is absent from the supplied evidence.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Avoids guessing and clearly requests more data rather than inventing an annotation.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q012",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q012.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.118551+00:00"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q169",
+      "randomization_seed": "20260706:Q169:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q169",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q169",
+      "error": null,
+      "id": "batch_req_6a4d540b48f08190adef5b8c0a79ad96",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452652,
+          "created_at": 1783452636,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c7d4ec084d26c9b006a4d53dcba18819592bb49adde153b74",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q169"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c7d4ec084d26c9b006a4d53dd66488195852f8336f44777e1",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that the dataset does not support a finasteride-response effect for rs1160312.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence: weak disease association only, no finasteride, no pharmacogenomic or mechanistic data.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers disease association versus drug response, lack of treatment data, lack of mechanistic link, and irrelevance of the abstracts.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from inferring a pharmacogenomic effect beyond the available evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether rs1160312 modifies finasteride response and concludes no.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Scientifically accurate overall, though it imprecisely suggests androgenetic alopecia is the only disease association despite other weak associations listed.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Explains absence of finasteride, pharmacogenomic data, and clinical studies, but is slightly less precise about disease association versus treatment response.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly avoids inferring an unsupported pharmacogenomic effect.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses what would be needed to test a pharmacogenomic effect, but does not directly evaluate the supplied dataset.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"General pharmacogenomic reasoning is accurate, but the claim that the dataset cannot be assessed without more access is not appropriate given the provided evidence packet.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits the specific evidence context, including absence of finasteride data, weak disease associations, and unrelated abstracts.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Avoids unsupported conclusions but over-abstains instead of concluding that the supplied dataset provides no evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers no and explains why a treatment-response modification cannot be inferred.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that pharmacogenomic inference requires genotype-by-treatment evidence or treated versus untreated comparisons.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the core inferential requirements well, though it does not mention the specific supplied evidence such as LINC01432, weak androgenetic alopecia association, or unrelated abstracts.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the claim and does not infer unsupported pharmacogenomic modification.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c7d4ec084d26c9b006a4d53e658dc81959523f83b60217305",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3315,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1656,
+            "output_tokens_details": {
+              "reasoning_tokens": 855
+            },
+            "total_tokens": 4971
+          },
+          "user": null
+        },
+        "request_id": "4c9e7a24-4148-4482-a51c-7fa64606311d",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "fb7c5dca376ec6357682cbb9af721a4f96f53e37998c3bb411237aceb5d3688d",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q169",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q169.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q169::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q169::R1",
+      "error": null,
+      "id": "batch_req_6a4d19bebdf88190929b6a11b3c31dfb",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437506,
+          "created_at": 1783437496,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05119c768db3d227006a4d18b81d808190b635dc2c37738c1f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q169"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05119c768db3d227006a4d18bbe7988190ba65a26ccd929f6e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"The main conclusion is supported by the supplied context: rs1160312 is linked only to LINC01432 and disease associations, and neither Finasteride nor drug-response evidence appears in the graph or abstracts. Minor unsupported external context is included about Finasteride indications.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the absence of Finasteride, pharmacogenomic data, and relevant clinical or functional drug-response studies in the supplied graph and vector context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05119c768db3d227006a4d18c099cc8190a6c207652fcd64e1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2052,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 515,
+            "output_tokens_details": {
+              "reasoning_tokens": 367
+            },
+            "total_tokens": 2567
+          },
+          "user": null
+        },
+        "request_id": "0bce7a89-fb1a-4b55-9750-63b8c1d51841",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether rs1160312 modifies finasteride response and concludes no.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Scientifically accurate overall, though it imprecisely suggests androgenetic alopecia is the only disease association despite other weak associations listed.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Explains absence of finasteride, pharmacogenomic data, and clinical studies, but is slightly less precise about disease association versus treatment response.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The main conclusion is supported by the supplied context: rs1160312 is linked only to LINC01432 and disease associations, and neither Finasteride nor drug-response evidence appears in the graph or abstracts. Minor unsupported external context is included about Finasteride indications.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the absence of Finasteride, pharmacogenomic data, and relevant clinical or functional drug-response studies in the supplied graph and vector context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Correctly avoids inferring an unsupported pharmacogenomic effect.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q169",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q169.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.361466+00:00"
+}

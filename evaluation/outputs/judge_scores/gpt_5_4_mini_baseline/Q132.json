@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q132",
+      "randomization_seed": "20260706:Q132:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q132",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q132",
+      "error": null,
+      "id": "batch_req_6a4d5408d57c8190b8ab8b02aa2fd95c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452580,
+          "created_at": 1783452568,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ec8773122fa2d78006a4d539816888193aea25b3f02eba4ed",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q132"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ec8773122fa2d78006a4d5399986c8193b075a9cdd9044092",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses dutasteride\u2019s mechanism in hair-loss treatment.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly identifies 5-alpha-reductase/SRD5A2 inhibition and reduced DHT, but misleadingly suggests direct AR inhibition/targeting as part of dutasteride\u2019s mechanism and includes unrelated PI3K/Akt discussion.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the core DHT-reduction mechanism and follicular androgen signaling, but adds unnecessary and partly unsupported material.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Notes limitations of the supplied context, but still makes unsupported claims about AR inhibition.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately explains the hair-loss mechanism.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that dutasteride inhibits type I and type II 5-alpha-reductase, reducing testosterone-to-DHT conversion and follicle miniaturization.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key enzyme targets, DHT reduction, comparison with finasteride, and relevance to androgenetic alopecia.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not overclaim beyond established mechanism.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question in the hair-loss context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately describes inhibition of 5-alpha-reductase types I and II, reduced DHT, and reduced follicle miniaturization.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers all important mechanistic elements concisely.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Stays within well-supported claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses dutasteride\u2019s mechanism in androgenetic hair loss.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly describes reduced DHT formation and decreased AR-mediated follicular miniaturization, but states SRD5A2 converts testosterone to DHT while also calling dutasteride a dual inhibitor without mentioning SRD5A1; wording around AR linkage could imply more direct targeting than established.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main pathway and downstream follicular effect, though the dual type I/type II enzyme detail is underdeveloped.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids assigning unsupported roles to listed interacting proteins and avoids major overclaiming.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ec8773122fa2d78006a4d539f0a488193867302a5ec4e4154",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3081,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1119,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4200
+          },
+          "user": null
+        },
+        "request_id": "e19cd5b1-af4c-4972-a3f2-aadd8013fb52",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question in the hair-loss context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately describes inhibition of 5-alpha-reductase types I and II, reduced DHT, and reduced follicle miniaturization.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers all important mechanistic elements concisely.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Stays within well-supported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q132",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q132.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.224323+00:00"
+}

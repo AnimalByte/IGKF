@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q164",
+      "randomization_seed": "20260706:Q164:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q164",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q164",
+      "error": null,
+      "id": "batch_req_6a4d540b07a88190ae4efe5c13526608",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452599,
+          "created_at": 1783452574,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09da763e71a22d2e006a4d539ea3588194ad2853db37ff8e3b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q164"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09da763e71a22d2e006a4d539f7fd48194b0b8e8c3f578fe3c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the AR-androgenetic alopecia relationship and lists multiple evidence types.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Most biomedical claims are broadly consistent with established AR/androgen biology, but the supplied evidence packet does not contain direct AGA evidence, so the strength is overstated relative to the reference.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers genetic, mechanistic, tissue, pharmacologic, and androgen-insensitivity evidence, but does not note that these are not present in the provided evidence.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents a strong direct conclusion without qualifying that the supplied context lacks direct support for androgenetic alopecia.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether the provided evidence supports an AR-androgenetic alopecia link.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the packet lacks direct AGA evidence while noting AR's general role in androgen signaling.\"},\"completeness\":{\"score\":4,\"rationale\":\"Identifies the absence of direct evidence and gives plausible indirect context, though it could more explicitly cite the abnormal skin physiology and nuclear receptor pathway evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the conclusion and avoids claiming a direct association from insufficient supplied evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately addresses the evidence for AR in androgenetic alopecia from the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Faithfully reflects the packet: no direct AGA evidence, but AR has androgen-signaling and skin/androgen-related phenotype relevance.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key supported points from the graph and abstracts and clearly distinguishes direct evidence from biological plausibility.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly abstains from asserting a direct relationship and clearly qualifies the indirect rationale.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question with several proposed lines of evidence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Many general statements are plausible, but it contains inaccuracies or overstatements, such as placing the CAG repeat in the promoter and making unsupported animal-model claims; the supplied packet also lacks these direct AGA data.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers genetic, molecular, clinical, expression, and model evidence, but omits the important limitation that none of this direct evidence appears in the reference packet.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"States a clear supported relationship without acknowledging that the supplied evidence does not directly mention androgenetic alopecia.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09da763e71a22d2e006a4d53b13d148194b93d60b234118fcb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4030,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2089,
+            "output_tokens_details": {
+              "reasoning_tokens": 1452
+            },
+            "total_tokens": 6119
+          },
+          "user": null
+        },
+        "request_id": "2550e237-4739-47b4-80e1-fcdb0006479a",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the AR-androgenetic alopecia relationship and lists multiple evidence types.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Most biomedical claims are broadly consistent with established AR/androgen biology, but the supplied evidence packet does not contain direct AGA evidence, so the strength is overstated relative to the reference.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers genetic, mechanistic, tissue, pharmacologic, and androgen-insensitivity evidence, but does not note that these are not present in the provided evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Presents a strong direct conclusion without qualifying that the supplied context lacks direct support for androgenetic alopecia.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q164",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q164.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.247234+00:00"
+}

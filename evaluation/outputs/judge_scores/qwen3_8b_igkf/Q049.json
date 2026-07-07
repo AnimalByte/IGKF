@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q049",
+      "randomization_seed": "20260706:Q049:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q049",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q049",
+      "error": null,
+      "id": "batch_req_6a4d52bb1a148190989f53f4f7761af6",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452199,
+          "created_at": 1783452188,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0970084aa4b7e8ef006a4d521c2ea4819e89ee284b6f03c71c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q049"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0970084aa4b7e8ef006a4d521c93a4819e9c2827a575f6cb96",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Partially addresses the request by abstaining, but does not specifically state that the provided context lacks the rs7313338 p-value.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Does not invent a p-value and is broadly accurate, though it ignores that the supplied evidence already indicates the value is not reported.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not provide the key context-specific conclusion that rs7313338 is absent from the supplied study abstract/evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids fabricating an unsupported p-value.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question in relation to the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that rs7313338 and its p-value are not reported in the provided evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point and briefly explains why the p-value cannot be extracted.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the answer based on insufficient evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Partially addresses the question by saying more study information is needed, but does not use the supplied context to conclude the p-value is unavailable.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Does not provide an unsupported value and is generally accurate, but is less precise than noting the context lacks the requested SNP.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the important context-specific finding that rs7313338 is not mentioned in the provided evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing a p-value.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the requested p-value is not reported in the provided context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate against the supplied evidence, which does not list rs7313338 or a p-value for it.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the essential answer, though with minimal explanation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly abstains from giving an unsupported p-value.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0970084aa4b7e8ef006a4d5222b508819e9f52e95b31fa7004",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3404,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1061,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4465
+          },
+          "user": null
+        },
+        "request_id": "dfaf0f0d-5f5a-4d0f-9527-8aba0fedc4cb",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "373685bde48e835ae1a5c8fdfbfefb946e8fb47d086adcb7c63a44fb59eebed9",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q049",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q049.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q049::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q049::R1",
+      "error": null,
+      "id": "batch_req_6a4d19af574c81908e9e4ab03421d8ce",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437466,
+          "created_at": 1783437462,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b80b726fa7fbdb9006a4d18963900819785da7628cbd00a95",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q049"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b80b726fa7fbdb9006a4d1897a7348197a444f259e9ffa8a0",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The supplied context does not mention rs7313338 or a specific p-value for it, so the answer is supported.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately relies on the absence of the requested SNP-specific data in the provided graph and vector context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b80b726fa7fbdb9006a4d18996438819797983e6f13827acb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2883,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 239,
+            "output_tokens_details": {
+              "reasoning_tokens": 132
+            },
+            "total_tokens": 3122
+          },
+          "user": null
+        },
+        "request_id": "e87fe996-36fc-43c2-8bef-f6ffdcc39ade",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that the requested p-value is not reported in the provided context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurate against the supplied evidence, which does not list rs7313338 or a p-value for it.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the essential answer, though with minimal explanation.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The supplied context does not mention rs7313338 or a specific p-value for it, so the answer is supported.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately relies on the absence of the requested SNP-specific data in the provided graph and vector context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Correctly abstains from giving an unsupported p-value.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q049",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q049.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.281937+00:00"
+}

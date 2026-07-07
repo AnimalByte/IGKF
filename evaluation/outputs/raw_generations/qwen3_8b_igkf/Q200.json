@@ -1,0 +1,170 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.8937,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The provided graph and vector contexts do not contain any information about the CFTR gene or its role in cystic fibrosis. Therefore, I cannot synthesize a coherent biological narrative based on the given data.",
+  "question_id": "Q200",
+  "question_text": "What is the role of the CFTR gene in cystic fibrosis?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 41,
+    "prompt_token_count": 1289,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided graph and vector contexts do not contain any information about the CFTR gene or its role in cystic fibrosis. Therefore, I cannot synthesize a coherent biological narrative based on the given data."
+      }
+    ],
+    "created": 1783433782,
+    "id": "cmpl-1d658046-b91e-44b5-8905-ef1b4f2a3f70",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 41,
+      "prompt_tokens": 1268,
+      "total_tokens": 1309
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      33.980934143066406,
+      34.078304290771484,
+      35.066368103027344,
+      35.23573303222656,
+      35.43933868408203,
+      35.56969451904297,
+      35.82501220703125,
+      35.9119873046875,
+      36.2595329284668,
+      36.29457473754883,
+      36.34540939331055,
+      36.39174270629883,
+      36.47721481323242,
+      36.56983184814453,
+      36.660037994384766
+    ],
+    "candidate_pmids": [
+      "42269416",
+      "42303350",
+      "39103847",
+      "42190016",
+      "38183876",
+      "41603896",
+      "38985526",
+      "39572783",
+      "39455645",
+      "38357128",
+      "39135208",
+      "38884729",
+      "42125800",
+      "35145545",
+      "41786677"
+    ],
+    "expanded_retrieval_query": "What is the role of the CFTR gene in cystic fibrosis? No relevant data found in the graph.",
+    "final_context": "Graph Context:\nNo relevant data found in the graph.\n\nVector Context:\n--- Abstract 1 (PMID: 42303350, relevance: -0.8486) ---\nThe TGF-beta/Smad signaling pathway plays a central role in the pathogenesis of idiopathic pulmonary fibrosis (IPF) and is modulated by sphingolipid metabolism. Ceramide, a key intermediate in this pathway, is synthesized in various acyl-CoA chain lengths by ceramide synthases (CerS). However, the specific role of ceramide synthase 5 (CerS5) in pulmonary fibrosis remains unclear. Therefore, this study aimed to elucidate the role of CerS5 in fibrotic responses using human lung fibroblasts (HFL1), IPF-derived myofibroblasts (IPF-MyoFs), and a bleomycin-induced mouse model of pulmonary fibrosis. CerS5 knockdown attenuated TGF-beta1-induced expression of alpha-smooth muscle actin (alphaSMA), collagen I, fibronectin, and phosphorylated Smad2/3 in both HFL1 cells and IPF-MyoFs. It also suppressed TGF-beta1-induced nuclear translocation of Smad2/3. Notably, CerS5 knockdown reduced protein levels of Smad3 and Smad4 even in the absence of TGF-beta1 stimulation. Smad4 knockdown replicated the effects of CerS5 knockdown by decreasing TGF-beta1-induced expression of fibrotic markers, phosphorylated Smad2/3, and total Smad3 levels. In vivo, CerS5 knockout significantly reduced bleomycin-induced lung fibrosis and Smad3/4 expression. These findings suggest that CerS5 regulates fibrotic responses via modulation of Smad4 and the TGF-beta1/Smad signaling pathway. Targeting CerS5 may therefore represent a promising therapeutic strategy for the treatment of IPF.\n\n--- Abstract 2 (PMID: 42125800, relevance: -2.3424) ---\nBACKGROUND: Cardiac fibrosis is a major cause of cardiac dysfunction and is associated with virtually all forms of heart disease. Recently, single-cell genomic approaches have revealed in unprecedented resolution the orchestrated cellular responses driving cardiac fibrosis. Yet, the fibrosis-inducing phenotypes that emerge in the heart after nonischemic cardiac stress and the transcriptional circuits that govern fibrogenic cellular phenotypes are not well understood. METHODS: Applying a single-cell paired-multiomic approach-by which both transcriptomic and epigenetic information is captured from individual cells-we reveal key transcription factors, in mouse and human hearts, associated with fibrosis development after nonischemic cardiac insults. Using high-throughput bulk transcriptomic and proteomic analyses, microscopy, and functional in vitro assays, we validate the distinct roles of new and established transcription factors in cardiac fibrosis. RESULTS: Analysis of mouse hearts undergoing reverse remodeling after angiotensin II stimulation, where cardiac fibrosis dissipates, we find these factors are reversibly activated. Further, silencing transcription factors-including those we have identified that are previously unlinked to cardiac fibrosis, such as CREB3L2 (CAMP Responsive Element Binding Protein 3 Like 2), BNC2 (Basonuclin Zinc Finger Protein 2), and NFAT5 (Nuclear Factor of Activated T Cells 5)-modulates induction of extracellular matrix gene expression by human cardiac fibroblasts. Detailed analysis of CREB3L2 showed that it regulates cardiac fibrosis by modulating extracellular matrix synthesis through a dual mechanism-involving its N-terminal transactivation domain and a paracrine-acting C-terminal fragment-which is triggered after endoplasmic reticular stress. CONCLUSIONS: This study identifies critical transcription factors regulating cardiac fibrosis and offers promising new targets to ameliorate the development of fibrosis in the context of stressors that cause cardiac dysfunction.\n\n--- Abstract 3 (PMID: 41603896, relevance: -3.9402) ---\nAutosomal recessive polycystic kidney disease (ARPKD) is the prototype of the hepato-renal fibrocystic diseases, a subset of the broader ciliopathy disorders. As a severe form of PKD, ARPKD typically manifests in utero with 21% perinatal mortality and progressive loss of kidney function in most post-natal survivors. Congenital hepatic fibrosis is an invariant feature of ARPKD. PKHD1-encoded fibrocystin/polyductin (FPC) is a large 4074 amino acid glycoprotein that likely functions as a receptor molecule and appears to play a key role in maintaining differentiated renal tubular epithelium. The molecular mechanisms by which defects in FPC contribute to ARPKD pathogenesis are just beginning to be elucidated. FPC is a novel protein that likely evolved as vertebrates transitioned from aquatic to semi-terrestrial ecosystems. Full-length human FPC shares a phylogenetically conserved, multi-motif N-terminal region with its ancestral homolog, PKHD1L1, and contains a single-pass transmembrane domain and a novel C-terminal tail that harbors a ciliary targeting motif as well as mitochondrial and nuclear localization sequences. This review synthesizes the full range of recent experimental data about PKHD1/FPC to provide a current functional perspective about this complex protein. We also discuss the clinical relevance of these emerging functional insights for both kidney health and ARPKD pathogenesis.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "rerank_seconds": 0.3325,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "cftr gene"
+      },
+      {
+        "label": "ENTITY",
+        "text": "cystic fibrosis"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q200.json",
+    "retrieval_total_seconds": 0.3643,
+    "score_max": -0.8485605120658875,
+    "score_mean": -2.3770818511644998,
+    "scores": [
+      -0.8485605120658875,
+      -2.3424365520477295,
+      -3.940248489379883
+    ],
+    "selected_abstracts": [
+      "The TGF-beta/Smad signaling pathway plays a central role in the pathogenesis of idiopathic pulmonary fibrosis (IPF) and is modulated by sphingolipid metabolism. Ceramide, a key intermediate in this pathway, is synthesized in various acyl-CoA chain lengths by ceramide synthases (CerS). However, the specific role of ceramide synthase 5 (CerS5) in pulmonary fibrosis remains unclear. Therefore, this study aimed to elucidate the role of CerS5 in fibrotic responses using human lung fibroblasts (HFL1), IPF-derived myofibroblasts (IPF-MyoFs), and a bleomycin-induced mouse model of pulmonary fibrosis. CerS5 knockdown attenuated TGF-beta1-induced expression of alpha-smooth muscle actin (alphaSMA), collagen I, fibronectin, and phosphorylated Smad2/3 in both HFL1 cells and IPF-MyoFs. It also suppressed TGF-beta1-induced nuclear translocation of Smad2/3. Notably, CerS5 knockdown reduced protein levels of Smad3 and Smad4 even in the absence of TGF-beta1 stimulation. Smad4 knockdown replicated the effects of CerS5 knockdown by decreasing TGF-beta1-induced expression of fibrotic markers, phosphorylated Smad2/3, and total Smad3 levels. In vivo, CerS5 knockout significantly reduced bleomycin-induced lung fibrosis and Smad3/4 expression. These findings suggest that CerS5 regulates fibrotic responses via modulation of Smad4 and the TGF-beta1/Smad signaling pathway. Targeting CerS5 may therefore represent a promising therapeutic strategy for the treatment of IPF.",
+      "BACKGROUND: Cardiac fibrosis is a major cause of cardiac dysfunction and is associated with virtually all forms of heart disease. Recently, single-cell genomic approaches have revealed in unprecedented resolution the orchestrated cellular responses driving cardiac fibrosis. Yet, the fibrosis-inducing phenotypes that emerge in the heart after nonischemic cardiac stress and the transcriptional circuits that govern fibrogenic cellular phenotypes are not well understood. METHODS: Applying a single-cell paired-multiomic approach-by which both transcriptomic and epigenetic information is captured from individual cells-we reveal key transcription factors, in mouse and human hearts, associated with fibrosis development after nonischemic cardiac insults. Using high-throughput bulk transcriptomic and proteomic analyses, microscopy, and functional in vitro assays, we validate the distinct roles of new and established transcription factors in cardiac fibrosis. RESULTS: Analysis of mouse hearts undergoing reverse remodeling after angiotensin II stimulation, where cardiac fibrosis dissipates, we find these factors are reversibly activated. Further, silencing transcription factors-including those we have identified that are previously unlinked to cardiac fibrosis, such as CREB3L2 (CAMP Responsive Element Binding Protein 3 Like 2), BNC2 (Basonuclin Zinc Finger Protein 2), and NFAT5 (Nuclear Factor of Activated T Cells 5)-modulates induction of extracellular matrix gene expression by human cardiac fibroblasts. Detailed analysis of CREB3L2 showed that it regulates cardiac fibrosis by modulating extracellular matrix synthesis through a dual mechanism-involving its N-terminal transactivation domain and a paracrine-acting C-terminal fragment-which is triggered after endoplasmic reticular stress. CONCLUSIONS: This study identifies critical transcription factors regulating cardiac fibrosis and offers promising new targets to ameliorate the development of fibrosis in the context of stressors that cause cardiac dysfunction.",
+      "Autosomal recessive polycystic kidney disease (ARPKD) is the prototype of the hepato-renal fibrocystic diseases, a subset of the broader ciliopathy disorders. As a severe form of PKD, ARPKD typically manifests in utero with 21% perinatal mortality and progressive loss of kidney function in most post-natal survivors. Congenital hepatic fibrosis is an invariant feature of ARPKD. PKHD1-encoded fibrocystin/polyductin (FPC) is a large 4074 amino acid glycoprotein that likely functions as a receptor molecule and appears to play a key role in maintaining differentiated renal tubular epithelium. The molecular mechanisms by which defects in FPC contribute to ARPKD pathogenesis are just beginning to be elucidated. FPC is a novel protein that likely evolved as vertebrates transitioned from aquatic to semi-terrestrial ecosystems. Full-length human FPC shares a phylogenetically conserved, multi-motif N-terminal region with its ancestral homolog, PKHD1L1, and contains a single-pass transmembrane domain and a novel C-terminal tail that harbors a ciliary targeting motif as well as mitochondrial and nuclear localization sequences. This review synthesizes the full range of recent experimental data about PKHD1/FPC to provide a current functional perspective about this complex protein. We also discuss the clinical relevance of these emerging functional insights for both kidney health and ARPKD pathogenesis."
+    ],
+    "selected_pmids": [
+      "42303350",
+      "42125800",
+      "41603896"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0154
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:16:22.602703+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42303350, relevance: -0.8486) ---\nThe TGF-beta/Smad signaling pathway plays a central role in the pathogenesis of idiopathic pulmonary fibrosis (IPF) and is modulated by sphingolipid metabolism. Ceramide, a key intermediate in this pathway, is synthesized in various acyl-CoA chain lengths by ceramide synthases (CerS). However, the specific role of ceramide synthase 5 (CerS5) in pulmonary fibrosis remains unclear. Therefore, this study aimed to elucidate the role of CerS5 in fibrotic responses using human lung fibroblasts (HFL1), IPF-derived myofibroblasts (IPF-MyoFs), and a bleomycin-induced mouse model of pulmonary fibrosis. CerS5 knockdown attenuated TGF-beta1-induced expression of alpha-smooth muscle actin (alphaSMA), collagen I, fibronectin, and phosphorylated Smad2/3 in both HFL1 cells and IPF-MyoFs. It also suppressed TGF-beta1-induced nuclear translocation of Smad2/3. Notably, CerS5 knockdown reduced protein levels of Smad3 and Smad4 even in the absence of TGF-beta1 stimulation. Smad4 knockdown replicated the effects of CerS5 knockdown by decreasing TGF-beta1-induced expression of fibrotic markers, phosphorylated Smad2/3, and total Smad3 levels. In vivo, CerS5 knockout significantly reduced bleomycin-induced lung fibrosis and Smad3/4 expression. These findings suggest that CerS5 regulates fibrotic responses via modulation of Smad4 and the TGF-beta1/Smad signaling pathway. Targeting CerS5 may therefore represent a promising therapeutic strategy for the treatment of IPF.\n\n--- Abstract 2 (PMID: 42125800, relevance: -2.3424) ---\nBACKGROUND: Cardiac fibrosis is a major cause of cardiac dysfunction and is associated with virtually all forms of heart disease. Recently, single-cell genomic approaches have revealed in unprecedented resolution the orchestrated cellular responses driving cardiac fibrosis. Yet, the fibrosis-inducing phenotypes that emerge in the heart after nonischemic cardiac stress and the transcriptional circuits that govern fibrogenic cellular phenotypes are not well understood. METHODS: Applying a single-cell paired-multiomic approach-by which both transcriptomic and epigenetic information is captured from individual cells-we reveal key transcription factors, in mouse and human hearts, associated with fibrosis development after nonischemic cardiac insults. Using high-throughput bulk transcriptomic and proteomic analyses, microscopy, and functional in vitro assays, we validate the distinct roles of new and established transcription factors in cardiac fibrosis. RESULTS: Analysis of mouse hearts undergoing reverse remodeling after angiotensin II stimulation, where cardiac fibrosis dissipates, we find these factors are reversibly activated. Further, silencing transcription factors-including those we have identified that are previously unlinked to cardiac fibrosis, such as CREB3L2 (CAMP Responsive Element Binding Protein 3 Like 2), BNC2 (Basonuclin Zinc Finger Protein 2), and NFAT5 (Nuclear Factor of Activated T Cells 5)-modulates induction of extracellular matrix gene expression by human cardiac fibroblasts. Detailed analysis of CREB3L2 showed that it regulates cardiac fibrosis by modulating extracellular matrix synthesis through a dual mechanism-involving its N-terminal transactivation domain and a paracrine-acting C-terminal fragment-which is triggered after endoplasmic reticular stress. CONCLUSIONS: This study identifies critical transcription factors regulating cardiac fibrosis and offers promising new targets to ameliorate the development of fibrosis in the context of stressors that cause cardiac dysfunction.\n\n--- Abstract 3 (PMID: 41603896, relevance: -3.9402) ---\nAutosomal recessive polycystic kidney disease (ARPKD) is the prototype of the hepato-renal fibrocystic diseases, a subset of the broader ciliopathy disorders. As a severe form of PKD, ARPKD typically manifests in utero with 21% perinatal mortality and progressive loss of kidney function in most post-natal survivors. Congenital hepatic fibrosis is an invariant feature of ARPKD. PKHD1-encoded fibrocystin/polyductin (FPC) is a large 4074 amino acid glycoprotein that likely functions as a receptor molecule and appears to play a key role in maintaining differentiated renal tubular epithelium. The molecular mechanisms by which defects in FPC contribute to ARPKD pathogenesis are just beginning to be elucidated. FPC is a novel protein that likely evolved as vertebrates transitioned from aquatic to semi-terrestrial ecosystems. Full-length human FPC shares a phylogenetically conserved, multi-motif N-terminal region with its ancestral homolog, PKHD1L1, and contains a single-pass transmembrane domain and a novel C-terminal tail that harbors a ciliary targeting motif as well as mitochondrial and nuclear localization sequences. This review synthesizes the full range of recent experimental data about PKHD1/FPC to provide a current functional perspective about this complex protein. We also discuss the clinical relevance of these emerging functional insights for both kidney health and ARPKD pathogenesis.\n\n\n\n**Question:**\nWhat is the role of the CFTR gene in cystic fibrosis?"
+}

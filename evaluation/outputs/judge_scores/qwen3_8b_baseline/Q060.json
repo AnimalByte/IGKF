@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q060",
+      "randomization_seed": "20260706:Q060:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q060",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q060",
+      "error": null,
+      "id": "batch_req_6a4d52bae3508190ac63d92a9c458daa",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452239,
+          "created_at": 1783452226,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_057aa45f14ac33cd006a4d52423eec819fb638489907f72bd9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q060"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_057aa45f14ac33cd006a4d5242d0dc819fa8f6acf8192c8c7d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses SRD5A2 in hair follicles, DHT production, androgenetic alopecia, and cycling.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Core biology is correct: SRD5A2 is a 5-alpha-reductase involved in testosterone-to-DHT conversion and is linked to androgenetic alopecia. Some claims about follicular expression and specific anagen/catagen regulation go beyond the supplied evidence and are somewhat generalized.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers androgen metabolism, DHT, hair-follicle effects, androgenetic alopecia, and uncertainty, but lacks emphasis that the supplied evidence does not directly characterize hair-cycle mechanisms.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately notes that the precise hair-cycle role is less well characterized, though it still makes some unsupported mechanistic statements.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question with focus on SRD5A2 relevance to hair-follicle biology and cycling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied evidence: SRD5A2 is an androgen-metabolism enzyme producing DHT, is clinically associated with androgenetic alopecia, and direct hair-cycle-specific mechanisms are not established in the provided context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers known function, relevance to androgen-sensitive follicles, disease association, and limitations of the available evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly distinguishes supported androgen-mediated effects from unsupported direct roles in follicle cycling.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question by stating that direct hair-follicle cycling information is limited in the provided data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Factually consistent with the evidence: SRD5A2 is involved in androgen biosynthesis and associated with androgenetic alopecia, while direct hair-cycle mechanisms are not described.\"},\"completeness\":{\"score\":3,\"rationale\":\"Accurate but sparse; it omits key contextual facts such as testosterone-to-DHT conversion and therapeutic evidence from finasteride in androgenetic alopecia.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inventing unsupported details and clearly notes the evidence gap.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and thoroughly addresses SRD5A2 function in androgen-sensitive hair follicles and hair cycling.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The main claims are scientifically plausible and consistent with established androgenetic alopecia biology, including DHT production and finasteride response. However, several detailed statements about follicular compartments, telogen/kenogen, and scalp isoform prominence go beyond the supplied evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers enzyme function, local androgen metabolism, androgenetic alopecia, cycling effects, clinical inhibitor evidence, and remaining uncertainties.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Includes appropriate caveats that SRD5A2 is not a universal intrinsic hair-cycle regulator, but still presents some mechanistic details not directly supported by the reference packet.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_057aa45f14ac33cd006a4d5248f514819f8b6e01f79b26c074",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3887,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1257,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5144
+          },
+          "user": null
+        },
+        "request_id": "09f5f98d-d436-436c-b369-3c17072da953",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses SRD5A2 in hair follicles, DHT production, androgenetic alopecia, and cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Core biology is correct: SRD5A2 is a 5-alpha-reductase involved in testosterone-to-DHT conversion and is linked to androgenetic alopecia. Some claims about follicular expression and specific anagen/catagen regulation go beyond the supplied evidence and are somewhat generalized.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers androgen metabolism, DHT, hair-follicle effects, androgenetic alopecia, and uncertainty, but lacks emphasis that the supplied evidence does not directly characterize hair-cycle mechanisms.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately notes that the precise hair-cycle role is less well characterized, though it still makes some unsupported mechanistic statements.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q060",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q060.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.152027+00:00"
+}

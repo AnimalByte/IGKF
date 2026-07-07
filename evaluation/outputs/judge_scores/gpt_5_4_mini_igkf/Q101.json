@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q101",
+      "randomization_seed": "20260706:Q101:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q101",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q101",
+      "error": null,
+      "id": "batch_req_6a4d52bca7348190827f95f6afb755d0",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452174,
+          "created_at": 1783452166,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_036f8aecf207aa4c006a4d5206d5b88192a09a7fb6f1d25c37",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q101"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_036f8aecf207aa4c006a4d5207af1c8192b8980f24813359e2",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Acknowledges the task but does not answer the specific question despite the provided graph context.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Does not make substantive biomedical claims, but incorrectly implies the necessary study/graph information is unavailable.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits all genes connected to the Wnt signaling pathway.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains unnecessarily because sufficient evidence was provided in the prompt.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Discusses the need for an integrated graph but does not provide the requested genes.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"General statement that Wnt signaling is complex is true, but it wrongly treats the supplied context as insufficient.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not list any of the associated genes from the graph context.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Inappropriately abstains and requests more information even though the reference graph supplies the answer.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which genes are connected to the Wnt signaling pathway.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"The listed genes exactly match the associated genes in the supplied graph context, and the added literature examples are supported.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes all 14 genes connected to the Wnt signaling pathway.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Provides the answer based on the supplied evidence without unsupported speculation.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"The gene list exactly matches the Wnt signaling pathway associations in the graph context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes all required genes without omission.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"States the evidence source clearly and does not overclaim beyond the supplied graph context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_036f8aecf207aa4c006a4d520a4b1c8192b84c39235c2ca449",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2303,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 743,
+            "output_tokens_details": {
+              "reasoning_tokens": 252
+            },
+            "total_tokens": 3046
+          },
+          "user": null
+        },
+        "request_id": "8ee3eefe-a795-4637-ba85-d64934024fc8",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "e9d128716036e57d1c9c1179433ae6e53d2274bf6e4911690e7476c9507f1a95",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q101",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q101.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q101::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q101::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b609c48190a7b982aef73b8865",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437494,
+          "created_at": 1783437491,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06cb77e17534aee8006a4d18b3d928819388045f9d8cfed6ac",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q101"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06cb77e17534aee8006a4d18b457c0819390b85d9974fdfd35",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer exactly matches the associated genes listed for the Wnt signaling pathway in the supplied graph context and does not add unsupported genes.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer directly uses the key graph evidence, namely the 'Associated Genes' list for the Wnt signaling pathway.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06cb77e17534aee8006a4d18b5429c8193b60412bde4f13725",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1627,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 192,
+            "output_tokens_details": {
+              "reasoning_tokens": 81
+            },
+            "total_tokens": 1819
+          },
+          "user": null
+        },
+        "request_id": "dc310a01-ab52-4621-9eb7-083883142e87",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately answers the question.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The gene list exactly matches the Wnt signaling pathway associations in the graph context.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes all required genes without omission.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer exactly matches the associated genes listed for the Wnt signaling pathway in the supplied graph context and does not add unsupported genes.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer directly uses the key graph evidence, namely the 'Associated Genes' list for the Wnt signaling pathway.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States the evidence source clearly and does not overclaim beyond the supplied graph context.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q101",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q101.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.316848+00:00"
+}

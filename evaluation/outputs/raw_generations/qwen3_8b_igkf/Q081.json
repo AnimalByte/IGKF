@@ -1,0 +1,178 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.8926,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The evidence linking LGR4 to androgenetic alopecia is derived from genetic and functional associations. LGR4 is listed in the Open Targets database as being associated with androgenetic alopecia, with a score of 0.397. This suggests a potential biological connection between LGR4 and this condition, though the strength of the association is moderate.\n\nWhile the graph context does not directly describe the molecular mechanisms by which LGR4 might contribute to androgenetic alopecia, it does highlight that LGR4 is involved in pathways such as bone remodeling, osteoblast differentiation, and Wnt signaling. These pathways are known to influence tissue development and homeostasis, including hair follicle biology. Additionally, LGR4 is a receptor for R-spondin (RSPO) proteins, which are key regulators of the Wnt/beta-catenin signaling pathway\u2014a pathway implicated in various developmental and pathological processes, including hair follicle cycling and androgen-mediated effects.\n\nAlthough no direct experimental evidence is provided in the graph or vector contexts about LGR4's role in androgenetic alopecia, the association with androgen-related conditions, such as androgenic alopecia, suggests that LGR4 may interact with androgen signaling pathways. This could involve its role in modulating Wnt signaling, which is known to intersect with androgen pathways in hair follicle development and maintenance.\n\nIn summary, while the direct molecular mechanisms are not detailed, the evidence indicates that LGR4 is genetically and functionally linked to androgenetic alopecia, likely through its involvement in Wnt signaling and its interactions with RSPO proteins. Further research would be needed to elucidate the precise role of LGR4 in this condition.",
+  "question_id": "Q081",
+  "question_text": "Summarize the evidence linking LGR4 to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 350,
+    "prompt_token_count": 1614,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The evidence linking LGR4 to androgenetic alopecia is derived from genetic and functional associations. LGR4 is listed in the Open Targets database as being associated with androgenetic alopecia, with a score of 0.397. This suggests a potential biological connection between LGR4 and this condition, though the strength of the association is moderate.\n\nWhile the graph context does not directly describe the molecular mechanisms by which LGR4 might contribute to androgenetic alopecia, it does highlight that LGR4 is involved in pathways such as bone remodeling, osteoblast differentiation, and Wnt signaling. These pathways are known to influence tissue development and homeostasis, including hair follicle biology. Additionally, LGR4 is a receptor for R-spondin (RSPO) proteins, which are key regulators of the Wnt/beta-catenin signaling pathway\u2014a pathway implicated in various developmental and pathological processes, including hair follicle cycling and androgen-mediated effects.\n\nAlthough no direct experimental evidence is provided in the graph or vector contexts about LGR4's role in androgenetic alopecia, the association with androgen-related conditions, such as androgenic alopecia, suggests that LGR4 may interact with androgen signaling pathways. This could involve its role in modulating Wnt signaling, which is known to intersect with androgen pathways in hair follicle development and maintenance.\n\nIn summary, while the direct molecular mechanisms are not detailed, the evidence indicates that LGR4 is genetically and functionally linked to androgenetic alopecia, likely through its involvement in Wnt signaling and its interactions with RSPO proteins. Further research would be needed to elucidate the precise role of LGR4 in this condition."
+      }
+    ],
+    "created": 1783432119,
+    "id": "cmpl-67d0a54d-4eac-4f30-994f-b4fbed973080",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 350,
+      "prompt_tokens": 1593,
+      "total_tokens": 1943
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      25.92868423461914,
+      26.353626251220703,
+      26.415029525756836,
+      27.551082611083984,
+      28.7835693359375,
+      29.771343231201172,
+      29.99085807800293,
+      30.103778839111328,
+      30.350875854492188,
+      30.5496883392334,
+      30.897130966186523,
+      30.95819091796875,
+      31.071983337402344,
+      31.13873863220215,
+      31.675186157226562
+    ],
+    "candidate_pmids": [
+      "42203310",
+      "41522353",
+      "41034211",
+      "41954225",
+      "42291126",
+      "40094020",
+      "41410731",
+      "42382896",
+      "34552771",
+      "42378850",
+      "38173341",
+      "39032379",
+      "42361668",
+      "41501168",
+      "40930100"
+    ],
+    "expanded_retrieval_query": "Summarize the evidence linking LGR4 to androgenetic alopecia. Entity: LGR4 (Type: Gene)\n  - Gene Pathways: Regulation of FZD by ubiquitination\n  - Associated Phenotypes: growth delay, Abnormality of the genital system, Delayed skeletal maturation\n  - Targeted by Drugs: ROSMANTUZUMAB\n  - GO Functions/Processes: bone remodeling, plasma membrane, negative regulation of cold-induced thermogenesis, protein-hormone receptor activity, osteoblast differentiation\n  - Interacts With (PPI): HSPA1B (experimental: 102, database: 0), ADRB2 (experimental: 0, database: 0), P3H1 (experimental: 0, database: 0), PCSK2 (experimental: 0, database: 0), GPR180 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: delayed puberty, self-limited (score: 0.536), Abnormality of the skeletal system (score: 0.457), androgenetic alopecia (score: 0.397), hypertensive disorder (score: 0.377), X-linked osteoporosis with fractures (score: 0.333)\n  - Open Targets Drug Evidence: ROSMANTUZUMAB | phase PHASE_1 | RSPO3-LGR4 inhibitor | action=INHIBITOR | target=RSPO3-LGR4 | for colorectal cancer",
+    "final_context": "Graph Context:\nEntity: LGR4 (Type: Gene)\n  - Gene Pathways: Regulation of FZD by ubiquitination\n  - Associated Phenotypes: growth delay, Abnormality of the genital system, Delayed skeletal maturation\n  - Targeted by Drugs: ROSMANTUZUMAB\n  - GO Functions/Processes: bone remodeling, plasma membrane, negative regulation of cold-induced thermogenesis, protein-hormone receptor activity, osteoblast differentiation\n  - Interacts With (PPI): HSPA1B (experimental: 102, database: 0), ADRB2 (experimental: 0, database: 0), P3H1 (experimental: 0, database: 0), PCSK2 (experimental: 0, database: 0), GPR180 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: delayed puberty, self-limited (score: 0.536), Abnormality of the skeletal system (score: 0.457), androgenetic alopecia (score: 0.397), hypertensive disorder (score: 0.377), X-linked osteoporosis with fractures (score: 0.333)\n  - Open Targets Drug Evidence: ROSMANTUZUMAB | phase PHASE_1 | RSPO3-LGR4 inhibitor | action=INHIBITOR | target=RSPO3-LGR4 | for colorectal cancer\n\nVector Context:\n--- Abstract 1 (PMID: 42203310, relevance: -0.4173) ---\nBACKGROUND/AIM: Despite advances in therapy, lung cancer remains the leading cause of cancer-related mortality. R-spondin (RSPO) 3 and its receptor, leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4), drive tumor progression in a subset of lung adenocarcinomas by potentiating Wnt signaling. In addition to RSPO3, LGR4 is also a receptor for receptor activator of nuclear factor-small ka, CyrillicB ligand (RANKL). Here, we investigated whether MHP1-AcN, our previously developed RANKL-derived peptide, acts on LGR4 and examined its effects on RSPO3-LGR4 signaling in A549 lung cancer cells. MATERIALS AND METHODS: An A549 xenograft model was established by subcutaneous inoculation in BALB/c nude mice, followed by daily intraperitoneal administration of MHP1-AcN. Tumor growth was assessed by volume and weight. In vitro, the effect of MHP1-AcN on A549 cell proliferation, cytotoxicity, migration, and invasion were evaluated. Molecular interactions and signaling pathways were analyzed using immunoprecipitation and immunoblotting. RESULTS: Intraperitoneal administration of MHP1-AcN significantly reduced tumor volume and weight in the subcutaneous A549 xenograft model. Mechanistically, MHP1-AcN directly interacted with LGR4 and disrupted RSPO3-induced LGR4-IQ motif-containing GTPase activating protein 1 complex formation. MHP1-AcN inhibited A549 cell proliferation without inducing cytotoxicity and suppressed RSPO3-enhaced phosphorylation of LRP6 and accumulation of beta-catenin. Furthermore, MHP1-AcN dose-dependently inhibited A549 cell migration and invasion by reducing focal adhesion kinase phosphorylation and disrupting F-actin organization. CONCLUSION: These findings demonstrate MHP1-AcN as a novel LGR4 antagonist that inhibits RSPO3-LGR4-Wnt signaling, tumor growth, and metastatic potential in lung adenocarcinoma, highlighting its potential as a therapeutic agent targeting this pathway.\n\n--- Abstract 2 (PMID: 41034211, relevance: -0.6724) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 3 (PMID: 41501168, relevance: -1.3978) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: LGR4 (Type: Gene)\n  - Gene Pathways: Regulation of FZD by ubiquitination\n  - Associated Phenotypes: growth delay, Abnormality of the genital system, Delayed skeletal maturation\n  - Targeted by Drugs: ROSMANTUZUMAB\n  - GO Functions/Processes: bone remodeling, plasma membrane, negative regulation of cold-induced thermogenesis, protein-hormone receptor activity, osteoblast differentiation\n  - Interacts With (PPI): HSPA1B (experimental: 102, database: 0), ADRB2 (experimental: 0, database: 0), P3H1 (experimental: 0, database: 0), PCSK2 (experimental: 0, database: 0), GPR180 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: delayed puberty, self-limited (score: 0.536), Abnormality of the skeletal system (score: 0.457), androgenetic alopecia (score: 0.397), hypertensive disorder (score: 0.377), X-linked osteoporosis with fractures (score: 0.333)\n  - Open Targets Drug Evidence: ROSMANTUZUMAB | phase PHASE_1 | RSPO3-LGR4 inhibitor | action=INHIBITOR | target=RSPO3-LGR4 | for colorectal cancer",
+    "graph_context_length": 1026,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3335,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "summarize"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "lgr4"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgenetic alopecia"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q081.json",
+    "retrieval_total_seconds": 0.4294,
+    "score_max": -0.41726207733154297,
+    "score_mean": -0.8291634917259216,
+    "scores": [
+      -0.41726207733154297,
+      -0.6724281907081604,
+      -1.3978002071380615
+    ],
+    "selected_abstracts": [
+      "BACKGROUND/AIM: Despite advances in therapy, lung cancer remains the leading cause of cancer-related mortality. R-spondin (RSPO) 3 and its receptor, leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4), drive tumor progression in a subset of lung adenocarcinomas by potentiating Wnt signaling. In addition to RSPO3, LGR4 is also a receptor for receptor activator of nuclear factor-small ka, CyrillicB ligand (RANKL). Here, we investigated whether MHP1-AcN, our previously developed RANKL-derived peptide, acts on LGR4 and examined its effects on RSPO3-LGR4 signaling in A549 lung cancer cells. MATERIALS AND METHODS: An A549 xenograft model was established by subcutaneous inoculation in BALB/c nude mice, followed by daily intraperitoneal administration of MHP1-AcN. Tumor growth was assessed by volume and weight. In vitro, the effect of MHP1-AcN on A549 cell proliferation, cytotoxicity, migration, and invasion were evaluated. Molecular interactions and signaling pathways were analyzed using immunoprecipitation and immunoblotting. RESULTS: Intraperitoneal administration of MHP1-AcN significantly reduced tumor volume and weight in the subcutaneous A549 xenograft model. Mechanistically, MHP1-AcN directly interacted with LGR4 and disrupted RSPO3-induced LGR4-IQ motif-containing GTPase activating protein 1 complex formation. MHP1-AcN inhibited A549 cell proliferation without inducing cytotoxicity and suppressed RSPO3-enhaced phosphorylation of LRP6 and accumulation of beta-catenin. Furthermore, MHP1-AcN dose-dependently inhibited A549 cell migration and invasion by reducing focal adhesion kinase phosphorylation and disrupting F-actin organization. CONCLUSION: These findings demonstrate MHP1-AcN as a novel LGR4 antagonist that inhibits RSPO3-LGR4-Wnt signaling, tumor growth, and metastatic potential in lung adenocarcinoma, highlighting its potential as a therapeutic agent targeting this pathway.",
+      "Leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.",
+      "Benign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments."
+    ],
+    "selected_pmids": [
+      "42203310",
+      "41034211",
+      "41501168"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0861
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:48:39.526505+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: LGR4 (Type: Gene)\n  - Gene Pathways: Regulation of FZD by ubiquitination\n  - Associated Phenotypes: growth delay, Abnormality of the genital system, Delayed skeletal maturation\n  - Targeted by Drugs: ROSMANTUZUMAB\n  - GO Functions/Processes: bone remodeling, plasma membrane, negative regulation of cold-induced thermogenesis, protein-hormone receptor activity, osteoblast differentiation\n  - Interacts With (PPI): HSPA1B (experimental: 102, database: 0), ADRB2 (experimental: 0, database: 0), P3H1 (experimental: 0, database: 0), PCSK2 (experimental: 0, database: 0), GPR180 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: delayed puberty, self-limited (score: 0.536), Abnormality of the skeletal system (score: 0.457), androgenetic alopecia (score: 0.397), hypertensive disorder (score: 0.377), X-linked osteoporosis with fractures (score: 0.333)\n  - Open Targets Drug Evidence: ROSMANTUZUMAB | phase PHASE_1 | RSPO3-LGR4 inhibitor | action=INHIBITOR | target=RSPO3-LGR4 | for colorectal cancer\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42203310, relevance: -0.4173) ---\nBACKGROUND/AIM: Despite advances in therapy, lung cancer remains the leading cause of cancer-related mortality. R-spondin (RSPO) 3 and its receptor, leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4), drive tumor progression in a subset of lung adenocarcinomas by potentiating Wnt signaling. In addition to RSPO3, LGR4 is also a receptor for receptor activator of nuclear factor-small ka, CyrillicB ligand (RANKL). Here, we investigated whether MHP1-AcN, our previously developed RANKL-derived peptide, acts on LGR4 and examined its effects on RSPO3-LGR4 signaling in A549 lung cancer cells. MATERIALS AND METHODS: An A549 xenograft model was established by subcutaneous inoculation in BALB/c nude mice, followed by daily intraperitoneal administration of MHP1-AcN. Tumor growth was assessed by volume and weight. In vitro, the effect of MHP1-AcN on A549 cell proliferation, cytotoxicity, migration, and invasion were evaluated. Molecular interactions and signaling pathways were analyzed using immunoprecipitation and immunoblotting. RESULTS: Intraperitoneal administration of MHP1-AcN significantly reduced tumor volume and weight in the subcutaneous A549 xenograft model. Mechanistically, MHP1-AcN directly interacted with LGR4 and disrupted RSPO3-induced LGR4-IQ motif-containing GTPase activating protein 1 complex formation. MHP1-AcN inhibited A549 cell proliferation without inducing cytotoxicity and suppressed RSPO3-enhaced phosphorylation of LRP6 and accumulation of beta-catenin. Furthermore, MHP1-AcN dose-dependently inhibited A549 cell migration and invasion by reducing focal adhesion kinase phosphorylation and disrupting F-actin organization. CONCLUSION: These findings demonstrate MHP1-AcN as a novel LGR4 antagonist that inhibits RSPO3-LGR4-Wnt signaling, tumor growth, and metastatic potential in lung adenocarcinoma, highlighting its potential as a therapeutic agent targeting this pathway.\n\n--- Abstract 2 (PMID: 41034211, relevance: -0.6724) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 3 (PMID: 41501168, relevance: -1.3978) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n\n\n**Question:**\nSummarize the evidence linking LGR4 to androgenetic alopecia."
+}

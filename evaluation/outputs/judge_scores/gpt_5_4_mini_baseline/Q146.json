@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q146",
+      "randomization_seed": "20260706:Q146:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q146",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q146",
+      "error": null,
+      "id": "batch_req_6a4d5409cb08819090bc740fa74863e8",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452607,
+          "created_at": 1783452596,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f3c3f893f527290006a4d53b4d5b481978fec12167fad7ce6",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q146"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f3c3f893f527290006a4d53b5522c81978072d8e8a4aa1809",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that no provided evidence identifies TF regulators of LHX2 in dermal papilla or hair-follicle-relevant cells.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate against the supplied context; no LHX2 regulatory evidence in relevant cell types is provided.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion, though it does not explicitly discuss the graph interaction partners or unrelated abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported claims and states evidence is unavailable.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and distinguishes graph interactions from regulatory evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that the abstracts are unrelated and that PPI links do not establish TF regulation of LHX2 in hair-follicle-relevant cells.\"},\"completeness\":{\"score\":5,\"rationale\":\"Thoroughly covers graph evidence, abstract evidence, and the absence of cell-type-specific support.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies EGR2 as only a possible interaction-related candidate and not established as a regulator in the relevant cells.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that cell-type-specific evidence for TF regulation of LHX2 is unavailable.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main conclusion is correct, but it adds claims about LHX2 being implicated in hair-follicle biology as if supported by the provided context, which is not shown there.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the key answer but does not discuss the specific graph interactions or unrelated abstract evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids naming unsupported upstream regulators and states evidence is unavailable.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately addresses whether the context identifies TF regulators of LHX2 in the relevant cell types.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate: the graph lists interaction partners only, and the supplied abstracts do not provide LHX2 dermal papilla or hair-follicle regulatory evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the graph, absence of relevant cell types, and conclusion that cell-type-specific evidence is unavailable.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains from inferring regulatory relationships not supported by the context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f3c3f893f527290006a4d53baad1c8197a3e7fc0b6640268c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2817,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1116,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3933
+          },
+          "user": null
+        },
+        "request_id": "75188f37-6931-4848-b977-8a9dc945ff13",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that cell-type-specific evidence for TF regulation of LHX2 is unavailable.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Main conclusion is correct, but it adds claims about LHX2 being implicated in hair-follicle biology as if supported by the provided context, which is not shown there.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Provides the key answer but does not discuss the specific graph interactions or unrelated abstract evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids naming unsupported upstream regulators and states evidence is unavailable.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q146",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q146.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.234617+00:00"
+}

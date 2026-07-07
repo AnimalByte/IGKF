@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q135",
+      "randomization_seed": "20260706:Q135:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q135",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q135",
+      "error": null,
+      "id": "batch_req_6a4d54092fd481909620e8e50eb25ebf",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452584,
+          "created_at": 1783452559,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f6b64ee2eef518c006a4d538ee5c88197b3dd560959ee4976",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q135"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f6b64ee2eef518c006a4d538fbb6481978e2bf97fa031929c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the rs6152-AR-androgen biology connection and clearly separates direct graph annotations from inferred links.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied graph: rs6152 implicated gene AR, androgen-related disease associations, AR-targeting drug evidence, nuclear receptor/RUNX2 pathway context, and notes that the literature does not directly study rs6152.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the main direct evidence, pathway-level inferences, PPI limitations, drug/disease evidence, and literature limitations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies that the literature supports AR/DSD context but not rs6152-specific function, and avoids overclaiming.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses the question and attempts to distinguish direct annotations from inferred pathway-level links.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Mostly captures the rs6152-to-AR annotation and androgen-related disease/drug context, but overstates some links as direct, treats PPI and drug evidence as if attached to rs6152 rather than AR/its implicated-gene context, and gives little literature-specific interpretation.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes several graph components but omits the supplied literature discussion and important qualifications about lack of direct rs6152 evidence.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Some indirectness is acknowledged, but several statements are framed too strongly as direct rs6152 evidence.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"It addresses rs6152, AR, androgen biology, and direct versus inferred links, but much of the content is not grounded in the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Contains major unsupported and likely incorrect claims, including a chromosome 21 location for AR, promoter/TATA-box placement, allele-specific expression effects, and fabricated or unsupplied literature evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides a structured answer but omits most supplied graph-specific evidence such as Open Targets drug evidence, regulatory element, listed pathways, and the actual literature limitations.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not qualify unsupported claims and invents direct functional and literature evidence not present in the reference packet.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Generally addresses the requested distinction between direct annotation and inferred AR-mediated androgen biology.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly identifies the main direct variant-to-gene relationship and inferred AR-to-androgen biology link, but incorrectly implies direct literature support for rs6152 and misses the supplied literature's lack of rs6152-specific evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Too generic; it omits key graph details such as specific disease associations, AR-targeting drugs, named pathways, PPIs, regulatory element, and the actual abstract evidence.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some hedging, but still asserts unsupported rs6152 literature evidence and androgen-related trait annotations not shown in the packet.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f6b64ee2eef518c006a4d53a44bb881978e507aa953c960b1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5510,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1762,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 7272
+          },
+          "user": null
+        },
+        "request_id": "fd267482-3344-41af-ada3-53f4219ca6ea",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "2037d1f04bd73fbfc8146d41047e05004b4fe506e115f7843ca5df675d0a4f08",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q135",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q135.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q135::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q135::R2",
+      "error": null,
+      "id": "batch_req_6a4d19ba576c81909de8b7cea81e0629",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437682,
+          "created_at": 1783437673,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0540676f0d4f89a6006a4d19697cec8193b8be5f6ca09a6ddb",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q135"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0540676f0d4f89a6006a4d196a147c8193a574378dcc415539",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"Most claims are supported by the supplied graph: rs6152 implicates AR, AR-linked Open Targets diseases include androgen insensitivity and prostate cancer, drug evidence targets androgen receptor, pathways/GO terms/PPIs are accurately listed, and the literature does not mention rs6152. Some language is mildly overstated or relies on external biological knowledge, such as AR's known nuclear receptor role and broad musculoskeletal interpretation, but these are mostly framed as inferred links.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer uses the key graph evidence and vector abstracts appropriately, distinguishing direct annotations from inferred pathway-level interpretations and noting the limitation that the literature supports AR/DSD context but not rs6152 directly.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0540676f0d4f89a6006a4d19708bbc81939adc4cc04d1e8b3f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3096,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 710,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3806
+          },
+          "user": null
+        },
+        "request_id": "72f684da-8f55-4740-aa51-4da1e481a712",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the rs6152-AR-androgen biology connection and clearly separates direct graph annotations from inferred links.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the supplied graph: rs6152 implicated gene AR, androgen-related disease associations, AR-targeting drug evidence, nuclear receptor/RUNX2 pathway context, and notes that the literature does not directly study rs6152.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the main direct evidence, pathway-level inferences, PPI limitations, drug/disease evidence, and literature limitations.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "Most claims are supported by the supplied graph: rs6152 implicates AR, AR-linked Open Targets diseases include androgen insensitivity and prostate cancer, drug evidence targets androgen receptor, pathways/GO terms/PPIs are accurately listed, and the literature does not mention rs6152. Some language is mildly overstated or relies on external biological knowledge, such as AR's known nuclear receptor role and broad musculoskeletal interpretation, but these are mostly framed as inferred links.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key graph evidence and vector abstracts appropriately, distinguishing direct annotations from inferred pathway-level interpretations and noting the limitation that the literature supports AR/DSD context but not rs6152 directly.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies that the literature supports AR/DSD context but not rs6152-specific function, and avoids overclaiming.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q135",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q135.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.340038+00:00"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q113",
+      "randomization_seed": "20260706:Q113:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q113",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q113",
+      "error": null,
+      "id": "batch_req_6a4d5408086081908e44b06c8ce32c9e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452523,
+          "created_at": 1783452512,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_009a3d339f0f1c9e006a4d536011e88190b088fd8d8944c1e7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q113"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_009a3d339f0f1c9e006a4d5360ce7c81908def3b137e3b97d8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Does not directly answer using the provided graph context and instead gives a generic FGF pathway gene list.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Listed genes are broadly related to FGF signaling, but they are not supported as genes from this study or from the integrated graph.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key evidence that the graph contains no relevant data.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Appropriately asks for more information, but adds unsupported candidate genes.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Responds by requesting graph details rather than using the supplied evidence that no relevant graph data were found.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Contains no substantive biomedical errors, but does not provide the evidence-based answer.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not state that the integrated graph has no relevant data and therefore no genes can be identified.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains instead of inventing genes.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly notes that the graph has no relevant data, but then shifts to inferred literature-based genes not asked for.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The graph-based statement is correct, but the answer overclaims that literature-mentioned genes are connected in the pathway and incorrectly implies AR/GR interactions are part of the FGF signaling pathway.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes the main graph limitation but adds unsupported details instead of keeping the answer focused.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Although initially qualified, it proceeds to infer unsupported graph/pathway connections.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that no relevant study genes are connected in the integrated graph because no relevant graph data were found.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the graph evidence and clearly separates literature context from graph evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the key graph-based answer and optional contextual genes without presenting them as graph-derived.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the lack of graph evidence and avoids unsupported graph conclusions.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_009a3d339f0f1c9e006a4d5366fc748190b6c7d32e6056be53",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2368,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1186,
+            "output_tokens_details": {
+              "reasoning_tokens": 634
+            },
+            "total_tokens": 3554
+          },
+          "user": null
+        },
+        "request_id": "673e409f-1197-4047-b340-532c8e22e88f",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Responds by requesting graph details rather than using the supplied evidence that no relevant graph data were found.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Contains no substantive biomedical errors, but does not provide the evidence-based answer.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Does not state that the integrated graph has no relevant data and therefore no genes can be identified.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains instead of inventing genes.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q113",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q113.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.211312+00:00"
+}

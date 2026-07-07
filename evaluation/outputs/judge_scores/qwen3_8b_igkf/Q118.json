@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q118",
+      "randomization_seed": "20260706:Q118:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q118",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q118",
+      "error": null,
+      "id": "batch_req_6a4d540808cc819086c03ff0d99d0e4d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452539,
+          "created_at": 1783452526,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0dca2224ed1e5012006a4d536e4430819694fcc5e5f74eb6c2",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q118"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0dca2224ed1e5012006a4d536ecadc81968a709574ffeddd0a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the question by naming variants, but the named variants are not supported by the provided evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Invents specific AR variants and claims strongest associations without support from the reference evidence; several claims appear biologically or locationally questionable.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides a detailed list, but it is unsupported and omits the key limitation that the supplied context does not list variant-level p-values.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Does not appropriately qualify uncertainty and presents unsupported conclusions as fact.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Only restates the general principle that smallest p-values indicate strongest association, without applying the provided evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The statement is scientifically correct but does not address the specific evidence or identify that the variants are unavailable in the supplied context.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Does not identify any variants or summarize the relevant limitation from the evidence packet.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Avoids inventing variants and appropriately indicates that a specific dataset would be needed, though it could have referenced the insufficiency of the provided context.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether variants with the smallest p-values can be identified from the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided abstract reports 266 associations and 51 independent signals at p < 10^-5 but does not list specific variants or p-values.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the relevant evidence, distinguishes association p-values from allele-frequency differences, and explains why specific variants cannot be named.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from naming unsupported variants and clearly qualifies what can and cannot be concluded.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question and correctly notes that exact variants with smallest p-values are not listed, but adds speculative gene-based inference.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Mostly reflects the abstract accurately, but the claim that SNPs near EDA2R and AR are likely among the strongest associations is unsupported by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes the key limitation and relevant abstract details, but the speculative statement weakens the answer.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Partly qualifies uncertainty, but still infers likely strongest associations without variant-level p-value evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0dca2224ed1e5012006a4d537496408196883c26571a257f1d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4181,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1246,
+            "output_tokens_details": {
+              "reasoning_tokens": 442
+            },
+            "total_tokens": 5427
+          },
+          "user": null
+        },
+        "request_id": "5932fcbc-7f47-47ac-8a91-e0a625190e6c",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "c8a3c81ba4d97838e9d41b93e6f4b700044ebb238caa155e7e8a0946920c3372",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q118",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q118.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q118::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q118::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b7fb448190a6848840ac6f4eda",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437478,
+          "created_at": 1783437473,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e34b2fd3e46f206006a4d18a1bc0481968b6cdb86c8e06718",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q118"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e34b2fd3e46f206006a4d18a25e588196a15fa27675577892",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"Most claims are supported by the supplied context, including the lack of graph data, the 266 associations, 51 independent associations, and SNPs near EDA2R and AR. However, the claim that EDA2R/AR SNPs are likely among the strongest associations is speculative and not directly supported by p-values in the context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"The answer appropriately uses the relevant androgenetic alopecia abstract and recognizes that exact variants and p-values are not provided. It slightly overextends the context by inferring likely strongest associations near EDA2R and AR rather than strictly stating that the supplied context cannot identify them.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e34b2fd3e46f206006a4d18a5309c81968714e1cb87ee0e3a",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3125,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 446,
+            "output_tokens_details": {
+              "reasoning_tokens": 261
+            },
+            "total_tokens": 3571
+          },
+          "user": null
+        },
+        "request_id": "5a4840c0-cfe7-4554-86a1-12695f33f0f1",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question and correctly notes that exact variants with smallest p-values are not listed, but adds speculative gene-based inference.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Mostly reflects the abstract accurately, but the claim that SNPs near EDA2R and AR are likely among the strongest associations is unsupported by the supplied evidence.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Includes the key limitation and relevant abstract details, but the speculative statement weakens the answer.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "Most claims are supported by the supplied context, including the lack of graph data, the 266 associations, 51 independent associations, and SNPs near EDA2R and AR. However, the claim that EDA2R/AR SNPs are likely among the strongest associations is speculative and not directly supported by p-values in the context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the relevant androgenetic alopecia abstract and recognizes that exact variants and p-values are not provided. It slightly overextends the context by inferring likely strongest associations near EDA2R and AR rather than strictly stating that the supplied context cannot identify them.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Partly qualifies uncertainty, but still infers likely strongest associations without variant-level p-value evidence.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q118",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q118.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.328632+00:00"
+}

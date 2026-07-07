@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q079",
+      "randomization_seed": "20260706:Q079:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q079",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q079",
+      "error": null,
+      "id": "batch_req_6a4d52bba5708190bb3652c01552617a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452192,
+          "created_at": 1783452183,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_056bd14ff697a56a006a4d521732c4819da7be8645c2163ed8",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q079"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_056bd14ff697a56a006a4d5217d020819dbfbe8bbfda200b84",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which integrated-graph pathways include HDAC9.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Lists exactly the three HDAC9 pathways present in the reference graph context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers all required pathways without missing items.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately states the pathways as explicitly present in the supplied graph context.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Discusses possible pathway categories but does not answer with the graph-specific pathways.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Includes material errors, including describing HDAC9 as a class III sirtuin, and invents unsupported pathway associations not in the reference.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits all three required graph pathways.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Provides unsupported inferred pathways, though it partly qualifies that exact graph querying would be needed.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly identifies the HDAC9-associated pathways from the integrated graph.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately lists the three pathways found in the reference graph context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes all important pathway components.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly appropriate; explanatory interpretations are mildly expansive but framed cautiously.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses the task only by declining to answer, rather than listing the pathways.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Does not provide incorrect pathway names, but incorrectly claims the graph context is unavailable despite it being supplied.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits all three required pathways.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains inappropriately because sufficient evidence was provided.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_056bd14ff697a56a006a4d521c8554819d8223a797850d6d65",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3076,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 941,
+            "output_tokens_details": {
+              "reasoning_tokens": 467
+            },
+            "total_tokens": 4017
+          },
+          "user": null
+        },
+        "request_id": "d1a3a0d1-2766-4d05-9f10-af2a37521e26",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Discusses possible pathway categories but does not answer with the graph-specific pathways.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Includes material errors, including describing HDAC9 as a class III sirtuin, and invents unsupported pathway associations not in the reference.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Omits all three required graph pathways.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Provides unsupported inferred pathways, though it partly qualifies that exact graph querying would be needed.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q079",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q079.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.165717+00:00"
+}

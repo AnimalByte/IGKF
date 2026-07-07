@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q143",
+      "randomization_seed": "20260706:Q143:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q143",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q143",
+      "error": null,
+      "id": "batch_req_6a4d5409f1648190becba1fb914a5568",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452603,
+          "created_at": 1783452590,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_092ddbedc7fd252f006a4d53ae2df081909e0c8333ac0df5f4",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q143"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_092ddbedc7fd252f006a4d53af0b64819097753591a7b6eecd",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether the evidence supports a Minoxidil-HDAC9 expression link and clearly separates direct from indirect evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied graph and abstracts: Minoxidil is not listed or discussed, while other HDAC-targeting drugs are.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the absence of direct evidence, lack of meaningful indirect evidence, and contextual HDAC9 druggability.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from inferring a Minoxidil-HDAC9 regulatory relationship beyond the evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Addresses the central question and distinguishes direct, indirect, and absent evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The main conclusion is consistent with the supplied evidence, but it makes broader unsupported claims about the literature, Minoxidil pathways, and histone modifications not present in the packet.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides the key conclusion and evidence categories, but does not explicitly use the supplied graph details such as the non-Minoxidil HDAC9-targeting drugs.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly cautious, but overstates absence across all published research rather than limiting claims to the supplied evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately answers the question with a clear direct versus indirect evidence breakdown.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly states that Minoxidil is absent from the provided graph and abstracts. Minor overstatement in saying the listed HDAC inhibitors' association with HDAC9 is well documented across cancer and neurological disease contexts.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes the main necessary components: no direct evidence, no indirect evidence in the packet, Minoxidil absent, and other HDAC-associated drugs listed.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately declines to infer a link unsupported by the integrated evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Addresses the question and separates direct and indirect evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Correctly notes lack of direct evidence, but introduces unsupported indirect associations involving Minoxidil signaling, vascular biology, and computational/pathway links not present in the provided evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers direct evidence, but inadequately reflects that the supplied evidence contains no Minoxidil mention or meaningful indirect link.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Uses some cautious language, but still suggests an indirect/putative association unsupported by the evidence packet.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_092ddbedc7fd252f006a4d53b489108190afb59af49bb9d4aa",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3487,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1345,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4832
+          },
+          "user": null
+        },
+        "request_id": "943dafca-6f48-4dac-bfc8-1fd92ede9e14",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question and separates direct and indirect evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes lack of direct evidence, but introduces unsupported indirect associations involving Minoxidil signaling, vascular biology, and computational/pathway links not present in the provided evidence.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers direct evidence, but inadequately reflects that the supplied evidence contains no Minoxidil mention or meaningful indirect link.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Uses some cautious language, but still suggests an indirect/putative association unsupported by the evidence packet.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q143",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q143.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.232590+00:00"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q180",
+      "randomization_seed": "20260706:Q180:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q180",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q180",
+      "error": null,
+      "id": "batch_req_6a4d540c0ad8819093c836e86bba59a9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452622,
+          "created_at": 1783452606,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a36be9296058322006a4d53bef7388197995ea7c3e3fa32c5",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q180"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a36be9296058322006a4d53bfaa5c8197ae99e27800e6a087",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset is not sufficient and states the missing data types.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately identifies that individual-level age-of-onset and per-individual variant-burden data are required to test the correlation.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers both required components and explains the limitation clearly.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately states the limitation, though it asserts absence rather than framing it strictly as absence from the supplied evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the requirements for testing the correlation but does not definitively answer whether the dataset contains them.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate about the need for linked individual-level age-at-onset and AR-region burden data.\"},\"completeness\":{\"score\":4,\"rationale\":\"Lists the necessary data elements and limitation, but remains conditional rather than directly assessing the dataset.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making unsupported claims without the dataset schema.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question and states the relevant limitation, but is somewhat generic and not fully definitive.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly identifies the needed data types, though the final limitation is stated more assertively than the preceding uncertainty supports.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the two key missing components but provides limited explanation of individual-level linkage or burden computation.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly qualifies uncertainty, but partially shifts into an unsupported definitive limitation.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers no and explains why the dataset is insufficient.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that variant calls, impact annotations, per-individual burden, and linked age-at-onset data are needed.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the missing data elements, the need for individual linkage, and relevant covariates without major omissions.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the supplied context and does not overclaim beyond the available data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a36be9296058322006a4d53c9896c819787a73bf07c7ab100",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1370,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1426,
+            "output_tokens_details": {
+              "reasoning_tokens": 872
+            },
+            "total_tokens": 2796
+          },
+          "user": null
+        },
+        "request_id": "b3b7bd04-6d05-42c7-a279-ea5b116e319c",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question and states the relevant limitation, but is somewhat generic and not fully definitive.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly identifies the needed data types, though the final limitation is stated more assertively than the preceding uncertainty supports.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Includes the two key missing components but provides limited explanation of individual-level linkage or burden computation.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Mostly qualifies uncertainty, but partially shifts into an unsupported definitive limitation.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q180",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.258840+00:00"
+}

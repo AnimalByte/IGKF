@@ -1,0 +1,237 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437063,
+    "created_at": 1783437061,
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q180",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "16222cc5-f865-4792-a533-9f3abc44440e",
+    "response_id": "resp_08b2f00e6bcfb06d006a4d1705c8c48194a2b7ba057f8cc74c",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 1670,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1920
+    }
+  },
+  "parsed_answer": "No. This dataset is **not sufficient** to test a correlation between **AR-region high-impact variants** and **age at onset**.\n\n### Why not?\n- The **graph context** only shows that **IMPACT** interacts with a few proteins (e.g., QDPR, DHX29), but it does **not** provide:\n  - AR-region variant calls\n  - variant impact annotations by region\n  - per-individual variant burden\n  - age-at-onset values for the same individuals\n\n- The **literature abstracts** mention **age-of-onset stratified analyses** in Alzheimer\u2019s disease and other phenotype associations, but they do **not** provide:\n  - individual-level genotype data\n  - AR-region-specific burden metrics\n  - a matched dataset linking variant burden to age at onset\n\n### Limitation\nTo test this correlation, you would need a dataset containing, for each individual:\n1. **Age at onset**\n2. **AR-region variant burden** or counts of high-impact variants\n3. Ideally, covariates such as sex, ancestry, and APOE status\n\nThat linking information is absent here, so the correlation cannot be evaluated from the supplied context alone.",
+  "question_id": "Q180",
+  "question_text": "Does this dataset contain age-of-onset and per-individual variant-burden data sufficient to test a correlation between AR-region high-impact variants and age at onset? If not, state the limitation.",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q180",
+    "error": null,
+    "id": "batch_req_6a4d17636e0881909a6333a35ac153af",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437063,
+        "created_at": 1783437061,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_08b2f00e6bcfb06d006a4d1705c8c48194a2b7ba057f8cc74c",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_igkf",
+          "question_id": "Q180"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "No. This dataset is **not sufficient** to test a correlation between **AR-region high-impact variants** and **age at onset**.\n\n### Why not?\n- The **graph context** only shows that **IMPACT** interacts with a few proteins (e.g., QDPR, DHX29), but it does **not** provide:\n  - AR-region variant calls\n  - variant impact annotations by region\n  - per-individual variant burden\n  - age-at-onset values for the same individuals\n\n- The **literature abstracts** mention **age-of-onset stratified analyses** in Alzheimer\u2019s disease and other phenotype associations, but they do **not** provide:\n  - individual-level genotype data\n  - AR-region-specific burden metrics\n  - a matched dataset linking variant burden to age at onset\n\n### Limitation\nTo test this correlation, you would need a dataset containing, for each individual:\n1. **Age at onset**\n2. **AR-region variant burden** or counts of high-impact variants\n3. Ideally, covariates such as sex, ancestry, and APOE status\n\nThat linking information is absent here, so the correlation cannot be evaluated from the supplied context alone.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_08b2f00e6bcfb06d006a4d17064e54819491afa9f6c281925f",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 1670,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 250,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1920
+        },
+        "user": null
+      },
+      "request_id": "16222cc5-f865-4792-a533-9f3abc44440e",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      28.901350021362305,
+      29.92166519165039,
+      30.220603942871094,
+      30.728626251220703,
+      30.81907844543457,
+      31.05364227294922,
+      31.31084632873535,
+      31.6923770904541,
+      31.877702713012695,
+      31.940807342529297,
+      32.18500900268555,
+      32.41448211669922,
+      32.422264099121094,
+      32.83525085449219,
+      32.98011016845703
+    ],
+    "candidate_pmids": [
+      "40708016",
+      "39103847",
+      "41751509",
+      "42387103",
+      "33637690",
+      "38087053",
+      "40818193",
+      "42019823",
+      "39514479",
+      "35638461",
+      "41796107",
+      "39245941",
+      "36104811",
+      "24410847",
+      "42269416"
+    ],
+    "expanded_retrieval_query": "Does this dataset contain age-of-onset and per-individual variant-burden data sufficient to test a correlation between AR-region high-impact variants and age at onset? If not, state the limitation. Entity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+    "final_context": "Graph Context:\nEntity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)\n\nVector Context:\n--- Abstract 1 (PMID: 40708016, relevance: -3.6134) ---\nBACKGROUND: Alzheimer's disease (AD) risk variants have been identified in European ancestry cohorts that have stronger effects at certain ages, in individuals with a specific sex, or in those with specific isoforms of APOE, the strongest AD risk locus. However, sample sizes in African ancestry (AA) cohorts have been underpowered to perform stratified analyses. METHODS: We generated genome-wide association study datasets stratified by sex, age at onset (< 75 vs >/= 75), and APOE-epsilon4 carrier status in AA cohorts from MVP and the Alzheimer's Disease Genetics Consortium (ADGC). Outcomes in MVP were AD and related dementias (ADRD; n = 4073 cases and 19,648 controls) and proxy dementia (i.e., reported dementia in a parent, n = 6216 cases and 21,566 controls) while ADGC analyses examined AD (n = 2425 cases and 5069 controls). The proxy dementia GWASs were included in the sex-stratified meta-analysis corresponding to the sex of the affected parent. The top genes were tested for differential expression in AA brain tissue. RESULTS: In addition to the APOE region, genome-wide significant associations were observed in an intergenic region near the EPHA5 gene (rs141838133, p = 2.19 x 10(-8)) in individuals with onset < 75 years, in GRIN3B near the known AD risk gene ABCA7 (rs115882880, p = 3.83 x 10(-8)) in females, and near TSPEAR (rs139130053, p = 4.27 x 10(-8)) in APOE-epsilon4 non-carriers. EPHA5 regulates glucose homeostasis, and ephrin receptors modify the strength of existing synapses in the brain and in pancreatic islets. It is unclear whether GRIN3B represents a locus distinct from ABCA7. Rs115882880 was a significant eQTL for GRIN3B but not ABCA7 in AA brain samples. TSPEAR regulates Notch signaling but has not been linked to neuronal function. CONCLUSIONS: Age, sex, and APOE-stratified analyses of dementia in AA participants from two cohorts revealed potential new associations. Stratified analyses may yield critical information about the genetic heterogeneity underlying dementia risk and lead to advances in precision medicine.\n\n--- Abstract 2 (PMID: 38087053, relevance: -4.3341) ---\nBACKGROUND: Forensic DNA phenotyping (FDP) consists of the use of methodologies for predicting externally visible characteristics (EVCs) from the genetic material of biological samples found in crime scenes and has proven to be a promising tool in aiding human identification in police activities. Currently, methods based on multiplex assays and statistical models of prediction of EVCs related to hair, skin, and iris pigmentation using panels of SNP and INDEL biomarkers have already been developed and validated by the forensic scientific community. As well as traces of pigmentation, an individual's perceived age (PA) can also be considered an EVC and its estimation in unknown individuals can be useful for the progress of investigations. Liu and colleagues (2016) were pioneers in evidencing that, in addition to lifestyle and environmental factors, the presence of SNP and INDEL variants in the MC1R gene - which encodes a transmembrane receptor responsible for regulating melanin production - seems to contribute to an individual's PA. The group highlighted the association between these MC1R gene polymorphisms and the PA in the European population, where carriers of risk haplotypes appeared to be up to 2 years older in comparison to their chronological age (CA). PURPOSE: Understanding that genotype-phenotype relationships cannot be extrapolated between different population groups, this study aimed to test this hypothesis and verify the applicability of this variant panel in the Rio Grande do Sul admixed population. METHODS: Based on genomic data from a sample of 261 volunteers representative of gaucho population and using a multiple linear regression (MLR) model, our group was able to verify a significant association among nine intronic variants in loci adjacent to MC1R (e.g., AFG3L1P, TUBB3, FANCA) and facial age appearance, whose PA was defined after age heteroclassification of standard frontal face images through 11 assessors. RESULTS: Different from that observed in European populations, our results show that the presence of effect alleles (R) of the selected variants in our sample influenced both younger and older face phenotypes. The influence of each variant on PA is expressed as beta values. CONCLUSIONS: There are important molecular mechanisms behind the effects of MC1R locus on PA, and the genomic background of each population seems to be crucial to determine this influence.\n\n--- Abstract 3 (PMID: 33637690, relevance: -4.4372) ---\nDespite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+    "graph_context_length": 244,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3302,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "impact"
+      },
+      {
+        "label": "KEYWORD",
+        "text": "onset"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q180.json",
+    "retrieval_total_seconds": 37.0854,
+    "score_max": -3.61336612701416,
+    "score_mean": -4.128234227498372,
+    "scores": [
+      -3.61336612701416,
+      -4.334110260009766,
+      -4.437226295471191
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Alzheimer's disease (AD) risk variants have been identified in European ancestry cohorts that have stronger effects at certain ages, in individuals with a specific sex, or in those with specific isoforms of APOE, the strongest AD risk locus. However, sample sizes in African ancestry (AA) cohorts have been underpowered to perform stratified analyses. METHODS: We generated genome-wide association study datasets stratified by sex, age at onset (< 75 vs >/= 75), and APOE-epsilon4 carrier status in AA cohorts from MVP and the Alzheimer's Disease Genetics Consortium (ADGC). Outcomes in MVP were AD and related dementias (ADRD; n = 4073 cases and 19,648 controls) and proxy dementia (i.e., reported dementia in a parent, n = 6216 cases and 21,566 controls) while ADGC analyses examined AD (n = 2425 cases and 5069 controls). The proxy dementia GWASs were included in the sex-stratified meta-analysis corresponding to the sex of the affected parent. The top genes were tested for differential expression in AA brain tissue. RESULTS: In addition to the APOE region, genome-wide significant associations were observed in an intergenic region near the EPHA5 gene (rs141838133, p = 2.19 x 10(-8)) in individuals with onset < 75 years, in GRIN3B near the known AD risk gene ABCA7 (rs115882880, p = 3.83 x 10(-8)) in females, and near TSPEAR (rs139130053, p = 4.27 x 10(-8)) in APOE-epsilon4 non-carriers. EPHA5 regulates glucose homeostasis, and ephrin receptors modify the strength of existing synapses in the brain and in pancreatic islets. It is unclear whether GRIN3B represents a locus distinct from ABCA7. Rs115882880 was a significant eQTL for GRIN3B but not ABCA7 in AA brain samples. TSPEAR regulates Notch signaling but has not been linked to neuronal function. CONCLUSIONS: Age, sex, and APOE-stratified analyses of dementia in AA participants from two cohorts revealed potential new associations. Stratified analyses may yield critical information about the genetic heterogeneity underlying dementia risk and lead to advances in precision medicine.",
+      "BACKGROUND: Forensic DNA phenotyping (FDP) consists of the use of methodologies for predicting externally visible characteristics (EVCs) from the genetic material of biological samples found in crime scenes and has proven to be a promising tool in aiding human identification in police activities. Currently, methods based on multiplex assays and statistical models of prediction of EVCs related to hair, skin, and iris pigmentation using panels of SNP and INDEL biomarkers have already been developed and validated by the forensic scientific community. As well as traces of pigmentation, an individual's perceived age (PA) can also be considered an EVC and its estimation in unknown individuals can be useful for the progress of investigations. Liu and colleagues (2016) were pioneers in evidencing that, in addition to lifestyle and environmental factors, the presence of SNP and INDEL variants in the MC1R gene - which encodes a transmembrane receptor responsible for regulating melanin production - seems to contribute to an individual's PA. The group highlighted the association between these MC1R gene polymorphisms and the PA in the European population, where carriers of risk haplotypes appeared to be up to 2 years older in comparison to their chronological age (CA). PURPOSE: Understanding that genotype-phenotype relationships cannot be extrapolated between different population groups, this study aimed to test this hypothesis and verify the applicability of this variant panel in the Rio Grande do Sul admixed population. METHODS: Based on genomic data from a sample of 261 volunteers representative of gaucho population and using a multiple linear regression (MLR) model, our group was able to verify a significant association among nine intronic variants in loci adjacent to MC1R (e.g., AFG3L1P, TUBB3, FANCA) and facial age appearance, whose PA was defined after age heteroclassification of standard frontal face images through 11 assessors. RESULTS: Different from that observed in European populations, our results show that the presence of effect alleles (R) of the selected variants in our sample influenced both younger and older face phenotypes. The influence of each variant on PA is expressed as beta values. CONCLUSIONS: There are important molecular mechanisms behind the effects of MC1R locus on PA, and the genomic background of each population seems to be crucial to determine this influence.",
+      "Despite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease."
+    ],
+    "selected_pmids": [
+      "40708016",
+      "38087053",
+      "33637690"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0491
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T15:14:46.515758+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40708016, relevance: -3.6134) ---\nBACKGROUND: Alzheimer's disease (AD) risk variants have been identified in European ancestry cohorts that have stronger effects at certain ages, in individuals with a specific sex, or in those with specific isoforms of APOE, the strongest AD risk locus. However, sample sizes in African ancestry (AA) cohorts have been underpowered to perform stratified analyses. METHODS: We generated genome-wide association study datasets stratified by sex, age at onset (< 75 vs >/= 75), and APOE-epsilon4 carrier status in AA cohorts from MVP and the Alzheimer's Disease Genetics Consortium (ADGC). Outcomes in MVP were AD and related dementias (ADRD; n = 4073 cases and 19,648 controls) and proxy dementia (i.e., reported dementia in a parent, n = 6216 cases and 21,566 controls) while ADGC analyses examined AD (n = 2425 cases and 5069 controls). The proxy dementia GWASs were included in the sex-stratified meta-analysis corresponding to the sex of the affected parent. The top genes were tested for differential expression in AA brain tissue. RESULTS: In addition to the APOE region, genome-wide significant associations were observed in an intergenic region near the EPHA5 gene (rs141838133, p = 2.19 x 10(-8)) in individuals with onset < 75 years, in GRIN3B near the known AD risk gene ABCA7 (rs115882880, p = 3.83 x 10(-8)) in females, and near TSPEAR (rs139130053, p = 4.27 x 10(-8)) in APOE-epsilon4 non-carriers. EPHA5 regulates glucose homeostasis, and ephrin receptors modify the strength of existing synapses in the brain and in pancreatic islets. It is unclear whether GRIN3B represents a locus distinct from ABCA7. Rs115882880 was a significant eQTL for GRIN3B but not ABCA7 in AA brain samples. TSPEAR regulates Notch signaling but has not been linked to neuronal function. CONCLUSIONS: Age, sex, and APOE-stratified analyses of dementia in AA participants from two cohorts revealed potential new associations. Stratified analyses may yield critical information about the genetic heterogeneity underlying dementia risk and lead to advances in precision medicine.\n\n--- Abstract 2 (PMID: 38087053, relevance: -4.3341) ---\nBACKGROUND: Forensic DNA phenotyping (FDP) consists of the use of methodologies for predicting externally visible characteristics (EVCs) from the genetic material of biological samples found in crime scenes and has proven to be a promising tool in aiding human identification in police activities. Currently, methods based on multiplex assays and statistical models of prediction of EVCs related to hair, skin, and iris pigmentation using panels of SNP and INDEL biomarkers have already been developed and validated by the forensic scientific community. As well as traces of pigmentation, an individual's perceived age (PA) can also be considered an EVC and its estimation in unknown individuals can be useful for the progress of investigations. Liu and colleagues (2016) were pioneers in evidencing that, in addition to lifestyle and environmental factors, the presence of SNP and INDEL variants in the MC1R gene - which encodes a transmembrane receptor responsible for regulating melanin production - seems to contribute to an individual's PA. The group highlighted the association between these MC1R gene polymorphisms and the PA in the European population, where carriers of risk haplotypes appeared to be up to 2 years older in comparison to their chronological age (CA). PURPOSE: Understanding that genotype-phenotype relationships cannot be extrapolated between different population groups, this study aimed to test this hypothesis and verify the applicability of this variant panel in the Rio Grande do Sul admixed population. METHODS: Based on genomic data from a sample of 261 volunteers representative of gaucho population and using a multiple linear regression (MLR) model, our group was able to verify a significant association among nine intronic variants in loci adjacent to MC1R (e.g., AFG3L1P, TUBB3, FANCA) and facial age appearance, whose PA was defined after age heteroclassification of standard frontal face images through 11 assessors. RESULTS: Different from that observed in European populations, our results show that the presence of effect alleles (R) of the selected variants in our sample influenced both younger and older face phenotypes. The influence of each variant on PA is expressed as beta values. CONCLUSIONS: There are important molecular mechanisms behind the effects of MC1R locus on PA, and the genomic background of each population seems to be crucial to determine this influence.\n\n--- Abstract 3 (PMID: 33637690, relevance: -4.4372) ---\nDespite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.\n\n\n\n**Question:**\nDoes this dataset contain age-of-onset and per-individual variant-burden data sufficient to test a correlation between AR-region high-impact variants and age at onset? If not, state the limitation."
+}

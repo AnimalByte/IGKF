@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q166",
+      "randomization_seed": "20260706:Q166:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q166",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q166",
+      "error": null,
+      "id": "batch_req_6a4d540b234c819086c1f9022c4b5329",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452587,
+          "created_at": 1783452575,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_083441d8df05414b006a4d539fd77c819786c5058fb615e07d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q166"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_083441d8df05414b006a4d53a083fc8197bed98061b1eaf9ad",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses Wnt signaling, WNT10A, and the absence of supported LHX2 evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects that WNT10A is tied to Wnt/beta-catenin signaling and tooth/ectodermal development, while LHX2 is not supported in the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key supported WNT10A-Wnt relationship and correctly states that no WNT10A/LHX2 relationship is established.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids inferring a relationship to LHX2 beyond the provided evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses all named entities and relationships, but includes unsupported relationship claims.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Correctly identifies WNT10A as a Wnt ligand involved in development, but falsely claims integrated evidence supports WNT10A regulation of LHX2.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Includes WNT10A-Wnt context but omits the crucial point that LHX2 is not mentioned or supported by the evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Invents unsupported WNT10A-LHX2 regulatory interactions without qualification.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly attempts to describe the requested relationships.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Claims a Wnt signaling to WNT10A to LHX2 cascade that is not supported; LHX2 is absent from the evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides a directional relationship but misses the supported conclusion that no LHX2 relationship can be established.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents unsupported inferred directionality as established fact.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether the provided evidence supports relationships among Wnt signaling, WNT10A, and LHX2.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly notes WNT10A involvement in Wnt signaling and absence of LHX2 evidence; the added statement that LHX2 is known to be involved in tooth formation is not supported by the packet.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Captures the main supported conclusion but gives less detail on the specific WNT10A-Wnt evidence than ideal.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from asserting an unsupported LHX2 relationship.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_083441d8df05414b006a4d53a5e1ac81978a6c200c5b599d47",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3254,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1324,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4578
+          },
+          "user": null
+        },
+        "request_id": "c4935534-af5e-49ae-a222-52b8d621f0d2",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses all named entities and relationships, but includes unsupported relationship claims.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly identifies WNT10A as a Wnt ligand involved in development, but falsely claims integrated evidence supports WNT10A regulation of LHX2.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Includes WNT10A-Wnt context but omits the crucial point that LHX2 is not mentioned or supported by the evidence.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Invents unsupported WNT10A-LHX2 regulatory interactions without qualification.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q166",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q166.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.248840+00:00"
+}

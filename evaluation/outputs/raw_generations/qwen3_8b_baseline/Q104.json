@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 6.2754,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The androgen metabolism pathway is closely linked to androgenetic alopecia (AGA), also known as male pattern baldness. This connection is supported by several lines of evidence:\n\n1. **Androgen Receptor Expression**: AGA is associated with increased expression of androgen receptors (AR) in the scalp skin and hair follicles. The AR is a key mediator of androgen action, and its overexpression may enhance the effects of androgens on hair follicles.\n\n2. **Dihydrotestosterone (DHT) Production**: DHT, a potent androgen derived from testosterone via the enzyme 5\u03b1-reductase, is implicated in AGA. DHT binds to the AR and causes miniaturization of hair follicles, leading to shorter growth phases and thinner hair. This process is central to the pathophysiology of AGA.\n\n3. **5\u03b1-Reductase Inhibitors**: Clinical studies have shown that inhibitors of 5\u03b1-reductase, such as finasteride, reduce DHT levels and can slow or reverse hair loss in men with AGA. This supports the role of the androgen metabolism pathway in the condition.\n\n4. **Genetic Factors**: Variants in the androgen receptor gene (AR) have been associated with susceptibility to AGA. These genetic variations may alter the sensitivity of hair follicles to androgens, contributing to the development of AGA.\n\n5. **Animal Models**: Studies in animal models, such as the Syrian hamster and the C3H mouse, have demonstrated that androgen metabolism and AR activity are critical in the development of androgen-dependent alopecia. These models have been used to test potential therapeutic agents targeting the androgen pathway.\n\n6. **In Vitro Studies**: In vitro experiments have shown that androgens and DHT can induce changes in hair follicle morphology and function, including reduced anagen phase duration and increased catagen phase progression, which are characteristic of AGA.\n\nThese findings collectively support the hypothesis that the androgen metabolism pathway, particularly the conversion of testosterone to DHT via 5\u03b1-reductase and the subsequent activation of androgen receptors, plays a central role in the development of androgenetic alopecia.",
+  "question_id": "Q104",
+  "question_text": "What evidence links the androgen metabolism pathway to androgenetic alopecia?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 452,
+    "prompt_token_count": 74,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The androgen metabolism pathway is closely linked to androgenetic alopecia (AGA), also known as male pattern baldness. This connection is supported by several lines of evidence:\n\n1. **Androgen Receptor Expression**: AGA is associated with increased expression of androgen receptors (AR) in the scalp skin and hair follicles. The AR is a key mediator of androgen action, and its overexpression may enhance the effects of androgens on hair follicles.\n\n2. **Dihydrotestosterone (DHT) Production**: DHT, a potent androgen derived from testosterone via the enzyme 5\u03b1-reductase, is implicated in AGA. DHT binds to the AR and causes miniaturization of hair follicles, leading to shorter growth phases and thinner hair. This process is central to the pathophysiology of AGA.\n\n3. **5\u03b1-Reductase Inhibitors**: Clinical studies have shown that inhibitors of 5\u03b1-reductase, such as finasteride, reduce DHT levels and can slow or reverse hair loss in men with AGA. This supports the role of the androgen metabolism pathway in the condition.\n\n4. **Genetic Factors**: Variants in the androgen receptor gene (AR) have been associated with susceptibility to AGA. These genetic variations may alter the sensitivity of hair follicles to androgens, contributing to the development of AGA.\n\n5. **Animal Models**: Studies in animal models, such as the Syrian hamster and the C3H mouse, have demonstrated that androgen metabolism and AR activity are critical in the development of androgen-dependent alopecia. These models have been used to test potential therapeutic agents targeting the androgen pathway.\n\n6. **In Vitro Studies**: In vitro experiments have shown that androgens and DHT can induce changes in hair follicle morphology and function, including reduced anagen phase duration and increased catagen phase progression, which are characteristic of AGA.\n\nThese findings collectively support the hypothesis that the androgen metabolism pathway, particularly the conversion of testosterone to DHT via 5\u03b1-reductase and the subsequent activation of androgen receptors, plays a central role in the development of androgenetic alopecia."
+      }
+    ],
+    "created": 1783430507,
+    "id": "cmpl-e26b741d-851f-4078-b497-bc6e7e2ac9ea",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 452,
+      "prompt_tokens": 53,
+      "total_tokens": 505
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:21:47.551074+00:00",
+  "user_prompt": "What evidence links the androgen metabolism pathway to androgenetic alopecia?"
+}

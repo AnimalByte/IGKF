@@ -1,0 +1,245 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437059,
+    "created_at": 1783437056,
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q076",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "177eed51-7cb0-45d7-8db8-a8dcbd19b865",
+    "response_id": "resp_0f15adae0cebfc95006a4d1700d2ec819684fea0225124b0d2",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 1813,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2157
+    }
+  },
+  "parsed_answer": "The supplied context does **not provide direct evidence that HDAC9 is a causal gene in androgenetic alopecia (AGA)**. Instead, it suggests only an **indirect, mechanistic plausibility**:\n\n- **HDAC9 is an epigenetic regulator** involved in chromatin remodeling and transcriptional control.\n- It is linked in the graph to **cell differentiation and signaling pathways** (including NOTCH-related pathways and Th2 differentiation), which could in principle influence skin and follicle biology.\n- HDAC9 is also a **drug target for histone deacetylase inhibitors** such as **givinostat, romidepsin, valproic acid, and abexinostat**, indicating it is pharmacologically tractable.\n\nThe literature context on AGA, however, focuses on **DPSC-derived exosomes activating the PI3K/Akt\u2013VEGFA axis** to restore dermal papilla cell function and follicular vascularization. **HDAC9 is not mentioned in that AGA study**, and there is no direct abstract evidence here connecting HDAC9 expression, mutation, or inhibition to AGA pathogenesis or treatment.\n\nSo the best synthesis is:\n\n- **Direct evidence linking HDAC9 to androgenetic alopecia is insufficient in the provided context.**\n- **Indirectly**, HDAC9\u2019s role as a chromatin-modifying enzyme and its druggability make it a **biologically plausible regulator of hair follicle programs**, but this remains **speculative** based on the supplied sources.\n- The AGA evidence in hand supports **PI3K/Akt\u2013VEGFA-mediated follicle regeneration**, not HDAC9-specific involvement.",
+  "question_id": "Q076",
+  "question_text": "Summarize the evidence linking HDAC9 to androgenetic alopecia.",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q076",
+    "error": null,
+    "id": "batch_req_6a4d175d52f48190ba2a2bb32c974dc1",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437059,
+        "created_at": 1783437056,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_0f15adae0cebfc95006a4d1700d2ec819684fea0225124b0d2",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_igkf",
+          "question_id": "Q076"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "The supplied context does **not provide direct evidence that HDAC9 is a causal gene in androgenetic alopecia (AGA)**. Instead, it suggests only an **indirect, mechanistic plausibility**:\n\n- **HDAC9 is an epigenetic regulator** involved in chromatin remodeling and transcriptional control.\n- It is linked in the graph to **cell differentiation and signaling pathways** (including NOTCH-related pathways and Th2 differentiation), which could in principle influence skin and follicle biology.\n- HDAC9 is also a **drug target for histone deacetylase inhibitors** such as **givinostat, romidepsin, valproic acid, and abexinostat**, indicating it is pharmacologically tractable.\n\nThe literature context on AGA, however, focuses on **DPSC-derived exosomes activating the PI3K/Akt\u2013VEGFA axis** to restore dermal papilla cell function and follicular vascularization. **HDAC9 is not mentioned in that AGA study**, and there is no direct abstract evidence here connecting HDAC9 expression, mutation, or inhibition to AGA pathogenesis or treatment.\n\nSo the best synthesis is:\n\n- **Direct evidence linking HDAC9 to androgenetic alopecia is insufficient in the provided context.**\n- **Indirectly**, HDAC9\u2019s role as a chromatin-modifying enzyme and its druggability make it a **biologically plausible regulator of hair follicle programs**, but this remains **speculative** based on the supplied sources.\n- The AGA evidence in hand supports **PI3K/Akt\u2013VEGFA-mediated follicle regeneration**, not HDAC9-specific involvement.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_0f15adae0cebfc95006a4d170130088196bebcecdc93018fa3",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 1813,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 344,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 2157
+        },
+        "user": null
+      },
+      "request_id": "177eed51-7cb0-45d7-8db8-a8dcbd19b865",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      23.308658599853516,
+      24.091270446777344,
+      24.77801513671875,
+      25.683032989501953,
+      26.092899322509766,
+      26.132572174072266,
+      26.30447769165039,
+      26.331647872924805,
+      26.5504150390625,
+      26.642457962036133,
+      26.676288604736328,
+      26.706298828125,
+      26.975589752197266,
+      27.143583297729492,
+      27.143850326538086
+    ],
+    "candidate_pmids": [
+      "42091420",
+      "42100975",
+      "41672295",
+      "42169044",
+      "41935184",
+      "41962619",
+      "39234173",
+      "39032379",
+      "37987107",
+      "33133644",
+      "42361668",
+      "36250278",
+      "34984527",
+      "40812719",
+      "41242654"
+    ],
+    "expanded_retrieval_query": "Summarize the evidence linking HDAC9 to androgenetic alopecia. Entity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma",
+    "final_context": "Graph Context:\nEntity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n\nVector Context:\n--- Abstract 1 (PMID: 42169044, relevance: 0.4898) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 42100975, relevance: 0.2463) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 3 (PMID: 41935184, relevance: -1.4681) ---\nEpigenetic regulation is a key determinant of the aging process, and its dysregulation contributes to cognitive aging and increased vulnerability to Alzheimer's disease (AD). As major regulators of epigenetic processes, histone deacetylases (HDACs) have emerged as potential therapeutic targets for cognitive enhancement in neurodegenerative diseases. However, the distinct roles of individual HDAC isoforms remain to be defined. Here, we report that HDAC9 is specifically expressed in neurons of human and mouse brains, and its expression declines with age. HDAC9 deficiency impairs cognitive function and synaptic plasticity in young mice. Selective deletion of HDAC9 in hippocampal CA1 neurons also induces cognitive impairment. In contrast, overexpression of HDAC9 in forebrain glutamatergic neurons preserves cognitive function in aged mice. Moreover, HDAC9 is also downregulated in the brain of AD mouse models, whereas neuronal overexpression of HDAC9 alleviates AD-related cognitive and synaptic deficits and reduces Abeta deposition. Together, these findings suggest neuronal HDAC9 is necessary and sufficient for maintaining cognitive and synaptic functions in the context of aging and AD.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma",
+    "graph_context_length": 2177,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3455,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "summarize"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hdac9"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgenetic alopecia"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q076.json",
+    "retrieval_total_seconds": 0.4691,
+    "score_max": 0.4897671639919281,
+    "score_mean": -0.24401341378688812,
+    "scores": [
+      0.4897671639919281,
+      0.2462737113237381,
+      -1.4680811166763306
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.",
+      "Aberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.",
+      "Epigenetic regulation is a key determinant of the aging process, and its dysregulation contributes to cognitive aging and increased vulnerability to Alzheimer's disease (AD). As major regulators of epigenetic processes, histone deacetylases (HDACs) have emerged as potential therapeutic targets for cognitive enhancement in neurodegenerative diseases. However, the distinct roles of individual HDAC isoforms remain to be defined. Here, we report that HDAC9 is specifically expressed in neurons of human and mouse brains, and its expression declines with age. HDAC9 deficiency impairs cognitive function and synaptic plasticity in young mice. Selective deletion of HDAC9 in hippocampal CA1 neurons also induces cognitive impairment. In contrast, overexpression of HDAC9 in forebrain glutamatergic neurons preserves cognitive function in aged mice. Moreover, HDAC9 is also downregulated in the brain of AD mouse models, whereas neuronal overexpression of HDAC9 alleviates AD-related cognitive and synaptic deficits and reduces Abeta deposition. Together, these findings suggest neuronal HDAC9 is necessary and sufficient for maintaining cognitive and synaptic functions in the context of aging and AD."
+    ],
+    "selected_pmids": [
+      "42169044",
+      "42100975",
+      "41935184"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1115
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T15:14:46.485294+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42169044, relevance: 0.4898) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 42100975, relevance: 0.2463) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 3 (PMID: 41935184, relevance: -1.4681) ---\nEpigenetic regulation is a key determinant of the aging process, and its dysregulation contributes to cognitive aging and increased vulnerability to Alzheimer's disease (AD). As major regulators of epigenetic processes, histone deacetylases (HDACs) have emerged as potential therapeutic targets for cognitive enhancement in neurodegenerative diseases. However, the distinct roles of individual HDAC isoforms remain to be defined. Here, we report that HDAC9 is specifically expressed in neurons of human and mouse brains, and its expression declines with age. HDAC9 deficiency impairs cognitive function and synaptic plasticity in young mice. Selective deletion of HDAC9 in hippocampal CA1 neurons also induces cognitive impairment. In contrast, overexpression of HDAC9 in forebrain glutamatergic neurons preserves cognitive function in aged mice. Moreover, HDAC9 is also downregulated in the brain of AD mouse models, whereas neuronal overexpression of HDAC9 alleviates AD-related cognitive and synaptic deficits and reduces Abeta deposition. Together, these findings suggest neuronal HDAC9 is necessary and sufficient for maintaining cognitive and synaptic functions in the context of aging and AD.\n\n\n\n**Question:**\nSummarize the evidence linking HDAC9 to androgenetic alopecia."
+}

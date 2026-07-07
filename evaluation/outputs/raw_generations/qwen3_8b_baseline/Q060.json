@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.5696,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "SRD5A2, also known as 5\u03b1-reductase type 2, is a key enzyme in the metabolism of androgens, specifically in the conversion of testosterone to dihydrotestosterone (DHT). While SRD5A2 is most commonly associated with male pattern baldness due to its role in DHT synthesis in the scalp, its function in hair-follicle biology and cycling is less well characterized compared to its role in androgenic alopecia.\n\nIn the context of hair follicle biology, SRD5A2 is expressed in various tissues, including the skin, prostate, and hair follicles. In hair follicles, the enzyme contributes to the local production of DHT, which can influence the growth and cycling of hair follicles. DHT is known to regulate the anagen (growth) and catagen (regression) phases of the hair follicle cycle, and its levels can affect the duration and intensity of hair growth.\n\nHowever, the specific role of SRD5A2 in the hair follicle cycle is not as well studied as its role in androgenic alopecia. Research suggests that the enzyme may play a role in maintaining the hair follicle's sensitivity to androgens, which can influence the transition between the anagen and catagen phases. In some studies, inhibition of SRD5A2 has been shown to reduce DHT levels in the skin, which may have therapeutic implications for conditions like androgenetic alopecia.\n\nIn summary, while SRD5A2 is involved in the local production of DHT in hair follicles, its precise function in the hair follicle cycle remains an area of ongoing research. Its role in androgenic alopecia is more established, but its broader impact on hair follicle biology is not yet fully understood.",
+  "question_id": "Q060",
+  "question_text": "What is known about the function of SRD5A2 in hair-follicle biology and cycling?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 369,
+    "prompt_token_count": 81,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "SRD5A2, also known as 5\u03b1-reductase type 2, is a key enzyme in the metabolism of androgens, specifically in the conversion of testosterone to dihydrotestosterone (DHT). While SRD5A2 is most commonly associated with male pattern baldness due to its role in DHT synthesis in the scalp, its function in hair-follicle biology and cycling is less well characterized compared to its role in androgenic alopecia.\n\nIn the context of hair follicle biology, SRD5A2 is expressed in various tissues, including the skin, prostate, and hair follicles. In hair follicles, the enzyme contributes to the local production of DHT, which can influence the growth and cycling of hair follicles. DHT is known to regulate the anagen (growth) and catagen (regression) phases of the hair follicle cycle, and its levels can affect the duration and intensity of hair growth.\n\nHowever, the specific role of SRD5A2 in the hair follicle cycle is not as well studied as its role in androgenic alopecia. Research suggests that the enzyme may play a role in maintaining the hair follicle's sensitivity to androgens, which can influence the transition between the anagen and catagen phases. In some studies, inhibition of SRD5A2 has been shown to reduce DHT levels in the skin, which may have therapeutic implications for conditions like androgenetic alopecia.\n\nIn summary, while SRD5A2 is involved in the local production of DHT in hair follicles, its precise function in the hair follicle cycle remains an area of ongoing research. Its role in androgenic alopecia is more established, but its broader impact on hair follicle biology is not yet fully understood."
+      }
+    ],
+    "created": 1783430285,
+    "id": "cmpl-6738cda1-7d5b-45e9-a089-4bc35f7b9b9c",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 369,
+      "prompt_tokens": 60,
+      "total_tokens": 429
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:18:05.382508+00:00",
+  "user_prompt": "What is known about the function of SRD5A2 in hair-follicle biology and cycling?"
+}

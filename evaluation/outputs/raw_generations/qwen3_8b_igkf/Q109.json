@@ -1,0 +1,166 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.5062,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Based on the provided context, the following genes are connected to the Hedgehog signaling pathway in the integrated graph:\n\n1. **SHH (Sonic hedgehog homologue)** \u2013 A key signaling molecule in the Hedgehog pathway, involved in the development of the male genital system and implicated in hypospadias. Its expression was found to be decreased in boys with proximal hypospadias.\n\n2. **PTCH1 (Protein patched homologue 1)** \u2013 A receptor for SHH, part of the Hedgehog signaling pathway. Its mRNA expression was significantly decreased in boys with proximal hypospadias.\n\n3. **GLI2 (Glioma-associated oncogene homologue 2)** \u2013 A transcription factor downstream of the Hedgehog pathway. Its mRNA expression was significantly decreased in both distal and proximal hypospadias.\n\n4. **SUFU (Suppressor of fused protein)** \u2013 A repressor of the Hedgehog pathway, involved in regulating the activity of Gli transcription factors. Its expression was not significantly different among the groups in the study.\n\n5. **SMO (Smoothened)** \u2013 A transmembrane protein that transmits the Hedgehog signal to the intracellular pathway. Its expression was not significantly different among the groups.\n\n6. **STK36 (Serine/threonine-protein kinase 36)** \u2013 A kinase involved in the phosphorylation of Ci/Gli proteins, which is part of the regulatory mechanism of the Hedgehog pathway. Its expression was not significantly different among the groups.\n\nThese genes are directly or indirectly involved in the Hedgehog signaling pathway, as described in the study.",
+  "question_id": "Q109",
+  "question_text": "Which genes from this study are connected to the Hedgehog signaling pathway in the integrated graph?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 341,
+    "prompt_token_count": 1709,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided context, the following genes are connected to the Hedgehog signaling pathway in the integrated graph:\n\n1. **SHH (Sonic hedgehog homologue)** \u2013 A key signaling molecule in the Hedgehog pathway, involved in the development of the male genital system and implicated in hypospadias. Its expression was found to be decreased in boys with proximal hypospadias.\n\n2. **PTCH1 (Protein patched homologue 1)** \u2013 A receptor for SHH, part of the Hedgehog signaling pathway. Its mRNA expression was significantly decreased in boys with proximal hypospadias.\n\n3. **GLI2 (Glioma-associated oncogene homologue 2)** \u2013 A transcription factor downstream of the Hedgehog pathway. Its mRNA expression was significantly decreased in both distal and proximal hypospadias.\n\n4. **SUFU (Suppressor of fused protein)** \u2013 A repressor of the Hedgehog pathway, involved in regulating the activity of Gli transcription factors. Its expression was not significantly different among the groups in the study.\n\n5. **SMO (Smoothened)** \u2013 A transmembrane protein that transmits the Hedgehog signal to the intracellular pathway. Its expression was not significantly different among the groups.\n\n6. **STK36 (Serine/threonine-protein kinase 36)** \u2013 A kinase involved in the phosphorylation of Ci/Gli proteins, which is part of the regulatory mechanism of the Hedgehog pathway. Its expression was not significantly different among the groups.\n\nThese genes are directly or indirectly involved in the Hedgehog signaling pathway, as described in the study."
+      }
+    ],
+    "created": 1783432392,
+    "id": "cmpl-fbe72bb6-f3e6-4fb6-9481-90f1fffa57f4",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 341,
+      "prompt_tokens": 1688,
+      "total_tokens": 2029
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      37.84558868408203,
+      39.291343688964844,
+      40.801658630371094,
+      40.99234390258789,
+      42.46009063720703,
+      44.288265228271484,
+      44.928924560546875,
+      45.421146392822266,
+      46.12654495239258,
+      46.13223648071289,
+      46.211402893066406,
+      46.23501968383789,
+      46.318580627441406,
+      46.35157775878906,
+      46.55619812011719
+    ],
+    "candidate_pmids": [
+      "34275739",
+      "35186941",
+      "31279575",
+      "41000054",
+      "42190016",
+      "38096226",
+      "33741282",
+      "32557953",
+      "37891420",
+      "32616903",
+      "42146354",
+      "35637434",
+      "39739588",
+      "42295123",
+      "41951763"
+    ],
+    "expanded_retrieval_query": "Which genes from this study are connected to the Hedgehog signaling pathway in the integrated graph? No relevant data found in the graph.",
+    "final_context": "Graph Context:\nNo relevant data found in the graph.\n\nVector Context:\n--- Abstract 1 (PMID: 34275739, relevance: 1.3790) ---\nINTRODUCTION: Hypospadias is one of the most common congenital anomalies of the male genitalia. Sonic hedgehog homologue (SHH) signalling pathway is believed to be involved in the development of the male genital system. OBJECTIVE: In this clinical prospective study, the role of the SHH pathway in hypospadias aetiology was investigated. STUDY DESIGN: In this study, 200 healthy children (boys without hypospadias, control group), 118 patients (boys with distal hypospadias) and 82 patients (boys with proximal hypospadias) of age 0-16 years were included. The expression of the genes suppressor of fused protein (SUFU), SHH, protein patched homologue (PTCH; PTCH1 and PTCH2), glioma-associated oncogene homologue (GLI; GLI1, GLI2, GLI3 and GLI4), smoothened, frizzled-class receptor (SMO) and serine/threonine-protein kinase 36 (STK36) that are involved in SHH pathway were investigated. Furthermore, polymorphism analyses of GLI2, SHH and PTCH1 genes were performed. The history of hypospadias in the first and second-degree relatives of the patients in boys with distal hypospadias and boys with proximal hypospadias was inquired. RESULTS: Ten patients in the boys with distal hypospadias and twenty patients in the boys with proximal hypospadias had a history of hypospadias in first or second-degree relatives (p < 0.05). There was a significant decrease in mRNA expressions of SHH and PTCH1 genes in boys with proximal hypospadias compared to boys without hypospadias (p < 0.05). Besides, a significant decrease in mRNA fold-change of GLI2 gene was detected in boys with both distal hypospadias and proximal hypospadias compared to boys without hypospadias (p < 0.05). In contrast, there was no significant difference in the mRNA fold-changes of PTCH2, SUFU, GLI1, GLI3, GLI4, SMO and STK36 genes among the groups. Moreover, there were no significant differences in the frequencies of variant genotypes and alleles rs735557, rs12711538 and rs4848632 (GLI2 gene), rs104894049 (SHH gene) and rs41313327 (PTCH1 gene) (p > 0.05). DISCUSSION: SHH expression is required for the growth and differentiation of the genital bulge. Developmental defects in the external genital organs were demonstrated in mice with SHH deletion. It has been demonstrated that SHH mainly plays a role in the formation of sinusoid morphology of the penis. In the present study, although SHH and PTCH gene expressions were found to be decreased only in the penile tissues of proximal hypospadias, GLI2 gene expression was decreased in penile tissues of boys with both distal hypospadias and boys with proximal hypospadias. CONCLUSION: Genes involved in the SHH pathway might play a role in the aetiology of hypospadias. Furthermore, there is a correlation between molecular defects in this pathway and severity of hypospadias.\n\n--- Abstract 2 (PMID: 42295123, relevance: -0.3547) ---\nAbnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.\n\n--- Abstract 3 (PMID: 35186941, relevance: -0.5339) ---\nHedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "rerank_seconds": 0.3344,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "signaling"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q109.json",
+    "retrieval_total_seconds": 34.0828,
+    "score_max": 1.3789737224578857,
+    "score_mean": 0.1634382406870524,
+    "scores": [
+      1.3789737224578857,
+      -0.354744553565979,
+      -0.5339144468307495
+    ],
+    "selected_abstracts": [
+      "INTRODUCTION: Hypospadias is one of the most common congenital anomalies of the male genitalia. Sonic hedgehog homologue (SHH) signalling pathway is believed to be involved in the development of the male genital system. OBJECTIVE: In this clinical prospective study, the role of the SHH pathway in hypospadias aetiology was investigated. STUDY DESIGN: In this study, 200 healthy children (boys without hypospadias, control group), 118 patients (boys with distal hypospadias) and 82 patients (boys with proximal hypospadias) of age 0-16 years were included. The expression of the genes suppressor of fused protein (SUFU), SHH, protein patched homologue (PTCH; PTCH1 and PTCH2), glioma-associated oncogene homologue (GLI; GLI1, GLI2, GLI3 and GLI4), smoothened, frizzled-class receptor (SMO) and serine/threonine-protein kinase 36 (STK36) that are involved in SHH pathway were investigated. Furthermore, polymorphism analyses of GLI2, SHH and PTCH1 genes were performed. The history of hypospadias in the first and second-degree relatives of the patients in boys with distal hypospadias and boys with proximal hypospadias was inquired. RESULTS: Ten patients in the boys with distal hypospadias and twenty patients in the boys with proximal hypospadias had a history of hypospadias in first or second-degree relatives (p < 0.05). There was a significant decrease in mRNA expressions of SHH and PTCH1 genes in boys with proximal hypospadias compared to boys without hypospadias (p < 0.05). Besides, a significant decrease in mRNA fold-change of GLI2 gene was detected in boys with both distal hypospadias and proximal hypospadias compared to boys without hypospadias (p < 0.05). In contrast, there was no significant difference in the mRNA fold-changes of PTCH2, SUFU, GLI1, GLI3, GLI4, SMO and STK36 genes among the groups. Moreover, there were no significant differences in the frequencies of variant genotypes and alleles rs735557, rs12711538 and rs4848632 (GLI2 gene), rs104894049 (SHH gene) and rs41313327 (PTCH1 gene) (p > 0.05). DISCUSSION: SHH expression is required for the growth and differentiation of the genital bulge. Developmental defects in the external genital organs were demonstrated in mice with SHH deletion. It has been demonstrated that SHH mainly plays a role in the formation of sinusoid morphology of the penis. In the present study, although SHH and PTCH gene expressions were found to be decreased only in the penile tissues of proximal hypospadias, GLI2 gene expression was decreased in penile tissues of boys with both distal hypospadias and boys with proximal hypospadias. CONCLUSION: Genes involved in the SHH pathway might play a role in the aetiology of hypospadias. Furthermore, there is a correlation between molecular defects in this pathway and severity of hypospadias.",
+      "Abnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.",
+      "Hedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction."
+    ],
+    "selected_pmids": [
+      "34275739",
+      "42295123",
+      "35186941"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0206
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:53:12.596312+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 34275739, relevance: 1.3790) ---\nINTRODUCTION: Hypospadias is one of the most common congenital anomalies of the male genitalia. Sonic hedgehog homologue (SHH) signalling pathway is believed to be involved in the development of the male genital system. OBJECTIVE: In this clinical prospective study, the role of the SHH pathway in hypospadias aetiology was investigated. STUDY DESIGN: In this study, 200 healthy children (boys without hypospadias, control group), 118 patients (boys with distal hypospadias) and 82 patients (boys with proximal hypospadias) of age 0-16 years were included. The expression of the genes suppressor of fused protein (SUFU), SHH, protein patched homologue (PTCH; PTCH1 and PTCH2), glioma-associated oncogene homologue (GLI; GLI1, GLI2, GLI3 and GLI4), smoothened, frizzled-class receptor (SMO) and serine/threonine-protein kinase 36 (STK36) that are involved in SHH pathway were investigated. Furthermore, polymorphism analyses of GLI2, SHH and PTCH1 genes were performed. The history of hypospadias in the first and second-degree relatives of the patients in boys with distal hypospadias and boys with proximal hypospadias was inquired. RESULTS: Ten patients in the boys with distal hypospadias and twenty patients in the boys with proximal hypospadias had a history of hypospadias in first or second-degree relatives (p < 0.05). There was a significant decrease in mRNA expressions of SHH and PTCH1 genes in boys with proximal hypospadias compared to boys without hypospadias (p < 0.05). Besides, a significant decrease in mRNA fold-change of GLI2 gene was detected in boys with both distal hypospadias and proximal hypospadias compared to boys without hypospadias (p < 0.05). In contrast, there was no significant difference in the mRNA fold-changes of PTCH2, SUFU, GLI1, GLI3, GLI4, SMO and STK36 genes among the groups. Moreover, there were no significant differences in the frequencies of variant genotypes and alleles rs735557, rs12711538 and rs4848632 (GLI2 gene), rs104894049 (SHH gene) and rs41313327 (PTCH1 gene) (p > 0.05). DISCUSSION: SHH expression is required for the growth and differentiation of the genital bulge. Developmental defects in the external genital organs were demonstrated in mice with SHH deletion. It has been demonstrated that SHH mainly plays a role in the formation of sinusoid morphology of the penis. In the present study, although SHH and PTCH gene expressions were found to be decreased only in the penile tissues of proximal hypospadias, GLI2 gene expression was decreased in penile tissues of boys with both distal hypospadias and boys with proximal hypospadias. CONCLUSION: Genes involved in the SHH pathway might play a role in the aetiology of hypospadias. Furthermore, there is a correlation between molecular defects in this pathway and severity of hypospadias.\n\n--- Abstract 2 (PMID: 42295123, relevance: -0.3547) ---\nAbnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.\n\n--- Abstract 3 (PMID: 35186941, relevance: -0.5339) ---\nHedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.\n\n\n\n**Question:**\nWhich genes from this study are connected to the Hedgehog signaling pathway in the integrated graph?"
+}

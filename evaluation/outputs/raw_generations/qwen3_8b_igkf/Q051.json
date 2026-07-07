@@ -1,0 +1,178 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 6.7857,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The evidence linking the androgen receptor (AR) to androgenetic alopecia (AGA) is primarily indirect, as the provided data focuses more on the enzyme SRD5A2 and its role in androgen metabolism rather than directly on the AR itself. However, the connection can be inferred through the broader context of androgen signaling pathways and the involvement of AR in androgen-mediated conditions.\n\nThe AR is a key player in androgen signaling, and its activity is essential for the development and maintenance of androgen-dependent tissues, including the scalp and hair follicles. While the graph data does not explicitly mention AGA, it highlights that AR is a target of several drugs, including modulators and agonists, which are used in conditions such as prostate cancer, androgen insensitivity syndrome, and breast cancer. These conditions are all related to androgen signaling, which is also implicated in AGA.\n\nFurthermore, the graph indicates that AR is involved in the nuclear receptor transcription pathway, which is critical for gene regulation in response to androgenic signals. This pathway is likely to be relevant in the regulation of hair follicle development and the progression of AGA, as androgen signaling is known to influence hair growth and shedding.\n\nIn the literature, SRD5A2, which converts testosterone into dihydrotestosterone (DHT), is a key enzyme in androgen metabolism and is implicated in AGA. Since DHT is a more potent androgen that binds to the AR, the interplay between SRD5A2, DHT, and the AR is central to the pathophysiology of AGA. While the graph does not directly link AR to AGA, the presence of AR modulators in the Open Targets Drug Evidence suggests that AR is a potential therapeutic target for androgen-related disorders, including AGA.\n\nIn conclusion, although the graph does not explicitly state a direct link between AR and AGA, the broader context of androgen signaling, the role of AR in androgen metabolism, and the presence of AR modulators in the data suggest that AR is involved in the pathophysiology of AGA through its interaction with androgenic pathways.",
+  "question_id": "Q051",
+  "question_text": "Summarize the evidence linking AR to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 436,
+    "prompt_token_count": 1973,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The evidence linking the androgen receptor (AR) to androgenetic alopecia (AGA) is primarily indirect, as the provided data focuses more on the enzyme SRD5A2 and its role in androgen metabolism rather than directly on the AR itself. However, the connection can be inferred through the broader context of androgen signaling pathways and the involvement of AR in androgen-mediated conditions.\n\nThe AR is a key player in androgen signaling, and its activity is essential for the development and maintenance of androgen-dependent tissues, including the scalp and hair follicles. While the graph data does not explicitly mention AGA, it highlights that AR is a target of several drugs, including modulators and agonists, which are used in conditions such as prostate cancer, androgen insensitivity syndrome, and breast cancer. These conditions are all related to androgen signaling, which is also implicated in AGA.\n\nFurthermore, the graph indicates that AR is involved in the nuclear receptor transcription pathway, which is critical for gene regulation in response to androgenic signals. This pathway is likely to be relevant in the regulation of hair follicle development and the progression of AGA, as androgen signaling is known to influence hair growth and shedding.\n\nIn the literature, SRD5A2, which converts testosterone into dihydrotestosterone (DHT), is a key enzyme in androgen metabolism and is implicated in AGA. Since DHT is a more potent androgen that binds to the AR, the interplay between SRD5A2, DHT, and the AR is central to the pathophysiology of AGA. While the graph does not directly link AR to AGA, the presence of AR modulators in the Open Targets Drug Evidence suggests that AR is a potential therapeutic target for androgen-related disorders, including AGA.\n\nIn conclusion, although the graph does not explicitly state a direct link between AR and AGA, the broader context of androgen signaling, the role of AR in androgen metabolism, and the presence of AR modulators in the data suggest that AR is involved in the pathophysiology of AGA through its interaction with androgenic pathways."
+      }
+    ],
+    "created": 1783431945,
+    "id": "cmpl-6fc6b0a5-e921-4bb6-939f-34d57fe97f59",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 436,
+      "prompt_tokens": 1952,
+      "total_tokens": 2388
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      23.600574493408203,
+      23.623153686523438,
+      24.153045654296875,
+      24.545034408569336,
+      25.63513946533203,
+      25.878910064697266,
+      26.252330780029297,
+      26.535051345825195,
+      26.568132400512695,
+      26.984867095947266,
+      26.993406295776367,
+      27.025596618652344,
+      27.179210662841797,
+      27.215185165405273,
+      27.219493865966797
+    ],
+    "candidate_pmids": [
+      "42361668",
+      "41296172",
+      "34552771",
+      "37860011",
+      "40835866",
+      "41640146",
+      "37143720",
+      "42106542",
+      "41796107",
+      "35066432",
+      "36617158",
+      "41501168",
+      "41761959",
+      "42382896",
+      "40868166"
+    ],
+    "expanded_retrieval_query": "Summarize the evidence linking AR to androgenetic alopecia. Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "final_context": "Graph Context:\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n\nVector Context:\n--- Abstract 1 (PMID: 41501168, relevance: -1.5553) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n--- Abstract 2 (PMID: 41640146, relevance: -3.7344) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n--- Abstract 3 (PMID: 41796107, relevance: -4.1772) ---\nBACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "graph_context_length": 1823,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3356,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "summarize"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "ar"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgenetic alopecia"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q051.json",
+    "retrieval_total_seconds": 0.4568,
+    "score_max": -1.5553117990493774,
+    "score_mean": -3.155665119489034,
+    "scores": [
+      -1.5553117990493774,
+      -3.7344460487365723,
+      -4.177237510681152
+    ],
+    "selected_abstracts": [
+      "Benign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.",
+      "INTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.",
+      "BACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes."
+    ],
+    "selected_pmids": [
+      "41501168",
+      "41640146",
+      "41796107"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1064
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:45:45.877472+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 41501168, relevance: -1.5553) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n--- Abstract 2 (PMID: 41640146, relevance: -3.7344) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n--- Abstract 3 (PMID: 41796107, relevance: -4.1772) ---\nBACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.\n\n\n\n**Question:**\nSummarize the evidence linking AR to androgenetic alopecia."
+}

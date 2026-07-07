@@ -1,0 +1,161 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.8483,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The query about rs7313338 is not addressed directly by the provided graph or vector contexts. The graph context describes genes and their interactions associated with a GWAS study on \"Hair/balding pattern: Pattern 1,\" while the vector context includes abstracts related to Alzheimer's disease, atopic dermatitis, and lymphoma. None of these documents mention rs7313338 or provide study-specific or integrated annotations for this variant. Therefore, based on the given information, there is no available data to summarize for rs7313338.",
+  "question_id": "Q048",
+  "question_text": "Summarize the study-specific and integrated annotations available for rs7313338.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 120,
+    "prompt_token_count": 2122,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The query about rs7313338 is not addressed directly by the provided graph or vector contexts. The graph context describes genes and their interactions associated with a GWAS study on \"Hair/balding pattern: Pattern 1,\" while the vector context includes abstracts related to Alzheimer's disease, atopic dermatitis, and lymphoma. None of these documents mention rs7313338 or provide study-specific or integrated annotations for this variant. Therefore, based on the given information, there is no available data to summarize for rs7313338."
+      }
+    ],
+    "created": 1783431933,
+    "id": "cmpl-fbe7ee81-da08-4abd-9351-73ce7281d8c5",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 120,
+      "prompt_tokens": 2101,
+      "total_tokens": 2221
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      25.400070190429688,
+      25.70248031616211,
+      25.740978240966797,
+      28.15725326538086,
+      28.517292022705078,
+      28.694290161132812,
+      28.818845748901367,
+      28.99631118774414,
+      29.205524444580078,
+      29.253129959106445,
+      29.327939987182617,
+      29.356233596801758,
+      29.615522384643555,
+      29.693138122558594,
+      29.762775421142578
+    ],
+    "candidate_pmids": [
+      "29220522",
+      "34980917",
+      "32776659",
+      "39245941",
+      "34984527",
+      "42269416",
+      "40510016",
+      "37737258",
+      "42114689",
+      "37306722",
+      "39032379",
+      "37987107",
+      "38734673",
+      "31078570",
+      "40591711"
+    ],
+    "expanded_retrieval_query": "Summarize the study-specific and integrated annotations available for rs7313338. This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "final_context": "Graph Context:\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\nVector Context:\n--- Abstract 1 (PMID: 40591711, relevance: -5.6548) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n--- Abstract 2 (PMID: 39245941, relevance: -5.8072) ---\nAtopic dermatitis (AD) is a chronic itchy inflammatory disease of the skin. Genetic studies have identified multiple risk factors linked to the disease; however, most of the studies have been derived from European and East Asian populations. The admixed African American (AA) genome may provide an opportunity to discovery ancestry-specific loci involved in AD susceptibility. Herein, we present joint analysis of ancestry and genotype effects followed by validation using differential gene expression analysis on AD using 726 AD-affected individuals and 999 non-AD control individuals from the AA population, genotyped using Multi-Ethnic Global Array (MEGA) followed by imputation using the Consortium on Asthma among African Ancestry Populations in the Americas (CAAPA) reference panel. The joint analysis identified two novel AD-susceptibility loci, rs2195989 in gene ANGPT1 (8q23.1) and rs62538818 in the intergenic region between genes LURAP1L and MPDZ (9p23). Admixture mapping (AM) results showed potential genomic inflation, and we implemented genomic control and identified five ancestry-of-origin loci with European ancestry effects. The multi-omics functional prioritization of variants in AM signals prioritized the loci SLAIN2, RNF39, and FOXA2. Genome-wide association study (GWAS) identified variants significantly associated with AD in the AA population, including SGK1 (rs113357522, odds ratio [OR] = 2.81), EFR3A (rs16904552, OR = 1.725), and MMP14 (rs911912, OR = 1.791). GWAS variants were common in the AA but rare in the European population, which suggests an African-ancestry-specific risk of AD. Four genes (ANGPT1, LURAP1L, EFR3A, and SGK1) were further validated using qPCR from AD and healthy skin. This study highlighted the importance of genetic studies on admixed populations, as well as local ancestry and genotype-ancestry joint effects to identify risk loci for AD.\n\n--- Abstract 3 (PMID: 42114689, relevance: -6.8397) ---\nBACKGROUND: Background: The TNFRSF13B gene encodes TACI, a key regulator of B-cell survival and immune homeostasis. While variants in this gene are linked to immunodeficiency, their role in lymphoma development remains unclear. This study investigated whether the TNFRSF13B polymorphism rs4792800 (A>G) influences lymphoma risk. METHODS: We conducted a hospital-based case-control study including 200 histologically confirmed lymphoma patients and 119 healthy controls. Genotyping for rs4792800 was performed using allele-specific PCR. Logistic regression, adjusted for age and sex, calculated odds ratios (ORs) and 95% confidence intervals (CIs). Stratified analyses were performed by lymphoma subtype, cell lineage, and EBV status. Multiple testing was corrected using the false discovery rate (FDR). In silico analyses assessed regulatory potential and transcription factor binding. Results The G allele was significantly overrepresented in lymphoma cases versus controls (51.8% vs. 42.0%; allelic OR = 1.48, 95% CI 1.07-2.06, p = 0.018, q = 0.036). Under a recessive model, the GG genotype was associated with a 1.9-fold increased risk (95% CI 1.06-3.43, p = 0.031, q = 0.042). Subtype analysis revealed strong associations for diffuse large B-cell lymphoma (OR = 2.32, 95% CI 1.21-4.47, q = 0.036) and, exploratorily, for T-cell lymphoma (OR = 3.16, 95% CI 1.12-8.90, q = 0.087). The risk was significant in EBV-negative patients (OR = 1.99, q = 0.049) but not in the smaller EBV-positive subgroup. In silico analysis showed that rs4792800 resides within a B-cell-specific enhancer; the G allele disrupts an EBF1 binding motif (25.6% loss) while enhancing PAX5 binding (17.9% gain), predicting reduced TNFRSF13B expression and decreased TACI protein. Conclusion The rs4792800 GG genotype is associated with increased lymphoma risk, particularly in DLBCL and EBV-negative disease. These findings suggest that inherited variation impairing TACI-mediated immune surveillance contributes to lymphomagenesis independently of viral oncogenesis, though the T-cell lymphoma association requires validation.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "graph_context_length": 1378,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3485,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q048.json",
+    "retrieval_total_seconds": 33.9489,
+    "score_max": -5.654769420623779,
+    "score_mean": -6.1005539894104,
+    "scores": [
+      -5.654769420623779,
+      -5.8072309494018555,
+      -6.839661598205566
+    ],
+    "selected_abstracts": [
+      "The identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.",
+      "Atopic dermatitis (AD) is a chronic itchy inflammatory disease of the skin. Genetic studies have identified multiple risk factors linked to the disease; however, most of the studies have been derived from European and East Asian populations. The admixed African American (AA) genome may provide an opportunity to discovery ancestry-specific loci involved in AD susceptibility. Herein, we present joint analysis of ancestry and genotype effects followed by validation using differential gene expression analysis on AD using 726 AD-affected individuals and 999 non-AD control individuals from the AA population, genotyped using Multi-Ethnic Global Array (MEGA) followed by imputation using the Consortium on Asthma among African Ancestry Populations in the Americas (CAAPA) reference panel. The joint analysis identified two novel AD-susceptibility loci, rs2195989 in gene ANGPT1 (8q23.1) and rs62538818 in the intergenic region between genes LURAP1L and MPDZ (9p23). Admixture mapping (AM) results showed potential genomic inflation, and we implemented genomic control and identified five ancestry-of-origin loci with European ancestry effects. The multi-omics functional prioritization of variants in AM signals prioritized the loci SLAIN2, RNF39, and FOXA2. Genome-wide association study (GWAS) identified variants significantly associated with AD in the AA population, including SGK1 (rs113357522, odds ratio [OR] = 2.81), EFR3A (rs16904552, OR = 1.725), and MMP14 (rs911912, OR = 1.791). GWAS variants were common in the AA but rare in the European population, which suggests an African-ancestry-specific risk of AD. Four genes (ANGPT1, LURAP1L, EFR3A, and SGK1) were further validated using qPCR from AD and healthy skin. This study highlighted the importance of genetic studies on admixed populations, as well as local ancestry and genotype-ancestry joint effects to identify risk loci for AD.",
+      "BACKGROUND: Background: The TNFRSF13B gene encodes TACI, a key regulator of B-cell survival and immune homeostasis. While variants in this gene are linked to immunodeficiency, their role in lymphoma development remains unclear. This study investigated whether the TNFRSF13B polymorphism rs4792800 (A>G) influences lymphoma risk. METHODS: We conducted a hospital-based case-control study including 200 histologically confirmed lymphoma patients and 119 healthy controls. Genotyping for rs4792800 was performed using allele-specific PCR. Logistic regression, adjusted for age and sex, calculated odds ratios (ORs) and 95% confidence intervals (CIs). Stratified analyses were performed by lymphoma subtype, cell lineage, and EBV status. Multiple testing was corrected using the false discovery rate (FDR). In silico analyses assessed regulatory potential and transcription factor binding. Results The G allele was significantly overrepresented in lymphoma cases versus controls (51.8% vs. 42.0%; allelic OR = 1.48, 95% CI 1.07-2.06, p = 0.018, q = 0.036). Under a recessive model, the GG genotype was associated with a 1.9-fold increased risk (95% CI 1.06-3.43, p = 0.031, q = 0.042). Subtype analysis revealed strong associations for diffuse large B-cell lymphoma (OR = 2.32, 95% CI 1.21-4.47, q = 0.036) and, exploratorily, for T-cell lymphoma (OR = 3.16, 95% CI 1.12-8.90, q = 0.087). The risk was significant in EBV-negative patients (OR = 1.99, q = 0.049) but not in the smaller EBV-positive subgroup. In silico analysis showed that rs4792800 resides within a B-cell-specific enhancer; the G allele disrupts an EBF1 binding motif (25.6% loss) while enhancing PAX5 binding (17.9% gain), predicting reduced TNFRSF13B expression and decreased TACI protein. Conclusion The rs4792800 GG genotype is associated with increased lymphoma risk, particularly in DLBCL and EBV-negative disease. These findings suggest that inherited variation impairing TACI-mediated immune surveillance contributes to lymphomagenesis independently of viral oncogenesis, though the T-cell lymphoma association requires validation."
+    ],
+    "selected_pmids": [
+      "40591711",
+      "39245941",
+      "42114689"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.1081
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:45:33.494631+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40591711, relevance: -5.6548) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n--- Abstract 2 (PMID: 39245941, relevance: -5.8072) ---\nAtopic dermatitis (AD) is a chronic itchy inflammatory disease of the skin. Genetic studies have identified multiple risk factors linked to the disease; however, most of the studies have been derived from European and East Asian populations. The admixed African American (AA) genome may provide an opportunity to discovery ancestry-specific loci involved in AD susceptibility. Herein, we present joint analysis of ancestry and genotype effects followed by validation using differential gene expression analysis on AD using 726 AD-affected individuals and 999 non-AD control individuals from the AA population, genotyped using Multi-Ethnic Global Array (MEGA) followed by imputation using the Consortium on Asthma among African Ancestry Populations in the Americas (CAAPA) reference panel. The joint analysis identified two novel AD-susceptibility loci, rs2195989 in gene ANGPT1 (8q23.1) and rs62538818 in the intergenic region between genes LURAP1L and MPDZ (9p23). Admixture mapping (AM) results showed potential genomic inflation, and we implemented genomic control and identified five ancestry-of-origin loci with European ancestry effects. The multi-omics functional prioritization of variants in AM signals prioritized the loci SLAIN2, RNF39, and FOXA2. Genome-wide association study (GWAS) identified variants significantly associated with AD in the AA population, including SGK1 (rs113357522, odds ratio [OR] = 2.81), EFR3A (rs16904552, OR = 1.725), and MMP14 (rs911912, OR = 1.791). GWAS variants were common in the AA but rare in the European population, which suggests an African-ancestry-specific risk of AD. Four genes (ANGPT1, LURAP1L, EFR3A, and SGK1) were further validated using qPCR from AD and healthy skin. This study highlighted the importance of genetic studies on admixed populations, as well as local ancestry and genotype-ancestry joint effects to identify risk loci for AD.\n\n--- Abstract 3 (PMID: 42114689, relevance: -6.8397) ---\nBACKGROUND: Background: The TNFRSF13B gene encodes TACI, a key regulator of B-cell survival and immune homeostasis. While variants in this gene are linked to immunodeficiency, their role in lymphoma development remains unclear. This study investigated whether the TNFRSF13B polymorphism rs4792800 (A>G) influences lymphoma risk. METHODS: We conducted a hospital-based case-control study including 200 histologically confirmed lymphoma patients and 119 healthy controls. Genotyping for rs4792800 was performed using allele-specific PCR. Logistic regression, adjusted for age and sex, calculated odds ratios (ORs) and 95% confidence intervals (CIs). Stratified analyses were performed by lymphoma subtype, cell lineage, and EBV status. Multiple testing was corrected using the false discovery rate (FDR). In silico analyses assessed regulatory potential and transcription factor binding. Results The G allele was significantly overrepresented in lymphoma cases versus controls (51.8% vs. 42.0%; allelic OR = 1.48, 95% CI 1.07-2.06, p = 0.018, q = 0.036). Under a recessive model, the GG genotype was associated with a 1.9-fold increased risk (95% CI 1.06-3.43, p = 0.031, q = 0.042). Subtype analysis revealed strong associations for diffuse large B-cell lymphoma (OR = 2.32, 95% CI 1.21-4.47, q = 0.036) and, exploratorily, for T-cell lymphoma (OR = 3.16, 95% CI 1.12-8.90, q = 0.087). The risk was significant in EBV-negative patients (OR = 1.99, q = 0.049) but not in the smaller EBV-positive subgroup. In silico analysis showed that rs4792800 resides within a B-cell-specific enhancer; the G allele disrupts an EBF1 binding motif (25.6% loss) while enhancing PAX5 binding (17.9% gain), predicting reduced TNFRSF13B expression and decreased TACI protein. Conclusion The rs4792800 GG genotype is associated with increased lymphoma risk, particularly in DLBCL and EBV-negative disease. These findings suggest that inherited variation impairing TACI-mediated immune surveillance contributes to lymphomagenesis independently of viral oncogenesis, though the T-cell lymphoma association requires validation.\n\n\n\n**Question:**\nSummarize the study-specific and integrated annotations available for rs7313338."
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q161",
+      "randomization_seed": "20260706:Q161:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q161",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q161",
+      "error": null,
+      "id": "batch_req_6a4d540aa910819089ca21aa4d2d80ce",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452641,
+          "created_at": 1783452621,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0745dd61d5d1cf0c006a4d53cd27748197acb2604b1737cf1c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q161"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0745dd61d5d1cf0c006a4d53cde3c88197a04c105e685efd52",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the supplied evidence supports a role for LGR4 in hair-follicle stem-cell biology.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided evidence supports LGR4 roles in Wnt/RSPO signaling, development, bone biology, and other contexts, but does not directly establish a hair-follicle stem-cell role.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main supported biology and the absence of direct HFSC evidence, though it omits the androgenetic alopecia association as a weak indirect clue.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from making unsupported hair-follicle-specific conclusions.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses LGR4 in hair-follicle stem-cell biology.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Includes supported general Wnt/RSPO biology, but asserts direct HFSC expression, bulge localization, knockout phenotypes, niche maintenance, and regenerative roles that are not supported by the provided evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides many detailed claims but omits the key limitation that the supplied evidence lacks direct hair-follicle stem-cell data.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents unsupported hair-follicle-specific conclusions as established facts.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question and connects LGR4 biology to possible hair-follicle stem-cell relevance.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly describes LGR4 as an RSPO/ZNRF3-mediated Wnt pathway modulator and notes the androgenetic alopecia association, but the hair-follicle stem-cell role is inferential rather than directly evidenced.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the supported mechanism, indirect alopecia clue, plausible HFSC interpretation, and the absence of direct evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Clearly qualifies the conclusion as indirect, though it still leans somewhat strongly toward a pro-regenerative role.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question about LGR4 and hair-follicle stem-cell biology.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"The Wnt/RSPO connection is supported, but claims about HFSC expression, mouse loss-of-function studies, follicle regeneration defects, and comparisons with LGR5/LGR6 are not supported by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Gives a detailed mechanistic account but misses the central evidence limitation: no direct HFSC data are provided.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"States unsupported HFSC-specific findings with high confidence and does not adequately qualify uncertainty.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0745dd61d5d1cf0c006a4d53db2d7081979ce78333f8648060",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3869,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2130,
+            "output_tokens_details": {
+              "reasoning_tokens": 1261
+            },
+            "total_tokens": 5999
+          },
+          "user": null
+        },
+        "request_id": "05a80791-31d1-4bac-b4b3-7cccafb68651",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question about LGR4 and hair-follicle stem-cell biology.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The Wnt/RSPO connection is supported, but claims about HFSC expression, mouse loss-of-function studies, follicle regeneration defects, and comparisons with LGR5/LGR6 are not supported by the supplied evidence.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Gives a detailed mechanistic account but misses the central evidence limitation: no direct HFSC data are provided.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States unsupported HFSC-specific findings with high confidence and does not adequately qualify uncertainty.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q161",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q161.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.245546+00:00"
+}

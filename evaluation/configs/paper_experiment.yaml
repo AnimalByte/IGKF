@@ -1,0 +1,77 @@
+experiment:
+  name: igkf_paper_four_condition_eval
+  benchmark_path: data/testset.jsonl
+  output_root: evaluation/outputs
+  random_seed: 20260706
+
+conditions:
+  - qwen3_8b_baseline
+  - qwen3_8b_igkf
+  - gpt_5_4_mini_baseline
+  - gpt_5_4_mini_igkf
+
+local_model:
+  provider: llama_cpp
+  model_family: qwen3
+  model_name: Qwen3-8B
+  model_identifier: Qwen/Qwen3-8B-GGUF
+  tokenizer_identifier: Qwen/Qwen3-8B
+  gguf_filename: Qwen3-8B-Q4_K_M.gguf
+  local_model_path: models/Qwen3-8B-Q4_K_M.gguf
+  quantization: Q4_K_M
+  context_length: 32768
+  gpu_layers: -1
+  batch_size: 512
+  micro_batch_size: 128
+  flash_attention: true
+  hardware_execution: gpu_offload
+  seed: 20260706
+  thinking_mode: false
+  thinking_disable_mechanism: transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion
+  generation:
+    temperature: 0.3
+    top_p: 0.8
+    top_k: 20
+    min_p: 0.0
+    repeat_penalty: 1.0
+    max_output_tokens: 768
+
+openai:
+  generator_model: gpt-5.4-mini-2026-03-17
+  generator_reasoning_effort: none
+  judge_model: gpt-5.5
+  judge_reasoning_effort: high
+  max_output_tokens: 768
+  judge_max_output_tokens: 16384
+  batch_completion_window: 24h
+
+prompts:
+  baseline_system_prompt: >-
+    You are an expert biomedical research assistant. Answer the user's question
+    directly and accurately. Avoid unsupported claims.
+  igkf_system_prompt: >-
+    You are an expert biomedical research assistant. Answer the user's question
+    using only the supplied IGKF graph and literature context. If the context is
+    insufficient, say so clearly.
+
+retrieval:
+  embedding_model: pritamdeka/S-PubMedBert-MS-MARCO
+  retrieval_model_device: cpu
+  reranker_model: cross-encoder/ms-marco-MiniLM-L-6-v2
+  initial_k: 15
+  rerank_top_n: 3
+
+judging:
+  relevance_min: 1
+  relevance_max: 5
+  factual_correctness_min: 1
+  factual_correctness_max: 5
+  groundedness_min: 1
+  groundedness_max: 5
+  utilization_min: 1
+  utilization_max: 5
+  max_retries: 2
+
+statistics:
+  wilcoxon_zero_method: wilcox
+  multiple_comparison_correction: holm

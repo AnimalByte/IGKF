@@ -1,0 +1,206 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.6454,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated data do not provide evidence of a physical or functional association between the protein products of **PAX1** and **FOXA2**.\n\n### Explanation:\n- **PAX1** is a gene with known interactions listed in the graph context, including **TFAP2B**, **BARX1**, **WT1**, **CILP**, and **RIPPLY1**. However, **FOXA2** is not mentioned as an interacting partner of **PAX1** in the provided PPI (protein-protein interaction) data.\n- The literature context provided includes abstracts discussing **FOXP4-AS1**, **MEX3D**, and **FOXG1**, but none of these abstracts mention **FOXA2** or any interaction between **PAX1** and **FOXA2**.\n- There is no mention of **FOXA2** in the GO functions, associated phenotypes, or disease associations of **PAX1**.\n- Therefore, based on the available data, there is **no supported interaction or functional association** between the protein products of **PAX1** and **FOXA2**.",
+  "question_id": "Q197",
+  "question_text": "Does the integrated data contain evidence of a physical or functional association between the protein products of PAX1 and FOXA2? Describe the evidence type or state that no supported interaction is present.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 236,
+    "prompt_token_count": 1786,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated data do not provide evidence of a physical or functional association between the protein products of **PAX1** and **FOXA2**.\n\n### Explanation:\n- **PAX1** is a gene with known interactions listed in the graph context, including **TFAP2B**, **BARX1**, **WT1**, **CILP**, and **RIPPLY1**. However, **FOXA2** is not mentioned as an interacting partner of **PAX1** in the provided PPI (protein-protein interaction) data.\n- The literature context provided includes abstracts discussing **FOXP4-AS1**, **MEX3D**, and **FOXG1**, but none of these abstracts mention **FOXA2** or any interaction between **PAX1** and **FOXA2**.\n- There is no mention of **FOXA2** in the GO functions, associated phenotypes, or disease associations of **PAX1**.\n- Therefore, based on the available data, there is **no supported interaction or functional association** between the protein products of **PAX1** and **FOXA2**."
+      }
+    ],
+    "created": 1783433730,
+    "id": "cmpl-b55c05da-3474-4a02-a14f-256f870089d6",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 236,
+      "prompt_tokens": 1765,
+      "total_tokens": 2001
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      24.80459976196289,
+      25.077709197998047,
+      25.09712028503418,
+      25.9274959564209,
+      26.365394592285156,
+      27.019309997558594,
+      27.05723762512207,
+      27.204641342163086,
+      27.376684188842773,
+      27.463001251220703,
+      27.907020568847656,
+      27.922061920166016,
+      27.947269439697266,
+      28.143436431884766,
+      28.299449920654297
+    ],
+    "candidate_pmids": [
+      "42100494",
+      "41296172",
+      "35719909",
+      "33741282",
+      "34794894",
+      "37820438",
+      "39103847",
+      "42106542",
+      "39539976",
+      "42364006",
+      "37690223",
+      "42015488",
+      "39523115",
+      "32616903",
+      "42269416"
+    ],
+    "expanded_retrieval_query": "Does the integrated data contain evidence of a physical or functional association between the protein products of PAX1 and FOXA2? Describe the evidence type or state that no supported interaction is present. Entity: PAX1 (Type: Gene)\n  - Associated Phenotypes: Nasolacrimal duct obstruction, Microretrognathia, Scapular winging\n  - GO Functions/Processes: DNA binding, embryo development ending in birth or egg hatching, sequence-specific double-stranded DNA binding, regulation of DNA-templated transcription, DNA-binding transcription factor activity, RNA polymerase II-specific\n  - Interacts With (PPI): TFAP2B (experimental: 0, database: 0), BARX1 (experimental: 0, database: 0), WT1 (experimental: 0, database: 0), CILP (experimental: 0, database: 0), RIPPLY1 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: otofaciocervical syndrome 2 (score: 0.716), otofaciocervical syndrome (score: 0.596), otofaciocervical syndrome 1 (score: 0.371), Abnormality of the ear (score: 0.37), androgenetic alopecia (score: 0.338)",
+    "final_context": "Graph Context:\nEntity: PAX1 (Type: Gene)\n  - Associated Phenotypes: Nasolacrimal duct obstruction, Microretrognathia, Scapular winging\n  - GO Functions/Processes: DNA binding, embryo development ending in birth or egg hatching, sequence-specific double-stranded DNA binding, regulation of DNA-templated transcription, DNA-binding transcription factor activity, RNA polymerase II-specific\n  - Interacts With (PPI): TFAP2B (experimental: 0, database: 0), BARX1 (experimental: 0, database: 0), WT1 (experimental: 0, database: 0), CILP (experimental: 0, database: 0), RIPPLY1 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: otofaciocervical syndrome 2 (score: 0.716), otofaciocervical syndrome (score: 0.596), otofaciocervical syndrome 1 (score: 0.371), Abnormality of the ear (score: 0.37), androgenetic alopecia (score: 0.338)\n\nVector Context:\n--- Abstract 1 (PMID: 39539976, relevance: -2.3726) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n--- Abstract 2 (PMID: 42364006, relevance: -3.9058) ---\nBACKGROUND: MEX3D, a member of the MEX3 RNA-binding protein family, has emerged as a potential regulatory molecule in cancer. However, its role across different tumor types remains largely unexplored. METHODS: We conducted a pan-cancer analysis of MEX3D using transcriptomic and proteomic data from the Cancer Genome Atlas (TCGA), Genotype-Tissue Expression (GTEx), and Clinical Proteomic Tumor Analysis Consortium (CPTAC). Expression patterns, clinical correlations, survival outcomes, genetic alterations, RNA modification associations, immune infiltration, and functional enrichment were systematically evaluated. RESULTS: MEX3D was significantly dysregulated in numerous cancers at both mRNA and protein levels. Its expression correlated with tumor stage in ACC, LIHC, OV, SKCM, and THCA. Elevated MEX3D expression was associated with poor overall survival (OS) and disease-specific survival (DSS) in multiple malignancies, including ACC, LGG, LUAD, and MESO. Genetic alteration analysis revealed frequent amplifications and mutations, particularly in SARC and OV. MEX3D was positively correlated with RNA modification-related genes (m1A, m5C, m6A) and immune regulatory genes such as CD276, TGFB1, VEGFA, and ICOSLG. Additionally, MEX3D expression showed significant associations with tumor mutational burden (TMB), microsatellite instability (MSI), and cancer-associated fibroblast infiltration. Functional enrichment analyses indicated that MEX3D-related genes are involved in reproductive cellular processes, RNA binding, the Hippo signaling pathway, and microRNA-related oncogenic pathways. CONCLUSION: This pan-cancer analysis highlights the heterogeneous expression and cancer-specific prognostic significance of MEX3D. MEX3D is associated with immune infiltration, immune regulatory genes, RNA modification-related genes, TMB/MSI, and pathways involved in gene regulation and tumor progression. These findings suggest that MEX3D may participate in cancer-specific post-transcriptional and microenvironmental regulatory networks.\n\n--- Abstract 3 (PMID: 39103847, relevance: -3.9497) ---\nBACKGROUND AND OBJECTIVE: Autosomal recessive genetic disorders pose significant health challenges in regions where consanguineous marriages are prevalent. The utilization of exome sequencing as a frequently employed methodology has enabled a clear delineation of diagnostic efficacy and mode of inheritance within multiplex consanguineous families. However, these aspects remain less elucidated within simplex families. METHODS: In this study involving 12 unrelated simplex Iranian families presenting syndromic autism, we conducted singleton exome sequencing. The identified genetic variants were validated using Sanger sequencing, and for the missense variants in FOXG1 and DMD, 3D protein structure modeling was carried out to substantiate their pathogenicity. To examine the expression patterns of the candidate genes in the fetal brain, adult brain, and muscle, RT-qPCR was employed. RESULTS: In four families, we detected an autosomal dominant gene (FOXG1), an autosomal recessive gene (CHKB), and two X-linked autism genes (IQSEC2 and DMD), indicating diverse inheritance patterns. In the remaining eight families, we were unable to identify any disease-associated genes. As a result, our variant detection rate stood at 33.3% (4/12), surpassing rates reported in similar studies of smaller cohorts. Among the four newly identified coding variants, three are de novo (heterozygous variant p.Trp546Ter in IQSEC2, heterozygous variant p.Ala188Glu in FOXG1, and hemizygous variant p.Leu211Met in DMD), while the homozygous variant p.Glu128Ter in CHKB was inherited from both healthy heterozygous parents. 3D protein structure modeling was carried out for the missense variants in FOXG1 and DMD, which predicted steric hindrance and spatial inhibition, respectively, supporting the pathogenicity of these human mutants. Additionally, the nonsense variant in CHKB is anticipated to influence its dimerization - crucial for choline kinase function - and the nonsense variant in IQSEC2 is predicted to eliminate three functional domains. Consequently, these distinct variants found in four unrelated individuals with autism are likely indicative of loss-of-function mutations. CONCLUSIONS: In our two syndromic autism families, we discovered variants in two muscular dystrophy genes, DMD and CHKB. Given that DMD and CHKB are recognized for their participation in the non-cognitive manifestations of muscular dystrophy, it indicates that some genes transcend the boundary of apparently unrelated clinical categories, thereby establishing a novel connection between ASD and muscular dystrophy. Our findings also shed light on the complex inheritance patterns observed in Iranian consanguineous simplex families and emphasize the connection between autism spectrum disorder and muscular dystrophy. This underscores a likely genetic convergence between neurodevelopmental and neuromuscular disorders.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: PAX1 (Type: Gene)\n  - Associated Phenotypes: Nasolacrimal duct obstruction, Microretrognathia, Scapular winging\n  - GO Functions/Processes: DNA binding, embryo development ending in birth or egg hatching, sequence-specific double-stranded DNA binding, regulation of DNA-templated transcription, DNA-binding transcription factor activity, RNA polymerase II-specific\n  - Interacts With (PPI): TFAP2B (experimental: 0, database: 0), BARX1 (experimental: 0, database: 0), WT1 (experimental: 0, database: 0), CILP (experimental: 0, database: 0), RIPPLY1 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: otofaciocervical syndrome 2 (score: 0.716), otofaciocervical syndrome (score: 0.596), otofaciocervical syndrome 1 (score: 0.371), Abnormality of the ear (score: 0.37), androgenetic alopecia (score: 0.338)",
+    "graph_context_length": 831,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3337,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated data"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "physical"
+      },
+      {
+        "label": "ENTITY",
+        "text": "functional"
+      },
+      {
+        "label": "ENTITY",
+        "text": "association"
+      },
+      {
+        "label": "ENTITY",
+        "text": "protein products"
+      },
+      {
+        "label": "ENTITY",
+        "text": "pax1"
+      },
+      {
+        "label": "ENTITY",
+        "text": "foxa2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "state"
+      },
+      {
+        "label": "ENTITY",
+        "text": "interaction"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q197.json",
+    "retrieval_total_seconds": 0.4335,
+    "score_max": -2.372610569000244,
+    "score_mean": -3.4093828201293945,
+    "scores": [
+      -2.372610569000244,
+      -3.9057979583740234,
+      -3.949739933013916
+    ],
+    "selected_abstracts": [
+      "Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.",
+      "BACKGROUND: MEX3D, a member of the MEX3 RNA-binding protein family, has emerged as a potential regulatory molecule in cancer. However, its role across different tumor types remains largely unexplored. METHODS: We conducted a pan-cancer analysis of MEX3D using transcriptomic and proteomic data from the Cancer Genome Atlas (TCGA), Genotype-Tissue Expression (GTEx), and Clinical Proteomic Tumor Analysis Consortium (CPTAC). Expression patterns, clinical correlations, survival outcomes, genetic alterations, RNA modification associations, immune infiltration, and functional enrichment were systematically evaluated. RESULTS: MEX3D was significantly dysregulated in numerous cancers at both mRNA and protein levels. Its expression correlated with tumor stage in ACC, LIHC, OV, SKCM, and THCA. Elevated MEX3D expression was associated with poor overall survival (OS) and disease-specific survival (DSS) in multiple malignancies, including ACC, LGG, LUAD, and MESO. Genetic alteration analysis revealed frequent amplifications and mutations, particularly in SARC and OV. MEX3D was positively correlated with RNA modification-related genes (m1A, m5C, m6A) and immune regulatory genes such as CD276, TGFB1, VEGFA, and ICOSLG. Additionally, MEX3D expression showed significant associations with tumor mutational burden (TMB), microsatellite instability (MSI), and cancer-associated fibroblast infiltration. Functional enrichment analyses indicated that MEX3D-related genes are involved in reproductive cellular processes, RNA binding, the Hippo signaling pathway, and microRNA-related oncogenic pathways. CONCLUSION: This pan-cancer analysis highlights the heterogeneous expression and cancer-specific prognostic significance of MEX3D. MEX3D is associated with immune infiltration, immune regulatory genes, RNA modification-related genes, TMB/MSI, and pathways involved in gene regulation and tumor progression. These findings suggest that MEX3D may participate in cancer-specific post-transcriptional and microenvironmental regulatory networks.",
+      "BACKGROUND AND OBJECTIVE: Autosomal recessive genetic disorders pose significant health challenges in regions where consanguineous marriages are prevalent. The utilization of exome sequencing as a frequently employed methodology has enabled a clear delineation of diagnostic efficacy and mode of inheritance within multiplex consanguineous families. However, these aspects remain less elucidated within simplex families. METHODS: In this study involving 12 unrelated simplex Iranian families presenting syndromic autism, we conducted singleton exome sequencing. The identified genetic variants were validated using Sanger sequencing, and for the missense variants in FOXG1 and DMD, 3D protein structure modeling was carried out to substantiate their pathogenicity. To examine the expression patterns of the candidate genes in the fetal brain, adult brain, and muscle, RT-qPCR was employed. RESULTS: In four families, we detected an autosomal dominant gene (FOXG1), an autosomal recessive gene (CHKB), and two X-linked autism genes (IQSEC2 and DMD), indicating diverse inheritance patterns. In the remaining eight families, we were unable to identify any disease-associated genes. As a result, our variant detection rate stood at 33.3% (4/12), surpassing rates reported in similar studies of smaller cohorts. Among the four newly identified coding variants, three are de novo (heterozygous variant p.Trp546Ter in IQSEC2, heterozygous variant p.Ala188Glu in FOXG1, and hemizygous variant p.Leu211Met in DMD), while the homozygous variant p.Glu128Ter in CHKB was inherited from both healthy heterozygous parents. 3D protein structure modeling was carried out for the missense variants in FOXG1 and DMD, which predicted steric hindrance and spatial inhibition, respectively, supporting the pathogenicity of these human mutants. Additionally, the nonsense variant in CHKB is anticipated to influence its dimerization - crucial for choline kinase function - and the nonsense variant in IQSEC2 is predicted to eliminate three functional domains. Consequently, these distinct variants found in four unrelated individuals with autism are likely indicative of loss-of-function mutations. CONCLUSIONS: In our two syndromic autism families, we discovered variants in two muscular dystrophy genes, DMD and CHKB. Given that DMD and CHKB are recognized for their participation in the non-cognitive manifestations of muscular dystrophy, it indicates that some genes transcend the boundary of apparently unrelated clinical categories, thereby establishing a novel connection between ASD and muscular dystrophy. Our findings also shed light on the complex inheritance patterns observed in Iranian consanguineous simplex families and emphasize the connection between autism spectrum disorder and muscular dystrophy. This underscores a likely genetic convergence between neurodevelopmental and neuromuscular disorders."
+    ],
+    "selected_pmids": [
+      "39539976",
+      "42364006",
+      "39103847"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0873
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:15:30.540343+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: PAX1 (Type: Gene)\n  - Associated Phenotypes: Nasolacrimal duct obstruction, Microretrognathia, Scapular winging\n  - GO Functions/Processes: DNA binding, embryo development ending in birth or egg hatching, sequence-specific double-stranded DNA binding, regulation of DNA-templated transcription, DNA-binding transcription factor activity, RNA polymerase II-specific\n  - Interacts With (PPI): TFAP2B (experimental: 0, database: 0), BARX1 (experimental: 0, database: 0), WT1 (experimental: 0, database: 0), CILP (experimental: 0, database: 0), RIPPLY1 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: otofaciocervical syndrome 2 (score: 0.716), otofaciocervical syndrome (score: 0.596), otofaciocervical syndrome 1 (score: 0.371), Abnormality of the ear (score: 0.37), androgenetic alopecia (score: 0.338)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 39539976, relevance: -2.3726) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n--- Abstract 2 (PMID: 42364006, relevance: -3.9058) ---\nBACKGROUND: MEX3D, a member of the MEX3 RNA-binding protein family, has emerged as a potential regulatory molecule in cancer. However, its role across different tumor types remains largely unexplored. METHODS: We conducted a pan-cancer analysis of MEX3D using transcriptomic and proteomic data from the Cancer Genome Atlas (TCGA), Genotype-Tissue Expression (GTEx), and Clinical Proteomic Tumor Analysis Consortium (CPTAC). Expression patterns, clinical correlations, survival outcomes, genetic alterations, RNA modification associations, immune infiltration, and functional enrichment were systematically evaluated. RESULTS: MEX3D was significantly dysregulated in numerous cancers at both mRNA and protein levels. Its expression correlated with tumor stage in ACC, LIHC, OV, SKCM, and THCA. Elevated MEX3D expression was associated with poor overall survival (OS) and disease-specific survival (DSS) in multiple malignancies, including ACC, LGG, LUAD, and MESO. Genetic alteration analysis revealed frequent amplifications and mutations, particularly in SARC and OV. MEX3D was positively correlated with RNA modification-related genes (m1A, m5C, m6A) and immune regulatory genes such as CD276, TGFB1, VEGFA, and ICOSLG. Additionally, MEX3D expression showed significant associations with tumor mutational burden (TMB), microsatellite instability (MSI), and cancer-associated fibroblast infiltration. Functional enrichment analyses indicated that MEX3D-related genes are involved in reproductive cellular processes, RNA binding, the Hippo signaling pathway, and microRNA-related oncogenic pathways. CONCLUSION: This pan-cancer analysis highlights the heterogeneous expression and cancer-specific prognostic significance of MEX3D. MEX3D is associated with immune infiltration, immune regulatory genes, RNA modification-related genes, TMB/MSI, and pathways involved in gene regulation and tumor progression. These findings suggest that MEX3D may participate in cancer-specific post-transcriptional and microenvironmental regulatory networks.\n\n--- Abstract 3 (PMID: 39103847, relevance: -3.9497) ---\nBACKGROUND AND OBJECTIVE: Autosomal recessive genetic disorders pose significant health challenges in regions where consanguineous marriages are prevalent. The utilization of exome sequencing as a frequently employed methodology has enabled a clear delineation of diagnostic efficacy and mode of inheritance within multiplex consanguineous families. However, these aspects remain less elucidated within simplex families. METHODS: In this study involving 12 unrelated simplex Iranian families presenting syndromic autism, we conducted singleton exome sequencing. The identified genetic variants were validated using Sanger sequencing, and for the missense variants in FOXG1 and DMD, 3D protein structure modeling was carried out to substantiate their pathogenicity. To examine the expression patterns of the candidate genes in the fetal brain, adult brain, and muscle, RT-qPCR was employed. RESULTS: In four families, we detected an autosomal dominant gene (FOXG1), an autosomal recessive gene (CHKB), and two X-linked autism genes (IQSEC2 and DMD), indicating diverse inheritance patterns. In the remaining eight families, we were unable to identify any disease-associated genes. As a result, our variant detection rate stood at 33.3% (4/12), surpassing rates reported in similar studies of smaller cohorts. Among the four newly identified coding variants, three are de novo (heterozygous variant p.Trp546Ter in IQSEC2, heterozygous variant p.Ala188Glu in FOXG1, and hemizygous variant p.Leu211Met in DMD), while the homozygous variant p.Glu128Ter in CHKB was inherited from both healthy heterozygous parents. 3D protein structure modeling was carried out for the missense variants in FOXG1 and DMD, which predicted steric hindrance and spatial inhibition, respectively, supporting the pathogenicity of these human mutants. Additionally, the nonsense variant in CHKB is anticipated to influence its dimerization - crucial for choline kinase function - and the nonsense variant in IQSEC2 is predicted to eliminate three functional domains. Consequently, these distinct variants found in four unrelated individuals with autism are likely indicative of loss-of-function mutations. CONCLUSIONS: In our two syndromic autism families, we discovered variants in two muscular dystrophy genes, DMD and CHKB. Given that DMD and CHKB are recognized for their participation in the non-cognitive manifestations of muscular dystrophy, it indicates that some genes transcend the boundary of apparently unrelated clinical categories, thereby establishing a novel connection between ASD and muscular dystrophy. Our findings also shed light on the complex inheritance patterns observed in Iranian consanguineous simplex families and emphasize the connection between autism spectrum disorder and muscular dystrophy. This underscores a likely genetic convergence between neurodevelopmental and neuromuscular disorders.\n\n\n\n**Question:**\nDoes the integrated data contain evidence of a physical or functional association between the protein products of PAX1 and FOXA2? Describe the evidence type or state that no supported interaction is present."
+}

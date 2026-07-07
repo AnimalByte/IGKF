@@ -1,0 +1,186 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.3319,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Based on the provided graph and literature context, **Finasteride** is linked to the **gene SRD5A2** as a targeted gene. This connection is supported by the structured data, which explicitly lists **SRD5A2** as a gene targeted by Finasteride.\n\nAdditionally, the literature context provides further insight into the relationship between Finasteride and SRD5A2. Specifically, **Abstract 2 (PMID: 41722875)** discusses how Finasteride is a known inhibitor of **SRD5A2**, an enzyme critical for the synthesis of 5\u03b1-dihydrotestosterone (DHT) from testosterone. This aligns with the structured data and confirms that Finasteride is associated with SRD5A2 through its inhibitory action.\n\nNo other genes from the provided studies are explicitly linked to Finasteride in the integrated drug\u2013gene evidence.\n\n**Conclusion:** The only gene directly linked to Finasteride in the integrated drug\u2013gene evidence is **SRD5A2**.",
+  "question_id": "Q130",
+  "question_text": "Which genes from this study, if any, are linked to Finasteride in the integrated drug\u2013gene evidence?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 217,
+    "prompt_token_count": 1376,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided graph and literature context, **Finasteride** is linked to the **gene SRD5A2** as a targeted gene. This connection is supported by the structured data, which explicitly lists **SRD5A2** as a gene targeted by Finasteride.\n\nAdditionally, the literature context provides further insight into the relationship between Finasteride and SRD5A2. Specifically, **Abstract 2 (PMID: 41722875)** discusses how Finasteride is a known inhibitor of **SRD5A2**, an enzyme critical for the synthesis of 5\u03b1-dihydrotestosterone (DHT) from testosterone. This aligns with the structured data and confirms that Finasteride is associated with SRD5A2 through its inhibitory action.\n\nNo other genes from the provided studies are explicitly linked to Finasteride in the integrated drug\u2013gene evidence.\n\n**Conclusion:** The only gene directly linked to Finasteride in the integrated drug\u2013gene evidence is **SRD5A2**."
+      }
+    ],
+    "created": 1783432937,
+    "id": "cmpl-e8487769-f41b-4af8-b267-dc36c790be43",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 217,
+      "prompt_tokens": 1355,
+      "total_tokens": 1572
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      23.912212371826172,
+      27.50649070739746,
+      28.17391586303711,
+      28.66787338256836,
+      30.138147354125977,
+      30.39881706237793,
+      30.66054916381836,
+      30.901283264160156,
+      30.935352325439453,
+      31.217615127563477,
+      31.288623809814453,
+      31.323619842529297,
+      31.343475341796875,
+      31.35540008544922,
+      31.442325592041016
+    ],
+    "candidate_pmids": [
+      "41722875",
+      "41501168",
+      "37143720",
+      "41640146",
+      "41296172",
+      "40685484",
+      "35106856",
+      "34275739",
+      "42260572",
+      "37140276",
+      "41796107",
+      "40305445",
+      "41971655",
+      "40335670",
+      "42373232"
+    ],
+    "expanded_retrieval_query": "Which genes from this study, if any, are linked to Finasteride in the integrated drug\u2013gene evidence? Entity: FINASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "final_context": "Graph Context:\nEntity: FINASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\nVector Context:\n--- Abstract 1 (PMID: 40685484, relevance: -2.4291) ---\nSchizophrenia (SCZ) is a chronic, relapsing mental disorder with a complex and poorly understood etiology. Identifying novel therapeutic targets is essential for advancing treatment options. Druggable genes were sourced from the eQTLGen consortium and integrated with SCZ-related GWAS data. Two-sample Mendelian randomization (MR) and co-localization analyses assessed the likelihood of shared pathogenic variants between the expression quantitative trait loci (eQTL) of these genes and SCZ. Positive results were further validated using Summary-based MR (SMR). Phenome-wide association studies, drug prediction, and molecular docking analyses were also conducted to identify potential therapeutic targets among these genes. SMR analysis revealed six druggable genes significantly associated with SCZ: NMB, IK, FGFR1, SERPING1, EDEM2, and CTSS. Molecular docking studies demonstrated favorable binding energies for PD 173074-FGFR1 (- 8.1407 kcal/mol), WZ-7043-FGFR1 (- 7.8027 kcal/mol), and lenvatinib-FGFR1 (- 7.3075 kcal/mol). Single-cell expression analysis further indicated that FGFR1 is predominantly expressed in mural cells, suggesting its potential role in SCZ pathogenesis. This study identifies six druggable genes as potential therapeutic targets for SCZ, with FGFR1 emerging as a particularly promising candidate. These findings provide valuable insights for SCZ treatment development and position FGFR1 as a viable target for future therapeutic strategies.\n\n--- Abstract 2 (PMID: 41722875, relevance: -3.9735) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 3 (PMID: 37140276, relevance: -4.5991) ---\nOBJECTIVE: Type 2 diabetes mellitus (T2DM) and polycystic ovary syndrome (PCOS) are highly prevalent endocrine system diseases. However, studies on the molecular mechanisms of T2DM and PCOS at the transcriptomic level are still few. Thus, we aimed to reveal the potential common genetic and molecular pathways between T2DM and PCOS via bioinformatics analyses. MATERIALS AND METHODS: We downloaded the GSE10946 and GSE18732 datasets for T2DM and PCOS, respectively, from the National Center for Biotechnology Information's Gene Expression Omnibus (GEO) database. These datasets were subjected to integrated differential and weighted gene co-expression network analyses (WGCNA) to screen common genes. Thereafter, functional enrichment and disease gene association analyses were performed, transcription factor (TF)-gene and TF-miRNA-gene regulatory networks were constructed, and finally, the relevant target drugs were identified. RESULTS: We identified common genes (BIRC3, DEPTOR, TNNL3, ADRA2A) in T2DM and PCOS. Pathway enrichment analysis depicted that the common genes were enriched in smooth muscle contraction, channel inhibitor activity, apoptosis, and tumor necrosis factor (TNF) signaling pathways. TFs such as SP7, KLF8, HCFC1, IRF1, and MLLT1 played key roles in TF regulatory networks. Orlistat was indicated to be an important gene-targeting drug. CONCLUSIONS: This study is the first study to explore four diagnostic biomarkers and gene regulatory networks for T2DM and PCOS. The findings of our study provide novel insights into the diagnosis and treatment of T2DM and PCOS.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: FINASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "graph_context_length": 416,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3427,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "genes"
+      },
+      {
+        "label": "ENTITY",
+        "text": "study"
+      },
+      {
+        "label": "ENTITY",
+        "text": "finasteride"
+      },
+      {
+        "label": "ENTITY",
+        "text": "integrated drug"
+      },
+      {
+        "label": "ENTITY",
+        "text": "gene"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q130.json",
+    "retrieval_total_seconds": 0.4161,
+    "score_max": -2.429140567779541,
+    "score_mean": -3.667237122853597,
+    "scores": [
+      -2.429140567779541,
+      -3.9734621047973633,
+      -4.599108695983887
+    ],
+    "selected_abstracts": [
+      "Schizophrenia (SCZ) is a chronic, relapsing mental disorder with a complex and poorly understood etiology. Identifying novel therapeutic targets is essential for advancing treatment options. Druggable genes were sourced from the eQTLGen consortium and integrated with SCZ-related GWAS data. Two-sample Mendelian randomization (MR) and co-localization analyses assessed the likelihood of shared pathogenic variants between the expression quantitative trait loci (eQTL) of these genes and SCZ. Positive results were further validated using Summary-based MR (SMR). Phenome-wide association studies, drug prediction, and molecular docking analyses were also conducted to identify potential therapeutic targets among these genes. SMR analysis revealed six druggable genes significantly associated with SCZ: NMB, IK, FGFR1, SERPING1, EDEM2, and CTSS. Molecular docking studies demonstrated favorable binding energies for PD 173074-FGFR1 (- 8.1407 kcal/mol), WZ-7043-FGFR1 (- 7.8027 kcal/mol), and lenvatinib-FGFR1 (- 7.3075 kcal/mol). Single-cell expression analysis further indicated that FGFR1 is predominantly expressed in mural cells, suggesting its potential role in SCZ pathogenesis. This study identifies six druggable genes as potential therapeutic targets for SCZ, with FGFR1 emerging as a particularly promising candidate. These findings provide valuable insights for SCZ treatment development and position FGFR1 as a viable target for future therapeutic strategies.",
+      "5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.",
+      "OBJECTIVE: Type 2 diabetes mellitus (T2DM) and polycystic ovary syndrome (PCOS) are highly prevalent endocrine system diseases. However, studies on the molecular mechanisms of T2DM and PCOS at the transcriptomic level are still few. Thus, we aimed to reveal the potential common genetic and molecular pathways between T2DM and PCOS via bioinformatics analyses. MATERIALS AND METHODS: We downloaded the GSE10946 and GSE18732 datasets for T2DM and PCOS, respectively, from the National Center for Biotechnology Information's Gene Expression Omnibus (GEO) database. These datasets were subjected to integrated differential and weighted gene co-expression network analyses (WGCNA) to screen common genes. Thereafter, functional enrichment and disease gene association analyses were performed, transcription factor (TF)-gene and TF-miRNA-gene regulatory networks were constructed, and finally, the relevant target drugs were identified. RESULTS: We identified common genes (BIRC3, DEPTOR, TNNL3, ADRA2A) in T2DM and PCOS. Pathway enrichment analysis depicted that the common genes were enriched in smooth muscle contraction, channel inhibitor activity, apoptosis, and tumor necrosis factor (TNF) signaling pathways. TFs such as SP7, KLF8, HCFC1, IRF1, and MLLT1 played key roles in TF regulatory networks. Orlistat was indicated to be an important gene-targeting drug. CONCLUSIONS: This study is the first study to explore four diagnostic biomarkers and gene regulatory networks for T2DM and PCOS. The findings of our study provide novel insights into the diagnosis and treatment of T2DM and PCOS."
+    ],
+    "selected_pmids": [
+      "40685484",
+      "41722875",
+      "37140276"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0472
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:02:17.457564+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: FINASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 40685484, relevance: -2.4291) ---\nSchizophrenia (SCZ) is a chronic, relapsing mental disorder with a complex and poorly understood etiology. Identifying novel therapeutic targets is essential for advancing treatment options. Druggable genes were sourced from the eQTLGen consortium and integrated with SCZ-related GWAS data. Two-sample Mendelian randomization (MR) and co-localization analyses assessed the likelihood of shared pathogenic variants between the expression quantitative trait loci (eQTL) of these genes and SCZ. Positive results were further validated using Summary-based MR (SMR). Phenome-wide association studies, drug prediction, and molecular docking analyses were also conducted to identify potential therapeutic targets among these genes. SMR analysis revealed six druggable genes significantly associated with SCZ: NMB, IK, FGFR1, SERPING1, EDEM2, and CTSS. Molecular docking studies demonstrated favorable binding energies for PD 173074-FGFR1 (- 8.1407 kcal/mol), WZ-7043-FGFR1 (- 7.8027 kcal/mol), and lenvatinib-FGFR1 (- 7.3075 kcal/mol). Single-cell expression analysis further indicated that FGFR1 is predominantly expressed in mural cells, suggesting its potential role in SCZ pathogenesis. This study identifies six druggable genes as potential therapeutic targets for SCZ, with FGFR1 emerging as a particularly promising candidate. These findings provide valuable insights for SCZ treatment development and position FGFR1 as a viable target for future therapeutic strategies.\n\n--- Abstract 2 (PMID: 41722875, relevance: -3.9735) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 3 (PMID: 37140276, relevance: -4.5991) ---\nOBJECTIVE: Type 2 diabetes mellitus (T2DM) and polycystic ovary syndrome (PCOS) are highly prevalent endocrine system diseases. However, studies on the molecular mechanisms of T2DM and PCOS at the transcriptomic level are still few. Thus, we aimed to reveal the potential common genetic and molecular pathways between T2DM and PCOS via bioinformatics analyses. MATERIALS AND METHODS: We downloaded the GSE10946 and GSE18732 datasets for T2DM and PCOS, respectively, from the National Center for Biotechnology Information's Gene Expression Omnibus (GEO) database. These datasets were subjected to integrated differential and weighted gene co-expression network analyses (WGCNA) to screen common genes. Thereafter, functional enrichment and disease gene association analyses were performed, transcription factor (TF)-gene and TF-miRNA-gene regulatory networks were constructed, and finally, the relevant target drugs were identified. RESULTS: We identified common genes (BIRC3, DEPTOR, TNNL3, ADRA2A) in T2DM and PCOS. Pathway enrichment analysis depicted that the common genes were enriched in smooth muscle contraction, channel inhibitor activity, apoptosis, and tumor necrosis factor (TNF) signaling pathways. TFs such as SP7, KLF8, HCFC1, IRF1, and MLLT1 played key roles in TF regulatory networks. Orlistat was indicated to be an important gene-targeting drug. CONCLUSIONS: This study is the first study to explore four diagnostic biomarkers and gene regulatory networks for T2DM and PCOS. The findings of our study provide novel insights into the diagnosis and treatment of T2DM and PCOS.\n\n\n\n**Question:**\nWhich genes from this study, if any, are linked to Finasteride in the integrated drug\u2013gene evidence?"
+}

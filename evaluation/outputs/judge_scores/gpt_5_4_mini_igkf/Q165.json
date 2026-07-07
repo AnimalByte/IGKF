@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q165",
+      "randomization_seed": "20260706:Q165:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q165",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q165",
+      "error": null,
+      "id": "batch_req_6a4d540b109c8190b76e1873afcefc57",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452639,
+          "created_at": 1783452626,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09cf9ed44927ecc6006a4d53d2ab648193bbc387b0e3f99914",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q165"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09cf9ed44927ecc6006a4d53d346308193a64619450bd012b3",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that the dataset does not support an rs756853-minoxidil pharmacogenomic effect.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately notes that the evidence links rs756853/HDAC9 to HDAC-related drugs and pathways, not minoxidil or minoxidil response.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers absence of minoxidil association, lack of treatment-response evidence, and mechanistic mismatch.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from inferring a pharmacogenomic effect without direct evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses why a pharmacogenomic effect cannot be inferred, though it is more generic and less tied to the provided dataset.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Scientifically accurate about the requirements for inferring genotype-dependent drug response.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Explains the needed elements well but omits dataset-specific details such as the HDAC9 annotation and absence of minoxidil evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly qualifies the conclusion and avoids unsupported inference.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and specifically answers the question using the provided dataset context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the dataset contains HDAC-related annotations and drug evidence but no minoxidil-specific pharmacogenomic evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly covers the missing minoxidil link, distinction from HDAC inhibitor evidence, and requirements for a pharmacogenomic claim.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately concludes insufficient evidence rather than overinterpreting annotations.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the general inference problem but incorrectly states that no dataset was provided and does not evaluate the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"General pharmacogenomic principles are accurate, but the claim that no dataset was provided is incorrect in context.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Includes key general requirements but omits the specific evidence that minoxidil is absent and rs756853 is linked instead to HDAC9/HDAC inhibitors.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Avoids making an unsupported pharmacogenomic claim, but the abstention is framed as due to missing data rather than evaluating the provided dataset.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09cf9ed44927ecc6006a4d53d910fc8193ba45293a4d58eaef",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4404,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1304,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5708
+          },
+          "user": null
+        },
+        "request_id": "281c7225-2edf-45a3-aa87-bce4407d04b2",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "8fb57e6aff005660f90a18b3a0bfe5bdfd2fb674b0190e5b2683ac1538ed85e1",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q165",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q165.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q165::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q165::R2",
+      "error": null,
+      "id": "batch_req_6a4d19bea17c819098e322307dbb92e2",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437728,
+          "created_at": 1783437721,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0964b03384cdd842006a4d1999a4408197ab7a2899bc83b3fd",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q165"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0964b03384cdd842006a4d199ab9f4819798287fc93bc23e7d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is well supported by the supplied context: minoxidil is absent from the graph and vector evidence, while rs756853 is linked to HDAC9, HDAC-related drugs, phenotypes, pathways, and regulatory annotations. The conclusion that a minoxidil pharmacogenomic effect cannot be inferred is grounded in the lack of direct minoxidil-response evidence.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the key supplied evidence, especially the listed drug associations and Open Targets drug evidence, and correctly notes that these involve HDAC inhibitors rather than minoxidil. It also avoids relying on irrelevant vector abstracts and draws a cautious inference consistent with the context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0964b03384cdd842006a4d199ee9a081979d473a4f9ded7b38",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2907,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 507,
+            "output_tokens_details": {
+              "reasoning_tokens": 318
+            },
+            "total_tokens": 3414
+          },
+          "user": null
+        },
+        "request_id": "01900a9d-cd26-4c40-bdfa-c3ebf2ac6312",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and specifically answers the question using the provided dataset context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the dataset contains HDAC-related annotations and drug evidence but no minoxidil-specific pharmacogenomic evidence.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Clearly covers the missing minoxidil link, distinction from HDAC inhibitor evidence, and requirements for a pharmacogenomic claim.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is well supported by the supplied context: minoxidil is absent from the graph and vector evidence, while rs756853 is linked to HDAC9, HDAC-related drugs, phenotypes, pathways, and regulatory annotations. The conclusion that a minoxidil pharmacogenomic effect cannot be inferred is grounded in the lack of direct minoxidil-response evidence.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key supplied evidence, especially the listed drug associations and Open Targets drug evidence, and correctly notes that these involve HDAC inhibitors rather than minoxidil. It also avoids relying on irrelevant vector abstracts and draws a cautious inference consistent with the context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately concludes insufficient evidence rather than overinterpreting annotations.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q165",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q165.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.359326+00:00"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q082",
+      "randomization_seed": "20260706:Q082:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q082",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q082",
+      "error": null,
+      "id": "batch_req_6a4d52bbcb3c8190b01ebe7307feb8cf",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452202,
+          "created_at": 1783452193,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04fd09f2ea4fe7da006a4d522132bc819ebb7d8a1554576614",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q082"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04fd09f2ea4fe7da006a4d5221c330819e8eef2f4e8029d915",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses the general task but does not answer which variants, if any, are mapped to LGR4.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Does not make a biomedical error, but misses the evidence-supported conclusion that no high-impact LGR4 variants are identified in the supplied context.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the direct conclusion requested by the question.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids inventing variants, though it over-abstains rather than using the provided evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether high-impact variants are mapped to LGR4.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the supplied evidence, which does not report any high-impact variants mapped to LGR4.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the key conclusion and explains that the available context discusses LGR4 biology rather than variants.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the conclusion based on the provided evidence and does not invent unsupported variants.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Recognizes the type of information needed but does not answer the question from the provided context.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Contains no clear biomedical inaccuracies, but fails to state the evidence-supported absence of reported high-impact LGR4 variants.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not provide the requested determination.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Avoids unsupported claims, but abstains more than necessary given the supplied evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether high-impact variants mapped to LGR4 can be identified.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the supplied context does not report LGR4 variants, high-impact or otherwise.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the important conclusion and supporting reason from the context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the supplied information and avoids inventing variants.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04fd09f2ea4fe7da006a4d5226e69c819ebca37790b053641a",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2612,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1049,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3661
+          },
+          "user": null
+        },
+        "request_id": "c95b31ea-03d1-41fa-be63-6b5971eb0a49",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "270f88956e84dd8a643462b9a98979bdf556962a0f60a9c02203d3d66cf24dc3",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q082",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q082.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q082::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q082::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b3a9308190af2f19803a55b9c7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437468,
+          "created_at": 1783437464,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d607a3b902c2048006a4d189809f48195bd2097c1e1973b86",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q082"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d607a3b902c2048006a4d18987f88819590bf4f102a94dcb6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is supported by the supplied context: LGR4 appears only in abstracts as a receptor/therapeutic target, and no LGR4 variants or high-impact annotations are provided.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses both the graph and vector context, noting the absence of LGR4 variant annotations and avoiding unsupported claims.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d607a3b902c2048006a4d189b4de8819598d7cdbcfaa413d2",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1960,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 404,
+            "output_tokens_details": {
+              "reasoning_tokens": 279
+            },
+            "total_tokens": 2364
+          },
+          "user": null
+        },
+        "request_id": "2e606561-161e-4275-be5a-1d7bfd4240a5",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether high-impact variants mapped to LGR4 can be identified.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects that the supplied context does not report LGR4 variants, high-impact or otherwise.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the important conclusion and supporting reason from the context.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is supported by the supplied context: LGR4 appears only in abstracts as a receptor/therapeutic target, and no LGR4 variants or high-impact annotations are provided.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses both the graph and vector context, noting the absence of LGR4 variant annotations and avoiding unsupported claims.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately limits the conclusion to the supplied information and avoids inventing variants.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q082",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q082.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.302756+00:00"
+}

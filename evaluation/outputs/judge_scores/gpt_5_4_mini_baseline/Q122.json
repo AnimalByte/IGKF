@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q122",
+      "randomization_seed": "20260706:Q122:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q122",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q122",
+      "error": null,
+      "id": "batch_req_6a4d540809708190986978b57a276e64",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452554,
+          "created_at": 1783452535,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f69d31d3ee26c8a006a4d5377e8948196999b2a210993ef2c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q122"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f69d31d3ee26c8a006a4d537865c48196bec68e40a8c092a5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the study does not support frontal fibrosing alopecia genes.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that frontal fibrosing alopecia is not supported and is outside scope.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes both required elements: no evidence and outside study scope.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported gene claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses frontal fibrosing alopecia and concludes it is not covered.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly distinguishes frontal fibrosing alopecia from androgenetic alopecia and alopecia areata contexts.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the required conclusion and explains why the phenotype is outside scope.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly limits the conclusion to the supplied context and avoids unsupported associations.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Acknowledges the task but does not answer whether the phenotype is in scope.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"No major biomedical falsehoods, but it fails to provide the evaluable conclusion.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the requested determination and outside-scope statement.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Abstains rather than inventing, but does so when the expected answer should state outside scope.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that frontal fibrosing alopecia is not supported by the studies.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately indicates that other alopecia or inflammatory skin phenotypes do not establish evidence for frontal fibrosing alopecia.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers lack of evidence, relevant studied phenotypes, and outside-scope conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported gene associations and qualifies the scope.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f69d31d3ee26c8a006a4d538619b081968af21bd3db5dc7cb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 835,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1542,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 2377
+          },
+          "user": null
+        },
+        "request_id": "2a3200a3-0807-9862-b271-520bc23ee573",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Acknowledges the task but does not answer whether the phenotype is in scope.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "No major biomedical falsehoods, but it fails to provide the evaluable conclusion.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Omits the requested determination and outside-scope statement.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Abstains rather than inventing, but does so when the expected answer should state outside scope.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q122",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.217552+00:00"
+}

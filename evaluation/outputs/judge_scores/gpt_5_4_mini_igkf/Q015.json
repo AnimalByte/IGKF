@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q015",
+      "randomization_seed": "20260706:Q015:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q015",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q015",
+      "error": null,
+      "id": "batch_req_6a4d52b8f3c081908ef17df4db82556e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452176,
+          "created_at": 1783452163,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06bbb3e0b4b6f057006a4d520307c4819186979e0cb0b0cf92",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q015"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06bbb3e0b4b6f057006a4d5203f01c819192c3de85b3429016",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the reported clinical significance of rs756853 and distinguishes associations from definitive pathogenicity.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the provided graph context and correctly notes that the abstracts do not discuss rs756853 directly.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers implicated gene, phenotypes, disease associations, regulatory context, and the lack of direct clinical/pathogenic classification evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the evidence as association-based and avoids claiming established pathogenicity.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses rs756853 and its possible clinical significance, though it broadens into functional and therapeutic context.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Much of the listed context matches the evidence, but it overstates implications such as contribution to disease susceptibility and therapeutic targeting of the variant.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes most relevant graph-derived associations and notes lack of direct abstract evidence, but the clinical interpretation is somewhat speculative.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Provides some caveats about indirect evidence, but still makes unsupported inferences about disease contribution and treatment relevance.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Attempts to answer the clinical-significance question, but discusses an unsupported gene and disease context.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly places rs756853 in FADS2 and invents lipid/cardiovascular associations not supported by the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the provided HDAC9, phenotype, regulatory, and disease-association context.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported claims as reported clinical significance despite lack of evidence in the reference packet.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses whether a clinical significance can be verified, but does not use the provided association evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The caution about lack of confirmed pathogenic/benign classification is consistent with the evidence, but it underreports supplied phenotype and disease associations.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not mention HDAC9, associated phenotypes, regulatory element, or Open Targets disease associations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids asserting unsupported clinical pathogenicity and clearly states uncertainty.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06bbb3e0b4b6f057006a4d520b1e3081919bfac44a23b6e8a0",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3622,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1099,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4721
+          },
+          "user": null
+        },
+        "request_id": "eee98c69-7830-48b1-85ef-4d9017eb68c0",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "7ba19007ae6ed050d0c982fe5583003f2f90fedf72b2be91fc77ad0a23526721",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q015",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q015.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q015::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q015::R2",
+      "error": null,
+      "id": "batch_req_6a4d19aac0208190be5b38dc5e6e2dc3",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437452,
+          "created_at": 1783437444,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_094f494154a888ed006a4d1884a4ec8197909608594f6d1737",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q015"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_094f494154a888ed006a4d1885233481979fefd51e197f18b2",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"Most claims are supported by the supplied graph context, including HDAC9 implication, regulatory element status, phenotypes, Open Targets disease associations, and lack of direct abstract evidence. The phrase 'clinically significant' is somewhat interpretive because no explicit pathogenicity or clinical significance classification is provided.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the key graph evidence and correctly discounts the unrelated vector abstracts, while distinguishing association evidence from definitive pathogenic classification.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_094f494154a888ed006a4d188b28508197aff603a75c4ff58b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2455,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 579,
+            "output_tokens_details": {
+              "reasoning_tokens": 434
+            },
+            "total_tokens": 3034
+          },
+          "user": null
+        },
+        "request_id": "00dc601d-cf2f-4ca9-adef-1b2d70795452",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the reported clinical significance of rs756853 and distinguishes associations from definitive pathogenicity.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the provided graph context and correctly notes that the abstracts do not discuss rs756853 directly.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers implicated gene, phenotypes, disease associations, regulatory context, and the lack of direct clinical/pathogenic classification evidence.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "Most claims are supported by the supplied graph context, including HDAC9 implication, regulatory element status, phenotypes, Open Targets disease associations, and lack of direct abstract evidence. The phrase 'clinically significant' is somewhat interpretive because no explicit pathogenicity or clinical significance classification is provided.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key graph evidence and correctly discounts the unrelated vector abstracts, while distinguishing association evidence from definitive pathogenic classification.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the evidence as association-based and avoids claiming established pathogenicity.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q015",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q015.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.261217+00:00"
+}

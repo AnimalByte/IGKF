@@ -1,0 +1,233 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437072,
+    "created_at": 1783437071,
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q105",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "7bc48fdb-c636-4cd5-9659-b5090d2bf585",
+    "response_id": "resp_05ba43015b6fe801006a4d170efbc88197a0d0db55f27f5473",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 1220,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1410
+    }
+  },
+  "parsed_answer": "The supplied graph context contains **no relevant data**, so I can\u2019t confirm any gene-to-pathway connections from the integrated graph itself.\n\nFrom the **literature context**, only **PMID: 41640146** is directly related to **androgen metabolism**, specifically the conversion of testosterone to dihydrotestosterone. In that study, the key androgen-metabolism gene is **SRD5A2**.\n\nHowever, the question asks **which genes from this study are connected to the androgen metabolism pathway in the integrated graph**, and the graph provides no usable mapping. So the safest answer is:\n\n- **No androgen-metabolism gene connections can be verified from the graph**\n- **Literature-supported androgen metabolism gene: SRD5A2**\n\nIf you want, I can also help infer whether any of the other genes in the abstracts are biologically linked to androgen signaling, but that would be outside the graph evidence.",
+  "question_id": "Q105",
+  "question_text": "Which genes from this study are connected to the androgen metabolism pathway in the integrated graph?",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_igkf::Q105",
+    "error": null,
+    "id": "batch_req_6a4d175f12a48190af5e29b856a2ffc2",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437072,
+        "created_at": 1783437071,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_05ba43015b6fe801006a4d170efbc88197a0d0db55f27f5473",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_igkf",
+          "question_id": "Q105"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "The supplied graph context contains **no relevant data**, so I can\u2019t confirm any gene-to-pathway connections from the integrated graph itself.\n\nFrom the **literature context**, only **PMID: 41640146** is directly related to **androgen metabolism**, specifically the conversion of testosterone to dihydrotestosterone. In that study, the key androgen-metabolism gene is **SRD5A2**.\n\nHowever, the question asks **which genes from this study are connected to the androgen metabolism pathway in the integrated graph**, and the graph provides no usable mapping. So the safest answer is:\n\n- **No androgen-metabolism gene connections can be verified from the graph**\n- **Literature-supported androgen metabolism gene: SRD5A2**\n\nIf you want, I can also help infer whether any of the other genes in the abstracts are biologically linked to androgen signaling, but that would be outside the graph evidence.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_05ba43015b6fe801006a4d170f7a3081978408a14d00db9450",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 1220,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 190,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1410
+        },
+        "user": null
+      },
+      "request_id": "7bc48fdb-c636-4cd5-9659-b5090d2bf585",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      39.419036865234375,
+      39.74835968017578,
+      41.09489822387695,
+      41.67755889892578,
+      41.79174041748047,
+      41.86039733886719,
+      41.93174743652344,
+      42.02574920654297,
+      42.508113861083984,
+      42.92243957519531,
+      42.9793701171875,
+      43.045654296875,
+      43.28809356689453,
+      43.29974365234375,
+      43.38904571533203
+    ],
+    "candidate_pmids": [
+      "37143720",
+      "41413847",
+      "40335670",
+      "41640146",
+      "40409516",
+      "34275739",
+      "37140276",
+      "42361668",
+      "35320709",
+      "41951638",
+      "35637434",
+      "41296172",
+      "41722875",
+      "41091706",
+      "31512724"
+    ],
+    "expanded_retrieval_query": "Which genes from this study are connected to the androgen metabolism pathway in the integrated graph? No relevant data found in the graph.",
+    "final_context": "Graph Context:\nNo relevant data found in the graph.\n\nVector Context:\n--- Abstract 1 (PMID: 41413847, relevance: -1.9283) ---\nOBJECTIVE: The aim of this study is to reveal key genes related to sphingolipid metabolism for distinguishing the invasive characteristics of pituitary adenomas (PA). METHODS: Bulk-RNA sequencing datasets related to the invasive pituitary adenomas (IPA) were retrieved from the GEO database and integrated after batch effect correction. IPA-related genes were identified through weighted gene co-expression network analysis (WGCNA) and differential gene expression (DEGs) analysis. Sphingolipid metabolism-related genes were sourced from the GeneCards database and intersected with IPA-related genes to identify IPA-specific metabolism genes (SMGs). Machine learning, including Lasso and SVM-RFE, was used to identify the key genes incorporated into a diagnostic model. The tumor immune microenvironment was analyzed, exploring correlations with key genes. Finally, key genes were validated through immunohistochemistry (IHC) and RT-qPCR in the IPA and PA samples. RESULTS: Four datasets were included. A total of 228 IPA-related genes were identified, with 10 IPA-SMGs obtained by intersecting with SM-related genes. Machine learning revealed three key genes, SLC27A2, EHD3, and SV2B. A logistic regression model was constructed, and after internal validation with 1000 bootstrap iterations, the ROC curve achieved an AUC of 0.767. Immune infiltration analysis showed that the ratio of endothelial cells and fibroblasts was significantly reduced in the IPA group compared to controls. IHC and RT-qPCR confirmed that SLC27A2 expression was significantly reduced, while EHD3 and SV2B were significantly increased in IPA tissues, which was consistent with the bioinformatics findings. CONCLUSION: This study identifies key genes potentially involved in the development and progression of IPA, offering new insights into the molecular mechanisms underlying IPA pathogenesis.\n\n--- Abstract 2 (PMID: 41640146, relevance: -3.9536) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n--- Abstract 3 (PMID: 35320709, relevance: -4.8216) ---\nA growing number of studies support a direct role for nuclear mTOR in gene regulation and chromatin structure. Still, the scarcity of known chromatin-bound mTOR partners limits our understanding of how nuclear mTOR controls transcription. Herein, comprehensive mapping of the mTOR chromatin-bound interactome in both androgen-dependent and -independent cellular models of prostate cancer (PCa) identifies a conserved 67-protein interaction network enriched for chromatin modifiers, transcription factors, and SUMOylation machinery. SUMO2/3 and nuclear pore protein NUP210 are among the strongest interactors, while the androgen receptor (AR) is the dominant androgen-inducible mTOR partner. Further investigation reveals that NUP210 facilitates mTOR nuclear trafficking, that mTOR and AR form a functional transcriptional module with the nucleosome remodeling and deacetylase (NuRD) complex, and that androgens specify mTOR-SUMO2/3 promoter-enhancer association. This work identifies a vast network of mTOR-associated nuclear complexes advocating innovative molecular strategies to modulate mTOR-dependent gene regulation with conceivable implications for PCa and other diseases.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "rerank_seconds": 0.3334,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "metabolism"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q105.json",
+    "retrieval_total_seconds": 34.2686,
+    "score_max": -1.928322196006775,
+    "score_mean": -3.5678319533665976,
+    "scores": [
+      -1.928322196006775,
+      -3.9536118507385254,
+      -4.821561813354492
+    ],
+    "selected_abstracts": [
+      "OBJECTIVE: The aim of this study is to reveal key genes related to sphingolipid metabolism for distinguishing the invasive characteristics of pituitary adenomas (PA). METHODS: Bulk-RNA sequencing datasets related to the invasive pituitary adenomas (IPA) were retrieved from the GEO database and integrated after batch effect correction. IPA-related genes were identified through weighted gene co-expression network analysis (WGCNA) and differential gene expression (DEGs) analysis. Sphingolipid metabolism-related genes were sourced from the GeneCards database and intersected with IPA-related genes to identify IPA-specific metabolism genes (SMGs). Machine learning, including Lasso and SVM-RFE, was used to identify the key genes incorporated into a diagnostic model. The tumor immune microenvironment was analyzed, exploring correlations with key genes. Finally, key genes were validated through immunohistochemistry (IHC) and RT-qPCR in the IPA and PA samples. RESULTS: Four datasets were included. A total of 228 IPA-related genes were identified, with 10 IPA-SMGs obtained by intersecting with SM-related genes. Machine learning revealed three key genes, SLC27A2, EHD3, and SV2B. A logistic regression model was constructed, and after internal validation with 1000 bootstrap iterations, the ROC curve achieved an AUC of 0.767. Immune infiltration analysis showed that the ratio of endothelial cells and fibroblasts was significantly reduced in the IPA group compared to controls. IHC and RT-qPCR confirmed that SLC27A2 expression was significantly reduced, while EHD3 and SV2B were significantly increased in IPA tissues, which was consistent with the bioinformatics findings. CONCLUSION: This study identifies key genes potentially involved in the development and progression of IPA, offering new insights into the molecular mechanisms underlying IPA pathogenesis.",
+      "INTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.",
+      "A growing number of studies support a direct role for nuclear mTOR in gene regulation and chromatin structure. Still, the scarcity of known chromatin-bound mTOR partners limits our understanding of how nuclear mTOR controls transcription. Herein, comprehensive mapping of the mTOR chromatin-bound interactome in both androgen-dependent and -independent cellular models of prostate cancer (PCa) identifies a conserved 67-protein interaction network enriched for chromatin modifiers, transcription factors, and SUMOylation machinery. SUMO2/3 and nuclear pore protein NUP210 are among the strongest interactors, while the androgen receptor (AR) is the dominant androgen-inducible mTOR partner. Further investigation reveals that NUP210 facilitates mTOR nuclear trafficking, that mTOR and AR form a functional transcriptional module with the nucleosome remodeling and deacetylase (NuRD) complex, and that androgens specify mTOR-SUMO2/3 promoter-enhancer association. This work identifies a vast network of mTOR-associated nuclear complexes advocating innovative molecular strategies to modulate mTOR-dependent gene regulation with conceivable implications for PCa and other diseases."
+    ],
+    "selected_pmids": [
+      "41413847",
+      "41640146",
+      "35320709"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0254
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T15:14:46.493578+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 41413847, relevance: -1.9283) ---\nOBJECTIVE: The aim of this study is to reveal key genes related to sphingolipid metabolism for distinguishing the invasive characteristics of pituitary adenomas (PA). METHODS: Bulk-RNA sequencing datasets related to the invasive pituitary adenomas (IPA) were retrieved from the GEO database and integrated after batch effect correction. IPA-related genes were identified through weighted gene co-expression network analysis (WGCNA) and differential gene expression (DEGs) analysis. Sphingolipid metabolism-related genes were sourced from the GeneCards database and intersected with IPA-related genes to identify IPA-specific metabolism genes (SMGs). Machine learning, including Lasso and SVM-RFE, was used to identify the key genes incorporated into a diagnostic model. The tumor immune microenvironment was analyzed, exploring correlations with key genes. Finally, key genes were validated through immunohistochemistry (IHC) and RT-qPCR in the IPA and PA samples. RESULTS: Four datasets were included. A total of 228 IPA-related genes were identified, with 10 IPA-SMGs obtained by intersecting with SM-related genes. Machine learning revealed three key genes, SLC27A2, EHD3, and SV2B. A logistic regression model was constructed, and after internal validation with 1000 bootstrap iterations, the ROC curve achieved an AUC of 0.767. Immune infiltration analysis showed that the ratio of endothelial cells and fibroblasts was significantly reduced in the IPA group compared to controls. IHC and RT-qPCR confirmed that SLC27A2 expression was significantly reduced, while EHD3 and SV2B were significantly increased in IPA tissues, which was consistent with the bioinformatics findings. CONCLUSION: This study identifies key genes potentially involved in the development and progression of IPA, offering new insights into the molecular mechanisms underlying IPA pathogenesis.\n\n--- Abstract 2 (PMID: 41640146, relevance: -3.9536) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n--- Abstract 3 (PMID: 35320709, relevance: -4.8216) ---\nA growing number of studies support a direct role for nuclear mTOR in gene regulation and chromatin structure. Still, the scarcity of known chromatin-bound mTOR partners limits our understanding of how nuclear mTOR controls transcription. Herein, comprehensive mapping of the mTOR chromatin-bound interactome in both androgen-dependent and -independent cellular models of prostate cancer (PCa) identifies a conserved 67-protein interaction network enriched for chromatin modifiers, transcription factors, and SUMOylation machinery. SUMO2/3 and nuclear pore protein NUP210 are among the strongest interactors, while the androgen receptor (AR) is the dominant androgen-inducible mTOR partner. Further investigation reveals that NUP210 facilitates mTOR nuclear trafficking, that mTOR and AR form a functional transcriptional module with the nucleosome remodeling and deacetylase (NuRD) complex, and that androgens specify mTOR-SUMO2/3 promoter-enhancer association. This work identifies a vast network of mTOR-associated nuclear complexes advocating innovative molecular strategies to modulate mTOR-dependent gene regulation with conceivable implications for PCa and other diseases.\n\n\n\n**Question:**\nWhich genes from this study are connected to the androgen metabolism pathway in the integrated graph?"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q056",
+      "randomization_seed": "20260706:Q056:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q056",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q056",
+      "error": null,
+      "id": "batch_req_6a4d52ba94008190aca30cf39bcd7ee8",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452240,
+          "created_at": 1783452206,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0988f370a48dfcf9006a4d522ea030819c82495fd9d59c7333",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q056"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0988f370a48dfcf9006a4d522f1ed8819c97f1d5b518397e7c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses EDA2R and AGA, but shifts substantially to EDAR and broader pathway claims.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Makes unsupported claims relative to the supplied evidence and conflates EDA2R with EDAR; no direct AGA association is provided in the reference packet.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers genetic and mechanistic themes, but much of the content is unsupported by the supplied evidence and omits the key limitation that the packet lacks a direct EDA2R-AGA link.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Mostly presents speculative or unsupported associations as established, with only limited qualification.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question and correctly frames the link as indirect based on the supplied data.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Accurately reflects EDA2R functions and the AGA-related PI3K/Akt-VEGFA context, though some proposed pathway intersections are speculative.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes key functional/pathway information and notes lack of direct evidence, but does not fully summarize the graph disease associations or unrelated abstracts.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly states that no direct evidence is provided and appropriately labels indirect links as hypothetical.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly summarizes purported evidence linking EDA2R to AGA.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The GWAS-based claims may be biologically plausible, but they are not supported by the supplied reference evidence, which contains no direct EDA2R-AGA association.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides a balanced genetic-association style summary, but omits that the supplied evidence packet itself does not establish the link.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Qualifies mechanism and causality, but still asserts replicated association without support from the provided evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question using the supplied graph and literature context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the supplied evidence provides no direct EDA2R-AGA link and correctly summarizes the available EDA2R pathway and disease-association information.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the graph evidence, abstracts, lack of direct association, and possible indirect biological plausibility.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from overclaiming and clearly labels any relationship as indirect and speculative.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0988f370a48dfcf9006a4d524a42e4819c8760ac211607f7c1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4010,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2784,
+            "output_tokens_details": {
+              "reasoning_tokens": 1967
+            },
+            "total_tokens": 6794
+          },
+          "user": null
+        },
+        "request_id": "290b8da4-e5bb-4d9e-8753-afb40c4585e4",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses EDA2R and AGA, but shifts substantially to EDAR and broader pathway claims.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Makes unsupported claims relative to the supplied evidence and conflates EDA2R with EDAR; no direct AGA association is provided in the reference packet.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Covers genetic and mechanistic themes, but much of the content is unsupported by the supplied evidence and omits the key limitation that the packet lacks a direct EDA2R-AGA link.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Mostly presents speculative or unsupported associations as established, with only limited qualification.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q056",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q056.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.149175+00:00"
+}

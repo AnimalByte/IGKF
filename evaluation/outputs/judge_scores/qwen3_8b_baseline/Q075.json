@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q075",
+      "randomization_seed": "20260706:Q075:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q075",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q075",
+      "error": null,
+      "id": "batch_req_6a4d52bb671c81909f7724d17a8613ad",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452187,
+          "created_at": 1783452177,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0cd9c2cf2d8b1b60006a4d5211f618819285bdc2554cf4b472",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q075"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0cd9c2cf2d8b1b60006a4d5212885881929e97ca3a478b7558",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether HDAC9 has known roles in hair-follicle biology/cycling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the provided evidence contains no direct hair-follicle or hair-cycle information for HDAC9.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion, though it gives little detail on HDAC9's general epigenetic functions that could contextualize the absence of hair evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the available information and avoids unsupported mechanistic claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question about HDAC9 in hair follicles and cycling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the evidence: HDAC9 is an epigenetic/transcriptional regulator, but no direct hair-follicle or cycling evidence is provided.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the main negative finding plus relevant general context from the evidence without overclaiming.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly distinguishes supported statements from possible hypotheses and abstains from unsupported conclusions.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses the specific question about HDAC9 in hair-follicle biology and cycling.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The main conclusion of limited direct evidence is consistent, but HDAC9 is incorrectly described as a class III HDAC rather than a class IIa HDAC.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the lack of direct evidence and gives general HDAC context, but includes some generic recommendations and less precise biology.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly appropriately qualified, though it speculates about plausible involvement beyond the supplied evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses HDAC9's possible and established relevance to hair-follicle biology and cycling.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly identifies HDAC9 as class IIa and states that its hair-follicle role is not well defined, but includes extra claims about skin datasets and alopecia not supported by the supplied evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Gives a well-rounded summary including expression uncertainty, mechanistic plausibility, cycling, and disease relevance.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately emphasizes uncertainty and labels mechanistic roles as speculative.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0cd9c2cf2d8b1b60006a4d5216c628819293ec803977fa1706",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3138,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1071,
+            "output_tokens_details": {
+              "reasoning_tokens": 455
+            },
+            "total_tokens": 4209
+          },
+          "user": null
+        },
+        "request_id": "cfb623e5-9add-4218-a257-98e841ce370b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the specific question about HDAC9 in hair-follicle biology and cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The main conclusion of limited direct evidence is consistent, but HDAC9 is incorrectly described as a class III HDAC rather than a class IIa HDAC.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers the lack of direct evidence and gives general HDAC context, but includes some generic recommendations and less precise biology.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Mostly appropriately qualified, though it speculates about plausible involvement beyond the supplied evidence.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q075",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q075.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.163015+00:00"
+}

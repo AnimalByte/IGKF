@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q023",
+      "randomization_seed": "20260706:Q023:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q023",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q023",
+      "error": null,
+      "id": "batch_req_6a4d52b945b88190aeb9d0cf7d7d640b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452191,
+          "created_at": 1783452182,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_015dfdb687b3e3b9006a4d5216c99881a1bf3534328c88a229",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q023"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_015dfdb687b3e3b9006a4d52176a8881a1a23b13570a8cb1af",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which gene is annotated for rs1160312.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies LINC01432, matching the reference evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the relevant gene and notes that no other directly linked gene is supplied.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the claim to the supplied context.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly attempts to answer the gene annotation question.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly states PDE4D; the reference evidence identifies LINC01432.\"},\"completeness\":{\"score\":1,\"rationale\":\"Gives an incorrect gene and omits the correct annotation.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents an unsupported incorrect conclusion without qualification.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Discusses the need for study context but does not answer the provided question.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Does not make a specific incorrect gene claim, but fails to report the correct annotation available in the evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the required gene, LINC01432.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains despite sufficient evidence being provided.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that rs1160312 is associated with LINC01432.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly matches the reference evidence identifying LINC01432.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key gene annotation and relevant context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately grounds the answer in the supplied evidence without overclaiming.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_015dfdb687b3e3b9006a4d521bdbf881a19dbbec48fc6f3b0f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2359,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 916,
+            "output_tokens_details": {
+              "reasoning_tokens": 455
+            },
+            "total_tokens": 3275
+          },
+          "user": null
+        },
+        "request_id": "764201de-e453-41f6-9b96-c38eef91a614",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "ae6b442bc53a629ec5ab4dfebd90ca65d48b60009be61e0c11221e195710cfde",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q023",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q023.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q023::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q023::R1",
+      "error": null,
+      "id": "batch_req_6a4d19abf5a881908209e907116d2367",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437527,
+          "created_at": 1783437524,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_095171481433b07a006a4d18d41db88196bf0ae4981854f50e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q023"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_095171481433b07a006a4d18d4a58c8196bd42753e684088d7",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer correctly identifies LINC01432 as the implicated gene for rs1160312, which is explicitly stated in the supplied graph context. The additional disease associations mentioned are also present in the graph context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer directly uses the key relevant graph evidence and does not rely on unsupported external information.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_095171481433b07a006a4d18d5fa048196aad40c35ddad654e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1883,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 223,
+            "output_tokens_details": {
+              "reasoning_tokens": 102
+            },
+            "total_tokens": 2106
+          },
+          "user": null
+        },
+        "request_id": "818efe0a-20f4-47d4-a2d7-8ad3aea41c3f",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that rs1160312 is associated with LINC01432.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly matches the reference evidence identifying LINC01432.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the key gene annotation and relevant context.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer correctly identifies LINC01432 as the implicated gene for rs1160312, which is explicitly stated in the supplied graph context. The additional disease associations mentioned are also present in the graph context.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer directly uses the key relevant graph evidence and does not rely on unsupported external information.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately grounds the answer in the supplied evidence without overclaiming.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q023",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q023.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.265839+00:00"
+}

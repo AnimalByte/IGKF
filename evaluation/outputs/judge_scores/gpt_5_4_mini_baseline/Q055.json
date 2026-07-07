@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q055",
+      "randomization_seed": "20260706:Q055:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q055",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q055",
+      "error": null,
+      "id": "batch_req_6a4d52ba88ec8190a8932b9b1b909612",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452219,
+          "created_at": 1783452204,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d0a79ba7fa803b6006a4d522ca180819c834ab6a0fa015c9c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q055"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d0a79ba7fa803b6006a4d522d1a90819cb6a4d73bd7955b92",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses EDA2R in hair-follicle biology and cycling, including developmental relevance, signaling, and uncertainty around cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Accurately identifies EDA2R/XEDAR as a TNF-receptor family receptor linked to EDA-A2 and NF-kappaB signaling, and appropriately notes limited evidence for hair cycling. Some statements about follicular expression and stage-specific roles go beyond the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers receptor identity, ectodermal appendage context, signaling, and the lack of clear hair-cycle evidence, though some details are not directly supported by the evidence packet.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly qualifies that EDA2R is not established as a core hair-cycle regulator and that evidence is limited.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers what is known about EDA2R in hair-follicle biology and cycling using the supplied context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Faithfully reflects the evidence: EDA2R is a TNF receptor-related signaling gene involved in cytokine/NF-kappaB and differentiation pathways, with ectodermal dysplasia associations but no direct evidence for a defined hair-cycle role.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes the key supported points and the key negative conclusion about hair cycling, though it does not mention EDA-A2/XEDAR nomenclature or contrast with EDA/EDAR.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids overclaiming and explicitly states that a direct role in anagen/catagen/telogen cycling is not established.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question directly, but much of the content asserts specific hair-cycle functions not supported by the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Correctly identifies EDA2R as a TNF receptor family member and broadly links it to ectodermal biology, but overstates or invents roles in hair follicle stem cells, anagen regulation, embryonic follicle initiation, and maintenance.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Mentions development, cycling, ligand interaction, and disease association, but lacks the crucial qualification that direct evidence for EDA2R-specific hair cycling function is limited.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents uncertain or unsupported claims as established facts.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly addresses the question and frames the answer around available evidence, though some mechanistic discussion is speculative.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Correctly notes limited direct evidence and links EDA2R to TNF/NF-kappaB signaling, differentiation, and ectodermal dysplasia. However, it overinterprets weak disease associations and incorrectly treats TNFSF4 as a meaningful supported interaction/ligand for EDA2R based on zero-evidence PPI entries.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers available pathway, disease, and hair-follicle relevance, and concludes that direct evidence is lacking.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Generally qualifies conclusions and notes the lack of direct evidence, but still makes some speculative claims about stem-cell regulation and hair-shaft differentiation.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d0a79ba7fa803b6006a4d52330484819cbf02b162372b64dc",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3842,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1499,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5341
+          },
+          "user": null
+        },
+        "request_id": "fed27017-0034-4a54-87c0-2254285a3601",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses EDA2R in hair-follicle biology and cycling, including developmental relevance, signaling, and uncertainty around cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately identifies EDA2R/XEDAR as a TNF-receptor family receptor linked to EDA-A2 and NF-kappaB signaling, and appropriately notes limited evidence for hair cycling. Some statements about follicular expression and stage-specific roles go beyond the supplied evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers receptor identity, ectodermal appendage context, signaling, and the lack of clear hair-cycle evidence, though some details are not directly supported by the evidence packet.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly qualifies that EDA2R is not established as a core hair-cycle regulator and that evidence is limited.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q055",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q055.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.148461+00:00"
+}

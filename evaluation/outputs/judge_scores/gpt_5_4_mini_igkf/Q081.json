@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q081",
+      "randomization_seed": "20260706:Q081:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q081",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q081",
+      "error": null,
+      "id": "batch_req_6a4d52bbb7a081908161cf352c039af9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452204,
+          "created_at": 1783452191,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03390bc9b8501ab4006a4d521f4f98819e8131941505b0ec52",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q081"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03390bc9b8501ab4006a4d521fe5fc819e8f354831bd8ed211",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether LGR4 is linked to androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly emphasizes limited direct evidence, but understates the supplied Open Targets association and includes questionable unsupported claims such as PAX6 as a major AGA factor.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key supplied evidence: Open Targets association score and LGR4/RSPO/Wnt pathway context.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately cautious overall, though it may over-abstain by implying no meaningful association despite database evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly summarizes the type and strength of evidence for LGR4 in AGA.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Consistent with a genetic/associative and Wnt-plausibility interpretation, but claims GWAS reproducibility and large population support beyond what is explicitly provided.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers association, biological plausibility, and lack of causal mechanism, but does not mention the supplied Open Targets score or absence of direct abstract evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies the evidence as associative, limited, and not mechanistically definitive.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question using the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reports the Open Targets association, Wnt/RSPO biology, and the lack of direct AGA-specific evidence in the abstracts.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the main evidence components: database association, pathway plausibility, lack of direct studies, and distinction from SRD5A2 evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately frames the link as limited, indirect, and hypothesis-generating.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses evidence linking LGR4 to androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly cites the Open Targets score and Wnt/RSPO plausibility, but overstates functional linkage and speculates about androgen signaling without direct supporting evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the database association and pathway context, but does not clearly note that the provided abstracts lack direct AGA-specific LGR4 evidence.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Includes some caveats, but makes unsupported mechanistic suggestions and says LGR4 is functionally linked to AGA too strongly.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03390bc9b8501ab4006a4d52270984819ea91428731f3afc7d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3237,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1345,
+            "output_tokens_details": {
+              "reasoning_tokens": 719
+            },
+            "total_tokens": 4582
+          },
+          "user": null
+        },
+        "request_id": "b40a6e32-23bc-4713-9061-99925c245a03",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "8b2a819daa57661084cf1dba75bef63d504a7fcd18474e5d6fd2dd576dec4e31",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q081",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q081.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q081::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q081::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b3aae88190b529b5cb2020bc5d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437466,
+          "created_at": 1783437457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b2fbca110c18938006a4d1891eb7c81979f332c929ece82a8",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q081"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b2fbca110c18938006a4d1892863c81978de77a64836bfd30",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 4,\n    \"rationale\": \"Most claims are supported by the supplied graph and abstracts, including the Open Targets association score, LGR4 involvement in RSPO/Wnt/ZNRF3 signaling, skeletal/developmental phenotypes, and lack of direct LGR4 alopecia studies. The main unsupported element is the added claim that Wnt/beta-catenin is important for hair follicle biology, which is plausible but not stated in the supplied context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the key supplied evidence: the Open Targets androgenetic alopecia association, related phenotypes, pathway/GO context, LGR4-RSPO-Wnt-ZNRF3 literature, and the SRD5A2 alopecia abstract to distinguish indirect from direct evidence.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b2fbca110c18938006a4d1897ffdc8197b4fb2e64ba5d6d43",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2068,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 613,
+            "output_tokens_details": {
+              "reasoning_tokens": 407
+            },
+            "total_tokens": 2681
+          },
+          "user": null
+        },
+        "request_id": "60589811-a462-41b6-8d9d-af5494064bf7",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately answers the question using the supplied evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reports the Open Targets association, Wnt/RSPO biology, and the lack of direct AGA-specific evidence in the abstracts.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the main evidence components: database association, pathway plausibility, lack of direct studies, and distinction from SRD5A2 evidence.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "Most claims are supported by the supplied graph and abstracts, including the Open Targets association score, LGR4 involvement in RSPO/Wnt/ZNRF3 signaling, skeletal/developmental phenotypes, and lack of direct LGR4 alopecia studies. The main unsupported element is the added claim that Wnt/beta-catenin is important for hair follicle biology, which is plausible but not stated in the supplied context.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key supplied evidence: the Open Targets androgenetic alopecia association, related phenotypes, pathway/GO context, LGR4-RSPO-Wnt-ZNRF3 literature, and the SRD5A2 alopecia abstract to distinguish indirect from direct evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately frames the link as limited, indirect, and hypothesis-generating.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q081",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q081.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.301983+00:00"
+}

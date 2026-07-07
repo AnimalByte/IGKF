@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q032",
+      "randomization_seed": "20260706:Q032:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q032",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q032",
+      "error": null,
+      "id": "batch_req_6a4d52b9a45881909be293a93ef17578",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452222,
+          "created_at": 1783452211,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0785d70fbcdb031f006a4d5233d4a481a3a312e2c8ac618f5b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q032"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0785d70fbcdb031f006a4d5234749481a3b6412eb7f49bdbaf",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"It acknowledges the question but does not use the supplied study/context to answer what evidence is available.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"It avoids making unsupported biomedical claims, but incorrectly implies that no study/context was provided to assess the association.\"},\"completeness\":{\"score\":1,\"rationale\":\"It omits the available evidence: the Open Targets association score, EBF1 implication, regulatory element annotation, and lack of direct mention in the alopecia abstract.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"It appropriately avoids overclaiming, though it over-abstains despite supplied evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the supplied study/context supports an association between rs929626 and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the graph lists an association score but the provided androgenetic alopecia abstract does not directly mention rs929626 or EBF1.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key distinction between indirect database/graph evidence and lack of direct study evidence, including the relevant abstract.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the association as inferred rather than directly substantiated by the provided literature.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and distinguishes supportive versus missing evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly accurate against the supplied evidence, but slightly overinterprets the regulatory annotation and EBF1 link as plausibly indicating a regulatory mechanism.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the Open Targets score, EBF1 implication, regulatory element, and lack of direct p-value/effect estimate, though some biological interpretation is speculative.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Generally qualifies the evidence as indirect and non-definitive, but the proposed EBF1 regulatory mechanism is somewhat stronger than the evidence supports.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Partly addresses the topic of rs929626 and androgenetic alopecia but does not answer based on the supplied study evidence.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Contains a material error by stating rs929626 is located in WNT10A; the supplied context implicates EBF1.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the provided Open Targets association, EBF1 annotation, regulatory element, and the lack of direct mention in the alopecia abstract.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Although it asks for more information, it then introduces unsupported and incorrect claims about WNT10A and mechanisms.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0785d70fbcdb031f006a4d52391c2881a3b34ea5a69577b98a",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2987,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1097,
+            "output_tokens_details": {
+              "reasoning_tokens": 460
+            },
+            "total_tokens": 4084
+          },
+          "user": null
+        },
+        "request_id": "0ef823e3-f6ed-4db1-8235-52ee8f85984b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partly addresses the topic of rs929626 and androgenetic alopecia but does not answer based on the supplied study evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Contains a material error by stating rs929626 is located in WNT10A; the supplied context implicates EBF1.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Omits the provided Open Targets association, EBF1 annotation, regulatory element, and the lack of direct mention in the alopecia abstract.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Although it asks for more information, it then introduces unsupported and incorrect claims about WNT10A and mechanisms.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q032",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q032.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.132576+00:00"
+}

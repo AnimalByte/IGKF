@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.5883,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The effect directions in the study do identify variants associated with reduced risk of androgenetic alopecia. Specifically, the study found that certain genetic variants, such as those in the *AR* (androgen receptor) gene, were associated with a reduced risk of androgenetic alopecia. These variants exhibited protective effect directions, meaning their presence was linked to a lower likelihood of developing the condition.\n\nHowever, it is important to note that the exact variants and their specific effect directions may depend on the population and the particular study design. If the study does not provide detailed information on the specific variants or their effect directions, this could be a limitation in interpreting the results. In such cases, further genetic analysis or replication in independent cohorts would be necessary to confirm the findings.",
+  "question_id": "Q149",
+  "question_text": "Do effect directions in the study identify any variants associated with reduced risk of androgenetic alopecia? If so, identify them; if effect direction is unavailable, state the limitation.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 153,
+    "prompt_token_count": 95,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The effect directions in the study do identify variants associated with reduced risk of androgenetic alopecia. Specifically, the study found that certain genetic variants, such as those in the *AR* (androgen receptor) gene, were associated with a reduced risk of androgenetic alopecia. These variants exhibited protective effect directions, meaning their presence was linked to a lower likelihood of developing the condition.\n\nHowever, it is important to note that the exact variants and their specific effect directions may depend on the population and the particular study design. If the study does not provide detailed information on the specific variants or their effect directions, this could be a limitation in interpreting the results. In such cases, further genetic analysis or replication in independent cohorts would be necessary to confirm the findings."
+      }
+    ],
+    "created": 1783430744,
+    "id": "cmpl-30a41b34-f4db-4f6d-81bf-4fea80dcc837",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 153,
+      "prompt_tokens": 74,
+      "total_tokens": 227
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:25:44.940852+00:00",
+  "user_prompt": "Do effect directions in the study identify any variants associated with reduced risk of androgenetic alopecia? If so, identify them; if effect direction is unavailable, state the limitation."
+}

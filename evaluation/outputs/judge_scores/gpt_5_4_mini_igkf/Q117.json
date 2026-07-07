@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q117",
+      "randomization_seed": "20260706:Q117:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q117",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q117",
+      "error": null,
+      "id": "batch_req_6a4d54084004819090097465f0e9b0ba",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452533,
+          "created_at": 1783452523,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04037cdfcc9b61e3006a4d536b980c81978ebf51a7ba1fdb97",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q117"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04037cdfcc9b61e3006a4d536c560c819783ea4f221c2eb264",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset is insufficient for comparing AGA with telogen effluvium.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately distinguishes AGA genetic findings from the absence of telogen effluvium genetic evidence and avoids claiming overlap.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the AGA-only nature of the dataset, lack of TE data, and conclusion that comparison is unsupported.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making unsupported genetic comparisons.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and clearly addresses whether the comparison is supported.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that AGA GWAS evidence does not establish TE genetic overlap without TE-specific genetic data.\"},\"completeness\":{\"score\":5,\"rationale\":\"Identifies supported AGA evidence, missing TE evidence, and unsupported forms of comparison such as shared loci or genetic correlation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Strongly qualifies the limits of the evidence and avoids speculative overlap claims.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses the requested comparison and concludes it is not supported.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Generally accurate about AGA and TE, but includes extra loci and claims of distinct genetic underpinnings not clearly supported by the dataset.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers AGA, TE, lack of overlap, and conclusion, though some detail is broader than necessary.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly abstains from unsupported comparison, but somewhat overstates distinct genetic mechanisms beyond the available dataset.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the AGA dataset alone is insufficient for comparison with TE.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate in describing AGA as genetically influenced and TE as usually trigger-related, with no dataset-supported genetic overlap.\"},\"completeness\":{\"score\":5,\"rationale\":\"Clearly explains why comparison is unsupported and states that no supported overlap can be summarized.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits conclusions to the available evidence and avoids unsupported overlap claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04037cdfcc9b61e3006a4d537186b48197a100ca3f0a4ed359",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1510,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1068,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2578
+          },
+          "user": null
+        },
+        "request_id": "9c08fb21-dcb5-41f7-be2a-4c7057961cae",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "e963a7789acc8eef07670eb36b7c8976e0bf5dfb551ac73632abdc86ff101642",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q117",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q117.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q117::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q117::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b7fa848190b74a05c39ce7dd41",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437632,
+          "created_at": 1783437627,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_027a4f0b9c1be799006a4d193b184c81958d4c8f9ed1c42767",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q117"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_027a4f0b9c1be799006a4d193b9bc48195b4a8a5321c05a442",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately reflects that the supplied context contains an androgenetic alopecia GWAS but no telogen effluvium genetic dataset or associations, so comparison or overlap claims are unsupported.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"It appropriately uses the key androgenetic alopecia evidence from PMID 40134218 and correctly avoids relying on irrelevant abstracts or unsupported telogen effluvium claims.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_027a4f0b9c1be799006a4d193f21c08195a1660536338f98f9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1749,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 455,
+            "output_tokens_details": {
+              "reasoning_tokens": 325
+            },
+            "total_tokens": 2204
+          },
+          "user": null
+        },
+        "request_id": "28a8beb6-f87c-41fc-85f2-b03c3d2d4f4c",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and clearly addresses whether the comparison is supported.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that AGA GWAS evidence does not establish TE genetic overlap without TE-specific genetic data.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Identifies supported AGA evidence, missing TE evidence, and unsupported forms of comparison such as shared loci or genetic correlation.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately reflects that the supplied context contains an androgenetic alopecia GWAS but no telogen effluvium genetic dataset or associations, so comparison or overlap claims are unsupported.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "It appropriately uses the key androgenetic alopecia evidence from PMID 40134218 and correctly avoids relying on irrelevant abstracts or unsupported telogen effluvium claims.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Strongly qualifies the limits of the evidence and avoids speculative overlap claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q117",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.328318+00:00"
+}

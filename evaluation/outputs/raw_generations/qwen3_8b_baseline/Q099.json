@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.7612,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "LHX2 (LIM homeobox 2) is a transcription factor involved in multiple biological processes, including neural development, craniofacial development, and hematopoiesis. In the context of an integrated biological graph, such as those derived from databases like STRING, Cytoscape, or BioPax, LHX2 is likely to be part of several key pathways. However, without access to a specific integrated graph or dataset, I cannot provide an exact list of pathways that include LHX2.\n\nTypically, pathways involving LHX2 may include:\n\n1. **Neural Development Pathways**: LHX2 is involved in the development of the central nervous system, particularly in the formation of the cerebellum and hindbrain.\n2. **Craniofacial Development Pathways**: LHX2 plays a role in the development of craniofacial structures.\n3. **Hematopoietic Stem Cell Maintenance Pathways**: LHX2 is implicated in the regulation of hematopoietic stem cells.\n4. **Transcriptional Regulation Pathways**: As a transcription factor, LHX2 is involved in the regulation of gene expression through interactions with other transcription factors and co-factors.\n\nTo determine the specific pathways in a given integrated graph that include LHX2, you would need to use pathway analysis tools or query the specific graph database with LHX2 as a node.",
+  "question_id": "Q099",
+  "question_text": "Which pathways in the integrated graph include LHX2?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 284,
+    "prompt_token_count": 70,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "LHX2 (LIM homeobox 2) is a transcription factor involved in multiple biological processes, including neural development, craniofacial development, and hematopoiesis. In the context of an integrated biological graph, such as those derived from databases like STRING, Cytoscape, or BioPax, LHX2 is likely to be part of several key pathways. However, without access to a specific integrated graph or dataset, I cannot provide an exact list of pathways that include LHX2.\n\nTypically, pathways involving LHX2 may include:\n\n1. **Neural Development Pathways**: LHX2 is involved in the development of the central nervous system, particularly in the formation of the cerebellum and hindbrain.\n2. **Craniofacial Development Pathways**: LHX2 plays a role in the development of craniofacial structures.\n3. **Hematopoietic Stem Cell Maintenance Pathways**: LHX2 is implicated in the regulation of hematopoietic stem cells.\n4. **Transcriptional Regulation Pathways**: As a transcription factor, LHX2 is involved in the regulation of gene expression through interactions with other transcription factors and co-factors.\n\nTo determine the specific pathways in a given integrated graph that include LHX2, you would need to use pathway analysis tools or query the specific graph database with LHX2 as a node."
+      }
+    ],
+    "created": 1783430480,
+    "id": "cmpl-5b7bc0d1-6a0a-4c69-90a2-198d00a5ffc7",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 284,
+      "prompt_tokens": 49,
+      "total_tokens": 333
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:21:20.019278+00:00",
+  "user_prompt": "Which pathways in the integrated graph include LHX2?"
+}

@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q093",
+      "randomization_seed": "20260706:Q093:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q093",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q093",
+      "error": null,
+      "id": "batch_req_6a4d52bc474c8190ae104e95053f6273",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452237,
+          "created_at": 1783452228,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_058e149e5a612b19006a4d52449e64819c989747b36143b8b1",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q093"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_058e149e5a612b19006a4d524500a0819cac2579a1b3e9b195",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and addresses whether any hair-loss treatments are linked to FOXA2.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied evidence: no hair loss, alopecia, or treatment links involving FOXA2 are present.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the relevant graph and abstract context and states the correct conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the supplied evidence and avoids unsupported claims.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question about FOXA2 and hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that the provided evidence does not link FOXA2 to hair loss or therapeutic interventions.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key conclusion and supporting rationale from the absence of relevant mentions in the graph and abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains from claiming a link where the evidence is insufficient.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"It directly answers the question and lists purported treatments.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Contradicts the supplied evidence by inventing links between FOXA2 and hair-loss treatments such as minoxidil, finasteride, dutasteride, and bimatoprost.\"},\"completeness\":{\"score\":1,\"rationale\":\"Provides a treatment list, but the central conclusion is incorrect and unsupported by the evidence.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not abstain despite lack of evidence and presents unsupported claims as established.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that FOXA2 is not linked to hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The main conclusion matches the supplied evidence, though it adds broader biological claims not supported by the provided packet.\"},\"completeness\":{\"score\":4,\"rationale\":\"Gives the correct bottom-line answer, but does not specifically ground the reasoning in the supplied graph and abstracts.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately qualifies the absence of evidence, though it extrapolates somewhat beyond the provided context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_058e149e5a612b19006a4d5248f3c4819ca4e32943efde1781",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2724,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 885,
+            "output_tokens_details": {
+              "reasoning_tokens": 333
+            },
+            "total_tokens": 3609
+          },
+          "user": null
+        },
+        "request_id": "50140c42-8626-485c-86b7-55e5cd2a711b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that FOXA2 is not linked to hair-loss treatments.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The main conclusion matches the supplied evidence, though it adds broader biological claims not supported by the provided packet.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Gives the correct bottom-line answer, but does not specifically ground the reasoning in the supplied graph and abstracts.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the absence of evidence, though it extrapolates somewhat beyond the provided context.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q093",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q093.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.176014+00:00"
+}

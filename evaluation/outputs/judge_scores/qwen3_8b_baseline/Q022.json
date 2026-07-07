@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q022",
+      "randomization_seed": "20260706:Q022:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q022",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q022",
+      "error": null,
+      "id": "batch_req_6a4d52b938788190a9279cff21fa4016",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452192,
+          "created_at": 1783452182,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c33c6f8db06833f006a4d52165f4481a28c4c7ab37e8c04b3",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q022"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c33c6f8db06833f006a4d5216d24081a2836dbb802928fe56",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses whether clinical significance is established, but does not discuss the supplied LINC01432/Open Targets associations.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The conclusion of no established clinical significance is consistent with the evidence, but calling it a common benign/non-pathogenic variant in clinical databases is unsupported by the provided context.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the reported implicated gene and weak disease association signals listed in the evidence.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Overstates benign/non-pathogenic status rather than limiting the conclusion to insufficient or low-confidence evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and distinguishes weak database associations from direct clinical significance.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reports LINC01432 and the listed Open Targets disease associations, while noting the abstracts do not mention rs1160312.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key points, though it does not mention that the association scores are low.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately states that no specific clinical significance is established from the available information.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the clinical significance question, but includes inaccurate mapping information.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Incorrectly states that rs1160312 is located in TTC19, whereas the provided evidence implicates LINC01432; other claims are mostly unsupported generalizations.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not mention the supplied LINC01432 implication or listed weak Open Targets disease associations.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Uses some caution about limited evidence, but presents an unsupported gene assignment and broad database/GWAS claims.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question using the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reports LINC01432, the listed low-score Open Targets associations, and the absence of direct literature evidence for rs1160312.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key disease associations, their low scores, and a clear interpretation of clinical significance.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the associations as weak and states that no established clinical significance is supported.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c33c6f8db06833f006a4d521b813c81a2b68dba925b4f8020",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2676,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 925,
+            "output_tokens_details": {
+              "reasoning_tokens": 342
+            },
+            "total_tokens": 3601
+          },
+          "user": null
+        },
+        "request_id": "e76003e0-8289-4f46-ac6d-bdf5df4dcd2a",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the clinical significance question, but includes inaccurate mapping information.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly states that rs1160312 is located in TTC19, whereas the provided evidence implicates LINC01432; other claims are mostly unsupported generalizations.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Does not mention the supplied LINC01432 implication or listed weak Open Targets disease associations.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Uses some caution about limited evidence, but presents an unsupported gene assignment and broad database/GWAS claims.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q022",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q022.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.125615+00:00"
+}

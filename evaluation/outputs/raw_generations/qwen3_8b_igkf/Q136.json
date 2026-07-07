@@ -1,0 +1,198 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.9259,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integrated evidence does not support a direct connection between EDA2R and Wnt signaling. While EDA2R is associated with the TNF receptor binding pathway, and Wnt signaling is mentioned as a pathway involved in tooth agenesis (TA), there is no explicit or implied link between EDA2R and Wnt signaling in the provided data.\n\nRegarding androgen metabolism, there is no direct evidence linking EDA2R to androgen metabolism in the provided data. The literature context highlights EDA2R's involvement in ectodermal dysplasia and its association with TNF receptor signaling, but no specific connection to androgen metabolism is established. Therefore, the connection between EDA2R and androgen metabolism is not supported by the integrated evidence.",
+  "question_id": "Q136",
+  "question_text": "Does the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 155,
+    "prompt_token_count": 1536,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not support a direct connection between EDA2R and Wnt signaling. While EDA2R is associated with the TNF receptor binding pathway, and Wnt signaling is mentioned as a pathway involved in tooth agenesis (TA), there is no explicit or implied link between EDA2R and Wnt signaling in the provided data.\n\nRegarding androgen metabolism, there is no direct evidence linking EDA2R to androgen metabolism in the provided data. The literature context highlights EDA2R's involvement in ectodermal dysplasia and its association with TNF receptor signaling, but no specific connection to androgen metabolism is established. Therefore, the connection between EDA2R and androgen metabolism is not supported by the integrated evidence."
+      }
+    ],
+    "created": 1783432977,
+    "id": "cmpl-2b993a7d-f6d1-43a3-9bed-675bbb1df93b",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 1515,
+      "total_tokens": 1670
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      26.588411331176758,
+      26.69640350341797,
+      27.229812622070312,
+      27.248973846435547,
+      27.562318801879883,
+      27.58485221862793,
+      27.619068145751953,
+      27.865123748779297,
+      27.956348419189453,
+      28.295513153076172,
+      28.380640029907227,
+      28.431087493896484,
+      28.575862884521484,
+      28.701709747314453,
+      28.806285858154297
+    ],
+    "candidate_pmids": [
+      "41672071",
+      "42089627",
+      "41296172",
+      "41203454",
+      "41774401",
+      "40553753",
+      "42267391",
+      "41408253",
+      "40766718",
+      "41163957",
+      "42232673",
+      "41640146",
+      "41226524",
+      "39940907",
+      "41093938"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent. Entity: EDA2R (Type: Gene)\n  - Gene Pathways: TNFs bind their physiological receptors\n  - Associated Phenotypes: Aplasia/Hypoplasia of fingers, Aplasia/hypoplasia involving bones of the upper limbs, Abnormality of the head\n  - GO Functions/Processes: signaling receptor activity, cytokine-mediated signaling pathway, cell differentiation, positive regulation of canonical NF-kappaB signal transduction, tumor necrosis factor receptor activity\n  - Interacts With (PPI): CIT (experimental: 0, database: 0), TMPRSS5 (experimental: 0, database: 0), TNFSF4 (experimental: 0, database: 0), CYSLTR1 (experimental: 0, database: 0), SESN2 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: X-linked hypohidrotic ectodermal dysplasia (score: 0.398), hypohidrotic ectodermal dysplasia (score: 0.373), hypogonadism (score: 0.341), hypertensive disorder (score: 0.337), response to xenobiotic stimulus (score: 0.289)",
+    "final_context": "Graph Context:\nEntity: EDA2R (Type: Gene)\n  - Gene Pathways: TNFs bind their physiological receptors\n  - Associated Phenotypes: Aplasia/Hypoplasia of fingers, Aplasia/hypoplasia involving bones of the upper limbs, Abnormality of the head\n  - GO Functions/Processes: signaling receptor activity, cytokine-mediated signaling pathway, cell differentiation, positive regulation of canonical NF-kappaB signal transduction, tumor necrosis factor receptor activity\n  - Interacts With (PPI): CIT (experimental: 0, database: 0), TMPRSS5 (experimental: 0, database: 0), TNFSF4 (experimental: 0, database: 0), CYSLTR1 (experimental: 0, database: 0), SESN2 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: X-linked hypohidrotic ectodermal dysplasia (score: 0.398), hypohidrotic ectodermal dysplasia (score: 0.373), hypogonadism (score: 0.341), hypertensive disorder (score: 0.337), response to xenobiotic stimulus (score: 0.289)\n\nVector Context:\n--- Abstract 1 (PMID: 41093938, relevance: -3.4224) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n--- Abstract 2 (PMID: 41226524, relevance: -5.5380) ---\nTooth agenesis (TA), the congenital absence of one or more teeth, is the most common manifestation of defective dental morphogenesis in humans. TA can occur as an isolated (non-syndromic) condition or as part of a broader syndromic presentation. In this review, we analyzed a total of 73 manuscripts to provide a comprehensive update on the genetic landscape of TA. To investigate the genes, variants, and associated phenotypes, we reviewed data from curated databases including Human Phenotype Ontology (HPO), OMIM, ClinVar and MalaCards. Based on the current evidence, the genes most frequently implicated in TA are MSX1, EDA, and PAX9. However, chromosomal abnormalities, such as those seen in Down syndrome and Williams syndrome, along with structural variations (e.g., deletions and duplications), also contribute significantly to TA etiology. The most involved pathways include TNF receptor binding, encompassing genes such as EDA, EDA2R, EDAR, and EDARADD, and the mTOR signaling pathway, which includes AXIN2, FGFR1, LRP6, WNT10A, and WNT10B. The aim of this review is to provide an critical synthesis of the genetic mechanisms underlying TA, highlighting the contribution of major signaling pathways, regulatory networks, and emerging molecular insights that may inform diagnostic and therapeutic advances.\n\n--- Abstract 3 (PMID: 42267391, relevance: -5.7966) ---\nEctodermal dysplasia (ED) is characterized by sparse hair, reduced sweat gland secretion, and congenital absence of teeth. While genes such as EDA and EDAR have been identified as causative factors of ED, the underlying mechanisms remain unknown, and corresponding treatments are not available. Here, we report a pedigree with hypohidrotic ectodermal dysplasia (HED), the most common subtype of ED, caused by a mutation in the KDF1 gene. To investigate disease mechanisms, we generated induced pluripotent stem cells (iPSCs) of family members. Upon differentiation into embryoid bodies (EBs), the KDF1 mutation severely impaired EB size and morphology. The single-cell RNA sequencing further demonstrated that iPSCs from both HED patients showed a specific shortage of several cell populations, whose biological characteristics were closely related to synapse structure and signaling. Initially, iPSCs were differentiated into neurons to analyze their functional changes. Concurrently, patient-derived iPSCs were differentiated into epidermal progenitor cells, and the effect of the N-methyl-D-aspartate receptor antagonist MK-801 during this process was investigated. We found that the overexpression of excitatory neurotransmitters might disrupt ectodermal development. These deficits were partially rescued after CRISPR-mediated correction of the KDF1 mutation. Our work suggests that impaired synaptic structure and signaling impede ectodermal organogenesis in HED.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: EDA2R (Type: Gene)\n  - Gene Pathways: TNFs bind their physiological receptors\n  - Associated Phenotypes: Aplasia/Hypoplasia of fingers, Aplasia/hypoplasia involving bones of the upper limbs, Abnormality of the head\n  - GO Functions/Processes: signaling receptor activity, cytokine-mediated signaling pathway, cell differentiation, positive regulation of canonical NF-kappaB signal transduction, tumor necrosis factor receptor activity\n  - Interacts With (PPI): CIT (experimental: 0, database: 0), TMPRSS5 (experimental: 0, database: 0), TNFSF4 (experimental: 0, database: 0), CYSLTR1 (experimental: 0, database: 0), SESN2 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: X-linked hypohidrotic ectodermal dysplasia (score: 0.398), hypohidrotic ectodermal dysplasia (score: 0.373), hypogonadism (score: 0.341), hypertensive disorder (score: 0.337), response to xenobiotic stimulus (score: 0.289)",
+    "graph_context_length": 922,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3404,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "connection"
+      },
+      {
+        "label": "ENTITY",
+        "text": "eda2r"
+      },
+      {
+        "label": "ENTITY",
+        "text": "wnt signaling"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgen metabolism"
+      },
+      {
+        "label": "ENTITY",
+        "text": "links"
+      },
+      {
+        "label": "ENTITY",
+        "text": "state"
+      },
+      {
+        "label": "ENTITY",
+        "text": "connection"
+      },
+      {
+        "label": "ENTITY",
+        "text": "absent"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q136.json",
+    "retrieval_total_seconds": 0.4269,
+    "score_max": -3.4223921298980713,
+    "score_mean": -4.919008493423462,
+    "scores": [
+      -3.4223921298980713,
+      -5.53799295425415,
+      -5.796640396118164
+    ],
+    "selected_abstracts": [
+      "Endometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.",
+      "Tooth agenesis (TA), the congenital absence of one or more teeth, is the most common manifestation of defective dental morphogenesis in humans. TA can occur as an isolated (non-syndromic) condition or as part of a broader syndromic presentation. In this review, we analyzed a total of 73 manuscripts to provide a comprehensive update on the genetic landscape of TA. To investigate the genes, variants, and associated phenotypes, we reviewed data from curated databases including Human Phenotype Ontology (HPO), OMIM, ClinVar and MalaCards. Based on the current evidence, the genes most frequently implicated in TA are MSX1, EDA, and PAX9. However, chromosomal abnormalities, such as those seen in Down syndrome and Williams syndrome, along with structural variations (e.g., deletions and duplications), also contribute significantly to TA etiology. The most involved pathways include TNF receptor binding, encompassing genes such as EDA, EDA2R, EDAR, and EDARADD, and the mTOR signaling pathway, which includes AXIN2, FGFR1, LRP6, WNT10A, and WNT10B. The aim of this review is to provide an critical synthesis of the genetic mechanisms underlying TA, highlighting the contribution of major signaling pathways, regulatory networks, and emerging molecular insights that may inform diagnostic and therapeutic advances.",
+      "Ectodermal dysplasia (ED) is characterized by sparse hair, reduced sweat gland secretion, and congenital absence of teeth. While genes such as EDA and EDAR have been identified as causative factors of ED, the underlying mechanisms remain unknown, and corresponding treatments are not available. Here, we report a pedigree with hypohidrotic ectodermal dysplasia (HED), the most common subtype of ED, caused by a mutation in the KDF1 gene. To investigate disease mechanisms, we generated induced pluripotent stem cells (iPSCs) of family members. Upon differentiation into embryoid bodies (EBs), the KDF1 mutation severely impaired EB size and morphology. The single-cell RNA sequencing further demonstrated that iPSCs from both HED patients showed a specific shortage of several cell populations, whose biological characteristics were closely related to synapse structure and signaling. Initially, iPSCs were differentiated into neurons to analyze their functional changes. Concurrently, patient-derived iPSCs were differentiated into epidermal progenitor cells, and the effect of the N-methyl-D-aspartate receptor antagonist MK-801 during this process was investigated. We found that the overexpression of excitatory neurotransmitters might disrupt ectodermal development. These deficits were partially rescued after CRISPR-mediated correction of the KDF1 mutation. Our work suggests that impaired synaptic structure and signaling impede ectodermal organogenesis in HED."
+    ],
+    "selected_pmids": [
+      "41093938",
+      "41226524",
+      "42267391"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0753
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:02:57.177396+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: EDA2R (Type: Gene)\n  - Gene Pathways: TNFs bind their physiological receptors\n  - Associated Phenotypes: Aplasia/Hypoplasia of fingers, Aplasia/hypoplasia involving bones of the upper limbs, Abnormality of the head\n  - GO Functions/Processes: signaling receptor activity, cytokine-mediated signaling pathway, cell differentiation, positive regulation of canonical NF-kappaB signal transduction, tumor necrosis factor receptor activity\n  - Interacts With (PPI): CIT (experimental: 0, database: 0), TMPRSS5 (experimental: 0, database: 0), TNFSF4 (experimental: 0, database: 0), CYSLTR1 (experimental: 0, database: 0), SESN2 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: X-linked hypohidrotic ectodermal dysplasia (score: 0.398), hypohidrotic ectodermal dysplasia (score: 0.373), hypogonadism (score: 0.341), hypertensive disorder (score: 0.337), response to xenobiotic stimulus (score: 0.289)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 41093938, relevance: -3.4224) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n--- Abstract 2 (PMID: 41226524, relevance: -5.5380) ---\nTooth agenesis (TA), the congenital absence of one or more teeth, is the most common manifestation of defective dental morphogenesis in humans. TA can occur as an isolated (non-syndromic) condition or as part of a broader syndromic presentation. In this review, we analyzed a total of 73 manuscripts to provide a comprehensive update on the genetic landscape of TA. To investigate the genes, variants, and associated phenotypes, we reviewed data from curated databases including Human Phenotype Ontology (HPO), OMIM, ClinVar and MalaCards. Based on the current evidence, the genes most frequently implicated in TA are MSX1, EDA, and PAX9. However, chromosomal abnormalities, such as those seen in Down syndrome and Williams syndrome, along with structural variations (e.g., deletions and duplications), also contribute significantly to TA etiology. The most involved pathways include TNF receptor binding, encompassing genes such as EDA, EDA2R, EDAR, and EDARADD, and the mTOR signaling pathway, which includes AXIN2, FGFR1, LRP6, WNT10A, and WNT10B. The aim of this review is to provide an critical synthesis of the genetic mechanisms underlying TA, highlighting the contribution of major signaling pathways, regulatory networks, and emerging molecular insights that may inform diagnostic and therapeutic advances.\n\n--- Abstract 3 (PMID: 42267391, relevance: -5.7966) ---\nEctodermal dysplasia (ED) is characterized by sparse hair, reduced sweat gland secretion, and congenital absence of teeth. While genes such as EDA and EDAR have been identified as causative factors of ED, the underlying mechanisms remain unknown, and corresponding treatments are not available. Here, we report a pedigree with hypohidrotic ectodermal dysplasia (HED), the most common subtype of ED, caused by a mutation in the KDF1 gene. To investigate disease mechanisms, we generated induced pluripotent stem cells (iPSCs) of family members. Upon differentiation into embryoid bodies (EBs), the KDF1 mutation severely impaired EB size and morphology. The single-cell RNA sequencing further demonstrated that iPSCs from both HED patients showed a specific shortage of several cell populations, whose biological characteristics were closely related to synapse structure and signaling. Initially, iPSCs were differentiated into neurons to analyze their functional changes. Concurrently, patient-derived iPSCs were differentiated into epidermal progenitor cells, and the effect of the N-methyl-D-aspartate receptor antagonist MK-801 during this process was investigated. We found that the overexpression of excitatory neurotransmitters might disrupt ectodermal development. These deficits were partially rescued after CRISPR-mediated correction of the KDF1 mutation. Our work suggests that impaired synaptic structure and signaling impede ectodermal organogenesis in HED.\n\n\n\n**Question:**\nDoes the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent."
+}

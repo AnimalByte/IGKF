@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q158",
+      "randomization_seed": "20260706:Q158:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q158",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q158",
+      "error": null,
+      "id": "batch_req_6a4d540a72ac819097aec407387255b7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452578,
+          "created_at": 1783452570,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_050e7669c4aec170006a4d5399f73081908f76780ed7c42600",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q158"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_050e7669c4aec170006a4d539ad69c8190bb175e5368dc8d7b",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the context lacks cell-type-specific hair-follicle expression evidence and no highest-expressing cell types can be identified.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the provided graph and abstracts, which do not include hair-follicle cell-type expression data for AR or SRD5A2.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes both required elements: absence of evidence and the resulting limitation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from identifying unsupported cell types.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and states that highest-expressing hair-follicle cell types cannot be identified from the context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the reference context, which lacks cell-type-specific expression evidence for these genes in hair follicles.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key limitation, though it is slightly less specific about what evidence is present or absent.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids unsupported claims and qualifies the insufficiency of the evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question, including what is and is not available in the context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied graph and abstracts do not provide hair-follicle cell-type-specific expression data for AR or SRD5A2.\"},\"completeness\":{\"score\":5,\"rationale\":\"Thoroughly covers the absence of expression data, the available context, and the limitation regarding highest-expressing cell types.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly abstains from unsupported identification of cell types and frames the limitation appropriately.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the provided context contains cell-type-specific expression evidence and states that it does not.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate against the supplied evidence; the context discusses functions, disease associations, and androgen biology but not hair-follicle cell expression.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the missing cell-type-specific evidence and explains why highest-expressing hair-follicle cell types cannot be identified.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately refrains from making unsupported expression claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_050e7669c4aec170006a4d539d38d48190b81a7704b56bea55",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2753,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 861,
+            "output_tokens_details": {
+              "reasoning_tokens": 264
+            },
+            "total_tokens": 3614
+          },
+          "user": null
+        },
+        "request_id": "6575a944-dce6-49cf-9d34-63659ab483dc",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question and states that highest-expressing hair-follicle cell types cannot be identified from the context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Consistent with the reference context, which lacks cell-type-specific expression evidence for these genes in hair follicles.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key limitation, though it is slightly less specific about what evidence is present or absent.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly avoids unsupported claims and qualifies the insufficiency of the evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q158",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q158.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.243103+00:00"
+}

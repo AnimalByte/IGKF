@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.4148,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "To date, there is limited and largely inconclusive evidence directly linking the Leucine-Rich Repeat Domain 4 (LGR4) receptor to androgenetic alopecia (AGA), also known as male pattern baldness. \n\nLGR4 is a G-protein coupled receptor involved in various physiological processes, including embryonic development, tissue regeneration, and Wnt signaling. While some studies have explored the role of LGR4 in hair follicle biology and regeneration, no robust or consistent evidence has been published that directly associates LGR4 with the pathogenesis of androgenetic alopecia.\n\nResearch on AGA has primarily focused on androgen receptor (AR) signaling, dihydrotestosterone (DHT), and genetic factors such as the androgen receptor gene (AR) and the PAX6 gene. LGR4 has not been identified as a key player in these pathways or in the genetic basis of AGA.\n\nIn summary, the current scientific literature does not support a significant or established link between LGR4 and androgenetic alopecia. Further research would be needed to explore any potential indirect or modulatory roles of LGR4 in hair follicle biology in the context of AGA.",
+  "question_id": "Q081",
+  "question_text": "Summarize the evidence linking LGR4 to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 244,
+    "prompt_token_count": 75,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "To date, there is limited and largely inconclusive evidence directly linking the Leucine-Rich Repeat Domain 4 (LGR4) receptor to androgenetic alopecia (AGA), also known as male pattern baldness. \n\nLGR4 is a G-protein coupled receptor involved in various physiological processes, including embryonic development, tissue regeneration, and Wnt signaling. While some studies have explored the role of LGR4 in hair follicle biology and regeneration, no robust or consistent evidence has been published that directly associates LGR4 with the pathogenesis of androgenetic alopecia.\n\nResearch on AGA has primarily focused on androgen receptor (AR) signaling, dihydrotestosterone (DHT), and genetic factors such as the androgen receptor gene (AR) and the PAX6 gene. LGR4 has not been identified as a key player in these pathways or in the genetic basis of AGA.\n\nIn summary, the current scientific literature does not support a significant or established link between LGR4 and androgenetic alopecia. Further research would be needed to explore any potential indirect or modulatory roles of LGR4 in hair follicle biology in the context of AGA."
+      }
+    ],
+    "created": 1783430394,
+    "id": "cmpl-fef273ce-1787-42fc-add3-0cc2b079e664",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 244,
+      "prompt_tokens": 54,
+      "total_tokens": 298
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:19:54.310706+00:00",
+  "user_prompt": "Summarize the evidence linking LGR4 to androgenetic alopecia."
+}

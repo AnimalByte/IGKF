@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q106",
+      "randomization_seed": "20260706:Q106:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q106",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q106",
+      "error": null,
+      "id": "batch_req_6a4d54076bd88190a966b48333b0e638",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452668,
+          "created_at": 1783452649,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e46dd72bef85433006a4d53e9e2008190bbb6e57d8086f5b3",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q106"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e46dd72bef85433006a4d53eac5688190b1639545d317f4e9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly discusses androgen metabolism, DHT, androgen receptors, and hair-cycle effects.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Many mechanistic claims are not supported by the supplied evidence, and some details are questionable, such as oversimplified scalp androgen dependence and 5-alpha-reductase isoform localization.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers many general pathway components, but omits the key evidence limitation and is truncated.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents unsupported mechanistic conclusions as established despite the evidence packet lacking relevant androgen-metabolism data.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question by explaining what can and cannot be concluded from the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects that the provided evidence only supports hormone-related terminal hair growth at puberty and does not describe androgen metabolism mechanisms.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the relevant evidence limitations and summarizes the supported conclusion; appropriately does not add unsupported pathway detail.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly abstains from unsupported mechanistic claims and qualifies the conclusion appropriately.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly addresses androgen metabolism and hair follicles, while acknowledging limited direct evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Correctly notes lack of direct evidence, but makes some unsupported inferences and overextends the puberty hormone finding to scalp hair.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Partially complete: it includes the main limitation and a general biological narrative, but lacks strong evidence-backed mechanistic detail.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately qualifies that androgen metabolism is not directly addressed, though it still includes some speculative connections.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly describes androgen metabolism and its proposed effects on follicle growth and cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The general biology is largely plausible, but the supplied evidence does not support these specific mechanisms or claims about DHT, dermal papilla signaling, or cycling.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Mechanistically broad and coherent, but not complete relative to the evidence-based task because it does not state that the provided evidence is insufficient.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Uses mild hedging but largely presents unsupported mechanistic conclusions as evidence-based.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e46dd72bef85433006a4d53f628f881909161b6866bf90e74",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3939,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1794,
+            "output_tokens_details": {
+              "reasoning_tokens": 1010
+            },
+            "total_tokens": 5733
+          },
+          "user": null
+        },
+        "request_id": "2f6cc1a5-3eee-4a22-8677-ae6ff1afbfe2",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly describes androgen metabolism and its proposed effects on follicle growth and cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The general biology is largely plausible, but the supplied evidence does not support these specific mechanisms or claims about DHT, dermal papilla signaling, or cycling.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Mechanistically broad and coherent, but not complete relative to the evidence-based task because it does not state that the provided evidence is insufficient.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Uses mild hedging but largely presents unsupported mechanistic conclusions as evidence-based.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q106",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q106.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.206727+00:00"
+}

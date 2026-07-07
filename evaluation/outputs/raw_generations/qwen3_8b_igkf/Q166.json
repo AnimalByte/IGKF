@@ -1,0 +1,182 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.9376,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The provided evidence does not directly support a relationship between Wnt signaling, WNT10A, and LHX2. While WNT10A is a key player in Wnt signaling and is implicated in tooth development, craniofacial development, and various developmental disorders, there is no mention of LHX2 in the graph or any of the abstracts provided. LHX2 is a transcription factor known to be involved in craniofacial development and tooth formation, but its interaction with WNT10A or Wnt signaling is not explicitly stated in the given data.\n\nThus, based on the integrated evidence from the graph and abstracts, there is no direct or supported relationship described between Wnt signaling, WNT10A, and LHX2.",
+  "question_id": "Q166",
+  "question_text": "Describe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 157,
+    "prompt_token_count": 1513,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided evidence does not directly support a relationship between Wnt signaling, WNT10A, and LHX2. While WNT10A is a key player in Wnt signaling and is implicated in tooth development, craniofacial development, and various developmental disorders, there is no mention of LHX2 in the graph or any of the abstracts provided. LHX2 is a transcription factor known to be involved in craniofacial development and tooth formation, but its interaction with WNT10A or Wnt signaling is not explicitly stated in the given data.\n\nThus, based on the integrated evidence from the graph and abstracts, there is no direct or supported relationship described between Wnt signaling, WNT10A, and LHX2."
+      }
+    ],
+    "created": 1783433333,
+    "id": "cmpl-8465b6b7-ec1e-40d9-a096-9484142769ec",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 157,
+      "prompt_tokens": 1492,
+      "total_tokens": 1649
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      18.544105529785156,
+      25.134479522705078,
+      25.94071388244629,
+      26.105968475341797,
+      26.818206787109375,
+      26.919403076171875,
+      27.272628784179688,
+      27.356948852539062,
+      27.40020751953125,
+      27.428791046142578,
+      27.71288299560547,
+      27.98956871032715,
+      28.044368743896484,
+      28.059234619140625,
+      28.244258880615234
+    ],
+    "candidate_pmids": [
+      "42089627",
+      "42196506",
+      "41774401",
+      "41056281",
+      "35145545",
+      "41689580",
+      "41588444",
+      "40428404",
+      "41163957",
+      "41645416",
+      "38173341",
+      "34275739",
+      "41226524",
+      "42196143",
+      "42113256"
+    ],
+    "expanded_retrieval_query": "Describe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence. Entity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)",
+    "final_context": "Graph Context:\nEntity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)\n\nVector Context:\n--- Abstract 1 (PMID: 42196506, relevance: 0.9395) ---\nTooth agenesis is a common developmental anomaly of the human dentition, ranging from hypodontia to oligodontia, yet its marked phenotypic variability remains insufficiently explained. This review synthesizes developmental and molecular evidence on epithelial-mesenchymal interactions during early odontogenesis and proposes a signaling-threshold framework for human tooth agenesis. We focus on the coordinated roles of Wnt/beta-catenin, bone morphogenetic protein (BMP), fibroblast growth factor (FGF), and Sonic hedgehog (SHH) pathways and on recurrent disease-associated genes, including MSX1, PAX9, WNT10A, and AXIN2, as quantitative modulators of pathway activity rather than binary determinants of tooth identity. Within this framework, successful tooth initiation may depend on whether integrated signaling output exceeds a field-specific activation threshold within spatially graded developmental regions of the dental arch. Differences in signaling amplitude, duration, and transcriptional responsiveness may therefore account for distal tooth susceptibility, variable penetrance, arch asymmetry, and the broad clinical spectrum from mild hypodontia to severe oligodontia. By integrating molecular genetics with developmental field theory, this model provides a testable systems-level explanation for selective tooth absence and highlights priority directions for future functional and genotype-phenotype studies.\n\n--- Abstract 2 (PMID: 41588444, relevance: 0.1367) ---\nBACKGROUND: In tooth development, the Wnt/beta-catenin pathway has been shown to play a crucial role in tooth germ formation and tooth differentiation. Regeneration can be considered a replay of development. Understanding and reproducing the involvement of Wnt10a-which is reported to be the causative gene for congenital multiple tooth absence and participates in tooth development with spatiotemporal specificity-in pulp regeneration is essential for realizing dental regenerative medicine. Therefore, this study was initiated based on the concept that evaluating the dynamics of Wnt10a during angiogenesis, which is thought to occur early in dental pulp regeneration, could contribute to a more detailed elucidation of the dental pulp regeneration mechanism. METHODS: Deciduous dental pulp stem cells (SHED) were isolated from human deciduous teeth, and conditioned medium (CM) was collected. In addition, after the induction of vascular differentiation of SHED, the temporal gene expression of Wnt10a, VEGF-A, Tie-2, and beta-catenin was analyzed by q-PCR and protein expression by Western blotting and ELISA from 0 to 48 h and 3, 7, 14, and 21 days after the induction. RESULTS: Canonical Wnt signaling was activated during angiogenesis in regenerated pulp-like tissue induced by ectopic root grafting, and Wnt10a had spatio-temporal specificity. Tie-2 activation occurred during the process of induction of vascular differentiation in SHED. CONCLUSIONS: During angiogenesis in pulp regeneration, when SHED differentiate into blood vessels, Canonical Wnt signaling and VEGF-A are activated to form microvessels, and Tie-2 expression is enhanced to increase vessel circumference. Furthermore, Wnt10a was found to be activated in its early stages and decreased in its mature stages, with spatio-temporal specificity. Because its expression is very low, Wnt10a could be a biomarker to monitor the regenerative status of pulp regeneration.\n\n--- Abstract 3 (PMID: 42089627, relevance: -1.0575) ---\nWNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)",
+    "graph_context_length": 920,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3385,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "relationships"
+      },
+      {
+        "label": "ENTITY",
+        "text": "wnt signaling"
+      },
+      {
+        "label": "ENTITY",
+        "text": "wnt10a"
+      },
+      {
+        "label": "ENTITY",
+        "text": "lhx2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "integrated evidence"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q166.json",
+    "retrieval_total_seconds": 0.4273,
+    "score_max": 0.9394629001617432,
+    "score_mean": 0.006211777528127034,
+    "scores": [
+      0.9394629001617432,
+      0.13669759035110474,
+      -1.0575251579284668
+    ],
+    "selected_abstracts": [
+      "Tooth agenesis is a common developmental anomaly of the human dentition, ranging from hypodontia to oligodontia, yet its marked phenotypic variability remains insufficiently explained. This review synthesizes developmental and molecular evidence on epithelial-mesenchymal interactions during early odontogenesis and proposes a signaling-threshold framework for human tooth agenesis. We focus on the coordinated roles of Wnt/beta-catenin, bone morphogenetic protein (BMP), fibroblast growth factor (FGF), and Sonic hedgehog (SHH) pathways and on recurrent disease-associated genes, including MSX1, PAX9, WNT10A, and AXIN2, as quantitative modulators of pathway activity rather than binary determinants of tooth identity. Within this framework, successful tooth initiation may depend on whether integrated signaling output exceeds a field-specific activation threshold within spatially graded developmental regions of the dental arch. Differences in signaling amplitude, duration, and transcriptional responsiveness may therefore account for distal tooth susceptibility, variable penetrance, arch asymmetry, and the broad clinical spectrum from mild hypodontia to severe oligodontia. By integrating molecular genetics with developmental field theory, this model provides a testable systems-level explanation for selective tooth absence and highlights priority directions for future functional and genotype-phenotype studies.",
+      "BACKGROUND: In tooth development, the Wnt/beta-catenin pathway has been shown to play a crucial role in tooth germ formation and tooth differentiation. Regeneration can be considered a replay of development. Understanding and reproducing the involvement of Wnt10a-which is reported to be the causative gene for congenital multiple tooth absence and participates in tooth development with spatiotemporal specificity-in pulp regeneration is essential for realizing dental regenerative medicine. Therefore, this study was initiated based on the concept that evaluating the dynamics of Wnt10a during angiogenesis, which is thought to occur early in dental pulp regeneration, could contribute to a more detailed elucidation of the dental pulp regeneration mechanism. METHODS: Deciduous dental pulp stem cells (SHED) were isolated from human deciduous teeth, and conditioned medium (CM) was collected. In addition, after the induction of vascular differentiation of SHED, the temporal gene expression of Wnt10a, VEGF-A, Tie-2, and beta-catenin was analyzed by q-PCR and protein expression by Western blotting and ELISA from 0 to 48 h and 3, 7, 14, and 21 days after the induction. RESULTS: Canonical Wnt signaling was activated during angiogenesis in regenerated pulp-like tissue induced by ectopic root grafting, and Wnt10a had spatio-temporal specificity. Tie-2 activation occurred during the process of induction of vascular differentiation in SHED. CONCLUSIONS: During angiogenesis in pulp regeneration, when SHED differentiate into blood vessels, Canonical Wnt signaling and VEGF-A are activated to form microvessels, and Tie-2 expression is enhanced to increase vessel circumference. Furthermore, Wnt10a was found to be activated in its early stages and decreased in its mature stages, with spatio-temporal specificity. Because its expression is very low, Wnt10a could be a biomarker to monitor the regenerative status of pulp regeneration.",
+      "WNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care."
+    ],
+    "selected_pmids": [
+      "42196506",
+      "41588444",
+      "42089627"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0773
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:08:53.273007+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42196506, relevance: 0.9395) ---\nTooth agenesis is a common developmental anomaly of the human dentition, ranging from hypodontia to oligodontia, yet its marked phenotypic variability remains insufficiently explained. This review synthesizes developmental and molecular evidence on epithelial-mesenchymal interactions during early odontogenesis and proposes a signaling-threshold framework for human tooth agenesis. We focus on the coordinated roles of Wnt/beta-catenin, bone morphogenetic protein (BMP), fibroblast growth factor (FGF), and Sonic hedgehog (SHH) pathways and on recurrent disease-associated genes, including MSX1, PAX9, WNT10A, and AXIN2, as quantitative modulators of pathway activity rather than binary determinants of tooth identity. Within this framework, successful tooth initiation may depend on whether integrated signaling output exceeds a field-specific activation threshold within spatially graded developmental regions of the dental arch. Differences in signaling amplitude, duration, and transcriptional responsiveness may therefore account for distal tooth susceptibility, variable penetrance, arch asymmetry, and the broad clinical spectrum from mild hypodontia to severe oligodontia. By integrating molecular genetics with developmental field theory, this model provides a testable systems-level explanation for selective tooth absence and highlights priority directions for future functional and genotype-phenotype studies.\n\n--- Abstract 2 (PMID: 41588444, relevance: 0.1367) ---\nBACKGROUND: In tooth development, the Wnt/beta-catenin pathway has been shown to play a crucial role in tooth germ formation and tooth differentiation. Regeneration can be considered a replay of development. Understanding and reproducing the involvement of Wnt10a-which is reported to be the causative gene for congenital multiple tooth absence and participates in tooth development with spatiotemporal specificity-in pulp regeneration is essential for realizing dental regenerative medicine. Therefore, this study was initiated based on the concept that evaluating the dynamics of Wnt10a during angiogenesis, which is thought to occur early in dental pulp regeneration, could contribute to a more detailed elucidation of the dental pulp regeneration mechanism. METHODS: Deciduous dental pulp stem cells (SHED) were isolated from human deciduous teeth, and conditioned medium (CM) was collected. In addition, after the induction of vascular differentiation of SHED, the temporal gene expression of Wnt10a, VEGF-A, Tie-2, and beta-catenin was analyzed by q-PCR and protein expression by Western blotting and ELISA from 0 to 48 h and 3, 7, 14, and 21 days after the induction. RESULTS: Canonical Wnt signaling was activated during angiogenesis in regenerated pulp-like tissue induced by ectopic root grafting, and Wnt10a had spatio-temporal specificity. Tie-2 activation occurred during the process of induction of vascular differentiation in SHED. CONCLUSIONS: During angiogenesis in pulp regeneration, when SHED differentiate into blood vessels, Canonical Wnt signaling and VEGF-A are activated to form microvessels, and Tie-2 expression is enhanced to increase vessel circumference. Furthermore, Wnt10a was found to be activated in its early stages and decreased in its mature stages, with spatio-temporal specificity. Because its expression is very low, Wnt10a could be a biomarker to monitor the regenerative status of pulp regeneration.\n\n--- Abstract 3 (PMID: 42089627, relevance: -1.0575) ---\nWNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.\n\n\n\n**Question:**\nDescribe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence."
+}

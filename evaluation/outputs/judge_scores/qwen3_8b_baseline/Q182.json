@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q182",
+      "randomization_seed": "20260706:Q182:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q182",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q182",
+      "error": null,
+      "id": "batch_req_6a4d540c40388190be46df13123a66cd",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452631,
+          "created_at": 1783452616,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01a0450400a95e90006a4d53c8ab648197883f4be68a9a2947",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q182"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01a0450400a95e90006a4d53c9fee481978d3c2ef9cecddff9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the general question of what would be needed for PRS prediction but does not evaluate the provided dataset/evidence packet directly.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The stated requirements are broadly scientifically sound, but the answer incorrectly implies the dataset contents are unavailable despite the supplied evidence showing no direct PRS-finasteride response data.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers key needed elements such as exposure, response phenotype, genotype data, statistical association, and validation, though it omits dataset-specific reasoning.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately avoids unsupported conclusions, but over-abstains rather than concluding from the provided evidence that no such support is present.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that the dataset lacks evidence for PRS prediction of finasteride response and explains what would be required.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly accurate relative to the evidence; minor issues include overstating that renal cancer content involved PRS and suggesting MR is required rather than optional.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes relevant data needs and validation concepts, though could be more specific about independent external validation and clinical predictive metrics.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly avoids unsupported claims and correctly states that no direct evidence is present.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Partially addresses the question by listing needed data, but fails to assess the provided dataset and does not explicitly conclude that evidence is absent.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"General statements about required genotype, phenotype, and validation data are reasonable, but the answer incorrectly treats the dataset as unspecified.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Mentions core requirements but lacks dataset-specific evidence synthesis and gives limited detail on validation and clinical utility.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Does not invent evidence, but abstains too much given that the provided evidence is sufficient to say no direct support exists.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and specifically answers the question using the provided graph and abstract context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the evidence only supports finasteride target biology and does not contain PRS-based response prediction data.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers why the dataset is insufficient, what patient/genotype/phenotype data are needed, and appropriate internal, external, and clinical utility validation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately rejects unsupported inference while noting the limited biological relevance present in the dataset.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01a0450400a95e90006a4d53d0265081979516205e25a4bef1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3902,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1342,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 5244
+          },
+          "user": null
+        },
+        "request_id": "aee81bf7-d83d-40b1-a340-4b18ef7a3963",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partially addresses the question by listing needed data, but fails to assess the provided dataset and does not explicitly conclude that evidence is absent.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "General statements about required genotype, phenotype, and validation data are reasonable, but the answer incorrectly treats the dataset as unspecified.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Mentions core requirements but lacks dataset-specific evidence synthesis and gives limited detail on validation and clinical utility.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not invent evidence, but abstains too much given that the provided evidence is sufficient to say no direct support exists.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q182",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q182.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.260259+00:00"
+}

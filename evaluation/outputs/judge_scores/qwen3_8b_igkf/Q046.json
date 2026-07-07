@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q046",
+      "randomization_seed": "20260706:Q046:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q046",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q046",
+      "error": null,
+      "id": "batch_req_6a4d52ba22f481908a394bdc1f1e896d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452199,
+          "created_at": 1783452177,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0719368d8a8747ae006a4d52111074819e839405f3e9d16597",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q046"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0719368d8a8747ae006a4d521243bc819eb195c57b248a10a4",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the need for evidence about rs7313338 but does not use the supplied context or directly state that the provided study context lacks rs7313338 evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Does not make unsupported biomedical claims and accurately abstains due to insufficient study-specific information.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key point that the provided evidence packet contains no mention of rs7313338 and no direct association data.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids drawing conclusions without sufficient information.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether the supplied study context supports an association between rs7313338 and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that rs7313338 is not mentioned and that no direction, effect size, or significance can be confirmed from the supplied evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the relevant abstract findings while clearly noting the absence of SNP-specific evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the conclusion and does not overstate beyond the available evidence.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question by stating that the available context provides no evidence for the association.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the reference packet, which does not mention rs7313338 or provide association statistics for it.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the central conclusion, though it is brief and does not mention the broader GWAS context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the claim to the available data.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Mostly gives a generic explanation of what evidence would look like rather than answering what the supplied study provides.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The general statements about GWAS evidence are scientifically reasonable, but it omits the key factual conclusion that rs7313338 is not supported by the provided context.\"},\"completeness\":{\"score\":2,\"rationale\":\"Does not evaluate the supplied evidence packet and does not state whether rs7313338 was mentioned or associated.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately refrains from inventing an association and requests more information.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0719368d8a8747ae006a4d521ba61c819e8525ec4d22679999",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2206,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 986,
+            "output_tokens_details": {
+              "reasoning_tokens": 408
+            },
+            "total_tokens": 3192
+          },
+          "user": null
+        },
+        "request_id": "3b732fee-ca4e-43de-a3c3-0c581d7ef47b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "e77ab7862c90c705c321fae81d6727ec6b66385841f26beb6413e535f0e3015b",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q046",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q046.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q046::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q046::R1",
+      "error": null,
+      "id": "batch_req_6a4d19aef760819089dc49ab052d7384",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437425,
+          "created_at": 1783437421,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07e69b34b4b1fdf2006a4d186d165081978773c94d4d3c565d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q046"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07e69b34b4b1fdf2006a4d186d995881978ea2795858800cbf",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":\"5\",\"rationale\":\"The supplied context contains no mention of rs7313338 and no evidence linking it to androgenetic alopecia, so the answer is supported by the provided context.\"},\"context_utilization\":{\"score\":\"5\",\"rationale\":\"The answer appropriately uses the absence of relevant graph data and SNP-specific evidence in the vector context without adding unsupported claims.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07e69b34b4b1fdf2006a4d1870348c819781c71a71dbc67104",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1459,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 297,
+            "output_tokens_details": {
+              "reasoning_tokens": 204
+            },
+            "total_tokens": 1756
+          },
+          "user": null
+        },
+        "request_id": "de110b69-fc4b-479e-bb33-99fe55f791dc",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question by stating that the available context provides no evidence for the association.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Consistent with the reference packet, which does not mention rs7313338 or provide association statistics for it.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the central conclusion, though it is brief and does not mention the broader GWAS context.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The supplied context contains no mention of rs7313338 and no evidence linking it to androgenetic alopecia, so the answer is supported by the provided context.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the absence of relevant graph data and SNP-specific evidence in the vector context without adding unsupported claims.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately limits the claim to the available data.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q046",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q046.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.280036+00:00"
+}

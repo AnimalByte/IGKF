@@ -1,0 +1,186 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.8649,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Based on the provided data, the drug **Dutasteride** is associated with the following **genes** in the integrated drug\u2013gene evidence:\n\n- **SRD5A2**\n- **AR**\n\nThese genes are explicitly listed as the **targeted genes** of Dutasteride in the graph context. \n\nAdditionally, the **protein-protein interaction (PPI)** data shows that Dutasteride is linked to the following genes through interactions:\n\n- **DKK2**\n- **SH3GL2**\n- **FOXA1**\n- **PTCH1**\n- **DHRS7**\n\nHowever, it is important to note that the **experimental** and **database** interaction scores for these genes are all **0**, which suggests that the interactions are not experimentally validated or supported by existing databases. Therefore, while these genes are listed as interacting with Dutasteride, the evidence for these interactions is **not strong**.\n\nIn summary, the **genes directly linked to Dutasteride** are **SRD5A2** and **AR**, while the other genes (DKK2, SH3GL2, FOXA1, PTCH1, DHRS7) are **interacting partners** but with **no experimental or database support** for their association with Dutasteride.",
+  "question_id": "Q133",
+  "question_text": "Which genes from this study, if any, are linked to Dutasteride in the integrated drug\u2013gene evidence?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 263,
+    "prompt_token_count": 1842,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided data, the drug **Dutasteride** is associated with the following **genes** in the integrated drug\u2013gene evidence:\n\n- **SRD5A2**\n- **AR**\n\nThese genes are explicitly listed as the **targeted genes** of Dutasteride in the graph context. \n\nAdditionally, the **protein-protein interaction (PPI)** data shows that Dutasteride is linked to the following genes through interactions:\n\n- **DKK2**\n- **SH3GL2**\n- **FOXA1**\n- **PTCH1**\n- **DHRS7**\n\nHowever, it is important to note that the **experimental** and **database** interaction scores for these genes are all **0**, which suggests that the interactions are not experimentally validated or supported by existing databases. Therefore, while these genes are listed as interacting with Dutasteride, the evidence for these interactions is **not strong**.\n\nIn summary, the **genes directly linked to Dutasteride** are **SRD5A2** and **AR**, while the other genes (DKK2, SH3GL2, FOXA1, PTCH1, DHRS7) are **interacting partners** but with **no experimental or database support** for their association with Dutasteride."
+      }
+    ],
+    "created": 1783432954,
+    "id": "cmpl-8432442d-9c00-49f7-97a2-6cdfd831357f",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 263,
+      "prompt_tokens": 1821,
+      "total_tokens": 2084
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      22.47011947631836,
+      23.546642303466797,
+      24.991436004638672,
+      25.48133087158203,
+      26.13802719116211,
+      26.632368087768555,
+      27.03077507019043,
+      27.739070892333984,
+      28.46516990661621,
+      28.522628784179688,
+      29.031780242919922,
+      30.110448837280273,
+      30.164867401123047,
+      30.234086990356445,
+      30.608142852783203
+    ],
+    "candidate_pmids": [
+      "41722875",
+      "41640146",
+      "41501168",
+      "41796107",
+      "42315371",
+      "42260572",
+      "41673742",
+      "37143720",
+      "41493898",
+      "42361668",
+      "40305445",
+      "31886567",
+      "42151883",
+      "42373232",
+      "31849283"
+    ],
+    "expanded_retrieval_query": "Which genes from this study, if any, are linked to Dutasteride in the integrated drug\u2013gene evidence? Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "final_context": "Graph Context:\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\nVector Context:\n--- Abstract 1 (PMID: 42361668, relevance: -6.1613) ---\nOBJECTIVE: Acrylamide (AA), a widespread environmental and food-borne pollutant, has been classified as a probable human carcinogen. However, its specific role and underlying mechanisms in the progression of prostate cancer (PCa) remain poorly elucidated. This study aims to comprehensively investigate the effect of AA on PCa progression and its molecular mechanisms. METHODS: Differentially expressed AA-related genes (DEARGs) were identified by intersecting data from the Comparative Toxicogenomics Database (CTD) and The Cancer Genome Atlas (TCGA) database. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) functional enrichment analyses were performed to reveal biological functions of DEARGs. A prognostic signature was constructed using Lasso regression analysis. The expression and cellular localization of the key genes were analyzed using single-cell RNA sequencing (scRNA-seq) data. Additionally, the effects of glycidamide (GA) on PCa cells malignant phenotypes and tumor growth in vivo were experimentally validated. RESULTS: We identified a total of 165 DEARGs significantly associated with PCa. Functional analysis revealed they mainly enriched in PI3K-Akt and cAMP signaling pathway. The prognostic model constructed from the six DEARGs (CYP11A1, TUBB3, ALB, ESPL1, FOXN4, ISYNA1) demonstrated satisfactory predictive accuracy for biochemical recurrence-free survival (BCRFS) in PCa patients. scRNA-seq analysis delineated the specific expression of six target genes within the tumor microenvironment. It was found that expression of CYP11A1 was downregulated, while expressions of TUBB3, ALB, ESPL1, FOXN4 and ISYNA1 were upregulated after treatment with GA. In vitro and in vivo experiments confirmed that GA significantly enhanced proliferation, migration, invasion of PCa cells and tumor growth. RNA\u2011sequencing and functional rescue assays further revealed that the MAPK pathway may be a key mechanism by which GA promoted proliferation, invasion, and metastasis of PCa cells. CONCLUSION: This study successfully identified and validated an AA-related prognostic model to effectively predict BCRFS of PCa. The oncogenic effects of GA are primarily mediated by the activation of specific MAPK signaling pathways, elucidating a key mechanistic basis for its toxicity in PCa.\n\n--- Abstract 2 (PMID: 37143720, relevance: -6.2603) ---\nBACKGROUND: Prostate cancer (PCa) is the second most common type of cancer and the fifth leading cause of cancer-related death in men. Androgen deprivation therapy (ADT) has become the first-line therapy for inhibiting PCa progression; however, nearly all patients receiving ADT eventually progress to castrate-resistant prostate cancer. Therefore, this study aimed to identify hub genes related to bicalutamide resistance in PCa and provide new insights into endocrine therapy resistance. METHODS: The data were obtained from public databases. Weighted correlation network analysis was used to identify the gene modules related to bicalutamide resistance, and the relationship between the samples and disease-free survival was analyzed. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses were performed, and hub genes were identified. The LASSO algorithm was used to develop a bicalutamide resistance prognostic model in patients with PCa, which was then verified. Finally, we analyzed the tumor mutational heterogeneity and immune microenvironment in both groups. RESULTS: Two drug resistance gene modules were identified. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses revealed that both modules are involved in RNA splicing. The protein-protein interaction network identified 10 hub genes in the brown module LUC7L3, SNRNP70, PRPF3, LUC7L, CLASRP, CLK1, CLK2, U2AF1L4, NXF1, and THOC1) and 13 in the yellow module (PNN, PPWD1, SRRM2, DHX35, DMTF1, SALL4, MTA1, HDAC7, PHC1, ACIN1, HNRNPH1, DDX17, and HDAC6). The prognostic model composed of RNF207, REC8, DFNB59, HOXA2, EPOR, PILRB, LSMEM1, TCIRG1, ABTB1, ZNF276, ZNF540, and DPY19L2 could effectively predict patient prognosis. Genomic analysis revealed that the high- and low-risk groups had different mutation maps. Immune infiltration analysis showed a statistically significant difference in immune infiltration between the high- and low-risk groups, and that the high-risk group may benefit from immunotherapy. CONCLUSION: In this study, bicalutamide resistance genes and hub genes were identified in PCa, a risk model for predicting the prognosis of patients with PCa was constructed, and the tumor mutation heterogeneity and immune infiltration in high- and low-risk groups were analyzed. These findings offer new insights into ADT resistance targets and prognostic prediction in patients with PCa.\n\n--- Abstract 3 (PMID: 31886567, relevance: -6.7825) ---\nIncreasing evidence has shown that Rad50, a protein involved in the DNA damage repair process, significantly correlated with tumor prognosis. This study focused on Rad50 expression in tumor samples and its prognostic value for patients with prostate cancer (PCa). In this study, significantly elevated Rad50 expression in PCa tissues compared to normal tissues (P < .01). Five independent Oncomine databases validated significant differential expression of Rad50 (P < .001). Hence, 80 patients with PCa from Fudan University Shanghai Cancer Center (FUSCC) and 351 patients with PCa with available protein expression data from The Cancer Genome Atlas (TCGA) were included to investigate the survival benefit. Univariate and multivariate Cox regression analyses were performed to investigate the significance of clinicopathological factors on disease-free survival (DFS) and overall survival (OS). Kaplan-Meier analysis indicated that elevated Rad50 protein expression levels significantly correlated with unfavorable DFS (P = .005) in the FUSCC cohort and poorer OS (P = .04) in TCGA cohort. Furthermore, coregulation analysis of proteins indicated that 76 coregulated proteins were associated with Rad50, while 11 most highly involved hub proteins, including Rad50, MRE11A, DUT, POLR3A, MCM3AP, RECQL, PNPT1, RANBP3, DDX1, SNRPB, and UGN, were significantly coregulated in the protein-protein interaction network. Functional enrichment analysis consecutively indicated significant functions and signaling pathways including DNA replication, spliceosome, DNA geometric change, homologous recombination, and G2M checkpoint. This study first reveals that elevated Rad50 expression is significantly associated with aggressive progression and poor survival for patients with PCa. Together, these data suggest that Rad50 may act as an oncoprotein, guide the molecular diagnosis, and may shed light on novel individual therapeutic strategies for progressive PCa patients.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "graph_context_length": 416,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3407,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "genes"
+      },
+      {
+        "label": "ENTITY",
+        "text": "study"
+      },
+      {
+        "label": "ENTITY",
+        "text": "dutasteride"
+      },
+      {
+        "label": "ENTITY",
+        "text": "integrated drug"
+      },
+      {
+        "label": "ENTITY",
+        "text": "gene"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q133.json",
+    "retrieval_total_seconds": 0.4071,
+    "score_max": -6.16131591796875,
+    "score_mean": -6.4013495445251465,
+    "scores": [
+      -6.16131591796875,
+      -6.260274410247803,
+      -6.782458305358887
+    ],
+    "selected_abstracts": [
+      "OBJECTIVE: Acrylamide (AA), a widespread environmental and food-borne pollutant, has been classified as a probable human carcinogen. However, its specific role and underlying mechanisms in the progression of prostate cancer (PCa) remain poorly elucidated. This study aims to comprehensively investigate the effect of AA on PCa progression and its molecular mechanisms. METHODS: Differentially expressed AA-related genes (DEARGs) were identified by intersecting data from the Comparative Toxicogenomics Database (CTD) and The Cancer Genome Atlas (TCGA) database. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) functional enrichment analyses were performed to reveal biological functions of DEARGs. A prognostic signature was constructed using Lasso regression analysis. The expression and cellular localization of the key genes were analyzed using single-cell RNA sequencing (scRNA-seq) data. Additionally, the effects of glycidamide (GA) on PCa cells malignant phenotypes and tumor growth in vivo were experimentally validated. RESULTS: We identified a total of 165 DEARGs significantly associated with PCa. Functional analysis revealed they mainly enriched in PI3K-Akt and cAMP signaling pathway. The prognostic model constructed from the six DEARGs (CYP11A1, TUBB3, ALB, ESPL1, FOXN4, ISYNA1) demonstrated satisfactory predictive accuracy for biochemical recurrence-free survival (BCRFS) in PCa patients. scRNA-seq analysis delineated the specific expression of six target genes within the tumor microenvironment. It was found that expression of CYP11A1 was downregulated, while expressions of TUBB3, ALB, ESPL1, FOXN4 and ISYNA1 were upregulated after treatment with GA. In vitro and in vivo experiments confirmed that GA significantly enhanced proliferation, migration, invasion of PCa cells and tumor growth. RNA\u2011sequencing and functional rescue assays further revealed that the MAPK pathway may be a key mechanism by which GA promoted proliferation, invasion, and metastasis of PCa cells. CONCLUSION: This study successfully identified and validated an AA-related prognostic model to effectively predict BCRFS of PCa. The oncogenic effects of GA are primarily mediated by the activation of specific MAPK signaling pathways, elucidating a key mechanistic basis for its toxicity in PCa.",
+      "BACKGROUND: Prostate cancer (PCa) is the second most common type of cancer and the fifth leading cause of cancer-related death in men. Androgen deprivation therapy (ADT) has become the first-line therapy for inhibiting PCa progression; however, nearly all patients receiving ADT eventually progress to castrate-resistant prostate cancer. Therefore, this study aimed to identify hub genes related to bicalutamide resistance in PCa and provide new insights into endocrine therapy resistance. METHODS: The data were obtained from public databases. Weighted correlation network analysis was used to identify the gene modules related to bicalutamide resistance, and the relationship between the samples and disease-free survival was analyzed. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses were performed, and hub genes were identified. The LASSO algorithm was used to develop a bicalutamide resistance prognostic model in patients with PCa, which was then verified. Finally, we analyzed the tumor mutational heterogeneity and immune microenvironment in both groups. RESULTS: Two drug resistance gene modules were identified. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses revealed that both modules are involved in RNA splicing. The protein-protein interaction network identified 10 hub genes in the brown module LUC7L3, SNRNP70, PRPF3, LUC7L, CLASRP, CLK1, CLK2, U2AF1L4, NXF1, and THOC1) and 13 in the yellow module (PNN, PPWD1, SRRM2, DHX35, DMTF1, SALL4, MTA1, HDAC7, PHC1, ACIN1, HNRNPH1, DDX17, and HDAC6). The prognostic model composed of RNF207, REC8, DFNB59, HOXA2, EPOR, PILRB, LSMEM1, TCIRG1, ABTB1, ZNF276, ZNF540, and DPY19L2 could effectively predict patient prognosis. Genomic analysis revealed that the high- and low-risk groups had different mutation maps. Immune infiltration analysis showed a statistically significant difference in immune infiltration between the high- and low-risk groups, and that the high-risk group may benefit from immunotherapy. CONCLUSION: In this study, bicalutamide resistance genes and hub genes were identified in PCa, a risk model for predicting the prognosis of patients with PCa was constructed, and the tumor mutation heterogeneity and immune infiltration in high- and low-risk groups were analyzed. These findings offer new insights into ADT resistance targets and prognostic prediction in patients with PCa.",
+      "Increasing evidence has shown that Rad50, a protein involved in the DNA damage repair process, significantly correlated with tumor prognosis. This study focused on Rad50 expression in tumor samples and its prognostic value for patients with prostate cancer (PCa). In this study, significantly elevated Rad50 expression in PCa tissues compared to normal tissues (P < .01). Five independent Oncomine databases validated significant differential expression of Rad50 (P < .001). Hence, 80 patients with PCa from Fudan University Shanghai Cancer Center (FUSCC) and 351 patients with PCa with available protein expression data from The Cancer Genome Atlas (TCGA) were included to investigate the survival benefit. Univariate and multivariate Cox regression analyses were performed to investigate the significance of clinicopathological factors on disease-free survival (DFS) and overall survival (OS). Kaplan-Meier analysis indicated that elevated Rad50 protein expression levels significantly correlated with unfavorable DFS (P = .005) in the FUSCC cohort and poorer OS (P = .04) in TCGA cohort. Furthermore, coregulation analysis of proteins indicated that 76 coregulated proteins were associated with Rad50, while 11 most highly involved hub proteins, including Rad50, MRE11A, DUT, POLR3A, MCM3AP, RECQL, PNPT1, RANBP3, DDX1, SNRPB, and UGN, were significantly coregulated in the protein-protein interaction network. Functional enrichment analysis consecutively indicated significant functions and signaling pathways including DNA replication, spliceosome, DNA geometric change, homologous recombination, and G2M checkpoint. This study first reveals that elevated Rad50 expression is significantly associated with aggressive progression and poor survival for patients with PCa. Together, these data suggest that Rad50 may act as an oncoprotein, guide the molecular diagnosis, and may shed light on novel individual therapeutic strategies for progressive PCa patients."
+    ],
+    "selected_pmids": [
+      "42361668",
+      "37143720",
+      "31886567"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.044
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T14:02:34.841585+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42361668, relevance: -6.1613) ---\nOBJECTIVE: Acrylamide (AA), a widespread environmental and food-borne pollutant, has been classified as a probable human carcinogen. However, its specific role and underlying mechanisms in the progression of prostate cancer (PCa) remain poorly elucidated. This study aims to comprehensively investigate the effect of AA on PCa progression and its molecular mechanisms. METHODS: Differentially expressed AA-related genes (DEARGs) were identified by intersecting data from the Comparative Toxicogenomics Database (CTD) and The Cancer Genome Atlas (TCGA) database. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) functional enrichment analyses were performed to reveal biological functions of DEARGs. A prognostic signature was constructed using Lasso regression analysis. The expression and cellular localization of the key genes were analyzed using single-cell RNA sequencing (scRNA-seq) data. Additionally, the effects of glycidamide (GA) on PCa cells malignant phenotypes and tumor growth in vivo were experimentally validated. RESULTS: We identified a total of 165 DEARGs significantly associated with PCa. Functional analysis revealed they mainly enriched in PI3K-Akt and cAMP signaling pathway. The prognostic model constructed from the six DEARGs (CYP11A1, TUBB3, ALB, ESPL1, FOXN4, ISYNA1) demonstrated satisfactory predictive accuracy for biochemical recurrence-free survival (BCRFS) in PCa patients. scRNA-seq analysis delineated the specific expression of six target genes within the tumor microenvironment. It was found that expression of CYP11A1 was downregulated, while expressions of TUBB3, ALB, ESPL1, FOXN4 and ISYNA1 were upregulated after treatment with GA. In vitro and in vivo experiments confirmed that GA significantly enhanced proliferation, migration, invasion of PCa cells and tumor growth. RNA\u2011sequencing and functional rescue assays further revealed that the MAPK pathway may be a key mechanism by which GA promoted proliferation, invasion, and metastasis of PCa cells. CONCLUSION: This study successfully identified and validated an AA-related prognostic model to effectively predict BCRFS of PCa. The oncogenic effects of GA are primarily mediated by the activation of specific MAPK signaling pathways, elucidating a key mechanistic basis for its toxicity in PCa.\n\n--- Abstract 2 (PMID: 37143720, relevance: -6.2603) ---\nBACKGROUND: Prostate cancer (PCa) is the second most common type of cancer and the fifth leading cause of cancer-related death in men. Androgen deprivation therapy (ADT) has become the first-line therapy for inhibiting PCa progression; however, nearly all patients receiving ADT eventually progress to castrate-resistant prostate cancer. Therefore, this study aimed to identify hub genes related to bicalutamide resistance in PCa and provide new insights into endocrine therapy resistance. METHODS: The data were obtained from public databases. Weighted correlation network analysis was used to identify the gene modules related to bicalutamide resistance, and the relationship between the samples and disease-free survival was analyzed. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses were performed, and hub genes were identified. The LASSO algorithm was used to develop a bicalutamide resistance prognostic model in patients with PCa, which was then verified. Finally, we analyzed the tumor mutational heterogeneity and immune microenvironment in both groups. RESULTS: Two drug resistance gene modules were identified. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses revealed that both modules are involved in RNA splicing. The protein-protein interaction network identified 10 hub genes in the brown module LUC7L3, SNRNP70, PRPF3, LUC7L, CLASRP, CLK1, CLK2, U2AF1L4, NXF1, and THOC1) and 13 in the yellow module (PNN, PPWD1, SRRM2, DHX35, DMTF1, SALL4, MTA1, HDAC7, PHC1, ACIN1, HNRNPH1, DDX17, and HDAC6). The prognostic model composed of RNF207, REC8, DFNB59, HOXA2, EPOR, PILRB, LSMEM1, TCIRG1, ABTB1, ZNF276, ZNF540, and DPY19L2 could effectively predict patient prognosis. Genomic analysis revealed that the high- and low-risk groups had different mutation maps. Immune infiltration analysis showed a statistically significant difference in immune infiltration between the high- and low-risk groups, and that the high-risk group may benefit from immunotherapy. CONCLUSION: In this study, bicalutamide resistance genes and hub genes were identified in PCa, a risk model for predicting the prognosis of patients with PCa was constructed, and the tumor mutation heterogeneity and immune infiltration in high- and low-risk groups were analyzed. These findings offer new insights into ADT resistance targets and prognostic prediction in patients with PCa.\n\n--- Abstract 3 (PMID: 31886567, relevance: -6.7825) ---\nIncreasing evidence has shown that Rad50, a protein involved in the DNA damage repair process, significantly correlated with tumor prognosis. This study focused on Rad50 expression in tumor samples and its prognostic value for patients with prostate cancer (PCa). In this study, significantly elevated Rad50 expression in PCa tissues compared to normal tissues (P < .01). Five independent Oncomine databases validated significant differential expression of Rad50 (P < .001). Hence, 80 patients with PCa from Fudan University Shanghai Cancer Center (FUSCC) and 351 patients with PCa with available protein expression data from The Cancer Genome Atlas (TCGA) were included to investigate the survival benefit. Univariate and multivariate Cox regression analyses were performed to investigate the significance of clinicopathological factors on disease-free survival (DFS) and overall survival (OS). Kaplan-Meier analysis indicated that elevated Rad50 protein expression levels significantly correlated with unfavorable DFS (P = .005) in the FUSCC cohort and poorer OS (P = .04) in TCGA cohort. Furthermore, coregulation analysis of proteins indicated that 76 coregulated proteins were associated with Rad50, while 11 most highly involved hub proteins, including Rad50, MRE11A, DUT, POLR3A, MCM3AP, RECQL, PNPT1, RANBP3, DDX1, SNRPB, and UGN, were significantly coregulated in the protein-protein interaction network. Functional enrichment analysis consecutively indicated significant functions and signaling pathways including DNA replication, spliceosome, DNA geometric change, homologous recombination, and G2M checkpoint. This study first reveals that elevated Rad50 expression is significantly associated with aggressive progression and poor survival for patients with PCa. Together, these data suggest that Rad50 may act as an oncoprotein, guide the molecular diagnosis, and may shed light on novel individual therapeutic strategies for progressive PCa patients.\n\n\n\n**Question:**\nWhich genes from this study, if any, are linked to Dutasteride in the integrated drug\u2013gene evidence?"
+}

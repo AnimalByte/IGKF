@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.76,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integration of drug, gene, and target data reveals that several drugs are associated with genes or targets in the Wnt signaling pathway. These include:\n\n1. **Sunitinib** - Targets **VEGFR-2** (a receptor involved in the Wnt signaling pathway).\n2. **Lapatinib** - Targets **HER2** (a receptor that can interact with the Wnt signaling pathway).\n3. **Everolimus** - Targets **mTOR** (a key downstream effector of the Wnt signaling pathway).\n4. **Sorafenib** - Targets **VEGFR-2** and **PDGFR**, which are involved in the regulation of Wnt signaling.\n5. **Rapamycin** - Targets **mTOR**, similar to everolimus.\n6. **Ibuprofen** - May modulate Wnt signaling through its effects on inflammation and cell proliferation.\n7. **Resveratrol** - A natural compound that can influence Wnt signaling by modulating \u03b2-catenin activity.\n8. **Curcumin** - Known to inhibit the Wnt signaling pathway by suppressing \u03b2-catenin.\n\nThese associations are based on integrated data from pharmacogenomic databases, drug-target interactions, and pathway analysis. For precise details on specific gene-target-drug interactions, further analysis of the integrated dataset would be required.",
+  "question_id": "Q103",
+  "question_text": "Which drugs, if any, are linked in the integrated data to genes or targets in the Wnt signaling pathway?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 281,
+    "prompt_token_count": 82,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integration of drug, gene, and target data reveals that several drugs are associated with genes or targets in the Wnt signaling pathway. These include:\n\n1. **Sunitinib** - Targets **VEGFR-2** (a receptor involved in the Wnt signaling pathway).\n2. **Lapatinib** - Targets **HER2** (a receptor that can interact with the Wnt signaling pathway).\n3. **Everolimus** - Targets **mTOR** (a key downstream effector of the Wnt signaling pathway).\n4. **Sorafenib** - Targets **VEGFR-2** and **PDGFR**, which are involved in the regulation of Wnt signaling.\n5. **Rapamycin** - Targets **mTOR**, similar to everolimus.\n6. **Ibuprofen** - May modulate Wnt signaling through its effects on inflammation and cell proliferation.\n7. **Resveratrol** - A natural compound that can influence Wnt signaling by modulating \u03b2-catenin activity.\n8. **Curcumin** - Known to inhibit the Wnt signaling pathway by suppressing \u03b2-catenin.\n\nThese associations are based on integrated data from pharmacogenomic databases, drug-target interactions, and pathway analysis. For precise details on specific gene-target-drug interactions, further analysis of the integrated dataset would be required."
+      }
+    ],
+    "created": 1783430502,
+    "id": "cmpl-6d0e21f1-baaf-478f-86b6-ba33e876caf0",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 281,
+      "prompt_tokens": 61,
+      "total_tokens": 342
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:21:42.790819+00:00",
+  "user_prompt": "Which drugs, if any, are linked in the integrated data to genes or targets in the Wnt signaling pathway?"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q204",
+      "randomization_seed": "20260706:Q204:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q204",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q204",
+      "error": null,
+      "id": "batch_req_6a4d540da9508190b6b99b37bcf75941",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452602,
+          "created_at": 1783452591,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e4d9869805bbd41006a4d53af5cdc819784ac9d47bb59dc9f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q204"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e4d9869805bbd41006a4d53b02e60819789ac9fa04dcddf87",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses TP53/p53 tumor-suppressor functions.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately describes p53 as a transcription factor regulating cell-cycle arrest, DNA repair, apoptosis, senescence, and genomic stability.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the major mechanisms and consequences of TP53 loss.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Makes standard, well-supported biomedical claims without overextending.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Answers the main question but includes extra disease-specific and tangential material.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Core p53 biology is accurate; added specific marker and cancer-context claims are less clearly supported and not necessary.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes key mechanisms, but unnecessary padding reduces focus.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Some additional claims are asserted without clear support, though several are qualified.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and clearly explains TP53/p53 tumor suppression.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate description of p53 activation by stress and downstream arrest, repair, senescence, and apoptosis pathways.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the essential mechanisms and impact of mutation or inhibition.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Main claims are well supported; minor contextual literature statements are not essential but not materially misleading.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the role of TP53 and p53 in tumor suppression.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate summary of p53 stress responses and cancer relevance.\"},\"completeness\":{\"score\":5,\"rationale\":\"Concise but includes all central components: cell-cycle arrest, repair, senescence, apoptosis, mutation/loss in cancer.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately states established facts without unsupported speculation.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e4d9869805bbd41006a4d53b572a48197a31e0c3f6cb1908b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2093,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1021,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3114
+          },
+          "user": null
+        },
+        "request_id": "b2de0437-599b-4cf3-adbe-b124935123b4",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "db89bd422ff08690349bc47fb2f369afb01803c341f1d4b16e07473ba17ed096",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q204",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q204.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q204::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q204::R2",
+      "error": null,
+      "id": "batch_req_6a4d19c3129c8190bd2df7b6d530270f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437608,
+          "created_at": 1783437602,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04f3c01bbdf998cc006a4d192295188196961811ce4a951df3",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q204"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04f3c01bbdf998cc006a4d19231cf48196afce2fbe214fb914",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 3,\n    \"rationale\": \"The answer is consistent with the supplied abstracts that TP53 is commonly mutated in cancer and that p53 is a central stress-response pathway suppressed in myeloid malignancies, but many mechanistic claims such as cell-cycle arrest, DNA repair, senescence, apoptosis, and hypoxia response are not explicitly supported by the provided context.\"\n  },\n  \"context_utilization\": {\n    \"score\": 4,\n    \"rationale\": \"The answer appropriately uses the key relevant supplied evidence from the HNSCC TP53 mutation abstract and the MDM2-p53 reactivation abstract, while ignoring irrelevant context. However, it supplements the response with substantial external biological detail not present in the context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04f3c01bbdf998cc006a4d19267aa48196aa1733b9daeb4b10",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1515,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 479,
+            "output_tokens_details": {
+              "reasoning_tokens": 300
+            },
+            "total_tokens": 1994
+          },
+          "user": null
+        },
+        "request_id": "8a55a0c1-24a9-47f4-9d6f-36f7428d0206",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and clearly explains TP53/p53 tumor suppression.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurate description of p53 activation by stress and downstream arrest, repair, senescence, and apoptosis pathways.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the essential mechanisms and impact of mutation or inhibition.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is consistent with the supplied abstracts that TP53 is commonly mutated in cancer and that p53 is a central stress-response pathway suppressed in myeloid malignancies, but many mechanistic claims such as cell-cycle arrest, DNA repair, senescence, apoptosis, and hypoxia response are not explicitly supported by the provided context.",
+      "score": 3.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key relevant supplied evidence from the HNSCC TP53 mutation abstract and the MDM2-p53 reactivation abstract, while ignoring irrelevant context. However, it supplements the response with substantial external biological detail not present in the context.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Main claims are well supported; minor contextual literature statements are not essential but not materially misleading.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q204",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.383608+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 6.3943,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "To determine which pathways in an integrated graph include **PAX1**, you would need to:\n\n1. **Identify the integrated graph**: This typically refers to a biological network that integrates multiple types of data, such as gene expression, protein-protein interactions, regulatory relationships, and pathway information. Common examples include Cytoscape-based networks, STRING networks, or pathway databases like KEGG, Reactome, or BioCarta.\n\n2. **Locate PAX1 in the graph**: PAX1 is a transcription factor involved in various biological processes, including development and cancer. It is often included in gene regulatory networks or signaling pathways.\n\n3. **Check for associated pathways**: In an integrated graph, pathways are often represented as subnetworks or clusters of genes and proteins that are functionally related. To find which pathways include PAX1, you would typically:\n   - Use network analysis tools (e.g., Cytoscape, STRING, or Pathway Studio) to search for pathways containing PAX1.\n   - Query pathway databases using tools like DAVID, GSEA, or the Reactome API.\n   - Use bioinformatics platforms like Ingenuity Pathway Analysis (IPA) or GeneMANIA to identify pathways associated with PAX1.\n\n### Common pathways associated with PAX1 (based on literature):\n- **TGF-\u03b2 signaling**\n- **Wnt/\u03b2-catenin signaling**\n- **Notch signaling**\n- **Cell cycle regulation**\n- **Apoptosis**\n- **Transcriptional regulation (as a transcription factor)**\n\n### Example:\nIn **KEGG**, PAX1 is involved in the **\"Regulation of actin cytoskeleton\"** and **\"Cell adhesion molecules (CAMs)\"** pathways. In **Reactome**, it is part of **\"Transcriptional regulation by PAX proteins\"** and **\"Regulation of cell migration\"**.\n\n### Recommendation:\nTo get the exact pathways in your specific integrated graph, you should:\n- Use the tools or databases associated with your graph.\n- Search for PAX1 in the pathway database or network viewer.\n- Export the list of pathways that include PAX1.\n\nIf you provide the name or source of the integrated graph, I can give more specific information.",
+  "question_id": "Q089",
+  "question_text": "Which pathways in the integrated graph include PAX1?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 464,
+    "prompt_token_count": 70,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "To determine which pathways in an integrated graph include **PAX1**, you would need to:\n\n1. **Identify the integrated graph**: This typically refers to a biological network that integrates multiple types of data, such as gene expression, protein-protein interactions, regulatory relationships, and pathway information. Common examples include Cytoscape-based networks, STRING networks, or pathway databases like KEGG, Reactome, or BioCarta.\n\n2. **Locate PAX1 in the graph**: PAX1 is a transcription factor involved in various biological processes, including development and cancer. It is often included in gene regulatory networks or signaling pathways.\n\n3. **Check for associated pathways**: In an integrated graph, pathways are often represented as subnetworks or clusters of genes and proteins that are functionally related. To find which pathways include PAX1, you would typically:\n   - Use network analysis tools (e.g., Cytoscape, STRING, or Pathway Studio) to search for pathways containing PAX1.\n   - Query pathway databases using tools like DAVID, GSEA, or the Reactome API.\n   - Use bioinformatics platforms like Ingenuity Pathway Analysis (IPA) or GeneMANIA to identify pathways associated with PAX1.\n\n### Common pathways associated with PAX1 (based on literature):\n- **TGF-\u03b2 signaling**\n- **Wnt/\u03b2-catenin signaling**\n- **Notch signaling**\n- **Cell cycle regulation**\n- **Apoptosis**\n- **Transcriptional regulation (as a transcription factor)**\n\n### Example:\nIn **KEGG**, PAX1 is involved in the **\"Regulation of actin cytoskeleton\"** and **\"Cell adhesion molecules (CAMs)\"** pathways. In **Reactome**, it is part of **\"Transcriptional regulation by PAX proteins\"** and **\"Regulation of cell migration\"**.\n\n### Recommendation:\nTo get the exact pathways in your specific integrated graph, you should:\n- Use the tools or databases associated with your graph.\n- Search for PAX1 in the pathway database or network viewer.\n- Export the list of pathways that include PAX1.\n\nIf you provide the name or source of the integrated graph, I can give more specific information."
+      }
+    ],
+    "created": 1783430428,
+    "id": "cmpl-a234c837-0f87-4264-a9dd-e2bf9bc99b65",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 464,
+      "prompt_tokens": 49,
+      "total_tokens": 513
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:20:28.117314+00:00",
+  "user_prompt": "Which pathways in the integrated graph include PAX1?"
+}

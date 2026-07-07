@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q025",
+      "randomization_seed": "20260706:Q025:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q025",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q025",
+      "error": null,
+      "id": "batch_req_6a4d52b96d18819080b9f125fd00203b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452203,
+          "created_at": 1783452192,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ee324d41dd20514006a4d52208218819db1a50a864e9cef5a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q025"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ee324d41dd20514006a4d52211f64819da9db8f3f0891dbcc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses possible forms of genetic-association evidence in general, but does not answer what the supplied study/context shows for rs1160312 and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The generic descriptions of SNP association evidence are broadly accurate, but it misses the actual supplied evidence: only a very low Open Targets association score and no direct abstract evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key available details, including the Open Targets androgenetic alopecia score of 0.007, LINC01432, and the lack of direct literature support in the provided abstracts.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids inventing a specific association, but over-abstains despite the provided structured evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Mostly requests more information rather than answering the question using the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Does not make a clear false biomedical claim, but fails to report the available evidence and includes an unsupported broad statement about rs1160312 appearing in different genetic contexts.\"},\"completeness\":{\"score\":1,\"rationale\":\"Does not mention the Open Targets association score, implicated gene, or that the provided abstracts do not discuss rs1160312 or androgenetic alopecia.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately refrains from unsupported conclusions, though it unnecessarily abstains given the available evidence packet.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers what evidence is supplied for rs1160312 and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the evidence is limited to a very low Open Targets association score, links rs1160312 to LINC01432, and notes the absence of direct support in the abstracts.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the structured database evidence, the implicated gene, the lack of literature evidence, and the appropriate interpretation of weak/low-confidence support.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies the evidence as tentative and avoids claiming causality or robust association.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the evidence provided for the rs1160312-androgenetic alopecia association.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly reports the Open Targets association score of 0.007 and accurately notes that the provided abstracts do not mention rs1160312 or androgenetic alopecia.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main evidence and lack of direct literature support, though it omits the implicated gene LINC01432 and does not explicitly characterize the score as very weak.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to a structured-data signal and does not overstate the evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ee324d41dd20514006a4d522537ac819d9268bd167741d5b0",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2807,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1141,
+            "output_tokens_details": {
+              "reasoning_tokens": 459
+            },
+            "total_tokens": 3948
+          },
+          "user": null
+        },
+        "request_id": "46848e66-94dc-4279-b16e-ad12d1000252",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "0a1c3dcb3ec24be969412c983bc4b9a1039f2fc31b660f8b7754de7bec1e3aa0",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q025",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q025.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q025::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q025::R2",
+      "error": null,
+      "id": "batch_req_6a4d19abf86c8190ab3afa176ea27d34",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437558,
+          "created_at": 1783437554,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b3102d85297ca0e006a4d18f2580081969ceb21b723dea71e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q025"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b3102d85297ca0e006a4d18f2d68c8196859e7f4bb4aa18f9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"All substantive claims are supported by the supplied graph and vector context: rs1160312 is linked to LINC01432, has an Open Targets androgenetic alopecia score of 0.007, and the abstracts do not mention rs1160312, LINC01432, or androgenetic alopecia.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the relevant graph association and correctly notes the absence of direct literature evidence in the supplied abstracts.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b3102d85297ca0e006a4d18f53d24819692dabc1bd84f9360",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1902,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 356,
+            "output_tokens_details": {
+              "reasoning_tokens": 210
+            },
+            "total_tokens": 2258
+          },
+          "user": null
+        },
+        "request_id": "32e34087-a376-46f0-abb0-3197a2d7e486",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers what evidence is supplied for rs1160312 and androgenetic alopecia.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the evidence is limited to a very low Open Targets association score, links rs1160312 to LINC01432, and notes the absence of direct support in the abstracts.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the structured database evidence, the implicated gene, the lack of literature evidence, and the appropriate interpretation of weak/low-confidence support.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "All substantive claims are supported by the supplied graph and vector context: rs1160312 is linked to LINC01432, has an Open Targets androgenetic alopecia score of 0.007, and the abstracts do not mention rs1160312, LINC01432, or androgenetic alopecia.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the relevant graph association and correctly notes the absence of direct literature evidence in the supplied abstracts.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly qualifies the evidence as tentative and avoids claiming causality or robust association.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q025",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q025.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.267355+00:00"
+}

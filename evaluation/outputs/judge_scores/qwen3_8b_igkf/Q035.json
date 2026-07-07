@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q035",
+      "randomization_seed": "20260706:Q035:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q035",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q035",
+      "error": null,
+      "id": "batch_req_6a4d52b9d0688190983c166a9eec5881",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452229,
+          "created_at": 1783452217,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0169a473c022bd04006a4d5239e4c081a1ac3bf12826acb387",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q035"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0169a473c022bd04006a4d523ad30081a192504b9b5120d01b",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"It addresses the request by saying the specific p-value cannot be provided, but does not use the supplied context to state that it is not reported there.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"No unsupported biomedical claim is made; the abstention is broadly consistent with the absence of a p-value in the evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"It omits the key contextual point that the provided evidence only gives an Open Targets score and no p-value for rs929626.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately refrains from inventing a p-value.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"It directly answers the question with a specific p-value.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"The reported p-value is not supported by the provided evidence, which does not report a p-value for rs929626.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Although concise, it provides an unsupported value and does not mention the lack of evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"It invents or asserts an unsupported numerical result without qualification.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"It directly addresses whether a p-value is reported for rs929626 and androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"It accurately states that the supplied evidence does not report a p-value and distinguishes the Open Targets score from a study p-value.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"It covers the key point, notes the available association score, and explains that the abstract does not provide the variant-specific p-value.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"It appropriately abstains from giving an unsupported p-value.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"It directly answers that the p-value is not reported in the provided context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"It is consistent with the evidence: rs929626 has an androgenetic alopecia association score, but no p-value is provided.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"It includes the relevant distinction between the disease association score and a missing p-value.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"It appropriately avoids fabricating a p-value and clearly states the limitation.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0169a473c022bd04006a4d523fb39481a191ace2c8ab2c5a5c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2521,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1173,
+            "output_tokens_details": {
+              "reasoning_tokens": 422
+            },
+            "total_tokens": 3694
+          },
+          "user": null
+        },
+        "request_id": "defed64d-1fbb-4ce2-9cbc-28b9f8eb996f",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "bc159908978ff66d006bd7b0be60ca9ca0cc419500f8e2a12d075ca8f9060891",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q035",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q035.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q035::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q035::R1",
+      "error": null,
+      "id": "batch_req_6a4d19ad89548190810d8475cea01897",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437498,
+          "created_at": 1783437493,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05708add83e45a6e006a4d18b57b288195ad698b4aec50cb9f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q035"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05708add83e45a6e006a4d18b61900819595708b77f32ba0e6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":5,\"rationale\":\"The answer is supported by the supplied context: rs929626 is linked to androgenetic alopecia only via an Open Targets score, and no rs929626-specific p-value is reported in the graph or abstracts.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer appropriately uses the relevant graph evidence and recognizes that the abstracts do not provide a specific p-value for rs929626 and androgenetic alopecia.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05708add83e45a6e006a4d18b95fec8195bcbb515d16a36d2e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2017,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 380,
+            "output_tokens_details": {
+              "reasoning_tokens": 270
+            },
+            "total_tokens": 2397
+          },
+          "user": null
+        },
+        "request_id": "518d5212-d4f0-41c8-98d2-15d31cf64885",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It directly answers that the p-value is not reported in the provided context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "It is consistent with the evidence: rs929626 has an androgenetic alopecia association score, but no p-value is provided.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "It includes the relevant distinction between the disease association score and a missing p-value.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is supported by the supplied context: rs929626 is linked to androgenetic alopecia only via an Open Targets score, and no rs929626-specific p-value is reported in the graph or abstracts.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the relevant graph evidence and recognizes that the abstracts do not provide a specific p-value for rs929626 and androgenetic alopecia.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "It appropriately avoids fabricating a p-value and clearly states the limitation.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q035",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q035.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.273268+00:00"
+}

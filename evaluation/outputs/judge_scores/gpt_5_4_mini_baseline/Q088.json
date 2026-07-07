@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q088",
+      "randomization_seed": "20260706:Q088:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q088",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q088",
+      "error": null,
+      "id": "batch_req_6a4d52bc0248819083392b1b3d58b160",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452216,
+          "created_at": 1783452207,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_020a68b653ad61e2006a4d522f37bc819c9175d823b2ecce73",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q088"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_020a68b653ad61e2006a4d522fa754819ca6832b7623cca707",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether PAX1 is linked to hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly concludes no treatment link is supported, though it somewhat underplays the supplied modest PAX1 association with androgenetic alopecia.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion but does not explicitly discuss the Open Targets androgenetic alopecia association from the evidence packet.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported treatment claims and qualifies the evidence.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested treatment links.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Invents unsupported links between PAX1 and minoxidil, finasteride, and investigational hair-regeneration therapies; these are not present in the supplied evidence.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides specific treatments, but they are unsupported and misses the correct conclusion that no treatment link is identified.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"States unsupported conclusions confidently rather than abstaining.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that PAX1 has a modest androgenetic alopecia association but no specific hair-loss treatment link in the provided evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Addresses the graph association and explains that the abstracts do not provide treatment evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inferring treatments from insufficient evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and frames the evidence clearly.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the supplied evidence: modest androgenetic alopecia association but no treatment link.\"},\"completeness\":{\"score\":5,\"rationale\":\"Thoroughly covers the graph context, abstract content, and final conclusion without unsupported additions.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the association and abstains from unsupported therapeutic claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_020a68b653ad61e2006a4d5233c6f8819cad94d64514e8df21",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2702,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 890,
+            "output_tokens_details": {
+              "reasoning_tokens": 363
+            },
+            "total_tokens": 3592
+          },
+          "user": null
+        },
+        "request_id": "22bec3f3-8011-4ff9-bde6-d94087415b06",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the requested treatment links.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Invents unsupported links between PAX1 and minoxidil, finasteride, and investigational hair-regeneration therapies; these are not present in the supplied evidence.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Provides specific treatments, but they are unsupported and misses the correct conclusion that no treatment link is identified.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "States unsupported conclusions confidently rather than abstaining.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q088",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q088.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.172109+00:00"
+}

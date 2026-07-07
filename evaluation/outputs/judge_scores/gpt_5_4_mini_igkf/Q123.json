@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q123",
+      "randomization_seed": "20260706:Q123:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q123",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q123",
+      "error": null,
+      "id": "batch_req_6a4d540890cc81909b07943834728bd7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452554,
+          "created_at": 1783452541,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_083f200659ae6fc3006a4d537d46308195876205367c0ba64b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q123"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_083f200659ae6fc3006a4d537de46c81959d38f8adf3c1fe11",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Acknowledges the task but does not answer whether the study reports statistics for the phenotype.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Does not make a clear biomedical claim to assess; it abstains rather than providing the expected conclusion.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits the key determination that frontal fibrosing alopecia is outside the study scope.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately avoids unsupported claims, but over-abstains for a question expecting a direct scope determination.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that variant association statistics for frontal fibrosing alopecia are not reported.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly states that frontal fibrosing alopecia is not covered and is outside the study scope.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes the required negative answer and explicitly identifies the phenotype as outside scope.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Gives an appropriately scoped answer without inventing unsupported association statistics.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly states that the study does not report variant association statistics for frontal fibrosing alopecia.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Provides the required conclusion and states that the phenotype is outside scope.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Does not overclaim or fabricate statistics.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly states that the study does not report variant association statistics for frontal fibrosing alopecia.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Provides the required conclusion and states that the phenotype is outside scope.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Does not invent unsupported association statistics.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_083f200659ae6fc3006a4d538535b881958a0f9e903e7a4d81",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 723,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1193,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1916
+          },
+          "user": null
+        },
+        "request_id": "08d92450-2d44-4b04-bbee-5fb67caa31b7",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "b421dbfe5d98ba5018af982b8864e5dad55c4a2d53c728db17335e533de5b7d9",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q123",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q123.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q123::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q123::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b8bbec8190857cbcd429be4b9f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437477,
+          "created_at": 1783437473,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c4eb9368fa13e7e006a4d18a1c5cc819491128a4613bc4117",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q123"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c4eb9368fa13e7e006a4d18a253d081948aaff79cb534c96c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R2\",\"context_groundedness\":{\"score\":\"5\",\"rationale\":\"The answer is fully supported by the supplied context: the relevant abstract concerns androgenetic alopecia/male-pattern baldness and contains no mention of frontal fibrosing alopecia or variant association statistics for that phenotype.\"},\"context_utilization\":{\"score\":\"5\",\"rationale\":\"The answer appropriately uses the key supplied evidence, distinguishing androgenetic alopecia from frontal fibrosing alopecia and correctly concluding the requested phenotype is outside the study scope.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c4eb9368fa13e7e006a4d18a43dcc8194a2b98ed345629f31",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1363,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 270,
+            "output_tokens_details": {
+              "reasoning_tokens": 157
+            },
+            "total_tokens": 1633
+          },
+          "user": null
+        },
+        "request_id": "2ddd87ff-e596-4ab3-90d4-63c0d8d67a38",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that variant association statistics for frontal fibrosing alopecia are not reported.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly states that frontal fibrosing alopecia is not covered and is outside the study scope.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the required negative answer and explicitly identifies the phenotype as outside scope.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is fully supported by the supplied context: the relevant abstract concerns androgenetic alopecia/male-pattern baldness and contains no mention of frontal fibrosing alopecia or variant association statistics for that phenotype.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key supplied evidence, distinguishing androgenetic alopecia from frontal fibrosing alopecia and correctly concluding the requested phenotype is outside the study scope.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Gives an appropriately scoped answer without inventing unsupported association statistics.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q123",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.332159+00:00"
+}

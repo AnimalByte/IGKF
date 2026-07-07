@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q108",
+      "randomization_seed": "20260706:Q108:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q108",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q108",
+      "error": null,
+      "id": "batch_req_6a4d540765548190ad51420e103aeae8",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452510,
+          "created_at": 1783452493,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0aec76b03a161119006a4d534d4adc8193b1bd2e9539ecf4ef",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q108"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0aec76b03a161119006a4d534e03f4819385cdbef9a18f086a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses Hedgehog signaling and androgenetic alopecia, but relies on claims not present in the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Some general statements about Hedgehog roles in hair biology may be plausible, but the supplied evidence contains no AGA link, and several specific claims are unsupported or questionable.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides many asserted lines of evidence but omits the key point that the provided context has no direct evidence for AGA.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Presents unsupported connections as established rather than abstaining or qualifying the absence of evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether the supplied evidence links Hedgehog signaling to androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided abstracts discuss stroke, pathway activation, and COPD, not androgenetic alopecia.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the essential conclusion from the supplied evidence: there is no support for the proposed link.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from inferring an unsupported connection.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the requested relationship between Hedgehog signaling and AGA, but goes beyond the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Many claims about AGA-specific studies, DHT effects, and transcriptomic evidence are not supported by the provided evidence packet.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Includes broad biological plausibility but does not reflect the key supplied-evidence finding that no relevant AGA data were found.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Includes caveats that evidence is indirect and limited, but still asserts unsupported study findings.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately addresses the evidence question in relation to the supplied context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately summarizes that the supplied context contains Hedgehog pathway biology but no androgenetic alopecia, hair follicle, or androgen-specific evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly identifies what the evidence does and does not show, including the absence of AGA-specific support.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly avoids unsupported inference and explicitly qualifies that any broader link would go beyond the provided context.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0aec76b03a161119006a4d5357b2e88193bc30f544b695be24",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3186,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1519,
+            "output_tokens_details": {
+              "reasoning_tokens": 740
+            },
+            "total_tokens": 4705
+          },
+          "user": null
+        },
+        "request_id": "1e0bb6c9-2003-4d6e-9c46-1cca23d326aa",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "3c9911c1f56e18e48ab2d36014fe3bd77944238de85c8ec66b4427c711f07ee4",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q108",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q108.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q108::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q108::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b6c408819091f24118c159f005",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437458,
+          "created_at": 1783437454,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0aa6c78fefaf82a7006a4d188ef1a08197a826b8fa6f74fc01",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q108"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0aa6c78fefaf82a7006a4d188f63dc81979ad0a14b5f4b4109",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately states that the supplied graph has no relevant data and that the vector abstracts discuss Hedgehog signaling in stroke, pathway mechanisms, and COPD, not androgenetic alopecia.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the supplied context and avoids making unsupported claims beyond noting the absence of evidence for a Hedgehog-androgenetic alopecia link.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0aa6c78fefaf82a7006a4d1890a8548197a03550e5dd69ae5b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1352,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 214,
+            "output_tokens_details": {
+              "reasoning_tokens": 87
+            },
+            "total_tokens": 1566
+          },
+          "user": null
+        },
+        "request_id": "d0bcb600-dc04-44e9-b043-34cf5a830b9e",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether the supplied evidence links Hedgehog signaling to androgenetic alopecia.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided abstracts discuss stroke, pathway activation, and COPD, not androgenetic alopecia.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the essential conclusion from the supplied evidence: there is no support for the proposed link.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that the supplied graph has no relevant data and that the vector abstracts discuss Hedgehog signaling in stroke, pathway mechanisms, and COPD, not androgenetic alopecia.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the supplied context and avoids making unsupported claims beyond noting the absence of evidence for a Hedgehog-androgenetic alopecia link.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inferring an unsupported connection.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q108",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q108.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.321723+00:00"
+}

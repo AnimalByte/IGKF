@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q203",
+      "randomization_seed": "20260706:Q203:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q203",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q203",
+      "error": null,
+      "id": "batch_req_6a4d540daebc8190824511c4b0655b31",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452673,
+          "created_at": 1783452662,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00ac17d13efbeb6a006a4d53f654708197a549bc4fa0a39cef",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q203"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00ac17d13efbeb6a006a4d53f6d9dc81978c137d0bb1dcfe78",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the dataset supports summarizing breast cancer treatment options.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that an androgenetic-alopecia-focused dataset is not evidence for breast cancer treatment options.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key elements: insufficient evidence, outside scope, and no general-knowledge summary.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from answering beyond the dataset.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and states the scope limitation.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically and contextually accurate for the stated dataset scope.\"},\"completeness\":{\"score\":5,\"rationale\":\"Concise but covers all necessary components.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly declines to summarize unsupported breast cancer treatments.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the dataset scope and the inability to summarize breast cancer treatment options.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Central claim is correct, though some added specifics about the dataset focus are not established in the prompt.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers insufficient evidence, outside scope, and lack of relevant treatment information.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from providing unsupported treatment information.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the main question but adds detailed context not required and not established by the prompt.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly concludes the question is outside scope, but unsupported claims about graph/vector contexts and breast cancer abstracts introduce uncertainty.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the required abstention, but includes unnecessary and potentially unsupported details.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Explicitly states not to answer from general knowledge and abstains appropriately.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00ac17d13efbeb6a006a4d53fdbf0c81979f78299a6437cd5b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 872,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1006,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1878
+          },
+          "user": null
+        },
+        "request_id": "fbb24d90-5d39-4055-83d6-5464dbf01392",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "ca5f7e9f20fb1e10f9216936a2aae5b93a32be62bf3227a3aa6e6fa30adac60a",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q203",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q203.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q203::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_failed_only_1783452903_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q203::R1",
+      "error": null,
+      "id": "batch_req_6a4d55a59ff081908fdf46865d03eec8",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452972,
+          "created_at": 1783452964,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0abca273f9508ca8006a4d5524884481969d4c36b929707de0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q203"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0abca273f9508ca8006a4d55250a04819698f4da523e2dc018",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":2,\"rationale\":\"The answer correctly identifies the androgenetic-alopecia abstract as focused on male-pattern baldness genetics, but it incorrectly states that the supplied context contains no breast cancer treatment information, despite two breast-cancer-related abstracts being present.\"},\"context_utilization\":{\"score\":2,\"rationale\":\"It uses the alopecia-focused abstract but ignores the supplied breast cancer abstracts, including one discussing treatment selection, biomarkers, endocrine agents, antibody-drug conjugates, and consensus algorithms.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0abca273f9508ca8006a4d552b081081968172722a9aa5b258",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1286,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 635,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1921
+          },
+          "user": null
+        },
+        "request_id": "dcbb12ac-cecf-4f05-b2e5-c142c39c0ea8",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the dataset scope and the inability to summarize breast cancer treatment options.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Central claim is correct, though some added specifics about the dataset focus are not established in the prompt.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers insufficient evidence, outside scope, and lack of relevant treatment information.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer correctly identifies the androgenetic-alopecia abstract as focused on male-pattern baldness genetics, but it incorrectly states that the supplied context contains no breast cancer treatment information, despite two breast-cancer-related abstracts being present.",
+      "score": 2.0
+    },
+    "context_utilization": {
+      "rationale": "It uses the alopecia-focused abstract but ignores the supplied breast cancer abstracts, including one discussing treatment selection, biomarkers, endocrine agents, antibody-drug conjugates, and consensus algorithms.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from providing unsupported treatment information.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q203",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:41.382508+00:00"
+}

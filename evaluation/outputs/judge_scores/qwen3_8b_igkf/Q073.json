@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q073",
+      "randomization_seed": "20260706:Q073:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q073",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q073",
+      "error": null,
+      "id": "batch_req_6a4d52bb56848190b661797d704ad6d7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452177,
+          "created_at": 1783452166,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0deb6273899722a9006a4d5205f92881a2b8a21fabf5ee2c38",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q073"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0deb6273899722a9006a4d5206a09881a28e51358d6581134d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether WNT10A is linked to hair-loss treatments and distinguishes biology/genetic association from treatment evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence: WNT10A is linked to hair follicle biology and MPHL genetics, but no specific hair-loss treatments are named or supported.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key distinction needed for the question and clearly states that no treatments are identified in the evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids naming unsupported therapies and clearly qualifies the evidence limits.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question and states that no treatment link is provided.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Consistent with the reference evidence, which supports WNT10A involvement in hair biology/MPHL but not treatment links.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the main answer well, though it could more explicitly answer the 'which ones' part by saying none are identified.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly refrains from inferring therapies beyond the evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the treatment question and lists therapies.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Names multiple hair-loss treatments as linked to WNT10A, but these links are not supported by the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides many treatment names, but the central content is unsupported and misses the evidence-based conclusion that no treatments are identified.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Overstates and invents unsupported treatment connections instead of abstaining.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that no treatments are linked to WNT10A for hair loss.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The treatment conclusion matches the evidence, but it somewhat understates the provided genetic and hair-follicle evidence linking WNT10A to hair-loss biology.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Answers the main question and notes Wnt pathway relevance, but does not explicitly mention the supplied MPHL association.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids unsupported treatment claims and qualifies the absence of direct treatment evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0deb6273899722a9006a4d520b99e481a2b4c31eef653f48fe",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2824,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1286,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4110
+          },
+          "user": null
+        },
+        "request_id": "ec69de02-0f23-4126-8c9a-5f549aa7da2b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "5706db28f77955cb15a73383fd87928d5fbf2d1543e83a04559183ba10c51dd6",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q073",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q073.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q073::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q073::R1",
+      "error": null,
+      "id": "batch_req_6a4d19b26f508190b8cac52572d1a9ec",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437656,
+          "created_at": 1783437650,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0fc0f034ddab325f006a4d1952e1988195bdb59366f3d18439",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q073"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0fc0f034ddab325f006a4d1953aef08195ab5bae8a3bea3c78",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer is supported by the supplied context: WNT10A is linked to hair follicle morphogenesis, alopecia/MPHL genetics, and ectodermal phenotypes, but no hair-loss treatments or WNT10A-targeted therapeutic interventions are described.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the key evidence from the graph and abstracts, recognizing the genetic/pathobiology links while correctly noting the absence of treatment evidence for hair loss.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0fc0f034ddab325f006a4d1956e1dc8195bfa48cb779afdbd1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1663,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 441,
+            "output_tokens_details": {
+              "reasoning_tokens": 293
+            },
+            "total_tokens": 2104
+          },
+          "user": null
+        },
+        "request_id": "4622487a-c46c-43ab-a946-3c85ad8e2bc5",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question and states that no treatment link is provided.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Consistent with the reference evidence, which supports WNT10A involvement in hair biology/MPHL but not treatment links.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the main answer well, though it could more explicitly answer the 'which ones' part by saying none are identified.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is supported by the supplied context: WNT10A is linked to hair follicle morphogenesis, alopecia/MPHL genetics, and ectodermal phenotypes, but no hair-loss treatments or WNT10A-targeted therapeutic interventions are described.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key evidence from the graph and abstracts, recognizing the genetic/pathobiology links while correctly noting the absence of treatment evidence for hair loss.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly refrains from inferring therapies beyond the evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q073",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q073.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.296470+00:00"
+}

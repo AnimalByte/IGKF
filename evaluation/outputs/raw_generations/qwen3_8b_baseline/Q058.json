@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.1346,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "As of the latest available evidence up to 2024, there is no direct, well-established link between the **EDA2R gene** and treatments specifically used or investigated for **hair loss**. \n\n**EDA2R** (Ectodysplasin A 2 Receptor) is a gene that encodes a receptor involved in signaling pathways related to skin and hair development. Mutations in **EDA2R** are associated with **hypohidrotic ectodermal dysplasia**, a rare genetic disorder characterized by abnormalities in hair, sweat glands, and teeth. However, this condition is not typically associated with hair loss in the context of common or androgenetic alopecia (pattern baldness).\n\nWhile **EDA2R** is involved in hair follicle development, there is currently no evidence that targeting **EDA2R** or its signaling pathways is a focus of research or treatment for hair loss. Most treatments for hair loss, such as **minoxidil**, **finasteride**, **dutasteride**, and **corticosteroids**, target different pathways (e.g., androgen receptor, DHT, inflammation).\n\nIn summary:\n- **EDA2R** is not directly linked to any treatments for hair loss.\n- Research on **EDA2R** is primarily focused on its role in ectodermal dysplasia, not hair loss in the general population.\n\nFor the most up-to-date information, it is recommended to consult recent clinical trials or genetic research databases such as **PubMed**, **ClinicalTrials.gov**, or **Genetics Home Reference**.",
+  "question_id": "Q058",
+  "question_text": "Does the integrated evidence link EDA2R to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 324,
+    "prompt_token_count": 84,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "As of the latest available evidence up to 2024, there is no direct, well-established link between the **EDA2R gene** and treatments specifically used or investigated for **hair loss**. \n\n**EDA2R** (Ectodysplasin A 2 Receptor) is a gene that encodes a receptor involved in signaling pathways related to skin and hair development. Mutations in **EDA2R** are associated with **hypohidrotic ectodermal dysplasia**, a rare genetic disorder characterized by abnormalities in hair, sweat glands, and teeth. However, this condition is not typically associated with hair loss in the context of common or androgenetic alopecia (pattern baldness).\n\nWhile **EDA2R** is involved in hair follicle development, there is currently no evidence that targeting **EDA2R** or its signaling pathways is a focus of research or treatment for hair loss. Most treatments for hair loss, such as **minoxidil**, **finasteride**, **dutasteride**, and **corticosteroids**, target different pathways (e.g., androgen receptor, DHT, inflammation).\n\nIn summary:\n- **EDA2R** is not directly linked to any treatments for hair loss.\n- Research on **EDA2R** is primarily focused on its role in ectodermal dysplasia, not hair loss in the general population.\n\nFor the most up-to-date information, it is recommended to consult recent clinical trials or genetic research databases such as **PubMed**, **ClinicalTrials.gov**, or **Genetics Home Reference**."
+      }
+    ],
+    "created": 1783430275,
+    "id": "cmpl-a025091b-dcf5-4c53-b02b-5bc62dbfb811",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 324,
+      "prompt_tokens": 63,
+      "total_tokens": 387
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:17:55.780006+00:00",
+  "user_prompt": "Does the integrated evidence link EDA2R to any treatments used or investigated for hair loss? If so, which ones?"
+}

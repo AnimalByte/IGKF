@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 7.9843,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The integration of drug, gene, and target data reveals that several drugs are associated with the **Hedgehog signaling pathway** through their interactions with key genes or proteins in the pathway. These drugs primarily target components of the Hedgehog pathway, such as **Smo (Smoothened)**, **Gli (Gli1, Gli2, Gli3)**, and **Ptch (Patched)**, which are critical for pathway activation and regulation.\n\n### Drugs Linked to the Hedgehog Signaling Pathway:\n1. **Vismodegib (Sonidegib)**  \n   - **Target**: **Smo (Smoothened)**  \n   - **Use**: Approved for the treatment of **basal cell carcinoma** and **advanced pancreatic neuroendocrine tumors**.  \n   - **Mechanism**: Inhibits the Smo protein, thereby blocking the Hedgehog signaling pathway.\n\n2. **Sunitinib**  \n   - **Target**: **Smo** (indirectly, through inhibition of **PDGFRA** and **VEGFR**; some studies suggest it may also affect Hedgehog signaling)  \n   - **Use**: Used in the treatment of **renal cell carcinoma**, **gastrointestinal stromal tumors (GISTs)**, and **pancreatic neuroendocrine tumors**.  \n   - **Mechanism**: While primarily a **tyrosine kinase inhibitor**, it has been shown to have some effect on Hedgehog signaling in certain contexts.\n\n3. **Cyclopamine**  \n   - **Target**: **Smo**  \n   - **Use**: A natural compound used in **research** to study Hedgehog signaling.  \n   - **Mechanism**: Acts as a **Smo inhibitor**, similar to vismodegib.\n\n4. **Irinibine (Pamidronate)**  \n   - **Target**: **Gli1** (in some studies)  \n   - **Use**: Used in the treatment of **bone metastases** and **hypercalcemia of malignancy**.  \n   - **Mechanism**: May modulate Hedgehog signaling in certain contexts, though its primary mechanism is not fully understood.\n\n5. **Gli inhibitors (e.g., Gli1, Gli2, Gli3 inhibitors)**  \n   - **Target**: **Gli transcription factors**  \n   - **Use**: These are primarily **research compounds** and not yet approved for clinical use.  \n   - **Mechanism**: Directly inhibit the transcriptional activity of Gli proteins, which are downstream effectors of the Hedgehog pathway.\n\n### Summary:\nThe **Hedgehog signaling pathway** is a key target for several drugs, particularly those that inhibit **Smo** (e.g., vismodegib, cyclopamine) and **Gli** transcription factors. These drugs are used in the treatment of various cancers and are also studied for their potential in other diseases. The integration of drug, gene, and target data confirms these associations, though the exact mechanisms and clinical applications may vary depending on the specific context.",
+  "question_id": "Q111",
+  "question_text": "Which drugs, if any, are linked in the integrated data to genes or targets in the Hedgehog signaling pathway?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 635,
+    "prompt_token_count": 82,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integration of drug, gene, and target data reveals that several drugs are associated with the **Hedgehog signaling pathway** through their interactions with key genes or proteins in the pathway. These drugs primarily target components of the Hedgehog pathway, such as **Smo (Smoothened)**, **Gli (Gli1, Gli2, Gli3)**, and **Ptch (Patched)**, which are critical for pathway activation and regulation.\n\n### Drugs Linked to the Hedgehog Signaling Pathway:\n1. **Vismodegib (Sonidegib)**  \n   - **Target**: **Smo (Smoothened)**  \n   - **Use**: Approved for the treatment of **basal cell carcinoma** and **advanced pancreatic neuroendocrine tumors**.  \n   - **Mechanism**: Inhibits the Smo protein, thereby blocking the Hedgehog signaling pathway.\n\n2. **Sunitinib**  \n   - **Target**: **Smo** (indirectly, through inhibition of **PDGFRA** and **VEGFR**; some studies suggest it may also affect Hedgehog signaling)  \n   - **Use**: Used in the treatment of **renal cell carcinoma**, **gastrointestinal stromal tumors (GISTs)**, and **pancreatic neuroendocrine tumors**.  \n   - **Mechanism**: While primarily a **tyrosine kinase inhibitor**, it has been shown to have some effect on Hedgehog signaling in certain contexts.\n\n3. **Cyclopamine**  \n   - **Target**: **Smo**  \n   - **Use**: A natural compound used in **research** to study Hedgehog signaling.  \n   - **Mechanism**: Acts as a **Smo inhibitor**, similar to vismodegib.\n\n4. **Irinibine (Pamidronate)**  \n   - **Target**: **Gli1** (in some studies)  \n   - **Use**: Used in the treatment of **bone metastases** and **hypercalcemia of malignancy**.  \n   - **Mechanism**: May modulate Hedgehog signaling in certain contexts, though its primary mechanism is not fully understood.\n\n5. **Gli inhibitors (e.g., Gli1, Gli2, Gli3 inhibitors)**  \n   - **Target**: **Gli transcription factors**  \n   - **Use**: These are primarily **research compounds** and not yet approved for clinical use.  \n   - **Mechanism**: Directly inhibit the transcriptional activity of Gli proteins, which are downstream effectors of the Hedgehog pathway.\n\n### Summary:\nThe **Hedgehog signaling pathway** is a key target for several drugs, particularly those that inhibit **Smo** (e.g., vismodegib, cyclopamine) and **Gli** transcription factors. These drugs are used in the treatment of various cancers and are also studied for their potential in other diseases. The integration of drug, gene, and target data confirms these associations, though the exact mechanisms and clinical applications may vary depending on the specific context."
+      }
+    ],
+    "created": 1783430550,
+    "id": "cmpl-3312ef68-ab81-48d4-b9bb-0d2b11b5067a",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 635,
+      "prompt_tokens": 61,
+      "total_tokens": 696
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:22:30.851805+00:00",
+  "user_prompt": "Which drugs, if any, are linked in the integrated data to genes or targets in the Hedgehog signaling pathway?"
+}

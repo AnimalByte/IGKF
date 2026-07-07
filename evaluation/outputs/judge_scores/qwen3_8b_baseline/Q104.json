@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q104",
+      "randomization_seed": "20260706:Q104:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q104",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q104",
+      "error": null,
+      "id": "batch_req_6a4d54075f708190bc84f78a3a1d17a6",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452511,
+          "created_at": 1783452493,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07658a65aadf77be006a4d534d65d88193b9296b2fd703155f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q104"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07658a65aadf77be006a4d534e631c819389a4ca50bd7dea84",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the evidence linking androgen metabolism to androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately describes DHT, 5-alpha-reductase, androgen receptor biology, therapeutic inhibition, and genetic AR evidence; these are consistent with the supplied evidence and broader biomedical knowledge.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers major evidence types: hormonal dependence, DHT production, therapy response, tissue biology, genetics, and follicle miniaturization.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Presents the link as broadly established without noting that the supplied evidence is limited and partly indirect.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and focuses on the evidence present in the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately summarizes SRD5A2 conversion of testosterone to DHT, its stated relevance to androgenic alopecia, and GWAS evidence near AR/EDA2R.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main evidence in the reference packet, though it omits broader clinical evidence such as response to 5-alpha-reductase inhibitors.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the evidence as direct but limited and avoids claiming causality from the supplied abstracts alone.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses androgen metabolism and androgenetic alopecia using SRD5A enzymes, DHT, AR, and genetic loci.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly accurate, but somewhat overstates the supplied evidence for SRD5A2 alterations specifically contributing to androgenetic alopecia and treats indirect links as more established than shown.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes key pathway components and genetic evidence, but lacks discussion of therapeutic evidence and does not clearly distinguish direct from indirect support.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Provides little qualification and presents plausible but not fully supported mechanistic conclusions as established.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question with multiple evidence categories linking androgen metabolism to AGA.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Largely scientifically accurate, but includes claims not supported by the supplied packet, such as specific animal-model and in vitro evidence, and states some mechanisms strongly.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers AR, DHT, 5-alpha-reductase inhibitors, genetics, animal models, and cellular studies.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Does not qualify that much of the evidence cited is outside the supplied context and presents the pathway role as conclusively established.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07658a65aadf77be006a4d5359280c8193a120cfa8b1a0a433",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3305,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1685,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 4990
+          },
+          "user": null
+        },
+        "request_id": "bd8b89e3-b2b0-40af-902f-4221e1c32fec",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question with multiple evidence categories linking androgen metabolism to AGA.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Largely scientifically accurate, but includes claims not supported by the supplied packet, such as specific animal-model and in vitro evidence, and states some mechanisms strongly.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers AR, DHT, 5-alpha-reductase inhibitors, genetics, animal models, and cellular studies.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not qualify that much of the evidence cited is outside the supplied context and presents the pathway role as conclusively established.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q104",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q104.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.205240+00:00"
+}

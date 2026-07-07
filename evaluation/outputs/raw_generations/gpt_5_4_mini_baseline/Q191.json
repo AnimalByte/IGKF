@@ -1,0 +1,163 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": null,
+    "created_at": 1783437069,
+    "custom_id": "generation::gpt_5_4_mini_baseline::Q191",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "16a32bfb-90d7-4f1d-b67a-2a4300cfb653",
+    "response_id": "resp_002050edafd8518b006a4d170d8bc881959b383a5fad61e97f",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 59,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 768,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 827
+    }
+  },
+  "parsed_answer": "Direct comparative evidence for **EDA2R vs AR expression in scalp or hair-follicle tissue is very limited**, and most of what exists is **indirect** rather than a head-to-head measurement in the same samples.\n\n### What is available\n\n#### 1) Human scalp / hair-follicle transcriptomic datasets\n- **Source:** Public RNA-expression datasets from **microdissected human scalp hair follicles** and **bulk scalp skin** (e.g., GEO/ArrayExpress-style datasets used in hair-biology studies).\n- **What they show:**  \n  - **AR** is generally detectable in **scalp skin and hair-follicle\u2013associated compartments**, consistent with its established role in androgen signaling in hair biology.  \n  - **EDA2R** is **usually low/near-background or inconsistently detected** in these same datasets, if present at all.\n- **Limitations:**  \n  - These datasets are often **bulk tissue**, so signal is diluted by mixed cell types.  \n  - **EDA2R** may be missed because expression is **low**, **cell-type restricted**, or absent in the sampled compartment.  \n  - Different studies use different microdissection methods, platforms, and normalization, making direct comparison difficult.\n\n#### 2) Single-cell / single-nucleus skin atlases\n- **Source:** Human skin and hair-follicle **single-cell RNA-seq atlases**.\n- **What they show:**  \n  - **AR** is reported in subsets of **epithelial and dermal cells** in skin/hair-follicle atlases, depending on cell type and study.  \n  - **EDA2R** is generally **not a prominent signal** in hair-follicle lineages in these atlases, or is only observed in very limited stromal/epithelial subsets.\n- **Limitations:**  \n  - scRNA-seq has **dropout**, so low-abundance transcripts like **EDA2R** can be underdetected.  \n  - Expression calls vary by **library depth**, **annotation**, and **cell-state representation**.  \n  - Many atlases are of **skin broadly**, not specifically isolated scalp follicles.\n\n#### 3) Protein-level evidence\n- **Source:** Immunohistochemistry / immunofluorescence studies of scalp skin or hair follicles.\n- **What they show:**  \n  - **AR protein** is well documented in **hair-follicle structures**, especially in the **dermal papilla** and other follicular compartments in many studies.  \n  - I am not aware of robust, widely cited **protein-localization evidence for EDA2R** in human scalp/hair follicles comparable to AR.\n- **Limitations:**  \n  - Antibody specificity can be problematic, especially for low-abundance receptors.  \n  - Negative findings for EDA2R are hard to interpret without validated reagents.\n\n### Bottom line\n- **AR:** strong evidence of expression in hair-follicle/scalp tissues.\n- **EDA2R:** little direct evidence of meaningful expression in scalp/hair-follicle tissue; when detected, it is typically low and dataset-dependent.\n- **Head-to-head comparison:** I am not aware of a definitive study that quantitatively compares **EDA2R and AR side-by-side in the same scalp/hair-follicle samples** with robust validation.\n\n### Main caveat\nThe absence of evidence for **EDA2R** in these tissues is **not proof of absence**; it may reflect **low abundance, restricted cell specificity, or technical detection limits**.\n\nIf you want, I can also compile a short list of specific published datasets or atlas papers that report AR expression",
+  "question_id": "Q191",
+  "question_text": "What evidence is available comparing EDA2R and AR expression in scalp or hair-follicle tissues? State the evidence source and limitations.",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_baseline::Q191",
+    "error": null,
+    "id": "batch_req_6a4d1757fd408190abe0ca684dd04c67",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": null,
+        "created_at": 1783437069,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_002050edafd8518b006a4d170d8bc881959b383a5fad61e97f",
+        "incomplete_details": {
+          "reason": "max_output_tokens"
+        },
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_baseline",
+          "question_id": "Q191"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "Direct comparative evidence for **EDA2R vs AR expression in scalp or hair-follicle tissue is very limited**, and most of what exists is **indirect** rather than a head-to-head measurement in the same samples.\n\n### What is available\n\n#### 1) Human scalp / hair-follicle transcriptomic datasets\n- **Source:** Public RNA-expression datasets from **microdissected human scalp hair follicles** and **bulk scalp skin** (e.g., GEO/ArrayExpress-style datasets used in hair-biology studies).\n- **What they show:**  \n  - **AR** is generally detectable in **scalp skin and hair-follicle\u2013associated compartments**, consistent with its established role in androgen signaling in hair biology.  \n  - **EDA2R** is **usually low/near-background or inconsistently detected** in these same datasets, if present at all.\n- **Limitations:**  \n  - These datasets are often **bulk tissue**, so signal is diluted by mixed cell types.  \n  - **EDA2R** may be missed because expression is **low**, **cell-type restricted**, or absent in the sampled compartment.  \n  - Different studies use different microdissection methods, platforms, and normalization, making direct comparison difficult.\n\n#### 2) Single-cell / single-nucleus skin atlases\n- **Source:** Human skin and hair-follicle **single-cell RNA-seq atlases**.\n- **What they show:**  \n  - **AR** is reported in subsets of **epithelial and dermal cells** in skin/hair-follicle atlases, depending on cell type and study.  \n  - **EDA2R** is generally **not a prominent signal** in hair-follicle lineages in these atlases, or is only observed in very limited stromal/epithelial subsets.\n- **Limitations:**  \n  - scRNA-seq has **dropout**, so low-abundance transcripts like **EDA2R** can be underdetected.  \n  - Expression calls vary by **library depth**, **annotation**, and **cell-state representation**.  \n  - Many atlases are of **skin broadly**, not specifically isolated scalp follicles.\n\n#### 3) Protein-level evidence\n- **Source:** Immunohistochemistry / immunofluorescence studies of scalp skin or hair follicles.\n- **What they show:**  \n  - **AR protein** is well documented in **hair-follicle structures**, especially in the **dermal papilla** and other follicular compartments in many studies.  \n  - I am not aware of robust, widely cited **protein-localization evidence for EDA2R** in human scalp/hair follicles comparable to AR.\n- **Limitations:**  \n  - Antibody specificity can be problematic, especially for low-abundance receptors.  \n  - Negative findings for EDA2R are hard to interpret without validated reagents.\n\n### Bottom line\n- **AR:** strong evidence of expression in hair-follicle/scalp tissues.\n- **EDA2R:** little direct evidence of meaningful expression in scalp/hair-follicle tissue; when detected, it is typically low and dataset-dependent.\n- **Head-to-head comparison:** I am not aware of a definitive study that quantitatively compares **EDA2R and AR side-by-side in the same scalp/hair-follicle samples** with robust validation.\n\n### Main caveat\nThe absence of evidence for **EDA2R** in these tissues is **not proof of absence**; it may reflect **low abundance, restricted cell specificity, or technical detection limits**.\n\nIf you want, I can also compile a short list of specific published datasets or atlas papers that report AR expression",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_002050edafd8518b006a4d170e12a881958178fd743fa06383",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "incomplete",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "incomplete",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 59,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 768,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 827
+        },
+        "user": null
+      },
+      "request_id": "16a32bfb-90d7-4f1d-b67a-2a4300cfb653",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T15:14:46.460874+00:00",
+  "user_prompt": "What evidence is available comparing EDA2R and AR expression in scalp or hair-follicle tissues? State the evidence source and limitations."
+}

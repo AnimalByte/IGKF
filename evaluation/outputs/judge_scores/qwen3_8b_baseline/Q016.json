@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q016",
+      "randomization_seed": "20260706:Q016:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q016",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q016",
+      "error": null,
+      "id": "batch_req_6a4d52b8f30c81908d359355295c82e7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452172,
+          "created_at": 1783452163,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b6bf5a642ba7860006a4d520324e081a295260eb26ef87515",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q016"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b6bf5a642ba7860006a4d520440d081a2954381b404398ed7",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses the rs756853 question but does not provide the requested gene annotation.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Does not state the supported associated gene, HDAC9; no incorrect alternative gene is given.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key required answer: HDAC9.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains despite sufficient supplied evidence to answer.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Discusses the need for a study context but does not answer the specific question.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Fails to report the supported gene HDAC9, though it does not assert a wrong gene.\"},\"completeness\":{\"score\":1,\"rationale\":\"Missing the essential gene association.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Unnecessarily abstains when the reference evidence provides the gene annotation.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which gene is associated with rs756853.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies HDAC9 as the implicated gene.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the key annotation and cites the relevant evidence field.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Confidently answers based on sufficient supplied evidence without overclaiming.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the requested gene association.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that rs756853 is annotated with HDAC9 in the supplied evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key gene and appropriately notes no other supplied gene associations for this variant.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the claim to the supplied context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b6bf5a642ba7860006a4d5209237c81a28ac91fc14e9dec4a",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2810,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 850,
+            "output_tokens_details": {
+              "reasoning_tokens": 386
+            },
+            "total_tokens": 3660
+          },
+          "user": null
+        },
+        "request_id": "b4631c9c-ea92-4b47-a598-ea0094f2d896",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Discusses the need for a study context but does not answer the specific question.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Fails to report the supported gene HDAC9, though it does not assert a wrong gene.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Missing the essential gene association.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Unnecessarily abstains when the reference evidence provides the gene annotation.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q016",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q016.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:31.121272+00:00"
+}

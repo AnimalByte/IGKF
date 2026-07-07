@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q061",
+      "randomization_seed": "20260706:Q061:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q061",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q061",
+      "error": null,
+      "id": "batch_req_6a4d52bad3f08190a3720a04f0ab64e2",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452263,
+          "created_at": 1783452229,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_08e5e61e3a207260006a4d52458e6881a2a65477ae92eac672",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q061"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_08e5e61e3a207260006a4d52473b6881a2b754798f821eb157",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the SRD5A2-androgenetic alopecia link through mechanism, drugs, Open Targets, and literature.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly accurate and well aligned with the evidence; minor overstatement around dutasteride as an established AGA therapy in the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key mechanistic, pharmacologic, disease-association, and literature evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Generally appropriate, though it presents the link as more definitive without noting limits of genetic or direct causal evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly summarizes evidence connecting SRD5A2 to androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Scientifically plausible and mostly accurate, but introduces GWAS and candidate-gene claims not supported by the provided evidence packet.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes mechanism, therapeutic relevance, and uncertainty, but omits the supplied Open Targets association score and explicit literature statement.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the strength of genetic evidence and distinguishes pathway relevance from susceptibility-gene evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately addresses the question using the supplied evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects SRD5A2 function, DHT biology, Open Targets association, drug evidence, and the abstract's therapeutic-target statement.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the important evidence categories concisely: disease association, drugs, mechanism, and literature support.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Uses appropriately qualified language such as mechanistic plausibility and therapeutic validation without overclaiming causality.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the evidence linking SRD5A2 to androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Contains correct core mechanism and drug points, but adds unsupported or likely inaccurate claims about specific polymorphisms, expression, animal studies, and signaling mechanisms.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Mentions several relevant evidence types but omits the supplied Open Targets score and includes substantial unsupported padding.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Confidently states unsupported conclusions, especially about genetic variants and mechanistic studies.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_08e5e61e3a207260006a4d526174b481a2b5a4ef0e1d58df9d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3813,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 2791,
+            "output_tokens_details": {
+              "reasoning_tokens": 2008
+            },
+            "total_tokens": 6604
+          },
+          "user": null
+        },
+        "request_id": "1a7063f7-3a45-4bb4-a78d-e8193db4bdcc",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "c51f070fba581c276931166274f080a15ea807132c01b91e04b8be2ad89d46f7",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q061",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q061.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q061::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q061::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b121008190a9e815efc1ac9231",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437446,
+          "created_at": 1783437435,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01d9637f0d1125be006a4d187b4cd88196890d9ea836361696",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q061"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01d9637f0d1125be006a4d187d9acc8196bb9537e4a8de24d8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R2\",\"context_groundedness\":{\"score\":4,\"rationale\":\"Most claims are supported by the supplied graph and abstracts, including SRD5A2 converting testosterone to DHT, the Open Targets androgenetic alopecia score, finasteride approval/evidence for androgenetic alopecia, and the abstract stating SRD5A2 is a potential therapeutic target in androgenic alopecia. Minor issues include implying dutasteride is used for androgenetic alopecia from the supplied context, which is not listed, and adding the hair-follicle miniaturization mechanism, which is plausible but not explicitly provided.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer uses the key supplied evidence: disease association score, drug evidence, SRD5A2 enzymatic mechanism, DHT biology, and the abstract\u2019s explicit mention of androgenic alopecia as a therapeutic target.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01d9637f0d1125be006a4d18839f9881968bfe21c3a7ad19fc",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2211,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 707,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2918
+          },
+          "user": null
+        },
+        "request_id": "649cf3a8-cde2-4d9c-bb66-e18913a39544",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately addresses the question using the supplied evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects SRD5A2 function, DHT biology, Open Targets association, drug evidence, and the abstract's therapeutic-target statement.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the important evidence categories concisely: disease association, drugs, mechanism, and literature support.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "Most claims are supported by the supplied graph and abstracts, including SRD5A2 converting testosterone to DHT, the Open Targets androgenetic alopecia score, finasteride approval/evidence for androgenetic alopecia, and the abstract stating SRD5A2 is a potential therapeutic target in androgenic alopecia. Minor issues include implying dutasteride is used for androgenetic alopecia from the supplied context, which is not listed, and adding the hair-follicle miniaturization mechanism, which is plausible but not explicitly provided.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses the key supplied evidence: disease association score, drug evidence, SRD5A2 enzymatic mechanism, DHT biology, and the abstract\u2019s explicit mention of androgenic alopecia as a therapeutic target.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Uses appropriately qualified language such as mechanistic plausibility and therapeutic validation without overclaiming causality.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q061",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q061.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.289366+00:00"
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q138",
+      "randomization_seed": "20260706:Q138:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q138",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q138",
+      "error": null,
+      "id": "batch_req_6a4d54092aec8190bb02f27f7d628209",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452588,
+          "created_at": 1783452572,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03642662b641c3df006a4d539cbfa881908d3198921556ee84",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q138"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03642662b641c3df006a4d539d87e48190bf103dc008345881",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether the supplied evidence supports Minoxidil regulation of FGF5 and distinguishes direct versus absent evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the reference packet: Minoxidil is not mentioned, and no Minoxidil-FGF5 regulatory evidence is provided.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers direct evidence, indirect/absent evidence, and gives an appropriate conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring a relationship when evidence is insufficient.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and clearly separates direct evidence from weak indirect plausibility.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that the supplied graph and abstracts provide no direct Minoxidil-FGF5 link; the noted trichomegaly/hair-growth plausibility is cautious and not overclaimed.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides a balanced evaluation of absent direct evidence, weak indirect relevance, and an overall conclusion.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly labels indirect interpretation as speculative and avoids claiming established regulation.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Addresses the Minoxidil-FGF5 expression question and distinguishes direct from indirect evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The main conclusion is consistent with the reference packet, but it introduces broad claims about the wider literature and hair-cycle biology not supported by the supplied evidence, with some potentially imprecise wording about FGF5 biology.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers direct and indirect evidence, but does not explicitly ground the conclusion in the supplied packet and adds extra unsupported context.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Mostly appropriately cautious, though the statement that no direct studies have been published is broader than the provided evidence supports.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly responds to the question and separates direct evidence from indirect plausibility.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The absence of direct evidence is consistent with the packet, but the claim that integrated evidence supports an indirect relationship relies on external biological plausibility rather than the supplied evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Discusses direct and indirect evidence and conclusion, but omits the key point that Minoxidil is absent from the provided abstracts and graph.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Uses cautious language, but slightly overstates indirect support relative to the evidence packet.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03642662b641c3df006a4d53a7aab08190a6cab39b59e240d8",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3058,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1654,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 4712
+          },
+          "user": null
+        },
+        "request_id": "5fa993ed-8c5f-4a7d-9dde-f31c327bf791",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "c360f44eae443b6bf574fc082965dc30d55c9d97c8e20d266a563e92cd50a326",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q138",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q138.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q138::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q138::R1",
+      "error": null,
+      "id": "batch_req_6a4d19babd68819089ab4bc919b9d480",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437492,
+          "created_at": 1783437479,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d4d280861a9f063006a4d18a6e75081939c3bf309e3600747",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q138"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d4d280861a9f063006a4d18a86014819387ad9787d2d261f5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R1\",\"context_groundedness\":{\"score\":5,\"rationale\":\"The answer is grounded in the supplied graph and abstracts: Minoxidil is not mentioned, and no evidence is provided that it regulates FGF5 expression.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer appropriately uses the key supplied evidence, distinguishing the absence of direct Minoxidil-FGF5 evidence from contextual information about FGF5 biology and disease associations.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d4d280861a9f063006a4d18b06c848193a5a3ff8d3878b0d6",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1810,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 365,
+            "output_tokens_details": {
+              "reasoning_tokens": 263
+            },
+            "total_tokens": 2175
+          },
+          "user": null
+        },
+        "request_id": "7a404e64-f0e6-4168-a23a-746d0a074f89",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether the supplied evidence supports Minoxidil regulation of FGF5 and distinguishes direct versus absent evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the reference packet: Minoxidil is not mentioned, and no Minoxidil-FGF5 regulatory evidence is provided.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers direct evidence, indirect/absent evidence, and gives an appropriate conclusion.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer is grounded in the supplied graph and abstracts: Minoxidil is not mentioned, and no evidence is provided that it regulates FGF5 expression.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the key supplied evidence, distinguishing the absence of direct Minoxidil-FGF5 evidence from contextual information about FGF5 biology and disease associations.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inferring a relationship when evidence is insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q138",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q138.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.342079+00:00"
+}

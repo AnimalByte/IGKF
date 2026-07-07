@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q151",
+      "randomization_seed": "20260706:Q151:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q151",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q151",
+      "error": null,
+      "id": "batch_req_6a4d540a0aa881909db98215f429a199",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452617,
+          "created_at": 1783452605,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03dc59bb37b0c231006a4d53bd5698819388d000fd5d2551a5",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q151"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03dc59bb37b0c231006a4d53be13f0819396feb9c1ca8ae572",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the requested distinction between direct epigenetic evidence and general background, but largely gives hypothetical criteria rather than evaluating the supplied graph and abstracts.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The general statements about what would constitute direct evidence are scientifically reasonable, but it does not correctly state that the provided context lacks direct AR methylation evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers key categories of evidence but omits specific discussion of the supplied AR graph and abstracts, especially the absence of direct AR/hair-loss methylation evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Avoids making unsupported specific claims and frames evidence conditionally, though it unnecessarily implies the graph was not available.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Attempts to synthesize graph and literature context around AR and DNA methylation, but misclassifies indirect background as direct evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Incorrectly presents DNMT1 aging and ALKBH4/BMP2 studies as direct evidence for AR epigenetic regulation; claims AR modulators imply epigenetic regulation, which is unsupported. It also conflates canities with hair loss.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Includes several supplied elements but fails to make the central distinction correctly and appears incomplete/truncated.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Draws unsupported conclusions instead of clearly stating that direct AR-specific hair-loss methylation evidence is absent.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers the question and clearly distinguishes direct evidence from indirect/general biological background.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided context lacks direct evidence for AR DNA methylation in hair-loss biology and correctly frames the abstracts as broader epigenetic background.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the AR graph, the absence of epigenetic AR evidence, and the relevant indirect evidence from all three abstracts.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the evidence and avoids overstating AR-specific or hair-loss-specific conclusions.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Discusses AR, hair loss, and epigenetics generally, but does not evaluate the provided graph or literature context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Invents specific studies and findings about AR promoter methylation in hair follicle cells that are not present in the supplied evidence and may not be reliable.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides a general framework but omits the key conclusion that the supplied packet contains no direct AR methylation evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Does not abstain when evidence is insufficient and instead adds unsupported literature claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03dc59bb37b0c231006a4d53c37b2c8193a9224eeb0b0bf1e9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5538,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1366,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 6904
+          },
+          "user": null
+        },
+        "request_id": "fbc08bca-ae78-41af-ac16-999e6d5a1349",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "1a3d11b5a20b23ccd732b5e9e292eb0f815045c45c3b351e7b26115233066f5f",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q151",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q151.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q151::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q151::R1",
+      "error": null,
+      "id": "batch_req_6a4d19bc71b081908cb0a224e557045d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437705,
+          "created_at": 1783437696,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09994d92da44b7c3006a4d198088b08190967b2311ae0985c3",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q151"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09994d92da44b7c3006a4d198132688190b3758ba61f1305a8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 2,\n    \"rationale\": \"Some summaries of supplied abstracts and AR graph entries are accurate, but the key claim that there is direct evidence for DNA-methylation regulation of AR is unsupported. The context provides only general epigenetic background and unrelated methylation examples, not AR-specific methylation evidence.\"\n  },\n  \"context_utilization\": {\n    \"score\": 2,\n    \"rationale\": \"The answer uses Abstracts 2 and 3 and some AR graph information, but misclassifies indirect/general evidence as direct evidence, makes unsupported inferences from AR modulators and nuclear receptor pathways, and does not clearly distinguish that the supplied context lacks direct AR epigenetic evidence.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09994d92da44b7c3006a4d19873a1c8190b93a4bf491854360",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3141,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 658,
+            "output_tokens_details": {
+              "reasoning_tokens": 485
+            },
+            "total_tokens": 3799
+          },
+          "user": null
+        },
+        "request_id": "7f3c76f8-b9cd-48d2-9c11-45e21c9c602a",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Attempts to synthesize graph and literature context around AR and DNA methylation, but misclassifies indirect background as direct evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly presents DNMT1 aging and ALKBH4/BMP2 studies as direct evidence for AR epigenetic regulation; claims AR modulators imply epigenetic regulation, which is unsupported. It also conflates canities with hair loss.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Includes several supplied elements but fails to make the central distinction correctly and appears incomplete/truncated.",
+      "score": 2.0
+    },
+    "context_groundedness": {
+      "rationale": "Some summaries of supplied abstracts and AR graph entries are accurate, but the key claim that there is direct evidence for DNA-methylation regulation of AR is unsupported. The context provides only general epigenetic background and unrelated methylation examples, not AR-specific methylation evidence.",
+      "score": 2.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses Abstracts 2 and 3 and some AR graph information, but misclassifies indirect/general evidence as direct evidence, makes unsupported inferences from AR modulators and nuclear receptor pathways, and does not clearly distinguish that the supplied context lacks direct AR epigenetic evidence.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Draws unsupported conclusions instead of clearly stating that direct AR-specific hair-loss methylation evidence is absent.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q151",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q151.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.350096+00:00"
+}

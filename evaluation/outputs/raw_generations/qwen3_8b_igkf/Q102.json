@@ -1,0 +1,182 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.5349,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The available evidence does not directly address the role of the Wnt signaling pathway in hair-follicle growth or cycling. The provided graph and abstracts focus on the Wnt signaling pathway's involvement in cancer, embryonic development, and specific phenotypes such as abnormal ocular adnexa morphology, skin morphology, and palpebral fissures. While the pathway is known in general to regulate cell proliferation and stem cell maintenance, the specific context of hair-follicle biology is not covered in the given data. Therefore, a coherent biological narrative based on the available evidence cannot be synthesized for the question about hair-follicle growth or cycling.",
+  "question_id": "Q102",
+  "question_text": "Describe how the Wnt signaling pathway contributes to hair-follicle growth or cycling, based on the available evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 132,
+    "prompt_token_count": 1056,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The available evidence does not directly address the role of the Wnt signaling pathway in hair-follicle growth or cycling. The provided graph and abstracts focus on the Wnt signaling pathway's involvement in cancer, embryonic development, and specific phenotypes such as abnormal ocular adnexa morphology, skin morphology, and palpebral fissures. While the pathway is known in general to regulate cell proliferation and stem cell maintenance, the specific context of hair-follicle biology is not covered in the given data. Therefore, a coherent biological narrative based on the available evidence cannot be synthesized for the question about hair-follicle growth or cycling."
+      }
+    ],
+    "created": 1783432220,
+    "id": "cmpl-f43981c6-a3e5-482f-891d-095ad2050391",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 132,
+      "prompt_tokens": 1035,
+      "total_tokens": 1167
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      26.327407836914062,
+      27.007463455200195,
+      27.506088256835938,
+      27.527301788330078,
+      28.276046752929688,
+      28.288921356201172,
+      28.548267364501953,
+      28.710071563720703,
+      29.204431533813477,
+      29.26677703857422,
+      29.532644271850586,
+      29.54144287109375,
+      29.58907127380371,
+      30.178842544555664,
+      30.179977416992188
+    ],
+    "candidate_pmids": [
+      "42089627",
+      "41056281",
+      "41296172",
+      "40553753",
+      "42378331",
+      "42268900",
+      "41218118",
+      "41034211",
+      "42393221",
+      "34275739",
+      "37737258",
+      "39529066",
+      "41797924",
+      "38173341",
+      "33133644"
+    ],
+    "expanded_retrieval_query": "Describe how the Wnt signaling pathway contributes to hair-follicle growth or cycling, based on the available evidence. Entity: Wnt signaling pathway (Type: GO_Term)\n  - Associated Genes: KREMEN1, FAM53B, LRP6, WNT3, DKK2, LGR4, AMER1, TMEM131L, WNT10A, WNT6, ZNRF3, RSPO2, FZD7, TLE4\n  - Pathways of Associated Genes: Signaling by LRP5 mutants , TCF dependent signaling in response to WNT, Negative regulation of TCF-dependent signaling by WNT ligand antagonists\n  - Phenotypes of Associated Genes: Abnormal ocular adnexa morphology, Abnormal skin morphology, Abnormality of the palpebral fissures",
+    "final_context": "Graph Context:\nEntity: Wnt signaling pathway (Type: GO_Term)\n  - Associated Genes: KREMEN1, FAM53B, LRP6, WNT3, DKK2, LGR4, AMER1, TMEM131L, WNT10A, WNT6, ZNRF3, RSPO2, FZD7, TLE4\n  - Pathways of Associated Genes: Signaling by LRP5 mutants , TCF dependent signaling in response to WNT, Negative regulation of TCF-dependent signaling by WNT ligand antagonists\n  - Phenotypes of Associated Genes: Abnormal ocular adnexa morphology, Abnormal skin morphology, Abnormality of the palpebral fissures\n\nVector Context:\n--- Abstract 1 (PMID: 42378331, relevance: 1.7279) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n--- Abstract 2 (PMID: 41218118, relevance: 0.3682) ---\nThe WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.\n\n--- Abstract 3 (PMID: 39529066, relevance: -0.3902) ---\nThe WNT6 ligand is a well-known activator of the WNT signaling pathway, considered a vital player in several important physiologic processes during embryonic development and maintaining homeostasis throughout life, regulating the proliferation and differentiation of multiple stem/progenitor cell types. More recently, as it is the case for many key molecular regulators of embryonic development, dysregulation of WNT6 has been implicated in cancer development and progression in multiple studies. In this review, we overview the most significant recent findings regarding WNT6 in the context of human malignancies, exploring its influence on multiple dimensions of tumor pathophysiology and highlighting the putative underlying WNT6-associated molecular mechanisms. We also discuss the potential clinical implications of WNT6 as a prognostic and therapeutic biomarker. This critical review highlights the emerging relevance of WNT6 in multiple human cancers, and its potential as a clinically-useful biomarker, addressing key unanswered questions that could lead to new opportunities in patient diagnosis, stratification, and the development of rationally-designed precision therapies.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: Wnt signaling pathway (Type: GO_Term)\n  - Associated Genes: KREMEN1, FAM53B, LRP6, WNT3, DKK2, LGR4, AMER1, TMEM131L, WNT10A, WNT6, ZNRF3, RSPO2, FZD7, TLE4\n  - Pathways of Associated Genes: Signaling by LRP5 mutants , TCF dependent signaling in response to WNT, Negative regulation of TCF-dependent signaling by WNT ligand antagonists\n  - Phenotypes of Associated Genes: Abnormal ocular adnexa morphology, Abnormal skin morphology, Abnormality of the palpebral fissures",
+    "graph_context_length": 478,
+    "graph_context_present": true,
+    "rerank_seconds": 0.333,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "describe"
+      },
+      {
+        "label": "ENTITY",
+        "text": "wnt signaling pathway"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair-follicle growth"
+      },
+      {
+        "label": "ENTITY",
+        "text": "cycling"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q102.json",
+    "retrieval_total_seconds": 0.3937,
+    "score_max": 1.7278716564178467,
+    "score_mean": 0.568615178267161,
+    "scores": [
+      1.7278716564178467,
+      0.3681876063346863,
+      -0.3902137279510498
+    ],
+    "selected_abstracts": [
+      "The WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.",
+      "The WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.",
+      "The WNT6 ligand is a well-known activator of the WNT signaling pathway, considered a vital player in several important physiologic processes during embryonic development and maintaining homeostasis throughout life, regulating the proliferation and differentiation of multiple stem/progenitor cell types. More recently, as it is the case for many key molecular regulators of embryonic development, dysregulation of WNT6 has been implicated in cancer development and progression in multiple studies. In this review, we overview the most significant recent findings regarding WNT6 in the context of human malignancies, exploring its influence on multiple dimensions of tumor pathophysiology and highlighting the putative underlying WNT6-associated molecular mechanisms. We also discuss the potential clinical implications of WNT6 as a prognostic and therapeutic biomarker. This critical review highlights the emerging relevance of WNT6 in multiple human cancers, and its potential as a clinically-useful biomarker, addressing key unanswered questions that could lead to new opportunities in patient diagnosis, stratification, and the development of rationally-designed precision therapies."
+    ],
+    "selected_pmids": [
+      "42378331",
+      "41218118",
+      "39529066"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0472
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:50:20.848003+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: Wnt signaling pathway (Type: GO_Term)\n  - Associated Genes: KREMEN1, FAM53B, LRP6, WNT3, DKK2, LGR4, AMER1, TMEM131L, WNT10A, WNT6, ZNRF3, RSPO2, FZD7, TLE4\n  - Pathways of Associated Genes: Signaling by LRP5 mutants , TCF dependent signaling in response to WNT, Negative regulation of TCF-dependent signaling by WNT ligand antagonists\n  - Phenotypes of Associated Genes: Abnormal ocular adnexa morphology, Abnormal skin morphology, Abnormality of the palpebral fissures\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 42378331, relevance: 1.7279) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n--- Abstract 2 (PMID: 41218118, relevance: 0.3682) ---\nThe WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.\n\n--- Abstract 3 (PMID: 39529066, relevance: -0.3902) ---\nThe WNT6 ligand is a well-known activator of the WNT signaling pathway, considered a vital player in several important physiologic processes during embryonic development and maintaining homeostasis throughout life, regulating the proliferation and differentiation of multiple stem/progenitor cell types. More recently, as it is the case for many key molecular regulators of embryonic development, dysregulation of WNT6 has been implicated in cancer development and progression in multiple studies. In this review, we overview the most significant recent findings regarding WNT6 in the context of human malignancies, exploring its influence on multiple dimensions of tumor pathophysiology and highlighting the putative underlying WNT6-associated molecular mechanisms. We also discuss the potential clinical implications of WNT6 as a prognostic and therapeutic biomarker. This critical review highlights the emerging relevance of WNT6 in multiple human cancers, and its potential as a clinically-useful biomarker, addressing key unanswered questions that could lead to new opportunities in patient diagnosis, stratification, and the development of rationally-designed precision therapies.\n\n\n\n**Question:**\nDescribe how the Wnt signaling pathway contributes to hair-follicle growth or cycling, based on the available evidence."
+}

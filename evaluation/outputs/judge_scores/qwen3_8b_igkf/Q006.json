@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q006",
+      "randomization_seed": "20260706:Q006:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q006",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q006",
+      "error": null,
+      "id": "batch_req_6a4d52b8a4588190b9345c2ded575d28",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452280,
+          "created_at": 1783452269,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_009a427cb6fc1a88006a4d526d017c81a1906762dc8ff4a1f0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q006"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_009a427cb6fc1a88006a4d526d817881a1997e7b55a5e6d032",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly summarizes the requested study-specific/integrated annotations for rs6152.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the provided evidence: AR implication, pathways, GO terms, PPIs, phenotypes, disease links, drug evidence, and regulatory element.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers nearly all important annotation categories and notes that the abstracts do not add rs6152-specific evidence.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Generally qualifies appropriately; slightly over-interprets the regulatory element as implying a regulatory variant, but remains cautious overall.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Mentions rs6152 and the annotation categories but does not answer the requested summary despite provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Contains no major biomedical false claims, but fails to use the supplied reference evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits essentially all available annotations for rs6152.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Unnecessarily abstains and asks for clarification when the evidence packet supplies the needed source information.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Attempts to summarize rs6152 annotations, but the content is largely about an incorrect gene/context.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Materially contradicts the evidence by assigning rs6152 to SLC25A48 with unsupported chromosome, position, alleles, functional claims, and database interpretations instead of AR.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key provided AR annotations, disease associations, PPIs, pathways, drugs, and regulatory element.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents many unsupported details with little appropriate qualification.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested summary of rs6152 annotations.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly accurate against the graph evidence, including AR, pathways, GO terms, phenotypes, PPIs, diseases, and several drugs; however it overstates that listed drugs interact with the variant and the answer is truncated.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers most major annotation categories, but the Open Targets drug evidence section is incomplete due to truncation and omits the regulatory element.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Some language appropriately says 'may,' but it also implies mechanistic drug-variant effects not supported by the evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_009a427cb6fc1a88006a4d5273915c81a199198f8b9d84cd63",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5036,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1120,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 6156
+          },
+          "user": null
+        },
+        "request_id": "c154e13c-31bc-4f40-a1a9-f5354afca536",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "2458748941abab1d90b4411a552ceaf86c01b1d81d74ada13816d749034da1d9",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q006",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q006.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q006::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q006::R1",
+      "error": null,
+      "id": "batch_req_6a4d19aa0bdc8190aeae6e0ecab11b3b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437426,
+          "created_at": 1783437419,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_02ad8d468f9022e5006a4d186ba4648194b1b242ca96f7344d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q006"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_02ad8d468f9022e5006a4d186c33e08194aff18405c7793ae9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": \"4\",\n    \"rationale\": \"Most listed annotations are directly supported by the supplied graph context, including AR, pathways, phenotypes, drugs, GO terms, PPIs, disease associations, and some drug evidence. However, several interpretive claims about functional influence, signaling effects, modulation of AR activity, and relevance to specific conditions go beyond the provided evidence, and the answer is truncated.\"\n  },\n  \"context_utilization\": {\n    \"score\": \"4\",\n    \"rationale\": \"The answer uses much of the important graph context, but omits the regulatory element annotation, does not clearly separate study-specific versus integrated annotations, incompletely reports Open Targets drug evidence, and does not note that the supplied vector abstracts do not appear directly relevant to rs6152.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_02ad8d468f9022e5006a4d1870ca4c8194abd0b0857a9ebbed",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3021,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 536,
+            "output_tokens_details": {
+              "reasoning_tokens": 348
+            },
+            "total_tokens": 3557
+          },
+          "user": null
+        },
+        "request_id": "25c97911-03e7-4f73-ab4b-18169836a94a",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the requested summary of rs6152 annotations.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Mostly accurate against the graph evidence, including AR, pathways, GO terms, phenotypes, PPIs, diseases, and several drugs; however it overstates that listed drugs interact with the variant and the answer is truncated.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers most major annotation categories, but the Open Targets drug evidence section is incomplete due to truncation and omits the regulatory element.",
+      "score": 4.0
+    },
+    "context_groundedness": {
+      "rationale": "Most listed annotations are directly supported by the supplied graph context, including AR, pathways, phenotypes, drugs, GO terms, PPIs, disease associations, and some drug evidence. However, several interpretive claims about functional influence, signaling effects, modulation of AR activity, and relevance to specific conditions go beyond the provided evidence, and the answer is truncated.",
+      "score": 4.0
+    },
+    "context_utilization": {
+      "rationale": "The answer uses much of the important graph context, but omits the regulatory element annotation, does not clearly separate study-specific versus integrated annotations, incompletely reports Open Targets drug evidence, and does not note that the supplied vector abstracts do not appear directly relevant to rs6152.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Some language appropriately says 'may,' but it also implies mechanistic drug-variant effects not supported by the evidence.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q006",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q006.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.254976+00:00"
+}

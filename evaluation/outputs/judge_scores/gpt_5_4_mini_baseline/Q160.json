@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q160",
+      "randomization_seed": "20260706:Q160:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q160",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q160",
+      "error": null,
+      "id": "batch_req_6a4d540a90a08190a889d146807dfeb9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452586,
+          "created_at": 1783452571,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0386279dcc10e9b4006a4d539b7bc08190a5f356fa11ff94d9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q160"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0386279dcc10e9b4006a4d539c06c08190ab4bb7aa176f2039",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses functional consequence and PAX1 evidence, but relies on unsupported PAX1 claims.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Regulatory/noncoding characterization is partly consistent with dELS annotation, but intronic/PAX1 proximity or association evidence is not supported by the supplied context.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers both requested elements, but the PAX1 evidence component is incorrect or unsupported.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Avoids asserting causality, but still invents an association-level PAX1 connection not present in the evidence.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the annotated consequence and whether there is evidence connecting rs929626 to PAX1.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies the dELS regulatory element annotation, EBF1 implication, and absence of PAX1 evidence in the supplied context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key regulatory-element consequence and appropriately addresses the lack of PAX1 support.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly avoids causal overstatement and distinguishes PBX1 from PAX1.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the functional annotation and PAX1 connection, though it misframes the functional consequence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly states there is no PAX1 evidence, but incorrectly treats EBF1 gene pathways/GO terms as the variant's functional consequence and omits the dELS regulatory element.\"},\"completeness\":{\"score\":3,\"rationale\":\"PAX1 component is adequate, but the central functional-consequence annotation is incomplete or misinterpreted.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately refrains from claiming a PAX1 connection, though it overstates variant involvement in listed pathways.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly attempts to answer both parts of the question.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Claims intergenic status, PAX1 proximity, cis-eQTL evidence, and splicing evidence that are not present in the supplied context; the evidence instead points to a dELS regulatory element and EBF1.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides many details, but most key evidence is unsupported and it omits the actual dELS/EBF1 annotation.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Notes causality is not established, but invents multiple unsupported PAX1 connections.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0386279dcc10e9b4006a4d53a4a9d88190b1a14cfe7e4de0e9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2942,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1333,
+            "output_tokens_details": {
+              "reasoning_tokens": 713
+            },
+            "total_tokens": 4275
+          },
+          "user": null
+        },
+        "request_id": "1e13ecad-e0e2-421f-9a3c-1265b232997f",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses functional consequence and PAX1 evidence, but relies on unsupported PAX1 claims.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Regulatory/noncoding characterization is partly consistent with dELS annotation, but intronic/PAX1 proximity or association evidence is not supported by the supplied context.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Covers both requested elements, but the PAX1 evidence component is incorrect or unsupported.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Avoids asserting causality, but still invents an association-level PAX1 connection not present in the evidence.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q160",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q160.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.244341+00:00"
+}

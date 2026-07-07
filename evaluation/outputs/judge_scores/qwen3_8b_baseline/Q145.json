@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q145",
+      "randomization_seed": "20260706:Q145:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q145",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q145",
+      "error": null,
+      "id": "batch_req_6a4d5409c484819096e43179c27c339f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452603,
+          "created_at": 1783452592,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03618ad0be097da7006a4d53b044a081938cb86cb63c25bedf",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q145"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03618ad0be097da7006a4d53b12e2c819382d8942c7018c2a5",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset does not support estimating the combined AR/SRD5A2 effect on hair-loss severity and explains why.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the supplied evidence concerns androgen biology/DSD and lacks hair-loss phenotypes, joint cohort data, or combined-effect analysis.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers missing phenotype, genotype, joint modeling, covariates, and biological validation needs.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately distinguishes biological plausibility from evidence sufficient to estimate an effect.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the key requirements for estimating a combined effect, though it is framed more conditionally and less explicitly tied to the provided dataset.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate: individual-level genotypes, hair-loss severity, covariates, and interaction/burden modeling would be needed.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes most important data and analysis requirements but does not explicitly discuss that the provided evidence is about DSD rather than hair loss.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies that summary annotations alone are insufficient and avoids overclaiming.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Gives general criteria but does not clearly answer whether the provided dataset supports the analysis.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The stated requirements are generally correct, but the answer does not evaluate the supplied evidence specifically.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions genotype, phenotype, covariates, power, and modeling, but omits the key observation that the current evidence lacks hair-loss outcomes and joint AR/SRD5A2 data.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Does not invent a positive finding, but remains overly generic instead of abstaining based on the insufficient supplied dataset.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers no and explains that the dataset lacks the needed hair-loss phenotype and combined-effect data.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly accurate against the evidence, though it overstates that there is no mention of genetic variants in either gene, since the abstracts do discuss AR/SRD5A2 variants in DSD contexts.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers need for genotype data, hair-loss severity, and statistical interaction analysis, but less clearly distinguishes absence of hair-loss phenotype from absence of all variant evidence.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately concludes insufficiency, with minor overstatement about the absence of variant information.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03618ad0be097da7006a4d53b5ee808193aa5847b2557870be",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4852,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1160,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 6012
+          },
+          "user": null
+        },
+        "request_id": "d80f9ab0-509f-4c88-b8e8-bf3de842699b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Gives general criteria but does not clearly answer whether the provided dataset supports the analysis.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The stated requirements are generally correct, but the answer does not evaluate the supplied evidence specifically.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Mentions genotype, phenotype, covariates, power, and modeling, but omits the key observation that the current evidence lacks hair-loss outcomes and joint AR/SRD5A2 data.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not invent a positive finding, but remains overly generic instead of abstaining based on the insufficient supplied dataset.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q145",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q145.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.233916+00:00"
+}

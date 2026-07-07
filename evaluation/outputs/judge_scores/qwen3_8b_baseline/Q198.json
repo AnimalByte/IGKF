@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A1",
+      "condition": "qwen3_8b_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q198",
+      "randomization_seed": "20260706:Q198:pass_a"
+    },
+    "answer_id": "A1",
+    "custom_id": "judge_pass_a_general_quality::Q198",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q198",
+      "error": null,
+      "id": "batch_req_6a4d540d3b488190aeabab0a4ce47a25",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452661,
+          "created_at": 1783452649,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f6ead10e6449e37006a4d53e938088196801f7cb2a5322c7f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q198"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f6ead10e6449e37006a4d53ea04b88196b107b6f61b683e2b",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses APOE \u03b54 as an Alzheimer\u2019s disease risk allele and explains plausible biological pathways.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly accurate: APOE \u03b54 is a major risk factor for late-onset AD and is linked to lipid biology, amyloid handling, inflammation, and neurodegeneration; some context-specific molecular claims are not substantiated here and the wording slightly overstates causality.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers increased risk and mechanistic pathways, but does not clearly mention dose dependence or that \u03b54 is not deterministic.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Uses some qualifying language such as 'likely,' but also presents unsupported context-specific claims and causal phrasing with limited qualification.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically accurate: identifies APOE \u03b54 as the strongest common genetic risk factor for late-onset AD, describes dose-dependent risk, earlier onset, and non-determinism.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers risk magnitude conceptually, dose dependence, non-deterministic nature, and key biological mechanisms.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies that \u03b54 increases susceptibility but does not guarantee disease.\"}},{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses APOE \u03b54 and Alzheimer\u2019s disease risk with mechanistic discussion.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"General claims are accurate, but the highly specific gene, proteomic, methylation, and Mendelian randomization claims are not verifiable from the prompt and may be over-specific.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides substantial mechanistic detail but omits clear mention of dose-dependent risk and that \u03b54 is not deterministic.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Some claims are qualified with 'may' and 'suggest,' but many detailed study-specific statements are presented as established without sufficient caveat.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the role of APOE \u03b54 in Alzheimer\u2019s disease risk.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately describes APOE \u03b54 as a major late-onset AD risk factor, provides generally accepted approximate risk increases, mechanisms, and non-deterministic nature.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes risk increase, allele-dose effect, major proposed mechanisms, and the important distinction between risk factor and definitive predictor.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies uncertainty about mechanisms and clearly states that \u03b54 is not determinative.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f6ead10e6449e37006a4d53f048b88196a3b94cea479f4700",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1995,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1165,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3160
+          },
+          "user": null
+        },
+        "request_id": "474aa420-55ed-4a28-9fc2-c882e1389a5e",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the role of APOE \u03b54 in Alzheimer\u2019s disease risk.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately describes APOE \u03b54 as a major late-onset AD risk factor, provides generally accepted approximate risk increases, mechanisms, and non-deterministic nature.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes risk increase, allele-dose effect, major proposed mechanisms, and the important distinction between risk factor and definitive predictor.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies uncertainty about mechanisms and clearly states that \u03b54 is not determinative.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q198",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.271239+00:00"
+}

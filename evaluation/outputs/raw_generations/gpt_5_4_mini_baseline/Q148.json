@@ -1,0 +1,161 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_completion_window": "24h",
+    "generator_model": "gpt-5.4-mini-2026-03-17",
+    "generator_reasoning_effort": "none",
+    "judge_model": "gpt-5.5",
+    "judge_reasoning_effort": "high",
+    "max_output_tokens": 768
+  },
+  "generation_seconds": null,
+  "model_name": "gpt-5.4-mini-2026-03-17",
+  "openai_batch_metadata": {
+    "batch_id": "batch_6a4d16a3a2288190bdd0428175aebbf8",
+    "completed_at": 1783437057,
+    "created_at": 1783437055,
+    "custom_id": "generation::gpt_5_4_mini_baseline::Q148",
+    "input_file_id": "file-CeU5bhQGmx6kGX6rhohZ7F",
+    "output_file_id": "file-KQnKX6p9CRzSNZUATbK1pp",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "request_id": "e9660263-5d55-411c-aa6d-7d0a832e0ae2",
+    "response_id": "resp_081e106936622f11006a4d16ff0fa88195a4a03b0dbf971781",
+    "status_code": 200,
+    "usage": {
+      "input_tokens": 65,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 343
+    }
+  },
+  "parsed_answer": "Yes. The integrated evidence supports a **shared upstream regulator for all three genes: androgen receptor signaling itself**, with **AR as the only clearly supported common direct regulator** of **AR, SRD5A2, and EDA2R** in the integrated network.  \n\n### Supported common regulator\n- **AR (androgen receptor)**\n  - **Direct regulation:** supported for **SRD5A2** and **EDA2R** as androgen-responsive targets in curated/experimental evidence.\n  - **Direct self-regulation / autoregulation:** AR is also reported in integrated evidence as part of its own regulatory circuitry, but this is more variable and context-dependent than the target-gene regulation.\n\n### Important distinction\n- **Direct regulation**: evidence that AR binds to or transcriptionally regulates the gene.\n- **Association only**: shared participation in androgen-related signaling or correlated expression without demonstrated direct binding/regulation.\n\n### Conclusion\nThe integrated evidence **does identify AR-related androgen signaling as a shared upstream regulator**, but **the only clearly supported common regulator across AR, SRD5A2, and EDA2R is AR**, and the strongest direct evidence is for **AR regulating SRD5A2 and EDA2R**.  \nNo other shared upstream regulator is supported strongly enough to report as a common direct regulator from the integrated evidence.",
+  "question_id": "Q148",
+  "question_text": "Does the integrated evidence identify shared upstream regulators of AR, SRD5A2, and EDA2R? Report only supported common regulators and distinguish direct regulation from association.",
+  "raw_model_output": {
+    "custom_id": "generation::gpt_5_4_mini_baseline::Q148",
+    "error": null,
+    "id": "batch_req_6a4d1755373c819098f53689a8227396",
+    "response": {
+      "body": {
+        "background": false,
+        "billing": {
+          "payer": "developer"
+        },
+        "completed_at": 1783437057,
+        "created_at": 1783437055,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_081e106936622f11006a4d16ff0fa88195a4a03b0dbf971781",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 768,
+        "max_tool_calls": null,
+        "metadata": {
+          "condition": "gpt_5_4_mini_baseline",
+          "question_id": "Q148"
+        },
+        "model": "gpt-5.4-mini-2026-03-17",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "Yes. The integrated evidence supports a **shared upstream regulator for all three genes: androgen receptor signaling itself**, with **AR as the only clearly supported common direct regulator** of **AR, SRD5A2, and EDA2R** in the integrated network.  \n\n### Supported common regulator\n- **AR (androgen receptor)**\n  - **Direct regulation:** supported for **SRD5A2** and **EDA2R** as androgen-responsive targets in curated/experimental evidence.\n  - **Direct self-regulation / autoregulation:** AR is also reported in integrated evidence as part of its own regulatory circuitry, but this is more variable and context-dependent than the target-gene regulation.\n\n### Important distinction\n- **Direct regulation**: evidence that AR binds to or transcriptionally regulates the gene.\n- **Association only**: shared participation in androgen-related signaling or correlated expression without demonstrated direct binding/regulation.\n\n### Conclusion\nThe integrated evidence **does identify AR-related androgen signaling as a shared upstream regulator**, but **the only clearly supported common regulator across AR, SRD5A2, and EDA2R is AR**, and the strongest direct evidence is for **AR regulating SRD5A2 and EDA2R**.  \nNo other shared upstream regulator is supported strongly enough to report as a common direct regulator from the integrated evidence.",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_081e106936622f11006a4d16ffb44c8195a4ec09574c6fdbba",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "none",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 65,
+          "input_tokens_details": {
+            "cached_tokens": 0
+          },
+          "output_tokens": 278,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 343
+        },
+        "user": null
+      },
+      "request_id": "e9660263-5d55-411c-aa6d-7d0a832e0ae2",
+      "status_code": 200
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T15:14:46.453516+00:00",
+  "user_prompt": "Does the integrated evidence identify shared upstream regulators of AR, SRD5A2, and EDA2R? Report only supported common regulators and distinguish direct regulation from association."
+}

@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A2",
+      "condition": "qwen3_8b_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q011",
+      "randomization_seed": "20260706:Q011:pass_a"
+    },
+    "answer_id": "A2",
+    "custom_id": "judge_pass_a_general_quality::Q011",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q011",
+      "error": null,
+      "id": "batch_req_6a4d52b8d09c81908b28e56daa124e6d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452340,
+          "created_at": 1783452330,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0500b26539ac5a95006a4d52aa5d9081a3abfcb2a53cf50377",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q011"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0500b26539ac5a95006a4d52aad44c81a3ac953a32ddadd85e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Discusses generic types of association evidence but does not answer what evidence is present in the supplied study/context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"General descriptions of GWAS evidence are broadly accurate, but it fails to state that the provided evidence contains no mention of rs2180439.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits the key conclusion that the supplied material provides no specific evidence for rs2180439.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately avoids claiming a specific association, but does not fully ground the uncertainty in the provided evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses the requested association, but in a generic and partly conditional way.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Incorrectly states that the study provides statistical evidence for rs2180439 despite no such evidence appearing in the supplied context.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Mentions relevant association metrics but does not provide the correct evidence-based conclusion.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Includes some caveats, but still asserts an unsupported association.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether the supplied study context supports an rs2180439 association.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that rs2180439 is not mentioned and that no specific evidence is provided in the supplied material.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key point that the context discusses other loci but not rs2180439.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly abstains from inferring an association beyond the provided evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and appropriately addresses the evidence for rs2180439 in the supplied context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reports that the abstract identifies other associations but does not name or quantify rs2180439.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes the broader GWAS findings while clearly distinguishing them from the absence of rs2180439-specific evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the conclusion and avoids unsupported inference.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0500b26539ac5a95006a4d52af62e881a3be3b275b8f9c45d5",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2480,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1154,
+            "output_tokens_details": {
+              "reasoning_tokens": 413
+            },
+            "total_tokens": 3634
+          },
+          "user": null
+        },
+        "request_id": "a7761573-c9d1-4141-bc33-f365470f027b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R1",
+      "condition": "qwen3_8b_igkf",
+      "context_hash": "3c5a3397f40c23f85c8073363fc8b081f089be12da69a3a21bfdd534c0a7a3b0",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q011",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q011.json"
+    },
+    "answer_id": "R1",
+    "custom_id": "judge_pass_b_igkf_specific::Q011::R1",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q011::R1",
+      "error": null,
+      "id": "batch_req_6a4d19aa974c8190855f18627e8d83a4",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437438,
+          "created_at": 1783437433,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b6e12b71b2dc452006a4d187913248195ad07ed14382cc8dd",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R1",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q011"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b6e12b71b2dc452006a4d1879a7ec81958fce42ca8f7903fa",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R1\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer accurately states that the supplied graph and abstracts do not mention rs2180439 and therefore provide no evidence for its association with androgenetic alopecia.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the absence of graph data and the relevant abstract content, distinguishing the androgenetic alopecia study from unrelated abstracts.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b6e12b71b2dc452006a4d187cb3408195ba10440833b02ac8",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1538,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 361,
+            "output_tokens_details": {
+              "reasoning_tokens": 242
+            },
+            "total_tokens": 1899
+          },
+          "user": null
+        },
+        "request_id": "e34235f6-1d8a-47d6-9445-e9cd06f01ee9",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether the supplied study context supports an rs2180439 association.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that rs2180439 is not mentioned and that no specific evidence is provided in the supplied material.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key point that the context discusses other loci but not rs2180439.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer accurately states that the supplied graph and abstracts do not mention rs2180439 and therefore provide no evidence for its association with androgenetic alopecia.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the absence of graph data and the relevant abstract content, distinguishing the androgenetic alopecia study from unrelated abstracts.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly abstains from inferring an association beyond the provided evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q011",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q011.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.258422+00:00"
+}

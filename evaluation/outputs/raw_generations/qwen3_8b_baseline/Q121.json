@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.0077,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "The strongest statistical association with male pattern baldness (androgenetic alopecia) is typically indicated by the smallest p-values from genome-wide association studies (GWAS). As of the latest research up to 2024, the variant with the strongest association is **rs12203592**, located in the **WNT10A** gene.\n\n### Key Findings:\n- **rs12203592 (WNT10A)**: This variant has been consistently associated with male pattern baldness across multiple GWAS. It shows the smallest p-values in several large-scale studies, including the **International Society of Hair Regeneration (ISHR) GWAS** and the **UK Biobank** study.\n- **Other notable variants**: Variants in the **FTO** gene and **EDAR** gene have also been associated with hair loss, but they typically show larger p-values compared to rs12203592.\n\n### Summary:\n- **Strongest association**: **rs12203592 (WNT10A)** with the smallest p-values.\n- **P-values**: Typically in the range of **10\u207b\u2078 to 10\u207b\u00b9\u2070**, depending on the study population and sample size.\n\nFor the most up-to-date and detailed information, you should refer to the latest published GWAS meta-analyses, such as those from the **International Society of Hair Regeneration** or **Nature Genetics**.",
+  "question_id": "Q121",
+  "question_text": "Which variants show the strongest statistical association with male pattern baldness, as indicated by the smallest p-values?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 311,
+    "prompt_token_count": 80,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The strongest statistical association with male pattern baldness (androgenetic alopecia) is typically indicated by the smallest p-values from genome-wide association studies (GWAS). As of the latest research up to 2024, the variant with the strongest association is **rs12203592**, located in the **WNT10A** gene.\n\n### Key Findings:\n- **rs12203592 (WNT10A)**: This variant has been consistently associated with male pattern baldness across multiple GWAS. It shows the smallest p-values in several large-scale studies, including the **International Society of Hair Regeneration (ISHR) GWAS** and the **UK Biobank** study.\n- **Other notable variants**: Variants in the **FTO** gene and **EDAR** gene have also been associated with hair loss, but they typically show larger p-values compared to rs12203592.\n\n### Summary:\n- **Strongest association**: **rs12203592 (WNT10A)** with the smallest p-values.\n- **P-values**: Typically in the range of **10\u207b\u2078 to 10\u207b\u00b9\u2070**, depending on the study population and sample size.\n\nFor the most up-to-date and detailed information, you should refer to the latest published GWAS meta-analyses, such as those from the **International Society of Hair Regeneration** or **Nature Genetics**."
+      }
+    ],
+    "created": 1783430608,
+    "id": "cmpl-6e8ad304-a1a0-4cfc-a5f3-b42adce2d1d1",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 311,
+      "prompt_tokens": 59,
+      "total_tokens": 370
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:23:28.885514+00:00",
+  "user_prompt": "Which variants show the strongest statistical association with male pattern baldness, as indicated by the smallest p-values?"
+}

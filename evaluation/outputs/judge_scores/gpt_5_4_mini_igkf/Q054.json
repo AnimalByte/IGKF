@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q054",
+      "randomization_seed": "20260706:Q054:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q054",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q054",
+      "error": null,
+      "id": "batch_req_6a4d52ba7ddc8190a9d6243fbda501b1",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452212,
+          "created_at": 1783452201,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00595af2b477f6eb006a4d52298a2081a3a565a714000eb08a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q054"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00595af2b477f6eb006a4d522a7ec081a3a370e66d013b4688",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Addresses AR-associated pathways generally, but not the specific integrated graph in the evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Lists several unsupported pathways and misses the graph-specific pathway annotations except for a broad nuclear receptor-related concept.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not provide the three pathways present in the graph and includes unnecessary generic guidance.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Acknowledges a need for graph context but proceeds to give unsupported pathway examples despite the supplied graph evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers which integrated-graph pathways include AR.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly identifies all three AR pathway annotations from the graph context.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Includes all required pathways without omitting any.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly stays grounded, though it adds brief interpretive comments beyond the exact graph evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly and specifically answers the question using the integrated graph context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"All listed pathways exactly match the supplied graph annotations for AR.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Provides the complete set of pathways connected to AR.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately confines the answer to the supplied graph context without unsupported additions.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Does not answer the supplied graph-specific question and instead asks for clarification.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Provides generic AR-associated pathways that are not the graph-specific pathway annotations and omits the correct set.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Fails to list the three pathways present in the integrated graph.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Shows some caution by asking for the graph, but unnecessary because the graph context was supplied and it still gives unsupported examples.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00595af2b477f6eb006a4d522f865081a3ac819b9bafdaf446",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3199,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1194,
+            "output_tokens_details": {
+              "reasoning_tokens": 509
+            },
+            "total_tokens": 4393
+          },
+          "user": null
+        },
+        "request_id": "0d975451-94ac-465b-9eaf-e33d56dfb787",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "e5ab9cebe94b1127b5c2abea9d337e1b4e0badce3d111865d248aac6b0c10ec9",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q054",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q054.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q054::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q054::R2",
+      "error": null,
+      "id": "batch_req_6a4d19b03e008190a19421ecebacc934",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437560,
+          "created_at": 1783437558,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_007b1cf5feb7cd7a006a4d18f668088196838f26d4521bca93",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q054"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_007b1cf5feb7cd7a006a4d18f6e05c8196a2e051c7bdf8a6bd",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answer_id\":\"R2\",\"context_groundedness\":{\"score\":5,\"rationale\":\"The answer exactly matches the three Gene Pathways listed for AR in the supplied graph context and does not add unsupported pathways.\"},\"context_utilization\":{\"score\":5,\"rationale\":\"The answer appropriately uses the relevant Gene Pathways field from the graph context and ignores irrelevant vector/context information.\"}}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_007b1cf5feb7cd7a006a4d18f76f948196afc069d9daa93f26",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2211,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 130,
+            "output_tokens_details": {
+              "reasoning_tokens": 47
+            },
+            "total_tokens": 2341
+          },
+          "user": null
+        },
+        "request_id": "f8f83468-8f2f-45b3-a954-7459c3d23832",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and specifically answers the question using the integrated graph context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "All listed pathways exactly match the supplied graph annotations for AR.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the complete set of pathways connected to AR.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer exactly matches the three Gene Pathways listed for AR in the supplied graph context and does not add unsupported pathways.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the relevant Gene Pathways field from the graph context and ignores irrelevant vector/context information.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately confines the answer to the supplied graph context without unsupported additions.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q054",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q054.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.285275+00:00"
+}

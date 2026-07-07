@@ -1,0 +1,186 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_igkf",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.9186,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "Based on the provided graph and vector contexts, there is no mention of any variants annotated as high impact that are mapped to the gene **LHX2**. The graph context lists interactions for the gene **IMPACT**, but it does not include **LHX2**. The vector contexts (abstracts) discuss various genes and SNPs, including **VAMP2**, **STX1A**, **SNAP25**, **FOXG1**, **DMD**, **CHKB**, **IQSEC2**, and **ALPL**, but none of these references mention **LHX2** or any variants associated with it. Therefore, the study does not provide evidence of high-impact variants mapped to **LHX2**.",
+  "question_id": "Q097",
+  "question_text": "Which variants annotated as high impact, if any, are mapped to LHX2 in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 149,
+    "prompt_token_count": 1695,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided graph and vector contexts, there is no mention of any variants annotated as high impact that are mapped to the gene **LHX2**. The graph context lists interactions for the gene **IMPACT**, but it does not include **LHX2**. The vector contexts (abstracts) discuss various genes and SNPs, including **VAMP2**, **STX1A**, **SNAP25**, **FOXG1**, **DMD**, **CHKB**, **IQSEC2**, and **ALPL**, but none of these references mention **LHX2** or any variants associated with it. Therefore, the study does not provide evidence of high-impact variants mapped to **LHX2**."
+      }
+    ],
+    "created": 1783432197,
+    "id": "cmpl-296e1f16-be17-41f2-8a39-8d85d05fd053",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 149,
+      "prompt_tokens": 1674,
+      "total_tokens": 1823
+    }
+  },
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.085426330566406,
+      35.84489440917969,
+      36.583499908447266,
+      37.32085418701172,
+      37.85110092163086,
+      37.96672058105469,
+      38.30169677734375,
+      38.35548400878906,
+      38.76812744140625,
+      38.910438537597656,
+      39.088539123535156,
+      39.09380340576172,
+      39.10010528564453,
+      39.24491882324219,
+      39.28456497192383
+    ],
+    "candidate_pmids": [
+      "41158885",
+      "42230622",
+      "42100494",
+      "40225922",
+      "36509868",
+      "37212325",
+      "37737258",
+      "41645416",
+      "42330953",
+      "41595523",
+      "41893925",
+      "39103847",
+      "41746858",
+      "40818193",
+      "37254524"
+    ],
+    "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to LHX2 in this study? Entity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+    "final_context": "Graph Context:\nEntity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)\n\nVector Context:\n--- Abstract 1 (PMID: 37254524, relevance: -4.8264) ---\nMost SNPs associated with complex diseases seem to lie in non-coding regions of the genome; however, their contribution to gene expression and disease phenotype remains poorly understood. Here, we established a workflow to provide assistance in prioritising the functional relevance of non-coding SNPs of candidate genes as susceptibility loci in polygenic neurological disorders. To illustrate the applicability of our workflow, we considered the multifactorial disorder migraine as a model to follow our step-by-step approach. We annotated the overlap of selected SNPs with regulatory elements and assessed their potential impact on gene expression based on publicly available prediction algorithms and functional genomics information. Some migraine risk loci have been hypothesised to reside in non-coding regions and to be implicated in the neurotransmission pathway. In this study, we used a set of 22 non-coding SNPs from neurotransmission and synaptic machinery-related genes previously suggested to be involved in migraine susceptibility based on our candidate gene association studies. After prioritising these SNPs, we focused on non-reported ones that demonstrated high regulatory potential: (1) VAMP2_rs1150 (3' UTR) was predicted as a target of hsa-mir-5010-3p miRNA, possibly disrupting its own gene expression; (2) STX1A_rs6951030 (proximal enhancer) may affect the binding affinity of zinc-finger transcription factors (namely ZNF423) and disturb TBL2 gene expression; and (3) SNAP25_rs2327264 (distal enhancer) expected to be in a binding site of ONECUT2 transcription factor. This study demonstrated the applicability of our practical workflow to facilitate the prioritisation of potentially relevant non-coding SNPs and predict their functional impact in multifactorial neurological diseases.\n\n--- Abstract 2 (PMID: 39103847, relevance: -5.5756) ---\nBACKGROUND AND OBJECTIVE: Autosomal recessive genetic disorders pose significant health challenges in regions where consanguineous marriages are prevalent. The utilization of exome sequencing as a frequently employed methodology has enabled a clear delineation of diagnostic efficacy and mode of inheritance within multiplex consanguineous families. However, these aspects remain less elucidated within simplex families. METHODS: In this study involving 12 unrelated simplex Iranian families presenting syndromic autism, we conducted singleton exome sequencing. The identified genetic variants were validated using Sanger sequencing, and for the missense variants in FOXG1 and DMD, 3D protein structure modeling was carried out to substantiate their pathogenicity. To examine the expression patterns of the candidate genes in the fetal brain, adult brain, and muscle, RT-qPCR was employed. RESULTS: In four families, we detected an autosomal dominant gene (FOXG1), an autosomal recessive gene (CHKB), and two X-linked autism genes (IQSEC2 and DMD), indicating diverse inheritance patterns. In the remaining eight families, we were unable to identify any disease-associated genes. As a result, our variant detection rate stood at 33.3% (4/12), surpassing rates reported in similar studies of smaller cohorts. Among the four newly identified coding variants, three are de novo (heterozygous variant p.Trp546Ter in IQSEC2, heterozygous variant p.Ala188Glu in FOXG1, and hemizygous variant p.Leu211Met in DMD), while the homozygous variant p.Glu128Ter in CHKB was inherited from both healthy heterozygous parents. 3D protein structure modeling was carried out for the missense variants in FOXG1 and DMD, which predicted steric hindrance and spatial inhibition, respectively, supporting the pathogenicity of these human mutants. Additionally, the nonsense variant in CHKB is anticipated to influence its dimerization - crucial for choline kinase function - and the nonsense variant in IQSEC2 is predicted to eliminate three functional domains. Consequently, these distinct variants found in four unrelated individuals with autism are likely indicative of loss-of-function mutations. CONCLUSIONS: In our two syndromic autism families, we discovered variants in two muscular dystrophy genes, DMD and CHKB. Given that DMD and CHKB are recognized for their participation in the non-cognitive manifestations of muscular dystrophy, it indicates that some genes transcend the boundary of apparently unrelated clinical categories, thereby establishing a novel connection between ASD and muscular dystrophy. Our findings also shed light on the complex inheritance patterns observed in Iranian consanguineous simplex families and emphasize the connection between autism spectrum disorder and muscular dystrophy. This underscores a likely genetic convergence between neurodevelopmental and neuromuscular disorders.\n\n--- Abstract 3 (PMID: 41158885, relevance: -5.5967) ---\nThis report aimed to describe two families of Mennonite heritage affected with hypophosphatasia (HPP) and biallelic ALPL c.1001G>A/c.571G>A in four individuals. Additionally, we conduct a systematic review of studies considering the above compound heterozygous genotype and present novel insights and evidence inferred from in silico predictions using Ensembl's Variant Effect Predictor (VEP) platform and STRING protein-protein interaction (PPI) network analysis to explore these genetic variations and plausible interacting pathways for the disorder that remain for consideration in future studies. Intrafamilial and interfamilial variability of phenotypes was observed in the four patients affected with the identical ALPL c.1001G>A/c.571G>A mutation. In contrast, in the seven unaffected family members, a specific genotype was not available. Seven eligible studies exploring ALPL c.1001G>A/c.571G>A were identified, and significant heterogeneity (P < 0.05) was observed across four studies. Ensembl VEP inferred a dual effect for rs121918007 and rs121918009, involving 17 variants located in the exome and four classified as non-coding associated with all HPP presentations, as well as serum alkaline phosphatase levels, choline phosphate levels, osteogenesis imperfecta, and inborn genetic diseases. PPI network modeling predicted 10 genes (PTS, NBPF3, SLC30A7, TPK1, NTPCR, BGLAP, RUNX2, ENPP1, SLC30A6, GCH1) interacting with ALPL, highlighting their potential impact on bone formation and homeostasis, metabolism, and gene expression. These results may shed light on HPP variability by disrupting key metabolic and transcriptional pathways and provide a comprehensive view of their functional relevance, which suggests a complex genetic etiology for HPP.\n\n",
+    "found_specific_entity": true,
+    "graph_context": "Entity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+    "graph_context_length": 244,
+    "graph_context_present": true,
+    "rerank_seconds": 0.3481,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "variants"
+      },
+      {
+        "label": "ENTITY",
+        "text": "annotated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "impact"
+      },
+      {
+        "label": "ENTITY",
+        "text": "mapped"
+      },
+      {
+        "label": "ENTITY",
+        "text": "lhx2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "study"
+      }
+    ],
+    "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q097.json",
+    "retrieval_total_seconds": 0.3974,
+    "score_max": -4.826351165771484,
+    "score_mean": -5.33288558324178,
+    "scores": [
+      -4.826351165771484,
+      -5.575628280639648,
+      -5.596677303314209
+    ],
+    "selected_abstracts": [
+      "Most SNPs associated with complex diseases seem to lie in non-coding regions of the genome; however, their contribution to gene expression and disease phenotype remains poorly understood. Here, we established a workflow to provide assistance in prioritising the functional relevance of non-coding SNPs of candidate genes as susceptibility loci in polygenic neurological disorders. To illustrate the applicability of our workflow, we considered the multifactorial disorder migraine as a model to follow our step-by-step approach. We annotated the overlap of selected SNPs with regulatory elements and assessed their potential impact on gene expression based on publicly available prediction algorithms and functional genomics information. Some migraine risk loci have been hypothesised to reside in non-coding regions and to be implicated in the neurotransmission pathway. In this study, we used a set of 22 non-coding SNPs from neurotransmission and synaptic machinery-related genes previously suggested to be involved in migraine susceptibility based on our candidate gene association studies. After prioritising these SNPs, we focused on non-reported ones that demonstrated high regulatory potential: (1) VAMP2_rs1150 (3' UTR) was predicted as a target of hsa-mir-5010-3p miRNA, possibly disrupting its own gene expression; (2) STX1A_rs6951030 (proximal enhancer) may affect the binding affinity of zinc-finger transcription factors (namely ZNF423) and disturb TBL2 gene expression; and (3) SNAP25_rs2327264 (distal enhancer) expected to be in a binding site of ONECUT2 transcription factor. This study demonstrated the applicability of our practical workflow to facilitate the prioritisation of potentially relevant non-coding SNPs and predict their functional impact in multifactorial neurological diseases.",
+      "BACKGROUND AND OBJECTIVE: Autosomal recessive genetic disorders pose significant health challenges in regions where consanguineous marriages are prevalent. The utilization of exome sequencing as a frequently employed methodology has enabled a clear delineation of diagnostic efficacy and mode of inheritance within multiplex consanguineous families. However, these aspects remain less elucidated within simplex families. METHODS: In this study involving 12 unrelated simplex Iranian families presenting syndromic autism, we conducted singleton exome sequencing. The identified genetic variants were validated using Sanger sequencing, and for the missense variants in FOXG1 and DMD, 3D protein structure modeling was carried out to substantiate their pathogenicity. To examine the expression patterns of the candidate genes in the fetal brain, adult brain, and muscle, RT-qPCR was employed. RESULTS: In four families, we detected an autosomal dominant gene (FOXG1), an autosomal recessive gene (CHKB), and two X-linked autism genes (IQSEC2 and DMD), indicating diverse inheritance patterns. In the remaining eight families, we were unable to identify any disease-associated genes. As a result, our variant detection rate stood at 33.3% (4/12), surpassing rates reported in similar studies of smaller cohorts. Among the four newly identified coding variants, three are de novo (heterozygous variant p.Trp546Ter in IQSEC2, heterozygous variant p.Ala188Glu in FOXG1, and hemizygous variant p.Leu211Met in DMD), while the homozygous variant p.Glu128Ter in CHKB was inherited from both healthy heterozygous parents. 3D protein structure modeling was carried out for the missense variants in FOXG1 and DMD, which predicted steric hindrance and spatial inhibition, respectively, supporting the pathogenicity of these human mutants. Additionally, the nonsense variant in CHKB is anticipated to influence its dimerization - crucial for choline kinase function - and the nonsense variant in IQSEC2 is predicted to eliminate three functional domains. Consequently, these distinct variants found in four unrelated individuals with autism are likely indicative of loss-of-function mutations. CONCLUSIONS: In our two syndromic autism families, we discovered variants in two muscular dystrophy genes, DMD and CHKB. Given that DMD and CHKB are recognized for their participation in the non-cognitive manifestations of muscular dystrophy, it indicates that some genes transcend the boundary of apparently unrelated clinical categories, thereby establishing a novel connection between ASD and muscular dystrophy. Our findings also shed light on the complex inheritance patterns observed in Iranian consanguineous simplex families and emphasize the connection between autism spectrum disorder and muscular dystrophy. This underscores a likely genetic convergence between neurodevelopmental and neuromuscular disorders.",
+      "This report aimed to describe two families of Mennonite heritage affected with hypophosphatasia (HPP) and biallelic ALPL c.1001G>A/c.571G>A in four individuals. Additionally, we conduct a systematic review of studies considering the above compound heterozygous genotype and present novel insights and evidence inferred from in silico predictions using Ensembl's Variant Effect Predictor (VEP) platform and STRING protein-protein interaction (PPI) network analysis to explore these genetic variations and plausible interacting pathways for the disorder that remain for consideration in future studies. Intrafamilial and interfamilial variability of phenotypes was observed in the four patients affected with the identical ALPL c.1001G>A/c.571G>A mutation. In contrast, in the seven unaffected family members, a specific genotype was not available. Seven eligible studies exploring ALPL c.1001G>A/c.571G>A were identified, and significant heterogeneity (P < 0.05) was observed across four studies. Ensembl VEP inferred a dual effect for rs121918007 and rs121918009, involving 17 variants located in the exome and four classified as non-coding associated with all HPP presentations, as well as serum alkaline phosphatase levels, choline phosphate levels, osteogenesis imperfecta, and inborn genetic diseases. PPI network modeling predicted 10 genes (PTS, NBPF3, SLC30A7, TPK1, NTPCR, BGLAP, RUNX2, ENPP1, SLC30A6, GCH1) interacting with ALPL, highlighting their potential impact on bone formation and homeostasis, metabolism, and gene expression. These results may shed light on HPP variability by disrupting key metabolic and transcriptional pathways and provide a comprehensive view of their functional relevance, which suggests a complex genetic etiology for HPP."
+    ],
+    "selected_pmids": [
+      "37254524",
+      "39103847",
+      "41158885"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0392
+  },
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph and literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-07T13:49:57.546034+00:00",
+  "user_prompt": "Please synthesize a coherent biological narrative that answers the user's question.\n\n**Graph Context (Structured Data):**\nEntity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)\n\n**Vector Context (Unstructured Abstracts):**\n--- Abstract 1 (PMID: 37254524, relevance: -4.8264) ---\nMost SNPs associated with complex diseases seem to lie in non-coding regions of the genome; however, their contribution to gene expression and disease phenotype remains poorly understood. Here, we established a workflow to provide assistance in prioritising the functional relevance of non-coding SNPs of candidate genes as susceptibility loci in polygenic neurological disorders. To illustrate the applicability of our workflow, we considered the multifactorial disorder migraine as a model to follow our step-by-step approach. We annotated the overlap of selected SNPs with regulatory elements and assessed their potential impact on gene expression based on publicly available prediction algorithms and functional genomics information. Some migraine risk loci have been hypothesised to reside in non-coding regions and to be implicated in the neurotransmission pathway. In this study, we used a set of 22 non-coding SNPs from neurotransmission and synaptic machinery-related genes previously suggested to be involved in migraine susceptibility based on our candidate gene association studies. After prioritising these SNPs, we focused on non-reported ones that demonstrated high regulatory potential: (1) VAMP2_rs1150 (3' UTR) was predicted as a target of hsa-mir-5010-3p miRNA, possibly disrupting its own gene expression; (2) STX1A_rs6951030 (proximal enhancer) may affect the binding affinity of zinc-finger transcription factors (namely ZNF423) and disturb TBL2 gene expression; and (3) SNAP25_rs2327264 (distal enhancer) expected to be in a binding site of ONECUT2 transcription factor. This study demonstrated the applicability of our practical workflow to facilitate the prioritisation of potentially relevant non-coding SNPs and predict their functional impact in multifactorial neurological diseases.\n\n--- Abstract 2 (PMID: 39103847, relevance: -5.5756) ---\nBACKGROUND AND OBJECTIVE: Autosomal recessive genetic disorders pose significant health challenges in regions where consanguineous marriages are prevalent. The utilization of exome sequencing as a frequently employed methodology has enabled a clear delineation of diagnostic efficacy and mode of inheritance within multiplex consanguineous families. However, these aspects remain less elucidated within simplex families. METHODS: In this study involving 12 unrelated simplex Iranian families presenting syndromic autism, we conducted singleton exome sequencing. The identified genetic variants were validated using Sanger sequencing, and for the missense variants in FOXG1 and DMD, 3D protein structure modeling was carried out to substantiate their pathogenicity. To examine the expression patterns of the candidate genes in the fetal brain, adult brain, and muscle, RT-qPCR was employed. RESULTS: In four families, we detected an autosomal dominant gene (FOXG1), an autosomal recessive gene (CHKB), and two X-linked autism genes (IQSEC2 and DMD), indicating diverse inheritance patterns. In the remaining eight families, we were unable to identify any disease-associated genes. As a result, our variant detection rate stood at 33.3% (4/12), surpassing rates reported in similar studies of smaller cohorts. Among the four newly identified coding variants, three are de novo (heterozygous variant p.Trp546Ter in IQSEC2, heterozygous variant p.Ala188Glu in FOXG1, and hemizygous variant p.Leu211Met in DMD), while the homozygous variant p.Glu128Ter in CHKB was inherited from both healthy heterozygous parents. 3D protein structure modeling was carried out for the missense variants in FOXG1 and DMD, which predicted steric hindrance and spatial inhibition, respectively, supporting the pathogenicity of these human mutants. Additionally, the nonsense variant in CHKB is anticipated to influence its dimerization - crucial for choline kinase function - and the nonsense variant in IQSEC2 is predicted to eliminate three functional domains. Consequently, these distinct variants found in four unrelated individuals with autism are likely indicative of loss-of-function mutations. CONCLUSIONS: In our two syndromic autism families, we discovered variants in two muscular dystrophy genes, DMD and CHKB. Given that DMD and CHKB are recognized for their participation in the non-cognitive manifestations of muscular dystrophy, it indicates that some genes transcend the boundary of apparently unrelated clinical categories, thereby establishing a novel connection between ASD and muscular dystrophy. Our findings also shed light on the complex inheritance patterns observed in Iranian consanguineous simplex families and emphasize the connection between autism spectrum disorder and muscular dystrophy. This underscores a likely genetic convergence between neurodevelopmental and neuromuscular disorders.\n\n--- Abstract 3 (PMID: 41158885, relevance: -5.5967) ---\nThis report aimed to describe two families of Mennonite heritage affected with hypophosphatasia (HPP) and biallelic ALPL c.1001G>A/c.571G>A in four individuals. Additionally, we conduct a systematic review of studies considering the above compound heterozygous genotype and present novel insights and evidence inferred from in silico predictions using Ensembl's Variant Effect Predictor (VEP) platform and STRING protein-protein interaction (PPI) network analysis to explore these genetic variations and plausible interacting pathways for the disorder that remain for consideration in future studies. Intrafamilial and interfamilial variability of phenotypes was observed in the four patients affected with the identical ALPL c.1001G>A/c.571G>A mutation. In contrast, in the seven unaffected family members, a specific genotype was not available. Seven eligible studies exploring ALPL c.1001G>A/c.571G>A were identified, and significant heterogeneity (P < 0.05) was observed across four studies. Ensembl VEP inferred a dual effect for rs121918007 and rs121918009, involving 17 variants located in the exome and four classified as non-coding associated with all HPP presentations, as well as serum alkaline phosphatase levels, choline phosphate levels, osteogenesis imperfecta, and inborn genetic diseases. PPI network modeling predicted 10 genes (PTS, NBPF3, SLC30A7, TPK1, NTPCR, BGLAP, RUNX2, ENPP1, SLC30A6, GCH1) interacting with ALPL, highlighting their potential impact on bone formation and homeostasis, metabolism, and gene expression. These results may shed light on HPP variability by disrupting key metabolic and transcriptional pathways and provide a comprehensive view of their functional relevance, which suggests a complex genetic etiology for HPP.\n\n\n\n**Question:**\nWhich variants annotated as high impact, if any, are mapped to LHX2 in this study?"
+}

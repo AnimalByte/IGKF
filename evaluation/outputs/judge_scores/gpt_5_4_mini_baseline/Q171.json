@@ -1,0 +1,157 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "gpt_5_4_mini_baseline",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A3",
+      "condition": "gpt_5_4_mini_baseline",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q171",
+      "randomization_seed": "20260706:Q171:pass_a"
+    },
+    "answer_id": "A3",
+    "custom_id": "judge_pass_a_general_quality::Q171",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783452399_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q171",
+      "error": null,
+      "id": "batch_req_6a4d540b9f288190b7795c4f15a17e44",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452661,
+          "created_at": 1783452641,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04d84ff74ddba605006a4d53e1d3a0819098ab33aa6b465eb6",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q171"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04d84ff74ddba605006a4d53e33400819087d42521ad020dbc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"A4\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether the dataset supports shared genetics and addresses the unsupported comparison.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that AGA genetics are represented but TE is not analyzed, so shared genetic evidence is absent.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly separates direct dataset evidence from external speculation and provides a concise conclusion.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids unsupported inference and explicitly labels the comparison unsupported.\"\n      }\n    },\n    {\n      \"answer_id\": \"A3\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the general question framework but does not make a dataset-specific determination.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Describes appropriate types of genetic evidence without clear biomedical errors, but does not apply them to the dataset.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Includes criteria for evidence and distinguishes external inference, but omits a definitive answer for the supplied dataset.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly abstains from drawing conclusions when claiming insufficient dataset access.\"\n      }\n    },\n    {\n      \"answer_id\": \"A1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that the dataset does not support a shared genetic basis.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly distinguishes AGA as genetically and hormonally influenced and TE as generally trigger-related, with no dataset evidence for overlap.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers direct evidence, external knowledge, and conclusion, though with less dataset-specific detail.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Avoids unsupported claims and clearly states that the comparison is unsupported.\"\n      }\n    },\n    {\n      \"answer_id\": \"A2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the dataset comparison and states that it is unsupported.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly accurate, but the external-knowledge claim that AGA and TE may share genetic pathways is speculative and not well supported.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Distinguishes direct study evidence from external knowledge and gives a conclusion, but includes somewhat unnecessary speculative biology.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly qualifies that shared genetics are not confirmed in the dataset, though it somewhat overstates external support.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04d84ff74ddba605006a4d53f030288190b24c667458a4d688",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1649,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1760,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 3409
+          },
+          "user": null
+        },
+        "request_id": "54b71a22-a021-4471-aa9b-bcdc5d45906e",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the general question framework but does not make a dataset-specific determination.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Describes appropriate types of genetic evidence without clear biomedical errors, but does not apply them to the dataset.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Includes criteria for evidence and distinguishes external inference, but omits a definitive answer for the supplied dataset.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly abstains from drawing conclusions when claiming insufficient dataset access.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q171",
+  "reference_evidence_packet_id": null,
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:33.252317+00:00"
+}

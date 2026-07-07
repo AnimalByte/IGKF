@@ -1,0 +1,94 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_baseline",
+  "error": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.8076,
+  "model_name": "Qwen3-8B",
+  "parsed_answer": "To provide an accurate answer, I would need access to specific integrated data sources that link drugs to genes or targets in the androgen metabolism pathway. However, based on general knowledge of pharmacogenomics and drug-target interactions, several drugs are known to interact with components of the androgen metabolism pathway. These include:\n\n1. **Finasteride** - Inhibits 5-alpha-reductase, an enzyme involved in converting testosterone to dihydrotestosterone (DHT).\n2. **Dutasteride** - Also inhibits 5-alpha-reductase, but more broadly than finasteride.\n3. **Cyproterone acetate** - Acts as an anti-androgen by blocking androgen receptors and inhibiting testosterone synthesis.\n4. **Bicalutamide** - An anti-androgen that blocks the androgen receptor.\n5. **Flutamide** - Another anti-androgen that inhibits the androgen receptor.\n6. **Testosterone derivatives** - Such as testosterone propionate or enanthate, which are used in hormone replacement therapy and may influence androgen metabolism.\n7. **Spironolactone** - While primarily a mineralocorticoid receptor antagonist, it also has anti-androgenic properties by blocking androgen receptors.\n\nThese drugs are associated with genes or proteins involved in androgen metabolism, such as **5-alpha-reductase (SRD5A1 and SRD5A2)**, **androgen receptor (AR)**, and enzymes involved in steroidogenesis.\n\nFor a precise list of drugs linked to genes or targets in the androgen metabolism pathway from a specific integrated dataset, you would need to consult a pharmacogenomic database such as **PharmGKB**, **DrugBank**, or **CTD (Comparative Toxicogenomics Database)**. If you have access to such data, you can query it using tools like CTD's API or web interface to find specific drug-gene or drug-target associations.",
+  "question_id": "Q107",
+  "question_text": "Which drugs, if any, are linked in the integrated data to genes or targets in the androgen metabolism pathway?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 398,
+    "prompt_token_count": 82,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "To provide an accurate answer, I would need access to specific integrated data sources that link drugs to genes or targets in the androgen metabolism pathway. However, based on general knowledge of pharmacogenomics and drug-target interactions, several drugs are known to interact with components of the androgen metabolism pathway. These include:\n\n1. **Finasteride** - Inhibits 5-alpha-reductase, an enzyme involved in converting testosterone to dihydrotestosterone (DHT).\n2. **Dutasteride** - Also inhibits 5-alpha-reductase, but more broadly than finasteride.\n3. **Cyproterone acetate** - Acts as an anti-androgen by blocking androgen receptors and inhibiting testosterone synthesis.\n4. **Bicalutamide** - An anti-androgen that blocks the androgen receptor.\n5. **Flutamide** - Another anti-androgen that inhibits the androgen receptor.\n6. **Testosterone derivatives** - Such as testosterone propionate or enanthate, which are used in hormone replacement therapy and may influence androgen metabolism.\n7. **Spironolactone** - While primarily a mineralocorticoid receptor antagonist, it also has anti-androgenic properties by blocking androgen receptors.\n\nThese drugs are associated with genes or proteins involved in androgen metabolism, such as **5-alpha-reductase (SRD5A1 and SRD5A2)**, **androgen receptor (AR)**, and enzymes involved in steroidogenesis.\n\nFor a precise list of drugs linked to genes or targets in the androgen metabolism pathway from a specific integrated dataset, you would need to consult a pharmacogenomic database such as **PharmGKB**, **DrugBank**, or **CTD (Comparative Toxicogenomics Database)**. If you have access to such data, you can query it using tools like CTD's API or web interface to find specific drug-gene or drug-target associations."
+      }
+    ],
+    "created": 1783430525,
+    "id": "cmpl-20ca8bee-0627-4c74-9783-27ebf9fb49f2",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 398,
+      "prompt_tokens": 61,
+      "total_tokens": 459
+    }
+  },
+  "retrieval_metadata": null,
+  "schema_version": "paper_generation_v1",
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question directly and accurately. Avoid unsupported claims.",
+  "timestamp": "2026-07-07T13:22:05.834202+00:00",
+  "user_prompt": "Which drugs, if any, are linked in the integrated data to genes or targets in the androgen metabolism pathway?"
+}

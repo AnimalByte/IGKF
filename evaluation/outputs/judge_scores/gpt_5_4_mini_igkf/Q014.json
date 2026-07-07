@@ -1,0 +1,290 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "gpt_5_4_mini_igkf",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass_a": {
+    "anonymous_answer_mapping": {
+      "answer_id": "A4",
+      "condition": "gpt_5_4_mini_igkf",
+      "pass": "judge_pass_a_general_quality",
+      "question_id": "Q014",
+      "randomization_seed": "20260706:Q014:pass_a"
+    },
+    "answer_id": "A4",
+    "custom_id": "judge_pass_a_general_quality::Q014",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_a_general_quality_1783441182_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_a_general_quality::Q014",
+      "error": null,
+      "id": "batch_req_6a4d52b8d3d08190b64758ee9f6776a7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783452340,
+          "created_at": 1783452330,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a0fa58da303f7e5006a4d52aa4798819eab579f4145e447d7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4096,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "judge_pass_a_general_quality",
+            "question_id": "Q014"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a0fa58da303f7e5006a4d52aaba50819eae26701ba1588483",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"A2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the requested p-value is available in the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that the provided evidence does not report rs2180439 or its p-value.\"},\"completeness\":{\"score\":4,\"rationale\":\"Gives the key answer, though with minimal explanation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing a value.\"}},{\"answer_id\":\"A3\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly provides a p-value for the asked association.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"The p-value is not supported by the supplied evidence, which contains no rs2180439-specific result.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides the requested type of value, but it is unsupported and lacks qualification.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents or asserts an unsupported conclusion despite insufficient evidence.\"}},{\"answer_id\":\"A1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses inability to provide the p-value, but does not specifically discuss the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately indicates the p-value cannot be determined from the available information, though it frames the issue as lacking study context.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides a reasonable abstention but adds generic advice rather than focusing on the provided context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies uncertainty and does not invent a p-value.\"}},{\"answer_id\":\"A4\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the requested p-value cannot be determined from the supplied materials.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly notes that rs2180439 and a variant-specific p-value are absent from the provided graph and abstracts.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key evidence limitation and gives the resulting answer clearly.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains due to insufficient evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a0fa58da303f7e5006a4d52b0c678819e99c4233e03ee443c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2064,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1000,
+            "output_tokens_details": {
+              "reasoning_tokens": 497
+            },
+            "total_tokens": 3064
+          },
+          "user": null
+        },
+        "request_id": "a41df0fe-52aa-4811-9e92-6a0e99c73cf6",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_pass_b": {
+    "anonymous_answer_mapping": {
+      "answer_id": "R2",
+      "condition": "gpt_5_4_mini_igkf",
+      "context_hash": "fe3cd670ad10187115d53e31b9c9885fc8849ff5923eb20552bc2b6dda60caf9",
+      "pass": "judge_pass_b_igkf_specific",
+      "question_id": "Q014",
+      "retrieval_package_path": "evaluation/outputs/retrieval_packages/Q014.json"
+    },
+    "answer_id": "R2",
+    "custom_id": "judge_pass_b_igkf_specific::Q014::R2",
+    "manifest": "evaluation/outputs/batch_metadata/judge_pass_b_igkf_specific_1783437309_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "judge_pass_b_igkf_specific::Q014::R2",
+      "error": null,
+      "id": "batch_req_6a4d19aab7b481908111c1c889913dc5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783437445,
+          "created_at": 1783437442,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_008b381d23be95f7006a4d18822ebc819693ebbaedf8057951",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 768,
+          "max_tool_calls": null,
+          "metadata": {
+            "answer_id": "R2",
+            "pass": "judge_pass_b_igkf_specific",
+            "question_id": "Q014"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_008b381d23be95f7006a4d1882b1048196a6b7b0ead1fe241d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answer_id\": \"R2\",\n  \"context_groundedness\": {\n    \"score\": 5,\n    \"rationale\": \"The answer correctly states that the supplied graph has no relevant data and the abstracts do not mention rs2180439 or a p-value for its association with androgenetic alopecia.\"\n  },\n  \"context_utilization\": {\n    \"score\": 5,\n    \"rationale\": \"The answer appropriately uses the absence of relevant graph data and the limited abstract evidence to conclude that the requested p-value cannot be determined from the supplied context.\"\n  }\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_008b381d23be95f7006a4d1884855c81968fadc6b3bbafd02f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1629,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 264,
+            "output_tokens_details": {
+              "reasoning_tokens": 137
+            },
+            "total_tokens": 1893
+          },
+          "user": null
+        },
+        "request_id": "02a02856-2634-4216-9f50-eabdbc29f70b",
+        "status_code": 200
+      }
+    }
+  },
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that the requested p-value cannot be determined from the supplied materials.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes that rs2180439 and a variant-specific p-value are absent from the provided graph and abstracts.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key evidence limitation and gives the resulting answer clearly.",
+      "score": 5.0
+    },
+    "context_groundedness": {
+      "rationale": "The answer correctly states that the supplied graph has no relevant data and the abstracts do not mention rs2180439 or a p-value for its association with androgenetic alopecia.",
+      "score": 5.0
+    },
+    "context_utilization": {
+      "rationale": "The answer appropriately uses the absence of relevant graph data and the limited abstract evidence to conclude that the requested p-value cannot be determined from the supplied context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains due to insufficient evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q014",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q014.json",
+  "schema_version": "paper_judge_batch_v1",
+  "timestamp": "2026-07-07T19:57:39.260578+00:00"
+}
