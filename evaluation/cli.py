@@ -55,8 +55,18 @@ def main() -> None:
     prep_judge.add_argument("--question-ids")
     prep_judge.add_argument("--force", action="store_true")
 
+    prep_pairwise = sub.add_parser("prepare-pairwise-judge", help="Prepare blinded bidirectional pairwise GraphRAG judge JSONL.")
+    add_common(prep_pairwise)
+    prep_pairwise.add_argument("--limit", type=int)
+    prep_pairwise.add_argument("--question-ids")
+    prep_pairwise.add_argument("--force", action="store_true")
+    prep_pairwise.add_argument("--dry-run", action="store_true")
+    prep_pairwise.add_argument("--judge-model")
+    prep_pairwise.add_argument("--reasoning-effort")
+    prep_pairwise.add_argument("--max-output-tokens", type=int)
+
     batch = sub.add_parser("batch", help="Submit, refresh, download, or normalize an OpenAI Batch manifest.")
-    batch.add_argument("action", choices=["submit", "status", "download", "normalize-generations", "normalize-judges"])
+    batch.add_argument("action", choices=["submit", "status", "download", "normalize-generations", "normalize-judges", "normalize-pairwise"])
     batch.add_argument("manifest")
     batch.add_argument("--force", action="store_true", help="Only used by normalize actions.")
 
@@ -65,6 +75,9 @@ def main() -> None:
     analysis.add_argument("--skip-retrieval", action="store_true")
     analysis.add_argument("--skip-figures", action="store_true")
     analysis.add_argument("--force-manifest", action="store_true")
+
+    extended = sub.add_parser("analyze-extended", help="Run ceiling, distribution, paired, and interaction diagnostics.")
+    add_common(extended)
 
     manifest = sub.add_parser("manifest", help="Create publication artifact hash manifest.")
     add_common(manifest)
@@ -115,7 +128,30 @@ def main() -> None:
             forwarded.append("--force")
         raise SystemExit(run_module("evaluation.openai_batch", forwarded))
 
+    if args.command == "prepare-pairwise-judge":
+        forwarded = ["prepare", "--config", args.config]
+        if args.limit is not None:
+            forwarded += ["--limit", str(args.limit)]
+        if args.question_ids:
+            forwarded += ["--question-ids", args.question_ids]
+        if args.force:
+            forwarded.append("--force")
+        if args.dry_run:
+            forwarded.append("--dry-run")
+        if args.judge_model:
+            forwarded += ["--judge-model", args.judge_model]
+        if args.reasoning_effort:
+            forwarded += ["--reasoning-effort", args.reasoning_effort]
+        if args.max_output_tokens is not None:
+            forwarded += ["--max-output-tokens", str(args.max_output_tokens)]
+        raise SystemExit(run_module("evaluation.pairwise_judge", forwarded))
+
     if args.command == "batch":
+        if args.action == "normalize-pairwise":
+            forwarded = ["normalize", args.manifest]
+            if args.force:
+                forwarded.append("--force")
+            raise SystemExit(run_module("evaluation.pairwise_judge", forwarded))
         forwarded = [args.action, args.manifest]
         if args.force:
             forwarded.append("--force")
@@ -138,6 +174,9 @@ def main() -> None:
         if args.force_manifest:
             forwarded.append("--force")
         raise SystemExit(run_module("evaluation.create_publication_manifest", forwarded))
+
+    if args.command == "analyze-extended":
+        raise SystemExit(run_module("evaluation.extended_analysis", ["--config", args.config]))
 
     if args.command == "manifest":
         forwarded = ["--config", args.config]

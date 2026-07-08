@@ -47,6 +47,18 @@ def main() -> None:
         path = stats / name
         if path.exists():
             pd.read_csv(path).to_csv(tables / name, index=False)
+
+    pairwise = output_root / "pairwise_judge"
+    for name in [
+        "final_pairwise_graphrag_qwen_vs_mini_pairwise_summary.csv",
+        "final_pairwise_graphrag_qwen_vs_mini_pairwise_results.csv",
+    ]:
+        path = pairwise / name
+        if path.exists():
+            pd.read_csv(path).to_csv(tables / name, index=False)
+    stats_json = pairwise / "final_pairwise_graphrag_qwen_vs_mini_pairwise_statistics.json"
+    if stats_json.exists():
+        (tables / stats_json.name).write_text(stats_json.read_text())
     print(f"Tables written to {tables}")
 
 

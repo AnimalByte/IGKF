@@ -671,6 +671,51 @@ The statistical analysis uses paired Wilcoxon signed-rank tests for the within-m
 
 Publication-oriented figures are generated from `evaluation/outputs/statistics/judge_scores_long.csv` with deterministic bootstrap 95% confidence intervals and are written as PNG, SVG, and PDF files under `evaluation/outputs/figures/`.
 
+For the post-hoc convergence and ceiling-effect diagnostics, run:
+
+```bash
+conda activate gwas-env
+python -m evaluation.cli analyze-extended
+```
+
+This reads the existing normalized judge scores only. It writes score distributions, ceiling proportions, paired question-level deltas, four planned paired comparisons with Holm correction, a documented nonparametric fallback for the 2 x 2 model-by-GraphRAG analysis, and publication figures under `evaluation/outputs/extended_analysis/`.
+
+For the secondary blinded pairwise comparison between the two GraphRAG systems, prepare and inspect the bidirectional Batch job before submitting:
+
+```bash
+conda activate gwas-env
+python -m evaluation.cli prepare-pairwise-judge --dry-run
+python -m evaluation.cli prepare-pairwise-judge
+```
+
+This compares only `qwen3_8b_igkf` and `gpt_5_4_mini_igkf`, randomizes A/B assignment by question with a fixed seed, creates a reversed-orientation request for position-bias control, and stores the hidden mapping separately from the judge prompts. Do not submit the manifest until the request count and cost estimate have been reviewed.
+
+After an approved Batch run is downloaded, normalize and analyze the pairwise results with:
+
+```bash
+python -m evaluation.cli batch normalize-pairwise evaluation/outputs/batch_metadata/<pairwise_manifest>.json
+```
+
+The completed pairwise analysis used GPT-5.5 as the judge and compared only the two GraphRAG conditions. Final reconciled outcomes were:
+
+- Qwen + GraphRAG wins: 23/205 (11.2%)
+- GPT-5.4 mini + GraphRAG wins: 165/205 (80.5%)
+- Ties: 8/205 (3.9%)
+- Position-unstable cases: 9/205 (4.4%)
+- Parse/incomplete cases after targeted retries: 0
+
+Among decisive non-unstable comparisons, Qwen's win rate was 0.122 (95% CI 0.079-0.178; exact binomial p = 1.14e-27). This secondary analysis indicates that equal median absolute scores do not establish model equivalence; the direct blinded pairwise judge still distinguished the two GraphRAG systems under this benchmark and judge.
+
+Paper-facing pairwise outputs are copied to:
+
+- `evaluation/outputs/tables/final_pairwise_graphrag_qwen_vs_mini_pairwise_summary.csv`
+- `evaluation/outputs/tables/final_pairwise_graphrag_qwen_vs_mini_pairwise_results.csv`
+- `evaluation/outputs/tables/final_pairwise_graphrag_qwen_vs_mini_pairwise_statistics.json`
+- `evaluation/outputs/figures/figure_5_pairwise_graphrag_outcome_proportions.*`
+- `evaluation/outputs/figures/figure_6_pairwise_graphrag_decisive_win_share.*`
+
+The actual recorded Batch usage across the initial run and targeted retries was 1,143,611 input tokens and 119,835 output tokens, with an estimated Batch cost of about $4.66.
+
 ### 6.8 Output Layout
 
 ```text
@@ -684,6 +729,8 @@ evaluation/outputs/
 ├── statistics/             # Long-form scores, summaries, Wilcoxon tests
 ├── tables/                 # Paper-facing CSV tables
 ├── figures/                # PNG/SVG/PDF figures with 95% bootstrap CIs
+├── extended_analysis/      # Ceiling, distribution, paired-delta diagnostics
+├── pairwise_judge/         # Blinded pairwise GraphRAG judge outputs
 └── metadata/               # Benchmark validation, reproducibility, and publication manifests
 ```
 
