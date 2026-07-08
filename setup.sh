@@ -69,7 +69,6 @@ pip install --no-cache-dir \
     "langchain-openai==0.3.35" \
     "langchain-text-splitters==0.3.11" \
     "langsmith==0.4.42" \
-    "ragas==0.4.3" \
     "datasets==4.4.1" \
     "openai==2.7.2" \
     "tqdm==4.67.1" \
@@ -101,7 +100,6 @@ python -c "import scispacy; print(f'✓ SciSpaCy {scispacy.__version__}')" || ec
 python -c "import torch; print(f'✓ PyTorch {torch.__version__} (CUDA: {torch.cuda.is_available()})')" || echo "✗ PyTorch failed"
 python -c "import neo4j; print(f'✓ Neo4j driver installed')" || echo "✗ Neo4j driver failed"
 python -c "import chromadb; print(f'✓ ChromaDB {chromadb.__version__}')" || echo "✗ ChromaDB failed"
-python -c "import ragas; print(f'✓ RAGAS {ragas.__version__}')" || echo "✗ RAGAS failed"
 python -c "import langchain; print(f'✓ LangChain {langchain.__version__}')" || echo "✗ LangChain failed"
 python -c "import llama_cpp; print(f'✓ llama-cpp-python {llama_cpp.__version__}')" || echo "✗ llama-cpp-python failed"
 python -c "import openai; print(f'✓ OpenAI {openai.__version__}')" || echo "✗ OpenAI failed"

@@ -98,7 +98,6 @@ This project uses a carefully versioned environment for reproducibility:
 - **LangChain OpenAI**: 0.3.35
 
 ### Evaluation & Datasets
-- **RAGAS**: 0.4.3
 - **Datasets**: 4.4.1 (HuggingFace)
 - **Matplotlib**: 3.10.9 (publication figures)
 
@@ -140,7 +139,6 @@ Integrative-Genomic-Knowledge-Framework-IGKF-main/
 ├── setup.sh                             # Environment setup script
 ├── run_pipeline.sh                      # Master pipeline runner
 ├── clean.sh                             # Utility cleaner
-├── 0_ragas_evaluation.py                # Deprecated legacy entry point
 ├── 1_neo4j_base_importer.py
 ├── 1.5_gwas_context_importer.py
 ├── 2_go_importer.py
@@ -738,7 +736,7 @@ evaluation/outputs/
 
 ## 7. Deprecated Evaluation Entry Points
 
-`0_ragas_evaluation.py` and `test_local.py` are retained as guarded compatibility entry points only. They no longer run the paper experiment because the old flow mixed generation, judging, and ambiguous faithfulness scoring in one place.
+`test_local.py` is retained as a guarded compatibility smoke entry point only. Deprecated legacy evaluation entry points are not part of the paper experiment, which uses the canonical `evaluation/` pipeline and OpenAI Batch judge outputs.
 
 ---
 
@@ -962,7 +960,6 @@ For issues, questions, or contributions:
 | SciSpaCy | 0.5.5 | NER for biomedical text |
 | Neo4j | 5.18.0 | Community Edition via Docker |
 | ChromaDB | 1.3.4 | Vector store |
-| RAGAS | 0.4.3 | Installed for legacy compatibility; not the canonical paper judge |
 | LangChain | 0.3.27 | Pipeline compatibility |
 | Sentence Transformers | 5.1.2 | Embedding models |
 | Transformers | 4.57.1 | HuggingFace models |

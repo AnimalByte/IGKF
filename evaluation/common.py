@@ -253,7 +253,7 @@ def run_cmd(args: List[str]) -> Optional[str]:
 def collect_repro_metadata(config: Dict[str, Any], config_path: Path) -> Dict[str, Any]:
     benchmark_path = Path(config["experiment"]["benchmark_path"])
     package_versions = {}
-    for name in ["llama_cpp_python", "transformers", "torch", "chromadb", "ragas", "openai", "spacy", "scispacy"]:
+    for name in ["llama_cpp_python", "transformers", "torch", "chromadb", "openai", "spacy", "scispacy"]:
         out = run_cmd([sys.executable, "-m", "pip", "show", name])
         if out:
             for line in out.splitlines():
