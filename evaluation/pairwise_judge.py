@@ -692,6 +692,13 @@ def save_figure(fig, figures_dir: Path, name: str, force: bool) -> List[str]:
     return paths
 
 
+def exact_binomial_ci_percent(count: int, total: int) -> Tuple[float, float]:
+    if total <= 0:
+        return math.nan, math.nan
+    ci = binomtest(count, total, p=0.5).proportion_ci(confidence_level=0.95, method="exact")
+    return float(ci.low * 100), float(ci.high * 100)
+
+
 def make_pairwise_plots(results_df: pd.DataFrame, summary: pd.DataFrame, out_dir: Path, run_id: str, force: bool) -> List[str]:
     if results_df.empty:
         return []
@@ -717,18 +724,32 @@ def make_pairwise_plots(results_df: pd.DataFrame, summary: pd.DataFrame, out_dir
     colors = ["#4C78A8", "#F58518", "#59A14F", "#B279A2"]
     counts = []
     percents = []
-    total = float(len(results_df))
+    ci_lows = []
+    ci_highs = []
+    total_int = int(len(results_df))
+    total = float(total_int)
     for outcome in order:
         count = int((results_df["final_reconciled_outcome"] == outcome).sum())
+        lo, hi = exact_binomial_ci_percent(count, total_int)
         counts.append(count)
         percents.append(count / total * 100 if total else 0.0)
+        ci_lows.append(lo)
+        ci_highs.append(hi)
 
     fig, ax = plt.subplots(figsize=(7.0, 4.0))
-    bars = ax.bar(labels, percents, color=colors)
-    for bar, count in zip(bars, counts):
-        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1, str(count), ha="center", va="bottom", fontsize=9)
-    ax.set_ylabel("Questions (%)")
-    ax.set_ylim(0, max(100, max(percents) + 10))
+    yerr = np.vstack([np.asarray(percents) - np.asarray(ci_lows), np.asarray(ci_highs) - np.asarray(percents)])
+    bars = ax.bar(
+        labels,
+        percents,
+        yerr=yerr,
+        capsize=4,
+        color=colors,
+        error_kw={"elinewidth": 1.0, "ecolor": "#111827"},
+    )
+    for bar, count, high in zip(bars, counts, ci_highs):
+        ax.text(bar.get_x() + bar.get_width() / 2, high + 1, str(count), ha="center", va="bottom", fontsize=9)
+    ax.set_ylabel("Questions (%; 95% exact binomial CI)")
+    ax.set_ylim(0, max(100, max(ci_highs) + 10))
     ax.set_title("Blinded Pairwise GraphRAG Outcomes")
     ax.tick_params(axis="x", rotation=20)
     ax.grid(axis="y", color="#E5E7EB", linewidth=0.8)
@@ -742,12 +763,25 @@ def make_pairwise_plots(results_df: pd.DataFrame, summary: pd.DataFrame, out_dir
         mini_count = int((decisive["final_reconciled_outcome"] == "MINI_WIN").sum())
         fig, ax = plt.subplots(figsize=(5.8, 4.0))
         vals = np.array([qwen_count, mini_count], dtype=float)
-        ax.bar(["Qwen", "GPT-5.4 mini"], vals / vals.sum() * 100, color=["#4C78A8", "#F58518"])
-        for idx, count in enumerate([qwen_count, mini_count]):
-            ax.text(idx, count / vals.sum() * 100 + 1, str(count), ha="center", va="bottom", fontsize=9)
+        percents = vals / vals.sum() * 100
+        qwen_lo, qwen_hi = exact_binomial_ci_percent(qwen_count, int(vals.sum()))
+        mini_lo, mini_hi = exact_binomial_ci_percent(mini_count, int(vals.sum()))
+        lows = np.array([qwen_lo, mini_lo])
+        highs = np.array([qwen_hi, mini_hi])
+        yerr = np.vstack([percents - lows, highs - percents])
+        ax.bar(
+            ["Qwen", "GPT-5.4 mini"],
+            percents,
+            yerr=yerr,
+            capsize=4,
+            color=["#4C78A8", "#F58518"],
+            error_kw={"elinewidth": 1.0, "ecolor": "#111827"},
+        )
+        for idx, (count, high) in enumerate(zip([qwen_count, mini_count], highs)):
+            ax.text(idx, high + 1, str(count), ha="center", va="bottom", fontsize=9)
         ax.axhline(50, color="#374151", linewidth=0.9, linestyle="--")
-        ax.set_ylim(0, 100)
-        ax.set_ylabel("Decisive comparisons (%)")
+        ax.set_ylim(0, max(100, float(np.nanmax(highs)) + 10))
+        ax.set_ylabel("Decisive comparisons (%; 95% exact binomial CI)")
         ax.set_title("Decisive Pairwise Win Share")
         ax.grid(axis="y", color="#E5E7EB", linewidth=0.8)
         fig.tight_layout()
