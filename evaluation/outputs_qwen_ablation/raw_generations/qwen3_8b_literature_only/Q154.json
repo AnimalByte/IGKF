@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "insufficient_evidence_likely",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "40869924",
+    "37737258",
+    "34984527",
+    "29220522",
+    "41417529",
+    "32961112",
+    "41233983",
+    "36541401",
+    "37249599",
+    "40751759",
+    "34724200",
+    "39923055",
+    "31078570",
+    "38869147",
+    "33133644"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q154.json",
+      "question_id": "Q154",
+      "sha256": "784244a808f16c8ad77b0ff0d3bc257b460ee26ab24e7ee55906a422dbaa9806"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q154.json",
+      "question_id": "Q154",
+      "sha256": "20b35cbfc5fc5fd279100fdaa061ea81ddb66c3bfb5917ea371fd6c51b528d81"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.1192,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset.",
+  "parsed_answer": "The integrated evidence from the provided literature context does not support specific gene\u2013environment interactions affecting hair thinning. The studies discussed focus on gene-environment interactions related to colorectal cancer risk and melanoma risk, but none of the abstracts provide evidence or mention gene\u2013environment interactions specifically related to hair thinning. Therefore, based on the given dataset, such interactions cannot be inferred.",
+  "question_id": "Q154",
+  "question_text": "Does the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 76,
+    "prompt_token_count": 1295,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence from the provided literature context does not support specific gene\u2013environment interactions affecting hair thinning. The studies discussed focus on gene-environment interactions related to colorectal cancer risk and melanoma risk, but none of the abstracts provide evidence or mention gene\u2013environment interactions specifically related to hair thinning. Therefore, based on the given dataset, such interactions cannot be inferred."
+      }
+    ],
+    "created": 1783564531,
+    "id": "cmpl-35475883-a149-4e64-af1f-bba132131c48",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 76,
+      "prompt_tokens": 1274,
+      "total_tokens": 1350
+    }
+  },
+  "reranker_scores": [
+    -3.544306755065918,
+    -6.038508415222168,
+    -6.838414192199707
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      39.13376235961914,
+      39.182342529296875,
+      39.58729553222656,
+      40.74827194213867,
+      41.15362548828125,
+      41.39151382446289,
+      42.14677810668945,
+      42.31057357788086,
+      42.475242614746094,
+      42.491912841796875,
+      42.83100509643555,
+      43.23377990722656,
+      43.3229866027832,
+      43.92814254760742,
+      43.98194122314453
+    ],
+    "candidate_pmids": [
+      "40869924",
+      "37737258",
+      "34984527",
+      "29220522",
+      "41417529",
+      "32961112",
+      "41233983",
+      "36541401",
+      "37249599",
+      "40751759",
+      "34724200",
+      "39923055",
+      "31078570",
+      "38869147",
+      "33133644"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 37249599, relevance: -3.5443) ---\nColorectal cancer risk can be impacted by genetic, environmental, and lifestyle factors, including diet and obesity. Gene-environment interactions (G x E) can provide biological insights into the effects of obesity on colorectal cancer risk. Here, we assessed potential genome-wide G x E interactions between body mass index (BMI) and common SNPs for colorectal cancer risk using data from 36,415 colorectal cancer cases and 48,451 controls from three international colorectal cancer consortia (CCFR, CORECT, and GECCO). The G x E tests included the conventional logistic regression using multiplicative terms (one degree of freedom, 1DF test), the two-step EDGE method, and the joint 3DF test, each of which is powerful for detecting G x E interactions under specific conditions. BMI was associated with higher colorectal cancer risk. The two-step approach revealed a statistically significant GxBMI interaction located within the Formin 1/Gremlin 1 (FMN1/GREM1) gene region (rs58349661). This SNP was also identified by the 3DF test, with a suggestive statistical significance in the 1DF test. Among participants with the CC genotype of rs58349661, overweight and obesity categories were associated with higher colorectal cancer risk, whereas null associations were observed across BMI categories in those with the TT genotype. Using data from three large international consortia, this study discovered a locus in the FMN1/GREM1 gene region that interacts with BMI on the association with colorectal cancer risk. Further studies should examine the potential mechanisms through which this locus modifies the etiologic link between obesity and colorectal cancer. SIGNIFICANCE: This gene-environment interaction analysis revealed a genetic locus in FMN1/GREM1 that interacts with body mass index in colorectal cancer risk, suggesting potential implications for precision prevention strategies.\n\n--- Abstract 2 (PMID: 34724200, relevance: -6.0385) ---\nHigh citrus consumption may increase melanoma risk; however, little is known about the biological mechanisms of this association, or whether it is modified by genetic variants. We conducted a genome-wide analysis of gene-citrus consumption interactions on melanoma risk among 1563 melanoma cases and 193 296 controls from the UK Biobank. Both the 2-degrees-of-freedom (df) joint test of genetic main effect and gene-environment (G-E) interaction and the standard 1-df G-E interaction test were performed. Three index SNPs (lowest P-value SNP among highly correlated variants [r(2)  > .6]) were identified from among the 365 genome-wide significant 2-df test results (rs183783391 on chromosome 3 [MITF], rs869329 on chromosome 9 [MTAP] and rs11446223 on chromosome 16 [DEF8]). Although all three were statistically significant for the 2-df test (4.25e-08, 1.98e-10 and 4.93e-13, respectively), none showed evidence of interaction according to the 1-df test (P = .73, .24 and .12, respectively). Eight nonindex, 2-df test significant SNPs on chromosome 16 were significant (P < .05) according to the 1-df test, providing evidence of citrus-gene interaction. Seven of these SNPs were mapped to AFG3L1P (rs199600347, rs111822773, rs113178244, rs3803683, rs73283867, rs78800020, rs73283871), and one SNP was mapped to GAS8 (rs74583214). We identified several genetic loci that may elucidate the association between citrus consumption and melanoma risk. Further studies are needed to confirm these findings.\n\n--- Abstract 3 (PMID: 37737258, relevance: -6.8384) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset.",
+    "rerank_seconds": 0.3329,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3497,
+    "score_max": -3.544306755065918,
+    "score_mean": -5.473743120829265,
+    "scores": [
+      -3.544306755065918,
+      -6.038508415222168,
+      -6.838414192199707
+    ],
+    "selected_abstracts": [
+      "Colorectal cancer risk can be impacted by genetic, environmental, and lifestyle factors, including diet and obesity. Gene-environment interactions (G x E) can provide biological insights into the effects of obesity on colorectal cancer risk. Here, we assessed potential genome-wide G x E interactions between body mass index (BMI) and common SNPs for colorectal cancer risk using data from 36,415 colorectal cancer cases and 48,451 controls from three international colorectal cancer consortia (CCFR, CORECT, and GECCO). The G x E tests included the conventional logistic regression using multiplicative terms (one degree of freedom, 1DF test), the two-step EDGE method, and the joint 3DF test, each of which is powerful for detecting G x E interactions under specific conditions. BMI was associated with higher colorectal cancer risk. The two-step approach revealed a statistically significant GxBMI interaction located within the Formin 1/Gremlin 1 (FMN1/GREM1) gene region (rs58349661). This SNP was also identified by the 3DF test, with a suggestive statistical significance in the 1DF test. Among participants with the CC genotype of rs58349661, overweight and obesity categories were associated with higher colorectal cancer risk, whereas null associations were observed across BMI categories in those with the TT genotype. Using data from three large international consortia, this study discovered a locus in the FMN1/GREM1 gene region that interacts with BMI on the association with colorectal cancer risk. Further studies should examine the potential mechanisms through which this locus modifies the etiologic link between obesity and colorectal cancer. SIGNIFICANCE: This gene-environment interaction analysis revealed a genetic locus in FMN1/GREM1 that interacts with body mass index in colorectal cancer risk, suggesting potential implications for precision prevention strategies.",
+      "High citrus consumption may increase melanoma risk; however, little is known about the biological mechanisms of this association, or whether it is modified by genetic variants. We conducted a genome-wide analysis of gene-citrus consumption interactions on melanoma risk among 1563 melanoma cases and 193 296 controls from the UK Biobank. Both the 2-degrees-of-freedom (df) joint test of genetic main effect and gene-environment (G-E) interaction and the standard 1-df G-E interaction test were performed. Three index SNPs (lowest P-value SNP among highly correlated variants [r(2)  > .6]) were identified from among the 365 genome-wide significant 2-df test results (rs183783391 on chromosome 3 [MITF], rs869329 on chromosome 9 [MTAP] and rs11446223 on chromosome 16 [DEF8]). Although all three were statistically significant for the 2-df test (4.25e-08, 1.98e-10 and 4.93e-13, respectively), none showed evidence of interaction according to the 1-df test (P = .73, .24 and .12, respectively). Eight nonindex, 2-df test significant SNPs on chromosome 16 were significant (P < .05) according to the 1-df test, providing evidence of citrus-gene interaction. Seven of these SNPs were mapped to AFG3L1P (rs199600347, rs111822773, rs113178244, rs3803683, rs73283867, rs78800020, rs73283871), and one SNP was mapped to GAS8 (rs74583214). We identified several genetic loci that may elucidate the association between citrus consumption and melanoma risk. Further studies are needed to confirm these findings.",
+      "Male-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders."
+    ],
+    "selected_pmids": [
+      "37249599",
+      "34724200",
+      "37737258"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0166
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q154.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "37249599",
+    "34724200",
+    "37737258"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:35:32.248957+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 37249599, relevance: -3.5443) ---\nColorectal cancer risk can be impacted by genetic, environmental, and lifestyle factors, including diet and obesity. Gene-environment interactions (G x E) can provide biological insights into the effects of obesity on colorectal cancer risk. Here, we assessed potential genome-wide G x E interactions between body mass index (BMI) and common SNPs for colorectal cancer risk using data from 36,415 colorectal cancer cases and 48,451 controls from three international colorectal cancer consortia (CCFR, CORECT, and GECCO). The G x E tests included the conventional logistic regression using multiplicative terms (one degree of freedom, 1DF test), the two-step EDGE method, and the joint 3DF test, each of which is powerful for detecting G x E interactions under specific conditions. BMI was associated with higher colorectal cancer risk. The two-step approach revealed a statistically significant GxBMI interaction located within the Formin 1/Gremlin 1 (FMN1/GREM1) gene region (rs58349661). This SNP was also identified by the 3DF test, with a suggestive statistical significance in the 1DF test. Among participants with the CC genotype of rs58349661, overweight and obesity categories were associated with higher colorectal cancer risk, whereas null associations were observed across BMI categories in those with the TT genotype. Using data from three large international consortia, this study discovered a locus in the FMN1/GREM1 gene region that interacts with BMI on the association with colorectal cancer risk. Further studies should examine the potential mechanisms through which this locus modifies the etiologic link between obesity and colorectal cancer. SIGNIFICANCE: This gene-environment interaction analysis revealed a genetic locus in FMN1/GREM1 that interacts with body mass index in colorectal cancer risk, suggesting potential implications for precision prevention strategies.\n\n--- Abstract 2 (PMID: 34724200, relevance: -6.0385) ---\nHigh citrus consumption may increase melanoma risk; however, little is known about the biological mechanisms of this association, or whether it is modified by genetic variants. We conducted a genome-wide analysis of gene-citrus consumption interactions on melanoma risk among 1563 melanoma cases and 193 296 controls from the UK Biobank. Both the 2-degrees-of-freedom (df) joint test of genetic main effect and gene-environment (G-E) interaction and the standard 1-df G-E interaction test were performed. Three index SNPs (lowest P-value SNP among highly correlated variants [r(2)  > .6]) were identified from among the 365 genome-wide significant 2-df test results (rs183783391 on chromosome 3 [MITF], rs869329 on chromosome 9 [MTAP] and rs11446223 on chromosome 16 [DEF8]). Although all three were statistically significant for the 2-df test (4.25e-08, 1.98e-10 and 4.93e-13, respectively), none showed evidence of interaction according to the 1-df test (P = .73, .24 and .12, respectively). Eight nonindex, 2-df test significant SNPs on chromosome 16 were significant (P < .05) according to the 1-df test, providing evidence of citrus-gene interaction. Seven of these SNPs were mapped to AFG3L1P (rs199600347, rs111822773, rs113178244, rs3803683, rs73283867, rs78800020, rs73283871), and one SNP was mapped to GAS8 (rs74583214). We identified several genetic loci that may elucidate the association between citrus consumption and melanoma risk. Further studies are needed to confirm these findings.\n\n--- Abstract 3 (PMID: 37737258, relevance: -6.8384) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n\n\n**Question:**\nDoes the integrated evidence support specific gene\u2013environment interactions affecting hair thinning? Summarize supported evidence or state that such interactions cannot be inferred from this dataset.",
+  "vector_context": "--- Abstract 1 (PMID: 37249599, relevance: -3.5443) ---\nColorectal cancer risk can be impacted by genetic, environmental, and lifestyle factors, including diet and obesity. Gene-environment interactions (G x E) can provide biological insights into the effects of obesity on colorectal cancer risk. Here, we assessed potential genome-wide G x E interactions between body mass index (BMI) and common SNPs for colorectal cancer risk using data from 36,415 colorectal cancer cases and 48,451 controls from three international colorectal cancer consortia (CCFR, CORECT, and GECCO). The G x E tests included the conventional logistic regression using multiplicative terms (one degree of freedom, 1DF test), the two-step EDGE method, and the joint 3DF test, each of which is powerful for detecting G x E interactions under specific conditions. BMI was associated with higher colorectal cancer risk. The two-step approach revealed a statistically significant GxBMI interaction located within the Formin 1/Gremlin 1 (FMN1/GREM1) gene region (rs58349661). This SNP was also identified by the 3DF test, with a suggestive statistical significance in the 1DF test. Among participants with the CC genotype of rs58349661, overweight and obesity categories were associated with higher colorectal cancer risk, whereas null associations were observed across BMI categories in those with the TT genotype. Using data from three large international consortia, this study discovered a locus in the FMN1/GREM1 gene region that interacts with BMI on the association with colorectal cancer risk. Further studies should examine the potential mechanisms through which this locus modifies the etiologic link between obesity and colorectal cancer. SIGNIFICANCE: This gene-environment interaction analysis revealed a genetic locus in FMN1/GREM1 that interacts with body mass index in colorectal cancer risk, suggesting potential implications for precision prevention strategies.\n\n--- Abstract 2 (PMID: 34724200, relevance: -6.0385) ---\nHigh citrus consumption may increase melanoma risk; however, little is known about the biological mechanisms of this association, or whether it is modified by genetic variants. We conducted a genome-wide analysis of gene-citrus consumption interactions on melanoma risk among 1563 melanoma cases and 193 296 controls from the UK Biobank. Both the 2-degrees-of-freedom (df) joint test of genetic main effect and gene-environment (G-E) interaction and the standard 1-df G-E interaction test were performed. Three index SNPs (lowest P-value SNP among highly correlated variants [r(2)  > .6]) were identified from among the 365 genome-wide significant 2-df test results (rs183783391 on chromosome 3 [MITF], rs869329 on chromosome 9 [MTAP] and rs11446223 on chromosome 16 [DEF8]). Although all three were statistically significant for the 2-df test (4.25e-08, 1.98e-10 and 4.93e-13, respectively), none showed evidence of interaction according to the 1-df test (P = .73, .24 and .12, respectively). Eight nonindex, 2-df test significant SNPs on chromosome 16 were significant (P < .05) according to the 1-df test, providing evidence of citrus-gene interaction. Seven of these SNPs were mapped to AFG3L1P (rs199600347, rs111822773, rs113178244, rs3803683, rs73283867, rs78800020, rs73283871), and one SNP was mapped to GAS8 (rs74583214). We identified several genetic loci that may elucidate the association between citrus consumption and melanoma risk. Further studies are needed to confirm these findings.\n\n--- Abstract 3 (PMID: 37737258, relevance: -6.8384) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n"
+}

@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "40591711",
+    "42000248",
+    "41111418",
+    "31991592",
+    "38245717",
+    "41766532",
+    "33637690",
+    "41161132",
+    "42377636",
+    "39198424",
+    "41503337",
+    "42234053",
+    "41844873",
+    "38797732",
+    "41963310"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q165.json",
+      "question_id": "Q165",
+      "sha256": "f3b5f09ca95ff74648e73d7380427ba7f7a3cca86a1ce85db5687f5d68b96608"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q165.json",
+      "question_id": "Q165",
+      "sha256": "4855263afd2cff1e75f33104e075e4923fad89af4361fdab4e790901ad5f99cd"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does this dataset provide evidence that rs756853 modifies response to Minoxidil? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.7029,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this dataset provide evidence that rs756853 modifies response to Minoxidil? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+  "parsed_answer": "The dataset does not provide evidence that rs756853 modifies response to Minoxidil. None of the provided literature abstracts mention rs756853 or its association with Minoxidil response. The studies discussed in the literature context focus on genetic variants related to Alzheimer's disease, lipid metabolism, and ferroptosis in myocardial infarction, but none involve Minoxidil or the specific rs756853 variant. Therefore, a pharmacogenomic effect involving rs756853 and Minoxidil cannot be inferred from the given data.",
+  "question_id": "Q165",
+  "question_text": "Does this dataset provide evidence that rs756853 modifies response to Minoxidil? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 126,
+    "prompt_token_count": 1661,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The dataset does not provide evidence that rs756853 modifies response to Minoxidil. None of the provided literature abstracts mention rs756853 or its association with Minoxidil response. The studies discussed in the literature context focus on genetic variants related to Alzheimer's disease, lipid metabolism, and ferroptosis in myocardial infarction, but none involve Minoxidil or the specific rs756853 variant. Therefore, a pharmacogenomic effect involving rs756853 and Minoxidil cannot be inferred from the given data."
+      }
+    ],
+    "created": 1783564585,
+    "id": "cmpl-3d481861-fb03-49a6-aa33-effe10bdeda4",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 126,
+      "prompt_tokens": 1640,
+      "total_tokens": 1766
+    }
+  },
+  "reranker_scores": [
+    -4.514668941497803,
+    -6.073530197143555,
+    -6.170010566711426
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      36.829681396484375,
+      37.25910186767578,
+      39.57661437988281,
+      39.68159866333008,
+      39.92906188964844,
+      40.13309097290039,
+      40.60082244873047,
+      40.904476165771484,
+      41.16328811645508,
+      41.92987060546875,
+      42.42547607421875,
+      42.56083679199219,
+      42.65090560913086,
+      42.69548797607422,
+      42.746070861816406
+    ],
+    "candidate_pmids": [
+      "40591711",
+      "42000248",
+      "41111418",
+      "31991592",
+      "38245717",
+      "41766532",
+      "33637690",
+      "41161132",
+      "42377636",
+      "39198424",
+      "41503337",
+      "42234053",
+      "41844873",
+      "38797732",
+      "41963310"
+    ],
+    "expanded_retrieval_query": "Does this dataset provide evidence that rs756853 modifies response to Minoxidil? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 33637690, relevance: -4.5147) ---\nDespite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.\n\n--- Abstract 2 (PMID: 42000248, relevance: -6.0735) ---\nBACKGROUND AND AIMS: Previous studies have reported that genetic variants in the GCKR, FADS1, BCO1, and FGF21 genes are associated with lipid metabolism and may contribute to the development of dyslipidemia (DL). In this study, we aimed to explore the relationship between single-nucleotide variants (SNVs) rs780094/rs1260326-GCKR, rs174546-FADS1, rs6564851-BCO1, and rs838133-FGF21 and the lipid profile, as a cumulative effect, through a Genetic Risk Score (GRS) in the Mexican-Mestizo population. METHODS AND RESULTS: This study was conducted in a population of 1,925 Mexican adults from the Health Workers Cohort Study. Demographic and clinical data were obtained through a structured questionnaire and standardized procedures. Genotyping assays were performed with predesigned TaqMan probes, and association analyses with lipid profile were estimated using linear and logistic regression. CONCLUSION: Our findings confirm that GRS is a predictor of cardiometabolic risk. Our data can be used for developing dietary strategies to improve the health of the Mexican population.\n\n--- Abstract 3 (PMID: 41111418, relevance: -6.1700) ---\nBACKGROUND: As an iron-dependent form of regulated cell death caused by lipid peroxidation, ferroptosis has been implicated in ischemic injury, but the underlying mechanisms in acute myocardial infarction (AMI) remain poorly defined. ALDH2 (acetaldehyde dehydrogenase 2) catalyzes detoxification of lipid aldehydes derived from lipid peroxidation and acetaldehydes from alcohol consumption. The Glu504Lys polymorphism of ALDH2 (rs671, ALDH2*2), affecting  approximately 40% of East Asians, is associated with increased risk of myocardial infarction (MI). This study aims to investigate the role of ALDH2*2 and ferroptosis in AMI. METHODS: A Chinese cohort of 177 patients with acute heart failure with ALDH2 wild type and ALDH2*2 was enrolled. The MI mouse model of left anterior descending coronary artery ligation was conducted on wild-type and ALDH2*2 mice and mice with cardiomyocyte-specific knockdown of eIF3E (eukaryotic translation initiation factor 3 subunit E) by adeno-associated virus. The lipid peroxidation products were measured by mass spectrometry-based lipidomics and metabolomics in human plasma, mouse serum samples, mouse heart tissues, and primary cardiac myocytes. RESULTS: Human ALDH2*2 carriers exhibit more severe heart failure after AMI with features of ferroptosis in plasma, as seen through lipidomic analysis, characterized by increased bioactive lipids and decreased antioxidants, such as coenzyme Q10 and BH4 (tetrahydrobiopterin). Similar features were observed in MI mouse models of ALDH2*2, whereas ferroptosis inhibition by Fer-1 significantly improved heart function and reversed ferroptosis markers. Importantly, ALDH2*2 significantly decreased ALDH2 protein levels, whereas ferroptosis-related markers, including TFRC (transferrin receptor) and ACSL4 (acyl-coenzyme A synthetase long-chain family member 4) were notably upregulated in the infarct heart tissues. Mechanistically, ALDH2 physically interacts with the eIF3 complex via the eIF3E factor, which prevents eIF3E-eIF4G1 (eukaryotic initiation factor 4G)-mRNA assembly. The ALDH2*2 variant causes ALDH2 deficiency, disrupting its interaction with the eIF3 complex by releasing the bound eIF3E to assemble an eIF3E-eIF4G1-mRNA ternary complex, thereby driving selective translation of mRNAs (eg, TFRC, ACSL4, and UAP1) containing the GAGGACR (R represents A/G) motif to promote ferroptosis. Consistently, cardiomyocyte-specific eIF3E knockdown restored ALDH2*2 cardiac function by attenuating ferroptosis in MI. CONCLUSIONS: ALDH2*2 aggravates acute heart failure after MI by promoting the selective translation of mRNAs containing the GAGGACR motif, thereby driving cardiomyocyte ferroptosis. Targeting ferroptosis represents a potential therapeutic option for mitigating MI injury, especially for ALDH2*2 carriers.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does this dataset provide evidence that rs756853 modifies response to Minoxidil? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+    "rerank_seconds": 0.3434,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3613,
+    "score_max": -4.514668941497803,
+    "score_mean": -5.586069901784261,
+    "scores": [
+      -4.514668941497803,
+      -6.073530197143555,
+      -6.170010566711426
+    ],
+    "selected_abstracts": [
+      "Despite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.",
+      "BACKGROUND AND AIMS: Previous studies have reported that genetic variants in the GCKR, FADS1, BCO1, and FGF21 genes are associated with lipid metabolism and may contribute to the development of dyslipidemia (DL). In this study, we aimed to explore the relationship between single-nucleotide variants (SNVs) rs780094/rs1260326-GCKR, rs174546-FADS1, rs6564851-BCO1, and rs838133-FGF21 and the lipid profile, as a cumulative effect, through a Genetic Risk Score (GRS) in the Mexican-Mestizo population. METHODS AND RESULTS: This study was conducted in a population of 1,925 Mexican adults from the Health Workers Cohort Study. Demographic and clinical data were obtained through a structured questionnaire and standardized procedures. Genotyping assays were performed with predesigned TaqMan probes, and association analyses with lipid profile were estimated using linear and logistic regression. CONCLUSION: Our findings confirm that GRS is a predictor of cardiometabolic risk. Our data can be used for developing dietary strategies to improve the health of the Mexican population.",
+      "BACKGROUND: As an iron-dependent form of regulated cell death caused by lipid peroxidation, ferroptosis has been implicated in ischemic injury, but the underlying mechanisms in acute myocardial infarction (AMI) remain poorly defined. ALDH2 (acetaldehyde dehydrogenase 2) catalyzes detoxification of lipid aldehydes derived from lipid peroxidation and acetaldehydes from alcohol consumption. The Glu504Lys polymorphism of ALDH2 (rs671, ALDH2*2), affecting  approximately 40% of East Asians, is associated with increased risk of myocardial infarction (MI). This study aims to investigate the role of ALDH2*2 and ferroptosis in AMI. METHODS: A Chinese cohort of 177 patients with acute heart failure with ALDH2 wild type and ALDH2*2 was enrolled. The MI mouse model of left anterior descending coronary artery ligation was conducted on wild-type and ALDH2*2 mice and mice with cardiomyocyte-specific knockdown of eIF3E (eukaryotic translation initiation factor 3 subunit E) by adeno-associated virus. The lipid peroxidation products were measured by mass spectrometry-based lipidomics and metabolomics in human plasma, mouse serum samples, mouse heart tissues, and primary cardiac myocytes. RESULTS: Human ALDH2*2 carriers exhibit more severe heart failure after AMI with features of ferroptosis in plasma, as seen through lipidomic analysis, characterized by increased bioactive lipids and decreased antioxidants, such as coenzyme Q10 and BH4 (tetrahydrobiopterin). Similar features were observed in MI mouse models of ALDH2*2, whereas ferroptosis inhibition by Fer-1 significantly improved heart function and reversed ferroptosis markers. Importantly, ALDH2*2 significantly decreased ALDH2 protein levels, whereas ferroptosis-related markers, including TFRC (transferrin receptor) and ACSL4 (acyl-coenzyme A synthetase long-chain family member 4) were notably upregulated in the infarct heart tissues. Mechanistically, ALDH2 physically interacts with the eIF3 complex via the eIF3E factor, which prevents eIF3E-eIF4G1 (eukaryotic initiation factor 4G)-mRNA assembly. The ALDH2*2 variant causes ALDH2 deficiency, disrupting its interaction with the eIF3 complex by releasing the bound eIF3E to assemble an eIF3E-eIF4G1-mRNA ternary complex, thereby driving selective translation of mRNAs (eg, TFRC, ACSL4, and UAP1) containing the GAGGACR (R represents A/G) motif to promote ferroptosis. Consistently, cardiomyocyte-specific eIF3E knockdown restored ALDH2*2 cardiac function by attenuating ferroptosis in MI. CONCLUSIONS: ALDH2*2 aggravates acute heart failure after MI by promoting the selective translation of mRNAs containing the GAGGACR motif, thereby driving cardiomyocyte ferroptosis. Targeting ferroptosis represents a potential therapeutic option for mitigating MI injury, especially for ALDH2*2 carriers."
+    ],
+    "selected_pmids": [
+      "33637690",
+      "42000248",
+      "41111418"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0178
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q165.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "33637690",
+    "42000248",
+    "41111418"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:36:27.151573+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 33637690, relevance: -4.5147) ---\nDespite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.\n\n--- Abstract 2 (PMID: 42000248, relevance: -6.0735) ---\nBACKGROUND AND AIMS: Previous studies have reported that genetic variants in the GCKR, FADS1, BCO1, and FGF21 genes are associated with lipid metabolism and may contribute to the development of dyslipidemia (DL). In this study, we aimed to explore the relationship between single-nucleotide variants (SNVs) rs780094/rs1260326-GCKR, rs174546-FADS1, rs6564851-BCO1, and rs838133-FGF21 and the lipid profile, as a cumulative effect, through a Genetic Risk Score (GRS) in the Mexican-Mestizo population. METHODS AND RESULTS: This study was conducted in a population of 1,925 Mexican adults from the Health Workers Cohort Study. Demographic and clinical data were obtained through a structured questionnaire and standardized procedures. Genotyping assays were performed with predesigned TaqMan probes, and association analyses with lipid profile were estimated using linear and logistic regression. CONCLUSION: Our findings confirm that GRS is a predictor of cardiometabolic risk. Our data can be used for developing dietary strategies to improve the health of the Mexican population.\n\n--- Abstract 3 (PMID: 41111418, relevance: -6.1700) ---\nBACKGROUND: As an iron-dependent form of regulated cell death caused by lipid peroxidation, ferroptosis has been implicated in ischemic injury, but the underlying mechanisms in acute myocardial infarction (AMI) remain poorly defined. ALDH2 (acetaldehyde dehydrogenase 2) catalyzes detoxification of lipid aldehydes derived from lipid peroxidation and acetaldehydes from alcohol consumption. The Glu504Lys polymorphism of ALDH2 (rs671, ALDH2*2), affecting  approximately 40% of East Asians, is associated with increased risk of myocardial infarction (MI). This study aims to investigate the role of ALDH2*2 and ferroptosis in AMI. METHODS: A Chinese cohort of 177 patients with acute heart failure with ALDH2 wild type and ALDH2*2 was enrolled. The MI mouse model of left anterior descending coronary artery ligation was conducted on wild-type and ALDH2*2 mice and mice with cardiomyocyte-specific knockdown of eIF3E (eukaryotic translation initiation factor 3 subunit E) by adeno-associated virus. The lipid peroxidation products were measured by mass spectrometry-based lipidomics and metabolomics in human plasma, mouse serum samples, mouse heart tissues, and primary cardiac myocytes. RESULTS: Human ALDH2*2 carriers exhibit more severe heart failure after AMI with features of ferroptosis in plasma, as seen through lipidomic analysis, characterized by increased bioactive lipids and decreased antioxidants, such as coenzyme Q10 and BH4 (tetrahydrobiopterin). Similar features were observed in MI mouse models of ALDH2*2, whereas ferroptosis inhibition by Fer-1 significantly improved heart function and reversed ferroptosis markers. Importantly, ALDH2*2 significantly decreased ALDH2 protein levels, whereas ferroptosis-related markers, including TFRC (transferrin receptor) and ACSL4 (acyl-coenzyme A synthetase long-chain family member 4) were notably upregulated in the infarct heart tissues. Mechanistically, ALDH2 physically interacts with the eIF3 complex via the eIF3E factor, which prevents eIF3E-eIF4G1 (eukaryotic initiation factor 4G)-mRNA assembly. The ALDH2*2 variant causes ALDH2 deficiency, disrupting its interaction with the eIF3 complex by releasing the bound eIF3E to assemble an eIF3E-eIF4G1-mRNA ternary complex, thereby driving selective translation of mRNAs (eg, TFRC, ACSL4, and UAP1) containing the GAGGACR (R represents A/G) motif to promote ferroptosis. Consistently, cardiomyocyte-specific eIF3E knockdown restored ALDH2*2 cardiac function by attenuating ferroptosis in MI. CONCLUSIONS: ALDH2*2 aggravates acute heart failure after MI by promoting the selective translation of mRNAs containing the GAGGACR motif, thereby driving cardiomyocyte ferroptosis. Targeting ferroptosis represents a potential therapeutic option for mitigating MI injury, especially for ALDH2*2 carriers.\n\n\n\n**Question:**\nDoes this dataset provide evidence that rs756853 modifies response to Minoxidil? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+  "vector_context": "--- Abstract 1 (PMID: 33637690, relevance: -4.5147) ---\nDespite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.\n\n--- Abstract 2 (PMID: 42000248, relevance: -6.0735) ---\nBACKGROUND AND AIMS: Previous studies have reported that genetic variants in the GCKR, FADS1, BCO1, and FGF21 genes are associated with lipid metabolism and may contribute to the development of dyslipidemia (DL). In this study, we aimed to explore the relationship between single-nucleotide variants (SNVs) rs780094/rs1260326-GCKR, rs174546-FADS1, rs6564851-BCO1, and rs838133-FGF21 and the lipid profile, as a cumulative effect, through a Genetic Risk Score (GRS) in the Mexican-Mestizo population. METHODS AND RESULTS: This study was conducted in a population of 1,925 Mexican adults from the Health Workers Cohort Study. Demographic and clinical data were obtained through a structured questionnaire and standardized procedures. Genotyping assays were performed with predesigned TaqMan probes, and association analyses with lipid profile were estimated using linear and logistic regression. CONCLUSION: Our findings confirm that GRS is a predictor of cardiometabolic risk. Our data can be used for developing dietary strategies to improve the health of the Mexican population.\n\n--- Abstract 3 (PMID: 41111418, relevance: -6.1700) ---\nBACKGROUND: As an iron-dependent form of regulated cell death caused by lipid peroxidation, ferroptosis has been implicated in ischemic injury, but the underlying mechanisms in acute myocardial infarction (AMI) remain poorly defined. ALDH2 (acetaldehyde dehydrogenase 2) catalyzes detoxification of lipid aldehydes derived from lipid peroxidation and acetaldehydes from alcohol consumption. The Glu504Lys polymorphism of ALDH2 (rs671, ALDH2*2), affecting  approximately 40% of East Asians, is associated with increased risk of myocardial infarction (MI). This study aims to investigate the role of ALDH2*2 and ferroptosis in AMI. METHODS: A Chinese cohort of 177 patients with acute heart failure with ALDH2 wild type and ALDH2*2 was enrolled. The MI mouse model of left anterior descending coronary artery ligation was conducted on wild-type and ALDH2*2 mice and mice with cardiomyocyte-specific knockdown of eIF3E (eukaryotic translation initiation factor 3 subunit E) by adeno-associated virus. The lipid peroxidation products were measured by mass spectrometry-based lipidomics and metabolomics in human plasma, mouse serum samples, mouse heart tissues, and primary cardiac myocytes. RESULTS: Human ALDH2*2 carriers exhibit more severe heart failure after AMI with features of ferroptosis in plasma, as seen through lipidomic analysis, characterized by increased bioactive lipids and decreased antioxidants, such as coenzyme Q10 and BH4 (tetrahydrobiopterin). Similar features were observed in MI mouse models of ALDH2*2, whereas ferroptosis inhibition by Fer-1 significantly improved heart function and reversed ferroptosis markers. Importantly, ALDH2*2 significantly decreased ALDH2 protein levels, whereas ferroptosis-related markers, including TFRC (transferrin receptor) and ACSL4 (acyl-coenzyme A synthetase long-chain family member 4) were notably upregulated in the infarct heart tissues. Mechanistically, ALDH2 physically interacts with the eIF3 complex via the eIF3E factor, which prevents eIF3E-eIF4G1 (eukaryotic initiation factor 4G)-mRNA assembly. The ALDH2*2 variant causes ALDH2 deficiency, disrupting its interaction with the eIF3 complex by releasing the bound eIF3E to assemble an eIF3E-eIF4G1-mRNA ternary complex, thereby driving selective translation of mRNAs (eg, TFRC, ACSL4, and UAP1) containing the GAGGACR (R represents A/G) motif to promote ferroptosis. Consistently, cardiomyocyte-specific eIF3E knockdown restored ALDH2*2 cardiac function by attenuating ferroptosis in MI. CONCLUSIONS: ALDH2*2 aggravates acute heart failure after MI by promoting the selective translation of mRNAs containing the GAGGACR motif, thereby driving cardiomyocyte ferroptosis. Targeting ferroptosis represents a potential therapeutic option for mitigating MI injury, especially for ALDH2*2 carriers.\n\n"
+}

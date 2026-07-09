@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "37737258",
+    "41091706",
+    "37860011",
+    "41296172",
+    "40635054",
+    "36685896",
+    "42153573",
+    "40729294",
+    "33741282",
+    "39513674",
+    "42113370",
+    "34984527",
+    "34185889",
+    "38057852",
+    "37394087"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q151.json",
+      "question_id": "Q151",
+      "sha256": "9181c4821b17f5d02e2d882ec971f7cdbcb7c215bdaa99d3acd74ca77d1c05c9"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q151.json",
+      "question_id": "Q151",
+      "sha256": "b94520745f1f4112e34cfc139514b59134febd1b6887a0851d14f72fed7cb18c"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What evidence in the provided graph or literature context supports epigenetic regulation of hair-loss genes such as AR, including DNA methylation? Distinguish direct evidence from general biological background.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.6352,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What evidence in the provided graph or literature context supports epigenetic regulation of hair-loss genes such as AR, including DNA methylation? Distinguish direct evidence from general biological background.",
+  "parsed_answer": "The provided literature context does not include any graph or direct evidence specifically supporting epigenetic regulation of hair-loss genes such as AR (androgen receptor) through DNA methylation. However, there is indirect evidence and general biological background that can be inferred from the context:\n\n### General Biological Background:\n1. **Epigenetic Regulation in Aging and Hair Loss**: The literature context discusses how DNA methylation changes with aging, and how these changes are regulated by DNA methyltransferases (DNMTs). This is relevant to hair loss (canities), as the context mentions that DNMT1 protein increases in aged tissues, leading to a decline in autophagy and an increase in senescence, which may contribute to age-related hair loss. While this does not directly mention the AR gene, it supports the idea that epigenetic mechanisms, including DNA methylation, can regulate genes involved in aging and hair loss.\n\n2. **DNMT1 and Gene Methylation**: The context highlights that DNMT1, which maintains DNA methylation, is increased in aged tissues. This enzyme is known to regulate the methylation of genes involved in various biological processes, including those related to hair follicle function. While the specific gene AR is not mentioned, the general mechanism of DNMT1-mediated methylation of genes related to aging and senescence provides a biological framework for how DNA methylation could regulate genes like AR.\n\n### Direct Evidence:\n- **No direct evidence** is provided in the literature context that explicitly supports epigenetic regulation of the AR gene or other hair-loss genes through DNA methylation. The context does not mention AR, nor does it provide any data or results related to methylation of genes associated with hair loss.\n\n### Conclusion:\n- **Indirect evidence**: The literature context provides general biological background that supports the possibility of DNA methylation regulating genes involved in aging and hair loss, including the AR gene, through the action of DNMT1 and its effects on gene methylation.\n- **Direct evidence**: There is **no direct evidence** in the provided literature context that supports epigenetic regulation of hair-loss genes such as AR through DNA methylation.",
+  "question_id": "Q151",
+  "question_text": "What evidence in the provided graph or literature context supports epigenetic regulation of hair-loss genes such as AR, including DNA methylation? Distinguish direct evidence from general biological background.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 434,
+    "prompt_token_count": 1583,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not include any graph or direct evidence specifically supporting epigenetic regulation of hair-loss genes such as AR (androgen receptor) through DNA methylation. However, there is indirect evidence and general biological background that can be inferred from the context:\n\n### General Biological Background:\n1. **Epigenetic Regulation in Aging and Hair Loss**: The literature context discusses how DNA methylation changes with aging, and how these changes are regulated by DNA methyltransferases (DNMTs). This is relevant to hair loss (canities), as the context mentions that DNMT1 protein increases in aged tissues, leading to a decline in autophagy and an increase in senescence, which may contribute to age-related hair loss. While this does not directly mention the AR gene, it supports the idea that epigenetic mechanisms, including DNA methylation, can regulate genes involved in aging and hair loss.\n\n2. **DNMT1 and Gene Methylation**: The context highlights that DNMT1, which maintains DNA methylation, is increased in aged tissues. This enzyme is known to regulate the methylation of genes involved in various biological processes, including those related to hair follicle function. While the specific gene AR is not mentioned, the general mechanism of DNMT1-mediated methylation of genes related to aging and senescence provides a biological framework for how DNA methylation could regulate genes like AR.\n\n### Direct Evidence:\n- **No direct evidence** is provided in the literature context that explicitly supports epigenetic regulation of the AR gene or other hair-loss genes through DNA methylation. The context does not mention AR, nor does it provide any data or results related to methylation of genes associated with hair loss.\n\n### Conclusion:\n- **Indirect evidence**: The literature context provides general biological background that supports the possibility of DNA methylation regulating genes involved in aging and hair loss, including the AR gene, through the action of DNMT1 and its effects on gene methylation.\n- **Direct evidence**: There is **no direct evidence** in the provided literature context that supports epigenetic regulation of hair-loss genes such as AR through DNA methylation."
+      }
+    ],
+    "created": 1783564515,
+    "id": "cmpl-182b0053-f6eb-4ad4-b925-c9ccef85d012",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 434,
+      "prompt_tokens": 1562,
+      "total_tokens": 1996
+    }
+  },
+  "reranker_scores": [
+    -0.16023683547973633,
+    -1.1847169399261475,
+    -1.8285162448883057
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      35.171669006347656,
+      35.900306701660156,
+      36.37635040283203,
+      36.58242416381836,
+      36.70676803588867,
+      36.77800750732422,
+      36.85625457763672,
+      37.12089920043945,
+      37.35124206542969,
+      37.35326385498047,
+      37.396881103515625,
+      37.41888427734375,
+      37.60429382324219,
+      37.68705368041992,
+      37.687992095947266
+    ],
+    "candidate_pmids": [
+      "37737258",
+      "41091706",
+      "37860011",
+      "41296172",
+      "40635054",
+      "36685896",
+      "42153573",
+      "40729294",
+      "33741282",
+      "39513674",
+      "42113370",
+      "34984527",
+      "34185889",
+      "38057852",
+      "37394087"
+    ],
+    "expanded_retrieval_query": "What evidence in the provided graph or literature context supports epigenetic regulation of hair-loss genes such as AR, including DNA methylation? Distinguish direct evidence from general biological background.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 34185889, relevance: -0.1602) ---\nIn the early 2000s, emerging SARS-CoV-2, which is highly pathogenic, posed a great threat to public health. During COVID-19, epigenetic regulation is deemed to be an important part of the pathophysiology and illness severity. Using the Illumina Infinium Methylation EPIC BeadChip (850 K), we investigated genome-wide differences in DNA methylation between healthy subjects and COVID-19 patients with different disease severities. We conducted a combined analysis and selected 35 \"marker\" genes that could indicate a SARS-CoV-2 infection, including 12 (ATHL1, CHN2, CHST15, CPLX2, CRHR2, DCAKD, GNAI2, HECW1, HYAL1, MIR510, PDE11A, and SMG6) situated in the promoter region. The functions and pathways of differentially methylated genes were enriched in biological processes, signal transduction, and the immune system. In the \"Severe versus Mild\" group, differentially methylated genes, after eliminating duplicates, were used for PPI analyses. The four hub genes (GNG7, GNAS, PRKCZ, and PRKAG2) that had the highest degree of nodes were identified and among them, GNG7 and GNAS genes expressions were also downregulated in the severe group in sequencing results. Above all, the results suggest that GNG7 and GNAS may play a non-ignorable role in the progression of COVID-19. In conclusion, the identified key genes and related pathways in the current study can be used to study the molecular mechanisms of COVID-19 and may provide possibilities for specific treatments.\n\n--- Abstract 2 (PMID: 37394087, relevance: -1.1847) ---\nDNA methylation is one of the important epigenetic mechanisms for modulating gene expression. By performing a genome-wide methylation association analysis of whole peripheral blood from 60 Vogt-Koyanagi-Harada disease (VKH) patients and 60 healthy controls, we depicted the global DNA methylation status of VKH disease. Further pyrosequencing validation in 160 patients and 159 controls identified 3 aberrant CpG sites in HLA gene regions including cg04026937 and cg18052547 (located in HLA-DRB1 region), and cg13778567 (HLA-DQA1). We also identified 9 aberrant CpG sites in non-HLA gene regions including cg13979407, cg21075643, cg24290586, cg10135747 and cg22707857 (BTNL2), cg22155039 (NOTCH4), cg02605387 (TNXB), cg06255004 (AGPAT2) and cg18855195 (RIBC2). Increased mRNA levels of BTNL2, NOTCH4 and TNXB were identified in VKH patients when compared with healthy controls, consistent with the hypomethylated CpG status in these gene regions. Moreover, seven aberrantly methylated CpG sites may serve as a diagnostic marker for VKH disease (AUC = 84.95%, 95%CI: 79.49%-90.41%).\n\n--- Abstract 3 (PMID: 42153573, relevance: -1.8285) ---\nAlternations of DNA methylation occur in aging, which is regulated by DNA methyltransferases (DNMTs). In this study, we show that even though the transcription of DNMT1, the only enzyme that maintains DNA methylation in the mammalian genome, is reported to be decreased in an age-dependent manner, the decrease of Dnmt1 mRNA does not result in a decrease of its protein. Instead, DNMT1 protein is increased in aged mouse tissues, which is responsible for the methylation of genes related to macroautophagy/autophagy, senescence repression, and melanin synthesis and transport in aged organs, resulting in a decline of autophagy, an increase of senescence in those organs, and a decrease in melanin production in hair follicles (canities) in response to ionizing radiation (IR). Genetic deletion and inhibition of DNMT1 can reverse these processes. The interaction of DNMT1 with ATG7 through its CXXC domain is essential for its degradation, and treatment with senolytics also downregulates DNMT1 in aged organs, supporting two feedback loops between them.Abbreviations: 4-OHT, 4-hydroxytamoxifen; ChIP, chromatinimmunoprecipitation; D, dasatinib; D-gal, D-galactose; DCT/Trp-2, dopachrometautomerase; DMRs, differentially methylated regions; DNAm, DNA methylation; DNMTs,DNA methyltransferases; DSBs, double-stranded breaks; ETO, etoposide; GST, glutathione-S-transferase; HEK293T,human embryonic kidney 293T; HEM, human epidermal melanocytes; Hydr, hydralazine;IP, immunoprecipitation; IR,  ionizingradiation; KIF1A, kinesin family member 1A; M, methylated; MmIMCD3,mouse inner-medullary collecting duct 3; MITF, melanocyte inducingtranscription factor; MSP, methylation specific PCR; NCBI, national center for biotechnologyinformation; N-me, N-methyladenosine; PBMCs, peripheral blood mononuclear cells;Pro, proliferating; Q, quercetin; Rapa, rapamycin; RRBS, reduced representationbisulfite sequencing; RT, reverse transcription; SA-GLB1/beta-Gal, senescence-associatedgalactosidase beta 1; SASP, senescence-associated secretory phenotype; Sen, senescent; SNP, single nucleotidepolymorphism; TYR, tyrosinase; TYRP1/Trp-1, tyrosinase related protein 1; UHRF1,ubiquitin like with PHD and ring finger domains 1; UM, unmethylated; UTR, untranslatedregion; WGBS, whole-genome bisulfite sequencing.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What evidence in the provided graph or literature context supports epigenetic regulation of hair-loss genes such as AR, including DNA methylation? Distinguish direct evidence from general biological background.",
+    "rerank_seconds": 0.3301,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3501,
+    "score_max": -0.16023683547973633,
+    "score_mean": -1.0578233400980632,
+    "scores": [
+      -0.16023683547973633,
+      -1.1847169399261475,
+      -1.8285162448883057
+    ],
+    "selected_abstracts": [
+      "In the early 2000s, emerging SARS-CoV-2, which is highly pathogenic, posed a great threat to public health. During COVID-19, epigenetic regulation is deemed to be an important part of the pathophysiology and illness severity. Using the Illumina Infinium Methylation EPIC BeadChip (850 K), we investigated genome-wide differences in DNA methylation between healthy subjects and COVID-19 patients with different disease severities. We conducted a combined analysis and selected 35 \"marker\" genes that could indicate a SARS-CoV-2 infection, including 12 (ATHL1, CHN2, CHST15, CPLX2, CRHR2, DCAKD, GNAI2, HECW1, HYAL1, MIR510, PDE11A, and SMG6) situated in the promoter region. The functions and pathways of differentially methylated genes were enriched in biological processes, signal transduction, and the immune system. In the \"Severe versus Mild\" group, differentially methylated genes, after eliminating duplicates, were used for PPI analyses. The four hub genes (GNG7, GNAS, PRKCZ, and PRKAG2) that had the highest degree of nodes were identified and among them, GNG7 and GNAS genes expressions were also downregulated in the severe group in sequencing results. Above all, the results suggest that GNG7 and GNAS may play a non-ignorable role in the progression of COVID-19. In conclusion, the identified key genes and related pathways in the current study can be used to study the molecular mechanisms of COVID-19 and may provide possibilities for specific treatments.",
+      "DNA methylation is one of the important epigenetic mechanisms for modulating gene expression. By performing a genome-wide methylation association analysis of whole peripheral blood from 60 Vogt-Koyanagi-Harada disease (VKH) patients and 60 healthy controls, we depicted the global DNA methylation status of VKH disease. Further pyrosequencing validation in 160 patients and 159 controls identified 3 aberrant CpG sites in HLA gene regions including cg04026937 and cg18052547 (located in HLA-DRB1 region), and cg13778567 (HLA-DQA1). We also identified 9 aberrant CpG sites in non-HLA gene regions including cg13979407, cg21075643, cg24290586, cg10135747 and cg22707857 (BTNL2), cg22155039 (NOTCH4), cg02605387 (TNXB), cg06255004 (AGPAT2) and cg18855195 (RIBC2). Increased mRNA levels of BTNL2, NOTCH4 and TNXB were identified in VKH patients when compared with healthy controls, consistent with the hypomethylated CpG status in these gene regions. Moreover, seven aberrantly methylated CpG sites may serve as a diagnostic marker for VKH disease (AUC = 84.95%, 95%CI: 79.49%-90.41%).",
+      "Alternations of DNA methylation occur in aging, which is regulated by DNA methyltransferases (DNMTs). In this study, we show that even though the transcription of DNMT1, the only enzyme that maintains DNA methylation in the mammalian genome, is reported to be decreased in an age-dependent manner, the decrease of Dnmt1 mRNA does not result in a decrease of its protein. Instead, DNMT1 protein is increased in aged mouse tissues, which is responsible for the methylation of genes related to macroautophagy/autophagy, senescence repression, and melanin synthesis and transport in aged organs, resulting in a decline of autophagy, an increase of senescence in those organs, and a decrease in melanin production in hair follicles (canities) in response to ionizing radiation (IR). Genetic deletion and inhibition of DNMT1 can reverse these processes. The interaction of DNMT1 with ATG7 through its CXXC domain is essential for its degradation, and treatment with senolytics also downregulates DNMT1 in aged organs, supporting two feedback loops between them.Abbreviations: 4-OHT, 4-hydroxytamoxifen; ChIP, chromatinimmunoprecipitation; D, dasatinib; D-gal, D-galactose; DCT/Trp-2, dopachrometautomerase; DMRs, differentially methylated regions; DNAm, DNA methylation; DNMTs,DNA methyltransferases; DSBs, double-stranded breaks; ETO, etoposide; GST, glutathione-S-transferase; HEK293T,human embryonic kidney 293T; HEM, human epidermal melanocytes; Hydr, hydralazine;IP, immunoprecipitation; IR,  ionizingradiation; KIF1A, kinesin family member 1A; M, methylated; MmIMCD3,mouse inner-medullary collecting duct 3; MITF, melanocyte inducingtranscription factor; MSP, methylation specific PCR; NCBI, national center for biotechnologyinformation; N-me, N-methyladenosine; PBMCs, peripheral blood mononuclear cells;Pro, proliferating; Q, quercetin; Rapa, rapamycin; RRBS, reduced representationbisulfite sequencing; RT, reverse transcription; SA-GLB1/beta-Gal, senescence-associatedgalactosidase beta 1; SASP, senescence-associated secretory phenotype; Sen, senescent; SNP, single nucleotidepolymorphism; TYR, tyrosinase; TYRP1/Trp-1, tyrosinase related protein 1; UHRF1,ubiquitin like with PHD and ring finger domains 1; UM, unmethylated; UTR, untranslatedregion; WGBS, whole-genome bisulfite sequencing."
+    ],
+    "selected_pmids": [
+      "34185889",
+      "37394087",
+      "42153573"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0199
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q151.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "34185889",
+    "37394087",
+    "42153573"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:35:19.880152+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 34185889, relevance: -0.1602) ---\nIn the early 2000s, emerging SARS-CoV-2, which is highly pathogenic, posed a great threat to public health. During COVID-19, epigenetic regulation is deemed to be an important part of the pathophysiology and illness severity. Using the Illumina Infinium Methylation EPIC BeadChip (850 K), we investigated genome-wide differences in DNA methylation between healthy subjects and COVID-19 patients with different disease severities. We conducted a combined analysis and selected 35 \"marker\" genes that could indicate a SARS-CoV-2 infection, including 12 (ATHL1, CHN2, CHST15, CPLX2, CRHR2, DCAKD, GNAI2, HECW1, HYAL1, MIR510, PDE11A, and SMG6) situated in the promoter region. The functions and pathways of differentially methylated genes were enriched in biological processes, signal transduction, and the immune system. In the \"Severe versus Mild\" group, differentially methylated genes, after eliminating duplicates, were used for PPI analyses. The four hub genes (GNG7, GNAS, PRKCZ, and PRKAG2) that had the highest degree of nodes were identified and among them, GNG7 and GNAS genes expressions were also downregulated in the severe group in sequencing results. Above all, the results suggest that GNG7 and GNAS may play a non-ignorable role in the progression of COVID-19. In conclusion, the identified key genes and related pathways in the current study can be used to study the molecular mechanisms of COVID-19 and may provide possibilities for specific treatments.\n\n--- Abstract 2 (PMID: 37394087, relevance: -1.1847) ---\nDNA methylation is one of the important epigenetic mechanisms for modulating gene expression. By performing a genome-wide methylation association analysis of whole peripheral blood from 60 Vogt-Koyanagi-Harada disease (VKH) patients and 60 healthy controls, we depicted the global DNA methylation status of VKH disease. Further pyrosequencing validation in 160 patients and 159 controls identified 3 aberrant CpG sites in HLA gene regions including cg04026937 and cg18052547 (located in HLA-DRB1 region), and cg13778567 (HLA-DQA1). We also identified 9 aberrant CpG sites in non-HLA gene regions including cg13979407, cg21075643, cg24290586, cg10135747 and cg22707857 (BTNL2), cg22155039 (NOTCH4), cg02605387 (TNXB), cg06255004 (AGPAT2) and cg18855195 (RIBC2). Increased mRNA levels of BTNL2, NOTCH4 and TNXB were identified in VKH patients when compared with healthy controls, consistent with the hypomethylated CpG status in these gene regions. Moreover, seven aberrantly methylated CpG sites may serve as a diagnostic marker for VKH disease (AUC = 84.95%, 95%CI: 79.49%-90.41%).\n\n--- Abstract 3 (PMID: 42153573, relevance: -1.8285) ---\nAlternations of DNA methylation occur in aging, which is regulated by DNA methyltransferases (DNMTs). In this study, we show that even though the transcription of DNMT1, the only enzyme that maintains DNA methylation in the mammalian genome, is reported to be decreased in an age-dependent manner, the decrease of Dnmt1 mRNA does not result in a decrease of its protein. Instead, DNMT1 protein is increased in aged mouse tissues, which is responsible for the methylation of genes related to macroautophagy/autophagy, senescence repression, and melanin synthesis and transport in aged organs, resulting in a decline of autophagy, an increase of senescence in those organs, and a decrease in melanin production in hair follicles (canities) in response to ionizing radiation (IR). Genetic deletion and inhibition of DNMT1 can reverse these processes. The interaction of DNMT1 with ATG7 through its CXXC domain is essential for its degradation, and treatment with senolytics also downregulates DNMT1 in aged organs, supporting two feedback loops between them.Abbreviations: 4-OHT, 4-hydroxytamoxifen; ChIP, chromatinimmunoprecipitation; D, dasatinib; D-gal, D-galactose; DCT/Trp-2, dopachrometautomerase; DMRs, differentially methylated regions; DNAm, DNA methylation; DNMTs,DNA methyltransferases; DSBs, double-stranded breaks; ETO, etoposide; GST, glutathione-S-transferase; HEK293T,human embryonic kidney 293T; HEM, human epidermal melanocytes; Hydr, hydralazine;IP, immunoprecipitation; IR,  ionizingradiation; KIF1A, kinesin family member 1A; M, methylated; MmIMCD3,mouse inner-medullary collecting duct 3; MITF, melanocyte inducingtranscription factor; MSP, methylation specific PCR; NCBI, national center for biotechnologyinformation; N-me, N-methyladenosine; PBMCs, peripheral blood mononuclear cells;Pro, proliferating; Q, quercetin; Rapa, rapamycin; RRBS, reduced representationbisulfite sequencing; RT, reverse transcription; SA-GLB1/beta-Gal, senescence-associatedgalactosidase beta 1; SASP, senescence-associated secretory phenotype; Sen, senescent; SNP, single nucleotidepolymorphism; TYR, tyrosinase; TYRP1/Trp-1, tyrosinase related protein 1; UHRF1,ubiquitin like with PHD and ring finger domains 1; UM, unmethylated; UTR, untranslatedregion; WGBS, whole-genome bisulfite sequencing.\n\n\n\n**Question:**\nWhat evidence in the provided graph or literature context supports epigenetic regulation of hair-loss genes such as AR, including DNA methylation? Distinguish direct evidence from general biological background.",
+  "vector_context": "--- Abstract 1 (PMID: 34185889, relevance: -0.1602) ---\nIn the early 2000s, emerging SARS-CoV-2, which is highly pathogenic, posed a great threat to public health. During COVID-19, epigenetic regulation is deemed to be an important part of the pathophysiology and illness severity. Using the Illumina Infinium Methylation EPIC BeadChip (850 K), we investigated genome-wide differences in DNA methylation between healthy subjects and COVID-19 patients with different disease severities. We conducted a combined analysis and selected 35 \"marker\" genes that could indicate a SARS-CoV-2 infection, including 12 (ATHL1, CHN2, CHST15, CPLX2, CRHR2, DCAKD, GNAI2, HECW1, HYAL1, MIR510, PDE11A, and SMG6) situated in the promoter region. The functions and pathways of differentially methylated genes were enriched in biological processes, signal transduction, and the immune system. In the \"Severe versus Mild\" group, differentially methylated genes, after eliminating duplicates, were used for PPI analyses. The four hub genes (GNG7, GNAS, PRKCZ, and PRKAG2) that had the highest degree of nodes were identified and among them, GNG7 and GNAS genes expressions were also downregulated in the severe group in sequencing results. Above all, the results suggest that GNG7 and GNAS may play a non-ignorable role in the progression of COVID-19. In conclusion, the identified key genes and related pathways in the current study can be used to study the molecular mechanisms of COVID-19 and may provide possibilities for specific treatments.\n\n--- Abstract 2 (PMID: 37394087, relevance: -1.1847) ---\nDNA methylation is one of the important epigenetic mechanisms for modulating gene expression. By performing a genome-wide methylation association analysis of whole peripheral blood from 60 Vogt-Koyanagi-Harada disease (VKH) patients and 60 healthy controls, we depicted the global DNA methylation status of VKH disease. Further pyrosequencing validation in 160 patients and 159 controls identified 3 aberrant CpG sites in HLA gene regions including cg04026937 and cg18052547 (located in HLA-DRB1 region), and cg13778567 (HLA-DQA1). We also identified 9 aberrant CpG sites in non-HLA gene regions including cg13979407, cg21075643, cg24290586, cg10135747 and cg22707857 (BTNL2), cg22155039 (NOTCH4), cg02605387 (TNXB), cg06255004 (AGPAT2) and cg18855195 (RIBC2). Increased mRNA levels of BTNL2, NOTCH4 and TNXB were identified in VKH patients when compared with healthy controls, consistent with the hypomethylated CpG status in these gene regions. Moreover, seven aberrantly methylated CpG sites may serve as a diagnostic marker for VKH disease (AUC = 84.95%, 95%CI: 79.49%-90.41%).\n\n--- Abstract 3 (PMID: 42153573, relevance: -1.8285) ---\nAlternations of DNA methylation occur in aging, which is regulated by DNA methyltransferases (DNMTs). In this study, we show that even though the transcription of DNMT1, the only enzyme that maintains DNA methylation in the mammalian genome, is reported to be decreased in an age-dependent manner, the decrease of Dnmt1 mRNA does not result in a decrease of its protein. Instead, DNMT1 protein is increased in aged mouse tissues, which is responsible for the methylation of genes related to macroautophagy/autophagy, senescence repression, and melanin synthesis and transport in aged organs, resulting in a decline of autophagy, an increase of senescence in those organs, and a decrease in melanin production in hair follicles (canities) in response to ionizing radiation (IR). Genetic deletion and inhibition of DNMT1 can reverse these processes. The interaction of DNMT1 with ATG7 through its CXXC domain is essential for its degradation, and treatment with senolytics also downregulates DNMT1 in aged organs, supporting two feedback loops between them.Abbreviations: 4-OHT, 4-hydroxytamoxifen; ChIP, chromatinimmunoprecipitation; D, dasatinib; D-gal, D-galactose; DCT/Trp-2, dopachrometautomerase; DMRs, differentially methylated regions; DNAm, DNA methylation; DNMTs,DNA methyltransferases; DSBs, double-stranded breaks; ETO, etoposide; GST, glutathione-S-transferase; HEK293T,human embryonic kidney 293T; HEM, human epidermal melanocytes; Hydr, hydralazine;IP, immunoprecipitation; IR,  ionizingradiation; KIF1A, kinesin family member 1A; M, methylated; MmIMCD3,mouse inner-medullary collecting duct 3; MITF, melanocyte inducingtranscription factor; MSP, methylation specific PCR; NCBI, national center for biotechnologyinformation; N-me, N-methyladenosine; PBMCs, peripheral blood mononuclear cells;Pro, proliferating; Q, quercetin; Rapa, rapamycin; RRBS, reduced representationbisulfite sequencing; RT, reverse transcription; SA-GLB1/beta-Gal, senescence-associatedgalactosidase beta 1; SASP, senescence-associated secretory phenotype; Sen, senescent; SNP, single nucleotidepolymorphism; TYR, tyrosinase; TYRP1/Trp-1, tyrosinase related protein 1; UHRF1,ubiquitin like with PHD and ring finger domains 1; UM, unmethylated; UTR, untranslatedregion; WGBS, whole-genome bisulfite sequencing.\n\n"
+}

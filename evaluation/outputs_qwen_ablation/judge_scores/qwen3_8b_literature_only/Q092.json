@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q092",
+      "randomization_seed": "20260706:Q092:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q092",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q092",
+      "error": null,
+      "id": "batch_req_6a4f85d242248190a3fa0674586d5606",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594485,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0470e5916c4dde33006a4f7dd90ad48193a93cfde2a720aa37",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q092"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0470e5916c4dde33006a4f7dd9d4bc81939ca051f800e3de6b",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether high-impact variants are mapped to FOXA2.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The supplied evidence does not mention FOXA2 or high-impact variants, so the statement that there are none is not directly supported; absence of evidence is treated as absence.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides a clear answer but does not adequately distinguish between no variants found and insufficient evidence.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Overstates a negative conclusion instead of qualifying that the provided evidence is insufficient.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question by stating that the provided context lacks the needed information.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the supplied evidence contains no information about high-impact variants mapped to FOXA2.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key limitation, though it could explicitly mention that neither the graph nor abstracts identify FOXA2 variants.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making an unsupported conclusion.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0470e5916c4dde33006a4f7ded9b4081939ed66ba3789d304d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2091,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 797,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2888
+          },
+          "user": null
+        },
+        "request_id": "06b25062-df77-4b37-aac9-f219414f26f1",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether high-impact variants are mapped to FOXA2.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The supplied evidence does not mention FOXA2 or high-impact variants, so the statement that there are none is not directly supported; absence of evidence is treated as absence.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Provides a clear answer but does not adequately distinguish between no variants found and insufficient evidence.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Overstates a negative conclusion instead of qualifying that the provided evidence is insufficient.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q092",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q092.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.748294+00:00"
+}

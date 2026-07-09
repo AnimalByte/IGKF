@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "35186941",
+    "34275739",
+    "31279575",
+    "37891420",
+    "38096226",
+    "41000054",
+    "42146614",
+    "41951763",
+    "42190016",
+    "32616903",
+    "41296172",
+    "42247190",
+    "41962619",
+    "37212325",
+    "42146354"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q111.json",
+      "question_id": "Q111",
+      "sha256": "4d8b9cdc7641e06d04f5fb38c8f16f27a7a4f5bb99b9af7a8faaadb3d6850d7e"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q111.json",
+      "question_id": "Q111",
+      "sha256": "c0cff7834c1cea5411f4bfb901811b2c26e034a391e53303d218d73a3a169056"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the Hedgehog signaling pathway?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.4838,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the Hedgehog signaling pathway?",
+  "parsed_answer": "Based on the provided literature context, **no specific drugs are mentioned** that are directly linked to genes or targets in the Hedgehog signaling pathway. The abstracts focus on the molecular mechanisms of the Hedgehog signaling pathway, including the roles of proteins like Ci/Gli, Fu/Ulk3/Stk36, Sufu, and GLI1/GLI2, as well as the regulatory effects of phosphorylation events. However, there is no mention of pharmacological agents or drugs targeting these components. \n\nTherefore, **the integrated data do not provide information about drugs linked to the Hedgehog signaling pathway**.",
+  "question_id": "Q111",
+  "question_text": "Which drugs, if any, are linked in the integrated data to genes or targets in the Hedgehog signaling pathway?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 124,
+    "prompt_token_count": 1084,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided literature context, **no specific drugs are mentioned** that are directly linked to genes or targets in the Hedgehog signaling pathway. The abstracts focus on the molecular mechanisms of the Hedgehog signaling pathway, including the roles of proteins like Ci/Gli, Fu/Ulk3/Stk36, Sufu, and GLI1/GLI2, as well as the regulatory effects of phosphorylation events. However, there is no mention of pharmacological agents or drugs targeting these components. \n\nTherefore, **the integrated data do not provide information about drugs linked to the Hedgehog signaling pathway**."
+      }
+    ],
+    "created": 1783564329,
+    "id": "cmpl-f4923d45-7901-4962-bdfb-df45091c4e73",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 124,
+      "prompt_tokens": 1063,
+      "total_tokens": 1187
+    }
+  },
+  "reranker_scores": [
+    -1.6624178886413574,
+    -1.684499979019165,
+    -1.8125637769699097
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      38.21015930175781,
+      38.258670806884766,
+      39.107765197753906,
+      40.48129653930664,
+      42.108482360839844,
+      42.1791877746582,
+      42.63221740722656,
+      43.103233337402344,
+      43.16860580444336,
+      43.576942443847656,
+      43.67020797729492,
+      43.72026443481445,
+      43.901824951171875,
+      43.913482666015625,
+      44.00090789794922
+    ],
+    "candidate_pmids": [
+      "35186941",
+      "34275739",
+      "31279575",
+      "37891420",
+      "38096226",
+      "41000054",
+      "42146614",
+      "41951763",
+      "42190016",
+      "32616903",
+      "41296172",
+      "42247190",
+      "41962619",
+      "37212325",
+      "42146354"
+    ],
+    "expanded_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the Hedgehog signaling pathway?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 35186941, relevance: -1.6624) ---\nHedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.\n\n--- Abstract 2 (PMID: 42190016, relevance: -1.6845) ---\nGenetic variants near Hedgehog interacting protein (HHIP) have been consistently associated with increased risk for chronic obstructive pulmonary disease (COPD), the third leading cause of death worldwide. However, HHIP's role in COPD pathogenesis remains elusive. Canonically, HHIP is a negative regulator of the Hedgehog pathway and downstream GLI1 and GLI2 activation. The Hedgehog pathway plays an important role in wound healing, specifically in activating transcription factors that drive the epithelial-mesenchymal transition (EMT), which in its intermediate state (partial EMT) is necessary for the collective movement of cells closing a wound. Herein, we use a systems biology approach to propose a mechanism to explain HHIP's role in faulty epithelial wound healing, which could contribute to the development of emphysema, a key feature of COPD. Using two different Boolean models, we show dysfunctional HHIP results in a lack of negative feedback on GLI, triggering a full EMT, where cells become mesenchymal and do not properly close the wound. We validate these Boolean models with experimental evidence gathered from published scientific literature. Finally, we show evidence supporting our hypothesis in single-cell and single-nucleus RNA-Seq data from different COPD cohorts and Hhip heterozygous knockout mice. Overall, our analyses suggest that aberrant wound healing due to dysfunctional HHIP, combined with chronic epithelial damage through cigarette smoke exposure, may be a primary cause of COPD-associated emphysema.\n\n--- Abstract 3 (PMID: 31279575, relevance: -1.8126) ---\nHedgehog (Hh) signaling culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli into its activator form (Ci(A)/Gli(A)), but the underlying mechanism remains poorly understood. Here, we demonstrate that Hh stimulates the phosphorylation of Ci by the Ser/Thr kinase Fused (Fu) and that Fu-mediated phosphorylation of Ci promotes its activation. We find that Fu directly phosphorylates Ci on Ser218 and Ser1230, which primes its further phosphorylation by CK1 on adjacent sties. These phosphorylation events alter Ci binding to the pathway inhibitor Suppressor of fused (Sufu) and facilitate the recruitment of Transportion and the transcriptional coactivator CBP. Furthermore, we provide evidence that Sonic hedgehog (Shh) activates Gli2 by stimulating its phosphorylation on conserved sites through the Fu-family kinases ULK3 and mFu/STK36 in a manner depending on Gli2 ciliary localization. Hence, Fu-family kinase-mediated phosphorylation of Ci/Gli serves as a conserved mechanism that activates the Hh pathway transcription factor.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the Hedgehog signaling pathway?",
+    "rerank_seconds": 0.343,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3584,
+    "score_max": -1.6624178886413574,
+    "score_mean": -1.7198272148768108,
+    "scores": [
+      -1.6624178886413574,
+      -1.684499979019165,
+      -1.8125637769699097
+    ],
+    "selected_abstracts": [
+      "Hedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.",
+      "Genetic variants near Hedgehog interacting protein (HHIP) have been consistently associated with increased risk for chronic obstructive pulmonary disease (COPD), the third leading cause of death worldwide. However, HHIP's role in COPD pathogenesis remains elusive. Canonically, HHIP is a negative regulator of the Hedgehog pathway and downstream GLI1 and GLI2 activation. The Hedgehog pathway plays an important role in wound healing, specifically in activating transcription factors that drive the epithelial-mesenchymal transition (EMT), which in its intermediate state (partial EMT) is necessary for the collective movement of cells closing a wound. Herein, we use a systems biology approach to propose a mechanism to explain HHIP's role in faulty epithelial wound healing, which could contribute to the development of emphysema, a key feature of COPD. Using two different Boolean models, we show dysfunctional HHIP results in a lack of negative feedback on GLI, triggering a full EMT, where cells become mesenchymal and do not properly close the wound. We validate these Boolean models with experimental evidence gathered from published scientific literature. Finally, we show evidence supporting our hypothesis in single-cell and single-nucleus RNA-Seq data from different COPD cohorts and Hhip heterozygous knockout mice. Overall, our analyses suggest that aberrant wound healing due to dysfunctional HHIP, combined with chronic epithelial damage through cigarette smoke exposure, may be a primary cause of COPD-associated emphysema.",
+      "Hedgehog (Hh) signaling culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli into its activator form (Ci(A)/Gli(A)), but the underlying mechanism remains poorly understood. Here, we demonstrate that Hh stimulates the phosphorylation of Ci by the Ser/Thr kinase Fused (Fu) and that Fu-mediated phosphorylation of Ci promotes its activation. We find that Fu directly phosphorylates Ci on Ser218 and Ser1230, which primes its further phosphorylation by CK1 on adjacent sties. These phosphorylation events alter Ci binding to the pathway inhibitor Suppressor of fused (Sufu) and facilitate the recruitment of Transportion and the transcriptional coactivator CBP. Furthermore, we provide evidence that Sonic hedgehog (Shh) activates Gli2 by stimulating its phosphorylation on conserved sites through the Fu-family kinases ULK3 and mFu/STK36 in a manner depending on Gli2 ciliary localization. Hence, Fu-family kinase-mediated phosphorylation of Ci/Gli serves as a conserved mechanism that activates the Hh pathway transcription factor."
+    ],
+    "selected_pmids": [
+      "35186941",
+      "42190016",
+      "31279575"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0151
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q111.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "35186941",
+    "42190016",
+    "31279575"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:32:11.124703+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 35186941, relevance: -1.6624) ---\nHedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.\n\n--- Abstract 2 (PMID: 42190016, relevance: -1.6845) ---\nGenetic variants near Hedgehog interacting protein (HHIP) have been consistently associated with increased risk for chronic obstructive pulmonary disease (COPD), the third leading cause of death worldwide. However, HHIP's role in COPD pathogenesis remains elusive. Canonically, HHIP is a negative regulator of the Hedgehog pathway and downstream GLI1 and GLI2 activation. The Hedgehog pathway plays an important role in wound healing, specifically in activating transcription factors that drive the epithelial-mesenchymal transition (EMT), which in its intermediate state (partial EMT) is necessary for the collective movement of cells closing a wound. Herein, we use a systems biology approach to propose a mechanism to explain HHIP's role in faulty epithelial wound healing, which could contribute to the development of emphysema, a key feature of COPD. Using two different Boolean models, we show dysfunctional HHIP results in a lack of negative feedback on GLI, triggering a full EMT, where cells become mesenchymal and do not properly close the wound. We validate these Boolean models with experimental evidence gathered from published scientific literature. Finally, we show evidence supporting our hypothesis in single-cell and single-nucleus RNA-Seq data from different COPD cohorts and Hhip heterozygous knockout mice. Overall, our analyses suggest that aberrant wound healing due to dysfunctional HHIP, combined with chronic epithelial damage through cigarette smoke exposure, may be a primary cause of COPD-associated emphysema.\n\n--- Abstract 3 (PMID: 31279575, relevance: -1.8126) ---\nHedgehog (Hh) signaling culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli into its activator form (Ci(A)/Gli(A)), but the underlying mechanism remains poorly understood. Here, we demonstrate that Hh stimulates the phosphorylation of Ci by the Ser/Thr kinase Fused (Fu) and that Fu-mediated phosphorylation of Ci promotes its activation. We find that Fu directly phosphorylates Ci on Ser218 and Ser1230, which primes its further phosphorylation by CK1 on adjacent sties. These phosphorylation events alter Ci binding to the pathway inhibitor Suppressor of fused (Sufu) and facilitate the recruitment of Transportion and the transcriptional coactivator CBP. Furthermore, we provide evidence that Sonic hedgehog (Shh) activates Gli2 by stimulating its phosphorylation on conserved sites through the Fu-family kinases ULK3 and mFu/STK36 in a manner depending on Gli2 ciliary localization. Hence, Fu-family kinase-mediated phosphorylation of Ci/Gli serves as a conserved mechanism that activates the Hh pathway transcription factor.\n\n\n\n**Question:**\nWhich drugs, if any, are linked in the integrated data to genes or targets in the Hedgehog signaling pathway?",
+  "vector_context": "--- Abstract 1 (PMID: 35186941, relevance: -1.6624) ---\nHedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.\n\n--- Abstract 2 (PMID: 42190016, relevance: -1.6845) ---\nGenetic variants near Hedgehog interacting protein (HHIP) have been consistently associated with increased risk for chronic obstructive pulmonary disease (COPD), the third leading cause of death worldwide. However, HHIP's role in COPD pathogenesis remains elusive. Canonically, HHIP is a negative regulator of the Hedgehog pathway and downstream GLI1 and GLI2 activation. The Hedgehog pathway plays an important role in wound healing, specifically in activating transcription factors that drive the epithelial-mesenchymal transition (EMT), which in its intermediate state (partial EMT) is necessary for the collective movement of cells closing a wound. Herein, we use a systems biology approach to propose a mechanism to explain HHIP's role in faulty epithelial wound healing, which could contribute to the development of emphysema, a key feature of COPD. Using two different Boolean models, we show dysfunctional HHIP results in a lack of negative feedback on GLI, triggering a full EMT, where cells become mesenchymal and do not properly close the wound. We validate these Boolean models with experimental evidence gathered from published scientific literature. Finally, we show evidence supporting our hypothesis in single-cell and single-nucleus RNA-Seq data from different COPD cohorts and Hhip heterozygous knockout mice. Overall, our analyses suggest that aberrant wound healing due to dysfunctional HHIP, combined with chronic epithelial damage through cigarette smoke exposure, may be a primary cause of COPD-associated emphysema.\n\n--- Abstract 3 (PMID: 31279575, relevance: -1.8126) ---\nHedgehog (Hh) signaling culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli into its activator form (Ci(A)/Gli(A)), but the underlying mechanism remains poorly understood. Here, we demonstrate that Hh stimulates the phosphorylation of Ci by the Ser/Thr kinase Fused (Fu) and that Fu-mediated phosphorylation of Ci promotes its activation. We find that Fu directly phosphorylates Ci on Ser218 and Ser1230, which primes its further phosphorylation by CK1 on adjacent sties. These phosphorylation events alter Ci binding to the pathway inhibitor Suppressor of fused (Sufu) and facilitate the recruitment of Transportion and the transcriptional coactivator CBP. Furthermore, we provide evidence that Sonic hedgehog (Shh) activates Gli2 by stimulating its phosphorylation on conserved sites through the Fu-family kinases ULK3 and mFu/STK36 in a manner depending on Gli2 ciliary localization. Hence, Fu-family kinase-mediated phosphorylation of Ci/Gli serves as a conserved mechanism that activates the Hh pathway transcription factor.\n\n"
+}

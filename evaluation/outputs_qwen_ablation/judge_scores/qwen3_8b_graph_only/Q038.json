@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q038",
+      "randomization_seed": "20260706:Q038:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q038",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q038",
+      "error": null,
+      "id": "batch_req_6a4f85cece208190a1b8b936843d2de7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594601,
+          "created_at": 1783594564,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01e971c2b4da252e006a4f7e44cddc81949cf40336740f847e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q038"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01e971c2b4da252e006a4f7e468ac88194870c2c7665a6a83d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether a functional consequence for rs4679956 can be identified from the provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied context does not provide an annotated consequence or gene effect for rs4679956.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers both parts of the question by noting that neither the consequence nor gene effect can be determined from the evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inferring unsupported variant function or gene impact.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that rs4679956 is not mentioned and no consequence can be determined.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the supplied evidence, which contains no rs4679956 annotation or functional information.\"},\"completeness\":{\"score\":4,\"rationale\":\"Adequately addresses the lack of functional consequence, though it refers only to literature context and does not explicitly mention the graph context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the conclusion and avoids unsupported claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01e971c2b4da252e006a4f7e5f40f4819496c5add6881d3146",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2486,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 802,
+            "output_tokens_details": {
+              "reasoning_tokens": 515
+            },
+            "total_tokens": 3288
+          },
+          "user": null
+        },
+        "request_id": "11f9d2b6-ffe2-4007-9686-4bf990e60d96",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether a functional consequence for rs4679956 can be identified from the provided evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the supplied context does not provide an annotated consequence or gene effect for rs4679956.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers both parts of the question by noting that neither the consequence nor gene effect can be determined from the evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inferring unsupported variant function or gene impact.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q038",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q038.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.727210+00:00"
+}

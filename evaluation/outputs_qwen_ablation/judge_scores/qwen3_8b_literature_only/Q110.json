@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q110",
+      "randomization_seed": "20260706:Q110:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q110",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q110",
+      "error": null,
+      "id": "batch_req_6a4f85d370648190af03a6443f59d640",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594588,
+          "created_at": 1783594525,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00ed439daa9ccc05006a4f7e1d421c8197ac39850a4a90c790",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q110"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00ed439daa9ccc05006a4f7e1e47b481979966cc1f0f328c8e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the lack of relevant graph data but does not fully consider the supplied vector evidence or the hair-follicle-specific question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Does not make unsupported biomedical claims and accurately notes that the graph contains no relevant data.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Incomplete because it relies only on the graph context and does not mention that the vector abstracts discuss general Hedgehog signaling but not hair-follicle growth or cycling.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains rather than inventing a hair-follicle mechanism unsupported by the evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question by explaining that the supplied evidence does not contain hair-follicle-specific information.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately summarizes the supplied abstracts as focusing on general Hedgehog signaling mechanisms and other disease contexts, without claiming unsupported hair-follicle mechanisms.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides a reasonably complete evidence-based abstention, though it could explicitly note the graph also had no relevant data.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly qualifies the limits of the evidence and avoids unsupported conclusions about hair-follicle growth or cycling.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00ed439daa9ccc05006a4f7e4f1c0c819785ee028b6b660008",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1632,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1455,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 3087
+          },
+          "user": null
+        },
+        "request_id": "5ce5c13a-d676-4e00-a4c5-58340f554e46",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question by explaining that the supplied evidence does not contain hair-follicle-specific information.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately summarizes the supplied abstracts as focusing on general Hedgehog signaling mechanisms and other disease contexts, without claiming unsupported hair-follicle mechanisms.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides a reasonably complete evidence-based abstention, though it could explicitly note the graph also had no relevant data.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly qualifies the limits of the evidence and avoids unsupported conclusions about hair-follicle growth or cycling.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q110",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q110.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.755247+00:00"
+}

@@ -714,7 +714,67 @@ Paper-facing pairwise outputs are copied to:
 
 The actual recorded Batch usage across the initial run and targeted retries was 1,143,611 input tokens and 119,835 output tokens, with an estimated Batch cost of about $4.66.
 
-### 6.8 Output Layout
+### 6.8 Local Qwen Component Ablation
+
+A local-Qwen-only component ablation is available under `evaluation/outputs_qwen_ablation/`. It compares four Qwen3-8B configurations while reusing the frozen canonical baseline and full-IGKF outputs:
+
+- `qwen3_8b_baseline`: canonical no-context Qwen output
+- `qwen3_8b_graph_only`: graph context only, no ChromaDB literature retrieval, no dense retrieval, no reranking
+- `qwen3_8b_literature_only`: literature context only, dense retrieval from the original question only, existing ChromaDB corpus, initial_k=15, rerank_top_n=3
+- `qwen3_8b_igkf`: canonical full IGKF output
+
+This is a component ablation of the current IGKF pipeline, not a perfectly orthogonal factorial design, because the full IGKF condition uses graph context to expand the literature retrieval query.
+
+Run the new local generation arms with the same Qwen3-8B GGUF and generation settings as the paper experiment:
+
+```bash
+conda activate gwas-env
+python -m evaluation.run_qwen_ablation --dry-run --question-ids Q002,Q100,Q109
+python -m evaluation.run_qwen_ablation --question-ids Q002,Q100,Q109 --force
+python -m evaluation.run_qwen_ablation
+```
+
+After the local arms are complete, the ablation judge Batch can be prepared, submitted, downloaded, normalized, and analyzed with:
+
+```bash
+conda activate gwas-env
+python -m evaluation.ablation_openai_batch prepare
+python -m evaluation.ablation_openai_batch submit evaluation/outputs_qwen_ablation/batch_metadata/<ablation_manifest>.json
+python -m evaluation.ablation_openai_batch status evaluation/outputs_qwen_ablation/batch_metadata/<ablation_manifest>.json
+python -m evaluation.ablation_openai_batch download evaluation/outputs_qwen_ablation/batch_metadata/<ablation_manifest>.json
+python -m evaluation.ablation_openai_batch normalize evaluation/outputs_qwen_ablation/batch_metadata/<ablation_manifest>.json --force
+python -m evaluation.ablation_statistics --config evaluation/configs/qwen_ablation.yaml
+```
+
+Completed ablation run:
+
+- New local generations: 205/205 graph-only and 205/205 literature-only
+- Judge Batch: `batch_6a4f0ad259d08190aef2fa7d849c6dd4`
+- Judge requests: 205 completed, 0 failed
+- Normalized ablation judge scores: 410
+- Judge usage: 429,823 input tokens, 182,543 output tokens, 114,786 reasoning tokens
+
+Headline biomedical factual-correctness scores:
+
+| Condition | Median | Q1-Q3 | Mean |
+| --- | ---: | ---: | ---: |
+| Qwen baseline | 3 | 1-4 | 2.71 |
+| Qwen literature-only | 4 | 2-5 | 3.45 |
+| Qwen graph-only | 5 | 4-5 | 4.50 |
+| Qwen full IGKF | 5 | 4-5 | 4.24 |
+
+Friedman omnibus tests across the four paired Qwen conditions were significant for all answer-quality metrics after Holm correction. For biomedical factual correctness, the Friedman statistic was 210.48 with Holm-adjusted p = 9.17e-45. Planned paired contrasts showed graph-only, literature-only, and full IGKF each improved over baseline. In this judge run, graph-only had a higher mean factual-correctness score than full IGKF, so the ablation should be interpreted conservatively as evidence that the current graph evidence component is strongly associated with Qwen performance on this benchmark.
+
+Ablation outputs are stored at:
+
+- `evaluation/outputs_qwen_ablation/raw_generations/`
+- `evaluation/outputs_qwen_ablation/retrieval_packages/`
+- `evaluation/outputs_qwen_ablation/judge_scores/`
+- `evaluation/outputs_qwen_ablation/statistics/`
+- `evaluation/outputs_qwen_ablation/tables/`
+- `evaluation/outputs_qwen_ablation/figures/`
+
+### 6.9 Output Layout
 
 ```text
 evaluation/outputs/
@@ -730,6 +790,18 @@ evaluation/outputs/
 ├── extended_analysis/      # Ceiling, distribution, paired-delta diagnostics
 ├── pairwise_judge/         # Blinded pairwise GraphRAG judge outputs
 └── metadata/               # Benchmark validation, reproducibility, and publication manifests
+
+evaluation/outputs_qwen_ablation/
+├── raw_generations/        # New graph-only and literature-only Qwen generations
+├── retrieval_packages/     # Ablation retrieval packages
+├── batch_inputs/           # Ablation judge Batch JSONL
+├── batch_metadata/         # Ablation Batch manifests and mappings
+├── batch_outputs/          # Raw downloaded ablation judge Batch JSONL
+├── judge_scores/           # Normalized judge scores for the two new ablation arms
+├── statistics/             # Friedman, Wilcoxon, and long-form score tables
+├── tables/                 # Paper-facing ablation tables
+├── figures/                # Paper-facing ablation figures
+└── metadata/               # Ablation run and monitor logs
 ```
 
 ---

@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42106542",
+    "41991927",
+    "35719909",
+    "34320404",
+    "42395553",
+    "42032656",
+    "42169044",
+    "39539976",
+    "32776659",
+    "42029952",
+    "37737258",
+    "30610764",
+    "34552771",
+    "41739902",
+    "37655555"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q086.json",
+      "question_id": "Q086",
+      "sha256": "2c79089f351b4826b9c9962ed118a30bd119b581ead80baf94e8c5b3a1a9bd28"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q086.json",
+      "question_id": "Q086",
+      "sha256": "2541045d5e8aaba78dc5fa6f6f9f4a966bbdc4712572d8b25f6ac6ceee01e65d"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Summarize the evidence linking PAX1 to androgenetic alopecia.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.5221,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the evidence linking PAX1 to androgenetic alopecia.",
+  "parsed_answer": "The literature context provided does not include any evidence linking **PAX1** to **androgenetic alopecia (AGA)**. The only mention of **PAX1** is in the context of cervical cancer screening, where it refers to **PAX1 methylation (PAX1(m))** as a biomarker for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+). There is no information in the provided abstracts about PAX1's role in hair loss or AGA.",
+  "question_id": "Q086",
+  "question_text": "Summarize the evidence linking PAX1 to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 115,
+    "prompt_token_count": 1426,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The literature context provided does not include any evidence linking **PAX1** to **androgenetic alopecia (AGA)**. The only mention of **PAX1** is in the context of cervical cancer screening, where it refers to **PAX1 methylation (PAX1(m))** as a biomarker for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+). There is no information in the provided abstracts about PAX1's role in hair loss or AGA."
+      }
+    ],
+    "created": 1783564231,
+    "id": "cmpl-e240571a-7fa1-4e03-9279-1765417ef1a0",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 115,
+      "prompt_tokens": 1405,
+      "total_tokens": 1520
+    }
+  },
+  "reranker_scores": [
+    2.300126075744629,
+    -2.368216037750244,
+    -4.339173316955566
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      43.8699836730957,
+      44.622283935546875,
+      45.16297912597656,
+      45.373661041259766,
+      45.40559768676758,
+      45.43693923950195,
+      45.45514678955078,
+      45.51765823364258,
+      45.58072280883789,
+      45.599212646484375,
+      45.64533996582031,
+      45.68906021118164,
+      45.692108154296875,
+      45.713619232177734,
+      46.04820251464844
+    ],
+    "candidate_pmids": [
+      "42106542",
+      "41991927",
+      "35719909",
+      "34320404",
+      "42395553",
+      "42032656",
+      "42169044",
+      "39539976",
+      "32776659",
+      "42029952",
+      "37737258",
+      "30610764",
+      "34552771",
+      "41739902",
+      "37655555"
+    ],
+    "expanded_retrieval_query": "Summarize the evidence linking PAX1 to androgenetic alopecia.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42169044, relevance: 2.3001) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 42032656, relevance: -2.3682) ---\nBACKGROUND: The triage of Atypical Squamous Cells (ASC) is pivotal in cervical cancer (CC) screening. This study aimed to evaluate the performance of paired box 1 gene methylation (PAX1(m)) testing for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+) in an ASC population and to compare it with high-risk human papillomavirus (hrHPV) testing. METHODS: This retrospective study was conducted from June 2023 to October 2025 and analyzed 1,305 women with ASC. Residual cervical cell samples were used for PAX1(m) testing, and their hrHPV test results within two months were collected for comparison. All participants underwent colposcopy-biopsy to obtain the histopathological results. The area under the receiver operating characteristic curve (AUC), sensitivity, specificity of the two methods was calculated and compared. RESULTS PAX1M : difference of cross points (DeltaCp) values showed a negative correlation with lesion severity (P (trend) <0.001). For CIN3 + detection, PAX1(m) (cut-off: DeltaCp </= 11.74) demonstrated comparable sensitivity to hrHPV (94.6% vs. 94.6%), but with significantly higher specificity (66.0% vs. 10.4%, P < 0.001). Its AUC was also significantly higher to that of the hrHPV test. For CIN2 + detection, the AUC of PAX1(m) (cut-off: DeltaCp </= 11.74) was 0.716, which was significantly higher than that of the hrHPV test (0.544, P < 0.001). Furthermore, PAX1(m) detected all cases of CC. CONCLUSION: In the triage of ASC, PAX1(m) significantly improved the specificity for detecting CIN3 + while maintaining high sensitivity. These findings suggest that PAX1(m) is a promising triage strategy with diagnostic performance superior to that of hrHPV, warranting further prospective validation of its clinical impact and cost-effectiveness.\n\n--- Abstract 3 (PMID: 39539976, relevance: -4.3392) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Summarize the evidence linking PAX1 to androgenetic alopecia.",
+    "rerank_seconds": 0.3335,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3475,
+    "score_max": 2.300126075744629,
+    "score_mean": -1.4690877596537273,
+    "scores": [
+      2.300126075744629,
+      -2.368216037750244,
+      -4.339173316955566
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.",
+      "BACKGROUND: The triage of Atypical Squamous Cells (ASC) is pivotal in cervical cancer (CC) screening. This study aimed to evaluate the performance of paired box 1 gene methylation (PAX1(m)) testing for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+) in an ASC population and to compare it with high-risk human papillomavirus (hrHPV) testing. METHODS: This retrospective study was conducted from June 2023 to October 2025 and analyzed 1,305 women with ASC. Residual cervical cell samples were used for PAX1(m) testing, and their hrHPV test results within two months were collected for comparison. All participants underwent colposcopy-biopsy to obtain the histopathological results. The area under the receiver operating characteristic curve (AUC), sensitivity, specificity of the two methods was calculated and compared. RESULTS PAX1M : difference of cross points (DeltaCp) values showed a negative correlation with lesion severity (P (trend) <0.001). For CIN3 + detection, PAX1(m) (cut-off: DeltaCp </= 11.74) demonstrated comparable sensitivity to hrHPV (94.6% vs. 94.6%), but with significantly higher specificity (66.0% vs. 10.4%, P < 0.001). Its AUC was also significantly higher to that of the hrHPV test. For CIN2 + detection, the AUC of PAX1(m) (cut-off: DeltaCp </= 11.74) was 0.716, which was significantly higher than that of the hrHPV test (0.544, P < 0.001). Furthermore, PAX1(m) detected all cases of CC. CONCLUSION: In the triage of ASC, PAX1(m) significantly improved the specificity for detecting CIN3 + while maintaining high sensitivity. These findings suggest that PAX1(m) is a promising triage strategy with diagnostic performance superior to that of hrHPV, warranting further prospective validation of its clinical impact and cost-effectiveness.",
+      "Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis."
+    ],
+    "selected_pmids": [
+      "42169044",
+      "42032656",
+      "39539976"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0138
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q086.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42169044",
+    "42032656",
+    "39539976"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:30:33.237286+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42169044, relevance: 2.3001) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 42032656, relevance: -2.3682) ---\nBACKGROUND: The triage of Atypical Squamous Cells (ASC) is pivotal in cervical cancer (CC) screening. This study aimed to evaluate the performance of paired box 1 gene methylation (PAX1(m)) testing for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+) in an ASC population and to compare it with high-risk human papillomavirus (hrHPV) testing. METHODS: This retrospective study was conducted from June 2023 to October 2025 and analyzed 1,305 women with ASC. Residual cervical cell samples were used for PAX1(m) testing, and their hrHPV test results within two months were collected for comparison. All participants underwent colposcopy-biopsy to obtain the histopathological results. The area under the receiver operating characteristic curve (AUC), sensitivity, specificity of the two methods was calculated and compared. RESULTS PAX1M : difference of cross points (DeltaCp) values showed a negative correlation with lesion severity (P (trend) <0.001). For CIN3 + detection, PAX1(m) (cut-off: DeltaCp </= 11.74) demonstrated comparable sensitivity to hrHPV (94.6% vs. 94.6%), but with significantly higher specificity (66.0% vs. 10.4%, P < 0.001). Its AUC was also significantly higher to that of the hrHPV test. For CIN2 + detection, the AUC of PAX1(m) (cut-off: DeltaCp </= 11.74) was 0.716, which was significantly higher than that of the hrHPV test (0.544, P < 0.001). Furthermore, PAX1(m) detected all cases of CC. CONCLUSION: In the triage of ASC, PAX1(m) significantly improved the specificity for detecting CIN3 + while maintaining high sensitivity. These findings suggest that PAX1(m) is a promising triage strategy with diagnostic performance superior to that of hrHPV, warranting further prospective validation of its clinical impact and cost-effectiveness.\n\n--- Abstract 3 (PMID: 39539976, relevance: -4.3392) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n\n\n**Question:**\nSummarize the evidence linking PAX1 to androgenetic alopecia.",
+  "vector_context": "--- Abstract 1 (PMID: 42169044, relevance: 2.3001) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 42032656, relevance: -2.3682) ---\nBACKGROUND: The triage of Atypical Squamous Cells (ASC) is pivotal in cervical cancer (CC) screening. This study aimed to evaluate the performance of paired box 1 gene methylation (PAX1(m)) testing for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+) in an ASC population and to compare it with high-risk human papillomavirus (hrHPV) testing. METHODS: This retrospective study was conducted from June 2023 to October 2025 and analyzed 1,305 women with ASC. Residual cervical cell samples were used for PAX1(m) testing, and their hrHPV test results within two months were collected for comparison. All participants underwent colposcopy-biopsy to obtain the histopathological results. The area under the receiver operating characteristic curve (AUC), sensitivity, specificity of the two methods was calculated and compared. RESULTS PAX1M : difference of cross points (DeltaCp) values showed a negative correlation with lesion severity (P (trend) <0.001). For CIN3 + detection, PAX1(m) (cut-off: DeltaCp </= 11.74) demonstrated comparable sensitivity to hrHPV (94.6% vs. 94.6%), but with significantly higher specificity (66.0% vs. 10.4%, P < 0.001). Its AUC was also significantly higher to that of the hrHPV test. For CIN2 + detection, the AUC of PAX1(m) (cut-off: DeltaCp </= 11.74) was 0.716, which was significantly higher than that of the hrHPV test (0.544, P < 0.001). Furthermore, PAX1(m) detected all cases of CC. CONCLUSION: In the triage of ASC, PAX1(m) significantly improved the specificity for detecting CIN3 + while maintaining high sensitivity. These findings suggest that PAX1(m) is a promising triage strategy with diagnostic performance superior to that of hrHPV, warranting further prospective validation of its clinical impact and cost-effectiveness.\n\n--- Abstract 3 (PMID: 39539976, relevance: -4.3392) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n"
+}

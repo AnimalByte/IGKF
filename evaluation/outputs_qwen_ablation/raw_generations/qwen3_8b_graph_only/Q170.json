@@ -1,0 +1,158 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q170.json",
+      "question_id": "Q170",
+      "sha256": "c8742b455b0c40014e167d4002cb50b696851290defc597458b3b43b4f67c5ed"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q170.json",
+      "question_id": "Q170",
+      "sha256": "6f2b4e31a8e792e779314aeeb316c3c0b0e398a6200cfdf0343359d1f55ec9c8"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.8315,
+  "git_commit": null,
+  "graph_context": "Entity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Describe the supported relationships between androgen metabolism, SRD5A2, and AR in the integrated evidence.",
+  "parsed_answer": "The integrated evidence supports the following relationships between androgen metabolism, SRD5A2, and AR (androgen receptor):\n\n1. **SRD5A2 and Androgen Metabolism**:  \n   SRD5A2 is a gene involved in androgen biosynthesis. It encodes the enzyme 5-alpha-reductase type 2, which catalyzes the conversion of testosterone to dihydrotestosterone (DHT), a more potent androgen. This enzyme plays a critical role in androgen metabolism, particularly in tissues where DHT is essential for normal development and function, such as the prostate and genitalia.\n\n2. **SRD5A2 and AR Interaction**:  \n   While the graph context does not explicitly state a direct interaction between SRD5A2 and AR, the biological context implies a functional relationship. SRD5A2's product, 5-alpha-reductase type 2, generates DHT, which is a ligand for the androgen receptor (AR). Therefore, SRD5A2 indirectly influences AR activity by modulating the availability of DHT, a key androgen that binds to AR to initiate downstream signaling pathways.\n\n3. **Clinical and Therapeutic Implications**:  \n   SRD5A2 is targeted by drugs such as dutasteride, finasteride, and abiraterone acetate, which inhibit 5-alpha-reductase activity. These drugs are used to reduce DHT levels, thereby modulating AR signaling. This therapeutic approach is relevant in conditions like androgenetic alopecia, benign prostatic hyperplasia, and prostate cancer, where AR activity is a key driver of disease progression.\n\nIn summary, SRD5A2 is central to androgen metabolism through its role in converting testosterone to DHT, and this process is essential for AR activation and downstream biological effects. The integrated evidence highlights the interplay between SRD5A2, androgen metabolism, and AR signaling.",
+  "question_id": "Q170",
+  "question_text": "Describe the supported relationships between androgen metabolism, SRD5A2, and AR in the integrated evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 399,
+    "prompt_token_count": 619,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence supports the following relationships between androgen metabolism, SRD5A2, and AR (androgen receptor):\n\n1. **SRD5A2 and Androgen Metabolism**:  \n   SRD5A2 is a gene involved in androgen biosynthesis. It encodes the enzyme 5-alpha-reductase type 2, which catalyzes the conversion of testosterone to dihydrotestosterone (DHT), a more potent androgen. This enzyme plays a critical role in androgen metabolism, particularly in tissues where DHT is essential for normal development and function, such as the prostate and genitalia.\n\n2. **SRD5A2 and AR Interaction**:  \n   While the graph context does not explicitly state a direct interaction between SRD5A2 and AR, the biological context implies a functional relationship. SRD5A2's product, 5-alpha-reductase type 2, generates DHT, which is a ligand for the androgen receptor (AR). Therefore, SRD5A2 indirectly influences AR activity by modulating the availability of DHT, a key androgen that binds to AR to initiate downstream signaling pathways.\n\n3. **Clinical and Therapeutic Implications**:  \n   SRD5A2 is targeted by drugs such as dutasteride, finasteride, and abiraterone acetate, which inhibit 5-alpha-reductase activity. These drugs are used to reduce DHT levels, thereby modulating AR signaling. This therapeutic approach is relevant in conditions like androgenetic alopecia, benign prostatic hyperplasia, and prostate cancer, where AR activity is a key driver of disease progression.\n\nIn summary, SRD5A2 is central to androgen metabolism through its role in converting testosterone to DHT, and this process is essential for AR activation and downstream biological effects. The integrated evidence highlights the interplay between SRD5A2, androgen metabolism, and AR signaling."
+      }
+    ],
+    "created": 1783563502,
+    "id": "cmpl-981b0829-63a1-4dd2-b052-cd71b34546bb",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 399,
+      "prompt_tokens": 598,
+      "total_tokens": 997
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+    "found_specific_entity": true,
+    "graph_context": "Entity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+    "graph_context_length": 1614,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0109,
+    "original_retrieval_query": "Describe the supported relationships between androgen metabolism, SRD5A2, and AR in the integrated evidence.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "relationships"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgen metabolism"
+      },
+      {
+        "label": "ENTITY",
+        "text": "srd5a2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "ar"
+      },
+      {
+        "label": "ENTITY",
+        "text": "integrated evidence"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0109,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q170.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:18:26.508970+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma\n\n**Question:**\nDescribe the supported relationships between androgen metabolism, SRD5A2, and AR in the integrated evidence.",
+  "vector_context": ""
+}

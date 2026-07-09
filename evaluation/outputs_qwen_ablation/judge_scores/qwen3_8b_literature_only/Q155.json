@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "insufficient_evidence_likely",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q155",
+      "randomization_seed": "20260706:Q155:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q155",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q155",
+      "error": null,
+      "id": "batch_req_6a4f85d64bac81908702da822c11144e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594487,
+          "created_at": 1783594464,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07dcea8058625d1d006a4f7de0c7448195a093478b22631d62",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q155"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07dcea8058625d1d006a4f7de310808195a46f1abf4b851d3c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset is not sufficient and identifies the missing phased haplotype information.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the provided evidence, which contains gene annotations and associations but no phased haplotype or variant-phase data.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key limitation: absence of haplotype, genetic variation, and phase information needed to identify a common haplotype or functional consequence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring haplotypes or functional effects not supported by the dataset.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether phased haplotype information is provided and states the limitation.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The main conclusion is correct, but it includes a minor unsupported statement about genetic ancestry associations in the referenced studies.\"},\"completeness\":{\"score\":5,\"rationale\":\"Identifies the absence of phased haplotype analysis and functional consequence data as the limiting factor.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids unsupported haplotype conclusions, though it adds a small unsupported characterization of the literature context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07dcea8058625d1d006a4f7dee8f5c8195853804413a0dc3bd",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2182,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 679,
+            "output_tokens_details": {
+              "reasoning_tokens": 374
+            },
+            "total_tokens": 2861
+          },
+          "user": null
+        },
+        "request_id": "9b50fd53-a4e3-4dde-ba1e-d978624977e8",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether phased haplotype information is provided and states the limitation.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The main conclusion is correct, but it includes a minor unsupported statement about genetic ancestry associations in the referenced studies.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Identifies the absence of phased haplotype analysis and functional consequence data as the limiting factor.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids unsupported haplotype conclusions, though it adds a small unsupported characterization of the literature context.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q155",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q155.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.772444+00:00"
+}

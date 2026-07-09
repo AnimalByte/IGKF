@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41673742",
+    "41640146",
+    "41145827",
+    "42147184",
+    "42315371",
+    "42260572",
+    "41493898",
+    "41796107",
+    "41645416",
+    "41893972",
+    "24410847",
+    "42230622",
+    "32193494",
+    "42227434",
+    "41252189"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q062.json",
+      "question_id": "Q062",
+      "sha256": "cee3172e4f9710648ce78c3e59f7adf708b267b2a5024de397155a6f0e021417"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q062.json",
+      "question_id": "Q062",
+      "sha256": "eeff9619d6a8d08ae0cfa69e4e5b900faee333bdc1c0314841a57545d0020548"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to SRD5A2 in this study?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.9158,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to SRD5A2 in this study?",
+  "parsed_answer": "Based on the provided literature context, the study identified specific variants in the **SRD5A2** gene, but the term \"high impact\" is not explicitly used in the abstracts. However, the following variants were noted:\n\n1. **c.265C > G and c.680G > A** (Hap3: G-A): These variants were part of a haplotype (Hap3: G-A) that was associated with **5alpha-reductase deficiency** and showed structural and functional effects on the enzyme. This haplotype was linked to clinical manifestations such as **microphallus** and was found to have a **hypomorphic effect** on enzyme activity.\n\n2. **Eleven novel variants** in **SRD5A2** were identified in Egyptian patients with 46,XY DSD. These variants were described as **pathogenic** and included in the molecular diagnosis of 5alpha-reductase deficiency, which was the most frequent cause of DSD in the study.\n\nWhile the term \"high impact\" is not directly used, the variants described (especially the haplotype Hap3: G-A and the novel pathogenic variants) are likely to be considered **high impact** due to their association with significant clinical phenotypes and functional effects on the enzyme.\n\nTherefore, the **variants annotated as high impact** mapped to **SRD5A2** in this study include:\n\n- **c.265C > G and c.680G > A** (Hap3: G-A)\n- **Eleven novel pathogenic variants** in SRD5A2 (specific variants not listed in the abstract but described as novel and pathogenic).",
+  "question_id": "Q062",
+  "question_text": "Which variants annotated as high impact, if any, are mapped to SRD5A2 in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 356,
+    "prompt_token_count": 1687,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided literature context, the study identified specific variants in the **SRD5A2** gene, but the term \"high impact\" is not explicitly used in the abstracts. However, the following variants were noted:\n\n1. **c.265C > G and c.680G > A** (Hap3: G-A): These variants were part of a haplotype (Hap3: G-A) that was associated with **5alpha-reductase deficiency** and showed structural and functional effects on the enzyme. This haplotype was linked to clinical manifestations such as **microphallus** and was found to have a **hypomorphic effect** on enzyme activity.\n\n2. **Eleven novel variants** in **SRD5A2** were identified in Egyptian patients with 46,XY DSD. These variants were described as **pathogenic** and included in the molecular diagnosis of 5alpha-reductase deficiency, which was the most frequent cause of DSD in the study.\n\nWhile the term \"high impact\" is not directly used, the variants described (especially the haplotype Hap3: G-A and the novel pathogenic variants) are likely to be considered **high impact** due to their association with significant clinical phenotypes and functional effects on the enzyme.\n\nTherefore, the **variants annotated as high impact** mapped to **SRD5A2** in this study include:\n\n- **c.265C > G and c.680G > A** (Hap3: G-A)\n- **Eleven novel pathogenic variants** in SRD5A2 (specific variants not listed in the abstract but described as novel and pathogenic)."
+      }
+    ],
+    "created": 1783564125,
+    "id": "cmpl-ef0c3296-8e00-4795-99b6-b8975da982ea",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 356,
+      "prompt_tokens": 1666,
+      "total_tokens": 2022
+    }
+  },
+  "reranker_scores": [
+    1.966352939605713,
+    -0.44947338104248047,
+    -0.6752737760543823
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.82707214355469,
+      39.045616149902344,
+      39.42585372924805,
+      40.51691436767578,
+      40.77676010131836,
+      40.82500457763672,
+      41.06584167480469,
+      41.68263244628906,
+      43.08354187011719,
+      43.430152893066406,
+      43.47715759277344,
+      43.95998001098633,
+      44.3668212890625,
+      44.76853561401367,
+      44.913448333740234
+    ],
+    "candidate_pmids": [
+      "41673742",
+      "41640146",
+      "41145827",
+      "42147184",
+      "42315371",
+      "42260572",
+      "41493898",
+      "41796107",
+      "41645416",
+      "41893972",
+      "24410847",
+      "42230622",
+      "32193494",
+      "42227434",
+      "41252189"
+    ],
+    "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to SRD5A2 in this study?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41673742, relevance: 1.9664) ---\nBACKGROUND: Disorders of sex development (DSDs) exhibit high genetic and phenotypic heterogeneity, and genotype-phenotype correlations are not fully understood. 5alpha-Reductase type 2 (5alpha-RD2) deficiency, a common form of DSD, is caused by SRD5A2 inactivation. This study investigated the role of SRD5A2 haplotypes in DSD, focusing on their corresponding phenotypes, structural changes and impacts on enzyme activity. METHODS: This study enrolled 216 individuals with DSD who underwent genetic analysis and 2,794 controls. Linkage disequilibrium analysis was performed in individuals with 5alpha-RD2 deficiency to identify SRD5A2 haplotypes, and haplotype frequencies were analysed across cohorts. The clinical manifestations of individuals with different SRD5A2 haplotypes were characterized. Structural predictions were employed to investigate the impacts of haplotypes on the 5alpha-RD2 structure and interactions with ligands. Functionally, kinetic assays were conducted to validate the effects of different haplotypes on enzyme activity. RESULTS: A SRD5A2 haplotype composed of c.265C > G and c.680G > A (Hap3: G-A) was identified, and the haplotype frequency was 64.71% in individuals with 5alpha-RD2 deficiency, 2.59% and 1.22% in non-5alpha-RD2 deficiency DSD cases without or with known DSD-related gene variants, respectively, and 1.57% in in-house controls. Globally, Hap3: G-A was enriched in southern Chinese individuals and showed high population differentiation, indicating a potential founder effect of the haplotype. The majority of homozygotes of Hap3: G-A presented microphallus, and nearly half of them manifested isolated microphallus. Structurally, Hap3: G-A was predicted to result in an increase in the solvent-accessible surface area (10.72 A(2)), a redistribution of hydrogen bonds within 5alpha-RD2, and a loss of key hydrogen bonds with NADPH. Functionally, kinetic assays showed that the catalytic efficiency of the enzyme encoded by Hap3: G-A was between that of Hap1: G-G and that of Hap2: C-A. CONCLUSIONS: Hap3: G-A, which is prevalent in individuals with 5alpha-RD2 deficiency, suggests a potential founder effect. Structurally, compared with other haplotypes, Hap3: G-A seems to have a combined effect on the structure and interaction of 5alpha-RD2, rather than have merely additive effects of its constituent variants. Functionally, kinetic assays suggested a hypomorphic effect of Hap3: G-A. These findings provide valuable insights for understanding genotype-phenotype correlations, genetic counselling, early intervention and clinical management of individuals with 5alpha-RD2 deficiency or even other DSDs.\n\n--- Abstract 2 (PMID: 41893972, relevance: -0.4495) ---\n46,XY Differences of Sex Development (DSD) present major diagnostic challenges in consanguineous populations like Egypt, where genetic causes remain poorly characterized despite high prevalence. This study investigates the molecular spectrum and regional epidemiology of 46,XY DSD in Egypt to identify novel variants and improve diagnosis. Thirty-seven Egyptian patients with 46,XY DSD underwent clinical evaluation and hormonal profiling. We performed targeted genetic sequencing of key genes (SRD5A2, AR, HSD17B3, NR5A1, SRY, and WT1), and exome sequencing (ES) for cases that remained undiagnosed. We also reviewed previously reported Egyptian cases to build a comprehensive picture of the genetic landscape. Molecular diagnosis was achieved in 67% (25/37) of patients, including eleven novel variants in AR, SRD5A2, HSD17B3, and ZNRF3. Combining with prior data (n = 113), 5alpha-reductase deficiency was most frequent (52%), followed by AIS (23%) and 17beta-HSDD (12%). Consanguinity was high (69%), with regional clustering in Upper Egypt and Sinai. Diagnostic delays were prominent in CAIS and 17beta-HSDD cases. This study identified eleven novel pathogenic variants and provided further evidence implicating ZNRF3 as a candidate gene in Egyptian 46,XY DSD patients. We confirmed 5alpha-reductase deficiency (52%) as the predominant etiology and demonstrated that ES significantly improves diagnostic yield. Key challenges included limited LC-MS/MS availability for steroid profiling and regional disparities in diagnostic resources. Future efforts should prioritize ES implementation and multicenter collaborations to address diagnostic delays.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.6753) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to SRD5A2 in this study?",
+    "rerank_seconds": 0.3446,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3602,
+    "score_max": 1.966352939605713,
+    "score_mean": 0.2805352608362834,
+    "scores": [
+      1.966352939605713,
+      -0.44947338104248047,
+      -0.6752737760543823
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Disorders of sex development (DSDs) exhibit high genetic and phenotypic heterogeneity, and genotype-phenotype correlations are not fully understood. 5alpha-Reductase type 2 (5alpha-RD2) deficiency, a common form of DSD, is caused by SRD5A2 inactivation. This study investigated the role of SRD5A2 haplotypes in DSD, focusing on their corresponding phenotypes, structural changes and impacts on enzyme activity. METHODS: This study enrolled 216 individuals with DSD who underwent genetic analysis and 2,794 controls. Linkage disequilibrium analysis was performed in individuals with 5alpha-RD2 deficiency to identify SRD5A2 haplotypes, and haplotype frequencies were analysed across cohorts. The clinical manifestations of individuals with different SRD5A2 haplotypes were characterized. Structural predictions were employed to investigate the impacts of haplotypes on the 5alpha-RD2 structure and interactions with ligands. Functionally, kinetic assays were conducted to validate the effects of different haplotypes on enzyme activity. RESULTS: A SRD5A2 haplotype composed of c.265C > G and c.680G > A (Hap3: G-A) was identified, and the haplotype frequency was 64.71% in individuals with 5alpha-RD2 deficiency, 2.59% and 1.22% in non-5alpha-RD2 deficiency DSD cases without or with known DSD-related gene variants, respectively, and 1.57% in in-house controls. Globally, Hap3: G-A was enriched in southern Chinese individuals and showed high population differentiation, indicating a potential founder effect of the haplotype. The majority of homozygotes of Hap3: G-A presented microphallus, and nearly half of them manifested isolated microphallus. Structurally, Hap3: G-A was predicted to result in an increase in the solvent-accessible surface area (10.72 A(2)), a redistribution of hydrogen bonds within 5alpha-RD2, and a loss of key hydrogen bonds with NADPH. Functionally, kinetic assays showed that the catalytic efficiency of the enzyme encoded by Hap3: G-A was between that of Hap1: G-G and that of Hap2: C-A. CONCLUSIONS: Hap3: G-A, which is prevalent in individuals with 5alpha-RD2 deficiency, suggests a potential founder effect. Structurally, compared with other haplotypes, Hap3: G-A seems to have a combined effect on the structure and interaction of 5alpha-RD2, rather than have merely additive effects of its constituent variants. Functionally, kinetic assays suggested a hypomorphic effect of Hap3: G-A. These findings provide valuable insights for understanding genotype-phenotype correlations, genetic counselling, early intervention and clinical management of individuals with 5alpha-RD2 deficiency or even other DSDs.",
+      "46,XY Differences of Sex Development (DSD) present major diagnostic challenges in consanguineous populations like Egypt, where genetic causes remain poorly characterized despite high prevalence. This study investigates the molecular spectrum and regional epidemiology of 46,XY DSD in Egypt to identify novel variants and improve diagnosis. Thirty-seven Egyptian patients with 46,XY DSD underwent clinical evaluation and hormonal profiling. We performed targeted genetic sequencing of key genes (SRD5A2, AR, HSD17B3, NR5A1, SRY, and WT1), and exome sequencing (ES) for cases that remained undiagnosed. We also reviewed previously reported Egyptian cases to build a comprehensive picture of the genetic landscape. Molecular diagnosis was achieved in 67% (25/37) of patients, including eleven novel variants in AR, SRD5A2, HSD17B3, and ZNRF3. Combining with prior data (n = 113), 5alpha-reductase deficiency was most frequent (52%), followed by AIS (23%) and 17beta-HSDD (12%). Consanguinity was high (69%), with regional clustering in Upper Egypt and Sinai. Diagnostic delays were prominent in CAIS and 17beta-HSDD cases. This study identified eleven novel pathogenic variants and provided further evidence implicating ZNRF3 as a candidate gene in Egyptian 46,XY DSD patients. We confirmed 5alpha-reductase deficiency (52%) as the predominant etiology and demonstrated that ES significantly improves diagnostic yield. Key challenges included limited LC-MS/MS availability for steroid profiling and regional disparities in diagnostic resources. Future efforts should prioritize ES implementation and multicenter collaborations to address diagnostic delays.",
+      "INTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY."
+    ],
+    "selected_pmids": [
+      "41673742",
+      "41893972",
+      "41640146"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0155
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q062.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41673742",
+    "41893972",
+    "41640146"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:28:49.352874+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41673742, relevance: 1.9664) ---\nBACKGROUND: Disorders of sex development (DSDs) exhibit high genetic and phenotypic heterogeneity, and genotype-phenotype correlations are not fully understood. 5alpha-Reductase type 2 (5alpha-RD2) deficiency, a common form of DSD, is caused by SRD5A2 inactivation. This study investigated the role of SRD5A2 haplotypes in DSD, focusing on their corresponding phenotypes, structural changes and impacts on enzyme activity. METHODS: This study enrolled 216 individuals with DSD who underwent genetic analysis and 2,794 controls. Linkage disequilibrium analysis was performed in individuals with 5alpha-RD2 deficiency to identify SRD5A2 haplotypes, and haplotype frequencies were analysed across cohorts. The clinical manifestations of individuals with different SRD5A2 haplotypes were characterized. Structural predictions were employed to investigate the impacts of haplotypes on the 5alpha-RD2 structure and interactions with ligands. Functionally, kinetic assays were conducted to validate the effects of different haplotypes on enzyme activity. RESULTS: A SRD5A2 haplotype composed of c.265C > G and c.680G > A (Hap3: G-A) was identified, and the haplotype frequency was 64.71% in individuals with 5alpha-RD2 deficiency, 2.59% and 1.22% in non-5alpha-RD2 deficiency DSD cases without or with known DSD-related gene variants, respectively, and 1.57% in in-house controls. Globally, Hap3: G-A was enriched in southern Chinese individuals and showed high population differentiation, indicating a potential founder effect of the haplotype. The majority of homozygotes of Hap3: G-A presented microphallus, and nearly half of them manifested isolated microphallus. Structurally, Hap3: G-A was predicted to result in an increase in the solvent-accessible surface area (10.72 A(2)), a redistribution of hydrogen bonds within 5alpha-RD2, and a loss of key hydrogen bonds with NADPH. Functionally, kinetic assays showed that the catalytic efficiency of the enzyme encoded by Hap3: G-A was between that of Hap1: G-G and that of Hap2: C-A. CONCLUSIONS: Hap3: G-A, which is prevalent in individuals with 5alpha-RD2 deficiency, suggests a potential founder effect. Structurally, compared with other haplotypes, Hap3: G-A seems to have a combined effect on the structure and interaction of 5alpha-RD2, rather than have merely additive effects of its constituent variants. Functionally, kinetic assays suggested a hypomorphic effect of Hap3: G-A. These findings provide valuable insights for understanding genotype-phenotype correlations, genetic counselling, early intervention and clinical management of individuals with 5alpha-RD2 deficiency or even other DSDs.\n\n--- Abstract 2 (PMID: 41893972, relevance: -0.4495) ---\n46,XY Differences of Sex Development (DSD) present major diagnostic challenges in consanguineous populations like Egypt, where genetic causes remain poorly characterized despite high prevalence. This study investigates the molecular spectrum and regional epidemiology of 46,XY DSD in Egypt to identify novel variants and improve diagnosis. Thirty-seven Egyptian patients with 46,XY DSD underwent clinical evaluation and hormonal profiling. We performed targeted genetic sequencing of key genes (SRD5A2, AR, HSD17B3, NR5A1, SRY, and WT1), and exome sequencing (ES) for cases that remained undiagnosed. We also reviewed previously reported Egyptian cases to build a comprehensive picture of the genetic landscape. Molecular diagnosis was achieved in 67% (25/37) of patients, including eleven novel variants in AR, SRD5A2, HSD17B3, and ZNRF3. Combining with prior data (n = 113), 5alpha-reductase deficiency was most frequent (52%), followed by AIS (23%) and 17beta-HSDD (12%). Consanguinity was high (69%), with regional clustering in Upper Egypt and Sinai. Diagnostic delays were prominent in CAIS and 17beta-HSDD cases. This study identified eleven novel pathogenic variants and provided further evidence implicating ZNRF3 as a candidate gene in Egyptian 46,XY DSD patients. We confirmed 5alpha-reductase deficiency (52%) as the predominant etiology and demonstrated that ES significantly improves diagnostic yield. Key challenges included limited LC-MS/MS availability for steroid profiling and regional disparities in diagnostic resources. Future efforts should prioritize ES implementation and multicenter collaborations to address diagnostic delays.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.6753) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n\n\n**Question:**\nWhich variants annotated as high impact, if any, are mapped to SRD5A2 in this study?",
+  "vector_context": "--- Abstract 1 (PMID: 41673742, relevance: 1.9664) ---\nBACKGROUND: Disorders of sex development (DSDs) exhibit high genetic and phenotypic heterogeneity, and genotype-phenotype correlations are not fully understood. 5alpha-Reductase type 2 (5alpha-RD2) deficiency, a common form of DSD, is caused by SRD5A2 inactivation. This study investigated the role of SRD5A2 haplotypes in DSD, focusing on their corresponding phenotypes, structural changes and impacts on enzyme activity. METHODS: This study enrolled 216 individuals with DSD who underwent genetic analysis and 2,794 controls. Linkage disequilibrium analysis was performed in individuals with 5alpha-RD2 deficiency to identify SRD5A2 haplotypes, and haplotype frequencies were analysed across cohorts. The clinical manifestations of individuals with different SRD5A2 haplotypes were characterized. Structural predictions were employed to investigate the impacts of haplotypes on the 5alpha-RD2 structure and interactions with ligands. Functionally, kinetic assays were conducted to validate the effects of different haplotypes on enzyme activity. RESULTS: A SRD5A2 haplotype composed of c.265C > G and c.680G > A (Hap3: G-A) was identified, and the haplotype frequency was 64.71% in individuals with 5alpha-RD2 deficiency, 2.59% and 1.22% in non-5alpha-RD2 deficiency DSD cases without or with known DSD-related gene variants, respectively, and 1.57% in in-house controls. Globally, Hap3: G-A was enriched in southern Chinese individuals and showed high population differentiation, indicating a potential founder effect of the haplotype. The majority of homozygotes of Hap3: G-A presented microphallus, and nearly half of them manifested isolated microphallus. Structurally, Hap3: G-A was predicted to result in an increase in the solvent-accessible surface area (10.72 A(2)), a redistribution of hydrogen bonds within 5alpha-RD2, and a loss of key hydrogen bonds with NADPH. Functionally, kinetic assays showed that the catalytic efficiency of the enzyme encoded by Hap3: G-A was between that of Hap1: G-G and that of Hap2: C-A. CONCLUSIONS: Hap3: G-A, which is prevalent in individuals with 5alpha-RD2 deficiency, suggests a potential founder effect. Structurally, compared with other haplotypes, Hap3: G-A seems to have a combined effect on the structure and interaction of 5alpha-RD2, rather than have merely additive effects of its constituent variants. Functionally, kinetic assays suggested a hypomorphic effect of Hap3: G-A. These findings provide valuable insights for understanding genotype-phenotype correlations, genetic counselling, early intervention and clinical management of individuals with 5alpha-RD2 deficiency or even other DSDs.\n\n--- Abstract 2 (PMID: 41893972, relevance: -0.4495) ---\n46,XY Differences of Sex Development (DSD) present major diagnostic challenges in consanguineous populations like Egypt, where genetic causes remain poorly characterized despite high prevalence. This study investigates the molecular spectrum and regional epidemiology of 46,XY DSD in Egypt to identify novel variants and improve diagnosis. Thirty-seven Egyptian patients with 46,XY DSD underwent clinical evaluation and hormonal profiling. We performed targeted genetic sequencing of key genes (SRD5A2, AR, HSD17B3, NR5A1, SRY, and WT1), and exome sequencing (ES) for cases that remained undiagnosed. We also reviewed previously reported Egyptian cases to build a comprehensive picture of the genetic landscape. Molecular diagnosis was achieved in 67% (25/37) of patients, including eleven novel variants in AR, SRD5A2, HSD17B3, and ZNRF3. Combining with prior data (n = 113), 5alpha-reductase deficiency was most frequent (52%), followed by AIS (23%) and 17beta-HSDD (12%). Consanguinity was high (69%), with regional clustering in Upper Egypt and Sinai. Diagnostic delays were prominent in CAIS and 17beta-HSDD cases. This study identified eleven novel pathogenic variants and provided further evidence implicating ZNRF3 as a candidate gene in Egyptian 46,XY DSD patients. We confirmed 5alpha-reductase deficiency (52%) as the predominant etiology and demonstrated that ES significantly improves diagnostic yield. Key challenges included limited LC-MS/MS availability for steroid profiling and regional disparities in diagnostic resources. Future efforts should prioritize ES implementation and multicenter collaborations to address diagnostic delays.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.6753) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n"
+}

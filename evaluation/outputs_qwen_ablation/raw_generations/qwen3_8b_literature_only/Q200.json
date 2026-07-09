@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42303350",
+    "41603896",
+    "42190016",
+    "38183876",
+    "39455645",
+    "32102773",
+    "39572783",
+    "37690223",
+    "38985526",
+    "39103847",
+    "32639540",
+    "42269416",
+    "42373226",
+    "41438687",
+    "41756923"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q200.json",
+      "question_id": "Q200",
+      "sha256": "0a939c40d3078bb9e74a192fec8720b229dd0dda8fb0117a9d7eea364220ab2f"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q200.json",
+      "question_id": "Q200",
+      "sha256": "47fd0b58e4b69d09df9a16d92f3553f83fe749be3a3e0cc171baa275d0fb0ed5"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What is the role of the CFTR gene in cystic fibrosis?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.6657,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What is the role of the CFTR gene in cystic fibrosis?",
+  "parsed_answer": "The provided literature context does not mention the CFTR gene or its role in cystic fibrosis. Therefore, I cannot answer the question based on the supplied information.",
+  "question_id": "Q200",
+  "question_text": "What is the role of the CFTR gene in cystic fibrosis?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 33,
+    "prompt_token_count": 1179,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention the CFTR gene or its role in cystic fibrosis. Therefore, I cannot answer the question based on the supplied information."
+      }
+    ],
+    "created": 1783564752,
+    "id": "cmpl-2b26408d-f21d-473e-84ab-4f85cf985680",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 33,
+      "prompt_tokens": 1158,
+      "total_tokens": 1191
+    }
+  },
+  "reranker_scores": [
+    -0.8485605120658875,
+    -2.326131820678711,
+    -3.940248489379883
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      36.38286209106445,
+      38.789276123046875,
+      38.78959655761719,
+      38.8307991027832,
+      38.8416748046875,
+      39.48339080810547,
+      39.71352767944336,
+      39.868839263916016,
+      39.9867057800293,
+      40.092838287353516,
+      40.11939239501953,
+      40.199493408203125,
+      40.24073791503906,
+      40.337615966796875,
+      40.495643615722656
+    ],
+    "candidate_pmids": [
+      "42303350",
+      "41603896",
+      "42190016",
+      "38183876",
+      "39455645",
+      "32102773",
+      "39572783",
+      "37690223",
+      "38985526",
+      "39103847",
+      "32639540",
+      "42269416",
+      "42373226",
+      "41438687",
+      "41756923"
+    ],
+    "expanded_retrieval_query": "What is the role of the CFTR gene in cystic fibrosis?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42303350, relevance: -0.8486) ---\nThe TGF-beta/Smad signaling pathway plays a central role in the pathogenesis of idiopathic pulmonary fibrosis (IPF) and is modulated by sphingolipid metabolism. Ceramide, a key intermediate in this pathway, is synthesized in various acyl-CoA chain lengths by ceramide synthases (CerS). However, the specific role of ceramide synthase 5 (CerS5) in pulmonary fibrosis remains unclear. Therefore, this study aimed to elucidate the role of CerS5 in fibrotic responses using human lung fibroblasts (HFL1), IPF-derived myofibroblasts (IPF-MyoFs), and a bleomycin-induced mouse model of pulmonary fibrosis. CerS5 knockdown attenuated TGF-beta1-induced expression of alpha-smooth muscle actin (alphaSMA), collagen I, fibronectin, and phosphorylated Smad2/3 in both HFL1 cells and IPF-MyoFs. It also suppressed TGF-beta1-induced nuclear translocation of Smad2/3. Notably, CerS5 knockdown reduced protein levels of Smad3 and Smad4 even in the absence of TGF-beta1 stimulation. Smad4 knockdown replicated the effects of CerS5 knockdown by decreasing TGF-beta1-induced expression of fibrotic markers, phosphorylated Smad2/3, and total Smad3 levels. In vivo, CerS5 knockout significantly reduced bleomycin-induced lung fibrosis and Smad3/4 expression. These findings suggest that CerS5 regulates fibrotic responses via modulation of Smad4 and the TGF-beta1/Smad signaling pathway. Targeting CerS5 may therefore represent a promising therapeutic strategy for the treatment of IPF.\n\n--- Abstract 2 (PMID: 41756923, relevance: -2.3261) ---\nFibrotic remodeling of the bone marrow (BM) niche is a characteristic feature of myelofibrosis (MF) that contributes to disease progression. In MF, mesenchymal stromal cells (MSCs) produce excessive amounts of inflammatory cytokines and extracellular matrix, leading to BM fibrosis, impaired blood production, extramedullary hematopoiesis, and progressive BM failure. While the genetic events that initiate MF in hematopoietic cells are well defined, our understanding of the mechanisms responsible for BM fibrosis remains incomplete. Here, we show that transcription factor EBF1 is a key regulator of the fibrotic gene program in mouse and human MSCs. EBF1 is upregulated in pre-fibrotic MSCs, while mice with MSC-specific deletion of Ebf1 exhibit reduced BM fibrosis, decreased expansion of myeloid cells and splenomegaly when transplanted with hematopoietic progenitors harboring the MF driver mutation MPL (W515L) . Moreover, we identify ITGB8 as an EBF1-regulated gene with therapeutic potential. MF mice treated with ITGB8-neutralizing antibodies or with MSC-specific Itgb8 deletion show reduced disease burden, as indicated by decreased marrow fibrosis, significantly reduced frequencies of MPL mutant cells, and reduced inflammation in the BM. Our data indicate that targeting the EBF1-ITGB8 axis in the MF MSCs may have therapeutic benefits.\n\n--- Abstract 3 (PMID: 41603896, relevance: -3.9402) ---\nAutosomal recessive polycystic kidney disease (ARPKD) is the prototype of the hepato-renal fibrocystic diseases, a subset of the broader ciliopathy disorders. As a severe form of PKD, ARPKD typically manifests in utero with 21% perinatal mortality and progressive loss of kidney function in most post-natal survivors. Congenital hepatic fibrosis is an invariant feature of ARPKD. PKHD1-encoded fibrocystin/polyductin (FPC) is a large 4074 amino acid glycoprotein that likely functions as a receptor molecule and appears to play a key role in maintaining differentiated renal tubular epithelium. The molecular mechanisms by which defects in FPC contribute to ARPKD pathogenesis are just beginning to be elucidated. FPC is a novel protein that likely evolved as vertebrates transitioned from aquatic to semi-terrestrial ecosystems. Full-length human FPC shares a phylogenetically conserved, multi-motif N-terminal region with its ancestral homolog, PKHD1L1, and contains a single-pass transmembrane domain and a novel C-terminal tail that harbors a ciliary targeting motif as well as mitochondrial and nuclear localization sequences. This review synthesizes the full range of recent experimental data about PKHD1/FPC to provide a current functional perspective about this complex protein. We also discuss the clinical relevance of these emerging functional insights for both kidney health and ARPKD pathogenesis.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What is the role of the CFTR gene in cystic fibrosis?",
+    "rerank_seconds": 0.3324,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3481,
+    "score_max": -0.8485605120658875,
+    "score_mean": -2.3716469407081604,
+    "scores": [
+      -0.8485605120658875,
+      -2.326131820678711,
+      -3.940248489379883
+    ],
+    "selected_abstracts": [
+      "The TGF-beta/Smad signaling pathway plays a central role in the pathogenesis of idiopathic pulmonary fibrosis (IPF) and is modulated by sphingolipid metabolism. Ceramide, a key intermediate in this pathway, is synthesized in various acyl-CoA chain lengths by ceramide synthases (CerS). However, the specific role of ceramide synthase 5 (CerS5) in pulmonary fibrosis remains unclear. Therefore, this study aimed to elucidate the role of CerS5 in fibrotic responses using human lung fibroblasts (HFL1), IPF-derived myofibroblasts (IPF-MyoFs), and a bleomycin-induced mouse model of pulmonary fibrosis. CerS5 knockdown attenuated TGF-beta1-induced expression of alpha-smooth muscle actin (alphaSMA), collagen I, fibronectin, and phosphorylated Smad2/3 in both HFL1 cells and IPF-MyoFs. It also suppressed TGF-beta1-induced nuclear translocation of Smad2/3. Notably, CerS5 knockdown reduced protein levels of Smad3 and Smad4 even in the absence of TGF-beta1 stimulation. Smad4 knockdown replicated the effects of CerS5 knockdown by decreasing TGF-beta1-induced expression of fibrotic markers, phosphorylated Smad2/3, and total Smad3 levels. In vivo, CerS5 knockout significantly reduced bleomycin-induced lung fibrosis and Smad3/4 expression. These findings suggest that CerS5 regulates fibrotic responses via modulation of Smad4 and the TGF-beta1/Smad signaling pathway. Targeting CerS5 may therefore represent a promising therapeutic strategy for the treatment of IPF.",
+      "Fibrotic remodeling of the bone marrow (BM) niche is a characteristic feature of myelofibrosis (MF) that contributes to disease progression. In MF, mesenchymal stromal cells (MSCs) produce excessive amounts of inflammatory cytokines and extracellular matrix, leading to BM fibrosis, impaired blood production, extramedullary hematopoiesis, and progressive BM failure. While the genetic events that initiate MF in hematopoietic cells are well defined, our understanding of the mechanisms responsible for BM fibrosis remains incomplete. Here, we show that transcription factor EBF1 is a key regulator of the fibrotic gene program in mouse and human MSCs. EBF1 is upregulated in pre-fibrotic MSCs, while mice with MSC-specific deletion of Ebf1 exhibit reduced BM fibrosis, decreased expansion of myeloid cells and splenomegaly when transplanted with hematopoietic progenitors harboring the MF driver mutation MPL (W515L) . Moreover, we identify ITGB8 as an EBF1-regulated gene with therapeutic potential. MF mice treated with ITGB8-neutralizing antibodies or with MSC-specific Itgb8 deletion show reduced disease burden, as indicated by decreased marrow fibrosis, significantly reduced frequencies of MPL mutant cells, and reduced inflammation in the BM. Our data indicate that targeting the EBF1-ITGB8 axis in the MF MSCs may have therapeutic benefits.",
+      "Autosomal recessive polycystic kidney disease (ARPKD) is the prototype of the hepato-renal fibrocystic diseases, a subset of the broader ciliopathy disorders. As a severe form of PKD, ARPKD typically manifests in utero with 21% perinatal mortality and progressive loss of kidney function in most post-natal survivors. Congenital hepatic fibrosis is an invariant feature of ARPKD. PKHD1-encoded fibrocystin/polyductin (FPC) is a large 4074 amino acid glycoprotein that likely functions as a receptor molecule and appears to play a key role in maintaining differentiated renal tubular epithelium. The molecular mechanisms by which defects in FPC contribute to ARPKD pathogenesis are just beginning to be elucidated. FPC is a novel protein that likely evolved as vertebrates transitioned from aquatic to semi-terrestrial ecosystems. Full-length human FPC shares a phylogenetically conserved, multi-motif N-terminal region with its ancestral homolog, PKHD1L1, and contains a single-pass transmembrane domain and a novel C-terminal tail that harbors a ciliary targeting motif as well as mitochondrial and nuclear localization sequences. This review synthesizes the full range of recent experimental data about PKHD1/FPC to provide a current functional perspective about this complex protein. We also discuss the clinical relevance of these emerging functional insights for both kidney health and ARPKD pathogenesis."
+    ],
+    "selected_pmids": [
+      "42303350",
+      "41756923",
+      "41603896"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0156
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q200.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42303350",
+    "41756923",
+    "41603896"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:39:12.708458+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42303350, relevance: -0.8486) ---\nThe TGF-beta/Smad signaling pathway plays a central role in the pathogenesis of idiopathic pulmonary fibrosis (IPF) and is modulated by sphingolipid metabolism. Ceramide, a key intermediate in this pathway, is synthesized in various acyl-CoA chain lengths by ceramide synthases (CerS). However, the specific role of ceramide synthase 5 (CerS5) in pulmonary fibrosis remains unclear. Therefore, this study aimed to elucidate the role of CerS5 in fibrotic responses using human lung fibroblasts (HFL1), IPF-derived myofibroblasts (IPF-MyoFs), and a bleomycin-induced mouse model of pulmonary fibrosis. CerS5 knockdown attenuated TGF-beta1-induced expression of alpha-smooth muscle actin (alphaSMA), collagen I, fibronectin, and phosphorylated Smad2/3 in both HFL1 cells and IPF-MyoFs. It also suppressed TGF-beta1-induced nuclear translocation of Smad2/3. Notably, CerS5 knockdown reduced protein levels of Smad3 and Smad4 even in the absence of TGF-beta1 stimulation. Smad4 knockdown replicated the effects of CerS5 knockdown by decreasing TGF-beta1-induced expression of fibrotic markers, phosphorylated Smad2/3, and total Smad3 levels. In vivo, CerS5 knockout significantly reduced bleomycin-induced lung fibrosis and Smad3/4 expression. These findings suggest that CerS5 regulates fibrotic responses via modulation of Smad4 and the TGF-beta1/Smad signaling pathway. Targeting CerS5 may therefore represent a promising therapeutic strategy for the treatment of IPF.\n\n--- Abstract 2 (PMID: 41756923, relevance: -2.3261) ---\nFibrotic remodeling of the bone marrow (BM) niche is a characteristic feature of myelofibrosis (MF) that contributes to disease progression. In MF, mesenchymal stromal cells (MSCs) produce excessive amounts of inflammatory cytokines and extracellular matrix, leading to BM fibrosis, impaired blood production, extramedullary hematopoiesis, and progressive BM failure. While the genetic events that initiate MF in hematopoietic cells are well defined, our understanding of the mechanisms responsible for BM fibrosis remains incomplete. Here, we show that transcription factor EBF1 is a key regulator of the fibrotic gene program in mouse and human MSCs. EBF1 is upregulated in pre-fibrotic MSCs, while mice with MSC-specific deletion of Ebf1 exhibit reduced BM fibrosis, decreased expansion of myeloid cells and splenomegaly when transplanted with hematopoietic progenitors harboring the MF driver mutation MPL (W515L) . Moreover, we identify ITGB8 as an EBF1-regulated gene with therapeutic potential. MF mice treated with ITGB8-neutralizing antibodies or with MSC-specific Itgb8 deletion show reduced disease burden, as indicated by decreased marrow fibrosis, significantly reduced frequencies of MPL mutant cells, and reduced inflammation in the BM. Our data indicate that targeting the EBF1-ITGB8 axis in the MF MSCs may have therapeutic benefits.\n\n--- Abstract 3 (PMID: 41603896, relevance: -3.9402) ---\nAutosomal recessive polycystic kidney disease (ARPKD) is the prototype of the hepato-renal fibrocystic diseases, a subset of the broader ciliopathy disorders. As a severe form of PKD, ARPKD typically manifests in utero with 21% perinatal mortality and progressive loss of kidney function in most post-natal survivors. Congenital hepatic fibrosis is an invariant feature of ARPKD. PKHD1-encoded fibrocystin/polyductin (FPC) is a large 4074 amino acid glycoprotein that likely functions as a receptor molecule and appears to play a key role in maintaining differentiated renal tubular epithelium. The molecular mechanisms by which defects in FPC contribute to ARPKD pathogenesis are just beginning to be elucidated. FPC is a novel protein that likely evolved as vertebrates transitioned from aquatic to semi-terrestrial ecosystems. Full-length human FPC shares a phylogenetically conserved, multi-motif N-terminal region with its ancestral homolog, PKHD1L1, and contains a single-pass transmembrane domain and a novel C-terminal tail that harbors a ciliary targeting motif as well as mitochondrial and nuclear localization sequences. This review synthesizes the full range of recent experimental data about PKHD1/FPC to provide a current functional perspective about this complex protein. We also discuss the clinical relevance of these emerging functional insights for both kidney health and ARPKD pathogenesis.\n\n\n\n**Question:**\nWhat is the role of the CFTR gene in cystic fibrosis?",
+  "vector_context": "--- Abstract 1 (PMID: 42303350, relevance: -0.8486) ---\nThe TGF-beta/Smad signaling pathway plays a central role in the pathogenesis of idiopathic pulmonary fibrosis (IPF) and is modulated by sphingolipid metabolism. Ceramide, a key intermediate in this pathway, is synthesized in various acyl-CoA chain lengths by ceramide synthases (CerS). However, the specific role of ceramide synthase 5 (CerS5) in pulmonary fibrosis remains unclear. Therefore, this study aimed to elucidate the role of CerS5 in fibrotic responses using human lung fibroblasts (HFL1), IPF-derived myofibroblasts (IPF-MyoFs), and a bleomycin-induced mouse model of pulmonary fibrosis. CerS5 knockdown attenuated TGF-beta1-induced expression of alpha-smooth muscle actin (alphaSMA), collagen I, fibronectin, and phosphorylated Smad2/3 in both HFL1 cells and IPF-MyoFs. It also suppressed TGF-beta1-induced nuclear translocation of Smad2/3. Notably, CerS5 knockdown reduced protein levels of Smad3 and Smad4 even in the absence of TGF-beta1 stimulation. Smad4 knockdown replicated the effects of CerS5 knockdown by decreasing TGF-beta1-induced expression of fibrotic markers, phosphorylated Smad2/3, and total Smad3 levels. In vivo, CerS5 knockout significantly reduced bleomycin-induced lung fibrosis and Smad3/4 expression. These findings suggest that CerS5 regulates fibrotic responses via modulation of Smad4 and the TGF-beta1/Smad signaling pathway. Targeting CerS5 may therefore represent a promising therapeutic strategy for the treatment of IPF.\n\n--- Abstract 2 (PMID: 41756923, relevance: -2.3261) ---\nFibrotic remodeling of the bone marrow (BM) niche is a characteristic feature of myelofibrosis (MF) that contributes to disease progression. In MF, mesenchymal stromal cells (MSCs) produce excessive amounts of inflammatory cytokines and extracellular matrix, leading to BM fibrosis, impaired blood production, extramedullary hematopoiesis, and progressive BM failure. While the genetic events that initiate MF in hematopoietic cells are well defined, our understanding of the mechanisms responsible for BM fibrosis remains incomplete. Here, we show that transcription factor EBF1 is a key regulator of the fibrotic gene program in mouse and human MSCs. EBF1 is upregulated in pre-fibrotic MSCs, while mice with MSC-specific deletion of Ebf1 exhibit reduced BM fibrosis, decreased expansion of myeloid cells and splenomegaly when transplanted with hematopoietic progenitors harboring the MF driver mutation MPL (W515L) . Moreover, we identify ITGB8 as an EBF1-regulated gene with therapeutic potential. MF mice treated with ITGB8-neutralizing antibodies or with MSC-specific Itgb8 deletion show reduced disease burden, as indicated by decreased marrow fibrosis, significantly reduced frequencies of MPL mutant cells, and reduced inflammation in the BM. Our data indicate that targeting the EBF1-ITGB8 axis in the MF MSCs may have therapeutic benefits.\n\n--- Abstract 3 (PMID: 41603896, relevance: -3.9402) ---\nAutosomal recessive polycystic kidney disease (ARPKD) is the prototype of the hepato-renal fibrocystic diseases, a subset of the broader ciliopathy disorders. As a severe form of PKD, ARPKD typically manifests in utero with 21% perinatal mortality and progressive loss of kidney function in most post-natal survivors. Congenital hepatic fibrosis is an invariant feature of ARPKD. PKHD1-encoded fibrocystin/polyductin (FPC) is a large 4074 amino acid glycoprotein that likely functions as a receptor molecule and appears to play a key role in maintaining differentiated renal tubular epithelium. The molecular mechanisms by which defects in FPC contribute to ARPKD pathogenesis are just beginning to be elucidated. FPC is a novel protein that likely evolved as vertebrates transitioned from aquatic to semi-terrestrial ecosystems. Full-length human FPC shares a phylogenetically conserved, multi-motif N-terminal region with its ancestral homolog, PKHD1L1, and contains a single-pass transmembrane domain and a novel C-terminal tail that harbors a ciliary targeting motif as well as mitochondrial and nuclear localization sequences. This review synthesizes the full range of recent experimental data about PKHD1/FPC to provide a current functional perspective about this complex protein. We also discuss the clinical relevance of these emerging functional insights for both kidney health and ARPKD pathogenesis.\n\n"
+}

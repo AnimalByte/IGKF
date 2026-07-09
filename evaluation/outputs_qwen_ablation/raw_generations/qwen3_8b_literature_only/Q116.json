@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "40134218",
+    "39245941",
+    "39267058",
+    "42147184",
+    "34984527",
+    "37737258",
+    "42373232",
+    "40335670",
+    "39514479",
+    "40751759",
+    "29220522",
+    "41912808",
+    "39830258",
+    "32776659",
+    "41417529"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q116.json",
+      "question_id": "Q116",
+      "sha256": "c629cc6c277ab3ef4dd87cb8384dbb7f1b5e4de326cf472041e1540a2da5b5c2"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q116.json",
+      "question_id": "Q116",
+      "sha256": "8d7145664aae85f9ee6a356c96965c162e2336c3e9d72d7e3515e40da65d89f7"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which genes are linked to the most strongly associated variants in this androgenetic alopecia study?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.874,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which genes are linked to the most strongly associated variants in this androgenetic alopecia study?",
+  "parsed_answer": "Based on the provided literature context, the genes most strongly associated with variants in the androgenetic alopecia study are **EDA2R** and **AR**. The study found that multiple baldness-associated SNPs near these genes have large allele frequency differences between continents.",
+  "question_id": "Q116",
+  "question_text": "Which genes are linked to the most strongly associated variants in this androgenetic alopecia study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 54,
+    "prompt_token_count": 1240,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided literature context, the genes most strongly associated with variants in the androgenetic alopecia study are **EDA2R** and **AR**. The study found that multiple baldness-associated SNPs near these genes have large allele frequency differences between continents."
+      }
+    ],
+    "created": 1783564356,
+    "id": "cmpl-bc49ca88-498e-4dc6-b09f-2f18e9ad43ff",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 54,
+      "prompt_tokens": 1219,
+      "total_tokens": 1273
+    }
+  },
+  "reranker_scores": [
+    1.8161271810531616,
+    1.7963920831680298,
+    -0.4451693296432495
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      30.450185775756836,
+      32.880577087402344,
+      35.96562957763672,
+      36.35953140258789,
+      36.81776428222656,
+      36.85913848876953,
+      37.0344123840332,
+      37.072021484375,
+      37.27763366699219,
+      37.441253662109375,
+      37.579715728759766,
+      37.7197151184082,
+      37.722801208496094,
+      37.95310592651367,
+      38.444252014160156
+    ],
+    "candidate_pmids": [
+      "40134218",
+      "39245941",
+      "39267058",
+      "42147184",
+      "34984527",
+      "37737258",
+      "42373232",
+      "40335670",
+      "39514479",
+      "40751759",
+      "29220522",
+      "41912808",
+      "39830258",
+      "32776659",
+      "41417529"
+    ],
+    "expanded_retrieval_query": "Which genes are linked to the most strongly associated variants in this androgenetic alopecia study?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40134218, relevance: 1.8161) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41417529, relevance: 1.7964) ---\nOBJECTIVE: The aim of this systematic review and meta-analysis was to identify genetic variants associated with skin barrier dysfunction and analyze their contribution to the development of atopic dermatitis (AD). DATA SOURCE: A comprehensive search of six databases (2002-2022) yielded 20 eligible casecontrol studies involving European and Asian populations. DATA SYNTHESIS: Meta-analyses revealed significant associations between AD and specific variants in the FLG, SPINK5, LAMA3, HRNR, and COL8A1 genes. Notably, FLG variants such as R501X, 3321delA, and rs61816761 showed high odds ratios (up to OR=11.22), particularly in Spanish and Korean populations. SPINK5 variants including A1103G and G1258A were also significantly associated, especially in Asian cohorts. CONCLUSIONS: Variants affecting skin barrier integrity are strongly linked to AD susceptibility. These findings confirm the role of genetic factors across diverse populations and support translational strategies such as genetic screening, early diagnosis, and personalized treatment in pediatric dermatology.\n\n--- Abstract 3 (PMID: 42373232, relevance: -0.4452) ---\nBACKGROUND/AIM: Notch signaling exerts context-dependent effects in cancer; however, the prognostic relevance of inherited variation in Notch-related genes in prostate cancer remains unclear. We investigated whether germline single-nucleotide polymorphisms (SNPs) in Notch pathway genes are associated with clinical outcomes in men receiving androgen deprivation therapy (ADT). PATIENTS AND METHODS: We genotyped 222 SNPs across 24 Notch pathway-related genes in 630 patients with advanced prostate cancer. Associations with cancer-specific survival (CSS) and overall survival (OS) were assessed using Cox proportional hazards models. Integrative bioinformatics analyses, including pooled transcriptomic dataset analysis, expression quantitative trait locus analysis, and pathway enrichment, were performed to assess functional relevance. RESULTS: Multiple SNPs were significantly associated with CSS and OS, with Yes1-associated transcriptional regulator (YAP1) rs1894116 showing the strongest prognostic signal. The minor G allele was associated with a 26% reduction in prostate cancer-specific mortality and a 22% reduction in all-cause mortality, independent of established clinical predictors. Functional annotation suggested that rs1894116 may be linked to increased YAP1 expression. Pooled transcriptomic analyses showed lower YAP1 expression in tumors than in normal tissue, while higher YAP1 expression correlated with more favorable outcomes. YAP1-correlated genes were enriched in the focal adhesion pathway, suggesting a tumor-suppressive YAP1-focal adhesion axis, particularly involving vinculin. CONCLUSION: Germline variation in the Notch-YAP axis, notably YAP1 rs1894116, predicts survival in patients with prostate cancer treated with ADT. Elevated YAP1 expression and coordinated activation of focal adhesion components may be associated with less aggressive disease. These findings provide mechanistic insight into Notch signaling in prostate cancer and highlight YAP1 and its variants as potential biomarkers for risk stratification and personalized therapy.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which genes are linked to the most strongly associated variants in this androgenetic alopecia study?",
+    "rerank_seconds": 0.3544,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3714,
+    "score_max": 1.8161271810531616,
+    "score_mean": 1.0557833115259807,
+    "scores": [
+      1.8161271810531616,
+      1.7963920831680298,
+      -0.4451693296432495
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "OBJECTIVE: The aim of this systematic review and meta-analysis was to identify genetic variants associated with skin barrier dysfunction and analyze their contribution to the development of atopic dermatitis (AD). DATA SOURCE: A comprehensive search of six databases (2002-2022) yielded 20 eligible casecontrol studies involving European and Asian populations. DATA SYNTHESIS: Meta-analyses revealed significant associations between AD and specific variants in the FLG, SPINK5, LAMA3, HRNR, and COL8A1 genes. Notably, FLG variants such as R501X, 3321delA, and rs61816761 showed high odds ratios (up to OR=11.22), particularly in Spanish and Korean populations. SPINK5 variants including A1103G and G1258A were also significantly associated, especially in Asian cohorts. CONCLUSIONS: Variants affecting skin barrier integrity are strongly linked to AD susceptibility. These findings confirm the role of genetic factors across diverse populations and support translational strategies such as genetic screening, early diagnosis, and personalized treatment in pediatric dermatology.",
+      "BACKGROUND/AIM: Notch signaling exerts context-dependent effects in cancer; however, the prognostic relevance of inherited variation in Notch-related genes in prostate cancer remains unclear. We investigated whether germline single-nucleotide polymorphisms (SNPs) in Notch pathway genes are associated with clinical outcomes in men receiving androgen deprivation therapy (ADT). PATIENTS AND METHODS: We genotyped 222 SNPs across 24 Notch pathway-related genes in 630 patients with advanced prostate cancer. Associations with cancer-specific survival (CSS) and overall survival (OS) were assessed using Cox proportional hazards models. Integrative bioinformatics analyses, including pooled transcriptomic dataset analysis, expression quantitative trait locus analysis, and pathway enrichment, were performed to assess functional relevance. RESULTS: Multiple SNPs were significantly associated with CSS and OS, with Yes1-associated transcriptional regulator (YAP1) rs1894116 showing the strongest prognostic signal. The minor G allele was associated with a 26% reduction in prostate cancer-specific mortality and a 22% reduction in all-cause mortality, independent of established clinical predictors. Functional annotation suggested that rs1894116 may be linked to increased YAP1 expression. Pooled transcriptomic analyses showed lower YAP1 expression in tumors than in normal tissue, while higher YAP1 expression correlated with more favorable outcomes. YAP1-correlated genes were enriched in the focal adhesion pathway, suggesting a tumor-suppressive YAP1-focal adhesion axis, particularly involving vinculin. CONCLUSION: Germline variation in the Notch-YAP axis, notably YAP1 rs1894116, predicts survival in patients with prostate cancer treated with ADT. Elevated YAP1 expression and coordinated activation of focal adhesion components may be associated with less aggressive disease. These findings provide mechanistic insight into Notch signaling in prostate cancer and highlight YAP1 and its variants as potential biomarkers for risk stratification and personalized therapy."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "41417529",
+      "42373232"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0167
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q116.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40134218",
+    "41417529",
+    "42373232"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:32:37.737575+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: 1.8161) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41417529, relevance: 1.7964) ---\nOBJECTIVE: The aim of this systematic review and meta-analysis was to identify genetic variants associated with skin barrier dysfunction and analyze their contribution to the development of atopic dermatitis (AD). DATA SOURCE: A comprehensive search of six databases (2002-2022) yielded 20 eligible casecontrol studies involving European and Asian populations. DATA SYNTHESIS: Meta-analyses revealed significant associations between AD and specific variants in the FLG, SPINK5, LAMA3, HRNR, and COL8A1 genes. Notably, FLG variants such as R501X, 3321delA, and rs61816761 showed high odds ratios (up to OR=11.22), particularly in Spanish and Korean populations. SPINK5 variants including A1103G and G1258A were also significantly associated, especially in Asian cohorts. CONCLUSIONS: Variants affecting skin barrier integrity are strongly linked to AD susceptibility. These findings confirm the role of genetic factors across diverse populations and support translational strategies such as genetic screening, early diagnosis, and personalized treatment in pediatric dermatology.\n\n--- Abstract 3 (PMID: 42373232, relevance: -0.4452) ---\nBACKGROUND/AIM: Notch signaling exerts context-dependent effects in cancer; however, the prognostic relevance of inherited variation in Notch-related genes in prostate cancer remains unclear. We investigated whether germline single-nucleotide polymorphisms (SNPs) in Notch pathway genes are associated with clinical outcomes in men receiving androgen deprivation therapy (ADT). PATIENTS AND METHODS: We genotyped 222 SNPs across 24 Notch pathway-related genes in 630 patients with advanced prostate cancer. Associations with cancer-specific survival (CSS) and overall survival (OS) were assessed using Cox proportional hazards models. Integrative bioinformatics analyses, including pooled transcriptomic dataset analysis, expression quantitative trait locus analysis, and pathway enrichment, were performed to assess functional relevance. RESULTS: Multiple SNPs were significantly associated with CSS and OS, with Yes1-associated transcriptional regulator (YAP1) rs1894116 showing the strongest prognostic signal. The minor G allele was associated with a 26% reduction in prostate cancer-specific mortality and a 22% reduction in all-cause mortality, independent of established clinical predictors. Functional annotation suggested that rs1894116 may be linked to increased YAP1 expression. Pooled transcriptomic analyses showed lower YAP1 expression in tumors than in normal tissue, while higher YAP1 expression correlated with more favorable outcomes. YAP1-correlated genes were enriched in the focal adhesion pathway, suggesting a tumor-suppressive YAP1-focal adhesion axis, particularly involving vinculin. CONCLUSION: Germline variation in the Notch-YAP axis, notably YAP1 rs1894116, predicts survival in patients with prostate cancer treated with ADT. Elevated YAP1 expression and coordinated activation of focal adhesion components may be associated with less aggressive disease. These findings provide mechanistic insight into Notch signaling in prostate cancer and highlight YAP1 and its variants as potential biomarkers for risk stratification and personalized therapy.\n\n\n\n**Question:**\nWhich genes are linked to the most strongly associated variants in this androgenetic alopecia study?",
+  "vector_context": "--- Abstract 1 (PMID: 40134218, relevance: 1.8161) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41417529, relevance: 1.7964) ---\nOBJECTIVE: The aim of this systematic review and meta-analysis was to identify genetic variants associated with skin barrier dysfunction and analyze their contribution to the development of atopic dermatitis (AD). DATA SOURCE: A comprehensive search of six databases (2002-2022) yielded 20 eligible casecontrol studies involving European and Asian populations. DATA SYNTHESIS: Meta-analyses revealed significant associations between AD and specific variants in the FLG, SPINK5, LAMA3, HRNR, and COL8A1 genes. Notably, FLG variants such as R501X, 3321delA, and rs61816761 showed high odds ratios (up to OR=11.22), particularly in Spanish and Korean populations. SPINK5 variants including A1103G and G1258A were also significantly associated, especially in Asian cohorts. CONCLUSIONS: Variants affecting skin barrier integrity are strongly linked to AD susceptibility. These findings confirm the role of genetic factors across diverse populations and support translational strategies such as genetic screening, early diagnosis, and personalized treatment in pediatric dermatology.\n\n--- Abstract 3 (PMID: 42373232, relevance: -0.4452) ---\nBACKGROUND/AIM: Notch signaling exerts context-dependent effects in cancer; however, the prognostic relevance of inherited variation in Notch-related genes in prostate cancer remains unclear. We investigated whether germline single-nucleotide polymorphisms (SNPs) in Notch pathway genes are associated with clinical outcomes in men receiving androgen deprivation therapy (ADT). PATIENTS AND METHODS: We genotyped 222 SNPs across 24 Notch pathway-related genes in 630 patients with advanced prostate cancer. Associations with cancer-specific survival (CSS) and overall survival (OS) were assessed using Cox proportional hazards models. Integrative bioinformatics analyses, including pooled transcriptomic dataset analysis, expression quantitative trait locus analysis, and pathway enrichment, were performed to assess functional relevance. RESULTS: Multiple SNPs were significantly associated with CSS and OS, with Yes1-associated transcriptional regulator (YAP1) rs1894116 showing the strongest prognostic signal. The minor G allele was associated with a 26% reduction in prostate cancer-specific mortality and a 22% reduction in all-cause mortality, independent of established clinical predictors. Functional annotation suggested that rs1894116 may be linked to increased YAP1 expression. Pooled transcriptomic analyses showed lower YAP1 expression in tumors than in normal tissue, while higher YAP1 expression correlated with more favorable outcomes. YAP1-correlated genes were enriched in the focal adhesion pathway, suggesting a tumor-suppressive YAP1-focal adhesion axis, particularly involving vinculin. CONCLUSION: Germline variation in the Notch-YAP axis, notably YAP1 rs1894116, predicts survival in patients with prostate cancer treated with ADT. Elevated YAP1 expression and coordinated activation of focal adhesion components may be associated with less aggressive disease. These findings provide mechanistic insight into Notch signaling in prostate cancer and highlight YAP1 and its variants as potential biomarkers for risk stratification and personalized therapy.\n\n"
+}

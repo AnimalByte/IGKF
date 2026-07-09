@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q159",
+      "randomization_seed": "20260706:Q159:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q159",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q159",
+      "error": null,
+      "id": "batch_req_6a4f85d68248819092ece123003427c5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594502,
+          "created_at": 1783594469,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03b10aa48228dc28006a4f7de501788195a47c54a740ddd451",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q159"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03b10aa48228dc28006a4f7de612bc8195bfaecc4b762a8dcb",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses how a non-coding risk variant could affect hair-loss phenotypes and explicitly separates observed annotations from hypotheses.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Accurately reflects supplied annotations for KANSL1, OPHN1, associated genes, pathways, and PPIs. Some mechanistic details, such as altered histone-complex activity or effects on protein interactions from non-coding variants, are somewhat speculative but mostly framed as hypotheses.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers key observed study-derived annotations and provides plausible regulatory mechanisms. It could be stronger by emphasizing that no specific non-coding variant or regulatory annotation was provided in the evidence packet.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Generally distinguishes observations from hypotheses and notes need for experimental validation, though some speculative mechanisms are described in more detail than the evidence directly supports.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Provides a generic explanation of non-coding regulatory mechanisms but does not use the study-specific hair-loss annotations such as KANSL1, OPHN1, or the supplied pathway/PPI context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"The general biology of enhancer, promoter, and miRNA effects is plausible, but the answer introduces unrelated migraine SNP examples and presents them as observed annotations despite their absence from the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Misses the main study-specific evidence and does not connect the plausible mechanism to the provided hair-loss genes or pathways. The observed-versus-hypothesized distinction is weakened by unsupported annotations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"It appropriately states that the context does not directly link non-coding variants to MPHL, but still includes unsupported external examples as if they were relevant observed annotations.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03b10aa48228dc28006a4f7df6455c81959a8bc0e54ff6689f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3491,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1036,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4527
+          },
+          "user": null
+        },
+        "request_id": "2a8e3b13-e417-4d56-95fd-1fa304fd0452",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses how a non-coding risk variant could affect hair-loss phenotypes and explicitly separates observed annotations from hypotheses.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects supplied annotations for KANSL1, OPHN1, associated genes, pathways, and PPIs. Some mechanistic details, such as altered histone-complex activity or effects on protein interactions from non-coding variants, are somewhat speculative but mostly framed as hypotheses.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers key observed study-derived annotations and provides plausible regulatory mechanisms. It could be stronger by emphasizing that no specific non-coding variant or regulatory annotation was provided in the evidence packet.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Generally distinguishes observations from hypotheses and notes need for experimental validation, though some speculative mechanisms are described in more detail than the evidence directly supports.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q159",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q159.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.773983+00:00"
+}

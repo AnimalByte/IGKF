@@ -1,0 +1,154 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q051.json",
+      "question_id": "Q051",
+      "sha256": "f08bc091e2feeeb1b21f99d7078965ce10febbbb3d0fbd171fdbdf4efeb50c8b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q051.json",
+      "question_id": "Q051",
+      "sha256": "dd5f8b7167be4df5a446907f35f3c8c99f3e06e9753906f32b2755a406f2b2b3"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8662,
+  "git_commit": null,
+  "graph_context": "Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the evidence linking AR to androgenetic alopecia.",
+  "parsed_answer": "The provided IGKF graph context does not include direct evidence linking the AR (Androgen Receptor) gene to androgenetic alopecia. While the context details various associations of AR, such as its involvement in gene pathways, phenotypes, drug interactions, and disease associations, there is no mention of androgenetic alopecia specifically. Therefore, based on the given information, there is no summary evidence to support a direct link between AR and androgenetic alopecia.",
+  "question_id": "Q051",
+  "question_text": "Summarize the evidence linking AR to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 94,
+    "prompt_token_count": 631,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided IGKF graph context does not include direct evidence linking the AR (Androgen Receptor) gene to androgenetic alopecia. While the context details various associations of AR, such as its involvement in gene pathways, phenotypes, drug interactions, and disease associations, there is no mention of androgenetic alopecia specifically. Therefore, based on the given information, there is no summary evidence to support a direct link between AR and androgenetic alopecia."
+      }
+    ],
+    "created": 1783559055,
+    "id": "cmpl-41057d67-6c6e-41bd-8f51-13f5c881d804",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 94,
+      "prompt_tokens": 610,
+      "total_tokens": 704
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "found_specific_entity": true,
+    "graph_context": "Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "graph_context_length": 1823,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0172,
+    "original_retrieval_query": "Summarize the evidence linking AR to androgenetic alopecia.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "summarize"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "ar"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgenetic alopecia"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0172,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q051.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T01:04:16.142793+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n\n**Question:**\nSummarize the evidence linking AR to androgenetic alopecia.",
+  "vector_context": ""
+}

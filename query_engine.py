@@ -379,7 +379,8 @@ class GraphRAGQueryEngine:
                 context_str += f"  - Open Targets Drug Evidence: {'; '.join(ot_drug_strs)}\n"
         return context_str
 
-    def retrieve_context(self, question):
+    def retrieve_graph_context(self, question):
+        """Run the existing entity resolution and graph-context construction only."""
         retrieval_start = time.perf_counter()
         doc = self.nlp(question)
         entities = [{"text": ent.text.lower(), "label": ent.label_} for ent in doc.ents]
@@ -593,18 +594,37 @@ class GraphRAGQueryEngine:
 
         if full_context:
             graph_context = full_context.strip()
-        expanded_query = question + " " + graph_context
-        logging.info(f"Expanded vector search query (length={len(expanded_query)} chars)")
-        vector_context = self.retrieve_from_vector(expanded_query, question)
-        self._last_retrieval_metadata.update({
+        graph_elapsed = time.perf_counter() - retrieval_start
+        self._last_retrieval_metadata = {
             "resolved_entities": entities,
             "found_specific_entity": found_specific_entity,
             "graph_context_present": bool(graph_context and graph_context != "No relevant data found in the graph."),
             "graph_context_length": len(graph_context or ""),
             "graph_context": graph_context,
+            "graph_retrieval_seconds": round(graph_elapsed, 4),
+        }
+        return graph_context
+
+    def retrieve_literature_context(self, search_query: str, original_question: str) -> str:
+        """Run the existing Chroma retrieval and cross-encoder reranking only."""
+        return self.retrieve_from_vector(search_query, original_question)
+
+    def retrieve_context(self, question):
+        retrieval_start = time.perf_counter()
+        graph_context = self.retrieve_graph_context(question)
+        graph_metadata = self.get_last_retrieval_metadata()
+        expanded_query = question + " " + graph_context
+        logging.info(f"Expanded vector search query (length={len(expanded_query)} chars)")
+        vector_context = self.retrieve_literature_context(expanded_query, question)
+        vector_metadata = self.get_last_retrieval_metadata()
+        combined_metadata = {**vector_metadata, **graph_metadata}
+        graph_seconds = float(graph_metadata.get("graph_retrieval_seconds", 0.0))
+        self._last_retrieval_metadata.update({
+            **combined_metadata,
+            "graph_context": graph_context,
             "expanded_retrieval_query": expanded_query,
             "final_context": f"Graph Context:\n{graph_context}\n\nVector Context:\n{vector_context}",
-            "retrieval_total_seconds": round(time.perf_counter() - retrieval_start, 4),
+            "retrieval_total_seconds": round(graph_seconds + float(vector_metadata.get("vector_retrieval_seconds", 0.0)) + float(vector_metadata.get("rerank_seconds", 0.0)), 4),
         })
         return graph_context, vector_context
 
@@ -628,6 +648,67 @@ class GraphRAGQueryEngine:
         graph_context, vector_context = self.retrieve_context(question)
         user_prompt = self.build_igkf_user_prompt(question, graph_context, vector_context)
         return user_prompt, graph_context, vector_context, self.get_last_retrieval_metadata()
+
+    @staticmethod
+    def build_graph_only_user_prompt(question: str, graph_context: str) -> str:
+        return (
+            "Please answer the user's question using the supplied IGKF graph context.\n\n"
+            "**Graph Context (Structured Data):**\n"
+            f"{graph_context}\n\n"
+            "**Question:**\n"
+            f"{question}"
+        )
+
+    @staticmethod
+    def build_literature_only_user_prompt(question: str, vector_context: str) -> str:
+        return (
+            "Please answer the user's question using the supplied literature context.\n\n"
+            "**Literature Context (Retrieved Abstracts):**\n"
+            f"{vector_context}\n\n"
+            "**Question:**\n"
+            f"{question}"
+        )
+
+    def prepare_graph_only_prompt(self, question: str) -> Tuple[str, str, str, Dict[str, Any]]:
+        """Return graph-only prompt and metadata without running vector retrieval."""
+        graph_context = self.retrieve_graph_context(question)
+        metadata = self.get_last_retrieval_metadata()
+        metadata.update({
+            "retrieval_mode": "graph_only",
+            "vector_context_present": False,
+            "candidate_pmids": [],
+            "selected_pmids": [],
+            "selected_abstracts": [],
+            "scores": [],
+            "expanded_retrieval_query": None,
+            "original_retrieval_query": question,
+            "final_context": f"Graph Context:\n{graph_context}",
+            "retrieval_total_seconds": metadata.get("graph_retrieval_seconds", 0.0),
+        })
+        self._last_retrieval_metadata = metadata
+        user_prompt = self.build_graph_only_user_prompt(question, graph_context)
+        return user_prompt, graph_context, "", metadata
+
+    def prepare_literature_only_prompt(self, question: str) -> Tuple[str, str, str, Dict[str, Any]]:
+        """Return literature-only prompt and metadata without graph retrieval or query expansion."""
+        start = time.perf_counter()
+        vector_context = self.retrieve_literature_context(question, question)
+        metadata = self.get_last_retrieval_metadata()
+        metadata.update({
+            "retrieval_mode": "literature_only",
+            "resolved_entities": [],
+            "found_specific_entity": False,
+            "graph_context_present": False,
+            "graph_context_length": 0,
+            "graph_context": "",
+            "original_retrieval_query": question,
+            "expanded_retrieval_query": question,
+            "final_context": f"Literature Context:\n{vector_context}",
+            "retrieval_total_seconds": round(time.perf_counter() - start, 4),
+        })
+        self._last_retrieval_metadata = metadata
+        user_prompt = self.build_literature_only_user_prompt(question, vector_context)
+        return user_prompt, "", vector_context, metadata
 
     def answer_with_metadata(self, question: str) -> Tuple[str, str, Dict[str, Any]]:
         """API call: returns (answer, combined_context, metadata)."""

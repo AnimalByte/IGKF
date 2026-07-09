@@ -1,0 +1,162 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q073.json",
+      "question_id": "Q073",
+      "sha256": "606bdee020a17645ce3f62d8275cb51eda371d5cd13b8cebe47ecf2b92d49f75"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q073.json",
+      "question_id": "Q073",
+      "sha256": "d7b02abcde3adddf86aacbfa6d529ef06cd42076b7a30797610fbc32d750e35c"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.9274,
+  "git_commit": null,
+  "graph_context": "Entity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+  "parsed_answer": "The provided IGKF graph context does not explicitly link WNT10A to any treatments used or investigated for hair loss. The context includes information about the gene's pathways, associated phenotypes, GO functions, interacting proteins, and disease associations, but there is no mention of treatments or therapeutic investigations related to hair loss. Therefore, based on the available data, there is no evidence to suggest a direct link between WNT10A and treatments for hair loss.",
+  "question_id": "Q073",
+  "question_text": "Does the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 93,
+    "prompt_token_count": 412,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided IGKF graph context does not explicitly link WNT10A to any treatments used or investigated for hair loss. The context includes information about the gene's pathways, associated phenotypes, GO functions, interacting proteins, and disease associations, but there is no mention of treatments or therapeutic investigations related to hair loss. Therefore, based on the available data, there is no evidence to suggest a direct link between WNT10A and treatments for hair loss."
+      }
+    ],
+    "created": 1783559121,
+    "id": "cmpl-e7d9c645-324d-4a60-a554-375cb42ce886",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 93,
+      "prompt_tokens": 391,
+      "total_tokens": 484
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)",
+    "graph_context_length": 920,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0153,
+    "original_retrieval_query": "Does the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "wnt10a"
+      },
+      {
+        "label": "ENTITY",
+        "text": "treatments"
+      },
+      {
+        "label": "ENTITY",
+        "text": "investigated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair loss"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0153,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q073.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T01:05:22.887711+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)\n\n**Question:**\nDoes the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+  "vector_context": ""
+}

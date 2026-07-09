@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q012",
+      "randomization_seed": "20260706:Q012:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q012",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q012",
+      "error": null,
+      "id": "batch_req_6a4f85cd72608190bbb11ba1273635c5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594477,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0932a1a99b61ec9c006a4f7dd9e7ec81958c865bfe9af0b3d5",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q012"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0932a1a99b61ec9c006a4f7ddb0e0c819598b56a9eba3ee1b2",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether rs2180439 can be linked to a regulatory element from the supplied integrated context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"The provided evidence does not mention rs2180439 or any regulatory element containing it, so abstaining is scientifically appropriate.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key point that the evidence is insufficient, though it could explicitly state that no regulatory element can be named.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inventing a regulatory annotation not present in the evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question but frames the basis mainly as literature context rather than the full integrated data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"The abstracts do not mention rs2180439, and the supplied evidence provides no regulatory-element annotation for it.\"},\"completeness\":{\"score\":4,\"rationale\":\"Gives the necessary abstention, but does not explicitly discuss the graph context or state that no element can be identified.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly qualifies that the available evidence is insufficient and does not fabricate an answer.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0932a1a99b61ec9c006a4f7de5374081958e17c7c673053324",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2475,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 612,
+            "output_tokens_details": {
+              "reasoning_tokens": 316
+            },
+            "total_tokens": 3087
+          },
+          "user": null
+        },
+        "request_id": "b4efb5cc-0767-42a4-9d03-462655521645",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether rs2180439 can be linked to a regulatory element from the supplied integrated context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The provided evidence does not mention rs2180439 or any regulatory element containing it, so abstaining is scientifically appropriate.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key point that the evidence is insufficient, though it could explicitly state that no regulatory element can be named.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inventing a regulatory annotation not present in the evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q012",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q012.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.717113+00:00"
+}

@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "33637690",
+    "41279801",
+    "40708016",
+    "40591711",
+    "41673758",
+    "38958117",
+    "42209703",
+    "34217363",
+    "39433822",
+    "40767049",
+    "39633006",
+    "37354922",
+    "39713210",
+    "40365676",
+    "40276647"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q198.json",
+      "question_id": "Q198",
+      "sha256": "f61964c5631944ff69d969e8e4ed121d6a2a4f46b3e6c7c1683b1a4fdfeaa1a2"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q198.json",
+      "question_id": "Q198",
+      "sha256": "bdf29cc6c10896e95ad2a2ec36e4d377c20c2db64beb8c0ea3a61067dd6d8df8"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What is the role of the APOE \u03b54 allele in Alzheimer's disease risk?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.4189,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What is the role of the APOE \u03b54 allele in Alzheimer's disease risk?",
+  "parsed_answer": "The APOE \u03b54 allele is a well-established genetic risk factor for Alzheimer's disease (AD), particularly for late-onset AD. It contributes to AD risk through multiple mechanisms, including early synaptic and metabolic disruptions and later-stage inflammatory and epigenetic changes. Specifically:\n\n1. **Early Vulnerability**: In the absence of AD pathology, APOE \u03b54 carriers exhibit lower levels of proteins involved in synaptic function (e.g., VAMP1, SYN3, CASKIN1) and metabolism (e.g., GLUD1, PI4KA), suggesting early vulnerability in these pathways.\n\n2. **Inflammatory and Epigenetic Changes**: In individuals with AD, APOE \u03b54 carriers show upregulation of inflammatory and proteostatic proteins (e.g., GNAO1, AHNAK, FGG, HEBP1, APEX1, RAB4A, SLC12A5, LRP1, BAG6) and hypermethylation of specific sites (e.g., cg06329447 in ELAVL4), linking epigenetic dysregulation to disease risk.\n\n3. **Genetic and Molecular Mechanisms**: The APOE \u03b54 allele is associated with differential gene expression in CD8 central memory cells, with 108 differentially expressed genes (DEGs) identified. Nine of these genes (e.g., ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, CAPNS1) show causal relationships with AD, as validated through Mendelian randomization (MR) and genome-wide association studies (GWAS).\n\n4. **Biomarker Potential**: Genetically determined levels of proteins such as BHLHE40, ANXA1, and RUNX3 may serve as promising biomarkers for AD risk, warranting further clinical investigation.\n\n5. **Stratified Risk**: APOE \u03b54 carriers may exhibit distinct molecular and genetic profiles compared to non-carriers, with proteomic and epigenetic markers outperforming polygenic risk scores (PRS) in predicting AD risk in carriers.\n\nIn summary, the APOE \u03b54 allele increases the risk of Alzheimer's disease through a combination of early synaptic and metabolic disruptions, as well as later-stage inflammatory and epigenetic changes, highlighting its complex role in disease pathogenesis.",
+  "question_id": "Q198",
+  "question_text": "What is the role of the APOE \u03b54 allele in Alzheimer's disease risk?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 502,
+    "prompt_token_count": 1859,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The APOE \u03b54 allele is a well-established genetic risk factor for Alzheimer's disease (AD), particularly for late-onset AD. It contributes to AD risk through multiple mechanisms, including early synaptic and metabolic disruptions and later-stage inflammatory and epigenetic changes. Specifically:\n\n1. **Early Vulnerability**: In the absence of AD pathology, APOE \u03b54 carriers exhibit lower levels of proteins involved in synaptic function (e.g., VAMP1, SYN3, CASKIN1) and metabolism (e.g., GLUD1, PI4KA), suggesting early vulnerability in these pathways.\n\n2. **Inflammatory and Epigenetic Changes**: In individuals with AD, APOE \u03b54 carriers show upregulation of inflammatory and proteostatic proteins (e.g., GNAO1, AHNAK, FGG, HEBP1, APEX1, RAB4A, SLC12A5, LRP1, BAG6) and hypermethylation of specific sites (e.g., cg06329447 in ELAVL4), linking epigenetic dysregulation to disease risk.\n\n3. **Genetic and Molecular Mechanisms**: The APOE \u03b54 allele is associated with differential gene expression in CD8 central memory cells, with 108 differentially expressed genes (DEGs) identified. Nine of these genes (e.g., ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, CAPNS1) show causal relationships with AD, as validated through Mendelian randomization (MR) and genome-wide association studies (GWAS).\n\n4. **Biomarker Potential**: Genetically determined levels of proteins such as BHLHE40, ANXA1, and RUNX3 may serve as promising biomarkers for AD risk, warranting further clinical investigation.\n\n5. **Stratified Risk**: APOE \u03b54 carriers may exhibit distinct molecular and genetic profiles compared to non-carriers, with proteomic and epigenetic markers outperforming polygenic risk scores (PRS) in predicting AD risk in carriers.\n\nIn summary, the APOE \u03b54 allele increases the risk of Alzheimer's disease through a combination of early synaptic and metabolic disruptions, as well as later-stage inflammatory and epigenetic changes, highlighting its complex role in disease pathogenesis."
+      }
+    ],
+    "created": 1783564740,
+    "id": "cmpl-89e1e62d-1c4f-49da-b6be-af915a4d0e3d",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 502,
+      "prompt_tokens": 1838,
+      "total_tokens": 2340
+    }
+  },
+  "reranker_scores": [
+    6.659453868865967,
+    5.033912658691406,
+    2.8892247676849365
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      24.053489685058594,
+      27.12467384338379,
+      29.7894229888916,
+      31.7537841796875,
+      33.241615295410156,
+      33.355804443359375,
+      33.801055908203125,
+      33.862754821777344,
+      35.65962219238281,
+      36.31722640991211,
+      36.378395080566406,
+      36.744991302490234,
+      37.25056457519531,
+      37.383056640625,
+      37.69586944580078
+    ],
+    "candidate_pmids": [
+      "33637690",
+      "41279801",
+      "40708016",
+      "40591711",
+      "41673758",
+      "38958117",
+      "42209703",
+      "34217363",
+      "39433822",
+      "40767049",
+      "39633006",
+      "37354922",
+      "39713210",
+      "40365676",
+      "40276647"
+    ],
+    "expanded_retrieval_query": "What is the role of the APOE \u03b54 allele in Alzheimer's disease risk?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41673758, relevance: 6.6595) ---\nThe varepsilon4 allele of the apolipoprotein E gene (APOE4) has been identified as a significant risk factor for late-onset AD. However, the specific genetic differences in T lymphocytes between APOE4 and APOE3 carriers are poorly understood. This study aimed to identify these important genetic distinctions and investigate the causal relationship between these differences and the risk of Alzheimer's disease (AD), offering insights that could lead to novel treatment approaches. We sequenced single peripheral blood cells from three APOE3 and three APOE4 patients using the BD Rhapsody sequencing technology. We conducted a single-cell locus analysis, explored cell communication and signaling pathways. Finally, we selected CD8 central memory cells (CD8_CM) for differential gene, enrichment, and protein interaction analyses. Mendelian randomization (MR) analysis of expression quantitative trait loci (eQTLs) of differential genes and a genome-wide association study (GWAS) of AD were performed to verify causality and sensitivity. We selected CD8_CM as the primary target and identified 108 differentially expressed genes (DEGs). Through MR analysis, we identified nine genes with causal relationships with AD: ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, and CAPNS1. In the replication phase, based on Wald ratios or the IVW method, the causal relationships of five genes (RUNX3, ATP2B4, C1orf21, AHNAK, and CD3G) with AD were successfully validated in another GWAS dataset. We identified the core role of CD8_CM, yielding 108 DEGs. Our integrative analysis suggests that genetically determined levels of circulating BHLHE40, ANXA1, and RUNX3, may be promising biomarkers for AD and warrant further clinical investigation.\n\n--- Abstract 2 (PMID: 41279801, relevance: 5.0339) ---\nAlzheimer's disease (AD) is characterized by widespread molecular dysregulation, with the APOEe4 allele recognized as its strongest genetic risk factor. However, the mechanisms by which APOEe4 drives distinct molecular changes - whether by exacerbating pathology or triggering compensatory responses - remain incompletely understood. We generated and analyzed proteomic, epigenetic, and genetic data from post-mortem dorsolateral prefrontal cortex samples of a uniquely APOEe4-enriched subset of the Religious Orders Study and Memory and Aging Project (ROSMAP). Specifically, we generated DIA LC-MS proteomic data (n = 302), analyzed previously generated DNA methylation profiles from our group (n = 310), and used published whole-genome sequencing data (n = 254) to compute polygenic risk scores (PRS). In this cohort, 69% (n = 214) were APOEe4 carriers, and 19.6% (n = 42) of them showed no pathological evidence of AD based on NIA-Reagan criteria, enabling identification of APOEe4-related risk and resilience mechanisms. In the absence of AD, APOEe4 carriers exhibited lower levels of 27 proteins, suggesting early synaptic (e.g., VAMP1, SYN3, CASKIN1) and metabolic (e.g., GLUD1, PI4KA) vulnerability. By contrast, APOEe4 carriers with AD displayed marked upregulation of inflammatory and proteostatic proteins (e.g., GNAO1, AHNAK, FGG, HEBP1, APEX1, RAB4A, SLC12A5, LRP1, BAG6) and hypermethylation of cg06329447 in ELAVL4. Network analyses highlighted convergent disruptions in synaptic transmission, metabolism, and proteostasis - key pathways altered in APOEe4-associated AD. Mediation analyses identified GRIPAP1 and GSTK1 as top protein mediators (accounting for ~26-33% of APOEe4's effect), with VAMP1, CASKIN1, DPP3, SYN3, and FGG each contributing ~9-15%. ELAVL4 hypermethylation also mediated ~12% of the APOEe4 effect, linking epigenetic dysregulation to disease risk. To assess whether the identified proteins reflected broader genetic risk for AD or were specific to APOEe4, we calculated PRS both excluding and including the APOE genomic region. While the non-APOE PRS showed no association with identified molecular markers, the APOE-inclusive PRS was significantly associated with eight AD-related proteins in carriers, indicating they are not explained by polygenic risk outside of APOE. Finally, predictive modeling stratified by APOEe4 status revealed that in non-carriers, PRS most effectively classified AD (AUC = 0.73), whereas in carriers, proteomic and epigenetic markers outperformed PRS (AUC up to 0.74). Together, these findings demonstrate that APOEe4 confers AD risk through early synaptic and metabolic disruptions and later-stage inflammatory and epigenetic changes, laying the groundwork for genotype-tailored biomarker development and therapeutic strategies.\n\n--- Abstract 3 (PMID: 40708016, relevance: 2.8892) ---\nBACKGROUND: Alzheimer's disease (AD) risk variants have been identified in European ancestry cohorts that have stronger effects at certain ages, in individuals with a specific sex, or in those with specific isoforms of APOE, the strongest AD risk locus. However, sample sizes in African ancestry (AA) cohorts have been underpowered to perform stratified analyses. METHODS: We generated genome-wide association study datasets stratified by sex, age at onset (< 75 vs >/= 75), and APOE-epsilon4 carrier status in AA cohorts from MVP and the Alzheimer's Disease Genetics Consortium (ADGC). Outcomes in MVP were AD and related dementias (ADRD; n = 4073 cases and 19,648 controls) and proxy dementia (i.e., reported dementia in a parent, n = 6216 cases and 21,566 controls) while ADGC analyses examined AD (n = 2425 cases and 5069 controls). The proxy dementia GWASs were included in the sex-stratified meta-analysis corresponding to the sex of the affected parent. The top genes were tested for differential expression in AA brain tissue. RESULTS: In addition to the APOE region, genome-wide significant associations were observed in an intergenic region near the EPHA5 gene (rs141838133, p = 2.19 x 10(-8)) in individuals with onset < 75 years, in GRIN3B near the known AD risk gene ABCA7 (rs115882880, p = 3.83 x 10(-8)) in females, and near TSPEAR (rs139130053, p = 4.27 x 10(-8)) in APOE-epsilon4 non-carriers. EPHA5 regulates glucose homeostasis, and ephrin receptors modify the strength of existing synapses in the brain and in pancreatic islets. It is unclear whether GRIN3B represents a locus distinct from ABCA7. Rs115882880 was a significant eQTL for GRIN3B but not ABCA7 in AA brain samples. TSPEAR regulates Notch signaling but has not been linked to neuronal function. CONCLUSIONS: Age, sex, and APOE-stratified analyses of dementia in AA participants from two cohorts revealed potential new associations. Stratified analyses may yield critical information about the genetic heterogeneity underlying dementia risk and lead to advances in precision medicine.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What is the role of the APOE \u03b54 allele in Alzheimer's disease risk?",
+    "rerank_seconds": 0.3313,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3456,
+    "score_max": 6.659453868865967,
+    "score_mean": 4.86086376508077,
+    "scores": [
+      6.659453868865967,
+      5.033912658691406,
+      2.8892247676849365
+    ],
+    "selected_abstracts": [
+      "The varepsilon4 allele of the apolipoprotein E gene (APOE4) has been identified as a significant risk factor for late-onset AD. However, the specific genetic differences in T lymphocytes between APOE4 and APOE3 carriers are poorly understood. This study aimed to identify these important genetic distinctions and investigate the causal relationship between these differences and the risk of Alzheimer's disease (AD), offering insights that could lead to novel treatment approaches. We sequenced single peripheral blood cells from three APOE3 and three APOE4 patients using the BD Rhapsody sequencing technology. We conducted a single-cell locus analysis, explored cell communication and signaling pathways. Finally, we selected CD8 central memory cells (CD8_CM) for differential gene, enrichment, and protein interaction analyses. Mendelian randomization (MR) analysis of expression quantitative trait loci (eQTLs) of differential genes and a genome-wide association study (GWAS) of AD were performed to verify causality and sensitivity. We selected CD8_CM as the primary target and identified 108 differentially expressed genes (DEGs). Through MR analysis, we identified nine genes with causal relationships with AD: ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, and CAPNS1. In the replication phase, based on Wald ratios or the IVW method, the causal relationships of five genes (RUNX3, ATP2B4, C1orf21, AHNAK, and CD3G) with AD were successfully validated in another GWAS dataset. We identified the core role of CD8_CM, yielding 108 DEGs. Our integrative analysis suggests that genetically determined levels of circulating BHLHE40, ANXA1, and RUNX3, may be promising biomarkers for AD and warrant further clinical investigation.",
+      "Alzheimer's disease (AD) is characterized by widespread molecular dysregulation, with the APOEe4 allele recognized as its strongest genetic risk factor. However, the mechanisms by which APOEe4 drives distinct molecular changes - whether by exacerbating pathology or triggering compensatory responses - remain incompletely understood. We generated and analyzed proteomic, epigenetic, and genetic data from post-mortem dorsolateral prefrontal cortex samples of a uniquely APOEe4-enriched subset of the Religious Orders Study and Memory and Aging Project (ROSMAP). Specifically, we generated DIA LC-MS proteomic data (n = 302), analyzed previously generated DNA methylation profiles from our group (n = 310), and used published whole-genome sequencing data (n = 254) to compute polygenic risk scores (PRS). In this cohort, 69% (n = 214) were APOEe4 carriers, and 19.6% (n = 42) of them showed no pathological evidence of AD based on NIA-Reagan criteria, enabling identification of APOEe4-related risk and resilience mechanisms. In the absence of AD, APOEe4 carriers exhibited lower levels of 27 proteins, suggesting early synaptic (e.g., VAMP1, SYN3, CASKIN1) and metabolic (e.g., GLUD1, PI4KA) vulnerability. By contrast, APOEe4 carriers with AD displayed marked upregulation of inflammatory and proteostatic proteins (e.g., GNAO1, AHNAK, FGG, HEBP1, APEX1, RAB4A, SLC12A5, LRP1, BAG6) and hypermethylation of cg06329447 in ELAVL4. Network analyses highlighted convergent disruptions in synaptic transmission, metabolism, and proteostasis - key pathways altered in APOEe4-associated AD. Mediation analyses identified GRIPAP1 and GSTK1 as top protein mediators (accounting for ~26-33% of APOEe4's effect), with VAMP1, CASKIN1, DPP3, SYN3, and FGG each contributing ~9-15%. ELAVL4 hypermethylation also mediated ~12% of the APOEe4 effect, linking epigenetic dysregulation to disease risk. To assess whether the identified proteins reflected broader genetic risk for AD or were specific to APOEe4, we calculated PRS both excluding and including the APOE genomic region. While the non-APOE PRS showed no association with identified molecular markers, the APOE-inclusive PRS was significantly associated with eight AD-related proteins in carriers, indicating they are not explained by polygenic risk outside of APOE. Finally, predictive modeling stratified by APOEe4 status revealed that in non-carriers, PRS most effectively classified AD (AUC = 0.73), whereas in carriers, proteomic and epigenetic markers outperformed PRS (AUC up to 0.74). Together, these findings demonstrate that APOEe4 confers AD risk through early synaptic and metabolic disruptions and later-stage inflammatory and epigenetic changes, laying the groundwork for genotype-tailored biomarker development and therapeutic strategies.",
+      "BACKGROUND: Alzheimer's disease (AD) risk variants have been identified in European ancestry cohorts that have stronger effects at certain ages, in individuals with a specific sex, or in those with specific isoforms of APOE, the strongest AD risk locus. However, sample sizes in African ancestry (AA) cohorts have been underpowered to perform stratified analyses. METHODS: We generated genome-wide association study datasets stratified by sex, age at onset (< 75 vs >/= 75), and APOE-epsilon4 carrier status in AA cohorts from MVP and the Alzheimer's Disease Genetics Consortium (ADGC). Outcomes in MVP were AD and related dementias (ADRD; n = 4073 cases and 19,648 controls) and proxy dementia (i.e., reported dementia in a parent, n = 6216 cases and 21,566 controls) while ADGC analyses examined AD (n = 2425 cases and 5069 controls). The proxy dementia GWASs were included in the sex-stratified meta-analysis corresponding to the sex of the affected parent. The top genes were tested for differential expression in AA brain tissue. RESULTS: In addition to the APOE region, genome-wide significant associations were observed in an intergenic region near the EPHA5 gene (rs141838133, p = 2.19 x 10(-8)) in individuals with onset < 75 years, in GRIN3B near the known AD risk gene ABCA7 (rs115882880, p = 3.83 x 10(-8)) in females, and near TSPEAR (rs139130053, p = 4.27 x 10(-8)) in APOE-epsilon4 non-carriers. EPHA5 regulates glucose homeostasis, and ephrin receptors modify the strength of existing synapses in the brain and in pancreatic islets. It is unclear whether GRIN3B represents a locus distinct from ABCA7. Rs115882880 was a significant eQTL for GRIN3B but not ABCA7 in AA brain samples. TSPEAR regulates Notch signaling but has not been linked to neuronal function. CONCLUSIONS: Age, sex, and APOE-stratified analyses of dementia in AA participants from two cohorts revealed potential new associations. Stratified analyses may yield critical information about the genetic heterogeneity underlying dementia risk and lead to advances in precision medicine."
+    ],
+    "selected_pmids": [
+      "41673758",
+      "41279801",
+      "40708016"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0142
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q198.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41673758",
+    "41279801",
+    "40708016"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:39:05.491609+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41673758, relevance: 6.6595) ---\nThe varepsilon4 allele of the apolipoprotein E gene (APOE4) has been identified as a significant risk factor for late-onset AD. However, the specific genetic differences in T lymphocytes between APOE4 and APOE3 carriers are poorly understood. This study aimed to identify these important genetic distinctions and investigate the causal relationship between these differences and the risk of Alzheimer's disease (AD), offering insights that could lead to novel treatment approaches. We sequenced single peripheral blood cells from three APOE3 and three APOE4 patients using the BD Rhapsody sequencing technology. We conducted a single-cell locus analysis, explored cell communication and signaling pathways. Finally, we selected CD8 central memory cells (CD8_CM) for differential gene, enrichment, and protein interaction analyses. Mendelian randomization (MR) analysis of expression quantitative trait loci (eQTLs) of differential genes and a genome-wide association study (GWAS) of AD were performed to verify causality and sensitivity. We selected CD8_CM as the primary target and identified 108 differentially expressed genes (DEGs). Through MR analysis, we identified nine genes with causal relationships with AD: ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, and CAPNS1. In the replication phase, based on Wald ratios or the IVW method, the causal relationships of five genes (RUNX3, ATP2B4, C1orf21, AHNAK, and CD3G) with AD were successfully validated in another GWAS dataset. We identified the core role of CD8_CM, yielding 108 DEGs. Our integrative analysis suggests that genetically determined levels of circulating BHLHE40, ANXA1, and RUNX3, may be promising biomarkers for AD and warrant further clinical investigation.\n\n--- Abstract 2 (PMID: 41279801, relevance: 5.0339) ---\nAlzheimer's disease (AD) is characterized by widespread molecular dysregulation, with the APOEe4 allele recognized as its strongest genetic risk factor. However, the mechanisms by which APOEe4 drives distinct molecular changes - whether by exacerbating pathology or triggering compensatory responses - remain incompletely understood. We generated and analyzed proteomic, epigenetic, and genetic data from post-mortem dorsolateral prefrontal cortex samples of a uniquely APOEe4-enriched subset of the Religious Orders Study and Memory and Aging Project (ROSMAP). Specifically, we generated DIA LC-MS proteomic data (n = 302), analyzed previously generated DNA methylation profiles from our group (n = 310), and used published whole-genome sequencing data (n = 254) to compute polygenic risk scores (PRS). In this cohort, 69% (n = 214) were APOEe4 carriers, and 19.6% (n = 42) of them showed no pathological evidence of AD based on NIA-Reagan criteria, enabling identification of APOEe4-related risk and resilience mechanisms. In the absence of AD, APOEe4 carriers exhibited lower levels of 27 proteins, suggesting early synaptic (e.g., VAMP1, SYN3, CASKIN1) and metabolic (e.g., GLUD1, PI4KA) vulnerability. By contrast, APOEe4 carriers with AD displayed marked upregulation of inflammatory and proteostatic proteins (e.g., GNAO1, AHNAK, FGG, HEBP1, APEX1, RAB4A, SLC12A5, LRP1, BAG6) and hypermethylation of cg06329447 in ELAVL4. Network analyses highlighted convergent disruptions in synaptic transmission, metabolism, and proteostasis - key pathways altered in APOEe4-associated AD. Mediation analyses identified GRIPAP1 and GSTK1 as top protein mediators (accounting for ~26-33% of APOEe4's effect), with VAMP1, CASKIN1, DPP3, SYN3, and FGG each contributing ~9-15%. ELAVL4 hypermethylation also mediated ~12% of the APOEe4 effect, linking epigenetic dysregulation to disease risk. To assess whether the identified proteins reflected broader genetic risk for AD or were specific to APOEe4, we calculated PRS both excluding and including the APOE genomic region. While the non-APOE PRS showed no association with identified molecular markers, the APOE-inclusive PRS was significantly associated with eight AD-related proteins in carriers, indicating they are not explained by polygenic risk outside of APOE. Finally, predictive modeling stratified by APOEe4 status revealed that in non-carriers, PRS most effectively classified AD (AUC = 0.73), whereas in carriers, proteomic and epigenetic markers outperformed PRS (AUC up to 0.74). Together, these findings demonstrate that APOEe4 confers AD risk through early synaptic and metabolic disruptions and later-stage inflammatory and epigenetic changes, laying the groundwork for genotype-tailored biomarker development and therapeutic strategies.\n\n--- Abstract 3 (PMID: 40708016, relevance: 2.8892) ---\nBACKGROUND: Alzheimer's disease (AD) risk variants have been identified in European ancestry cohorts that have stronger effects at certain ages, in individuals with a specific sex, or in those with specific isoforms of APOE, the strongest AD risk locus. However, sample sizes in African ancestry (AA) cohorts have been underpowered to perform stratified analyses. METHODS: We generated genome-wide association study datasets stratified by sex, age at onset (< 75 vs >/= 75), and APOE-epsilon4 carrier status in AA cohorts from MVP and the Alzheimer's Disease Genetics Consortium (ADGC). Outcomes in MVP were AD and related dementias (ADRD; n = 4073 cases and 19,648 controls) and proxy dementia (i.e., reported dementia in a parent, n = 6216 cases and 21,566 controls) while ADGC analyses examined AD (n = 2425 cases and 5069 controls). The proxy dementia GWASs were included in the sex-stratified meta-analysis corresponding to the sex of the affected parent. The top genes were tested for differential expression in AA brain tissue. RESULTS: In addition to the APOE region, genome-wide significant associations were observed in an intergenic region near the EPHA5 gene (rs141838133, p = 2.19 x 10(-8)) in individuals with onset < 75 years, in GRIN3B near the known AD risk gene ABCA7 (rs115882880, p = 3.83 x 10(-8)) in females, and near TSPEAR (rs139130053, p = 4.27 x 10(-8)) in APOE-epsilon4 non-carriers. EPHA5 regulates glucose homeostasis, and ephrin receptors modify the strength of existing synapses in the brain and in pancreatic islets. It is unclear whether GRIN3B represents a locus distinct from ABCA7. Rs115882880 was a significant eQTL for GRIN3B but not ABCA7 in AA brain samples. TSPEAR regulates Notch signaling but has not been linked to neuronal function. CONCLUSIONS: Age, sex, and APOE-stratified analyses of dementia in AA participants from two cohorts revealed potential new associations. Stratified analyses may yield critical information about the genetic heterogeneity underlying dementia risk and lead to advances in precision medicine.\n\n\n\n**Question:**\nWhat is the role of the APOE \u03b54 allele in Alzheimer's disease risk?",
+  "vector_context": "--- Abstract 1 (PMID: 41673758, relevance: 6.6595) ---\nThe varepsilon4 allele of the apolipoprotein E gene (APOE4) has been identified as a significant risk factor for late-onset AD. However, the specific genetic differences in T lymphocytes between APOE4 and APOE3 carriers are poorly understood. This study aimed to identify these important genetic distinctions and investigate the causal relationship between these differences and the risk of Alzheimer's disease (AD), offering insights that could lead to novel treatment approaches. We sequenced single peripheral blood cells from three APOE3 and three APOE4 patients using the BD Rhapsody sequencing technology. We conducted a single-cell locus analysis, explored cell communication and signaling pathways. Finally, we selected CD8 central memory cells (CD8_CM) for differential gene, enrichment, and protein interaction analyses. Mendelian randomization (MR) analysis of expression quantitative trait loci (eQTLs) of differential genes and a genome-wide association study (GWAS) of AD were performed to verify causality and sensitivity. We selected CD8_CM as the primary target and identified 108 differentially expressed genes (DEGs). Through MR analysis, we identified nine genes with causal relationships with AD: ANXA1, BHLHE40, ATP2B4, RUNX3, CD3G, PFN1, AHNAK, C1orf21, and CAPNS1. In the replication phase, based on Wald ratios or the IVW method, the causal relationships of five genes (RUNX3, ATP2B4, C1orf21, AHNAK, and CD3G) with AD were successfully validated in another GWAS dataset. We identified the core role of CD8_CM, yielding 108 DEGs. Our integrative analysis suggests that genetically determined levels of circulating BHLHE40, ANXA1, and RUNX3, may be promising biomarkers for AD and warrant further clinical investigation.\n\n--- Abstract 2 (PMID: 41279801, relevance: 5.0339) ---\nAlzheimer's disease (AD) is characterized by widespread molecular dysregulation, with the APOEe4 allele recognized as its strongest genetic risk factor. However, the mechanisms by which APOEe4 drives distinct molecular changes - whether by exacerbating pathology or triggering compensatory responses - remain incompletely understood. We generated and analyzed proteomic, epigenetic, and genetic data from post-mortem dorsolateral prefrontal cortex samples of a uniquely APOEe4-enriched subset of the Religious Orders Study and Memory and Aging Project (ROSMAP). Specifically, we generated DIA LC-MS proteomic data (n = 302), analyzed previously generated DNA methylation profiles from our group (n = 310), and used published whole-genome sequencing data (n = 254) to compute polygenic risk scores (PRS). In this cohort, 69% (n = 214) were APOEe4 carriers, and 19.6% (n = 42) of them showed no pathological evidence of AD based on NIA-Reagan criteria, enabling identification of APOEe4-related risk and resilience mechanisms. In the absence of AD, APOEe4 carriers exhibited lower levels of 27 proteins, suggesting early synaptic (e.g., VAMP1, SYN3, CASKIN1) and metabolic (e.g., GLUD1, PI4KA) vulnerability. By contrast, APOEe4 carriers with AD displayed marked upregulation of inflammatory and proteostatic proteins (e.g., GNAO1, AHNAK, FGG, HEBP1, APEX1, RAB4A, SLC12A5, LRP1, BAG6) and hypermethylation of cg06329447 in ELAVL4. Network analyses highlighted convergent disruptions in synaptic transmission, metabolism, and proteostasis - key pathways altered in APOEe4-associated AD. Mediation analyses identified GRIPAP1 and GSTK1 as top protein mediators (accounting for ~26-33% of APOEe4's effect), with VAMP1, CASKIN1, DPP3, SYN3, and FGG each contributing ~9-15%. ELAVL4 hypermethylation also mediated ~12% of the APOEe4 effect, linking epigenetic dysregulation to disease risk. To assess whether the identified proteins reflected broader genetic risk for AD or were specific to APOEe4, we calculated PRS both excluding and including the APOE genomic region. While the non-APOE PRS showed no association with identified molecular markers, the APOE-inclusive PRS was significantly associated with eight AD-related proteins in carriers, indicating they are not explained by polygenic risk outside of APOE. Finally, predictive modeling stratified by APOEe4 status revealed that in non-carriers, PRS most effectively classified AD (AUC = 0.73), whereas in carriers, proteomic and epigenetic markers outperformed PRS (AUC up to 0.74). Together, these findings demonstrate that APOEe4 confers AD risk through early synaptic and metabolic disruptions and later-stage inflammatory and epigenetic changes, laying the groundwork for genotype-tailored biomarker development and therapeutic strategies.\n\n--- Abstract 3 (PMID: 40708016, relevance: 2.8892) ---\nBACKGROUND: Alzheimer's disease (AD) risk variants have been identified in European ancestry cohorts that have stronger effects at certain ages, in individuals with a specific sex, or in those with specific isoforms of APOE, the strongest AD risk locus. However, sample sizes in African ancestry (AA) cohorts have been underpowered to perform stratified analyses. METHODS: We generated genome-wide association study datasets stratified by sex, age at onset (< 75 vs >/= 75), and APOE-epsilon4 carrier status in AA cohorts from MVP and the Alzheimer's Disease Genetics Consortium (ADGC). Outcomes in MVP were AD and related dementias (ADRD; n = 4073 cases and 19,648 controls) and proxy dementia (i.e., reported dementia in a parent, n = 6216 cases and 21,566 controls) while ADGC analyses examined AD (n = 2425 cases and 5069 controls). The proxy dementia GWASs were included in the sex-stratified meta-analysis corresponding to the sex of the affected parent. The top genes were tested for differential expression in AA brain tissue. RESULTS: In addition to the APOE region, genome-wide significant associations were observed in an intergenic region near the EPHA5 gene (rs141838133, p = 2.19 x 10(-8)) in individuals with onset < 75 years, in GRIN3B near the known AD risk gene ABCA7 (rs115882880, p = 3.83 x 10(-8)) in females, and near TSPEAR (rs139130053, p = 4.27 x 10(-8)) in APOE-epsilon4 non-carriers. EPHA5 regulates glucose homeostasis, and ephrin receptors modify the strength of existing synapses in the brain and in pancreatic islets. It is unclear whether GRIN3B represents a locus distinct from ABCA7. Rs115882880 was a significant eQTL for GRIN3B but not ABCA7 in AA brain samples. TSPEAR regulates Notch signaling but has not been linked to neuronal function. CONCLUSIONS: Age, sex, and APOE-stratified analyses of dementia in AA participants from two cohorts revealed potential new associations. Stratified analyses may yield critical information about the genetic heterogeneity underlying dementia risk and lead to advances in precision medicine.\n\n"
+}

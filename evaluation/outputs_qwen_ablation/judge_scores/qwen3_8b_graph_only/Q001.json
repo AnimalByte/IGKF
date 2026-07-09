@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q001",
+      "randomization_seed": "20260706:Q001:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q001",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q001",
+      "error": null,
+      "id": "batch_req_6a4f85cce2848190971f3f6f65506041",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579018,
+          "created_at": 1783578985,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a08d79cfd26f74b006a4f4169f2f88193b699d927ff8511d7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q001"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a08d79cfd26f74b006a4f417b047081939921d6b3e0c0e471",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses reported clinical relevance of rs6152 using the provided graph associations.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately reports the AR implication, phenotypes, and Open Targets disease associations from the evidence, though it somewhat overstates them as variant-level clinical significance.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main reported phenotypes and disease associations, but does not clarify that no explicit clinical classification such as pathogenic or benign is provided.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Uses some qualifying language, but concludes significant clinical relevance without clearly distinguishing associations from confirmed clinical significance.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the question, but only by stating no significance is reported.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Incorrectly ignores the supplied graph evidence reporting AR implication, associated phenotypes, and disease associations for rs6152.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key reported associations present in the reference evidence.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids unsupported claims based on the literature abstracts, but the abstention is too broad given the graph evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a08d79cfd26f74b006a4f4185c7108193806c7a740a805457",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2312,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 815,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3127
+          },
+          "user": null
+        },
+        "request_id": "06dea37c-2427-4970-bc4b-330b82faea76",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses reported clinical relevance of rs6152 using the provided graph associations.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reports the AR implication, phenotypes, and Open Targets disease associations from the evidence, though it somewhat overstates them as variant-level clinical significance.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the main reported phenotypes and disease associations, but does not clarify that no explicit clinical classification such as pathogenic or benign is provided.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Uses some qualifying language, but concludes significant clinical relevance without clearly distinguishing associations from confirmed clinical significance.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q001",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q001.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.712773+00:00"
+}

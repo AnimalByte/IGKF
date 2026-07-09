@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q198",
+      "randomization_seed": "20260706:Q198:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q198",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q198",
+      "error": null,
+      "id": "batch_req_6a4f85d8fc208190bda86a3301d9b2ef",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594490,
+          "created_at": 1783594459,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_02358fc49fe388fc006a4f7ddbd3dc8196889b3d816d2b0750",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q198"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_02358fc49fe388fc006a4f7ddce8c0819683bde81dcb7a329f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 2,\n        \"rationale\": \"Acknowledges the topic but does not answer the biomedical question about APOE \u03b54 and Alzheimer\u2019s risk.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not provide the established fact that APOE \u03b54 increases Alzheimer\u2019s disease risk; mainly abstains rather than giving biomedical content.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the central role of APOE \u03b54, including increased late-onset AD risk, dose dependence, and non-deterministic nature.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Clearly abstains, but the question is broadly answerable from established biomedical knowledge.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses APOE \u03b54 as a genetic risk factor for Alzheimer\u2019s disease.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly identifies APOE \u03b54 as a major late-onset AD risk allele, but includes highly specific mechanistic and biomarker claims that are not standard and may be overconfident.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers risk and possible mechanisms, but misses key standard points such as dose-dependent risk, earlier age of onset, non-determinism, and amyloid/lipid-clearance mechanisms while adding unnecessary detail.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Some claims are presented with strong certainty despite being specialized or potentially study-specific; limited qualification of uncertainty.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_02358fc49fe388fc006a4f7dee51ec8196b89316c830918ea2",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1069,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 953,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2022
+          },
+          "user": null
+        },
+        "request_id": "ef4b4ba5-ed66-4903-a274-72dd5b9b39a5",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Acknowledges the topic but does not answer the biomedical question about APOE \u03b54 and Alzheimer\u2019s risk.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Does not provide the established fact that APOE \u03b54 increases Alzheimer\u2019s disease risk; mainly abstains rather than giving biomedical content.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Omits the central role of APOE \u03b54, including increased late-onset AD risk, dose dependence, and non-deterministic nature.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly abstains, but the question is broadly answerable from established biomedical knowledge.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q198",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.788886+00:00"
+}

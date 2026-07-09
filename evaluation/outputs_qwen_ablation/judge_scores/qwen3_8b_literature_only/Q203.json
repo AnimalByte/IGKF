@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q203",
+      "randomization_seed": "20260706:Q203:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q203",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q203",
+      "error": null,
+      "id": "batch_req_6a4f85d9319c81908154c0b96934f8b3",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594499,
+          "created_at": 1783594479,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09a47277ffaefe76006a4f7def030481978515ab56caf0257e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q203"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09a47277ffaefe76006a4f7df0d8ec819794ccb55504240b8e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses that breast cancer treatment options are outside the androgenetic-alopecia dataset scope.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately abstains from applying an alopecia-focused dataset to breast cancer treatment.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key scope limitation and explains why breast cancer therapies are not covered.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than providing unsupported general breast cancer treatment information.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly states that the question is outside the dataset scope.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly avoids unsupported biomedical claims from an unrelated dataset.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the required abstention but lacks a brief explanation of why the dataset is insufficient.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains without inventing breast cancer treatment conclusions.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09a47277ffaefe76006a4f7dfb9c84819781be909aa3d2d2c7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 565,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 558,
+            "output_tokens_details": {
+              "reasoning_tokens": 307
+            },
+            "total_tokens": 1123
+          },
+          "user": null
+        },
+        "request_id": "42f0a358-8e16-4fcc-a162-6cebffe740bd",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses that breast cancer treatment options are outside the androgenetic-alopecia dataset scope.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately abstains from applying an alopecia-focused dataset to breast cancer treatment.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the key scope limitation and explains why breast cancer therapies are not covered.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than providing unsupported general breast cancer treatment information.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q203",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.790751+00:00"
+}

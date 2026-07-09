@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q099",
+      "randomization_seed": "20260706:Q099:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q099",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q099",
+      "error": null,
+      "id": "batch_req_6a4f85d2ce6c819080c0cf27af7bf9b3",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579000,
+          "created_at": 1783578971,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0e2dd67c0d94f463006a4f415ba054819396d420e06f5a1a5e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q099"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0e2dd67c0d94f463006a4f416cef98819385426628bd500ec4",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether pathway information for LHX2 is present in the supplied graph context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence does not list any pathways containing LHX2; only PPI interactions are shown.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point needed: no pathway membership information is available for LHX2 in the provided data.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing unsupported pathway memberships.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"It gives a relevant abstention but focuses on literature context rather than the integrated graph asked about.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correct that the abstracts do not provide LHX2 pathway information, but it overlooks that the graph context does mention LHX2 as an entity with PPIs.\"},\"completeness\":{\"score\":3,\"rationale\":\"Partially complete; it notes insufficient pathway evidence but does not mention the graph context or that only PPI interactions are provided.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported pathway claims given insufficient evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0e2dd67c0d94f463006a4f417434ec8193ae561960cb638b98",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1877,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 813,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2690
+          },
+          "user": null
+        },
+        "request_id": "c3204774-8450-4430-b95a-6dfde7e2cd7d",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether pathway information for LHX2 is present in the supplied graph context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided evidence does not list any pathways containing LHX2; only PPI interactions are shown.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key point needed: no pathway membership information is available for LHX2 in the provided data.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inventing unsupported pathway memberships.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q099",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q099.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.750964+00:00"
+}

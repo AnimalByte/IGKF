@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "insufficient_evidence_likely",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "37737258",
+    "39923055",
+    "29220522",
+    "40134218",
+    "40751759",
+    "41417529",
+    "34984527",
+    "41503465",
+    "31078570",
+    "39633006",
+    "41951763",
+    "42330953",
+    "36244801",
+    "41426430",
+    "38832928"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q153.json",
+      "question_id": "Q153",
+      "sha256": "bde72f9b5267528da0eb27122e2c85e895afdc6b459f35a1444719adaf57cb32"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q153.json",
+      "question_id": "Q153",
+      "sha256": "2ddd124bc777cf8e833d4bc2943a623bf4a5cb83591ae692b3f38e29b10ef4f4"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does this GWAS dataset contain data linking polygenic risk scores for hair loss to age of onset? If not, state what additional evidence would be required.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.4843,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this GWAS dataset contain data linking polygenic risk scores for hair loss to age of onset? If not, state what additional evidence would be required.",
+  "parsed_answer": "The provided literature context does not explicitly mention whether the GWAS dataset links polygenic risk scores for hair loss to the age of onset. However, the context does highlight the use of polygenic scores (PGS) in predicting complex traits and disease risk, including male-pattern hair loss (MPHL). For instance, Abstract 1 discusses the contribution of rare variants to MPHL etiology and the identification of genes associated with MPHL, but it does not mention age of onset.\n\nTo determine if the dataset links polygenic risk scores for hair loss to age of onset, additional evidence would be required, such as:\n\n1. **Explicit mention of age of onset** in the study's methodology or results.\n2. **Statistical analysis** that correlates polygenic risk scores with age of onset.\n3. **Data on age at diagnosis or age at symptom onset** for participants, paired with their polygenic risk scores.\n4. **Discussion or conclusion** that addresses the relationship between genetic risk and age of onset.\n\nWithout such information, it is not possible to confirm whether the dataset includes such a link.",
+  "question_id": "Q153",
+  "question_text": "Does this GWAS dataset contain data linking polygenic risk scores for hair loss to age of onset? If not, state what additional evidence would be required.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 221,
+    "prompt_token_count": 1296,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not explicitly mention whether the GWAS dataset links polygenic risk scores for hair loss to the age of onset. However, the context does highlight the use of polygenic scores (PGS) in predicting complex traits and disease risk, including male-pattern hair loss (MPHL). For instance, Abstract 1 discusses the contribution of rare variants to MPHL etiology and the identification of genes associated with MPHL, but it does not mention age of onset.\n\nTo determine if the dataset links polygenic risk scores for hair loss to age of onset, additional evidence would be required, such as:\n\n1. **Explicit mention of age of onset** in the study's methodology or results.\n2. **Statistical analysis** that correlates polygenic risk scores with age of onset.\n3. **Data on age at diagnosis or age at symptom onset** for participants, paired with their polygenic risk scores.\n4. **Discussion or conclusion** that addresses the relationship between genetic risk and age of onset.\n\nWithout such information, it is not possible to confirm whether the dataset includes such a link."
+      }
+    ],
+    "created": 1783564526,
+    "id": "cmpl-c2671413-1c70-47cc-b4c3-f4a880018c2b",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 221,
+      "prompt_tokens": 1275,
+      "total_tokens": 1496
+    }
+  },
+  "reranker_scores": [
+    -0.06820676475763321,
+    -1.6138067245483398,
+    -2.112424612045288
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      26.873973846435547,
+      27.914627075195312,
+      29.45034408569336,
+      32.25319290161133,
+      32.801551818847656,
+      33.74562072753906,
+      34.5592041015625,
+      34.86488723754883,
+      34.97313690185547,
+      35.589622497558594,
+      35.9007453918457,
+      36.171607971191406,
+      36.26262283325195,
+      36.4640007019043,
+      36.63360595703125
+    ],
+    "candidate_pmids": [
+      "37737258",
+      "39923055",
+      "29220522",
+      "40134218",
+      "40751759",
+      "41417529",
+      "34984527",
+      "41503465",
+      "31078570",
+      "39633006",
+      "41951763",
+      "42330953",
+      "36244801",
+      "41426430",
+      "38832928"
+    ],
+    "expanded_retrieval_query": "Does this GWAS dataset contain data linking polygenic risk scores for hair loss to age of onset? If not, state what additional evidence would be required.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 37737258, relevance: -0.0682) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 2 (PMID: 40134218, relevance: -1.6138) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 3 (PMID: 41503465, relevance: -2.1124) ---\nPolygenic scores (PGS) predict complex traits and stratify disease risk but often fail to fully capture individual-level variation. \"Misaligned\" individuals, whose observed phenotypes deviate from their genetically expected values based on polygenic scores (PGS), provide a powerful model for identifying factors beyond common-variant effects, including additional genetic factors. Here, we apply misalignment classification and enrichment testing frameworks to seven continuous and three dichotomous traits, assessing whether misaligned individuals in the UK Biobank are enriched for rare (minor allele frequency (MAF) < 0.1%) damaging genetic variation. We identify significant enrichment (false discovery rate (FDR)-adjusted P < 0.05) of predicted loss-of-function (pLoF) variants in COPB2 and GORAB among individuals misaligned for lower-than-expected bone mineral density. We refine previously observed grouped-gene enrichment in individuals with misaligned stature to the single-gene level: shorter-than-expected individuals are enriched for pLoF variants in ACAN and IGF1, and taller-than-expected individuals are enriched for predicted damaging missense in FBN1. Using an individual's misalignment classification as a phenotype, we perform an exome-wide scan across seven traits, resulting in 74 FDR-significant genes. We identify KANK1 as a gene associated with later age at menopause, potentially protective against primary ovarian insufficiency. For dichotomous disease status traits, we demonstrate evidence for the liability threshold model in the context of counteracting conditionally-orthogonal common and rare variant pathogenic/protective effects. Among individuals diagnosed with type 2 diabetes, carriers of rare pathogenic pLoF variants in HNF1A and HNF4A had significantly lower polygenic risk than non-carriers (FDR-adjusted one-sided t-test P < 5 x 10(-3)). We also show that coronary artery disease controls carrying rare protective pLoF variants in ANGPTL3 had nominally higher polygenic risk (one-sided t-test P = 0.03) than non-carriers. This study highlights the power of misalignment-based analyses in complex continuous phenotypes and disease, with the potential to validate known genetic contributors to traits and identify novel genes. This work paves the way for better molecular diagnoses and targeted therapeutic discovery.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does this GWAS dataset contain data linking polygenic risk scores for hair loss to age of onset? If not, state what additional evidence would be required.",
+    "rerank_seconds": 0.3335,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.35,
+    "score_max": -0.06820676475763321,
+    "score_mean": -1.2648127004504204,
+    "scores": [
+      -0.06820676475763321,
+      -1.6138067245483398,
+      -2.112424612045288
+    ],
+    "selected_abstracts": [
+      "Male-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.",
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "Polygenic scores (PGS) predict complex traits and stratify disease risk but often fail to fully capture individual-level variation. \"Misaligned\" individuals, whose observed phenotypes deviate from their genetically expected values based on polygenic scores (PGS), provide a powerful model for identifying factors beyond common-variant effects, including additional genetic factors. Here, we apply misalignment classification and enrichment testing frameworks to seven continuous and three dichotomous traits, assessing whether misaligned individuals in the UK Biobank are enriched for rare (minor allele frequency (MAF) < 0.1%) damaging genetic variation. We identify significant enrichment (false discovery rate (FDR)-adjusted P < 0.05) of predicted loss-of-function (pLoF) variants in COPB2 and GORAB among individuals misaligned for lower-than-expected bone mineral density. We refine previously observed grouped-gene enrichment in individuals with misaligned stature to the single-gene level: shorter-than-expected individuals are enriched for pLoF variants in ACAN and IGF1, and taller-than-expected individuals are enriched for predicted damaging missense in FBN1. Using an individual's misalignment classification as a phenotype, we perform an exome-wide scan across seven traits, resulting in 74 FDR-significant genes. We identify KANK1 as a gene associated with later age at menopause, potentially protective against primary ovarian insufficiency. For dichotomous disease status traits, we demonstrate evidence for the liability threshold model in the context of counteracting conditionally-orthogonal common and rare variant pathogenic/protective effects. Among individuals diagnosed with type 2 diabetes, carriers of rare pathogenic pLoF variants in HNF1A and HNF4A had significantly lower polygenic risk than non-carriers (FDR-adjusted one-sided t-test P < 5 x 10(-3)). We also show that coronary artery disease controls carrying rare protective pLoF variants in ANGPTL3 had nominally higher polygenic risk (one-sided t-test P = 0.03) than non-carriers. This study highlights the power of misalignment-based analyses in complex continuous phenotypes and disease, with the potential to validate known genetic contributors to traits and identify novel genes. This work paves the way for better molecular diagnoses and targeted therapeutic discovery."
+    ],
+    "selected_pmids": [
+      "37737258",
+      "40134218",
+      "41503465"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0164
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q153.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "37737258",
+    "40134218",
+    "41503465"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:35:28.563371+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 37737258, relevance: -0.0682) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 2 (PMID: 40134218, relevance: -1.6138) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 3 (PMID: 41503465, relevance: -2.1124) ---\nPolygenic scores (PGS) predict complex traits and stratify disease risk but often fail to fully capture individual-level variation. \"Misaligned\" individuals, whose observed phenotypes deviate from their genetically expected values based on polygenic scores (PGS), provide a powerful model for identifying factors beyond common-variant effects, including additional genetic factors. Here, we apply misalignment classification and enrichment testing frameworks to seven continuous and three dichotomous traits, assessing whether misaligned individuals in the UK Biobank are enriched for rare (minor allele frequency (MAF) < 0.1%) damaging genetic variation. We identify significant enrichment (false discovery rate (FDR)-adjusted P < 0.05) of predicted loss-of-function (pLoF) variants in COPB2 and GORAB among individuals misaligned for lower-than-expected bone mineral density. We refine previously observed grouped-gene enrichment in individuals with misaligned stature to the single-gene level: shorter-than-expected individuals are enriched for pLoF variants in ACAN and IGF1, and taller-than-expected individuals are enriched for predicted damaging missense in FBN1. Using an individual's misalignment classification as a phenotype, we perform an exome-wide scan across seven traits, resulting in 74 FDR-significant genes. We identify KANK1 as a gene associated with later age at menopause, potentially protective against primary ovarian insufficiency. For dichotomous disease status traits, we demonstrate evidence for the liability threshold model in the context of counteracting conditionally-orthogonal common and rare variant pathogenic/protective effects. Among individuals diagnosed with type 2 diabetes, carriers of rare pathogenic pLoF variants in HNF1A and HNF4A had significantly lower polygenic risk than non-carriers (FDR-adjusted one-sided t-test P < 5 x 10(-3)). We also show that coronary artery disease controls carrying rare protective pLoF variants in ANGPTL3 had nominally higher polygenic risk (one-sided t-test P = 0.03) than non-carriers. This study highlights the power of misalignment-based analyses in complex continuous phenotypes and disease, with the potential to validate known genetic contributors to traits and identify novel genes. This work paves the way for better molecular diagnoses and targeted therapeutic discovery.\n\n\n\n**Question:**\nDoes this GWAS dataset contain data linking polygenic risk scores for hair loss to age of onset? If not, state what additional evidence would be required.",
+  "vector_context": "--- Abstract 1 (PMID: 37737258, relevance: -0.0682) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 2 (PMID: 40134218, relevance: -1.6138) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 3 (PMID: 41503465, relevance: -2.1124) ---\nPolygenic scores (PGS) predict complex traits and stratify disease risk but often fail to fully capture individual-level variation. \"Misaligned\" individuals, whose observed phenotypes deviate from their genetically expected values based on polygenic scores (PGS), provide a powerful model for identifying factors beyond common-variant effects, including additional genetic factors. Here, we apply misalignment classification and enrichment testing frameworks to seven continuous and three dichotomous traits, assessing whether misaligned individuals in the UK Biobank are enriched for rare (minor allele frequency (MAF) < 0.1%) damaging genetic variation. We identify significant enrichment (false discovery rate (FDR)-adjusted P < 0.05) of predicted loss-of-function (pLoF) variants in COPB2 and GORAB among individuals misaligned for lower-than-expected bone mineral density. We refine previously observed grouped-gene enrichment in individuals with misaligned stature to the single-gene level: shorter-than-expected individuals are enriched for pLoF variants in ACAN and IGF1, and taller-than-expected individuals are enriched for predicted damaging missense in FBN1. Using an individual's misalignment classification as a phenotype, we perform an exome-wide scan across seven traits, resulting in 74 FDR-significant genes. We identify KANK1 as a gene associated with later age at menopause, potentially protective against primary ovarian insufficiency. For dichotomous disease status traits, we demonstrate evidence for the liability threshold model in the context of counteracting conditionally-orthogonal common and rare variant pathogenic/protective effects. Among individuals diagnosed with type 2 diabetes, carriers of rare pathogenic pLoF variants in HNF1A and HNF4A had significantly lower polygenic risk than non-carriers (FDR-adjusted one-sided t-test P < 5 x 10(-3)). We also show that coronary artery disease controls carrying rare protective pLoF variants in ANGPTL3 had nominally higher polygenic risk (one-sided t-test P = 0.03) than non-carriers. This study highlights the power of misalignment-based analyses in complex continuous phenotypes and disease, with the potential to validate known genetic contributors to traits and identify novel genes. This work paves the way for better molecular diagnoses and targeted therapeutic discovery.\n\n"
+}

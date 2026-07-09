@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42402677",
+    "38123340",
+    "34984527",
+    "41587107",
+    "41975070",
+    "41417529",
+    "41854123",
+    "36591508",
+    "37860011",
+    "42193919",
+    "34552771",
+    "37143720",
+    "40835866",
+    "42169044",
+    "34320404"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q053.json",
+      "question_id": "Q053",
+      "sha256": "09d151ea2810e8084435d45bd909cf7a141abda45e910c68ea6cc9768b3181b5"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q053.json",
+      "question_id": "Q053",
+      "sha256": "dbd30cf0ba7d46d1b32fc842af4e83cbba3c6fd83a8b0ad90399d2d695c1442b"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated evidence link AR to any treatments used or investigated for hair loss? If so, which ones?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.2573,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence link AR to any treatments used or investigated for hair loss? If so, which ones?",
+  "parsed_answer": "The integrated evidence does not directly link allergic rhinitis (AR) to any treatments used or investigated for hair loss. The literature context provided includes three distinct studies:\n\n1. **Abstract 1** discusses the use of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for the treatment of androgenetic alopecia (AGA), highlighting their potential as a novel therapeutic approach.\n2. **Abstract 2** focuses on the genomic features of resistance to androgen receptor pathway inhibitors (ARPIs) in metastatic castration-resistant prostate cancer (mCRPC), which is unrelated to hair loss.\n3. **Abstract 3** reviews the use of biologics, such as monoclonal antibodies, in the treatment of allergic rhinitis (AR), which is a separate condition from AGA.\n\nThus, there is no direct link between allergic rhinitis (AR) and treatments for hair loss in the provided literature context.",
+  "question_id": "Q053",
+  "question_text": "Does the integrated evidence link AR to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 198,
+    "prompt_token_count": 1259,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not directly link allergic rhinitis (AR) to any treatments used or investigated for hair loss. The literature context provided includes three distinct studies:\n\n1. **Abstract 1** discusses the use of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for the treatment of androgenetic alopecia (AGA), highlighting their potential as a novel therapeutic approach.\n2. **Abstract 2** focuses on the genomic features of resistance to androgen receptor pathway inhibitors (ARPIs) in metastatic castration-resistant prostate cancer (mCRPC), which is unrelated to hair loss.\n3. **Abstract 3** reviews the use of biologics, such as monoclonal antibodies, in the treatment of allergic rhinitis (AR), which is a separate condition from AGA.\n\nThus, there is no direct link between allergic rhinitis (AR) and treatments for hair loss in the provided literature context."
+      }
+    ],
+    "created": 1783564087,
+    "id": "cmpl-394249ed-3366-48d7-83c3-b0469e53d396",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 198,
+      "prompt_tokens": 1238,
+      "total_tokens": 1436
+    }
+  },
+  "reranker_scores": [
+    -4.1113386154174805,
+    -6.386600971221924,
+    -6.795689582824707
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      36.466041564941406,
+      36.6036491394043,
+      38.7229118347168,
+      40.15054702758789,
+      40.76030731201172,
+      41.05067443847656,
+      41.27198028564453,
+      41.32955551147461,
+      41.45762634277344,
+      41.90224075317383,
+      42.07842254638672,
+      42.21825408935547,
+      42.40260314941406,
+      43.15861511230469,
+      43.17487335205078
+    ],
+    "candidate_pmids": [
+      "42402677",
+      "38123340",
+      "34984527",
+      "41587107",
+      "41975070",
+      "41417529",
+      "41854123",
+      "36591508",
+      "37860011",
+      "42193919",
+      "34552771",
+      "37143720",
+      "40835866",
+      "42169044",
+      "34320404"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence link AR to any treatments used or investigated for hair loss? If so, which ones?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42169044, relevance: -4.1113) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 41587107, relevance: -6.3866) ---\nPURPOSE: Androgen receptor pathway inhibitors (ARPI), such as enzalutamide and abiraterone, are standard treatments for metastatic castration-resistant prostate cancer (mCRPC). However, a subset of patients display primary resistance and most eventually acquire secondary resistance. This study aimed to define genomic features of ARPI resistance using longitudinal ctDNA analysis. EXPERIMENTAL DESIGN: We used the targeted AR-ctDETECT cell-free DNA (cfDNA) sequencing assay to profile tumor-derived genomic alterations in plasma samples collected at baseline and progression from patients with mCRPC enrolled in the phase III Alliance A031201 trial of first-line enzalutamide with or without abiraterone. Analysis focused on 327 patients with paired samples available from both time points. RESULTS: Progression plasma samples displayed elevated cfDNA levels and increased ctDNA positivity. AR was the most frequently altered gene at baseline and at progression. AR copy-number gains and AR genomic structural rearrangements (AR-GSR) increased at progression, along with copy-number losses of FANCA, POLD1, RAD54L, CDKN2A, ZNRF3, and ETS2. An AR extrachromosomal DNA signature was enriched at progression and was associated with AR-GSRs predicted to truncate the AR ligand-binding domain. Stratification by two extre mes of radiographic progression-free survival revealed preferential accumulation of AR alterations in patients with delayed progression and a higher burden of non-AR alterations in patients with rapid progression. CONCLUSIONS: AR alterations in ctDNA accumulate at progression in patients with mCRPC treated with ARPIs, especially in those with initially durable responses. These findings support the use of liquid biopsy to serially track resistance mechanisms and inform precision therapy in advanced prostate cancer. See related commentary by Chauhan et al., p. 2323.\n\n--- Abstract 3 (PMID: 42402677, relevance: -6.7957) ---\nObjective:Allergic rhinitis\uff08AR\uff09 is a major chronic disease that severely affects human health. The primary objective of current treatment modalities is symptom relief, yet patients often exhibit poor adherence to long-term therapy with suboptimal efficacy outcomes. Since the 1990 s, monoclonal antibodies targeting key cytokines and their receptors in type 2 inflammatory responses have been employed to treat type 2 inflammatory diseases such as AR. Clinical studies have demonstrated that omalizumab, dupilumab, and stapokibart are effective in treating seasonal AR. In 2025, stapokibart was approved for the treatment of moderate-to-severe seasonal AR in adults, becoming the world's first targeted IL-4Ralpha monoclonal antibody for AR therapy. This article systematically reviews the history and efficacy of biologics in the treatment of AR, as well as the development of domestic biologics, aiming to emphasize the importance of their clinical application strategies.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated evidence link AR to any treatments used or investigated for hair loss? If so, which ones?",
+    "rerank_seconds": 0.3324,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3484,
+    "score_max": -4.1113386154174805,
+    "score_mean": -5.764543056488037,
+    "scores": [
+      -4.1113386154174805,
+      -6.386600971221924,
+      -6.795689582824707
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.",
+      "PURPOSE: Androgen receptor pathway inhibitors (ARPI), such as enzalutamide and abiraterone, are standard treatments for metastatic castration-resistant prostate cancer (mCRPC). However, a subset of patients display primary resistance and most eventually acquire secondary resistance. This study aimed to define genomic features of ARPI resistance using longitudinal ctDNA analysis. EXPERIMENTAL DESIGN: We used the targeted AR-ctDETECT cell-free DNA (cfDNA) sequencing assay to profile tumor-derived genomic alterations in plasma samples collected at baseline and progression from patients with mCRPC enrolled in the phase III Alliance A031201 trial of first-line enzalutamide with or without abiraterone. Analysis focused on 327 patients with paired samples available from both time points. RESULTS: Progression plasma samples displayed elevated cfDNA levels and increased ctDNA positivity. AR was the most frequently altered gene at baseline and at progression. AR copy-number gains and AR genomic structural rearrangements (AR-GSR) increased at progression, along with copy-number losses of FANCA, POLD1, RAD54L, CDKN2A, ZNRF3, and ETS2. An AR extrachromosomal DNA signature was enriched at progression and was associated with AR-GSRs predicted to truncate the AR ligand-binding domain. Stratification by two extre mes of radiographic progression-free survival revealed preferential accumulation of AR alterations in patients with delayed progression and a higher burden of non-AR alterations in patients with rapid progression. CONCLUSIONS: AR alterations in ctDNA accumulate at progression in patients with mCRPC treated with ARPIs, especially in those with initially durable responses. These findings support the use of liquid biopsy to serially track resistance mechanisms and inform precision therapy in advanced prostate cancer. See related commentary by Chauhan et al., p. 2323.",
+      "Objective:Allergic rhinitis\uff08AR\uff09 is a major chronic disease that severely affects human health. The primary objective of current treatment modalities is symptom relief, yet patients often exhibit poor adherence to long-term therapy with suboptimal efficacy outcomes. Since the 1990 s, monoclonal antibodies targeting key cytokines and their receptors in type 2 inflammatory responses have been employed to treat type 2 inflammatory diseases such as AR. Clinical studies have demonstrated that omalizumab, dupilumab, and stapokibart are effective in treating seasonal AR. In 2025, stapokibart was approved for the treatment of moderate-to-severe seasonal AR in adults, becoming the world's first targeted IL-4Ralpha monoclonal antibody for AR therapy. This article systematically reviews the history and efficacy of biologics in the treatment of AR, as well as the development of domestic biologics, aiming to emphasize the importance of their clinical application strategies."
+    ],
+    "selected_pmids": [
+      "42169044",
+      "41587107",
+      "42402677"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0158
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q053.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42169044",
+    "41587107",
+    "42402677"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:28:09.682534+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42169044, relevance: -4.1113) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 41587107, relevance: -6.3866) ---\nPURPOSE: Androgen receptor pathway inhibitors (ARPI), such as enzalutamide and abiraterone, are standard treatments for metastatic castration-resistant prostate cancer (mCRPC). However, a subset of patients display primary resistance and most eventually acquire secondary resistance. This study aimed to define genomic features of ARPI resistance using longitudinal ctDNA analysis. EXPERIMENTAL DESIGN: We used the targeted AR-ctDETECT cell-free DNA (cfDNA) sequencing assay to profile tumor-derived genomic alterations in plasma samples collected at baseline and progression from patients with mCRPC enrolled in the phase III Alliance A031201 trial of first-line enzalutamide with or without abiraterone. Analysis focused on 327 patients with paired samples available from both time points. RESULTS: Progression plasma samples displayed elevated cfDNA levels and increased ctDNA positivity. AR was the most frequently altered gene at baseline and at progression. AR copy-number gains and AR genomic structural rearrangements (AR-GSR) increased at progression, along with copy-number losses of FANCA, POLD1, RAD54L, CDKN2A, ZNRF3, and ETS2. An AR extrachromosomal DNA signature was enriched at progression and was associated with AR-GSRs predicted to truncate the AR ligand-binding domain. Stratification by two extre mes of radiographic progression-free survival revealed preferential accumulation of AR alterations in patients with delayed progression and a higher burden of non-AR alterations in patients with rapid progression. CONCLUSIONS: AR alterations in ctDNA accumulate at progression in patients with mCRPC treated with ARPIs, especially in those with initially durable responses. These findings support the use of liquid biopsy to serially track resistance mechanisms and inform precision therapy in advanced prostate cancer. See related commentary by Chauhan et al., p. 2323.\n\n--- Abstract 3 (PMID: 42402677, relevance: -6.7957) ---\nObjective:Allergic rhinitis\uff08AR\uff09 is a major chronic disease that severely affects human health. The primary objective of current treatment modalities is symptom relief, yet patients often exhibit poor adherence to long-term therapy with suboptimal efficacy outcomes. Since the 1990 s, monoclonal antibodies targeting key cytokines and their receptors in type 2 inflammatory responses have been employed to treat type 2 inflammatory diseases such as AR. Clinical studies have demonstrated that omalizumab, dupilumab, and stapokibart are effective in treating seasonal AR. In 2025, stapokibart was approved for the treatment of moderate-to-severe seasonal AR in adults, becoming the world's first targeted IL-4Ralpha monoclonal antibody for AR therapy. This article systematically reviews the history and efficacy of biologics in the treatment of AR, as well as the development of domestic biologics, aiming to emphasize the importance of their clinical application strategies.\n\n\n\n**Question:**\nDoes the integrated evidence link AR to any treatments used or investigated for hair loss? If so, which ones?",
+  "vector_context": "--- Abstract 1 (PMID: 42169044, relevance: -4.1113) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 41587107, relevance: -6.3866) ---\nPURPOSE: Androgen receptor pathway inhibitors (ARPI), such as enzalutamide and abiraterone, are standard treatments for metastatic castration-resistant prostate cancer (mCRPC). However, a subset of patients display primary resistance and most eventually acquire secondary resistance. This study aimed to define genomic features of ARPI resistance using longitudinal ctDNA analysis. EXPERIMENTAL DESIGN: We used the targeted AR-ctDETECT cell-free DNA (cfDNA) sequencing assay to profile tumor-derived genomic alterations in plasma samples collected at baseline and progression from patients with mCRPC enrolled in the phase III Alliance A031201 trial of first-line enzalutamide with or without abiraterone. Analysis focused on 327 patients with paired samples available from both time points. RESULTS: Progression plasma samples displayed elevated cfDNA levels and increased ctDNA positivity. AR was the most frequently altered gene at baseline and at progression. AR copy-number gains and AR genomic structural rearrangements (AR-GSR) increased at progression, along with copy-number losses of FANCA, POLD1, RAD54L, CDKN2A, ZNRF3, and ETS2. An AR extrachromosomal DNA signature was enriched at progression and was associated with AR-GSRs predicted to truncate the AR ligand-binding domain. Stratification by two extre mes of radiographic progression-free survival revealed preferential accumulation of AR alterations in patients with delayed progression and a higher burden of non-AR alterations in patients with rapid progression. CONCLUSIONS: AR alterations in ctDNA accumulate at progression in patients with mCRPC treated with ARPIs, especially in those with initially durable responses. These findings support the use of liquid biopsy to serially track resistance mechanisms and inform precision therapy in advanced prostate cancer. See related commentary by Chauhan et al., p. 2323.\n\n--- Abstract 3 (PMID: 42402677, relevance: -6.7957) ---\nObjective:Allergic rhinitis\uff08AR\uff09 is a major chronic disease that severely affects human health. The primary objective of current treatment modalities is symptom relief, yet patients often exhibit poor adherence to long-term therapy with suboptimal efficacy outcomes. Since the 1990 s, monoclonal antibodies targeting key cytokines and their receptors in type 2 inflammatory responses have been employed to treat type 2 inflammatory diseases such as AR. Clinical studies have demonstrated that omalizumab, dupilumab, and stapokibart are effective in treating seasonal AR. In 2025, stapokibart was approved for the treatment of moderate-to-severe seasonal AR in adults, becoming the world's first targeted IL-4Ralpha monoclonal antibody for AR therapy. This article systematically reviews the history and efficacy of biologics in the treatment of AR, as well as the development of domestic biologics, aiming to emphasize the importance of their clinical application strategies.\n\n"
+}

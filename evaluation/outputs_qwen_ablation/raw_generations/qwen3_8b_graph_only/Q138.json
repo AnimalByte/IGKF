@@ -1,0 +1,182 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q138.json",
+      "question_id": "Q138",
+      "sha256": "9f083f567fdd9ac5b18156920a5e4c18d0998c4401d8ebe31501082753eb0f2e"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q138.json",
+      "question_id": "Q138",
+      "sha256": "b602d187a5c5a2d09698ae7e053ba0ee59fc4e9f9d44da515895b4ffa6a78b11"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8884,
+  "git_commit": null,
+  "graph_context": "Entity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence support a link between Minoxidil and regulation of FGF5 expression? Distinguish direct evidence from indirect or absent evidence.",
+  "parsed_answer": "The provided IGKF graph context does not include any direct evidence linking Minoxidil to the regulation of FGF5 expression. There is no mention of Minoxidil in the graph, nor any interactions or associations between Minoxidil and FGF5 or its related entities.\n\nTherefore, the integrated evidence does not support a link between Minoxidil and regulation of FGF5 expression. The evidence is **absent**.",
+  "question_id": "Q138",
+  "question_text": "Does the integrated evidence support a link between Minoxidil and regulation of FGF5 expression? Distinguish direct evidence from indirect or absent evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 89,
+    "prompt_token_count": 353,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided IGKF graph context does not include any direct evidence linking Minoxidil to the regulation of FGF5 expression. There is no mention of Minoxidil in the graph, nor any interactions or associations between Minoxidil and FGF5 or its related entities.\n\nTherefore, the integrated evidence does not support a link between Minoxidil and regulation of FGF5 expression. The evidence is **absent**."
+      }
+    ],
+    "created": 1783563177,
+    "id": "cmpl-b36bdff3-1900-43ff-9484-b0677cdf28a9",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 89,
+      "prompt_tokens": 332,
+      "total_tokens": 421
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)",
+    "graph_context_length": 758,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0121,
+    "original_retrieval_query": "Does the integrated evidence support a link between Minoxidil and regulation of FGF5 expression? Distinguish direct evidence from indirect or absent evidence.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "minoxidil"
+      },
+      {
+        "label": "ENTITY",
+        "text": "regulation"
+      },
+      {
+        "label": "ENTITY",
+        "text": "fgf5"
+      },
+      {
+        "label": "ENTITY",
+        "text": "expression"
+      },
+      {
+        "label": "ENTITY",
+        "text": "distinguish"
+      },
+      {
+        "label": "ENTITY",
+        "text": "direct"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "indirect"
+      },
+      {
+        "label": "ENTITY",
+        "text": "absent"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0121,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q138.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:12:58.407067+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: FGF5 (Type: Gene)\n  - Associated Phenotypes: Abnormality of the orbital region, Abnormality of the ocular adnexa, Abnormal ocular adnexa morphology\n  - GO Functions/Processes: regulation of cell migration, positive regulation of cell division, neurogenesis, growth factor activity, positive regulation of cell population proliferation\n  - Interacts With (PPI): CD34 (experimental: 0, database: 0), VHL (experimental: 54, database: 0), CRK (experimental: 0, database: 0), IL1A (experimental: 0, database: 0), PPARG (experimental: 54, database: 0)\n  - Open Targets Disease Associations: cancer (score: 0.605), trichomegaly (score: 0.603), bone development disease (score: 0.596), hypertensive disorder (score: 0.584), atrial fibrillation (score: 0.559)\n\n**Question:**\nDoes the integrated evidence support a link between Minoxidil and regulation of FGF5 expression? Distinguish direct evidence from indirect or absent evidence.",
+  "vector_context": ""
+}

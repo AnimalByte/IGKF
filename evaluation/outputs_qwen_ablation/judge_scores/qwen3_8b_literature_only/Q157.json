@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q157",
+      "randomization_seed": "20260706:Q157:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q157",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q157",
+      "error": null,
+      "id": "batch_req_6a4f85d693b081908fefb6eb363883d3",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579221,
+          "created_at": 1783579187,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00e80365ed595a7c006a4f42330eb4819692727137b8b0e29f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q157"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00e80365ed595a7c006a4f42451e448196b1b6e455dcdba93e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether the provided study/integrated evidence supports a relationship and explicitly separates study-derived evidence from external literature associations.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided abstracts do not directly link androgenetic alopecia with prostate cancer, while cautiously noting possible external androgen/AR-related associations.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the baldness study, the prostate cancer studies, the lack of direct evidence, and the distinction from external literature.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids claiming a supported relationship and clearly qualifies external associations as not supported by the supplied context.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses lack of graph evidence but does not adequately address the vector-context studies or the integrated evidence requested.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly notes that the graph provides no relevant data, but misleadingly treats the supplied context as essentially only the graph and overlooks the study abstracts.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits discussion of the androgenetic alopecia abstract, the prostate cancer abstracts, and the study-derived versus external-literature distinction.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Does not invent a relationship and appropriately indicates insufficient evidence, but the abstention is based on an incomplete use of the supplied evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00e80365ed595a7c006a4f425253248196a0caf9178b4666a9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2957,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 948,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3905
+          },
+          "user": null
+        },
+        "request_id": "76d82579-fd8a-4c77-a802-07c707c78bb1",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether the provided study/integrated evidence supports a relationship and explicitly separates study-derived evidence from external literature associations.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided abstracts do not directly link androgenetic alopecia with prostate cancer, while cautiously noting possible external androgen/AR-related associations.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the baldness study, the prostate cancer studies, the lack of direct evidence, and the distinction from external literature.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids claiming a supported relationship and clearly qualifies external associations as not supported by the supplied context.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q157",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q157.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.773177+00:00"
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q007",
+      "randomization_seed": "20260706:Q007:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q007",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q007",
+      "error": null,
+      "id": "batch_req_6a4f85cceb748190beb1b405c8cb523d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579062,
+          "created_at": 1783579034,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_016940a2b09eae28006a4f4199b3d48190b5ebcf3c3fb2fad3",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q007"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_016940a2b09eae28006a4f41ac66a08190b6c2cb5a53dee77a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested p-value and states it is not available in the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate against the reference packet, which contains no reported p-value for rs6152 and androgenetic alopecia.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the key conclusion and explains that the supplied data are insufficient.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing an unsupported p-value.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the requested p-value is not reported in the provided context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the reference evidence, which does not report the association p-value.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the essential point without unnecessary detail.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly qualifies the absence of evidence and does not fabricate a value.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_016940a2b09eae28006a4f41b15ca881908bde0ec1b0ae0f82",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2503,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 522,
+            "output_tokens_details": {
+              "reasoning_tokens": 267
+            },
+            "total_tokens": 3025
+          },
+          "user": null
+        },
+        "request_id": "85babc89-3d47-4d1f-a386-456fc7309fad",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the requested p-value and states it is not available in the supplied evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurate against the reference packet, which contains no reported p-value for rs6152 and androgenetic alopecia.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the key conclusion and explains that the supplied data are insufficient.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inventing an unsupported p-value.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q007",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q007.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.715223+00:00"
+}

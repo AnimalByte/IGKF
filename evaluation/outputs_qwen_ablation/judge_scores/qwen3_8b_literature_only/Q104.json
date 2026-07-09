@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q104",
+      "randomization_seed": "20260706:Q104:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q104",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q104",
+      "error": null,
+      "id": "batch_req_6a4f85d304ec81908899d36008a4b42f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594478,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0115aa17e5f45e2c006a4f7dd917fc8193b58c45d451bfa582",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q104"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0115aa17e5f45e2c006a4f7de003788193a45a49f58fe3ef6d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses the question but only considers the graph context and ignores supplied vector evidence relevant to androgen metabolism and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"It is true that the graph had no relevant data, but the conclusion that there is no evidence in the provided data is contradicted by the vector evidence implicating SRD5A2/5-alpha-reductase and AR-related loci.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key evidence from the abstracts, including SRD5A2 conversion of testosterone to DHT and genetic associations near AR.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains too strongly despite available supporting evidence in the provided packet.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses evidence linking androgen metabolism to androgenetic alopecia through SRD5A2, DHT production, and AR-related genetic findings.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Mostly consistent with the supplied evidence: SRD5A2 converts testosterone to DHT and is implicated as a therapeutic target in androgenic alopecia; AR-region SNPs are associated with alopecia. Some claims about SRD5A2 polymorphisms influencing alopecia risk and increased DHT levels are stronger than the provided evidence explicitly supports.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main relevant points from the evidence packet, though it could more clearly distinguish direct alopecia evidence from broader androgen-metabolism evidence derived from BPH/prostate contexts.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Provides some plausible interpretation but states several links more definitively than warranted by the limited reference evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0115aa17e5f45e2c006a4f7de92144819384e3deca9a593deb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1881,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 913,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2794
+          },
+          "user": null
+        },
+        "request_id": "873da23e-619d-4a2e-b0e7-0d5cd4940fba",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses evidence linking androgen metabolism to androgenetic alopecia through SRD5A2, DHT production, and AR-related genetic findings.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Mostly consistent with the supplied evidence: SRD5A2 converts testosterone to DHT and is implicated as a therapeutic target in androgenic alopecia; AR-region SNPs are associated with alopecia. Some claims about SRD5A2 polymorphisms influencing alopecia risk and increased DHT levels are stronger than the provided evidence explicitly supports.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the main relevant points from the evidence packet, though it could more clearly distinguish direct alopecia evidence from broader androgen-metabolism evidence derived from BPH/prostate contexts.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Provides some plausible interpretation but states several links more definitively than warranted by the limited reference evidence.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q104",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q104.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.752977+00:00"
+}

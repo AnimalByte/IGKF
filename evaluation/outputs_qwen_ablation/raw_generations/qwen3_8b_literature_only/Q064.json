@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41673742",
+    "41640146",
+    "41722875",
+    "42315371",
+    "41796107",
+    "41501168",
+    "41145827",
+    "41493898",
+    "42260572",
+    "42151883",
+    "42140674",
+    "41252189",
+    "36270072",
+    "41805460",
+    "33872670"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q064.json",
+      "question_id": "Q064",
+      "sha256": "e27f1363ac38d8d334a2c90ac803126132aa1510bee7636590ab033c27a34f38"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q064.json",
+      "question_id": "Q064",
+      "sha256": "333a3e9db7743850e68838e9d02fe31aaef1301f3926c83dea87099cd320ec6e"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which pathways in the integrated graph include SRD5A2?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.81,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which pathways in the integrated graph include SRD5A2?",
+  "parsed_answer": "The provided literature context does not mention any integrated graph or pathways that include SRD5A2. Therefore, it is not possible to answer the question based on the given information.",
+  "question_id": "Q064",
+  "question_text": "Which pathways in the integrated graph include SRD5A2?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 36,
+    "prompt_token_count": 1595,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention any integrated graph or pathways that include SRD5A2. Therefore, it is not possible to answer the question based on the given information."
+      }
+    ],
+    "created": 1783564137,
+    "id": "cmpl-9f6be4bb-e9c2-4640-867f-430978c6729b",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 36,
+      "prompt_tokens": 1574,
+      "total_tokens": 1610
+    }
+  },
+  "reranker_scores": [
+    0.23453688621520996,
+    -1.1228619813919067,
+    -1.2178866863250732
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      38.52902603149414,
+      39.91943359375,
+      42.37223434448242,
+      44.424827575683594,
+      44.427955627441406,
+      45.819313049316406,
+      46.38086700439453,
+      47.35790252685547,
+      47.64980697631836,
+      48.09640884399414,
+      50.22859573364258,
+      50.520652770996094,
+      50.56468963623047,
+      51.32200622558594,
+      51.3852424621582
+    ],
+    "candidate_pmids": [
+      "41673742",
+      "41640146",
+      "41722875",
+      "42315371",
+      "41796107",
+      "41501168",
+      "41145827",
+      "41493898",
+      "42260572",
+      "42151883",
+      "42140674",
+      "41252189",
+      "36270072",
+      "41805460",
+      "33872670"
+    ],
+    "expanded_retrieval_query": "Which pathways in the integrated graph include SRD5A2?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41722875, relevance: 0.2345) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 41640146, relevance: -1.1229) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n--- Abstract 3 (PMID: 42151883, relevance: -1.2179) ---\nBACKGROUND: 5alpha-reductase type 2 deficiency(5alpha-RD2) is a rare autosomal recessive disorder primarily caused by variants in the SRD5A2 gene. This condition is characterized by a spectrum of undervirilization in 46, XY individuals, ranging from ambiguous genitalia to predominantly male external genitalia with minimal undervirilization. Early diagnosis and effective management of 5alpha-reductase type 2 deficiency patients are major challenges for healthcare providers. The mutational analysis of SRD5A2 gene is regarded as the gold standard for the diagnosis of the disease. This study aimed to summarize our center's experience with patients diagnosed with 5alpha-reductase type 2 deficiency due to variations in the SRD5A2 gene and the associated clinical manifestations to enhance clinicians' awareness of this condition. METHODS: We conducted a retrospective single-center study by reviewing the medical records of patients diagnosed with 5alpha-reductase type 2 deficiency after genetic testing between April 2018 and July 2025. RESULTS: All 16 patients presented with ambiguous genitalia at birth and received diagnoses between the ages of 3 months and 11 years and 3 months. Of these patients, ten exhibited micropenis accompanied by hypospadias, six displayed an isolated micropenis, and six had either bilateral or unilateral cryptorchidism. Additionally, six patients had an underdeveloped scrotum. All affected individuals had a 46, XY karyotype and tested positive for the SRY gene, with two patients initially raised as female. The testosterone/dihydrotestosterone (T/DHT) ratios after human chorionic gonadotropin (hCG) stimulation ranged from 1.5- to 38.6-fold above the baseline values. This study identified ten distinct pathogenic variants of the SRD5A2 gene, including nine previously reported variants p.Gln6Ter, p.Gly66Arg, p.(Tyr128Cys), p.Asn193Ser, p.Gly196Ser, p.Gly203Ser, p.Phe219Serfs*60, p.Arg227Gln, and p.Arg246Gln and one novel variant p.(Cys119Arg), which expands the spectrum of known SRD5A2 variants. CONCLUSION: This study provides insights into genotype-phenotype correlations in a cohort of 16 Chinese patients diagnosed with 5alpha-reductase type 2 deficiency and summarized the enzymatic activity of the identified genetic variants. Identifying variants associated with 5alpha-reductase type 2 deficiency will facilitate genetic counseling for at-risk families and enable prenatal diagnosis, thus empowering parents to make informed decisions and allowing healthcare providers to tailor treatment strategies effectively.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which pathways in the integrated graph include SRD5A2?",
+    "rerank_seconds": 0.3328,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3464,
+    "score_max": 0.23453688621520996,
+    "score_mean": -0.7020705938339233,
+    "scores": [
+      0.23453688621520996,
+      -1.1228619813919067,
+      -1.2178866863250732
+    ],
+    "selected_abstracts": [
+      "5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.",
+      "INTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.",
+      "BACKGROUND: 5alpha-reductase type 2 deficiency(5alpha-RD2) is a rare autosomal recessive disorder primarily caused by variants in the SRD5A2 gene. This condition is characterized by a spectrum of undervirilization in 46, XY individuals, ranging from ambiguous genitalia to predominantly male external genitalia with minimal undervirilization. Early diagnosis and effective management of 5alpha-reductase type 2 deficiency patients are major challenges for healthcare providers. The mutational analysis of SRD5A2 gene is regarded as the gold standard for the diagnosis of the disease. This study aimed to summarize our center's experience with patients diagnosed with 5alpha-reductase type 2 deficiency due to variations in the SRD5A2 gene and the associated clinical manifestations to enhance clinicians' awareness of this condition. METHODS: We conducted a retrospective single-center study by reviewing the medical records of patients diagnosed with 5alpha-reductase type 2 deficiency after genetic testing between April 2018 and July 2025. RESULTS: All 16 patients presented with ambiguous genitalia at birth and received diagnoses between the ages of 3 months and 11 years and 3 months. Of these patients, ten exhibited micropenis accompanied by hypospadias, six displayed an isolated micropenis, and six had either bilateral or unilateral cryptorchidism. Additionally, six patients had an underdeveloped scrotum. All affected individuals had a 46, XY karyotype and tested positive for the SRY gene, with two patients initially raised as female. The testosterone/dihydrotestosterone (T/DHT) ratios after human chorionic gonadotropin (hCG) stimulation ranged from 1.5- to 38.6-fold above the baseline values. This study identified ten distinct pathogenic variants of the SRD5A2 gene, including nine previously reported variants p.Gln6Ter, p.Gly66Arg, p.(Tyr128Cys), p.Asn193Ser, p.Gly196Ser, p.Gly203Ser, p.Phe219Serfs*60, p.Arg227Gln, and p.Arg246Gln and one novel variant p.(Cys119Arg), which expands the spectrum of known SRD5A2 variants. CONCLUSION: This study provides insights into genotype-phenotype correlations in a cohort of 16 Chinese patients diagnosed with 5alpha-reductase type 2 deficiency and summarized the enzymatic activity of the identified genetic variants. Identifying variants associated with 5alpha-reductase type 2 deficiency will facilitate genetic counseling for at-risk families and enable prenatal diagnosis, thus empowering parents to make informed decisions and allowing healthcare providers to tailor treatment strategies effectively."
+    ],
+    "selected_pmids": [
+      "41722875",
+      "41640146",
+      "42151883"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0135
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q064.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41722875",
+    "41640146",
+    "42151883"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:28:57.836050+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41722875, relevance: 0.2345) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 41640146, relevance: -1.1229) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n--- Abstract 3 (PMID: 42151883, relevance: -1.2179) ---\nBACKGROUND: 5alpha-reductase type 2 deficiency(5alpha-RD2) is a rare autosomal recessive disorder primarily caused by variants in the SRD5A2 gene. This condition is characterized by a spectrum of undervirilization in 46, XY individuals, ranging from ambiguous genitalia to predominantly male external genitalia with minimal undervirilization. Early diagnosis and effective management of 5alpha-reductase type 2 deficiency patients are major challenges for healthcare providers. The mutational analysis of SRD5A2 gene is regarded as the gold standard for the diagnosis of the disease. This study aimed to summarize our center's experience with patients diagnosed with 5alpha-reductase type 2 deficiency due to variations in the SRD5A2 gene and the associated clinical manifestations to enhance clinicians' awareness of this condition. METHODS: We conducted a retrospective single-center study by reviewing the medical records of patients diagnosed with 5alpha-reductase type 2 deficiency after genetic testing between April 2018 and July 2025. RESULTS: All 16 patients presented with ambiguous genitalia at birth and received diagnoses between the ages of 3 months and 11 years and 3 months. Of these patients, ten exhibited micropenis accompanied by hypospadias, six displayed an isolated micropenis, and six had either bilateral or unilateral cryptorchidism. Additionally, six patients had an underdeveloped scrotum. All affected individuals had a 46, XY karyotype and tested positive for the SRY gene, with two patients initially raised as female. The testosterone/dihydrotestosterone (T/DHT) ratios after human chorionic gonadotropin (hCG) stimulation ranged from 1.5- to 38.6-fold above the baseline values. This study identified ten distinct pathogenic variants of the SRD5A2 gene, including nine previously reported variants p.Gln6Ter, p.Gly66Arg, p.(Tyr128Cys), p.Asn193Ser, p.Gly196Ser, p.Gly203Ser, p.Phe219Serfs*60, p.Arg227Gln, and p.Arg246Gln and one novel variant p.(Cys119Arg), which expands the spectrum of known SRD5A2 variants. CONCLUSION: This study provides insights into genotype-phenotype correlations in a cohort of 16 Chinese patients diagnosed with 5alpha-reductase type 2 deficiency and summarized the enzymatic activity of the identified genetic variants. Identifying variants associated with 5alpha-reductase type 2 deficiency will facilitate genetic counseling for at-risk families and enable prenatal diagnosis, thus empowering parents to make informed decisions and allowing healthcare providers to tailor treatment strategies effectively.\n\n\n\n**Question:**\nWhich pathways in the integrated graph include SRD5A2?",
+  "vector_context": "--- Abstract 1 (PMID: 41722875, relevance: 0.2345) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 41640146, relevance: -1.1229) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n--- Abstract 3 (PMID: 42151883, relevance: -1.2179) ---\nBACKGROUND: 5alpha-reductase type 2 deficiency(5alpha-RD2) is a rare autosomal recessive disorder primarily caused by variants in the SRD5A2 gene. This condition is characterized by a spectrum of undervirilization in 46, XY individuals, ranging from ambiguous genitalia to predominantly male external genitalia with minimal undervirilization. Early diagnosis and effective management of 5alpha-reductase type 2 deficiency patients are major challenges for healthcare providers. The mutational analysis of SRD5A2 gene is regarded as the gold standard for the diagnosis of the disease. This study aimed to summarize our center's experience with patients diagnosed with 5alpha-reductase type 2 deficiency due to variations in the SRD5A2 gene and the associated clinical manifestations to enhance clinicians' awareness of this condition. METHODS: We conducted a retrospective single-center study by reviewing the medical records of patients diagnosed with 5alpha-reductase type 2 deficiency after genetic testing between April 2018 and July 2025. RESULTS: All 16 patients presented with ambiguous genitalia at birth and received diagnoses between the ages of 3 months and 11 years and 3 months. Of these patients, ten exhibited micropenis accompanied by hypospadias, six displayed an isolated micropenis, and six had either bilateral or unilateral cryptorchidism. Additionally, six patients had an underdeveloped scrotum. All affected individuals had a 46, XY karyotype and tested positive for the SRY gene, with two patients initially raised as female. The testosterone/dihydrotestosterone (T/DHT) ratios after human chorionic gonadotropin (hCG) stimulation ranged from 1.5- to 38.6-fold above the baseline values. This study identified ten distinct pathogenic variants of the SRD5A2 gene, including nine previously reported variants p.Gln6Ter, p.Gly66Arg, p.(Tyr128Cys), p.Asn193Ser, p.Gly196Ser, p.Gly203Ser, p.Phe219Serfs*60, p.Arg227Gln, and p.Arg246Gln and one novel variant p.(Cys119Arg), which expands the spectrum of known SRD5A2 variants. CONCLUSION: This study provides insights into genotype-phenotype correlations in a cohort of 16 Chinese patients diagnosed with 5alpha-reductase type 2 deficiency and summarized the enzymatic activity of the identified genetic variants. Identifying variants associated with 5alpha-reductase type 2 deficiency will facilitate genetic counseling for at-risk families and enable prenatal diagnosis, thus empowering parents to make informed decisions and allowing healthcare providers to tailor treatment strategies effectively.\n\n"
+}

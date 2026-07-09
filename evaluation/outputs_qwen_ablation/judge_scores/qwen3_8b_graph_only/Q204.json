@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q204",
+      "randomization_seed": "20260706:Q204:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q204",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q204",
+      "error": null,
+      "id": "batch_req_6a4f85d943ec8190a999501f6cb1ad27",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594493,
+          "created_at": 1783594460,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00e0b380383f1ce5006a4f7ddc1b6c81968481aad61a529d27",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q204"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00e0b380383f1ce5006a4f7ddd15f48196b9d561dc8e62d786",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 1,\n        \"rationale\": \"Does not answer the biomedical question about TP53/p53 tumor-suppressive roles.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"Contains little evaluable biomedical content; no clear biomedical error, but it withholds the well-established role of TP53/p53.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the key concepts: TP53 encodes p53, transcriptional regulation, cell-cycle arrest, DNA repair, apoptosis, senescence, and mutation-related cancer risk.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Abstains rather than answering a standard factual biomedical question; the abstention is not well justified.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the role of TP53 and p53 in tumor suppression.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that TP53 encodes p53, a tumor suppressor transcription factor regulating cell-cycle arrest, DNA repair, apoptosis, and senescence responses to stress or DNA damage.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the major mechanisms and consequences of TP53 mutation, though it includes some extra disease- and pathway-specific details not necessary for the question.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Generally appropriately framed; includes some nuanced qualifications around senescence, but does not clearly distinguish core established facts from more context-specific claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00e0b380383f1ce5006a4f7df1239c8196aaad25d8edd50771",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 759,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 951,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1710
+          },
+          "user": null
+        },
+        "request_id": "812e26cb-9f27-49d6-aafc-c428dcf7d41c",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Does not answer the biomedical question about TP53/p53 tumor-suppressive roles.",
+      "score": 1.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Contains little evaluable biomedical content; no clear biomedical error, but it withholds the well-established role of TP53/p53.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Omits the key concepts: TP53 encodes p53, transcriptional regulation, cell-cycle arrest, DNA repair, apoptosis, senescence, and mutation-related cancer risk.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Abstains rather than answering a standard factual biomedical question; the abstention is not well justified.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q204",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.791093+00:00"
+}

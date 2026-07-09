@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q098",
+      "randomization_seed": "20260706:Q098:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q098",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q098",
+      "error": null,
+      "id": "batch_req_6a4f85d2df2c8190b6ccd05b9acf9ab9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578974,
+          "created_at": 1783578940,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01423168a6349eea006a4f413c8ad081909a23aa8ffa9b7c8b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q098"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01423168a6349eea006a4f414f1e80819088d65b261680e578",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly answers that no LHX2-linked hair-loss treatment is supported, but includes irrelevant unsupported discussion.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Central conclusion matches the supplied evidence, but it falsely claims the provided context discusses CKD, lanthanum hydroxide, and MSC exosomes, which are absent.\"},\"completeness\":{\"score\":4,\"rationale\":\"Identifies that no treatments are linked to LHX2 in the evidence, but adds unnecessary unsupported details.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately abstains from naming treatments, though the extra invented context weakens the response.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether LHX2 is linked to hair-loss treatments in the provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the evidence only lists LHX2 interactions and provides no treatment links.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point: no treatments or therapeutic agents are supported by the provided evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the conclusion as based on the given data and does not invent unsupported links.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01423168a6349eea006a4f4159aa7c8190ba569fbc95b0a823",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1883,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 816,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2699
+          },
+          "user": null
+        },
+        "request_id": "3fb84dbb-0950-4bd8-a5d1-42c66b8b6051",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether LHX2 is linked to hair-loss treatments in the provided evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects that the evidence only lists LHX2 interactions and provides no treatment links.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key point: no treatments or therapeutic agents are supported by the provided evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the conclusion as based on the given data and does not invent unsupported links.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q098",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q098.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.750745+00:00"
+}

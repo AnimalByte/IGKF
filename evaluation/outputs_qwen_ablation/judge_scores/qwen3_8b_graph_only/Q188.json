@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q188",
+      "randomization_seed": "20260706:Q188:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q188",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q188",
+      "error": null,
+      "id": "batch_req_6a4f85d88810819098a3e81c447df9ec",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579010,
+          "created_at": 1783578980,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_08f657f7553531a5006a4f41649ddc8190a87b3e67c328de41",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q188"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_08f657f7553531a5006a4f4176ff8c8190b357105f86e084e1",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses the question by stating that the supplied evidence does not support downstream LHX2 pathways/processes in hair-follicle biology, though it focuses mostly on the graph context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that the provided LHX2 evidence lists interactors but does not establish downstream signaling pathways or hair-follicle processes.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion and distinguishes lack of downstream evidence, but does not explicitly discuss the vector abstracts or pathway-association issue in detail.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring unsupported LHX2 downstream pathways.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the core question and correctly concludes that the supplied abstracts do not support LHX2 downstream pathways, but underuses the graph context.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The main conclusion is consistent with the evidence, but it inaccurately lists topics not present in the supplied abstracts, such as LHPP and TGF-beta/Smad3, and overlooks LHX2 graph interactors.\"},\"completeness\":{\"score\":3,\"rationale\":\"Partially complete: it addresses absence of literature support but does not integrate the graph evidence or explicitly distinguish direct experimental evidence from pathway association beyond saying none is present.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not invent LHX2 downstream biology and appropriately abstains from unsupported conclusions.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_08f657f7553531a5006a4f417f8ed881908a561e85be53b0b4",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1979,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 877,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2856
+          },
+          "user": null
+        },
+        "request_id": "76972428-f272-4361-9be4-f4bfecac728b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question by stating that the supplied evidence does not support downstream LHX2 pathways/processes in hair-follicle biology, though it focuses mostly on the graph context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately notes that the provided LHX2 evidence lists interactors but does not establish downstream signaling pathways or hair-follicle processes.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key conclusion and distinguishes lack of downstream evidence, but does not explicitly discuss the vector abstracts or pathway-association issue in detail.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inferring unsupported LHX2 downstream pathways.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q188",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q188.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.785157+00:00"
+}

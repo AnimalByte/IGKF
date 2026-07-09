@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q013",
+      "randomization_seed": "20260706:Q013:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q013",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q013",
+      "error": null,
+      "id": "batch_req_6a4f85cd77448190832aa3661d077e7c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594480,
+          "created_at": 1783594459,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_016ffd2e8ae67e7f006a4f7ddb47f881909eebd80924769e9f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q013"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_016ffd2e8ae67e7f006a4f7ddc645c8190b01f2753fc065cd9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the absence of rs2180439 information, but frames it only in terms of the literature abstracts rather than the full provided context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that rs2180439 is not mentioned in the supplied evidence and avoids unsupported biomedical claims.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides the key abstention, but does not explicitly consider the graph/study-specific or integrated annotation context requested by the question.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inventing annotations when evidence is insufficient.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the provided graph context contains annotations for rs2180439.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the supplied evidence, which contains no rs2180439-specific annotation.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the central point that no rs2180439 annotations are available, though it could also mention the abstracts contain no relevant support.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies the limitation and does not infer unsupported annotations.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_016ffd2e8ae67e7f006a4f7de88c508190a854a8c65f7a3c40",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2579,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 678,
+            "output_tokens_details": {
+              "reasoning_tokens": 387
+            },
+            "total_tokens": 3257
+          },
+          "user": null
+        },
+        "request_id": "12acc575-96b5-4913-8d96-39ce9ae0581c",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the absence of rs2180439 information, but frames it only in terms of the literature abstracts rather than the full provided context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that rs2180439 is not mentioned in the supplied evidence and avoids unsupported biomedical claims.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the key abstention, but does not explicitly consider the graph/study-specific or integrated annotation context requested by the question.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inventing annotations when evidence is insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q013",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q013.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.717478+00:00"
+}

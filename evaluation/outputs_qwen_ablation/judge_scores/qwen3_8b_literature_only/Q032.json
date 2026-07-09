@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q032",
+      "randomization_seed": "20260706:Q032:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q032",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q032",
+      "error": null,
+      "id": "batch_req_6a4f85cea9ac8190877e63ebc04671bb",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783596312,
+          "created_at": 1783596300,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_026229d603654127006a4f850caee08197a3b97dfc4d8ac606",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q032"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_026229d603654127006a4f850d22ac8197a2b6e24ca44a61f8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the association between rs929626 and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly cites the Open Targets association score of 0.493, but somewhat overstates it as study evidence and does not note that the abstract does not provide variant-specific statistics.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes the key association score but omits important context that the cited GWAS abstract does not explicitly mention rs929626 or provide a p-value/effect size for it.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Uses cautious wording such as moderate evidence, but could better qualify that direct study-level evidence for this specific variant is not shown in the provided abstract.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses whether evidence is provided, but frames the conclusion too narrowly around the literature context.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"It is true that the abstracts do not mention rs929626, but the provided graph context does list an Open Targets association with androgenetic alopecia, so saying there is no support is inaccurate against the full evidence packet.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the Open Targets disease association score and other graph-context evidence relevant to the question.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids inventing variant-specific literature evidence, but over-abstains by ignoring available association evidence in the supplied graph context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_026229d603654127006a4f85141f6081978e7a533daebba6de",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2148,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 868,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3016
+          },
+          "user": null
+        },
+        "request_id": "b165830b-ecdd-46c7-8733-82c12f907fc0",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses whether evidence is provided, but frames the conclusion too narrowly around the literature context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "It is true that the abstracts do not mention rs929626, but the provided graph context does list an Open Targets association with androgenetic alopecia, so saying there is no support is inaccurate against the full evidence packet.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Omits the Open Targets disease association score and other graph-context evidence relevant to the question.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inventing variant-specific literature evidence, but over-abstains by ignoring available association evidence in the supplied graph context.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q032",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q032.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.724940+00:00"
+}

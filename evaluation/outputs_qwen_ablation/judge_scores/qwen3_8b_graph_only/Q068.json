@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q068",
+      "randomization_seed": "20260706:Q068:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q068",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q068",
+      "error": null,
+      "id": "batch_req_6a4f85d095a08190b86831b6e2563de0",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594486,
+          "created_at": 1783594464,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0eb4e0e30d2d36d4006a4f7de0b2c0819395c84fc93189fa94",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q068"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0eb4e0e30d2d36d4006a4f7de1b9b08193ab2137a36c71662e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether the supplied evidence links FGF5 to hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the evidence packet, which contains no treatments for hair loss linked to FGF5.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion, though it could explicitly note that neither graph nor vector evidence identifies any such treatment.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring a treatment link when evidence is insufficient.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses the topic of FGF5 and hair-loss treatments but does not provide a supported answer to which treatments are linked.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Introduces unsupported claims about Sphingomonas olei extracellular vesicles and incorrectly connects FGF5 to Wnt/beta-catenin hair-growth treatment evidence not present in the packet.\"},\"completeness\":{\"score\":2,\"rationale\":\"Fails to identify that no supported hair-loss treatments are linked to FGF5 in the evidence and adds irrelevant unsupported material.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes some caveats, but still advances unsupported therapeutic implications.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0eb4e0e30d2d36d4006a4f7dedb14c8193850456d4c659b5aa",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1989,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 673,
+            "output_tokens_details": {
+              "reasoning_tokens": 368
+            },
+            "total_tokens": 2662
+          },
+          "user": null
+        },
+        "request_id": "69e80e2c-1074-4013-90bc-b0cb17d173c2",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether the supplied evidence links FGF5 to hair-loss treatments.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Consistent with the evidence packet, which contains no treatments for hair loss linked to FGF5.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key conclusion, though it could explicitly note that neither graph nor vector evidence identifies any such treatment.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inferring a treatment link when evidence is insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q068",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q068.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.739089+00:00"
+}

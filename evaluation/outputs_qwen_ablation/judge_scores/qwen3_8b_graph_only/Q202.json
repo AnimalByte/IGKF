@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q202",
+      "randomization_seed": "20260706:Q202:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q202",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q202",
+      "error": null,
+      "id": "batch_req_6a4f85d91f5081909b0f1d8a3079152a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594507,
+          "created_at": 1783594473,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_013c1cdd740f566a006a4f7de967808196a396a4f802b066be",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q202"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_013c1cdd740f566a006a4f7dea99388196aab9540a239c2401",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses BRCA1 as a hereditary breast cancer susceptibility gene, though tumor biology is only briefly covered.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main claims about BRCA1, hereditary breast/ovarian cancer risk, DNA repair, and genomic stability are accurate; some contextual claims are unsupported by the prompt.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers susceptibility and DNA repair generally, but omits key tumor biology details such as tumor-suppressor function, homologous recombination, loss of heterozygosity, and association with basal-like/triple-negative cancers.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Includes some qualification, but references unspecified literature/case studies and alternative genes without supporting evidence.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":1,\"rationale\":\"Does not answer the biomedical question and only states that context is insufficient.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Contains no substantive biomedical claims to assess, but the refusal does not provide the scientifically expected information.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits essentially all necessary content about BRCA1 susceptibility and tumor biology.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Avoids inventing information, but appears to over-abstain for a general biomedical question that can be answered without graph context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_013c1cdd740f566a006a4f7dfe8f788196a68eb4e7576cb27a",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 679,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 840,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1519
+          },
+          "user": null
+        },
+        "request_id": "10335611-7557-4d03-9037-a5694aaf9be6",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Does not answer the biomedical question and only states that context is insufficient.",
+      "score": 1.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Contains no substantive biomedical claims to assess, but the refusal does not provide the scientifically expected information.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Omits essentially all necessary content about BRCA1 susceptibility and tumor biology.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Avoids inventing information, but appears to over-abstain for a general biomedical question that can be answered without graph context.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q202",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.790449+00:00"
+}

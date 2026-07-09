@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q048",
+      "randomization_seed": "20260706:Q048:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q048",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q048",
+      "error": null,
+      "id": "batch_req_6a4f85cf6c708190b83cfbdaf79e3c0f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594534,
+          "created_at": 1783594503,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0846f1e2d73eaad2006a4f7e071fa481939295eb2b6ef4057b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q048"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0846f1e2d73eaad2006a4f7e085c5481939b9823505c2e1fce",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested rs7313338 annotations and states they are not present in the supplied context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the evidence packet contains no rs7313338-specific study or integrated annotations.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point that no variant-specific annotations can be summarized from the provided data.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing unsupported annotations.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses absence of rs7313338 annotations, but frames it only around the literature abstracts rather than the full provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correct that rs7313338 is not mentioned in the supplied abstracts, and no supported annotations are available from the evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Gives the essential conclusion but omits mention of the graph context, which also lacks rs7313338-specific information.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported claims and notes lack of evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0846f1e2d73eaad2006a4f7e1c65648193a0b75e90c48e526b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2393,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 803,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3196
+          },
+          "user": null
+        },
+        "request_id": "9b96e302-ea1d-4c63-ad26-e77e8b0f8e23",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses absence of rs7313338 annotations, but frames it only around the literature abstracts rather than the full provided evidence.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correct that rs7313338 is not mentioned in the supplied abstracts, and no supported annotations are available from the evidence.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Gives the essential conclusion but omits mention of the graph context, which also lacks rs7313338-specific information.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids unsupported claims and notes lack of evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q048",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q048.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.731129+00:00"
+}

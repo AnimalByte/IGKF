@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "33741282",
+    "41296172",
+    "29220522",
+    "38790178",
+    "38057852",
+    "31580512",
+    "37690223",
+    "39539976",
+    "32557953",
+    "42269416",
+    "38431439",
+    "41962619",
+    "42190016",
+    "42358832",
+    "42364542"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q177.json",
+      "question_id": "Q177",
+      "sha256": "811cb87d72b4b5bbece3326a5bf06f76fc3916bf4f6dd42b857b316cac7cc80f"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q177.json",
+      "question_id": "Q177",
+      "sha256": "04b8bfcc881bcb623b1d6e46988f1bb40809d04979e7f93f1c415276c8383c46"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.9141,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+  "parsed_answer": "The provided literature context does not mention FOXA2 or its regulatory relationships with downstream genes relevant to hair growth. Therefore, there is no direct or inferred link between FOXA2 and hair growth based on the supplied information.",
+  "question_id": "Q177",
+  "question_text": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 44,
+    "prompt_token_count": 1576,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention FOXA2 or its regulatory relationships with downstream genes relevant to hair growth. Therefore, there is no direct or inferred link between FOXA2 and hair growth based on the supplied information."
+      }
+    ],
+    "created": 1783564642,
+    "id": "cmpl-55ed1381-e3ca-494c-9c19-df18d282159d",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 1555,
+      "total_tokens": 1599
+    }
+  },
+  "reranker_scores": [
+    -5.23714017868042,
+    -5.611690521240234,
+    -6.252181053161621
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      32.67488479614258,
+      34.115875244140625,
+      37.0736198425293,
+      37.70687484741211,
+      39.23151397705078,
+      39.719810485839844,
+      40.98188018798828,
+      41.26897430419922,
+      41.41873550415039,
+      41.564720153808594,
+      41.60162353515625,
+      41.67245864868164,
+      41.725223541259766,
+      41.78154754638672,
+      42.11681365966797
+    ],
+    "candidate_pmids": [
+      "33741282",
+      "41296172",
+      "29220522",
+      "38790178",
+      "38057852",
+      "31580512",
+      "37690223",
+      "39539976",
+      "32557953",
+      "42269416",
+      "38431439",
+      "41962619",
+      "42190016",
+      "42358832",
+      "42364542"
+    ],
+    "expanded_retrieval_query": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 39539976, relevance: -5.2371) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n--- Abstract 2 (PMID: 38790178, relevance: -5.6117) ---\nRecent evidence suggests that human gene promoters display gene expression regulatory mechanisms beyond the typical single gene local transcription modulation. In mammalian genomes, genes with an associated bidirectional promoter are abundant; bidirectional promoter architecture serves as a regulatory hub for a gene pair expression. However, it has been suggested that its contribution to transcriptional regulation might exceed local transcription initiation modulation. Despite their abundance, the functional consequences of bidirectional promoter architecture remain largely unexplored. This work studies the long-range gene expression regulatory role of a long non-coding RNA gene promoter using chromosome conformation capture methods. We found that this particular bidirectional promoter contributes to distal gene expression regulation in a target-specific manner by establishing promoter-promoter interactions. In particular, we validated that the promoter-promoter interactions of this regulatory element with the promoter of distal gene BBX contribute to modulating the transcription rate of this gene; removing the bidirectional promoter from its genomic context leads to a rearrangement of BBX promoter-enhancer interactions and to increased gene expression. Moreover, long-range regulatory functionality is not directly dependent on its associated non-coding gene pair expression levels.\n\n--- Abstract 3 (PMID: 42358832, relevance: -6.2522) ---\nBackgrounds: Early B-cell factor 1 (EBF1), originally identified as a critical transcription factor modulating the development and differentiation of B lymphocytes, has recently attracted significant interest owing to its diverse functional characteristics and regulatory mechanisms in solid tumors. Although current evidence suggests a potential connection between EBF1 and oncogenic developments, its exact role in the progression of prostate cancer (PCa) is unclear. This study sought to investigate its biological roles and regulatory mechanisms in human PCa. Methods: Bioinformatic analyses were performed utilizing Tumor Immune Estimation Resource (TIMER) 2.0, Gene Expression Profiling Interactive Analysis (GEPIA), and Gene Expression Omnibus (GEO) databases, along with quantitative polymerase chain reaction (qPCR) assays and immunostaining on clinically available PCa and normal prostate tissues, to investigate the expression profile and clinical significance of EBF1. The manipulation of EBF1 expression through lentivirus was conducted to explore the impact of both knockdown and overexpression of EBF1 on the malignant behaviors of PCa cells in vitro, as well as in a xenograft mouse model. Ultimately, various molecular biomedical techniques were employed to clarify the possible transcriptional regulation of inositol 1,4,5-trisphosphate receptor type 1 (ITPR1) by EBF1. Results: Bioinformatic analyses revealed that reduced EBF1 expression exhibited a robust prognostic association with PCa progression. From a functional standpoint, knockdown of EBF1 promoted cell proliferation (n = 3, *p < 0.05, ***p < 0.001 for LNCaP-48 h and LNCaP-72 h; *p < 0.05, ****p < 0.0001 for 22RV1-48 h and 22RV1-72 h respectively), colony formation (n = 3, ***p < 0.001 for LNCaP and **p < 0.01 for 22RV1), migration (n = 3, ***p < 0.001 for LNCaP and ***p < 0.001 for 22RV1) and invasion (n = 5, ****p < 0.0001 for LNCaP and ****p < 0.0001 for 22RV1) capabilities in LNCaP and 22RV1 cells, while ectopic overexpression of EBF1 in PC-3 cells significantly inhibited tumor growth (n = 5, *p < 0.05 at d 36 after cell inoculation) and invasiveness (n = 5, **p < 0.01 for E-cadherin and Vimentin H-scores, respectively) in vivo. Mechanistically, EBF1 depletion was associated with a reduced expression of ITPR1, a key player in intracellular calcium release and a fundamental tumor suppressor in multiple cancers. Furthermore, using chromatin immunoprecipitation (ChIP), electrophoretic mobility shift (EMSA) and luciferase reporter assays, we demonstrated that EBF1 could directly bind to the distal region of the ITPR1 promoter (n = 3, **p < 0.01 for ChIP-qPCR), thereafter facilitating its transcriptional expression (n = 3, ****p < 0.0001 for reporter assays). Importantly, overexpression of exogenous ITPR1 effectively ameliorated EBF1 deficiency-induced tumorigenicity in both LNCaP and 22RV1 cells. Conclusions: These findings together indicate a new function of EBF1 loss in enhancing PCa progression, highlight ITPR1 as a key downstream effector in facilitating the tumor-suppressing function of EBF1, and provide significant insights into improving our understanding of the transcriptional regulation of malignant behaviors in PCa cells.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+    "rerank_seconds": 0.3438,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.361,
+    "score_max": -5.23714017868042,
+    "score_mean": -5.700337251027425,
+    "scores": [
+      -5.23714017868042,
+      -5.611690521240234,
+      -6.252181053161621
+    ],
+    "selected_abstracts": [
+      "Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.",
+      "Recent evidence suggests that human gene promoters display gene expression regulatory mechanisms beyond the typical single gene local transcription modulation. In mammalian genomes, genes with an associated bidirectional promoter are abundant; bidirectional promoter architecture serves as a regulatory hub for a gene pair expression. However, it has been suggested that its contribution to transcriptional regulation might exceed local transcription initiation modulation. Despite their abundance, the functional consequences of bidirectional promoter architecture remain largely unexplored. This work studies the long-range gene expression regulatory role of a long non-coding RNA gene promoter using chromosome conformation capture methods. We found that this particular bidirectional promoter contributes to distal gene expression regulation in a target-specific manner by establishing promoter-promoter interactions. In particular, we validated that the promoter-promoter interactions of this regulatory element with the promoter of distal gene BBX contribute to modulating the transcription rate of this gene; removing the bidirectional promoter from its genomic context leads to a rearrangement of BBX promoter-enhancer interactions and to increased gene expression. Moreover, long-range regulatory functionality is not directly dependent on its associated non-coding gene pair expression levels.",
+      "Backgrounds: Early B-cell factor 1 (EBF1), originally identified as a critical transcription factor modulating the development and differentiation of B lymphocytes, has recently attracted significant interest owing to its diverse functional characteristics and regulatory mechanisms in solid tumors. Although current evidence suggests a potential connection between EBF1 and oncogenic developments, its exact role in the progression of prostate cancer (PCa) is unclear. This study sought to investigate its biological roles and regulatory mechanisms in human PCa. Methods: Bioinformatic analyses were performed utilizing Tumor Immune Estimation Resource (TIMER) 2.0, Gene Expression Profiling Interactive Analysis (GEPIA), and Gene Expression Omnibus (GEO) databases, along with quantitative polymerase chain reaction (qPCR) assays and immunostaining on clinically available PCa and normal prostate tissues, to investigate the expression profile and clinical significance of EBF1. The manipulation of EBF1 expression through lentivirus was conducted to explore the impact of both knockdown and overexpression of EBF1 on the malignant behaviors of PCa cells in vitro, as well as in a xenograft mouse model. Ultimately, various molecular biomedical techniques were employed to clarify the possible transcriptional regulation of inositol 1,4,5-trisphosphate receptor type 1 (ITPR1) by EBF1. Results: Bioinformatic analyses revealed that reduced EBF1 expression exhibited a robust prognostic association with PCa progression. From a functional standpoint, knockdown of EBF1 promoted cell proliferation (n = 3, *p < 0.05, ***p < 0.001 for LNCaP-48 h and LNCaP-72 h; *p < 0.05, ****p < 0.0001 for 22RV1-48 h and 22RV1-72 h respectively), colony formation (n = 3, ***p < 0.001 for LNCaP and **p < 0.01 for 22RV1), migration (n = 3, ***p < 0.001 for LNCaP and ***p < 0.001 for 22RV1) and invasion (n = 5, ****p < 0.0001 for LNCaP and ****p < 0.0001 for 22RV1) capabilities in LNCaP and 22RV1 cells, while ectopic overexpression of EBF1 in PC-3 cells significantly inhibited tumor growth (n = 5, *p < 0.05 at d 36 after cell inoculation) and invasiveness (n = 5, **p < 0.01 for E-cadherin and Vimentin H-scores, respectively) in vivo. Mechanistically, EBF1 depletion was associated with a reduced expression of ITPR1, a key player in intracellular calcium release and a fundamental tumor suppressor in multiple cancers. Furthermore, using chromatin immunoprecipitation (ChIP), electrophoretic mobility shift (EMSA) and luciferase reporter assays, we demonstrated that EBF1 could directly bind to the distal region of the ITPR1 promoter (n = 3, **p < 0.01 for ChIP-qPCR), thereafter facilitating its transcriptional expression (n = 3, ****p < 0.0001 for reporter assays). Importantly, overexpression of exogenous ITPR1 effectively ameliorated EBF1 deficiency-induced tumorigenicity in both LNCaP and 22RV1 cells. Conclusions: These findings together indicate a new function of EBF1 loss in enhancing PCa progression, highlight ITPR1 as a key downstream effector in facilitating the tumor-suppressing function of EBF1, and provide significant insights into improving our understanding of the transcriptional regulation of malignant behaviors in PCa cells."
+    ],
+    "selected_pmids": [
+      "39539976",
+      "38790178",
+      "42358832"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.017
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q177.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "39539976",
+    "38790178",
+    "42358832"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:37:23.266529+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 39539976, relevance: -5.2371) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n--- Abstract 2 (PMID: 38790178, relevance: -5.6117) ---\nRecent evidence suggests that human gene promoters display gene expression regulatory mechanisms beyond the typical single gene local transcription modulation. In mammalian genomes, genes with an associated bidirectional promoter are abundant; bidirectional promoter architecture serves as a regulatory hub for a gene pair expression. However, it has been suggested that its contribution to transcriptional regulation might exceed local transcription initiation modulation. Despite their abundance, the functional consequences of bidirectional promoter architecture remain largely unexplored. This work studies the long-range gene expression regulatory role of a long non-coding RNA gene promoter using chromosome conformation capture methods. We found that this particular bidirectional promoter contributes to distal gene expression regulation in a target-specific manner by establishing promoter-promoter interactions. In particular, we validated that the promoter-promoter interactions of this regulatory element with the promoter of distal gene BBX contribute to modulating the transcription rate of this gene; removing the bidirectional promoter from its genomic context leads to a rearrangement of BBX promoter-enhancer interactions and to increased gene expression. Moreover, long-range regulatory functionality is not directly dependent on its associated non-coding gene pair expression levels.\n\n--- Abstract 3 (PMID: 42358832, relevance: -6.2522) ---\nBackgrounds: Early B-cell factor 1 (EBF1), originally identified as a critical transcription factor modulating the development and differentiation of B lymphocytes, has recently attracted significant interest owing to its diverse functional characteristics and regulatory mechanisms in solid tumors. Although current evidence suggests a potential connection between EBF1 and oncogenic developments, its exact role in the progression of prostate cancer (PCa) is unclear. This study sought to investigate its biological roles and regulatory mechanisms in human PCa. Methods: Bioinformatic analyses were performed utilizing Tumor Immune Estimation Resource (TIMER) 2.0, Gene Expression Profiling Interactive Analysis (GEPIA), and Gene Expression Omnibus (GEO) databases, along with quantitative polymerase chain reaction (qPCR) assays and immunostaining on clinically available PCa and normal prostate tissues, to investigate the expression profile and clinical significance of EBF1. The manipulation of EBF1 expression through lentivirus was conducted to explore the impact of both knockdown and overexpression of EBF1 on the malignant behaviors of PCa cells in vitro, as well as in a xenograft mouse model. Ultimately, various molecular biomedical techniques were employed to clarify the possible transcriptional regulation of inositol 1,4,5-trisphosphate receptor type 1 (ITPR1) by EBF1. Results: Bioinformatic analyses revealed that reduced EBF1 expression exhibited a robust prognostic association with PCa progression. From a functional standpoint, knockdown of EBF1 promoted cell proliferation (n = 3, *p < 0.05, ***p < 0.001 for LNCaP-48 h and LNCaP-72 h; *p < 0.05, ****p < 0.0001 for 22RV1-48 h and 22RV1-72 h respectively), colony formation (n = 3, ***p < 0.001 for LNCaP and **p < 0.01 for 22RV1), migration (n = 3, ***p < 0.001 for LNCaP and ***p < 0.001 for 22RV1) and invasion (n = 5, ****p < 0.0001 for LNCaP and ****p < 0.0001 for 22RV1) capabilities in LNCaP and 22RV1 cells, while ectopic overexpression of EBF1 in PC-3 cells significantly inhibited tumor growth (n = 5, *p < 0.05 at d 36 after cell inoculation) and invasiveness (n = 5, **p < 0.01 for E-cadherin and Vimentin H-scores, respectively) in vivo. Mechanistically, EBF1 depletion was associated with a reduced expression of ITPR1, a key player in intracellular calcium release and a fundamental tumor suppressor in multiple cancers. Furthermore, using chromatin immunoprecipitation (ChIP), electrophoretic mobility shift (EMSA) and luciferase reporter assays, we demonstrated that EBF1 could directly bind to the distal region of the ITPR1 promoter (n = 3, **p < 0.01 for ChIP-qPCR), thereafter facilitating its transcriptional expression (n = 3, ****p < 0.0001 for reporter assays). Importantly, overexpression of exogenous ITPR1 effectively ameliorated EBF1 deficiency-induced tumorigenicity in both LNCaP and 22RV1 cells. Conclusions: These findings together indicate a new function of EBF1 loss in enhancing PCa progression, highlight ITPR1 as a key downstream effector in facilitating the tumor-suppressing function of EBF1, and provide significant insights into improving our understanding of the transcriptional regulation of malignant behaviors in PCa cells.\n\n\n\n**Question:**\nWhat regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+  "vector_context": "--- Abstract 1 (PMID: 39539976, relevance: -5.2371) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n--- Abstract 2 (PMID: 38790178, relevance: -5.6117) ---\nRecent evidence suggests that human gene promoters display gene expression regulatory mechanisms beyond the typical single gene local transcription modulation. In mammalian genomes, genes with an associated bidirectional promoter are abundant; bidirectional promoter architecture serves as a regulatory hub for a gene pair expression. However, it has been suggested that its contribution to transcriptional regulation might exceed local transcription initiation modulation. Despite their abundance, the functional consequences of bidirectional promoter architecture remain largely unexplored. This work studies the long-range gene expression regulatory role of a long non-coding RNA gene promoter using chromosome conformation capture methods. We found that this particular bidirectional promoter contributes to distal gene expression regulation in a target-specific manner by establishing promoter-promoter interactions. In particular, we validated that the promoter-promoter interactions of this regulatory element with the promoter of distal gene BBX contribute to modulating the transcription rate of this gene; removing the bidirectional promoter from its genomic context leads to a rearrangement of BBX promoter-enhancer interactions and to increased gene expression. Moreover, long-range regulatory functionality is not directly dependent on its associated non-coding gene pair expression levels.\n\n--- Abstract 3 (PMID: 42358832, relevance: -6.2522) ---\nBackgrounds: Early B-cell factor 1 (EBF1), originally identified as a critical transcription factor modulating the development and differentiation of B lymphocytes, has recently attracted significant interest owing to its diverse functional characteristics and regulatory mechanisms in solid tumors. Although current evidence suggests a potential connection between EBF1 and oncogenic developments, its exact role in the progression of prostate cancer (PCa) is unclear. This study sought to investigate its biological roles and regulatory mechanisms in human PCa. Methods: Bioinformatic analyses were performed utilizing Tumor Immune Estimation Resource (TIMER) 2.0, Gene Expression Profiling Interactive Analysis (GEPIA), and Gene Expression Omnibus (GEO) databases, along with quantitative polymerase chain reaction (qPCR) assays and immunostaining on clinically available PCa and normal prostate tissues, to investigate the expression profile and clinical significance of EBF1. The manipulation of EBF1 expression through lentivirus was conducted to explore the impact of both knockdown and overexpression of EBF1 on the malignant behaviors of PCa cells in vitro, as well as in a xenograft mouse model. Ultimately, various molecular biomedical techniques were employed to clarify the possible transcriptional regulation of inositol 1,4,5-trisphosphate receptor type 1 (ITPR1) by EBF1. Results: Bioinformatic analyses revealed that reduced EBF1 expression exhibited a robust prognostic association with PCa progression. From a functional standpoint, knockdown of EBF1 promoted cell proliferation (n = 3, *p < 0.05, ***p < 0.001 for LNCaP-48 h and LNCaP-72 h; *p < 0.05, ****p < 0.0001 for 22RV1-48 h and 22RV1-72 h respectively), colony formation (n = 3, ***p < 0.001 for LNCaP and **p < 0.01 for 22RV1), migration (n = 3, ***p < 0.001 for LNCaP and ***p < 0.001 for 22RV1) and invasion (n = 5, ****p < 0.0001 for LNCaP and ****p < 0.0001 for 22RV1) capabilities in LNCaP and 22RV1 cells, while ectopic overexpression of EBF1 in PC-3 cells significantly inhibited tumor growth (n = 5, *p < 0.05 at d 36 after cell inoculation) and invasiveness (n = 5, **p < 0.01 for E-cadherin and Vimentin H-scores, respectively) in vivo. Mechanistically, EBF1 depletion was associated with a reduced expression of ITPR1, a key player in intracellular calcium release and a fundamental tumor suppressor in multiple cancers. Furthermore, using chromatin immunoprecipitation (ChIP), electrophoretic mobility shift (EMSA) and luciferase reporter assays, we demonstrated that EBF1 could directly bind to the distal region of the ITPR1 promoter (n = 3, **p < 0.01 for ChIP-qPCR), thereafter facilitating its transcriptional expression (n = 3, ****p < 0.0001 for reporter assays). Importantly, overexpression of exogenous ITPR1 effectively ameliorated EBF1 deficiency-induced tumorigenicity in both LNCaP and 22RV1 cells. Conclusions: These findings together indicate a new function of EBF1 loss in enhancing PCa progression, highlight ITPR1 as a key downstream effector in facilitating the tumor-suppressing function of EBF1, and provide significant insights into improving our understanding of the transcriptional regulation of malignant behaviors in PCa cells.\n\n"
+}

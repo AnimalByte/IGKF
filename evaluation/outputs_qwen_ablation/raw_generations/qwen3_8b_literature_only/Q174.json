@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "36979151",
+    "41241001",
+    "40765829",
+    "42016510",
+    "40913740",
+    "31815358",
+    "38640016",
+    "40001587",
+    "40639515",
+    "41354990",
+    "36067318",
+    "40538377",
+    "38827116",
+    "42367204",
+    "36536295"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q174.json",
+      "question_id": "Q174",
+      "sha256": "25229defabc32f041bbbcf09568dc017fabc3b85e89b732524793af57928fa0d"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q174.json",
+      "question_id": "Q174",
+      "sha256": "c2bc96f34dd48e50181e8f8937074fdae2ff5a33d94f841693129ed1e3b5b938"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What evidence, if any, links Minoxidil to FGF signaling in the integrated data or literature? Distinguish direct target relationships from indirect pathway effects.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.515,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What evidence, if any, links Minoxidil to FGF signaling in the integrated data or literature? Distinguish direct target relationships from indirect pathway effects.",
+  "parsed_answer": "Based on the provided literature context, there is **no direct or indirect evidence linking Minoxidil to FGF signaling** in the integrated data or literature. The abstracts provided focus on the roles of various FGF family members (such as FGF5, FGFBP1, and FGF19) in cancer progression, endothelial dysfunction, and cartilage development. However, none of the abstracts mention Minoxidil or its potential interactions with FGF signaling pathways.\n\nTherefore, the answer is:\n\n**No evidence links Minoxidil to FGF signaling in the provided literature.**",
+  "question_id": "Q174",
+  "question_text": "What evidence, if any, links Minoxidil to FGF signaling in the integrated data or literature? Distinguish direct target relationships from indirect pathway effects.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 123,
+    "prompt_token_count": 1191,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided literature context, there is **no direct or indirect evidence linking Minoxidil to FGF signaling** in the integrated data or literature. The abstracts provided focus on the roles of various FGF family members (such as FGF5, FGFBP1, and FGF19) in cancer progression, endothelial dysfunction, and cartilage development. However, none of the abstracts mention Minoxidil or its potential interactions with FGF signaling pathways.\n\nTherefore, the answer is:\n\n**No evidence links Minoxidil to FGF signaling in the provided literature.**"
+      }
+    ],
+    "created": 1783564627,
+    "id": "cmpl-234ca037-5ad7-4a70-ac40-8f5194d393b3",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 123,
+      "prompt_tokens": 1170,
+      "total_tokens": 1293
+    }
+  },
+  "reranker_scores": [
+    -1.1151576042175293,
+    -3.5089526176452637,
+    -4.688172817230225
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      35.7166748046875,
+      36.306217193603516,
+      36.902984619140625,
+      38.57816696166992,
+      38.597171783447266,
+      39.76854705810547,
+      40.03041076660156,
+      40.1404914855957,
+      40.41988754272461,
+      40.45647430419922,
+      40.59849166870117,
+      40.71219253540039,
+      40.72936248779297,
+      41.28769302368164,
+      41.31069564819336
+    ],
+    "candidate_pmids": [
+      "36979151",
+      "41241001",
+      "40765829",
+      "42016510",
+      "40913740",
+      "31815358",
+      "38640016",
+      "40001587",
+      "40639515",
+      "41354990",
+      "36067318",
+      "40538377",
+      "38827116",
+      "42367204",
+      "36536295"
+    ],
+    "expanded_retrieval_query": "What evidence, if any, links Minoxidil to FGF signaling in the integrated data or literature? Distinguish direct target relationships from indirect pathway effects.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40001587, relevance: -1.1152) ---\nBACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.\n\n--- Abstract 2 (PMID: 36979151, relevance: -3.5090) ---\nMicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.\n\n--- Abstract 3 (PMID: 40765829, relevance: -4.6882) ---\nFibroblast growth factor 19 (FGF19) has received increasing attention in metabolic disorders of the skeletal system, but its role in cartilage development is poorly understood. In the present study, we used ex vivo metatarsal organ model for nascent cartilage and an AAV-FGF19 overexpression model for adolescent growth plates to demonstrate the influence of FGF19 on cartilage development. We found that FGF19 could impair chondrocyte maturation at the neonatal stage and decrease growth plate thickness at the adolescent stage. FGF19 reduces chondrogenic differentiation of mesenchymal stem cells and the chondrocyte maturation via downregulation of Wnt/beta-catenin signalling. FGF19-mediated chondrocyte maturation and cartilage differentiation require the participation of FGFR4 with the aid of beta-klotho (KLB). FGF19 signalling entered the cytoplasm through FGFR4, activated the expression of SFRP1, WIF1 and DKK2, which are antagonists of beta-catenin signalling, and hindered chondrocyte proliferation and cartilage growth. This study demonstrates for the first time that FGF19 inhibits cartilage development through the FGFR4/beta-catenin axis, providing evidence for the vital role of FGF19 in growth plate chondrogenesis and endochondral ossification.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What evidence, if any, links Minoxidil to FGF signaling in the integrated data or literature? Distinguish direct target relationships from indirect pathway effects.",
+    "rerank_seconds": 0.3332,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3498,
+    "score_max": -1.1151576042175293,
+    "score_mean": -3.1040943463643393,
+    "scores": [
+      -1.1151576042175293,
+      -3.5089526176452637,
+      -4.688172817230225
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.",
+      "MicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.",
+      "Fibroblast growth factor 19 (FGF19) has received increasing attention in metabolic disorders of the skeletal system, but its role in cartilage development is poorly understood. In the present study, we used ex vivo metatarsal organ model for nascent cartilage and an AAV-FGF19 overexpression model for adolescent growth plates to demonstrate the influence of FGF19 on cartilage development. We found that FGF19 could impair chondrocyte maturation at the neonatal stage and decrease growth plate thickness at the adolescent stage. FGF19 reduces chondrogenic differentiation of mesenchymal stem cells and the chondrocyte maturation via downregulation of Wnt/beta-catenin signalling. FGF19-mediated chondrocyte maturation and cartilage differentiation require the participation of FGFR4 with the aid of beta-klotho (KLB). FGF19 signalling entered the cytoplasm through FGFR4, activated the expression of SFRP1, WIF1 and DKK2, which are antagonists of beta-catenin signalling, and hindered chondrocyte proliferation and cartilage growth. This study demonstrates for the first time that FGF19 inhibits cartilage development through the FGFR4/beta-catenin axis, providing evidence for the vital role of FGF19 in growth plate chondrogenesis and endochondral ossification."
+    ],
+    "selected_pmids": [
+      "40001587",
+      "36979151",
+      "40765829"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0165
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q174.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40001587",
+    "36979151",
+    "40765829"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:37:08.643212+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40001587, relevance: -1.1152) ---\nBACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.\n\n--- Abstract 2 (PMID: 36979151, relevance: -3.5090) ---\nMicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.\n\n--- Abstract 3 (PMID: 40765829, relevance: -4.6882) ---\nFibroblast growth factor 19 (FGF19) has received increasing attention in metabolic disorders of the skeletal system, but its role in cartilage development is poorly understood. In the present study, we used ex vivo metatarsal organ model for nascent cartilage and an AAV-FGF19 overexpression model for adolescent growth plates to demonstrate the influence of FGF19 on cartilage development. We found that FGF19 could impair chondrocyte maturation at the neonatal stage and decrease growth plate thickness at the adolescent stage. FGF19 reduces chondrogenic differentiation of mesenchymal stem cells and the chondrocyte maturation via downregulation of Wnt/beta-catenin signalling. FGF19-mediated chondrocyte maturation and cartilage differentiation require the participation of FGFR4 with the aid of beta-klotho (KLB). FGF19 signalling entered the cytoplasm through FGFR4, activated the expression of SFRP1, WIF1 and DKK2, which are antagonists of beta-catenin signalling, and hindered chondrocyte proliferation and cartilage growth. This study demonstrates for the first time that FGF19 inhibits cartilage development through the FGFR4/beta-catenin axis, providing evidence for the vital role of FGF19 in growth plate chondrogenesis and endochondral ossification.\n\n\n\n**Question:**\nWhat evidence, if any, links Minoxidil to FGF signaling in the integrated data or literature? Distinguish direct target relationships from indirect pathway effects.",
+  "vector_context": "--- Abstract 1 (PMID: 40001587, relevance: -1.1152) ---\nBACKGROUND: Aberrant expression and mutations in the fibroblast growth factor (FGF) family play crucial roles in cell differentiation, growth, and migration, contributing to tumor progression across various cancers. Nasopharyngeal carcinoma (NPC), a malignancy prevalent in East Asia, is primarily treated with radiotherapy; however, radioresistance remains a major challenge, leading to recurrence and poor outcomes. While FGFs are known to activate signaling pathways such as MAPK, PI3K/AKT, and JAK/STAT to promote cancer progression, the specific role of individual FGFs in NPC radioresistance remains unclear. Emerging evidence highlights FGF5 as a key player in NPC progression, metastasis, and radioresistance, underscoring its potential as a therapeutic target to overcome treatment resistance and improve clinical outcomes. METHODS: We analyzed single nucleotide variation (SNV) data, gene expression, and DNA methylation patterns using cancer datasets, including TCGA and GTEx, to investigate FGF5 expression. Differentially expressed genes (DEGs) were identified and interpreted using functional enrichment analysis, while survival analysis and gene set enrichment analysis (GSEA) were conducted to identify clinical correlations. DNA methylation patterns were specifically assessed using the HumanMethylation850 BeadChips on tissue samples from nine recurrent and nine non-recurrent NPC patients. Functional assays, including cell viability, migration, invasion, and clonogenic survival assays, were performed to evaluate the effects of FGF5 on NPC cell behavior in vitro and in vivo. RESULTS: FGF5 showed elevated SNV frequencies across multiple cancers, particularly in HNSC and NPC. DNA methylation analysis revealed an inverse relationship between FGF5 expression and methylation levels in recurrent NPC tumors. Functional assays demonstrated that FGF5 enhances migration, invasion, and radioresistance in NPC cells. High FGF5 expression was associated with reduced distant metastasis-free survival (DMFS) and increased radioresistance, highlighting its role in metastatic progression and recurrence. CONCLUSIONS: FGF5 plays a significant role in the progression and recurrence of nasopharyngeal carcinoma. Its elevated expression correlates with increased migration, invasion, and radioresistance as well as reduced distant metastasis-free survival. These findings suggest that FGF5 contributes to the metastatic and recurrence potential of NPC, making it a potential target for therapeutic intervention in treating these cancers.\n\n--- Abstract 2 (PMID: 36979151, relevance: -3.5090) ---\nMicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.\n\n--- Abstract 3 (PMID: 40765829, relevance: -4.6882) ---\nFibroblast growth factor 19 (FGF19) has received increasing attention in metabolic disorders of the skeletal system, but its role in cartilage development is poorly understood. In the present study, we used ex vivo metatarsal organ model for nascent cartilage and an AAV-FGF19 overexpression model for adolescent growth plates to demonstrate the influence of FGF19 on cartilage development. We found that FGF19 could impair chondrocyte maturation at the neonatal stage and decrease growth plate thickness at the adolescent stage. FGF19 reduces chondrogenic differentiation of mesenchymal stem cells and the chondrocyte maturation via downregulation of Wnt/beta-catenin signalling. FGF19-mediated chondrocyte maturation and cartilage differentiation require the participation of FGFR4 with the aid of beta-klotho (KLB). FGF19 signalling entered the cytoplasm through FGFR4, activated the expression of SFRP1, WIF1 and DKK2, which are antagonists of beta-catenin signalling, and hindered chondrocyte proliferation and cartilage growth. This study demonstrates for the first time that FGF19 inhibits cartilage development through the FGFR4/beta-catenin axis, providing evidence for the vital role of FGF19 in growth plate chondrogenesis and endochondral ossification.\n\n"
+}

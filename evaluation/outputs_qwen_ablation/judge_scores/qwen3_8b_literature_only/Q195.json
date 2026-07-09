@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q195",
+      "randomization_seed": "20260706:Q195:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q195",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q195",
+      "error": null,
+      "id": "batch_req_6a4f85d8d0488190af2f7edc5a63f84b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594521,
+          "created_at": 1783594460,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f8f0aeb358f7c05006a4f7ddcc3f48193a2be11813f4e5d31",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q195"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f8f0aeb358f7c05006a4f7ddd93a481938a1aaf44c53a7754",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether Dutasteride has evidence linking it to LGR4 and separates direct evidence from speculative connections.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Central conclusion is correct: no direct Dutasteride-LGR4 evidence is provided. However, it incorrectly mentions atherosclerosis and underuses the supplied graph evidence showing Dutasteride targets SRD5A2 and AR.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers the main conclusion but omits key supplied details such as Dutasteride's known targets, their pathways, and the LGR4-related cancer/Wnt context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming unsupported direct or pathway-level links.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question and explicitly distinguishes direct drug-gene evidence from speculative pathway-level connections.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that Dutasteride targets SRD5A2 and AR and that no direct LGR4 association is present in the supplied evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Includes the important graph-based target and pathway information, though it does not discuss the vector evidence on LGR4/Wnt/cancer phenotypes.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly qualifies that any Dutasteride-LGR4 relevance would be speculative and unsupported by the given data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f8f0aeb358f7c05006a4f7e0d4c34819390f2ca4ad3684ac7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2180,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1753,
+            "output_tokens_details": {
+              "reasoning_tokens": 1404
+            },
+            "total_tokens": 3933
+          },
+          "user": null
+        },
+        "request_id": "dcf77821-e3ce-480d-8a03-16521fbc92bd",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether Dutasteride has evidence linking it to LGR4 and separates direct evidence from speculative connections.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Central conclusion is correct: no direct Dutasteride-LGR4 evidence is provided. However, it incorrectly mentions atherosclerosis and underuses the supplied graph evidence showing Dutasteride targets SRD5A2 and AR.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the main conclusion but omits key supplied details such as Dutasteride's known targets, their pathways, and the LGR4-related cancer/Wnt context.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from claiming unsupported direct or pathway-level links.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q195",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q195.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.787782+00:00"
+}

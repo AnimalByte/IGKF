@@ -1,0 +1,178 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q173.json",
+      "question_id": "Q173",
+      "sha256": "f976629250fa5c94ac86b15f85a8248bc19cda87e6f1c47aa37340065c19a235"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q173.json",
+      "question_id": "Q173",
+      "sha256": "cca2af63d988e51a9c0548a6d78c479f965c8028aa3e6f015bab6116dc60e1d1"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.0889,
+  "git_commit": null,
+  "graph_context": "Entity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Compare the annotated functional consequences and gene mappings of rs6152 and rs1160312. What evidence supports links to AR and FGF5, respectively?",
+  "parsed_answer": "The provided graph context only includes information about rs6152 and does not provide any data about rs1160312. Therefore, I cannot compare the annotated functional consequences and gene mappings of rs6152 and rs1160312.\n\nHowever, based on the available data for rs6152:\n\n- **Functional Consequences**: rs6152 is associated with the gene *AR* (Androgen Receptor). It is implicated in pathways such as the *Nuclear Receptor transcription pathway* and *RUNX2 regulates osteoblast differentiation*. The gene *AR* is involved in processes like *positive regulation of transcription by RNA polymerase III* and *protein-containing complex*. It also interacts with proteins such as *DES*, *UBE2D1*, *RBL1*, *FAM83C*, and *SRPK1*.\n\n- **Gene Mapping**: rs6152 is linked to *AR*, and it is associated with several diseases, including *androgen insensitivity syndrome*, *prostate cancer*, and *Kennedy disease*. It is also targeted by drugs such as *CHLOROPHACINONE*, *FENTANYL CITRATE*, and *PHENYL SALICYLATE*.\n\n- **Evidence Supporting Link to AR**: The direct association of rs6152 with the *AR* gene is supported by its implication in the *Nuclear Receptor transcription pathway* and its interactions with proteins that are known to interact with *AR*.\n\n- **Evidence Supporting Link to FGF5**: There is no information provided in the graph context about rs6152 being linked to *FGF5* (Fibroblast Growth Factor 5). Therefore, no evidence can be provided for a link between rs6152 and *FGF5*.\n\nIn summary, the graph context does not provide data for rs1160312, and no evidence is available for a link between rs6152 and *FGF5*.",
+  "question_id": "Q173",
+  "question_text": "Compare the annotated functional consequences and gene mappings of rs6152 and rs1160312. What evidence supports links to AR and FGF5, respectively?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 424,
+    "prompt_token_count": 691,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided graph context only includes information about rs6152 and does not provide any data about rs1160312. Therefore, I cannot compare the annotated functional consequences and gene mappings of rs6152 and rs1160312.\n\nHowever, based on the available data for rs6152:\n\n- **Functional Consequences**: rs6152 is associated with the gene *AR* (Androgen Receptor). It is implicated in pathways such as the *Nuclear Receptor transcription pathway* and *RUNX2 regulates osteoblast differentiation*. The gene *AR* is involved in processes like *positive regulation of transcription by RNA polymerase III* and *protein-containing complex*. It also interacts with proteins such as *DES*, *UBE2D1*, *RBL1*, *FAM83C*, and *SRPK1*.\n\n- **Gene Mapping**: rs6152 is linked to *AR*, and it is associated with several diseases, including *androgen insensitivity syndrome*, *prostate cancer*, and *Kennedy disease*. It is also targeted by drugs such as *CHLOROPHACINONE*, *FENTANYL CITRATE*, and *PHENYL SALICYLATE*.\n\n- **Evidence Supporting Link to AR**: The direct association of rs6152 with the *AR* gene is supported by its implication in the *Nuclear Receptor transcription pathway* and its interactions with proteins that are known to interact with *AR*.\n\n- **Evidence Supporting Link to FGF5**: There is no information provided in the graph context about rs6152 being linked to *FGF5* (Fibroblast Growth Factor 5). Therefore, no evidence can be provided for a link between rs6152 and *FGF5*.\n\nIn summary, the graph context does not provide data for rs1160312, and no evidence is available for a link between rs6152 and *FGF5*."
+      }
+    ],
+    "created": 1783563548,
+    "id": "cmpl-ffc4ab78-144a-4922-a58b-552e018df036",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 424,
+      "prompt_tokens": 670,
+      "total_tokens": 1094
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS",
+    "found_specific_entity": true,
+    "graph_context": "Entity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS",
+    "graph_context_length": 1912,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0159,
+    "original_retrieval_query": "Compare the annotated functional consequences and gene mappings of rs6152 and rs1160312. What evidence supports links to AR and FGF5, respectively?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "compare"
+      },
+      {
+        "label": "ENTITY",
+        "text": "annotated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "functional"
+      },
+      {
+        "label": "ENTITY",
+        "text": "consequences"
+      },
+      {
+        "label": "ENTITY",
+        "text": "gene mappings"
+      },
+      {
+        "label": "ENTITY",
+        "text": "rs6152"
+      },
+      {
+        "label": "ENTITY",
+        "text": "rs1160312"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "ar"
+      },
+      {
+        "label": "ENTITY",
+        "text": "fgf5"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0159,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q173.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:19:12.848214+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS\n\n**Question:**\nCompare the annotated functional consequences and gene mappings of rs6152 and rs1160312. What evidence supports links to AR and FGF5, respectively?",
+  "vector_context": ""
+}

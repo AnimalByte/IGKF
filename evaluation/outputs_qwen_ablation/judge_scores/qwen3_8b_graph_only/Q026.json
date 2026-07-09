@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q026",
+      "randomization_seed": "20260706:Q026:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q026",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q026",
+      "error": null,
+      "id": "batch_req_6a4f85ce1e9c8190af593efdac7ab337",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594479,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_051e48a6a735587a006a4f7dd9bf1c81958a3e8887cc03862a",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q026"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_051e48a6a735587a006a4f7ddaee848195a675f009d24ef0b0",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses whether the evidence supports identifying a regulatory element, but focuses on literature context rather than the integrated graph context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly abstains because no regulatory element is provided, though it overlooks that rs1160312 is mentioned in the graph context.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the key conclusion that the regulatory element cannot be determined, but does not explicitly note the graph only lists LINC01432 and disease associations.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inventing a regulatory element when evidence is insufficient.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question using the provided graph context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied context does not identify a regulatory element for rs1160312.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the necessary point that no regulatory-element information is present and therefore the specific element cannot be named.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_051e48a6a735587a006a4f7de7a9f88195bcf5b4cfa9311c80",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2032,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 699,
+            "output_tokens_details": {
+              "reasoning_tokens": 415
+            },
+            "total_tokens": 2731
+          },
+          "user": null
+        },
+        "request_id": "bb3de9ed-9bc6-40b1-97e2-7bdf96aacf60",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question using the provided graph context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the supplied context does not identify a regulatory element for rs1160312.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the necessary point that no regulatory-element information is present and therefore the specific element cannot be named.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q026",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q026.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.722540+00:00"
+}

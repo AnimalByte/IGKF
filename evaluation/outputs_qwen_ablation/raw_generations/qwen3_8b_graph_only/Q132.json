@@ -1,0 +1,154 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q132.json",
+      "question_id": "Q132",
+      "sha256": "438ea5d03dc3265502f764616858e06b6c8cc1db8dca39a061ee50e493138916"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q132.json",
+      "question_id": "Q132",
+      "sha256": "29da341be022761569f55ed2fbad8cfc1f8e6787ea249dc6a58cd1d2d6f783d6"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.0521,
+  "git_commit": null,
+  "graph_context": "Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+  "parsed_answer": "Based on the provided IGKF graph context, Dutasteride is a drug that targets the genes **SRD5A2** and **AR** (androgen receptor). These genes are involved in **androgen biosynthesis**, which is a key pathway in the development of androgenetic alopecia (pattern hair loss).\n\nThe mechanism of action of Dutasteride in the context of hair-loss treatment is likely related to its inhibition of **5\u03b1-reductase** (encoded by the **SRD5A2** gene), which converts testosterone to dihydrotestosterone (DHT). DHT is a potent androgen that contributes to hair follicle miniaturization and hair loss. By inhibiting this enzyme, Dutasteride reduces DHT levels, thereby preventing the androgenic effects that lead to hair loss.\n\nWhile the graph does not explicitly mention hair loss or androgenetic alopecia, the involvement of **SRD5A2** and **AR** in **androgen biosynthesis** and the known clinical use of Dutasteride in treating hair loss strongly support this mechanism.",
+  "question_id": "Q132",
+  "question_text": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 221,
+    "prompt_token_count": 248,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided IGKF graph context, Dutasteride is a drug that targets the genes **SRD5A2** and **AR** (androgen receptor). These genes are involved in **androgen biosynthesis**, which is a key pathway in the development of androgenetic alopecia (pattern hair loss).\n\nThe mechanism of action of Dutasteride in the context of hair-loss treatment is likely related to its inhibition of **5\u03b1-reductase** (encoded by the **SRD5A2** gene), which converts testosterone to dihydrotestosterone (DHT). DHT is a potent androgen that contributes to hair follicle miniaturization and hair loss. By inhibiting this enzyme, Dutasteride reduces DHT levels, thereby preventing the androgenic effects that lead to hair loss.\n\nWhile the graph does not explicitly mention hair loss or androgenetic alopecia, the involvement of **SRD5A2** and **AR** in **androgen biosynthesis** and the known clinical use of Dutasteride in treating hair loss strongly support this mechanism."
+      }
+    ],
+    "created": 1783563149,
+    "id": "cmpl-022348da-0519-407d-a7a7-29f4df1764cb",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 221,
+      "prompt_tokens": 227,
+      "total_tokens": 448
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "graph_context_length": 416,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0242,
+    "original_retrieval_query": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "mechanism"
+      },
+      {
+        "label": "ENTITY",
+        "text": "action"
+      },
+      {
+        "label": "ENTITY",
+        "text": "dutasteride"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair-loss treatment"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0242,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q132.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:12:31.969413+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\n**Question:**\nWhat is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+  "vector_context": ""
+}

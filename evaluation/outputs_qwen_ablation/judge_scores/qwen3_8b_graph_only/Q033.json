@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q033",
+      "randomization_seed": "20260706:Q033:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q033",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q033",
+      "error": null,
+      "id": "batch_req_6a4f85cf11c48190a0199e2f06f5003b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783596328,
+          "created_at": 1783596321,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_08fc1e321f3a986f006a4f852141f081939acd2de0cd3fe4c9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q033"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_08fc1e321f3a986f006a4f8521f75c8193ad05ef528e17daef",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the question but bases the response on absence in the literature context rather than the integrated graph evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Incorrect against the reference evidence, which states rs929626 is in regulatory element EH38D3783439 labeled dELS.\"\n      },\n      \"completeness\": {\n        \"score\": 1,\n        \"rationale\": \"Omits the key affirmative answer and the regulatory element identifier/label.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Abstains despite sufficient provided evidence in the integrated data.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers that rs929626 is within a regulatory element.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly identifies the regulatory element label as dELS, but omits the specific element ID EH38D3783439.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Includes the label but not the regulatory element identifier, which is important for identifying which element.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately provides a confident answer supported by the reference evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_08fc1e321f3a986f006a4f8526070c81938152026bbc26a7d5",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2304,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 775,
+            "output_tokens_details": {
+              "reasoning_tokens": 406
+            },
+            "total_tokens": 3079
+          },
+          "user": null
+        },
+        "request_id": "d78d5121-4001-4d88-86b7-2de5daac2f75",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that rs929626 is within a regulatory element.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly identifies the regulatory element label as dELS, but omits the specific element ID EH38D3783439.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Includes the label but not the regulatory element identifier, which is important for identifying which element.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately provides a confident answer supported by the reference evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q033",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q033.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.725444+00:00"
+}

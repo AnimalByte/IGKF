@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41722875",
+    "40670831",
+    "38640016",
+    "40016272",
+    "41613784",
+    "42377636",
+    "34552771",
+    "36067318",
+    "42397624",
+    "41111418",
+    "41936040",
+    "42361668",
+    "41241001",
+    "42159682",
+    "41184641"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q128.json",
+      "question_id": "Q128",
+      "sha256": "a2a84a5bdfd9b1a8fb7cfd6dc2b5b3af4fa7f663d4015a9cc6ebbf740aa02480"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q128.json",
+      "question_id": "Q128",
+      "sha256": "40a5863e76900860153d92842b18870acb24e315102fe2bbc03de230fb9c8b0f"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What evidence, if any, connects Minoxidil to androgen metabolism in the integrated data?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.9236,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What evidence, if any, connects Minoxidil to androgen metabolism in the integrated data?",
+  "parsed_answer": "There is no evidence provided in the supplied literature context that connects Minoxidil to androgen metabolism. The abstracts discuss Tamoxifen resistance, lamotrigine's effects on breast cancer, and oncocytic adrenal neoplasms, but none mention Minoxidil or its relationship to androgen metabolism.",
+  "question_id": "Q128",
+  "question_text": "What evidence, if any, connects Minoxidil to androgen metabolism in the integrated data?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 65,
+    "prompt_token_count": 1108,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "There is no evidence provided in the supplied literature context that connects Minoxidil to androgen metabolism. The abstracts discuss Tamoxifen resistance, lamotrigine's effects on breast cancer, and oncocytic adrenal neoplasms, but none mention Minoxidil or its relationship to androgen metabolism."
+      }
+    ],
+    "created": 1783564406,
+    "id": "cmpl-a1f20d56-3dd2-4a08-ba57-c63ecad79b1a",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 65,
+      "prompt_tokens": 1087,
+      "total_tokens": 1152
+    }
+  },
+  "reranker_scores": [
+    -7.367135047912598,
+    -7.465455055236816,
+    -8.792637825012207
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      43.36302947998047,
+      45.7156982421875,
+      47.26166534423828,
+      47.715476989746094,
+      47.753028869628906,
+      48.130958557128906,
+      48.1597785949707,
+      48.27836990356445,
+      48.61424255371094,
+      48.73902130126953,
+      48.7641716003418,
+      48.93547821044922,
+      48.991355895996094,
+      49.02193832397461,
+      49.079654693603516
+    ],
+    "candidate_pmids": [
+      "41722875",
+      "40670831",
+      "38640016",
+      "40016272",
+      "41613784",
+      "42377636",
+      "34552771",
+      "36067318",
+      "42397624",
+      "41111418",
+      "41936040",
+      "42361668",
+      "41241001",
+      "42159682",
+      "41184641"
+    ],
+    "expanded_retrieval_query": "What evidence, if any, connects Minoxidil to androgen metabolism in the integrated data?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40670831, relevance: -7.3671) ---\nTamoxifen is a critical drug for the treatment of oestrogen receptor (ER)-positive breast cancer (BC), which represents the majority of BC subtypes. However, many BC tumours that initially respond eventually develop acquired Tamoxifen resistance. Bioinformatics analysis was conducted on genes affected by Tamoxifen and upregulated in Tamoxifen-resistant cells to identify the biological processes associated with Tamoxifen resistance. Metabolomics analysis was conducted to identify the metabolites that were altered in BC with tamoxifen resistance. Resistance to Tamoxifen was evaluated by cell viability, proliferation, invasion, and colony formation in vitro, and by tumour growth in vivo. Metabolomic profiling and the detection of relevant enzymes and metabolites corroborated the metabolic reprogramming towards glycolysis in tamoxifen - resistant BC. The produced lactic acid induced the lactylation of ZMIZ1. This post-translational modification at K843 (but not K537) increased protein stability by suppressing SUMOylation and ubiquitination. The elevated total level of ZMIZ1 increased the enrichment of ZMIZ1 binding to Nanog, resulting in increased transcriptional activity of Nanog, including in OCT4 and NPC2 genes. Therefore, it leads to increased stemness and cholesterol accumulation in Tamoxifen-resistant BC. Knockdown of ZMIZ1 impaired Tamoxifen resistance, but this effect was reversed by Nanog overexpression. In summary, this study identified an important mechanism underlying Tamoxifen resistance and revealed a potential association of glucose glycolysis with cholesterol metabolism through the ZMIZ1/Nanog/NPC2 axis.\n\n--- Abstract 2 (PMID: 42159682, relevance: -7.4655) ---\nLamotrigine, a clinically approved anticonvulsant, has recently gained interest for its potential anticancer effects. However, the molecular mechanisms underlying its activity in breast cancer remain poorly understood. Here, an integrated mass spectrometry-based proteomic strategy combining data-independent acquisition (DIA) and thermal proteome profiling (TPP) was applied to investigate the cellular effects and potential targets of lamotrigine in the human breast cancer cell line MCF-7. The DIA-based quantitative approach identified 6622 proteins, of which 142 were significantly modulated following lamotrigine exposure. Differentially expressed proteins were mainly associated with mitochondrial energy metabolism, chromatin organization, and protein translation. TPP experiments identified significant thermal stability alterations in ABRAXAS2, MT-CYB, TMEM97, and MTA2 upon lamotrigine treatment. Notably, both DIA and TPP analyses highlighted mitochondrial alterations, with consistent involvement of MT-CYB, suggesting mitochondrial dysfunction as a potential central mechanism of lamotrigine's action. Overall, these findings characterize proteome-level alterations induced by lamotrigine and support its further evaluation in breast cancer.\n\n--- Abstract 3 (PMID: 41936040, relevance: -8.7926) ---\nOncocytic adrenal neoplasms are rare adrenocortical tumors characterized by abundant eosinophilic cytoplasm due to massive mitochondrial accumulation. Their biological behavior is often difficult to predict, and various diagnostic systems-including the Lin-Weiss-Bisceglia system, the Helsinki score, and the reticulin algorithm-are used to assess their malignant potential. We report a case of an oncocytic adrenocortical carcinoma associated with Cushing's syndrome and hyperandrogenemia in a 34-year-old woman. Histologically, the tumor showed diffuse growth of eosinophilic cells with marked pleomorphism and focal capsular invasion. Immunohistochemistry confirmed adrenocortical origin and cortisol production, with a Ki-67 labeling index of 25%. Ultrastructural examination revealed densely packed mitochondria with lamellar and tubulovesicular cristae, accompanied by numerous whorled smooth endoplasmic reticulum formations, suggesting active remodeling of the endoplasmic reticulum. Whole-exome sequencing identified a pathogenic GNAS R201S mutation, together with copy number losses of ARID1A, CDKN2A, and ZNRF3 with widespread copy number alteration. Despite multiple adverse prognostic indicators, the patient has remained disease-free for over 5 years following adrenalectomy and adjuvant low-dose mitotane therapy. These findings suggest that GNAS activation may drive steroidogenesis while attenuating malignant progression, as demonstrated by integrated morphologic and genomic assessment in this case.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What evidence, if any, connects Minoxidil to androgen metabolism in the integrated data?",
+    "rerank_seconds": 0.334,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3523,
+    "score_max": -7.367135047912598,
+    "score_mean": -7.875075976053874,
+    "scores": [
+      -7.367135047912598,
+      -7.465455055236816,
+      -8.792637825012207
+    ],
+    "selected_abstracts": [
+      "Tamoxifen is a critical drug for the treatment of oestrogen receptor (ER)-positive breast cancer (BC), which represents the majority of BC subtypes. However, many BC tumours that initially respond eventually develop acquired Tamoxifen resistance. Bioinformatics analysis was conducted on genes affected by Tamoxifen and upregulated in Tamoxifen-resistant cells to identify the biological processes associated with Tamoxifen resistance. Metabolomics analysis was conducted to identify the metabolites that were altered in BC with tamoxifen resistance. Resistance to Tamoxifen was evaluated by cell viability, proliferation, invasion, and colony formation in vitro, and by tumour growth in vivo. Metabolomic profiling and the detection of relevant enzymes and metabolites corroborated the metabolic reprogramming towards glycolysis in tamoxifen - resistant BC. The produced lactic acid induced the lactylation of ZMIZ1. This post-translational modification at K843 (but not K537) increased protein stability by suppressing SUMOylation and ubiquitination. The elevated total level of ZMIZ1 increased the enrichment of ZMIZ1 binding to Nanog, resulting in increased transcriptional activity of Nanog, including in OCT4 and NPC2 genes. Therefore, it leads to increased stemness and cholesterol accumulation in Tamoxifen-resistant BC. Knockdown of ZMIZ1 impaired Tamoxifen resistance, but this effect was reversed by Nanog overexpression. In summary, this study identified an important mechanism underlying Tamoxifen resistance and revealed a potential association of glucose glycolysis with cholesterol metabolism through the ZMIZ1/Nanog/NPC2 axis.",
+      "Lamotrigine, a clinically approved anticonvulsant, has recently gained interest for its potential anticancer effects. However, the molecular mechanisms underlying its activity in breast cancer remain poorly understood. Here, an integrated mass spectrometry-based proteomic strategy combining data-independent acquisition (DIA) and thermal proteome profiling (TPP) was applied to investigate the cellular effects and potential targets of lamotrigine in the human breast cancer cell line MCF-7. The DIA-based quantitative approach identified 6622 proteins, of which 142 were significantly modulated following lamotrigine exposure. Differentially expressed proteins were mainly associated with mitochondrial energy metabolism, chromatin organization, and protein translation. TPP experiments identified significant thermal stability alterations in ABRAXAS2, MT-CYB, TMEM97, and MTA2 upon lamotrigine treatment. Notably, both DIA and TPP analyses highlighted mitochondrial alterations, with consistent involvement of MT-CYB, suggesting mitochondrial dysfunction as a potential central mechanism of lamotrigine's action. Overall, these findings characterize proteome-level alterations induced by lamotrigine and support its further evaluation in breast cancer.",
+      "Oncocytic adrenal neoplasms are rare adrenocortical tumors characterized by abundant eosinophilic cytoplasm due to massive mitochondrial accumulation. Their biological behavior is often difficult to predict, and various diagnostic systems-including the Lin-Weiss-Bisceglia system, the Helsinki score, and the reticulin algorithm-are used to assess their malignant potential. We report a case of an oncocytic adrenocortical carcinoma associated with Cushing's syndrome and hyperandrogenemia in a 34-year-old woman. Histologically, the tumor showed diffuse growth of eosinophilic cells with marked pleomorphism and focal capsular invasion. Immunohistochemistry confirmed adrenocortical origin and cortisol production, with a Ki-67 labeling index of 25%. Ultrastructural examination revealed densely packed mitochondria with lamellar and tubulovesicular cristae, accompanied by numerous whorled smooth endoplasmic reticulum formations, suggesting active remodeling of the endoplasmic reticulum. Whole-exome sequencing identified a pathogenic GNAS R201S mutation, together with copy number losses of ARID1A, CDKN2A, and ZNRF3 with widespread copy number alteration. Despite multiple adverse prognostic indicators, the patient has remained disease-free for over 5 years following adrenalectomy and adjuvant low-dose mitotane therapy. These findings suggest that GNAS activation may drive steroidogenesis while attenuating malignant progression, as demonstrated by integrated morphologic and genomic assessment in this case."
+    ],
+    "selected_pmids": [
+      "40670831",
+      "42159682",
+      "41936040"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0181
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q128.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40670831",
+    "42159682",
+    "41936040"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:33:27.165618+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40670831, relevance: -7.3671) ---\nTamoxifen is a critical drug for the treatment of oestrogen receptor (ER)-positive breast cancer (BC), which represents the majority of BC subtypes. However, many BC tumours that initially respond eventually develop acquired Tamoxifen resistance. Bioinformatics analysis was conducted on genes affected by Tamoxifen and upregulated in Tamoxifen-resistant cells to identify the biological processes associated with Tamoxifen resistance. Metabolomics analysis was conducted to identify the metabolites that were altered in BC with tamoxifen resistance. Resistance to Tamoxifen was evaluated by cell viability, proliferation, invasion, and colony formation in vitro, and by tumour growth in vivo. Metabolomic profiling and the detection of relevant enzymes and metabolites corroborated the metabolic reprogramming towards glycolysis in tamoxifen - resistant BC. The produced lactic acid induced the lactylation of ZMIZ1. This post-translational modification at K843 (but not K537) increased protein stability by suppressing SUMOylation and ubiquitination. The elevated total level of ZMIZ1 increased the enrichment of ZMIZ1 binding to Nanog, resulting in increased transcriptional activity of Nanog, including in OCT4 and NPC2 genes. Therefore, it leads to increased stemness and cholesterol accumulation in Tamoxifen-resistant BC. Knockdown of ZMIZ1 impaired Tamoxifen resistance, but this effect was reversed by Nanog overexpression. In summary, this study identified an important mechanism underlying Tamoxifen resistance and revealed a potential association of glucose glycolysis with cholesterol metabolism through the ZMIZ1/Nanog/NPC2 axis.\n\n--- Abstract 2 (PMID: 42159682, relevance: -7.4655) ---\nLamotrigine, a clinically approved anticonvulsant, has recently gained interest for its potential anticancer effects. However, the molecular mechanisms underlying its activity in breast cancer remain poorly understood. Here, an integrated mass spectrometry-based proteomic strategy combining data-independent acquisition (DIA) and thermal proteome profiling (TPP) was applied to investigate the cellular effects and potential targets of lamotrigine in the human breast cancer cell line MCF-7. The DIA-based quantitative approach identified 6622 proteins, of which 142 were significantly modulated following lamotrigine exposure. Differentially expressed proteins were mainly associated with mitochondrial energy metabolism, chromatin organization, and protein translation. TPP experiments identified significant thermal stability alterations in ABRAXAS2, MT-CYB, TMEM97, and MTA2 upon lamotrigine treatment. Notably, both DIA and TPP analyses highlighted mitochondrial alterations, with consistent involvement of MT-CYB, suggesting mitochondrial dysfunction as a potential central mechanism of lamotrigine's action. Overall, these findings characterize proteome-level alterations induced by lamotrigine and support its further evaluation in breast cancer.\n\n--- Abstract 3 (PMID: 41936040, relevance: -8.7926) ---\nOncocytic adrenal neoplasms are rare adrenocortical tumors characterized by abundant eosinophilic cytoplasm due to massive mitochondrial accumulation. Their biological behavior is often difficult to predict, and various diagnostic systems-including the Lin-Weiss-Bisceglia system, the Helsinki score, and the reticulin algorithm-are used to assess their malignant potential. We report a case of an oncocytic adrenocortical carcinoma associated with Cushing's syndrome and hyperandrogenemia in a 34-year-old woman. Histologically, the tumor showed diffuse growth of eosinophilic cells with marked pleomorphism and focal capsular invasion. Immunohistochemistry confirmed adrenocortical origin and cortisol production, with a Ki-67 labeling index of 25%. Ultrastructural examination revealed densely packed mitochondria with lamellar and tubulovesicular cristae, accompanied by numerous whorled smooth endoplasmic reticulum formations, suggesting active remodeling of the endoplasmic reticulum. Whole-exome sequencing identified a pathogenic GNAS R201S mutation, together with copy number losses of ARID1A, CDKN2A, and ZNRF3 with widespread copy number alteration. Despite multiple adverse prognostic indicators, the patient has remained disease-free for over 5 years following adrenalectomy and adjuvant low-dose mitotane therapy. These findings suggest that GNAS activation may drive steroidogenesis while attenuating malignant progression, as demonstrated by integrated morphologic and genomic assessment in this case.\n\n\n\n**Question:**\nWhat evidence, if any, connects Minoxidil to androgen metabolism in the integrated data?",
+  "vector_context": "--- Abstract 1 (PMID: 40670831, relevance: -7.3671) ---\nTamoxifen is a critical drug for the treatment of oestrogen receptor (ER)-positive breast cancer (BC), which represents the majority of BC subtypes. However, many BC tumours that initially respond eventually develop acquired Tamoxifen resistance. Bioinformatics analysis was conducted on genes affected by Tamoxifen and upregulated in Tamoxifen-resistant cells to identify the biological processes associated with Tamoxifen resistance. Metabolomics analysis was conducted to identify the metabolites that were altered in BC with tamoxifen resistance. Resistance to Tamoxifen was evaluated by cell viability, proliferation, invasion, and colony formation in vitro, and by tumour growth in vivo. Metabolomic profiling and the detection of relevant enzymes and metabolites corroborated the metabolic reprogramming towards glycolysis in tamoxifen - resistant BC. The produced lactic acid induced the lactylation of ZMIZ1. This post-translational modification at K843 (but not K537) increased protein stability by suppressing SUMOylation and ubiquitination. The elevated total level of ZMIZ1 increased the enrichment of ZMIZ1 binding to Nanog, resulting in increased transcriptional activity of Nanog, including in OCT4 and NPC2 genes. Therefore, it leads to increased stemness and cholesterol accumulation in Tamoxifen-resistant BC. Knockdown of ZMIZ1 impaired Tamoxifen resistance, but this effect was reversed by Nanog overexpression. In summary, this study identified an important mechanism underlying Tamoxifen resistance and revealed a potential association of glucose glycolysis with cholesterol metabolism through the ZMIZ1/Nanog/NPC2 axis.\n\n--- Abstract 2 (PMID: 42159682, relevance: -7.4655) ---\nLamotrigine, a clinically approved anticonvulsant, has recently gained interest for its potential anticancer effects. However, the molecular mechanisms underlying its activity in breast cancer remain poorly understood. Here, an integrated mass spectrometry-based proteomic strategy combining data-independent acquisition (DIA) and thermal proteome profiling (TPP) was applied to investigate the cellular effects and potential targets of lamotrigine in the human breast cancer cell line MCF-7. The DIA-based quantitative approach identified 6622 proteins, of which 142 were significantly modulated following lamotrigine exposure. Differentially expressed proteins were mainly associated with mitochondrial energy metabolism, chromatin organization, and protein translation. TPP experiments identified significant thermal stability alterations in ABRAXAS2, MT-CYB, TMEM97, and MTA2 upon lamotrigine treatment. Notably, both DIA and TPP analyses highlighted mitochondrial alterations, with consistent involvement of MT-CYB, suggesting mitochondrial dysfunction as a potential central mechanism of lamotrigine's action. Overall, these findings characterize proteome-level alterations induced by lamotrigine and support its further evaluation in breast cancer.\n\n--- Abstract 3 (PMID: 41936040, relevance: -8.7926) ---\nOncocytic adrenal neoplasms are rare adrenocortical tumors characterized by abundant eosinophilic cytoplasm due to massive mitochondrial accumulation. Their biological behavior is often difficult to predict, and various diagnostic systems-including the Lin-Weiss-Bisceglia system, the Helsinki score, and the reticulin algorithm-are used to assess their malignant potential. We report a case of an oncocytic adrenocortical carcinoma associated with Cushing's syndrome and hyperandrogenemia in a 34-year-old woman. Histologically, the tumor showed diffuse growth of eosinophilic cells with marked pleomorphism and focal capsular invasion. Immunohistochemistry confirmed adrenocortical origin and cortisol production, with a Ki-67 labeling index of 25%. Ultrastructural examination revealed densely packed mitochondria with lamellar and tubulovesicular cristae, accompanied by numerous whorled smooth endoplasmic reticulum formations, suggesting active remodeling of the endoplasmic reticulum. Whole-exome sequencing identified a pathogenic GNAS R201S mutation, together with copy number losses of ARID1A, CDKN2A, and ZNRF3 with widespread copy number alteration. Despite multiple adverse prognostic indicators, the patient has remained disease-free for over 5 years following adrenalectomy and adjuvant low-dose mitotane therapy. These findings suggest that GNAS activation may drive steroidogenesis while attenuating malignant progression, as demonstrated by integrated morphologic and genomic assessment in this case.\n\n"
+}

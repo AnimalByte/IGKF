@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41501168",
+    "41722875",
+    "42169044",
+    "41866304",
+    "41640146",
+    "42390659",
+    "40414554",
+    "40812719",
+    "41184641",
+    "34552771",
+    "42315371",
+    "31439587",
+    "42294898",
+    "42260572",
+    "41241078"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q132.json",
+      "question_id": "Q132",
+      "sha256": "438ea5d03dc3265502f764616858e06b6c8cc1db8dca39a061ee50e493138916"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q132.json",
+      "question_id": "Q132",
+      "sha256": "29da341be022761569f55ed2fbad8cfc1f8e6787ea249dc6a58cd1d2d6f783d6"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.7549,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+  "parsed_answer": "The literature context provided does not include information about the mechanism of action of Dutasteride in the context of hair-loss treatment. Therefore, I cannot answer this question based on the supplied abstracts.",
+  "question_id": "Q132",
+  "question_text": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 39,
+    "prompt_token_count": 1249,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The literature context provided does not include information about the mechanism of action of Dutasteride in the context of hair-loss treatment. Therefore, I cannot answer this question based on the supplied abstracts."
+      }
+    ],
+    "created": 1783564422,
+    "id": "cmpl-e920bf77-6962-4d75-8361-a267362a930d",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 39,
+      "prompt_tokens": 1228,
+      "total_tokens": 1267
+    }
+  },
+  "reranker_scores": [
+    -2.5731959342956543,
+    -6.067963123321533,
+    -6.75955057144165
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      38.45619583129883,
+      39.705955505371094,
+      41.447696685791016,
+      43.896697998046875,
+      43.959510803222656,
+      44.06963348388672,
+      44.36883544921875,
+      44.81781005859375,
+      44.83014678955078,
+      45.04568099975586,
+      45.17655944824219,
+      45.20151901245117,
+      45.70286560058594,
+      45.739479064941406,
+      45.76241683959961
+    ],
+    "candidate_pmids": [
+      "41501168",
+      "41722875",
+      "42169044",
+      "41866304",
+      "41640146",
+      "42390659",
+      "40414554",
+      "40812719",
+      "41184641",
+      "34552771",
+      "42315371",
+      "31439587",
+      "42294898",
+      "42260572",
+      "41241078"
+    ],
+    "expanded_retrieval_query": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42169044, relevance: -2.5732) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 31439587, relevance: -6.0680) ---\nPURPOSE: In this study, we addressed the underlying mechanisms for the association between enzalutamide (ENZ) treatment and neuroendocrine prostate cancer (NEPC), and the critical involvement of MYCN, and loss of RB1 function in neuroendocrine differentiation (NED) of prostatic epithelial cells, and the development of NEPC. We further sought to determine whether PARP inhibition could suppress NEPC, and to identify molecular determinants of this therapeutic activity. EXPERIMENTAL DESIGN: We used a novel prostate cancer patient-derived xenograft (PDX) treatment model, prostatic adenocarcinoma and NEPC cell lines, an NEPC organoid line, and NEPC xenograft models to address the mechanistic basis of ENZ-induced NED, and to analyze suppression of NED and NEPC growth by PARP inhibition. RESULTS: We identified an ENZ treatment-associated glucocorticoid receptor (GR)-MYCN-CDK5-RB1-E2F1 signaling pathway that drives NED in prostatic adenocarcinoma PDX and cell line models. Mechanistically, long-term ENZ treatment transcriptionally upregulates signaling of the GR-MYCN axis, leading to CDK5R1 and CDK5R2 upregulation, Rb1 phosphorylation, and N-Myc-mediated and E2F1-mediated NED gene expression. Importantly, olaparib (OLA) or talazoparib (TALA) suppressed these activities, and the combination of OLA and dinaciclib (DINA), an inhibitor of CDK2 and CDK5, which also inhibits Rb1 phosphorylation, suppressed NED and significantly improved therapeutic efficiency in NEPC cells in vitro and in NEPC tumors in vivo. CONCLUSIONS: The results of our study indicate an important role of GR-MYCN-CDK5R1/2-RB1-NED signaling in ENZ-induced and PARP inhibitor-suppressed NEPC. We also demonstrated efficacy for OLA+DINA combination therapy in NEPC xenograft models.\n\n--- Abstract 3 (PMID: 42294898, relevance: -6.7596) ---\nVitiligo is a depigmenting disease marked by progressive T cell-driven destruction of melanocytes in the skin, hair, and mucosa. While vitiligo is known to be a T cell-mediated autoimmune disease, its triggers have remained poorly understood and treatment options limited. In this issue of the JCI, Kang et al. demonstrated how hyperglycemia exacerbates vitiligo progression through the succinate/SUCNR1 axis. These findings identify succinate as a potential biomarker for disease activity and highlight an independent pathway for targeting in therapeutic intervention. More broadly, the findings linking succinate and glucose metabolism to vitiligo suggest that lifestyle factors could be modified to slow development of vitiligo and other autoimmune diseases linked to succinate.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+    "rerank_seconds": 0.3418,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3565,
+    "score_max": -2.5731959342956543,
+    "score_mean": -5.133569876352946,
+    "scores": [
+      -2.5731959342956543,
+      -6.067963123321533,
+      -6.75955057144165
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.",
+      "PURPOSE: In this study, we addressed the underlying mechanisms for the association between enzalutamide (ENZ) treatment and neuroendocrine prostate cancer (NEPC), and the critical involvement of MYCN, and loss of RB1 function in neuroendocrine differentiation (NED) of prostatic epithelial cells, and the development of NEPC. We further sought to determine whether PARP inhibition could suppress NEPC, and to identify molecular determinants of this therapeutic activity. EXPERIMENTAL DESIGN: We used a novel prostate cancer patient-derived xenograft (PDX) treatment model, prostatic adenocarcinoma and NEPC cell lines, an NEPC organoid line, and NEPC xenograft models to address the mechanistic basis of ENZ-induced NED, and to analyze suppression of NED and NEPC growth by PARP inhibition. RESULTS: We identified an ENZ treatment-associated glucocorticoid receptor (GR)-MYCN-CDK5-RB1-E2F1 signaling pathway that drives NED in prostatic adenocarcinoma PDX and cell line models. Mechanistically, long-term ENZ treatment transcriptionally upregulates signaling of the GR-MYCN axis, leading to CDK5R1 and CDK5R2 upregulation, Rb1 phosphorylation, and N-Myc-mediated and E2F1-mediated NED gene expression. Importantly, olaparib (OLA) or talazoparib (TALA) suppressed these activities, and the combination of OLA and dinaciclib (DINA), an inhibitor of CDK2 and CDK5, which also inhibits Rb1 phosphorylation, suppressed NED and significantly improved therapeutic efficiency in NEPC cells in vitro and in NEPC tumors in vivo. CONCLUSIONS: The results of our study indicate an important role of GR-MYCN-CDK5R1/2-RB1-NED signaling in ENZ-induced and PARP inhibitor-suppressed NEPC. We also demonstrated efficacy for OLA+DINA combination therapy in NEPC xenograft models.",
+      "Vitiligo is a depigmenting disease marked by progressive T cell-driven destruction of melanocytes in the skin, hair, and mucosa. While vitiligo is known to be a T cell-mediated autoimmune disease, its triggers have remained poorly understood and treatment options limited. In this issue of the JCI, Kang et al. demonstrated how hyperglycemia exacerbates vitiligo progression through the succinate/SUCNR1 axis. These findings identify succinate as a potential biomarker for disease activity and highlight an independent pathway for targeting in therapeutic intervention. More broadly, the findings linking succinate and glucose metabolism to vitiligo suggest that lifestyle factors could be modified to slow development of vitiligo and other autoimmune diseases linked to succinate."
+    ],
+    "selected_pmids": [
+      "42169044",
+      "31439587",
+      "42294898"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0145
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q132.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42169044",
+    "31439587",
+    "42294898"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:33:43.693835+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42169044, relevance: -2.5732) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 31439587, relevance: -6.0680) ---\nPURPOSE: In this study, we addressed the underlying mechanisms for the association between enzalutamide (ENZ) treatment and neuroendocrine prostate cancer (NEPC), and the critical involvement of MYCN, and loss of RB1 function in neuroendocrine differentiation (NED) of prostatic epithelial cells, and the development of NEPC. We further sought to determine whether PARP inhibition could suppress NEPC, and to identify molecular determinants of this therapeutic activity. EXPERIMENTAL DESIGN: We used a novel prostate cancer patient-derived xenograft (PDX) treatment model, prostatic adenocarcinoma and NEPC cell lines, an NEPC organoid line, and NEPC xenograft models to address the mechanistic basis of ENZ-induced NED, and to analyze suppression of NED and NEPC growth by PARP inhibition. RESULTS: We identified an ENZ treatment-associated glucocorticoid receptor (GR)-MYCN-CDK5-RB1-E2F1 signaling pathway that drives NED in prostatic adenocarcinoma PDX and cell line models. Mechanistically, long-term ENZ treatment transcriptionally upregulates signaling of the GR-MYCN axis, leading to CDK5R1 and CDK5R2 upregulation, Rb1 phosphorylation, and N-Myc-mediated and E2F1-mediated NED gene expression. Importantly, olaparib (OLA) or talazoparib (TALA) suppressed these activities, and the combination of OLA and dinaciclib (DINA), an inhibitor of CDK2 and CDK5, which also inhibits Rb1 phosphorylation, suppressed NED and significantly improved therapeutic efficiency in NEPC cells in vitro and in NEPC tumors in vivo. CONCLUSIONS: The results of our study indicate an important role of GR-MYCN-CDK5R1/2-RB1-NED signaling in ENZ-induced and PARP inhibitor-suppressed NEPC. We also demonstrated efficacy for OLA+DINA combination therapy in NEPC xenograft models.\n\n--- Abstract 3 (PMID: 42294898, relevance: -6.7596) ---\nVitiligo is a depigmenting disease marked by progressive T cell-driven destruction of melanocytes in the skin, hair, and mucosa. While vitiligo is known to be a T cell-mediated autoimmune disease, its triggers have remained poorly understood and treatment options limited. In this issue of the JCI, Kang et al. demonstrated how hyperglycemia exacerbates vitiligo progression through the succinate/SUCNR1 axis. These findings identify succinate as a potential biomarker for disease activity and highlight an independent pathway for targeting in therapeutic intervention. More broadly, the findings linking succinate and glucose metabolism to vitiligo suggest that lifestyle factors could be modified to slow development of vitiligo and other autoimmune diseases linked to succinate.\n\n\n\n**Question:**\nWhat is the mechanism of action of Dutasteride in the context of hair-loss treatment?",
+  "vector_context": "--- Abstract 1 (PMID: 42169044, relevance: -2.5732) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 2 (PMID: 31439587, relevance: -6.0680) ---\nPURPOSE: In this study, we addressed the underlying mechanisms for the association between enzalutamide (ENZ) treatment and neuroendocrine prostate cancer (NEPC), and the critical involvement of MYCN, and loss of RB1 function in neuroendocrine differentiation (NED) of prostatic epithelial cells, and the development of NEPC. We further sought to determine whether PARP inhibition could suppress NEPC, and to identify molecular determinants of this therapeutic activity. EXPERIMENTAL DESIGN: We used a novel prostate cancer patient-derived xenograft (PDX) treatment model, prostatic adenocarcinoma and NEPC cell lines, an NEPC organoid line, and NEPC xenograft models to address the mechanistic basis of ENZ-induced NED, and to analyze suppression of NED and NEPC growth by PARP inhibition. RESULTS: We identified an ENZ treatment-associated glucocorticoid receptor (GR)-MYCN-CDK5-RB1-E2F1 signaling pathway that drives NED in prostatic adenocarcinoma PDX and cell line models. Mechanistically, long-term ENZ treatment transcriptionally upregulates signaling of the GR-MYCN axis, leading to CDK5R1 and CDK5R2 upregulation, Rb1 phosphorylation, and N-Myc-mediated and E2F1-mediated NED gene expression. Importantly, olaparib (OLA) or talazoparib (TALA) suppressed these activities, and the combination of OLA and dinaciclib (DINA), an inhibitor of CDK2 and CDK5, which also inhibits Rb1 phosphorylation, suppressed NED and significantly improved therapeutic efficiency in NEPC cells in vitro and in NEPC tumors in vivo. CONCLUSIONS: The results of our study indicate an important role of GR-MYCN-CDK5R1/2-RB1-NED signaling in ENZ-induced and PARP inhibitor-suppressed NEPC. We also demonstrated efficacy for OLA+DINA combination therapy in NEPC xenograft models.\n\n--- Abstract 3 (PMID: 42294898, relevance: -6.7596) ---\nVitiligo is a depigmenting disease marked by progressive T cell-driven destruction of melanocytes in the skin, hair, and mucosa. While vitiligo is known to be a T cell-mediated autoimmune disease, its triggers have remained poorly understood and treatment options limited. In this issue of the JCI, Kang et al. demonstrated how hyperglycemia exacerbates vitiligo progression through the succinate/SUCNR1 axis. These findings identify succinate as a potential biomarker for disease activity and highlight an independent pathway for targeting in therapeutic intervention. More broadly, the findings linking succinate and glucose metabolism to vitiligo suggest that lifestyle factors could be modified to slow development of vitiligo and other autoimmune diseases linked to succinate.\n\n"
+}

@@ -1,0 +1,178 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q183.json",
+      "question_id": "Q183",
+      "sha256": "b094affc331d8c337b31c279402e722f3f87e828c41d9b6aa728af7b83e7d8e2"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q183.json",
+      "question_id": "Q183",
+      "sha256": "0a23100c6a0a0f2356dd97cc2672efbf2c6e74a0bdff24e6ab5af55bee687a33"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.2183,
+  "git_commit": null,
+  "graph_context": "Entity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence show associations between rs6152 and phenotypes other than hair loss? Report the evidence source and avoid inferring pleiotropy from unsupported links.",
+  "parsed_answer": "The integrated evidence shows associations between rs6152 and phenotypes other than hair loss. The associated phenotypes include:\n\n- Abnormality of mental function\n- Abnormality of the musculoskeletal system\n- Abnormal skin physiology\n\nThese associations are reported in the \"Associated Phenotypes\" section of the IGKF graph context. The evidence source for these associations is the structured data provided in the graph context, which includes curated biological and clinical information. There is no mention of hair loss in the associated phenotypes for rs6152.",
+  "question_id": "Q183",
+  "question_text": "Does the integrated evidence show associations between rs6152 and phenotypes other than hair loss? Report the evidence source and avoid inferring pleiotropy from unsupported links.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 112,
+    "prompt_token_count": 689,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence shows associations between rs6152 and phenotypes other than hair loss. The associated phenotypes include:\n\n- Abnormality of mental function\n- Abnormality of the musculoskeletal system\n- Abnormal skin physiology\n\nThese associations are reported in the \"Associated Phenotypes\" section of the IGKF graph context. The evidence source for these associations is the structured data provided in the graph context, which includes curated biological and clinical information. There is no mention of hair loss in the associated phenotypes for rs6152."
+      }
+    ],
+    "created": 1783563654,
+    "id": "cmpl-51de70a0-10b4-4ab9-b0fa-cf81a5b45345",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 112,
+      "prompt_tokens": 668,
+      "total_tokens": 780
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS",
+    "found_specific_entity": true,
+    "graph_context": "Entity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS",
+    "graph_context_length": 1912,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0165,
+    "original_retrieval_query": "Does the integrated evidence show associations between rs6152 and phenotypes other than hair loss? Report the evidence source and avoid inferring pleiotropy from unsupported links.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "associations"
+      },
+      {
+        "label": "ENTITY",
+        "text": "rs6152"
+      },
+      {
+        "label": "ENTITY",
+        "text": "phenotypes"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair loss"
+      },
+      {
+        "label": "ENTITY",
+        "text": "report"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "source"
+      },
+      {
+        "label": "ENTITY",
+        "text": "pleiotropy"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0165,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q183.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:20:55.472314+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: rs6152 (Type: Variant)\n  - Implicated Gene: AR\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n  - In Regulatory Element: EH38D6112128\n    - Label: pELS\n\n**Question:**\nDoes the integrated evidence show associations between rs6152 and phenotypes other than hair loss? Report the evidence source and avoid inferring pleiotropy from unsupported links.",
+  "vector_context": ""
+}

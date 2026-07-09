@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q175",
+      "randomization_seed": "20260706:Q175:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q175",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q175",
+      "error": null,
+      "id": "batch_req_6a4f85d781e48190919be62f921bae68",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594475,
+          "created_at": 1783594458,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d9fd4c43ca7f306006a4f7dda19d88195b1251b47db5a9854",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q175"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d9fd4c43ca7f306006a4f7ddc0b9c81958dafd73b390cd7ef",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses both requested comparison and combined-effect estimate.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence lacks association-strength data for rs756853/rs929626 with male pattern baldness.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers both individual comparison and combined-effect support without adding unsupported claims.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains due to insufficient dataset evidence.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the comparison and combined-effect parts of the question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the reference packet, which provides no male-pattern-baldness association strengths for the variants.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key conclusions needed: no individual comparison possible and no combined estimate supported.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the conclusion based on missing evidence rather than inferring unsupported associations.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d9fd4c43ca7f306006a4f7de426548195aa4755d432309a85",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2464,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 462,
+            "output_tokens_details": {
+              "reasoning_tokens": 202
+            },
+            "total_tokens": 2926
+          },
+          "user": null
+        },
+        "request_id": "daa99d91-c6aa-4ab7-8e98-91f0e4095e44",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the comparison and combined-effect parts of the question.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Consistent with the reference packet, which provides no male-pattern-baldness association strengths for the variants.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the key conclusions needed: no individual comparison possible and no combined estimate supported.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly qualifies the conclusion based on missing evidence rather than inferring unsupported associations.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q175",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q175.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.780323+00:00"
+}

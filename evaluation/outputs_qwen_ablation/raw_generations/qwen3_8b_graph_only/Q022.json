@@ -1,0 +1,142 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q022.json",
+      "question_id": "Q022",
+      "sha256": "f52c5e32a4f016b7e4453e94c1abff5e791a0e1db8890c41077bce31c6c329be"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q022.json",
+      "question_id": "Q022",
+      "sha256": "2b4a64c9867867eeb766645fd7debb6864386a5ad9dae78fd2259c2ed152c65f"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.763,
+  "git_commit": null,
+  "graph_context": "Entity: rs1160312 (Type: Variant)\n  - Implicated Gene: LINC01432\n  - Open Targets Disease Associations: Miyoshi myopathy (score: 0.046), cancer (score: 0.011), retroperitoneal cancer (score: 0.007), androgenetic alopecia (score: 0.007), carcinoma (score: 0.007)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What clinical significance, if any, is reported for variant rs1160312?",
+  "parsed_answer": "Based on the supplied IGKF graph context, the variant rs1160312 is implicated in the gene LINC01432. It is associated with several diseases through Open Targets, including:\n\n- **Miyoshi myopathy** (score: 0.046)\n- **Cancer** (score: 0.011)\n- **Retroperitoneal cancer** (score: 0.007)\n- **Androgenetic alopecia** (score: 0.007)\n- **Carcinoma** (score: 0.007)\n\nThese associations suggest that rs1160312 may have clinical significance in the context of these diseases, though the scores indicate varying levels of confidence or evidence strength. However, the context does not provide specific clinical significance details such as functional impact, pathogenicity, or direct clinical implications.",
+  "question_id": "Q022",
+  "question_text": "What clinical significance, if any, is reported for variant rs1160312?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 191,
+    "prompt_token_count": 218,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the supplied IGKF graph context, the variant rs1160312 is implicated in the gene LINC01432. It is associated with several diseases through Open Targets, including:\n\n- **Miyoshi myopathy** (score: 0.046)\n- **Cancer** (score: 0.011)\n- **Retroperitoneal cancer** (score: 0.007)\n- **Androgenetic alopecia** (score: 0.007)\n- **Carcinoma** (score: 0.007)\n\nThese associations suggest that rs1160312 may have clinical significance in the context of these diseases, though the scores indicate varying levels of confidence or evidence strength. However, the context does not provide specific clinical significance details such as functional impact, pathogenicity, or direct clinical implications."
+      }
+    ],
+    "created": 1783558556,
+    "id": "cmpl-306cc4a5-3da7-40ce-a505-72b1e29e9e35",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 191,
+      "prompt_tokens": 197,
+      "total_tokens": 388
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: rs1160312 (Type: Variant)\n  - Implicated Gene: LINC01432\n  - Open Targets Disease Associations: Miyoshi myopathy (score: 0.046), cancer (score: 0.011), retroperitoneal cancer (score: 0.007), androgenetic alopecia (score: 0.007), carcinoma (score: 0.007)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: rs1160312 (Type: Variant)\n  - Implicated Gene: LINC01432\n  - Open Targets Disease Associations: Miyoshi myopathy (score: 0.046), cancer (score: 0.011), retroperitoneal cancer (score: 0.007), androgenetic alopecia (score: 0.007), carcinoma (score: 0.007)",
+    "graph_context_length": 261,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 36.0849,
+    "original_retrieval_query": "What clinical significance, if any, is reported for variant rs1160312?",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "rs1160312"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 36.0849,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q022.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T00:55:57.853408+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: rs1160312 (Type: Variant)\n  - Implicated Gene: LINC01432\n  - Open Targets Disease Associations: Miyoshi myopathy (score: 0.046), cancer (score: 0.011), retroperitoneal cancer (score: 0.007), androgenetic alopecia (score: 0.007), carcinoma (score: 0.007)\n\n**Question:**\nWhat clinical significance, if any, is reported for variant rs1160312?",
+  "vector_context": ""
+}

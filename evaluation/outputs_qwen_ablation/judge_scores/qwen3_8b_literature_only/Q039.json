@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q039",
+      "randomization_seed": "20260706:Q039:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q039",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q039",
+      "error": null,
+      "id": "batch_req_6a4f85ceb3c08190a5df4efc6bb993e5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594490,
+          "created_at": 1783594469,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07e0a6cae056d80a006a4f7de52ef481908de19ce5512b622b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q039"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07e0a6cae056d80a006a4f7de6251c819081bcf6e09fb7ee37",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the lack of graph evidence for rs4679956 and androgenetic alopecia, but does not discuss the literature/vector context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the graph context provides no relevant evidence for the association.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Partially complete because it omits that the provided abstract context also does not mention rs4679956.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids claiming an association where none is supported by the supplied graph evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether the supplied study context supports an association between rs4679956 and androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly states that the provided evidence does not mention or support an association involving rs4679956.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key conclusion that no evidence for the association is present in the supplied context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately qualifies the conclusion as based on the supplied information and abstains from unsupported claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07e0a6cae056d80a006a4f7def3f0c8190a91047ebab2a2d24",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1724,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 652,
+            "output_tokens_details": {
+              "reasoning_tokens": 264
+            },
+            "total_tokens": 2376
+          },
+          "user": null
+        },
+        "request_id": "ceb00f3b-f58a-4b6d-af31-fbd3adb96f17",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether the supplied study context supports an association between rs4679956 and androgenetic alopecia.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly states that the provided evidence does not mention or support an association involving rs4679956.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key conclusion that no evidence for the association is present in the supplied context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the conclusion as based on the supplied information and abstains from unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q039",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q039.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.727781+00:00"
+}

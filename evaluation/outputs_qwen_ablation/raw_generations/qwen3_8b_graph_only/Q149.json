@@ -1,0 +1,170 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q149.json",
+      "question_id": "Q149",
+      "sha256": "7c15a89143b70aac1c4016578d1fcfed380e9f0ab537b56c213507a3e86a7ca4"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q149.json",
+      "question_id": "Q149",
+      "sha256": "377fff87d3c025c2143d76b4d8d44e588eb7f826ebf2eb8a8e5feb53261907fb"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.0973,
+  "git_commit": null,
+  "graph_context": "No relevant data found in the graph.",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Do effect directions in the study identify any variants associated with reduced risk of androgenetic alopecia? If so, identify them; if effect direction is unavailable, state the limitation.",
+  "parsed_answer": "No relevant data found in the graph.",
+  "question_id": "Q149",
+  "question_text": "Do effect directions in the study identify any variants associated with reduced risk of androgenetic alopecia? If so, identify them; if effect direction is unavailable, state the limitation.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 8,
+    "prompt_token_count": 140,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "No relevant data found in the graph."
+      }
+    ],
+    "created": 1783563216,
+    "id": "cmpl-71da1249-f623-4468-9b98-7720913cebc4",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 8,
+      "prompt_tokens": 119,
+      "total_tokens": 127
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nNo relevant data found in the graph.",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "graph_retrieval_seconds": 0.0178,
+    "original_retrieval_query": "Do effect directions in the study identify any variants associated with reduced risk of androgenetic alopecia? If so, identify them; if effect direction is unavailable, state the limitation.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "effect"
+      },
+      {
+        "label": "ENTITY",
+        "text": "study"
+      },
+      {
+        "label": "ENTITY",
+        "text": "variants"
+      },
+      {
+        "label": "ENTITY",
+        "text": "associated with"
+      },
+      {
+        "label": "ENTITY",
+        "text": "reduced risk"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgenetic alopecia"
+      },
+      {
+        "label": "ENTITY",
+        "text": "effect direction"
+      },
+      {
+        "label": "ENTITY",
+        "text": "limitation"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0178,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q149.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:13:36.913240+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Question:**\nDo effect directions in the study identify any variants associated with reduced risk of androgenetic alopecia? If so, identify them; if effect direction is unavailable, state the limitation.",
+  "vector_context": ""
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q096",
+      "randomization_seed": "20260706:Q096:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q096",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q096",
+      "error": null,
+      "id": "batch_req_6a4f85d288a88190965ddb27b786dc08",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578944,
+          "created_at": 1783578919,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0dda5725857fb66d006a4f4127def881958210d15b301d3fcd",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q096"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0dda5725857fb66d006a4f413a2d088195b714246ea4b6cb01",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the supplied evidence links LHX2 to androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph/vector evidence contains no link between LHX2 and androgenetic alopecia.\"},\"completeness\":{\"score\":4,\"rationale\":\"Captures the key conclusion, though it does not explicitly mention that the supplied abstracts are also irrelevant.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making an unsupported disease association.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question and concludes there is no supported LHX2-androgenetic alopecia link in the provided context.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"The conclusion is consistent with the evidence, but it incorrectly describes the supplied abstracts as being about lanthanum hydroxide and LHPP rather than KAT2A, HOXD3, and HAGLROS-related cancer studies.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides the main conclusion, but the supporting summary of the context is inaccurate and omits the actual LHX2 graph information.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Correctly avoids asserting an unsupported association, despite inaccurate characterization of the evidence packet.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0dda5725857fb66d006a4f413d4c648195bb260e743455317f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1977,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 574,
+            "output_tokens_details": {
+              "reasoning_tokens": 260
+            },
+            "total_tokens": 2551
+          },
+          "user": null
+        },
+        "request_id": "e3134189-ae8a-4770-a0c8-07f1f03fabf7",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether the supplied evidence links LHX2 to androgenetic alopecia.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided graph/vector evidence contains no link between LHX2 and androgenetic alopecia.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Captures the key conclusion, though it does not explicitly mention that the supplied abstracts are also irrelevant.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from making an unsupported disease association.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q096",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q096.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.749846+00:00"
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q027",
+      "randomization_seed": "20260706:Q027:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q027",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q027",
+      "error": null,
+      "id": "batch_req_6a4f85ce18dc81908e62ac9bbcd13d89",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594486,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00e5bb2537991775006a4f7dd91ea4819381a17364ae0c7d3e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q027"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00e5bb2537991775006a4f7ddaf034819382793837c6ae344f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses rs1160312 but does not provide the available annotations requested.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"It is true that the abstracts do not mention rs1160312, but the provided graph context does contain annotations, so saying none can be summarized is incorrect.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the implicated gene and Open Targets disease associations provided in the evidence.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains despite sufficient provided evidence for integrated annotations.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly summarizes the annotations available for rs1160312.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reports LINC01432 and the listed Open Targets disease associations with scores.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key integrated annotations, though it does not explicitly state that the study abstracts provide no rs1160312-specific annotation.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Does not invent unsupported details, but could better qualify that only integrated graph annotations are available from the supplied evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00e5bb2537991775006a4f7deeb3ec8193b5c0b24170c37a5d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2121,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 798,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2919
+          },
+          "user": null
+        },
+        "request_id": "114e0017-f2d6-4132-b982-d1d47c2dee57",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses rs1160312 but does not provide the available annotations requested.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "It is true that the abstracts do not mention rs1160312, but the provided graph context does contain annotations, so saying none can be summarized is incorrect.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Omits the implicated gene and Open Targets disease associations provided in the evidence.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Abstains despite sufficient provided evidence for integrated annotations.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q027",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q027.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.722838+00:00"
+}

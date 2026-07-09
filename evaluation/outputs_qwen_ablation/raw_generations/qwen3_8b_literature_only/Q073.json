@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41218118",
+    "42089627",
+    "39529066",
+    "42316873",
+    "39920102",
+    "41056281",
+    "42146614",
+    "41258626",
+    "41797924",
+    "41588444",
+    "35551428",
+    "42276192",
+    "42233622",
+    "34564982",
+    "41332536"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q073.json",
+      "question_id": "Q073",
+      "sha256": "606bdee020a17645ce3f62d8275cb51eda371d5cd13b8cebe47ecf2b92d49f75"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q073.json",
+      "question_id": "Q073",
+      "sha256": "d7b02abcde3adddf86aacbfa6d529ef06cd42076b7a30797610fbc32d750e35c"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.4132,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+  "parsed_answer": "The integrated evidence does not directly link WNT10A to treatments used or investigated for hair loss. However, it does highlight the involvement of WNT10A in hair-related conditions and signaling pathways that are relevant to hair growth.\n\n- **WNT10A and Hair Loss**: While the literature does not explicitly mention WNT10A in the context of hair loss treatments, it does note that mutations in WNT10A are associated with alopecia (hair loss) as part of a broader clinical spectrum of ectodermal dysplasia. This suggests that WNT10A is involved in hair follicle development and maintenance, as part of the Wnt/beta-catenin signaling pathway, which is also implicated in hair growth.\n\n- **Wnt/beta-catenin Signaling in Hair Growth**: The first abstract discusses the role of extracellular vesicles (SoEVs) from *Sphingomonas olei* in promoting hair growth through the activation of the Wnt/beta-catenin signaling pathway. This pathway is also central to the biological functions of WNT10A, as described in the second and third abstracts.\n\n- **Treatment Implications**: While WNT10A itself is not mentioned as a therapeutic target for hair loss, the Wnt/beta-catenin signaling pathway is a key pathway that has been explored in hair growth research. For instance, the use of extracellular vesicles (SoEVs) from *Sphingomonas olei* is being investigated as a potential treatment for hair loss, as they activate this pathway. This suggests that therapies targeting the Wnt/beta-catenin pathway, which includes WNT10A, may have relevance for hair loss treatment.\n\nIn summary, while WNT10A is not directly linked to any specific treatment for hair loss in the provided literature, its involvement in the Wnt/beta-catenin signaling pathway, which is associated with hair growth, suggests that therapies targeting this pathway, such as extracellular vesicle-based treatments, may have relevance for hair loss.",
+  "question_id": "Q073",
+  "question_text": "Does the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 429,
+    "prompt_token_count": 1196,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not directly link WNT10A to treatments used or investigated for hair loss. However, it does highlight the involvement of WNT10A in hair-related conditions and signaling pathways that are relevant to hair growth.\n\n- **WNT10A and Hair Loss**: While the literature does not explicitly mention WNT10A in the context of hair loss treatments, it does note that mutations in WNT10A are associated with alopecia (hair loss) as part of a broader clinical spectrum of ectodermal dysplasia. This suggests that WNT10A is involved in hair follicle development and maintenance, as part of the Wnt/beta-catenin signaling pathway, which is also implicated in hair growth.\n\n- **Wnt/beta-catenin Signaling in Hair Growth**: The first abstract discusses the role of extracellular vesicles (SoEVs) from *Sphingomonas olei* in promoting hair growth through the activation of the Wnt/beta-catenin signaling pathway. This pathway is also central to the biological functions of WNT10A, as described in the second and third abstracts.\n\n- **Treatment Implications**: While WNT10A itself is not mentioned as a therapeutic target for hair loss, the Wnt/beta-catenin signaling pathway is a key pathway that has been explored in hair growth research. For instance, the use of extracellular vesicles (SoEVs) from *Sphingomonas olei* is being investigated as a potential treatment for hair loss, as they activate this pathway. This suggests that therapies targeting the Wnt/beta-catenin pathway, which includes WNT10A, may have relevance for hair loss treatment.\n\nIn summary, while WNT10A is not directly linked to any specific treatment for hair loss in the provided literature, its involvement in the Wnt/beta-catenin signaling pathway, which is associated with hair growth, suggests that therapies targeting this pathway, such as extracellular vesicle-based treatments, may have relevance for hair loss."
+      }
+    ],
+    "created": 1783564174,
+    "id": "cmpl-9373951c-d941-415d-b562-428dac1a5cba",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 429,
+      "prompt_tokens": 1175,
+      "total_tokens": 1604
+    }
+  },
+  "reranker_scores": [
+    -1.6931462287902832,
+    -3.2031216621398926,
+    -4.998443603515625
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.342872619628906,
+      34.43873596191406,
+      36.583770751953125,
+      36.98149108886719,
+      37.80092239379883,
+      37.95026397705078,
+      38.59455490112305,
+      38.8555793762207,
+      39.52936553955078,
+      39.83799743652344,
+      40.724334716796875,
+      40.75482177734375,
+      40.817298889160156,
+      40.966514587402344,
+      40.98080062866211
+    ],
+    "candidate_pmids": [
+      "41218118",
+      "42089627",
+      "39529066",
+      "42316873",
+      "39920102",
+      "41056281",
+      "42146614",
+      "41258626",
+      "41797924",
+      "41588444",
+      "35551428",
+      "42276192",
+      "42233622",
+      "34564982",
+      "41332536"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42316873, relevance: -1.6931) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n--- Abstract 2 (PMID: 42089627, relevance: -3.2031) ---\nWNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.\n\n--- Abstract 3 (PMID: 41588444, relevance: -4.9984) ---\nBACKGROUND: In tooth development, the Wnt/beta-catenin pathway has been shown to play a crucial role in tooth germ formation and tooth differentiation. Regeneration can be considered a replay of development. Understanding and reproducing the involvement of Wnt10a-which is reported to be the causative gene for congenital multiple tooth absence and participates in tooth development with spatiotemporal specificity-in pulp regeneration is essential for realizing dental regenerative medicine. Therefore, this study was initiated based on the concept that evaluating the dynamics of Wnt10a during angiogenesis, which is thought to occur early in dental pulp regeneration, could contribute to a more detailed elucidation of the dental pulp regeneration mechanism. METHODS: Deciduous dental pulp stem cells (SHED) were isolated from human deciduous teeth, and conditioned medium (CM) was collected. In addition, after the induction of vascular differentiation of SHED, the temporal gene expression of Wnt10a, VEGF-A, Tie-2, and beta-catenin was analyzed by q-PCR and protein expression by Western blotting and ELISA from 0 to 48 h and 3, 7, 14, and 21 days after the induction. RESULTS: Canonical Wnt signaling was activated during angiogenesis in regenerated pulp-like tissue induced by ectopic root grafting, and Wnt10a had spatio-temporal specificity. Tie-2 activation occurred during the process of induction of vascular differentiation in SHED. CONCLUSIONS: During angiogenesis in pulp regeneration, when SHED differentiate into blood vessels, Canonical Wnt signaling and VEGF-A are activated to form microvessels, and Tie-2 expression is enhanced to increase vessel circumference. Furthermore, Wnt10a was found to be activated in its early stages and decreased in its mature stages, with spatio-temporal specificity. Because its expression is very low, Wnt10a could be a biomarker to monitor the regenerative status of pulp regeneration.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+    "rerank_seconds": 0.3347,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3506,
+    "score_max": -1.6931462287902832,
+    "score_mean": -3.298237164815267,
+    "scores": [
+      -1.6931462287902832,
+      -3.2031216621398926,
+      -4.998443603515625
+    ],
+    "selected_abstracts": [
+      "Hair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.",
+      "WNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.",
+      "BACKGROUND: In tooth development, the Wnt/beta-catenin pathway has been shown to play a crucial role in tooth germ formation and tooth differentiation. Regeneration can be considered a replay of development. Understanding and reproducing the involvement of Wnt10a-which is reported to be the causative gene for congenital multiple tooth absence and participates in tooth development with spatiotemporal specificity-in pulp regeneration is essential for realizing dental regenerative medicine. Therefore, this study was initiated based on the concept that evaluating the dynamics of Wnt10a during angiogenesis, which is thought to occur early in dental pulp regeneration, could contribute to a more detailed elucidation of the dental pulp regeneration mechanism. METHODS: Deciduous dental pulp stem cells (SHED) were isolated from human deciduous teeth, and conditioned medium (CM) was collected. In addition, after the induction of vascular differentiation of SHED, the temporal gene expression of Wnt10a, VEGF-A, Tie-2, and beta-catenin was analyzed by q-PCR and protein expression by Western blotting and ELISA from 0 to 48 h and 3, 7, 14, and 21 days after the induction. RESULTS: Canonical Wnt signaling was activated during angiogenesis in regenerated pulp-like tissue induced by ectopic root grafting, and Wnt10a had spatio-temporal specificity. Tie-2 activation occurred during the process of induction of vascular differentiation in SHED. CONCLUSIONS: During angiogenesis in pulp regeneration, when SHED differentiate into blood vessels, Canonical Wnt signaling and VEGF-A are activated to form microvessels, and Tie-2 expression is enhanced to increase vessel circumference. Furthermore, Wnt10a was found to be activated in its early stages and decreased in its mature stages, with spatio-temporal specificity. Because its expression is very low, Wnt10a could be a biomarker to monitor the regenerative status of pulp regeneration."
+    ],
+    "selected_pmids": [
+      "42316873",
+      "42089627",
+      "41588444"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0157
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q073.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42316873",
+    "42089627",
+    "41588444"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:29:38.706721+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42316873, relevance: -1.6931) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n--- Abstract 2 (PMID: 42089627, relevance: -3.2031) ---\nWNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.\n\n--- Abstract 3 (PMID: 41588444, relevance: -4.9984) ---\nBACKGROUND: In tooth development, the Wnt/beta-catenin pathway has been shown to play a crucial role in tooth germ formation and tooth differentiation. Regeneration can be considered a replay of development. Understanding and reproducing the involvement of Wnt10a-which is reported to be the causative gene for congenital multiple tooth absence and participates in tooth development with spatiotemporal specificity-in pulp regeneration is essential for realizing dental regenerative medicine. Therefore, this study was initiated based on the concept that evaluating the dynamics of Wnt10a during angiogenesis, which is thought to occur early in dental pulp regeneration, could contribute to a more detailed elucidation of the dental pulp regeneration mechanism. METHODS: Deciduous dental pulp stem cells (SHED) were isolated from human deciduous teeth, and conditioned medium (CM) was collected. In addition, after the induction of vascular differentiation of SHED, the temporal gene expression of Wnt10a, VEGF-A, Tie-2, and beta-catenin was analyzed by q-PCR and protein expression by Western blotting and ELISA from 0 to 48 h and 3, 7, 14, and 21 days after the induction. RESULTS: Canonical Wnt signaling was activated during angiogenesis in regenerated pulp-like tissue induced by ectopic root grafting, and Wnt10a had spatio-temporal specificity. Tie-2 activation occurred during the process of induction of vascular differentiation in SHED. CONCLUSIONS: During angiogenesis in pulp regeneration, when SHED differentiate into blood vessels, Canonical Wnt signaling and VEGF-A are activated to form microvessels, and Tie-2 expression is enhanced to increase vessel circumference. Furthermore, Wnt10a was found to be activated in its early stages and decreased in its mature stages, with spatio-temporal specificity. Because its expression is very low, Wnt10a could be a biomarker to monitor the regenerative status of pulp regeneration.\n\n\n\n**Question:**\nDoes the integrated evidence link WNT10A to any treatments used or investigated for hair loss? If so, which ones?",
+  "vector_context": "--- Abstract 1 (PMID: 42316873, relevance: -1.6931) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n--- Abstract 2 (PMID: 42089627, relevance: -3.2031) ---\nWNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.\n\n--- Abstract 3 (PMID: 41588444, relevance: -4.9984) ---\nBACKGROUND: In tooth development, the Wnt/beta-catenin pathway has been shown to play a crucial role in tooth germ formation and tooth differentiation. Regeneration can be considered a replay of development. Understanding and reproducing the involvement of Wnt10a-which is reported to be the causative gene for congenital multiple tooth absence and participates in tooth development with spatiotemporal specificity-in pulp regeneration is essential for realizing dental regenerative medicine. Therefore, this study was initiated based on the concept that evaluating the dynamics of Wnt10a during angiogenesis, which is thought to occur early in dental pulp regeneration, could contribute to a more detailed elucidation of the dental pulp regeneration mechanism. METHODS: Deciduous dental pulp stem cells (SHED) were isolated from human deciduous teeth, and conditioned medium (CM) was collected. In addition, after the induction of vascular differentiation of SHED, the temporal gene expression of Wnt10a, VEGF-A, Tie-2, and beta-catenin was analyzed by q-PCR and protein expression by Western blotting and ELISA from 0 to 48 h and 3, 7, 14, and 21 days after the induction. RESULTS: Canonical Wnt signaling was activated during angiogenesis in regenerated pulp-like tissue induced by ectopic root grafting, and Wnt10a had spatio-temporal specificity. Tie-2 activation occurred during the process of induction of vascular differentiation in SHED. CONCLUSIONS: During angiogenesis in pulp regeneration, when SHED differentiate into blood vessels, Canonical Wnt signaling and VEGF-A are activated to form microvessels, and Tie-2 expression is enhanced to increase vessel circumference. Furthermore, Wnt10a was found to be activated in its early stages and decreased in its mature stages, with spatio-temporal specificity. Because its expression is very low, Wnt10a could be a biomarker to monitor the regenerative status of pulp regeneration.\n\n"
+}

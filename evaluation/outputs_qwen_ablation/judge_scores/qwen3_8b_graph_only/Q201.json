@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q201",
+      "randomization_seed": "20260706:Q201:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q201",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q201",
+      "error": null,
+      "id": "batch_req_6a4f85d91f388190a97b2f3e84a6020f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594495,
+          "created_at": 1783594473,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0450a9634cc743f7006a4f7de93b208197a9b71b936c40e75c",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q201"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0450a9634cc743f7006a4f7dea4ce08197b8932e29d361adca",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly states the question is outside the dataset's scope, as requested.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately avoids making unsupported biomedical claims about cystic fibrosis treatment.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the required response by abstaining rather than answering from general knowledge.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains because the dataset is insufficient for the cystic fibrosis question.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the dataset supports answering the cystic fibrosis treatment question.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that cystic fibrosis treatment options are not supported by the described alopecia-focused context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Fully explains that the topic is outside scope and why no cystic fibrosis treatment summary should be given.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported general-knowledge claims and notes lack of relevant evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0450a9634cc743f7006a4f7df7487c819783d1da3f57492af8",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 577,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 639,
+            "output_tokens_details": {
+              "reasoning_tokens": 373
+            },
+            "total_tokens": 1216
+          },
+          "user": null
+        },
+        "request_id": "04673e30-96a7-4a50-bd53-ccf274d58078",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly states the question is outside the dataset's scope, as requested.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately avoids making unsupported biomedical claims about cystic fibrosis treatment.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the required response by abstaining rather than answering from general knowledge.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains because the dataset is insufficient for the cystic fibrosis question.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q201",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.789945+00:00"
+}

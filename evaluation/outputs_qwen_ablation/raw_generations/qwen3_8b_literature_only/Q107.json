@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "37143720",
+    "31849283",
+    "41722875",
+    "34320404",
+    "41501168",
+    "42361668",
+    "41587107",
+    "36479111",
+    "41640146",
+    "35320709",
+    "41296172",
+    "41796107",
+    "41093938",
+    "41971655",
+    "41493898"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q107.json",
+      "question_id": "Q107",
+      "sha256": "d33e67d596cbc6be2aaee528903bae01d3550d8eb162ff3eecb01fabe8c40e74"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q107.json",
+      "question_id": "Q107",
+      "sha256": "02d20b7c1c16d365820abb49f5fcfd537d72cd4265be4f3c57f569f260a056f5"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the androgen metabolism pathway?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.5035,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the androgen metabolism pathway?",
+  "parsed_answer": "Based on the provided literature context, the following drugs are linked to genes or targets in the androgen metabolism pathway:\n\n1. **Enzalutamide** and **Abiraterone** - These are androgen receptor pathway inhibitors (ARPIs) mentioned in Abstract 2. They are linked to the androgen receptor (AR) and its genomic alterations, including AR copy-number gains, AR genomic structural rearrangements (AR-GSR), and the AR extrachromosomal DNA signature. These alterations are associated with resistance to ARPIs and are part of the androgen metabolism pathway.\n\n2. **Bicalutamide** - This drug is mentioned in Abstract 3. It is an androgen receptor antagonist used in prostate cancer treatment. The study identifies hub genes related to bicalutamide resistance, which are associated with the androgen metabolism pathway, particularly through RNA splicing and immune microenvironment interactions.\n\nThese drugs are directly or indirectly linked to genes and targets involved in the androgen metabolism pathway, as described in the literature context.",
+  "question_id": "Q107",
+  "question_text": "Which drugs, if any, are linked in the integrated data to genes or targets in the androgen metabolism pathway?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 212,
+    "prompt_token_count": 1608,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided literature context, the following drugs are linked to genes or targets in the androgen metabolism pathway:\n\n1. **Enzalutamide** and **Abiraterone** - These are androgen receptor pathway inhibitors (ARPIs) mentioned in Abstract 2. They are linked to the androgen receptor (AR) and its genomic alterations, including AR copy-number gains, AR genomic structural rearrangements (AR-GSR), and the AR extrachromosomal DNA signature. These alterations are associated with resistance to ARPIs and are part of the androgen metabolism pathway.\n\n2. **Bicalutamide** - This drug is mentioned in Abstract 3. It is an androgen receptor antagonist used in prostate cancer treatment. The study identifies hub genes related to bicalutamide resistance, which are associated with the androgen metabolism pathway, particularly through RNA splicing and immune microenvironment interactions.\n\nThese drugs are directly or indirectly linked to genes and targets involved in the androgen metabolism pathway, as described in the literature context."
+      }
+    ],
+    "created": 1783564316,
+    "id": "cmpl-fee93c27-82e1-4a80-a82a-13428a48f243",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 212,
+      "prompt_tokens": 1587,
+      "total_tokens": 1799
+    }
+  },
+  "reranker_scores": [
+    -1.65078604221344,
+    -3.0906078815460205,
+    -5.578024864196777
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      33.81260681152344,
+      36.560508728027344,
+      37.043426513671875,
+      39.023887634277344,
+      40.46229934692383,
+      40.54674530029297,
+      40.699554443359375,
+      41.02482604980469,
+      41.21372985839844,
+      41.21622085571289,
+      41.589637756347656,
+      41.77443313598633,
+      41.84049987792969,
+      42.14482879638672,
+      42.2979621887207
+    ],
+    "candidate_pmids": [
+      "37143720",
+      "31849283",
+      "41722875",
+      "34320404",
+      "41501168",
+      "42361668",
+      "41587107",
+      "36479111",
+      "41640146",
+      "35320709",
+      "41296172",
+      "41796107",
+      "41093938",
+      "41971655",
+      "41493898"
+    ],
+    "expanded_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the androgen metabolism pathway?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41093938, relevance: -1.6508) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n--- Abstract 2 (PMID: 41587107, relevance: -3.0906) ---\nPURPOSE: Androgen receptor pathway inhibitors (ARPI), such as enzalutamide and abiraterone, are standard treatments for metastatic castration-resistant prostate cancer (mCRPC). However, a subset of patients display primary resistance and most eventually acquire secondary resistance. This study aimed to define genomic features of ARPI resistance using longitudinal ctDNA analysis. EXPERIMENTAL DESIGN: We used the targeted AR-ctDETECT cell-free DNA (cfDNA) sequencing assay to profile tumor-derived genomic alterations in plasma samples collected at baseline and progression from patients with mCRPC enrolled in the phase III Alliance A031201 trial of first-line enzalutamide with or without abiraterone. Analysis focused on 327 patients with paired samples available from both time points. RESULTS: Progression plasma samples displayed elevated cfDNA levels and increased ctDNA positivity. AR was the most frequently altered gene at baseline and at progression. AR copy-number gains and AR genomic structural rearrangements (AR-GSR) increased at progression, along with copy-number losses of FANCA, POLD1, RAD54L, CDKN2A, ZNRF3, and ETS2. An AR extrachromosomal DNA signature was enriched at progression and was associated with AR-GSRs predicted to truncate the AR ligand-binding domain. Stratification by two extre mes of radiographic progression-free survival revealed preferential accumulation of AR alterations in patients with delayed progression and a higher burden of non-AR alterations in patients with rapid progression. CONCLUSIONS: AR alterations in ctDNA accumulate at progression in patients with mCRPC treated with ARPIs, especially in those with initially durable responses. These findings support the use of liquid biopsy to serially track resistance mechanisms and inform precision therapy in advanced prostate cancer. See related commentary by Chauhan et al., p. 2323.\n\n--- Abstract 3 (PMID: 37143720, relevance: -5.5780) ---\nBACKGROUND: Prostate cancer (PCa) is the second most common type of cancer and the fifth leading cause of cancer-related death in men. Androgen deprivation therapy (ADT) has become the first-line therapy for inhibiting PCa progression; however, nearly all patients receiving ADT eventually progress to castrate-resistant prostate cancer. Therefore, this study aimed to identify hub genes related to bicalutamide resistance in PCa and provide new insights into endocrine therapy resistance. METHODS: The data were obtained from public databases. Weighted correlation network analysis was used to identify the gene modules related to bicalutamide resistance, and the relationship between the samples and disease-free survival was analyzed. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses were performed, and hub genes were identified. The LASSO algorithm was used to develop a bicalutamide resistance prognostic model in patients with PCa, which was then verified. Finally, we analyzed the tumor mutational heterogeneity and immune microenvironment in both groups. RESULTS: Two drug resistance gene modules were identified. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses revealed that both modules are involved in RNA splicing. The protein-protein interaction network identified 10 hub genes in the brown module LUC7L3, SNRNP70, PRPF3, LUC7L, CLASRP, CLK1, CLK2, U2AF1L4, NXF1, and THOC1) and 13 in the yellow module (PNN, PPWD1, SRRM2, DHX35, DMTF1, SALL4, MTA1, HDAC7, PHC1, ACIN1, HNRNPH1, DDX17, and HDAC6). The prognostic model composed of RNF207, REC8, DFNB59, HOXA2, EPOR, PILRB, LSMEM1, TCIRG1, ABTB1, ZNF276, ZNF540, and DPY19L2 could effectively predict patient prognosis. Genomic analysis revealed that the high- and low-risk groups had different mutation maps. Immune infiltration analysis showed a statistically significant difference in immune infiltration between the high- and low-risk groups, and that the high-risk group may benefit from immunotherapy. CONCLUSION: In this study, bicalutamide resistance genes and hub genes were identified in PCa, a risk model for predicting the prognosis of patients with PCa was constructed, and the tumor mutation heterogeneity and immune infiltration in high- and low-risk groups were analyzed. These findings offer new insights into ADT resistance targets and prognostic prediction in patients with PCa.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the androgen metabolism pathway?",
+    "rerank_seconds": 0.331,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3465,
+    "score_max": -1.65078604221344,
+    "score_mean": -3.439806262652079,
+    "scores": [
+      -1.65078604221344,
+      -3.0906078815460205,
+      -5.578024864196777
+    ],
+    "selected_abstracts": [
+      "Endometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.",
+      "PURPOSE: Androgen receptor pathway inhibitors (ARPI), such as enzalutamide and abiraterone, are standard treatments for metastatic castration-resistant prostate cancer (mCRPC). However, a subset of patients display primary resistance and most eventually acquire secondary resistance. This study aimed to define genomic features of ARPI resistance using longitudinal ctDNA analysis. EXPERIMENTAL DESIGN: We used the targeted AR-ctDETECT cell-free DNA (cfDNA) sequencing assay to profile tumor-derived genomic alterations in plasma samples collected at baseline and progression from patients with mCRPC enrolled in the phase III Alliance A031201 trial of first-line enzalutamide with or without abiraterone. Analysis focused on 327 patients with paired samples available from both time points. RESULTS: Progression plasma samples displayed elevated cfDNA levels and increased ctDNA positivity. AR was the most frequently altered gene at baseline and at progression. AR copy-number gains and AR genomic structural rearrangements (AR-GSR) increased at progression, along with copy-number losses of FANCA, POLD1, RAD54L, CDKN2A, ZNRF3, and ETS2. An AR extrachromosomal DNA signature was enriched at progression and was associated with AR-GSRs predicted to truncate the AR ligand-binding domain. Stratification by two extre mes of radiographic progression-free survival revealed preferential accumulation of AR alterations in patients with delayed progression and a higher burden of non-AR alterations in patients with rapid progression. CONCLUSIONS: AR alterations in ctDNA accumulate at progression in patients with mCRPC treated with ARPIs, especially in those with initially durable responses. These findings support the use of liquid biopsy to serially track resistance mechanisms and inform precision therapy in advanced prostate cancer. See related commentary by Chauhan et al., p. 2323.",
+      "BACKGROUND: Prostate cancer (PCa) is the second most common type of cancer and the fifth leading cause of cancer-related death in men. Androgen deprivation therapy (ADT) has become the first-line therapy for inhibiting PCa progression; however, nearly all patients receiving ADT eventually progress to castrate-resistant prostate cancer. Therefore, this study aimed to identify hub genes related to bicalutamide resistance in PCa and provide new insights into endocrine therapy resistance. METHODS: The data were obtained from public databases. Weighted correlation network analysis was used to identify the gene modules related to bicalutamide resistance, and the relationship between the samples and disease-free survival was analyzed. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses were performed, and hub genes were identified. The LASSO algorithm was used to develop a bicalutamide resistance prognostic model in patients with PCa, which was then verified. Finally, we analyzed the tumor mutational heterogeneity and immune microenvironment in both groups. RESULTS: Two drug resistance gene modules were identified. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses revealed that both modules are involved in RNA splicing. The protein-protein interaction network identified 10 hub genes in the brown module LUC7L3, SNRNP70, PRPF3, LUC7L, CLASRP, CLK1, CLK2, U2AF1L4, NXF1, and THOC1) and 13 in the yellow module (PNN, PPWD1, SRRM2, DHX35, DMTF1, SALL4, MTA1, HDAC7, PHC1, ACIN1, HNRNPH1, DDX17, and HDAC6). The prognostic model composed of RNF207, REC8, DFNB59, HOXA2, EPOR, PILRB, LSMEM1, TCIRG1, ABTB1, ZNF276, ZNF540, and DPY19L2 could effectively predict patient prognosis. Genomic analysis revealed that the high- and low-risk groups had different mutation maps. Immune infiltration analysis showed a statistically significant difference in immune infiltration between the high- and low-risk groups, and that the high-risk group may benefit from immunotherapy. CONCLUSION: In this study, bicalutamide resistance genes and hub genes were identified in PCa, a risk model for predicting the prognosis of patients with PCa was constructed, and the tumor mutation heterogeneity and immune infiltration in high- and low-risk groups were analyzed. These findings offer new insights into ADT resistance targets and prognostic prediction in patients with PCa."
+    ],
+    "selected_pmids": [
+      "41093938",
+      "41587107",
+      "37143720"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0154
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q107.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41093938",
+    "41587107",
+    "37143720"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:31:59.391584+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41093938, relevance: -1.6508) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n--- Abstract 2 (PMID: 41587107, relevance: -3.0906) ---\nPURPOSE: Androgen receptor pathway inhibitors (ARPI), such as enzalutamide and abiraterone, are standard treatments for metastatic castration-resistant prostate cancer (mCRPC). However, a subset of patients display primary resistance and most eventually acquire secondary resistance. This study aimed to define genomic features of ARPI resistance using longitudinal ctDNA analysis. EXPERIMENTAL DESIGN: We used the targeted AR-ctDETECT cell-free DNA (cfDNA) sequencing assay to profile tumor-derived genomic alterations in plasma samples collected at baseline and progression from patients with mCRPC enrolled in the phase III Alliance A031201 trial of first-line enzalutamide with or without abiraterone. Analysis focused on 327 patients with paired samples available from both time points. RESULTS: Progression plasma samples displayed elevated cfDNA levels and increased ctDNA positivity. AR was the most frequently altered gene at baseline and at progression. AR copy-number gains and AR genomic structural rearrangements (AR-GSR) increased at progression, along with copy-number losses of FANCA, POLD1, RAD54L, CDKN2A, ZNRF3, and ETS2. An AR extrachromosomal DNA signature was enriched at progression and was associated with AR-GSRs predicted to truncate the AR ligand-binding domain. Stratification by two extre mes of radiographic progression-free survival revealed preferential accumulation of AR alterations in patients with delayed progression and a higher burden of non-AR alterations in patients with rapid progression. CONCLUSIONS: AR alterations in ctDNA accumulate at progression in patients with mCRPC treated with ARPIs, especially in those with initially durable responses. These findings support the use of liquid biopsy to serially track resistance mechanisms and inform precision therapy in advanced prostate cancer. See related commentary by Chauhan et al., p. 2323.\n\n--- Abstract 3 (PMID: 37143720, relevance: -5.5780) ---\nBACKGROUND: Prostate cancer (PCa) is the second most common type of cancer and the fifth leading cause of cancer-related death in men. Androgen deprivation therapy (ADT) has become the first-line therapy for inhibiting PCa progression; however, nearly all patients receiving ADT eventually progress to castrate-resistant prostate cancer. Therefore, this study aimed to identify hub genes related to bicalutamide resistance in PCa and provide new insights into endocrine therapy resistance. METHODS: The data were obtained from public databases. Weighted correlation network analysis was used to identify the gene modules related to bicalutamide resistance, and the relationship between the samples and disease-free survival was analyzed. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses were performed, and hub genes were identified. The LASSO algorithm was used to develop a bicalutamide resistance prognostic model in patients with PCa, which was then verified. Finally, we analyzed the tumor mutational heterogeneity and immune microenvironment in both groups. RESULTS: Two drug resistance gene modules were identified. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses revealed that both modules are involved in RNA splicing. The protein-protein interaction network identified 10 hub genes in the brown module LUC7L3, SNRNP70, PRPF3, LUC7L, CLASRP, CLK1, CLK2, U2AF1L4, NXF1, and THOC1) and 13 in the yellow module (PNN, PPWD1, SRRM2, DHX35, DMTF1, SALL4, MTA1, HDAC7, PHC1, ACIN1, HNRNPH1, DDX17, and HDAC6). The prognostic model composed of RNF207, REC8, DFNB59, HOXA2, EPOR, PILRB, LSMEM1, TCIRG1, ABTB1, ZNF276, ZNF540, and DPY19L2 could effectively predict patient prognosis. Genomic analysis revealed that the high- and low-risk groups had different mutation maps. Immune infiltration analysis showed a statistically significant difference in immune infiltration between the high- and low-risk groups, and that the high-risk group may benefit from immunotherapy. CONCLUSION: In this study, bicalutamide resistance genes and hub genes were identified in PCa, a risk model for predicting the prognosis of patients with PCa was constructed, and the tumor mutation heterogeneity and immune infiltration in high- and low-risk groups were analyzed. These findings offer new insights into ADT resistance targets and prognostic prediction in patients with PCa.\n\n\n\n**Question:**\nWhich drugs, if any, are linked in the integrated data to genes or targets in the androgen metabolism pathway?",
+  "vector_context": "--- Abstract 1 (PMID: 41093938, relevance: -1.6508) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n--- Abstract 2 (PMID: 41587107, relevance: -3.0906) ---\nPURPOSE: Androgen receptor pathway inhibitors (ARPI), such as enzalutamide and abiraterone, are standard treatments for metastatic castration-resistant prostate cancer (mCRPC). However, a subset of patients display primary resistance and most eventually acquire secondary resistance. This study aimed to define genomic features of ARPI resistance using longitudinal ctDNA analysis. EXPERIMENTAL DESIGN: We used the targeted AR-ctDETECT cell-free DNA (cfDNA) sequencing assay to profile tumor-derived genomic alterations in plasma samples collected at baseline and progression from patients with mCRPC enrolled in the phase III Alliance A031201 trial of first-line enzalutamide with or without abiraterone. Analysis focused on 327 patients with paired samples available from both time points. RESULTS: Progression plasma samples displayed elevated cfDNA levels and increased ctDNA positivity. AR was the most frequently altered gene at baseline and at progression. AR copy-number gains and AR genomic structural rearrangements (AR-GSR) increased at progression, along with copy-number losses of FANCA, POLD1, RAD54L, CDKN2A, ZNRF3, and ETS2. An AR extrachromosomal DNA signature was enriched at progression and was associated with AR-GSRs predicted to truncate the AR ligand-binding domain. Stratification by two extre mes of radiographic progression-free survival revealed preferential accumulation of AR alterations in patients with delayed progression and a higher burden of non-AR alterations in patients with rapid progression. CONCLUSIONS: AR alterations in ctDNA accumulate at progression in patients with mCRPC treated with ARPIs, especially in those with initially durable responses. These findings support the use of liquid biopsy to serially track resistance mechanisms and inform precision therapy in advanced prostate cancer. See related commentary by Chauhan et al., p. 2323.\n\n--- Abstract 3 (PMID: 37143720, relevance: -5.5780) ---\nBACKGROUND: Prostate cancer (PCa) is the second most common type of cancer and the fifth leading cause of cancer-related death in men. Androgen deprivation therapy (ADT) has become the first-line therapy for inhibiting PCa progression; however, nearly all patients receiving ADT eventually progress to castrate-resistant prostate cancer. Therefore, this study aimed to identify hub genes related to bicalutamide resistance in PCa and provide new insights into endocrine therapy resistance. METHODS: The data were obtained from public databases. Weighted correlation network analysis was used to identify the gene modules related to bicalutamide resistance, and the relationship between the samples and disease-free survival was analyzed. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses were performed, and hub genes were identified. The LASSO algorithm was used to develop a bicalutamide resistance prognostic model in patients with PCa, which was then verified. Finally, we analyzed the tumor mutational heterogeneity and immune microenvironment in both groups. RESULTS: Two drug resistance gene modules were identified. Gene Ontology and Kyoto Encyclopedia of Genes and Genomes analyses revealed that both modules are involved in RNA splicing. The protein-protein interaction network identified 10 hub genes in the brown module LUC7L3, SNRNP70, PRPF3, LUC7L, CLASRP, CLK1, CLK2, U2AF1L4, NXF1, and THOC1) and 13 in the yellow module (PNN, PPWD1, SRRM2, DHX35, DMTF1, SALL4, MTA1, HDAC7, PHC1, ACIN1, HNRNPH1, DDX17, and HDAC6). The prognostic model composed of RNF207, REC8, DFNB59, HOXA2, EPOR, PILRB, LSMEM1, TCIRG1, ABTB1, ZNF276, ZNF540, and DPY19L2 could effectively predict patient prognosis. Genomic analysis revealed that the high- and low-risk groups had different mutation maps. Immune infiltration analysis showed a statistically significant difference in immune infiltration between the high- and low-risk groups, and that the high-risk group may benefit from immunotherapy. CONCLUSION: In this study, bicalutamide resistance genes and hub genes were identified in PCa, a risk model for predicting the prognosis of patients with PCa was constructed, and the tumor mutation heterogeneity and immune infiltration in high- and low-risk groups were analyzed. These findings offer new insights into ADT resistance targets and prognostic prediction in patients with PCa.\n\n"
+}

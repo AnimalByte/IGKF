@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "37986797",
+    "42308221",
+    "41161132",
+    "40591711",
+    "36553572",
+    "38832928",
+    "29050564",
+    "35719909",
+    "36901860",
+    "37496384",
+    "42147184",
+    "36716280",
+    "33637690",
+    "41766532",
+    "35762256"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q015.json",
+      "question_id": "Q015",
+      "sha256": "5e1c71a2b12fdcb3fb1ee9c166a6cdcd0fb95f25e8d4136fcd73d5fb3023c9d9"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q015.json",
+      "question_id": "Q015",
+      "sha256": "4001056818c065999927bda418bf36136f07b5611b93d01f9fc124dd9d8e8860"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What clinical significance, if any, is reported for variant rs756853?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8598,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What clinical significance, if any, is reported for variant rs756853?",
+  "parsed_answer": "The literature context provided does not mention variant rs756853 or its clinical significance. Therefore, no information can be provided about the clinical significance of this variant based on the given abstracts.",
+  "question_id": "Q015",
+  "question_text": "What clinical significance, if any, is reported for variant rs756853?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 41,
+    "prompt_token_count": 1584,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The literature context provided does not mention variant rs756853 or its clinical significance. Therefore, no information can be provided about the clinical significance of this variant based on the given abstracts."
+      }
+    ],
+    "created": 1783563951,
+    "id": "cmpl-a1b59d8d-0bf2-4118-a52e-65aa3031b76b",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 41,
+      "prompt_tokens": 1563,
+      "total_tokens": 1604
+    }
+  },
+  "reranker_scores": [
+    -0.9853135943412781,
+    -1.1128382682800293,
+    -1.2153407335281372
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      36.799072265625,
+      37.4588737487793,
+      37.548561096191406,
+      37.669227600097656,
+      38.093048095703125,
+      38.35223388671875,
+      39.29110336303711,
+      39.85320281982422,
+      39.992862701416016,
+      40.051937103271484,
+      40.156394958496094,
+      40.204402923583984,
+      40.227210998535156,
+      40.24726867675781,
+      40.28421401977539
+    ],
+    "candidate_pmids": [
+      "37986797",
+      "42308221",
+      "41161132",
+      "40591711",
+      "36553572",
+      "38832928",
+      "29050564",
+      "35719909",
+      "36901860",
+      "37496384",
+      "42147184",
+      "36716280",
+      "33637690",
+      "41766532",
+      "35762256"
+    ],
+    "expanded_retrieval_query": "What clinical significance, if any, is reported for variant rs756853?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 33637690, relevance: -0.9853) ---\nDespite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.\n\n--- Abstract 2 (PMID: 41766532, relevance: -1.1128) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 3 (PMID: 36553572, relevance: -1.2153) ---\nRoutine diagnostics is biased towards genes and variants with satisfactory evidence, but rare disorders with only little confirmation of their pathogenicity might be missed. Many of these genes can, however, be considered relevant, although they may have less evidence because they lack OMIM entries or comprise only a small number of publicly available variants from one or a few studies. Here, we present 89 individuals harbouring variants in 77 genes for which only a small amount of public evidence on their clinical significance is available but which we still found to be relevant enough to be reported in routine diagnostics. For 21 genes, we present case reports that confirm the lack or provisionality of OMIM associations (ATP6V0A1, CNTN2, GABRD, NCKAP1, RHEB, TCF7L2), broaden the phenotypic spectrum (CC2D1A, KCTD17, YAP1) or substantially strengthen the confirmation of genes with limited evidence in the medical literature (ADARB1, AP2M1, BCKDK, BCORL1, CARS2, FBXO38, GABRB1, KAT8, PRKD1, RAB11B, RUSC2, ZNF142). Routine diagnostics can provide valuable information on disease associations and support for genes without requiring tremendous research efforts. Thus, our results validate and delineate gene-disorder associations with the aim of motivating clinicians and scientists in diagnostic departments to provide additional evidence via publicly available databases or by publishing short case reports.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What clinical significance, if any, is reported for variant rs756853?",
+    "rerank_seconds": 0.3272,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3413,
+    "score_max": -0.9853135943412781,
+    "score_mean": -1.104497532049815,
+    "scores": [
+      -0.9853135943412781,
+      -1.1128382682800293,
+      -1.2153407335281372
+    ],
+    "selected_abstracts": [
+      "Despite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.",
+      "BACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.",
+      "Routine diagnostics is biased towards genes and variants with satisfactory evidence, but rare disorders with only little confirmation of their pathogenicity might be missed. Many of these genes can, however, be considered relevant, although they may have less evidence because they lack OMIM entries or comprise only a small number of publicly available variants from one or a few studies. Here, we present 89 individuals harbouring variants in 77 genes for which only a small amount of public evidence on their clinical significance is available but which we still found to be relevant enough to be reported in routine diagnostics. For 21 genes, we present case reports that confirm the lack or provisionality of OMIM associations (ATP6V0A1, CNTN2, GABRD, NCKAP1, RHEB, TCF7L2), broaden the phenotypic spectrum (CC2D1A, KCTD17, YAP1) or substantially strengthen the confirmation of genes with limited evidence in the medical literature (ADARB1, AP2M1, BCKDK, BCORL1, CARS2, FBXO38, GABRB1, KAT8, PRKD1, RAB11B, RUSC2, ZNF142). Routine diagnostics can provide valuable information on disease associations and support for genes without requiring tremendous research efforts. Thus, our results validate and delineate gene-disorder associations with the aim of motivating clinicians and scientists in diagnostic departments to provide additional evidence via publicly available databases or by publishing short case reports."
+    ],
+    "selected_pmids": [
+      "33637690",
+      "41766532",
+      "36553572"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0139
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q015.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "33637690",
+    "41766532",
+    "36553572"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:25:52.002429+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 33637690, relevance: -0.9853) ---\nDespite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.\n\n--- Abstract 2 (PMID: 41766532, relevance: -1.1128) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 3 (PMID: 36553572, relevance: -1.2153) ---\nRoutine diagnostics is biased towards genes and variants with satisfactory evidence, but rare disorders with only little confirmation of their pathogenicity might be missed. Many of these genes can, however, be considered relevant, although they may have less evidence because they lack OMIM entries or comprise only a small number of publicly available variants from one or a few studies. Here, we present 89 individuals harbouring variants in 77 genes for which only a small amount of public evidence on their clinical significance is available but which we still found to be relevant enough to be reported in routine diagnostics. For 21 genes, we present case reports that confirm the lack or provisionality of OMIM associations (ATP6V0A1, CNTN2, GABRD, NCKAP1, RHEB, TCF7L2), broaden the phenotypic spectrum (CC2D1A, KCTD17, YAP1) or substantially strengthen the confirmation of genes with limited evidence in the medical literature (ADARB1, AP2M1, BCKDK, BCORL1, CARS2, FBXO38, GABRB1, KAT8, PRKD1, RAB11B, RUSC2, ZNF142). Routine diagnostics can provide valuable information on disease associations and support for genes without requiring tremendous research efforts. Thus, our results validate and delineate gene-disorder associations with the aim of motivating clinicians and scientists in diagnostic departments to provide additional evidence via publicly available databases or by publishing short case reports.\n\n\n\n**Question:**\nWhat clinical significance, if any, is reported for variant rs756853?",
+  "vector_context": "--- Abstract 1 (PMID: 33637690, relevance: -0.9853) ---\nDespite recent discoveries in genome-wide association studies (GWAS) of genomic variants associated with Alzheimer's disease (AD), its underlying biological mechanisms are still elusive. The discovery of novel AD-associated genetic variants, particularly in coding regions and from APOE epsilon4 non-carriers, is critical for understanding the pathology of AD. In this study, we carried out an exome-wide association analysis of age-of-onset of AD with ~20,000 subjects and placed more emphasis on APOE epsilon4 non-carriers. Using Cox mixed-effects models, we find that age-of-onset shows a stronger genetic signal than AD case-control status, capturing many known variants with stronger significance, and also revealing new variants. We identified two novel variants, rs56201815, a rare synonymous variant in ERN1, and rs12373123, a common missense variant in SPPL2C in the MAPT region in APOE epsilon4 non-carriers. Besides, a rare missense variant rs144292455 in TACR3 showed the consistent direction of effect sizes across all studies with a suggestive significant level. In an attempt to unravel their regulatory and biological functions, we found that the minor allele of rs56201815 was associated with lower average FDG uptake across five brain regions in ADNI. Our eQTL analyses based on 6198 gene expression samples from ROSMAP and GTEx revealed that the minor allele of rs56201815 was potentially associated with elevated expression of ERN1, a key gene triggering unfolded protein response (UPR), in multiple brain regions, including the posterior cingulate cortex and nucleus accumbens. Our cell-type-specific eQTL analysis using ~80,000 single nuclei in the prefrontal cortex revealed that the protective minor allele of rs12373123 significantly increased the expression of GRN in microglia, and was associated with MAPT expression in astrocytes. These findings provide novel evidence supporting the hypothesis of the potential involvement of the UPR to ER stress in the pathological pathway of AD, and also give more insights into underlying regulatory mechanisms behind the pleiotropic effects of rs12373123 in multiple degenerative diseases including AD and Parkinson's disease.\n\n--- Abstract 2 (PMID: 41766532, relevance: -1.1128) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 3 (PMID: 36553572, relevance: -1.2153) ---\nRoutine diagnostics is biased towards genes and variants with satisfactory evidence, but rare disorders with only little confirmation of their pathogenicity might be missed. Many of these genes can, however, be considered relevant, although they may have less evidence because they lack OMIM entries or comprise only a small number of publicly available variants from one or a few studies. Here, we present 89 individuals harbouring variants in 77 genes for which only a small amount of public evidence on their clinical significance is available but which we still found to be relevant enough to be reported in routine diagnostics. For 21 genes, we present case reports that confirm the lack or provisionality of OMIM associations (ATP6V0A1, CNTN2, GABRD, NCKAP1, RHEB, TCF7L2), broaden the phenotypic spectrum (CC2D1A, KCTD17, YAP1) or substantially strengthen the confirmation of genes with limited evidence in the medical literature (ADARB1, AP2M1, BCKDK, BCORL1, CARS2, FBXO38, GABRB1, KAT8, PRKD1, RAB11B, RUSC2, ZNF142). Routine diagnostics can provide valuable information on disease associations and support for genes without requiring tremendous research efforts. Thus, our results validate and delineate gene-disorder associations with the aim of motivating clinicians and scientists in diagnostic departments to provide additional evidence via publicly available databases or by publishing short case reports.\n\n"
+}

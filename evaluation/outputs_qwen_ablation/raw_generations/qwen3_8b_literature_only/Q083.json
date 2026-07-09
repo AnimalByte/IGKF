@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41034211",
+    "41954225",
+    "41522353",
+    "42291126",
+    "42389788",
+    "42203310",
+    "38123340",
+    "41218118",
+    "42193919",
+    "42390659",
+    "41152659",
+    "40887336",
+    "42316873",
+    "40998774",
+    "35794979"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q083.json",
+      "question_id": "Q083",
+      "sha256": "d2b22f73c58e3c986abc0bfc7cb8ad83b0516930a81bb331efb7a6f78783d6d7"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q083.json",
+      "question_id": "Q083",
+      "sha256": "167aed61611e31aadd5af918108ce1bb6c510d30a6ab1448144d0bfc2a166bd1"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.701,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+  "parsed_answer": "The integrated evidence does not directly link LGR4 to any treatments specifically used or investigated for hair loss. However, LGR4 is implicated in Wnt signaling, which is a pathway associated with hair growth, as demonstrated in the first abstract discussing the role of Sphingomonas olei extracellular vesicles (SoEVs) in promoting hair growth through Wnt/beta-catenin-related signaling. \n\nWhile the second and third abstracts focus on LGR4's role in obesity and lung cancer, respectively, they do not mention hair loss or any treatments for it. Therefore, based on the provided literature context, there is no direct evidence linking LGR4 to treatments for hair loss.",
+  "question_id": "Q083",
+  "question_text": "Does the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 142,
+    "prompt_token_count": 1225,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not directly link LGR4 to any treatments specifically used or investigated for hair loss. However, LGR4 is implicated in Wnt signaling, which is a pathway associated with hair growth, as demonstrated in the first abstract discussing the role of Sphingomonas olei extracellular vesicles (SoEVs) in promoting hair growth through Wnt/beta-catenin-related signaling. \n\nWhile the second and third abstracts focus on LGR4's role in obesity and lung cancer, respectively, they do not mention hair loss or any treatments for it. Therefore, based on the provided literature context, there is no direct evidence linking LGR4 to treatments for hair loss."
+      }
+    ],
+    "created": 1783564217,
+    "id": "cmpl-846f3ef4-e0b1-45fc-a509-c67a56f5d1a3",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 142,
+      "prompt_tokens": 1204,
+      "total_tokens": 1346
+    }
+  },
+  "reranker_scores": [
+    -3.5368168354034424,
+    -3.6949687004089355,
+    -3.775120735168457
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.16787338256836,
+      36.36295700073242,
+      37.97683334350586,
+      38.13914489746094,
+      38.44428253173828,
+      39.31281280517578,
+      39.937034606933594,
+      40.18482971191406,
+      40.41818618774414,
+      41.473594665527344,
+      41.5359992980957,
+      41.633087158203125,
+      41.64741516113281,
+      41.66978454589844,
+      41.71603012084961
+    ],
+    "candidate_pmids": [
+      "41034211",
+      "41954225",
+      "41522353",
+      "42291126",
+      "42389788",
+      "42203310",
+      "38123340",
+      "41218118",
+      "42193919",
+      "42390659",
+      "41152659",
+      "40887336",
+      "42316873",
+      "40998774",
+      "35794979"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42316873, relevance: -3.5368) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n--- Abstract 2 (PMID: 40998774, relevance: -3.6950) ---\nObesity poses a substantial threat to human health but lacks effective management. Recent advancements in large-scale deep sequencing and cryo-electron microscopy (cryo-EM) have transformed drug discovery paradigms. Leveraging prior genetics investigation, we pinpointed Leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) as a promising target for combating obesity. Here, we present cryo-EM structures of full-length LGR4 alone and in complex with RSPO2(FU). Notably, we develop an inhibitory nanobody (NB21) that blocks the binding of RSPO1/2 to LGR4, and we also determine the structure of the LGR4-NB21 complex. NB21-mFc (NB21 fused with mouse IgG2) effectively inhibits the canonical Wnt signaling pathway, thereby enhancing mitochondrial respiration and thermogenesis in beige adipocytes. In vivo, NB21-mFc increases energy expenditure by promoting the browning of white fat, conferring resistance to both diet-induced and genetic (ob/ob) obesity. Furthermore, LGR4 deficiency abolishes the effects of NB21-mFc in boosting the browning program and subsequent weight reduction. In summary, our study unveils structural insights into the LGR4-RSPOs and LGR4-NB21 complexes, paving the way for the development of an LGR4-targeting nanobody for weight loss.\n\n--- Abstract 3 (PMID: 42203310, relevance: -3.7751) ---\nBACKGROUND/AIM: Despite advances in therapy, lung cancer remains the leading cause of cancer-related mortality. R-spondin (RSPO) 3 and its receptor, leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4), drive tumor progression in a subset of lung adenocarcinomas by potentiating Wnt signaling. In addition to RSPO3, LGR4 is also a receptor for receptor activator of nuclear factor-small ka, CyrillicB ligand (RANKL). Here, we investigated whether MHP1-AcN, our previously developed RANKL-derived peptide, acts on LGR4 and examined its effects on RSPO3-LGR4 signaling in A549 lung cancer cells. MATERIALS AND METHODS: An A549 xenograft model was established by subcutaneous inoculation in BALB/c nude mice, followed by daily intraperitoneal administration of MHP1-AcN. Tumor growth was assessed by volume and weight. In vitro, the effect of MHP1-AcN on A549 cell proliferation, cytotoxicity, migration, and invasion were evaluated. Molecular interactions and signaling pathways were analyzed using immunoprecipitation and immunoblotting. RESULTS: Intraperitoneal administration of MHP1-AcN significantly reduced tumor volume and weight in the subcutaneous A549 xenograft model. Mechanistically, MHP1-AcN directly interacted with LGR4 and disrupted RSPO3-induced LGR4-IQ motif-containing GTPase activating protein 1 complex formation. MHP1-AcN inhibited A549 cell proliferation without inducing cytotoxicity and suppressed RSPO3-enhaced phosphorylation of LRP6 and accumulation of beta-catenin. Furthermore, MHP1-AcN dose-dependently inhibited A549 cell migration and invasion by reducing focal adhesion kinase phosphorylation and disrupting F-actin organization. CONCLUSION: These findings demonstrate MHP1-AcN as a novel LGR4 antagonist that inhibits RSPO3-LGR4-Wnt signaling, tumor growth, and metastatic potential in lung adenocarcinoma, highlighting its potential as a therapeutic agent targeting this pathway.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+    "rerank_seconds": 0.3452,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3609,
+    "score_max": -3.5368168354034424,
+    "score_mean": -3.668968756993612,
+    "scores": [
+      -3.5368168354034424,
+      -3.6949687004089355,
+      -3.775120735168457
+    ],
+    "selected_abstracts": [
+      "Hair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.",
+      "Obesity poses a substantial threat to human health but lacks effective management. Recent advancements in large-scale deep sequencing and cryo-electron microscopy (cryo-EM) have transformed drug discovery paradigms. Leveraging prior genetics investigation, we pinpointed Leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) as a promising target for combating obesity. Here, we present cryo-EM structures of full-length LGR4 alone and in complex with RSPO2(FU). Notably, we develop an inhibitory nanobody (NB21) that blocks the binding of RSPO1/2 to LGR4, and we also determine the structure of the LGR4-NB21 complex. NB21-mFc (NB21 fused with mouse IgG2) effectively inhibits the canonical Wnt signaling pathway, thereby enhancing mitochondrial respiration and thermogenesis in beige adipocytes. In vivo, NB21-mFc increases energy expenditure by promoting the browning of white fat, conferring resistance to both diet-induced and genetic (ob/ob) obesity. Furthermore, LGR4 deficiency abolishes the effects of NB21-mFc in boosting the browning program and subsequent weight reduction. In summary, our study unveils structural insights into the LGR4-RSPOs and LGR4-NB21 complexes, paving the way for the development of an LGR4-targeting nanobody for weight loss.",
+      "BACKGROUND/AIM: Despite advances in therapy, lung cancer remains the leading cause of cancer-related mortality. R-spondin (RSPO) 3 and its receptor, leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4), drive tumor progression in a subset of lung adenocarcinomas by potentiating Wnt signaling. In addition to RSPO3, LGR4 is also a receptor for receptor activator of nuclear factor-small ka, CyrillicB ligand (RANKL). Here, we investigated whether MHP1-AcN, our previously developed RANKL-derived peptide, acts on LGR4 and examined its effects on RSPO3-LGR4 signaling in A549 lung cancer cells. MATERIALS AND METHODS: An A549 xenograft model was established by subcutaneous inoculation in BALB/c nude mice, followed by daily intraperitoneal administration of MHP1-AcN. Tumor growth was assessed by volume and weight. In vitro, the effect of MHP1-AcN on A549 cell proliferation, cytotoxicity, migration, and invasion were evaluated. Molecular interactions and signaling pathways were analyzed using immunoprecipitation and immunoblotting. RESULTS: Intraperitoneal administration of MHP1-AcN significantly reduced tumor volume and weight in the subcutaneous A549 xenograft model. Mechanistically, MHP1-AcN directly interacted with LGR4 and disrupted RSPO3-induced LGR4-IQ motif-containing GTPase activating protein 1 complex formation. MHP1-AcN inhibited A549 cell proliferation without inducing cytotoxicity and suppressed RSPO3-enhaced phosphorylation of LRP6 and accumulation of beta-catenin. Furthermore, MHP1-AcN dose-dependently inhibited A549 cell migration and invasion by reducing focal adhesion kinase phosphorylation and disrupting F-actin organization. CONCLUSION: These findings demonstrate MHP1-AcN as a novel LGR4 antagonist that inhibits RSPO3-LGR4-Wnt signaling, tumor growth, and metastatic potential in lung adenocarcinoma, highlighting its potential as a therapeutic agent targeting this pathway."
+    ],
+    "selected_pmids": [
+      "42316873",
+      "40998774",
+      "42203310"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0155
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q083.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42316873",
+    "40998774",
+    "42203310"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:30:18.857514+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42316873, relevance: -3.5368) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n--- Abstract 2 (PMID: 40998774, relevance: -3.6950) ---\nObesity poses a substantial threat to human health but lacks effective management. Recent advancements in large-scale deep sequencing and cryo-electron microscopy (cryo-EM) have transformed drug discovery paradigms. Leveraging prior genetics investigation, we pinpointed Leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) as a promising target for combating obesity. Here, we present cryo-EM structures of full-length LGR4 alone and in complex with RSPO2(FU). Notably, we develop an inhibitory nanobody (NB21) that blocks the binding of RSPO1/2 to LGR4, and we also determine the structure of the LGR4-NB21 complex. NB21-mFc (NB21 fused with mouse IgG2) effectively inhibits the canonical Wnt signaling pathway, thereby enhancing mitochondrial respiration and thermogenesis in beige adipocytes. In vivo, NB21-mFc increases energy expenditure by promoting the browning of white fat, conferring resistance to both diet-induced and genetic (ob/ob) obesity. Furthermore, LGR4 deficiency abolishes the effects of NB21-mFc in boosting the browning program and subsequent weight reduction. In summary, our study unveils structural insights into the LGR4-RSPOs and LGR4-NB21 complexes, paving the way for the development of an LGR4-targeting nanobody for weight loss.\n\n--- Abstract 3 (PMID: 42203310, relevance: -3.7751) ---\nBACKGROUND/AIM: Despite advances in therapy, lung cancer remains the leading cause of cancer-related mortality. R-spondin (RSPO) 3 and its receptor, leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4), drive tumor progression in a subset of lung adenocarcinomas by potentiating Wnt signaling. In addition to RSPO3, LGR4 is also a receptor for receptor activator of nuclear factor-small ka, CyrillicB ligand (RANKL). Here, we investigated whether MHP1-AcN, our previously developed RANKL-derived peptide, acts on LGR4 and examined its effects on RSPO3-LGR4 signaling in A549 lung cancer cells. MATERIALS AND METHODS: An A549 xenograft model was established by subcutaneous inoculation in BALB/c nude mice, followed by daily intraperitoneal administration of MHP1-AcN. Tumor growth was assessed by volume and weight. In vitro, the effect of MHP1-AcN on A549 cell proliferation, cytotoxicity, migration, and invasion were evaluated. Molecular interactions and signaling pathways were analyzed using immunoprecipitation and immunoblotting. RESULTS: Intraperitoneal administration of MHP1-AcN significantly reduced tumor volume and weight in the subcutaneous A549 xenograft model. Mechanistically, MHP1-AcN directly interacted with LGR4 and disrupted RSPO3-induced LGR4-IQ motif-containing GTPase activating protein 1 complex formation. MHP1-AcN inhibited A549 cell proliferation without inducing cytotoxicity and suppressed RSPO3-enhaced phosphorylation of LRP6 and accumulation of beta-catenin. Furthermore, MHP1-AcN dose-dependently inhibited A549 cell migration and invasion by reducing focal adhesion kinase phosphorylation and disrupting F-actin organization. CONCLUSION: These findings demonstrate MHP1-AcN as a novel LGR4 antagonist that inhibits RSPO3-LGR4-Wnt signaling, tumor growth, and metastatic potential in lung adenocarcinoma, highlighting its potential as a therapeutic agent targeting this pathway.\n\n\n\n**Question:**\nDoes the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+  "vector_context": "--- Abstract 1 (PMID: 42316873, relevance: -3.5368) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n--- Abstract 2 (PMID: 40998774, relevance: -3.6950) ---\nObesity poses a substantial threat to human health but lacks effective management. Recent advancements in large-scale deep sequencing and cryo-electron microscopy (cryo-EM) have transformed drug discovery paradigms. Leveraging prior genetics investigation, we pinpointed Leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) as a promising target for combating obesity. Here, we present cryo-EM structures of full-length LGR4 alone and in complex with RSPO2(FU). Notably, we develop an inhibitory nanobody (NB21) that blocks the binding of RSPO1/2 to LGR4, and we also determine the structure of the LGR4-NB21 complex. NB21-mFc (NB21 fused with mouse IgG2) effectively inhibits the canonical Wnt signaling pathway, thereby enhancing mitochondrial respiration and thermogenesis in beige adipocytes. In vivo, NB21-mFc increases energy expenditure by promoting the browning of white fat, conferring resistance to both diet-induced and genetic (ob/ob) obesity. Furthermore, LGR4 deficiency abolishes the effects of NB21-mFc in boosting the browning program and subsequent weight reduction. In summary, our study unveils structural insights into the LGR4-RSPOs and LGR4-NB21 complexes, paving the way for the development of an LGR4-targeting nanobody for weight loss.\n\n--- Abstract 3 (PMID: 42203310, relevance: -3.7751) ---\nBACKGROUND/AIM: Despite advances in therapy, lung cancer remains the leading cause of cancer-related mortality. R-spondin (RSPO) 3 and its receptor, leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4), drive tumor progression in a subset of lung adenocarcinomas by potentiating Wnt signaling. In addition to RSPO3, LGR4 is also a receptor for receptor activator of nuclear factor-small ka, CyrillicB ligand (RANKL). Here, we investigated whether MHP1-AcN, our previously developed RANKL-derived peptide, acts on LGR4 and examined its effects on RSPO3-LGR4 signaling in A549 lung cancer cells. MATERIALS AND METHODS: An A549 xenograft model was established by subcutaneous inoculation in BALB/c nude mice, followed by daily intraperitoneal administration of MHP1-AcN. Tumor growth was assessed by volume and weight. In vitro, the effect of MHP1-AcN on A549 cell proliferation, cytotoxicity, migration, and invasion were evaluated. Molecular interactions and signaling pathways were analyzed using immunoprecipitation and immunoblotting. RESULTS: Intraperitoneal administration of MHP1-AcN significantly reduced tumor volume and weight in the subcutaneous A549 xenograft model. Mechanistically, MHP1-AcN directly interacted with LGR4 and disrupted RSPO3-induced LGR4-IQ motif-containing GTPase activating protein 1 complex formation. MHP1-AcN inhibited A549 cell proliferation without inducing cytotoxicity and suppressed RSPO3-enhaced phosphorylation of LRP6 and accumulation of beta-catenin. Furthermore, MHP1-AcN dose-dependently inhibited A549 cell migration and invasion by reducing focal adhesion kinase phosphorylation and disrupting F-actin organization. CONCLUSION: These findings demonstrate MHP1-AcN as a novel LGR4 antagonist that inhibits RSPO3-LGR4-Wnt signaling, tumor growth, and metastatic potential in lung adenocarcinoma, highlighting its potential as a therapeutic agent targeting this pathway.\n\n"
+}

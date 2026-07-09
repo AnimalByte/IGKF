@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42294898",
+    "41501168",
+    "34552771",
+    "42053892",
+    "40134218",
+    "41722875",
+    "42361668",
+    "40868166",
+    "41975070",
+    "42151883",
+    "31849283",
+    "41951638",
+    "41194652",
+    "37143720",
+    "40670831"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q104.json",
+      "question_id": "Q104",
+      "sha256": "d534e80da5dffe0d259c23d7cacc5fd984ced989c2feb5f3641abba21e2f1716"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q104.json",
+      "question_id": "Q104",
+      "sha256": "25b04db881f62e579c3ab9aaa0fa3888ef310aee220ccb0297458c02b69b50f2"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What evidence links the androgen metabolism pathway to androgenetic alopecia?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.8642,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What evidence links the androgen metabolism pathway to androgenetic alopecia?",
+  "parsed_answer": "The evidence linking the androgen metabolism pathway to androgenetic alopecia is primarily derived from the association of the SRD5A2 gene, which encodes the 5alpha-reductase enzyme, with androgenetic alopecia. This enzyme plays a pivotal role in converting testosterone into dihydrotestosterone (DHT), a potent androgen that drives prostate growth and is also implicated in hair loss.\n\nIn the context of androgenetic alopecia, the SRD5A2 gene has been identified as a potential therapeutic target, as alterations in SRD5A2, such as genetic polymorphisms, may influence disease risk and progression. The literature highlights that SRD5A2 is the dominant isoform in the prostate and is essential for androgen metabolism, which is central to the pathophysiology of androgenetic alopecia. The conversion of testosterone to DHT by SRD5A2 is a key step in the androgen metabolism pathway, and increased DHT levels are associated with the development of androgenetic alopecia.\n\nAdditionally, the literature notes that SNPs near the EDA2R and AR genes, which are also associated with androgenetic alopecia, exhibit large allele frequency differences between continents, further emphasizing the role of genetic variation in androgen metabolism in the condition.",
+  "question_id": "Q104",
+  "question_text": "What evidence links the androgen metabolism pathway to androgenetic alopecia?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 264,
+    "prompt_token_count": 1228,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The evidence linking the androgen metabolism pathway to androgenetic alopecia is primarily derived from the association of the SRD5A2 gene, which encodes the 5alpha-reductase enzyme, with androgenetic alopecia. This enzyme plays a pivotal role in converting testosterone into dihydrotestosterone (DHT), a potent androgen that drives prostate growth and is also implicated in hair loss.\n\nIn the context of androgenetic alopecia, the SRD5A2 gene has been identified as a potential therapeutic target, as alterations in SRD5A2, such as genetic polymorphisms, may influence disease risk and progression. The literature highlights that SRD5A2 is the dominant isoform in the prostate and is essential for androgen metabolism, which is central to the pathophysiology of androgenetic alopecia. The conversion of testosterone to DHT by SRD5A2 is a key step in the androgen metabolism pathway, and increased DHT levels are associated with the development of androgenetic alopecia.\n\nAdditionally, the literature notes that SNPs near the EDA2R and AR genes, which are also associated with androgenetic alopecia, exhibit large allele frequency differences between continents, further emphasizing the role of genetic variation in androgen metabolism in the condition."
+      }
+    ],
+    "created": 1783564300,
+    "id": "cmpl-f0b240ce-29f2-4302-91e3-5a7eb074f85a",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 264,
+      "prompt_tokens": 1207,
+      "total_tokens": 1471
+    }
+  },
+  "reranker_scores": [
+    0.4104347825050354,
+    -0.5340957641601562,
+    -2.772376537322998
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      40.44074249267578,
+      41.794212341308594,
+      42.12793731689453,
+      42.40460205078125,
+      42.765159606933594,
+      42.818851470947266,
+      43.00944519042969,
+      43.26446533203125,
+      43.593997955322266,
+      43.822086334228516,
+      43.86064910888672,
+      43.96236801147461,
+      43.96953201293945,
+      44.067543029785156,
+      44.15986633300781
+    ],
+    "candidate_pmids": [
+      "42294898",
+      "41501168",
+      "34552771",
+      "42053892",
+      "40134218",
+      "41722875",
+      "42361668",
+      "40868166",
+      "41975070",
+      "42151883",
+      "31849283",
+      "41951638",
+      "41194652",
+      "37143720",
+      "40670831"
+    ],
+    "expanded_retrieval_query": "What evidence links the androgen metabolism pathway to androgenetic alopecia?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40134218, relevance: 0.4104) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41501168, relevance: -0.5341) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n--- Abstract 3 (PMID: 41975070, relevance: -2.7724) ---\nProstate cancer (PCa) is a biologically heterogeneous disease that frequently progresses to castration-resistant prostate cancer (CRPC), a challenging clinical stage. The underlying mechanisms driving CRPC progression and resistance to androgen receptor (AR) signaling inhibition (ARSI) remain incompletely understood. Emerging evidence implicates the canonical Wnt pathway as a key contributor to CRPC progression. This study elucidates the role of Wnt pathway activation in mediating resistance to ARSI and identifies a robust molecular signature for predicting treatment outcomes. By integrating genomic and transcriptomic data from PCa patients, patient-derived xenografts (PDXs), and experimental models harboring or not Wnt-activating mutations, we performed differential expression analysis, unsupervised clustering, survival, and viability analysis to assess Wnt/beta-catenin pathway activation and its interaction with AR signaling. A specific Wnt transcriptional signature (AXIN2, RNF43, ZNRF3, NKD1) was found to reliably reflect pathway activation in advanced PCa. AR was found to suppress mutation-driven Wnt signaling, which was upregulated upon AR inhibition, contributing to treatment resistance. Targeting beta-catenin interactions with co-activators p300/CBP using selective inhibitors (IQ-1 and ICG-001) effectively mitigated Wnt-driven ARSI resistance, restoring sensitivity to therapy in preclinical models. Thus, canonical Wnt pathway activation emerges as a critical mediator of resistance to ARSI in CRPC. The identified Wnt signature holds potential as a biomarker for predicting and monitoring therapeutic outcomes. Concurrent targeting of AR and Wnt signaling represents a promising strategy to overcome treatment resistance, particularly in patients with Wnt-activating mutations.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What evidence links the androgen metabolism pathway to androgenetic alopecia?",
+    "rerank_seconds": 0.3368,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.351,
+    "score_max": 0.4104347825050354,
+    "score_mean": -0.9653458396593729,
+    "scores": [
+      0.4104347825050354,
+      -0.5340957641601562,
+      -2.772376537322998
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "Benign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.",
+      "Prostate cancer (PCa) is a biologically heterogeneous disease that frequently progresses to castration-resistant prostate cancer (CRPC), a challenging clinical stage. The underlying mechanisms driving CRPC progression and resistance to androgen receptor (AR) signaling inhibition (ARSI) remain incompletely understood. Emerging evidence implicates the canonical Wnt pathway as a key contributor to CRPC progression. This study elucidates the role of Wnt pathway activation in mediating resistance to ARSI and identifies a robust molecular signature for predicting treatment outcomes. By integrating genomic and transcriptomic data from PCa patients, patient-derived xenografts (PDXs), and experimental models harboring or not Wnt-activating mutations, we performed differential expression analysis, unsupervised clustering, survival, and viability analysis to assess Wnt/beta-catenin pathway activation and its interaction with AR signaling. A specific Wnt transcriptional signature (AXIN2, RNF43, ZNRF3, NKD1) was found to reliably reflect pathway activation in advanced PCa. AR was found to suppress mutation-driven Wnt signaling, which was upregulated upon AR inhibition, contributing to treatment resistance. Targeting beta-catenin interactions with co-activators p300/CBP using selective inhibitors (IQ-1 and ICG-001) effectively mitigated Wnt-driven ARSI resistance, restoring sensitivity to therapy in preclinical models. Thus, canonical Wnt pathway activation emerges as a critical mediator of resistance to ARSI in CRPC. The identified Wnt signature holds potential as a biomarker for predicting and monitoring therapeutic outcomes. Concurrent targeting of AR and Wnt signaling represents a promising strategy to overcome treatment resistance, particularly in patients with Wnt-activating mutations."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "41501168",
+      "41975070"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0141
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q104.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40134218",
+    "41501168",
+    "41975070"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:31:42.995895+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: 0.4104) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41501168, relevance: -0.5341) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n--- Abstract 3 (PMID: 41975070, relevance: -2.7724) ---\nProstate cancer (PCa) is a biologically heterogeneous disease that frequently progresses to castration-resistant prostate cancer (CRPC), a challenging clinical stage. The underlying mechanisms driving CRPC progression and resistance to androgen receptor (AR) signaling inhibition (ARSI) remain incompletely understood. Emerging evidence implicates the canonical Wnt pathway as a key contributor to CRPC progression. This study elucidates the role of Wnt pathway activation in mediating resistance to ARSI and identifies a robust molecular signature for predicting treatment outcomes. By integrating genomic and transcriptomic data from PCa patients, patient-derived xenografts (PDXs), and experimental models harboring or not Wnt-activating mutations, we performed differential expression analysis, unsupervised clustering, survival, and viability analysis to assess Wnt/beta-catenin pathway activation and its interaction with AR signaling. A specific Wnt transcriptional signature (AXIN2, RNF43, ZNRF3, NKD1) was found to reliably reflect pathway activation in advanced PCa. AR was found to suppress mutation-driven Wnt signaling, which was upregulated upon AR inhibition, contributing to treatment resistance. Targeting beta-catenin interactions with co-activators p300/CBP using selective inhibitors (IQ-1 and ICG-001) effectively mitigated Wnt-driven ARSI resistance, restoring sensitivity to therapy in preclinical models. Thus, canonical Wnt pathway activation emerges as a critical mediator of resistance to ARSI in CRPC. The identified Wnt signature holds potential as a biomarker for predicting and monitoring therapeutic outcomes. Concurrent targeting of AR and Wnt signaling represents a promising strategy to overcome treatment resistance, particularly in patients with Wnt-activating mutations.\n\n\n\n**Question:**\nWhat evidence links the androgen metabolism pathway to androgenetic alopecia?",
+  "vector_context": "--- Abstract 1 (PMID: 40134218, relevance: 0.4104) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 41501168, relevance: -0.5341) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n--- Abstract 3 (PMID: 41975070, relevance: -2.7724) ---\nProstate cancer (PCa) is a biologically heterogeneous disease that frequently progresses to castration-resistant prostate cancer (CRPC), a challenging clinical stage. The underlying mechanisms driving CRPC progression and resistance to androgen receptor (AR) signaling inhibition (ARSI) remain incompletely understood. Emerging evidence implicates the canonical Wnt pathway as a key contributor to CRPC progression. This study elucidates the role of Wnt pathway activation in mediating resistance to ARSI and identifies a robust molecular signature for predicting treatment outcomes. By integrating genomic and transcriptomic data from PCa patients, patient-derived xenografts (PDXs), and experimental models harboring or not Wnt-activating mutations, we performed differential expression analysis, unsupervised clustering, survival, and viability analysis to assess Wnt/beta-catenin pathway activation and its interaction with AR signaling. A specific Wnt transcriptional signature (AXIN2, RNF43, ZNRF3, NKD1) was found to reliably reflect pathway activation in advanced PCa. AR was found to suppress mutation-driven Wnt signaling, which was upregulated upon AR inhibition, contributing to treatment resistance. Targeting beta-catenin interactions with co-activators p300/CBP using selective inhibitors (IQ-1 and ICG-001) effectively mitigated Wnt-driven ARSI resistance, restoring sensitivity to therapy in preclinical models. Thus, canonical Wnt pathway activation emerges as a critical mediator of resistance to ARSI in CRPC. The identified Wnt signature holds potential as a biomarker for predicting and monitoring therapeutic outcomes. Concurrent targeting of AR and Wnt signaling represents a promising strategy to overcome treatment resistance, particularly in patients with Wnt-activating mutations.\n\n"
+}

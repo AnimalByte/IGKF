@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "40134218",
+    "42114689",
+    "42373232",
+    "32776659",
+    "39245941",
+    "42361668",
+    "36536295",
+    "34984527",
+    "40591711",
+    "41417529",
+    "42260572",
+    "34320917",
+    "38886730",
+    "40869374",
+    "42378135"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q004.json",
+      "question_id": "Q004",
+      "sha256": "ef5528ae2b88f79a9401f8ba9435841e48750aa22715c4ae122b94b4b0accea8"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q004.json",
+      "question_id": "Q004",
+      "sha256": "5aadffcd62019fa5895a0960170499d7a71077870164766b7001ea4d64729016"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What evidence does this study provide for an association between rs6152 and androgenetic alopecia?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8367,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What evidence does this study provide for an association between rs6152 and androgenetic alopecia?",
+  "parsed_answer": "The provided literature context does not mention any evidence for an association between rs6152 and androgenetic alopecia. Therefore, based on the given information, there is no support for such an association.",
+  "question_id": "Q004",
+  "question_text": "What evidence does this study provide for an association between rs6152 and androgenetic alopecia?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 42,
+    "prompt_token_count": 1445,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention any evidence for an association between rs6152 and androgenetic alopecia. Therefore, based on the given information, there is no support for such an association."
+      }
+    ],
+    "created": 1783563912,
+    "id": "cmpl-67835b77-8763-4682-87de-b94295d74450",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 42,
+      "prompt_tokens": 1424,
+      "total_tokens": 1466
+    }
+  },
+  "reranker_scores": [
+    1.7284659147262573,
+    -0.04100953787565231,
+    -1.3851075172424316
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      35.174049377441406,
+      36.32869338989258,
+      36.67271423339844,
+      36.90728759765625,
+      38.19895935058594,
+      38.27284622192383,
+      38.42584991455078,
+      39.203060150146484,
+      39.59466552734375,
+      40.88140869140625,
+      41.03221130371094,
+      41.359920501708984,
+      41.38238525390625,
+      41.52680969238281,
+      41.68000411987305
+    ],
+    "candidate_pmids": [
+      "40134218",
+      "42114689",
+      "42373232",
+      "32776659",
+      "39245941",
+      "42361668",
+      "36536295",
+      "34984527",
+      "40591711",
+      "41417529",
+      "42260572",
+      "34320917",
+      "38886730",
+      "40869374",
+      "42378135"
+    ],
+    "expanded_retrieval_query": "What evidence does this study provide for an association between rs6152 and androgenetic alopecia?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40134218, relevance: 1.7285) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 40591711, relevance: -0.0410) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n--- Abstract 3 (PMID: 36536295, relevance: -1.3851) ---\nBACKGROUND: Skin autofluorescence (SAF) is a non-invasive measure reflecting accumulation of advanced glycation endproducts (AGEs) in the skin. Higher SAF levels are associated with an increased risk of developing type 2 diabetes and cardiovascular disease. An earlier genome-wide association study (GWAS) revealed a strong association between NAT2 variants and SAF. The aim of this study was to calculate SAF heritability and to identify additional genetic variants associated with SAF through genome-wide association studies (GWAS). RESULTS: In 27,534 participants without diabetes the heritability estimate of lnSAF was 33% +/- 2.0% (SE) in a model adjusted for covariates. In meta-GWAS for lnSAF five SNPs, on chromosomes 8, 11, 15 and 16 were associated with lnSAF (P < 5 x 10(-8)): 1. rs2846707 (Chr11:102,576,358,C > T), which results in a Met30Val missense variant in MMP27 exon 1 (NM_022122.3); 2. rs2470893 (Chr15:75,019,449,C > T), in intergenic region between CYP1A1 and CYP1A2; with attenuation of the SNP-effect when coffee consumption was included as a covariate; 3. rs12931267 (Chr16:89,818,732,C > G) in intron 30 of FANCA and near MC1R; and following conditional analysis 4. rs3764257 (Chr16:89,800,887,C > G) an intronic variant in ZNF276, 17.8 kb upstream from rs12931267; finally, 30 kb downstream from NAT2 5. rs576201050 (Chr8:18,288,053,G > A). CONCLUSIONS: This large meta-GWAS revealed five SNPs at four loci associated with SAF in the non-diabetes population. Further unravelling of the genetic architecture of SAF will help in improving its utility as a tool for screening and early detection of diseases and disease complications.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What evidence does this study provide for an association between rs6152 and androgenetic alopecia?",
+    "rerank_seconds": 0.3422,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.358,
+    "score_max": 1.7284659147262573,
+    "score_mean": 0.10078295320272446,
+    "scores": [
+      1.7284659147262573,
+      -0.04100953787565231,
+      -1.3851075172424316
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "The identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.",
+      "BACKGROUND: Skin autofluorescence (SAF) is a non-invasive measure reflecting accumulation of advanced glycation endproducts (AGEs) in the skin. Higher SAF levels are associated with an increased risk of developing type 2 diabetes and cardiovascular disease. An earlier genome-wide association study (GWAS) revealed a strong association between NAT2 variants and SAF. The aim of this study was to calculate SAF heritability and to identify additional genetic variants associated with SAF through genome-wide association studies (GWAS). RESULTS: In 27,534 participants without diabetes the heritability estimate of lnSAF was 33% +/- 2.0% (SE) in a model adjusted for covariates. In meta-GWAS for lnSAF five SNPs, on chromosomes 8, 11, 15 and 16 were associated with lnSAF (P < 5 x 10(-8)): 1. rs2846707 (Chr11:102,576,358,C > T), which results in a Met30Val missense variant in MMP27 exon 1 (NM_022122.3); 2. rs2470893 (Chr15:75,019,449,C > T), in intergenic region between CYP1A1 and CYP1A2; with attenuation of the SNP-effect when coffee consumption was included as a covariate; 3. rs12931267 (Chr16:89,818,732,C > G) in intron 30 of FANCA and near MC1R; and following conditional analysis 4. rs3764257 (Chr16:89,800,887,C > G) an intronic variant in ZNF276, 17.8 kb upstream from rs12931267; finally, 30 kb downstream from NAT2 5. rs576201050 (Chr8:18,288,053,G > A). CONCLUSIONS: This large meta-GWAS revealed five SNPs at four loci associated with SAF in the non-diabetes population. Further unravelling of the genetic architecture of SAF will help in improving its utility as a tool for screening and early detection of diseases and disease complications."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "40591711",
+      "36536295"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0156
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q004.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40134218",
+    "40591711",
+    "36536295"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:25:13.314429+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: 1.7285) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 40591711, relevance: -0.0410) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n--- Abstract 3 (PMID: 36536295, relevance: -1.3851) ---\nBACKGROUND: Skin autofluorescence (SAF) is a non-invasive measure reflecting accumulation of advanced glycation endproducts (AGEs) in the skin. Higher SAF levels are associated with an increased risk of developing type 2 diabetes and cardiovascular disease. An earlier genome-wide association study (GWAS) revealed a strong association between NAT2 variants and SAF. The aim of this study was to calculate SAF heritability and to identify additional genetic variants associated with SAF through genome-wide association studies (GWAS). RESULTS: In 27,534 participants without diabetes the heritability estimate of lnSAF was 33% +/- 2.0% (SE) in a model adjusted for covariates. In meta-GWAS for lnSAF five SNPs, on chromosomes 8, 11, 15 and 16 were associated with lnSAF (P < 5 x 10(-8)): 1. rs2846707 (Chr11:102,576,358,C > T), which results in a Met30Val missense variant in MMP27 exon 1 (NM_022122.3); 2. rs2470893 (Chr15:75,019,449,C > T), in intergenic region between CYP1A1 and CYP1A2; with attenuation of the SNP-effect when coffee consumption was included as a covariate; 3. rs12931267 (Chr16:89,818,732,C > G) in intron 30 of FANCA and near MC1R; and following conditional analysis 4. rs3764257 (Chr16:89,800,887,C > G) an intronic variant in ZNF276, 17.8 kb upstream from rs12931267; finally, 30 kb downstream from NAT2 5. rs576201050 (Chr8:18,288,053,G > A). CONCLUSIONS: This large meta-GWAS revealed five SNPs at four loci associated with SAF in the non-diabetes population. Further unravelling of the genetic architecture of SAF will help in improving its utility as a tool for screening and early detection of diseases and disease complications.\n\n\n\n**Question:**\nWhat evidence does this study provide for an association between rs6152 and androgenetic alopecia?",
+  "vector_context": "--- Abstract 1 (PMID: 40134218, relevance: 1.7285) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 40591711, relevance: -0.0410) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n--- Abstract 3 (PMID: 36536295, relevance: -1.3851) ---\nBACKGROUND: Skin autofluorescence (SAF) is a non-invasive measure reflecting accumulation of advanced glycation endproducts (AGEs) in the skin. Higher SAF levels are associated with an increased risk of developing type 2 diabetes and cardiovascular disease. An earlier genome-wide association study (GWAS) revealed a strong association between NAT2 variants and SAF. The aim of this study was to calculate SAF heritability and to identify additional genetic variants associated with SAF through genome-wide association studies (GWAS). RESULTS: In 27,534 participants without diabetes the heritability estimate of lnSAF was 33% +/- 2.0% (SE) in a model adjusted for covariates. In meta-GWAS for lnSAF five SNPs, on chromosomes 8, 11, 15 and 16 were associated with lnSAF (P < 5 x 10(-8)): 1. rs2846707 (Chr11:102,576,358,C > T), which results in a Met30Val missense variant in MMP27 exon 1 (NM_022122.3); 2. rs2470893 (Chr15:75,019,449,C > T), in intergenic region between CYP1A1 and CYP1A2; with attenuation of the SNP-effect when coffee consumption was included as a covariate; 3. rs12931267 (Chr16:89,818,732,C > G) in intron 30 of FANCA and near MC1R; and following conditional analysis 4. rs3764257 (Chr16:89,800,887,C > G) an intronic variant in ZNF276, 17.8 kb upstream from rs12931267; finally, 30 kb downstream from NAT2 5. rs576201050 (Chr8:18,288,053,G > A). CONCLUSIONS: This large meta-GWAS revealed five SNPs at four loci associated with SAF in the non-diabetes population. Further unravelling of the genetic architecture of SAF will help in improving its utility as a tool for screening and early detection of diseases and disease complications.\n\n"
+}

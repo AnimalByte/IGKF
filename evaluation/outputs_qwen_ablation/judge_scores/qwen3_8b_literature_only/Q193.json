@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q193",
+      "randomization_seed": "20260706:Q193:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q193",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q193",
+      "error": null,
+      "id": "batch_req_6a4f85d8a4188190a9caf0c4e225e662",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579012,
+          "created_at": 1783578978,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06b314ff2793548a006a4f416202448190b340f6707b5f6890",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q193"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06b314ff2793548a006a4f417464108190aac4e048ef2475d3",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the core question and distinguishes direct evidence from indirect/speculative association.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The main conclusion of no direct HDAC9-androgen metabolism evidence is consistent with the reference, but it introduces unsupported claims about preeclampsia, trophoblast function, angiogenesis, and GPCR pathways that are not in the provided evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Covers direct absence and speculative indirect association, but does not ground the answer in the specific supplied pathways/functions and includes irrelevant unsupported material.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately states that indirect links are speculative and unproven, though it weakens this by adding unsupported examples.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether HDAC9 is linked to androgen metabolism and explicitly separates direct pathway membership from indirect association.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied evidence: no HDAC9 pathway, interaction, function, or disease evidence directly involving androgen metabolism.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides the key conclusion and notes possible indirect epigenetic/gene-regulatory relevance, though it could have cited the specific listed HDAC9 pathways as non-androgen-related.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly labels indirect effects as speculative and not directly supported by the provided data.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06b314ff2793548a006a4f417da17c8190b9f30cc763593be5",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2842,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 866,
+            "output_tokens_details": {
+              "reasoning_tokens": 424
+            },
+            "total_tokens": 3708
+          },
+          "user": null
+        },
+        "request_id": "0cf0a66a-9b18-47fd-91c8-9d4dd4e7697a",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the core question and distinguishes direct evidence from indirect/speculative association.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The main conclusion of no direct HDAC9-androgen metabolism evidence is consistent with the reference, but it introduces unsupported claims about preeclampsia, trophoblast function, angiogenesis, and GPCR pathways that are not in the provided evidence.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers direct absence and speculative indirect association, but does not ground the answer in the specific supplied pathways/functions and includes irrelevant unsupported material.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately states that indirect links are speculative and unproven, though it weakens this by adding unsupported examples.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q193",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q193.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.787066+00:00"
+}

@@ -1,0 +1,158 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q118.json",
+      "question_id": "Q118",
+      "sha256": "fe9962995356a519fe879d57c4f8b85f8783846ecefdfb636f47c21b0e5cbd76"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q118.json",
+      "question_id": "Q118",
+      "sha256": "99abff2e1c13a51c8cba01f0cda2c40528e9c37783b72d5d94919f19103ad90b"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.0902,
+  "git_commit": null,
+  "graph_context": "No relevant data found in the graph.",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which variants show the strongest statistical association with androgenetic alopecia, as indicated by the smallest p-values?",
+  "parsed_answer": "No relevant data found in the graph.",
+  "question_id": "Q118",
+  "question_text": "Which variants show the strongest statistical association with androgenetic alopecia, as indicated by the smallest p-values?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 8,
+    "prompt_token_count": 126,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "No relevant data found in the graph."
+      }
+    ],
+    "created": 1783559515,
+    "id": "cmpl-e2c27013-0e03-4482-9863-42afff085951",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 8,
+      "prompt_tokens": 105,
+      "total_tokens": 113
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nNo relevant data found in the graph.",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "graph_retrieval_seconds": 0.0182,
+    "original_retrieval_query": "Which variants show the strongest statistical association with androgenetic alopecia, as indicated by the smallest p-values?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "variants"
+      },
+      {
+        "label": "ENTITY",
+        "text": "statistical"
+      },
+      {
+        "label": "ENTITY",
+        "text": "association"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgenetic alopecia"
+      },
+      {
+        "label": "ENTITY",
+        "text": "p-values"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0182,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q118.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T01:11:55.690784+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Question:**\nWhich variants show the strongest statistical association with androgenetic alopecia, as indicated by the smallest p-values?",
+  "vector_context": ""
+}

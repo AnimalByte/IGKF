@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q131",
+      "randomization_seed": "20260706:Q131:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q131",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q131",
+      "error": null,
+      "id": "batch_req_6a4f85d4c0ec81909135ed40747330c5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594684,
+          "created_at": 1783594635,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0775365ba97d24c3006a4f7e8bda388193a49b65272083cd28",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q131"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0775365ba97d24c3006a4f7e933b6c8193b26b5f9ff965fce7",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the evidence linking finasteride to androgen metabolism via SRD5A2 and androgen biosynthesis.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately identifies SRD5A2 as a finasteride target involved in testosterone-to-DHT conversion and androgen biosynthesis; minor imprecision in describing PPI-listed genes as interactions with finasteride.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key graph evidence and SRD5A2 biology, but omits the AR target and literature evidence that finasteride is a known SRD5A2 inhibitor.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately notes lack of validated interactions for listed PPI genes, though it somewhat overstates the strength without distinguishing graph versus literature evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the finasteride-SRD5A2-androgen metabolism link, but frames it mainly through literature rather than the full integrated data.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Scientifically accurate that finasteride is a known SRD5A2/5-alpha-reductase inhibitor affecting DHT synthesis, but incorrectly downplays the integrated graph evidence that directly lists SRD5A2 and androgen biosynthesis.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes the abstract evidence but omits important graph context: finasteride targets SRD5A2 and AR, and SRD5A2 is mapped to the androgen biosynthesis pathway.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Uses reasonable qualification about indirectness from the cited abstract, though the qualification is partly misplaced because the graph provides a more direct connection.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0775365ba97d24c3006a4f7eac114c8193a109d6843fbb4371",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2276,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 919,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3195
+          },
+          "user": null
+        },
+        "request_id": "ff10c24b-a73f-4f46-b8ff-225beba0b48f",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the evidence linking finasteride to androgen metabolism via SRD5A2 and androgen biosynthesis.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately identifies SRD5A2 as a finasteride target involved in testosterone-to-DHT conversion and androgen biosynthesis; minor imprecision in describing PPI-listed genes as interactions with finasteride.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the key graph evidence and SRD5A2 biology, but omits the AR target and literature evidence that finasteride is a known SRD5A2 inhibitor.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately notes lack of validated interactions for listed PPI genes, though it somewhat overstates the strength without distinguishing graph versus literature evidence.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q131",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q131.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.762843+00:00"
+}

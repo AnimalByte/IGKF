@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q044",
+      "randomization_seed": "20260706:Q044:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q044",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q044",
+      "error": null,
+      "id": "batch_req_6a4f85cf50e081908081a8596f5aa9b9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594541,
+          "created_at": 1783594486,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0cca309c0b65bd81006a4f7df6319881958ebfef4940b8e962",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q044"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0cca309c0b65bd81006a4f7df754f4819582f90e89505996fd",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether genes associated with rs7313338 can be identified from the provided context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly notes that rs7313338 is not mentioned in the supplied evidence, though it imprecisely refers only to the literature context despite graph context being provided.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides the key conclusion that no associated gene can be determined, but does not explicitly distinguish the unrelated gene list from variant-specific annotation.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains rather than inventing an unsupported gene association.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the requested gene association for rs7313338.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the supplied graph context does not identify any gene associated with rs7313338.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Gives the necessary conclusion based on the available evidence without adding unsupported gene names.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly qualifies uncertainty and abstains because the evidence is insufficient.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0cca309c0b65bd81006a4f7e2195e88195b6d2181f6d87de86",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2377,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1419,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 3796
+          },
+          "user": null
+        },
+        "request_id": "7e7a6744-af2d-47d7-b423-8a6ffddcd2c2",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether genes associated with rs7313338 can be identified from the provided context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes that rs7313338 is not mentioned in the supplied evidence, though it imprecisely refers only to the literature context despite graph context being provided.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Provides the key conclusion that no associated gene can be determined, but does not explicitly distinguish the unrelated gene list from variant-specific annotation.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inventing an unsupported gene association.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q044",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q044.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.729493+00:00"
+}

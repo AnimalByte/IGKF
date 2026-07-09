@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q065",
+      "randomization_seed": "20260706:Q065:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q065",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q065",
+      "error": null,
+      "id": "batch_req_6a4f85d0908c8190b2b3404db5addb57",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594506,
+          "created_at": 1783594456,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_095304b01c8fde1a006a4f7dd898f88196b0e97f11377240f1",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q065"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_095304b01c8fde1a006a4f7dda15648196a9e4387d0f60cd4e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"It addresses the topic only by abstaining and does not describe FGF5's known role in hair-follicle cycling.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The claim that the supplied graph lacks direct hair-cycle functional evidence is mostly fair, but it overlooks the trichomegaly association and provides no substantive biomedical answer.\"},\"completeness\":{\"score\":1,\"rationale\":\"It omits the key known role of FGF5 as a regulator of hair growth/anagen-to-catagen transition and the relevance of long-hair/trichomegaly phenotypes.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"It appropriately avoids inventing unsupported details given the limited stated evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"It responds by noting absence of hair-follicle evidence in the abstracts but does not answer what is known about FGF5 in hair cycling.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"It accurately states that the listed abstracts concern cancer, tilapia FGF biology, and renal ischemia rather than hair follicles, but it does not account for other supplied disease-association evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"It omits the central established biology of FGF5 in limiting hair growth and regulating the hair cycle.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"It clearly abstains rather than making unsupported claims from the provided abstracts.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_095304b01c8fde1a006a4f7dfeffc88196baf61b306e07a577",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2150,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1379,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 3529
+          },
+          "user": null
+        },
+        "request_id": "0b20ae83-c9a6-42ac-b961-2c55817b6adb",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It addresses the topic only by abstaining and does not describe FGF5's known role in hair-follicle cycling.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The claim that the supplied graph lacks direct hair-cycle functional evidence is mostly fair, but it overlooks the trichomegaly association and provides no substantive biomedical answer.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "It omits the key known role of FGF5 as a regulator of hair growth/anagen-to-catagen transition and the relevance of long-hair/trichomegaly phenotypes.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "It appropriately avoids inventing unsupported details given the limited stated evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q065",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q065.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.737935+00:00"
+}

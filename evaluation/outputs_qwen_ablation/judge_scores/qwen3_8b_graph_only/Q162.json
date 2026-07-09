@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q162",
+      "randomization_seed": "20260706:Q162:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q162",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q162",
+      "error": null,
+      "id": "batch_req_6a4f85d6ae1881908a83fa8225a08af9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594588,
+          "created_at": 1783594572,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f63e005051ac396006a4f7e4c8fc881909fed54daeada7298",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q162"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f63e005051ac396006a4f7e53135481908445a7b0c77ee9df",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses whether the data support a scalp or hair-follicle inflammatory link, but is less tailored to the specific indirect immune/cytokine evidence present.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The conclusion that there is no direct scalp/hair-follicle evidence is correct, but it incorrectly mentions gut microbiota and overlooks HDAC9 evidence related to Th2 differentiation, cytokine regulation, and immune signaling.\"},\"completeness\":{\"score\":3,\"rationale\":\"States the key limitation but omits the supported indirect inflammatory/immune evidence in the packet.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately abstains from claiming a direct link, though it overstates the absence of inflammatory-process evidence and includes an unsupported topic.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question about scalp or hair-follicle inflammatory relevance.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects the packet: HDAC9 has indirect immune/cytokine-related annotations but no direct scalp or hair-follicle inflammatory association.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the central supported evidence and limitation; could have been slightly more specific by naming Th2 differentiation and immune signaling.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the evidence as indirect and insufficient for establishing a scalp/hair-follicle link.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f63e005051ac396006a4f7e590ab08190ab6d82d5b9e89f92",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2276,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 788,
+            "output_tokens_details": {
+              "reasoning_tokens": 437
+            },
+            "total_tokens": 3064
+          },
+          "user": null
+        },
+        "request_id": "b3ecae21-6c57-4b43-834b-20f3eb5d156c",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately answers the question about scalp or hair-follicle inflammatory relevance.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the packet: HDAC9 has indirect immune/cytokine-related annotations but no direct scalp or hair-follicle inflammatory association.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the central supported evidence and limitation; could have been slightly more specific by naming Th2 differentiation and immune signaling.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly qualifies the evidence as indirect and insufficient for establishing a scalp/hair-follicle link.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q162",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q162.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.775309+00:00"
+}

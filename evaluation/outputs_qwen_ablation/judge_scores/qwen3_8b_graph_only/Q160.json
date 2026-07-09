@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q160",
+      "randomization_seed": "20260706:Q160:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q160",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q160",
+      "error": null,
+      "id": "batch_req_6a4f85d6851881909ee0a8471eed6ad8",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594506,
+          "created_at": 1783594477,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04fbbe4dfd517ff1006a4f7ded93b08197ba815420c1a1e34d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q160"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04fbbe4dfd517ff1006a4f7dee6c048197801bc6b42b42adcd",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses both the functional consequence and PAX1 connection, but misidentifies GO annotations as the variant's functional consequence.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The listed GO terms are present in the evidence, and the lack of PAX1 evidence is correct, but the annotated consequence should be the regulatory-element/dELS context rather than GO functions.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes the absence of PAX1 evidence but omits the key regulatory element annotation and the implicated gene EBF1.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids asserting a PAX1 connection, though it overinterprets GO terms as the functional consequence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"It addresses lack of literature evidence but does not use the supplied graph evidence to answer the annotated consequence.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"It is true that the abstracts do not mention rs929626 or PAX1, but it incorrectly says no information is available despite graph annotations for rs929626.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the graph-provided regulatory element/dELS annotation and EBF1 implication, only discussing the abstracts.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Avoids unsupported PAX1 claims, but abstains too broadly by ignoring available non-abstract evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04fbbe4dfd517ff1006a4f7dfedc488197af5f4b7bd7a46c4b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2209,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 853,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3062
+          },
+          "user": null
+        },
+        "request_id": "56599a65-ae2d-43b1-a9d8-714849ce1fdd",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses both the functional consequence and PAX1 connection, but misidentifies GO annotations as the variant's functional consequence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The listed GO terms are present in the evidence, and the lack of PAX1 evidence is correct, but the annotated consequence should be the regulatory-element/dELS context rather than GO functions.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Includes the absence of PAX1 evidence but omits the key regulatory element annotation and the implicated gene EBF1.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids asserting a PAX1 connection, though it overinterprets GO terms as the functional consequence.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q160",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q160.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.774374+00:00"
+}

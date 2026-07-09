@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42147184",
+    "32329860",
+    "42260572",
+    "34980917",
+    "41161132",
+    "42378135",
+    "40869374",
+    "42114689",
+    "37986797",
+    "31273931",
+    "42392035",
+    "37254524",
+    "36901860",
+    "41766532",
+    "40027824"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q009.json",
+      "question_id": "Q009",
+      "sha256": "85b8fcba199ac3bd677958e7638df39152e8046ab6ea7a1e94c85c6d284bb0e7"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q009.json",
+      "question_id": "Q009",
+      "sha256": "63d2b5eba028658ea20921cfb4a8a39fd73b7e317bb96fb24c59fb3f93b05795"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which gene or genes are annotated as associated with variant rs2180439 in this study?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8802,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which gene or genes are annotated as associated with variant rs2180439 in this study?",
+  "parsed_answer": "The provided literature context does not mention any gene or genes associated with variant rs2180439. Therefore, it is not possible to determine which gene or genes are annotated as associated with this variant based on the given information.",
+  "question_id": "Q009",
+  "question_text": "Which gene or genes are annotated as associated with variant rs2180439 in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 48,
+    "prompt_token_count": 1431,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention any gene or genes associated with variant rs2180439. Therefore, it is not possible to determine which gene or genes are annotated as associated with this variant based on the given information."
+      }
+    ],
+    "created": 1783563930,
+    "id": "cmpl-bc614952-c322-4f4d-84c3-d90a203fcba4",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 48,
+      "prompt_tokens": 1410,
+      "total_tokens": 1458
+    }
+  },
+  "reranker_scores": [
+    3.127441883087158,
+    3.1081717014312744,
+    3.089726209640503
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      33.053955078125,
+      33.37675094604492,
+      34.403076171875,
+      34.758384704589844,
+      35.20393753051758,
+      36.52585983276367,
+      36.95380401611328,
+      37.151947021484375,
+      37.296443939208984,
+      37.37493133544922,
+      37.389225006103516,
+      37.56452560424805,
+      37.71025466918945,
+      37.813594818115234,
+      38.01715087890625
+    ],
+    "candidate_pmids": [
+      "42147184",
+      "32329860",
+      "42260572",
+      "34980917",
+      "41161132",
+      "42378135",
+      "40869374",
+      "42114689",
+      "37986797",
+      "31273931",
+      "42392035",
+      "37254524",
+      "36901860",
+      "41766532",
+      "40027824"
+    ],
+    "expanded_retrieval_query": "Which gene or genes are annotated as associated with variant rs2180439 in this study?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42392035, relevance: 3.1274) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 41766532, relevance: 3.1082) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 3 (PMID: 42378135, relevance: 3.0897) ---\nIntroduction. The EDAR (ectodysplasin A receptor) gene is associated with the development of ectodermal structures. The rs3827760 variant is highly frequent in East Asian and Native American populations, and this study analyzes its relationship with genetic ancestry proportions in a Latin American population sample. Objective. To analyze how genetic ancestry proportions influence the distribution of single nucleotide polymorphism (SNP) rs3827760 genotypes of the EDAR gene in Latin American populations. Materials and methods. Genetic ancestry proportions were estimated using a panel of 446 ancestry-informative SNPs, applying the STRUCTURE program and univariate and multivariate logistic regression models. Results. Native American ancestry proportions showed a significant positive association with the prevalence of rs3827760 GG genotypes, while European ancestry showed a negative association. Conclusion. Native American and European genetic ancestry proportions influence the distribution of SNP rs3827760 genotypes of the EDAR gene in Latin American populations.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which gene or genes are annotated as associated with variant rs2180439 in this study?",
+    "rerank_seconds": 0.336,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3504,
+    "score_max": 3.127441883087158,
+    "score_mean": 3.1084465980529785,
+    "scores": [
+      3.127441883087158,
+      3.1081717014312744,
+      3.089726209640503
+    ],
+    "selected_abstracts": [
+      "Genome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.",
+      "BACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.",
+      "Introduction. The EDAR (ectodysplasin A receptor) gene is associated with the development of ectodermal structures. The rs3827760 variant is highly frequent in East Asian and Native American populations, and this study analyzes its relationship with genetic ancestry proportions in a Latin American population sample. Objective. To analyze how genetic ancestry proportions influence the distribution of single nucleotide polymorphism (SNP) rs3827760 genotypes of the EDAR gene in Latin American populations. Materials and methods. Genetic ancestry proportions were estimated using a panel of 446 ancestry-informative SNPs, applying the STRUCTURE program and univariate and multivariate logistic regression models. Results. Native American ancestry proportions showed a significant positive association with the prevalence of rs3827760 GG genotypes, while European ancestry showed a negative association. Conclusion. Native American and European genetic ancestry proportions influence the distribution of SNP rs3827760 genotypes of the EDAR gene in Latin American populations."
+    ],
+    "selected_pmids": [
+      "42392035",
+      "41766532",
+      "42378135"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0143
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q009.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42392035",
+    "41766532",
+    "42378135"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:25:31.006182+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42392035, relevance: 3.1274) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 41766532, relevance: 3.1082) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 3 (PMID: 42378135, relevance: 3.0897) ---\nIntroduction. The EDAR (ectodysplasin A receptor) gene is associated with the development of ectodermal structures. The rs3827760 variant is highly frequent in East Asian and Native American populations, and this study analyzes its relationship with genetic ancestry proportions in a Latin American population sample. Objective. To analyze how genetic ancestry proportions influence the distribution of single nucleotide polymorphism (SNP) rs3827760 genotypes of the EDAR gene in Latin American populations. Materials and methods. Genetic ancestry proportions were estimated using a panel of 446 ancestry-informative SNPs, applying the STRUCTURE program and univariate and multivariate logistic regression models. Results. Native American ancestry proportions showed a significant positive association with the prevalence of rs3827760 GG genotypes, while European ancestry showed a negative association. Conclusion. Native American and European genetic ancestry proportions influence the distribution of SNP rs3827760 genotypes of the EDAR gene in Latin American populations.\n\n\n\n**Question:**\nWhich gene or genes are annotated as associated with variant rs2180439 in this study?",
+  "vector_context": "--- Abstract 1 (PMID: 42392035, relevance: 3.1274) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 41766532, relevance: 3.1082) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 3 (PMID: 42378135, relevance: 3.0897) ---\nIntroduction. The EDAR (ectodysplasin A receptor) gene is associated with the development of ectodermal structures. The rs3827760 variant is highly frequent in East Asian and Native American populations, and this study analyzes its relationship with genetic ancestry proportions in a Latin American population sample. Objective. To analyze how genetic ancestry proportions influence the distribution of single nucleotide polymorphism (SNP) rs3827760 genotypes of the EDAR gene in Latin American populations. Materials and methods. Genetic ancestry proportions were estimated using a panel of 446 ancestry-informative SNPs, applying the STRUCTURE program and univariate and multivariate logistic regression models. Results. Native American ancestry proportions showed a significant positive association with the prevalence of rs3827760 GG genotypes, while European ancestry showed a negative association. Conclusion. Native American and European genetic ancestry proportions influence the distribution of SNP rs3827760 genotypes of the EDAR gene in Latin American populations.\n\n"
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q067",
+      "randomization_seed": "20260706:Q067:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q067",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q067",
+      "error": null,
+      "id": "batch_req_6a4f85d110388190b2f06784ea29941b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578938,
+          "created_at": 1783578905,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_056f0d430db92eed006a4f4119bd208193adb212eb1c8f9db8",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q067"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_056f0d430db92eed006a4f412bccfc8193b987a00576b16228",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether high-impact variants are mapped to FGF5.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The main conclusion is supported by the provided evidence, which does not identify specific high-impact FGF5 variants. However, it includes an inaccurate extraneous statement about the other abstracts.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Provides the key answer and explains the lack of explicit variant information, though with some unnecessary and partly incorrect extra context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from naming variants not supported by the evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the lack of high-impact variant information, though it frames the answer only around the graph context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the supplied graph context does not provide high-impact variant mappings to FGF5.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Gives a valid abstention but does not mention the vector evidence or explicitly state that no such variants are identified in the supplied study context.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly avoids inventing unsupported variant names.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_056f0d430db92eed006a4f4134eb388193af130b6bd9b883fe",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1924,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 811,
+            "output_tokens_details": {
+              "reasoning_tokens": 417
+            },
+            "total_tokens": 2735
+          },
+          "user": null
+        },
+        "request_id": "8fa44f59-637a-4222-ae02-94a8d6205a68",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the lack of high-impact variant information, though it frames the answer only around the graph context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the supplied graph context does not provide high-impact variant mappings to FGF5.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Gives a valid abstention but does not mention the vector evidence or explicitly state that no such variants are identified in the supplied study context.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Correctly avoids inventing unsupported variant names.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q067",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q067.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.738859+00:00"
+}

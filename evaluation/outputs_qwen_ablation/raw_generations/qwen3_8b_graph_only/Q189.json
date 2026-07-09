@@ -1,0 +1,170 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q189.json",
+      "question_id": "Q189",
+      "sha256": "eb6545fa058256f908c4099de6be9f3af55934a1c86dd5b23055cb6d5a616ba6"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q189.json",
+      "question_id": "Q189",
+      "sha256": "6b42c120984aaec82d8ddec8d1f6664793a3598da8b1059cd87f9693d8798775"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.8204,
+  "git_commit": null,
+  "graph_context": "Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the evidence support differential Dutasteride response according to SRD5A2 genotype? Distinguish the drug's pharmacologic mechanism from pharmacogenomic evidence.",
+  "parsed_answer": "The evidence provided does not directly support differential Dutasteride response according to SRD5A2 genotype. Here's the distinction between the drug's pharmacologic mechanism and pharmacogenomic evidence:\n\n**Pharmacologic Mechanism:**\nDutasteride is a selective inhibitor of 5\u03b1-reductase, an enzyme that converts testosterone to dihydrotestosterone (DHT). It primarily targets the SRD5A2 isoform of the enzyme, which is predominantly expressed in the prostate. By inhibiting SRD5A2, Dutasteride reduces DHT levels, thereby exerting its therapeutic effects in conditions such as benign prostatic hyperplasia (BPH) and male pattern baldness.\n\n**Pharmacogenomic Evidence:**\nThe graph context indicates that Dutasteride targets the SRD5A2 gene and is associated with the AR (androgen receptor) gene. However, there is no evidence provided regarding genotype variations in SRD5A2 or how such variations might influence the response to Dutasteride. The graph lists interactions with other genes (e.g., DKK2, SH3GL2, FOXA1, PTCH1, DHRS7), but these are not linked to genetic polymorphisms or differential response based on SRD5A2 genotype.\n\nIn conclusion, while SRD5A2 is a key pharmacologic target of Dutasteride, the available evidence does not provide pharmacogenomic data to support differential response based on SRD5A2 genotype.",
+  "question_id": "Q189",
+  "question_text": "Does the evidence support differential Dutasteride response according to SRD5A2 genotype? Distinguish the drug's pharmacologic mechanism from pharmacogenomic evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 305,
+    "prompt_token_count": 262,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The evidence provided does not directly support differential Dutasteride response according to SRD5A2 genotype. Here's the distinction between the drug's pharmacologic mechanism and pharmacogenomic evidence:\n\n**Pharmacologic Mechanism:**\nDutasteride is a selective inhibitor of 5\u03b1-reductase, an enzyme that converts testosterone to dihydrotestosterone (DHT). It primarily targets the SRD5A2 isoform of the enzyme, which is predominantly expressed in the prostate. By inhibiting SRD5A2, Dutasteride reduces DHT levels, thereby exerting its therapeutic effects in conditions such as benign prostatic hyperplasia (BPH) and male pattern baldness.\n\n**Pharmacogenomic Evidence:**\nThe graph context indicates that Dutasteride targets the SRD5A2 gene and is associated with the AR (androgen receptor) gene. However, there is no evidence provided regarding genotype variations in SRD5A2 or how such variations might influence the response to Dutasteride. The graph lists interactions with other genes (e.g., DKK2, SH3GL2, FOXA1, PTCH1, DHRS7), but these are not linked to genetic polymorphisms or differential response based on SRD5A2 genotype.\n\nIn conclusion, while SRD5A2 is a key pharmacologic target of Dutasteride, the available evidence does not provide pharmacogenomic data to support differential response based on SRD5A2 genotype."
+      }
+    ],
+    "created": 1783563710,
+    "id": "cmpl-9dc9d1e3-6fbb-4385-a28f-b5285a4c3425",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 305,
+      "prompt_tokens": 241,
+      "total_tokens": 546
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "graph_context_length": 416,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0222,
+    "original_retrieval_query": "Does the evidence support differential Dutasteride response according to SRD5A2 genotype? Distinguish the drug's pharmacologic mechanism from pharmacogenomic evidence.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "dutasteride"
+      },
+      {
+        "label": "ENTITY",
+        "text": "response"
+      },
+      {
+        "label": "ENTITY",
+        "text": "srd5a2 genotype"
+      },
+      {
+        "label": "ENTITY",
+        "text": "distinguish"
+      },
+      {
+        "label": "ENTITY",
+        "text": "drug's"
+      },
+      {
+        "label": "ENTITY",
+        "text": "pharmacologic mechanism"
+      },
+      {
+        "label": "ENTITY",
+        "text": "pharmacogenomic evidence"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0222,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q189.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:21:53.723861+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\n**Question:**\nDoes the evidence support differential Dutasteride response according to SRD5A2 genotype? Distinguish the drug's pharmacologic mechanism from pharmacogenomic evidence.",
+  "vector_context": ""
+}

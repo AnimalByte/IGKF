@@ -1,0 +1,174 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q187.json",
+      "question_id": "Q187",
+      "sha256": "d140a38553533940e20464e25edf952bd7c07f3ac804c109a73c94d2081d57b8"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q187.json",
+      "question_id": "Q187",
+      "sha256": "b6045bb7d18fc6e43e67cf5fdf5be711a2209703718b385a4a16e10dc4006ab5"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.5418,
+  "git_commit": null,
+  "graph_context": "Entity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this dataset contain evidence for a gene\u2013environment interaction involving SRD5A2 and hair loss? If not, state what data would be required to test it.",
+  "parsed_answer": "The dataset does not contain direct evidence for a gene\u2013environment interaction involving SRD5A2 and hair loss. However, it does provide information that could be relevant to testing such an interaction.\n\n**Existing Data:**\n- **Drug Evidence:** The gene SRD5A2 is targeted by **FINASTERIDE**, which is associated with the treatment of **androgenetic alopecia** (a type of hair loss). This suggests a potential genetic basis for the condition, but it does not establish a gene\u2013environment interaction.\n- **Phenotype Associations:** While \"androgenetic alopecia\" is listed as an associated phenotype, this is a genetic association rather than an environmental one.\n\n**Data Required to Test Gene\u2013Environment Interaction:**\nTo test for a gene\u2013environment interaction involving SRD5A2 and hair loss, the following data would be needed:\n1. **Environmental Exposure Data:** Information on environmental factors (e.g., diet, stress, pollutants, or lifestyle factors) that may influence hair loss.\n2. **Population-Based Studies:** Data from epidemiological studies that examine the combined effect of genetic variants in SRD5A2 and environmental exposures on the risk of hair loss.\n3. **Genotype-Environment Interaction Analysis:** Statistical analysis that assesses whether the effect of a genetic variant (e.g., in SRD5A2) on hair loss differs depending on the presence of a specific environmental factor.\n4. **Functional Studies:** Experimental evidence showing how environmental factors might modulate the expression or function of SRD5A2, thereby influencing hair loss.\n\nIn summary, while the dataset provides a genetic link between SRD5A2 and hair loss, it lacks evidence of a gene\u2013environment interaction. To test this, additional data on environmental exposures and their interaction with genetic variants would be required.",
+  "question_id": "Q187",
+  "question_text": "Does this dataset contain evidence for a gene\u2013environment interaction involving SRD5A2 and hair loss? If not, state what data would be required to test it.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 369,
+    "prompt_token_count": 631,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The dataset does not contain direct evidence for a gene\u2013environment interaction involving SRD5A2 and hair loss. However, it does provide information that could be relevant to testing such an interaction.\n\n**Existing Data:**\n- **Drug Evidence:** The gene SRD5A2 is targeted by **FINASTERIDE**, which is associated with the treatment of **androgenetic alopecia** (a type of hair loss). This suggests a potential genetic basis for the condition, but it does not establish a gene\u2013environment interaction.\n- **Phenotype Associations:** While \"androgenetic alopecia\" is listed as an associated phenotype, this is a genetic association rather than an environmental one.\n\n**Data Required to Test Gene\u2013Environment Interaction:**\nTo test for a gene\u2013environment interaction involving SRD5A2 and hair loss, the following data would be needed:\n1. **Environmental Exposure Data:** Information on environmental factors (e.g., diet, stress, pollutants, or lifestyle factors) that may influence hair loss.\n2. **Population-Based Studies:** Data from epidemiological studies that examine the combined effect of genetic variants in SRD5A2 and environmental exposures on the risk of hair loss.\n3. **Genotype-Environment Interaction Analysis:** Statistical analysis that assesses whether the effect of a genetic variant (e.g., in SRD5A2) on hair loss differs depending on the presence of a specific environmental factor.\n4. **Functional Studies:** Experimental evidence showing how environmental factors might modulate the expression or function of SRD5A2, thereby influencing hair loss.\n\nIn summary, while the dataset provides a genetic link between SRD5A2 and hair loss, it lacks evidence of a gene\u2013environment interaction. To test this, additional data on environmental exposures and their interaction with genetic variants would be required."
+      }
+    ],
+    "created": 1783563701,
+    "id": "cmpl-22b91834-717a-47e8-868e-37a098d0f7d9",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 369,
+      "prompt_tokens": 610,
+      "total_tokens": 979
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+    "found_specific_entity": true,
+    "graph_context": "Entity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+    "graph_context_length": 1614,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0123,
+    "original_retrieval_query": "Does this dataset contain evidence for a gene\u2013environment interaction involving SRD5A2 and hair loss? If not, state what data would be required to test it.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "dataset"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "gene\u2013"
+      },
+      {
+        "label": "ENTITY",
+        "text": "environment"
+      },
+      {
+        "label": "ENTITY",
+        "text": "interaction"
+      },
+      {
+        "label": "ENTITY",
+        "text": "srd5a2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair loss"
+      },
+      {
+        "label": "ENTITY",
+        "text": "data"
+      },
+      {
+        "label": "ENTITY",
+        "text": "test"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0123,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q187.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:21:45.538059+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma\n\n**Question:**\nDoes this dataset contain evidence for a gene\u2013environment interaction involving SRD5A2 and hair loss? If not, state what data would be required to test it.",
+  "vector_context": ""
+}

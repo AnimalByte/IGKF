@@ -1,0 +1,182 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q195.json",
+      "question_id": "Q195",
+      "sha256": "e78644188ddef4f263d1ab24d8301131d82f58a736220dcbf23eb437fc7aae3d"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q195.json",
+      "question_id": "Q195",
+      "sha256": "537d9cb24e4c6ad506f316ef201026db2a54aab2300ac60f472bedcf531838b4"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.8696,
+  "git_commit": null,
+  "graph_context": "Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Is there evidence that Dutasteride is relevant to diseases or phenotypes linked with LGR4? Distinguish direct drug\u2013gene evidence from speculative pathway-level connections.",
+  "parsed_answer": "Based on the provided IGKF graph context, there is **no direct evidence** that Dutasteride is relevant to diseases or phenotypes linked with **LGR4**. The graph context lists the targeted genes of Dutasteride as **SRD5A2** and **AR**, and the pathways associated with these genes include **Androgen biosynthesis**, **Ub-specific processing proteases**, and **Nuclear Receptor transcription pathway**. However, **LGR4** is not mentioned in any of these associations.\n\nFurthermore, the graph does not provide any information about **LGR4** or its related diseases or phenotypes. Therefore, any connection between Dutasteride and LGR4 would be **speculative** and not supported by the given data.\n\n**Conclusion:**\n- **Direct drug\u2013gene evidence**: None for LGR4.\n- **Speculative pathway-level connections**: None, as LGR4 is not part of the pathways or gene interactions associated with Dutasteride.",
+  "question_id": "Q195",
+  "question_text": "Is there evidence that Dutasteride is relevant to diseases or phenotypes linked with LGR4? Distinguish direct drug\u2013gene evidence from speculative pathway-level connections.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 201,
+    "prompt_token_count": 263,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided IGKF graph context, there is **no direct evidence** that Dutasteride is relevant to diseases or phenotypes linked with **LGR4**. The graph context lists the targeted genes of Dutasteride as **SRD5A2** and **AR**, and the pathways associated with these genes include **Androgen biosynthesis**, **Ub-specific processing proteases**, and **Nuclear Receptor transcription pathway**. However, **LGR4** is not mentioned in any of these associations.\n\nFurthermore, the graph does not provide any information about **LGR4** or its related diseases or phenotypes. Therefore, any connection between Dutasteride and LGR4 would be **speculative** and not supported by the given data.\n\n**Conclusion:**\n- **Direct drug\u2013gene evidence**: None for LGR4.\n- **Speculative pathway-level connections**: None, as LGR4 is not part of the pathways or gene interactions associated with Dutasteride."
+      }
+    ],
+    "created": 1783563732,
+    "id": "cmpl-3ff0c9d6-4fd9-4e81-8e45-8533f549f37e",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 201,
+      "prompt_tokens": 242,
+      "total_tokens": 443
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "graph_context_length": 416,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0241,
+    "original_retrieval_query": "Is there evidence that Dutasteride is relevant to diseases or phenotypes linked with LGR4? Distinguish direct drug\u2013gene evidence from speculative pathway-level connections.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "dutasteride"
+      },
+      {
+        "label": "ENTITY",
+        "text": "diseases"
+      },
+      {
+        "label": "ENTITY",
+        "text": "phenotypes"
+      },
+      {
+        "label": "ENTITY",
+        "text": "lgr4"
+      },
+      {
+        "label": "ENTITY",
+        "text": "distinguish"
+      },
+      {
+        "label": "ENTITY",
+        "text": "direct drug"
+      },
+      {
+        "label": "ENTITY",
+        "text": "gene"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "pathway-level"
+      },
+      {
+        "label": "ENTITY",
+        "text": "connections"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0241,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q195.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:22:13.935780+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: DUTASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\n**Question:**\nIs there evidence that Dutasteride is relevant to diseases or phenotypes linked with LGR4? Distinguish direct drug\u2013gene evidence from speculative pathway-level connections.",
+  "vector_context": ""
+}

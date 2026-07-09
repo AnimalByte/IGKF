@@ -1,0 +1,142 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q167.json",
+      "question_id": "Q167",
+      "sha256": "3c40d353c650faa5d85187443d84fee26f11df50602716fe1a77259ac7553dc1"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q167.json",
+      "question_id": "Q167",
+      "sha256": "4f0063899b91b85928d918e6645af682c508995c8c588213d7702f36df26aa19"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.7307,
+  "git_commit": null,
+  "graph_context": "No relevant data found in the graph.",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+  "parsed_answer": "The dataset does not provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia. The graph context indicates that \"No relevant data found in the graph,\" which means there is no direct study evidence within the provided IGKF graph context to support or refute a shared genetic basis between these two conditions.\n\nTherefore, the comparison is unsupported based on the given dataset.",
+  "question_id": "Q167",
+  "question_text": "Does this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 78,
+    "prompt_token_count": 144,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The dataset does not provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia. The graph context indicates that \"No relevant data found in the graph,\" which means there is no direct study evidence within the provided IGKF graph context to support or refute a shared genetic basis between these two conditions.\n\nTherefore, the comparison is unsupported based on the given dataset."
+      }
+    ],
+    "created": 1783563493,
+    "id": "cmpl-d64563d0-4e9c-405b-8d8b-ae41a44a170a",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 78,
+      "prompt_tokens": 123,
+      "total_tokens": 201
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nNo relevant data found in the graph.",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "graph_retrieval_seconds": 36.8605,
+    "original_retrieval_query": "Does this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "alopecia"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 36.8605,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q167.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:18:14.112065+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Question:**\nDoes this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+  "vector_context": ""
+}

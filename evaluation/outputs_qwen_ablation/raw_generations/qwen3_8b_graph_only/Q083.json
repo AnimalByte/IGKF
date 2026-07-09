@@ -1,0 +1,162 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q083.json",
+      "question_id": "Q083",
+      "sha256": "d2b22f73c58e3c986abc0bfc7cb8ad83b0516930a81bb331efb7a6f78783d6d7"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q083.json",
+      "question_id": "Q083",
+      "sha256": "167aed61611e31aadd5af918108ce1bb6c510d30a6ab1448144d0bfc2a166bd1"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.4334,
+  "git_commit": null,
+  "graph_context": "Entity: LGR4 (Type: Gene)\n  - Gene Pathways: Regulation of FZD by ubiquitination\n  - Associated Phenotypes: growth delay, Abnormality of the genital system, Delayed skeletal maturation\n  - Targeted by Drugs: ROSMANTUZUMAB\n  - GO Functions/Processes: bone remodeling, plasma membrane, negative regulation of cold-induced thermogenesis, protein-hormone receptor activity, osteoblast differentiation\n  - Interacts With (PPI): HSPA1B (experimental: 102, database: 0), ADRB2 (experimental: 0, database: 0), P3H1 (experimental: 0, database: 0), PCSK2 (experimental: 0, database: 0), GPR180 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: delayed puberty, self-limited (score: 0.536), Abnormality of the skeletal system (score: 0.457), androgenetic alopecia (score: 0.397), hypertensive disorder (score: 0.377), X-linked osteoporosis with fractures (score: 0.333)\n  - Open Targets Drug Evidence: ROSMANTUZUMAB | phase PHASE_1 | RSPO3-LGR4 inhibitor | action=INHIBITOR | target=RSPO3-LGR4 | for colorectal cancer",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+  "parsed_answer": "Yes, the integrated evidence links LGR4 to treatments used or investigated for hair loss. Specifically, **ROSMANTUZUMAB** is associated with LGR4 and is being investigated as an **RSPO3-LGR4 inhibitor** for **colorectal cancer**. While the primary indication for ROSMANTUZUMAB is colorectal cancer, the context also mentions **androgenetic alopecia** as one of the Open Targets disease associations linked to LGR4. This suggests that LGR4 may be implicated in hair loss conditions, and thus, **ROSMANTUZUMAB** could be considered as a treatment or investigational agent related to hair loss through its interaction with LGR4.",
+  "question_id": "Q083",
+  "question_text": "Does the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 148,
+    "prompt_token_count": 438,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Yes, the integrated evidence links LGR4 to treatments used or investigated for hair loss. Specifically, **ROSMANTUZUMAB** is associated with LGR4 and is being investigated as an **RSPO3-LGR4 inhibitor** for **colorectal cancer**. While the primary indication for ROSMANTUZUMAB is colorectal cancer, the context also mentions **androgenetic alopecia** as one of the Open Targets disease associations linked to LGR4. This suggests that LGR4 may be implicated in hair loss conditions, and thus, **ROSMANTUZUMAB** could be considered as a treatment or investigational agent related to hair loss through its interaction with LGR4."
+      }
+    ],
+    "created": 1783559150,
+    "id": "cmpl-56408846-f81d-42bc-b624-f7d886405368",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 148,
+      "prompt_tokens": 417,
+      "total_tokens": 565
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: LGR4 (Type: Gene)\n  - Gene Pathways: Regulation of FZD by ubiquitination\n  - Associated Phenotypes: growth delay, Abnormality of the genital system, Delayed skeletal maturation\n  - Targeted by Drugs: ROSMANTUZUMAB\n  - GO Functions/Processes: bone remodeling, plasma membrane, negative regulation of cold-induced thermogenesis, protein-hormone receptor activity, osteoblast differentiation\n  - Interacts With (PPI): HSPA1B (experimental: 102, database: 0), ADRB2 (experimental: 0, database: 0), P3H1 (experimental: 0, database: 0), PCSK2 (experimental: 0, database: 0), GPR180 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: delayed puberty, self-limited (score: 0.536), Abnormality of the skeletal system (score: 0.457), androgenetic alopecia (score: 0.397), hypertensive disorder (score: 0.377), X-linked osteoporosis with fractures (score: 0.333)\n  - Open Targets Drug Evidence: ROSMANTUZUMAB | phase PHASE_1 | RSPO3-LGR4 inhibitor | action=INHIBITOR | target=RSPO3-LGR4 | for colorectal cancer",
+    "found_specific_entity": true,
+    "graph_context": "Entity: LGR4 (Type: Gene)\n  - Gene Pathways: Regulation of FZD by ubiquitination\n  - Associated Phenotypes: growth delay, Abnormality of the genital system, Delayed skeletal maturation\n  - Targeted by Drugs: ROSMANTUZUMAB\n  - GO Functions/Processes: bone remodeling, plasma membrane, negative regulation of cold-induced thermogenesis, protein-hormone receptor activity, osteoblast differentiation\n  - Interacts With (PPI): HSPA1B (experimental: 102, database: 0), ADRB2 (experimental: 0, database: 0), P3H1 (experimental: 0, database: 0), PCSK2 (experimental: 0, database: 0), GPR180 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: delayed puberty, self-limited (score: 0.536), Abnormality of the skeletal system (score: 0.457), androgenetic alopecia (score: 0.397), hypertensive disorder (score: 0.377), X-linked osteoporosis with fractures (score: 0.333)\n  - Open Targets Drug Evidence: ROSMANTUZUMAB | phase PHASE_1 | RSPO3-LGR4 inhibitor | action=INHIBITOR | target=RSPO3-LGR4 | for colorectal cancer",
+    "graph_context_length": 1026,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0139,
+    "original_retrieval_query": "Does the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "lgr4"
+      },
+      {
+        "label": "ENTITY",
+        "text": "treatments"
+      },
+      {
+        "label": "ENTITY",
+        "text": "investigated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair loss"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0139,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q083.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T01:05:52.276679+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: LGR4 (Type: Gene)\n  - Gene Pathways: Regulation of FZD by ubiquitination\n  - Associated Phenotypes: growth delay, Abnormality of the genital system, Delayed skeletal maturation\n  - Targeted by Drugs: ROSMANTUZUMAB\n  - GO Functions/Processes: bone remodeling, plasma membrane, negative regulation of cold-induced thermogenesis, protein-hormone receptor activity, osteoblast differentiation\n  - Interacts With (PPI): HSPA1B (experimental: 102, database: 0), ADRB2 (experimental: 0, database: 0), P3H1 (experimental: 0, database: 0), PCSK2 (experimental: 0, database: 0), GPR180 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: delayed puberty, self-limited (score: 0.536), Abnormality of the skeletal system (score: 0.457), androgenetic alopecia (score: 0.397), hypertensive disorder (score: 0.377), X-linked osteoporosis with fractures (score: 0.333)\n  - Open Targets Drug Evidence: ROSMANTUZUMAB | phase PHASE_1 | RSPO3-LGR4 inhibitor | action=INHIBITOR | target=RSPO3-LGR4 | for colorectal cancer\n\n**Question:**\nDoes the integrated evidence link LGR4 to any treatments used or investigated for hair loss? If so, which ones?",
+  "vector_context": ""
+}

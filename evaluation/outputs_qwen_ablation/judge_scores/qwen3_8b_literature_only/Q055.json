@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q055",
+      "randomization_seed": "20260706:Q055:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q055",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q055",
+      "error": null,
+      "id": "batch_req_6a4f85cfe6d48190931e136462dd3070",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594542,
+          "created_at": 1783594480,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_003e3d7c1fa8355f006a4f7df0b104819580fd3ee4e9c89ec9",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q055"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_003e3d7c1fa8355f006a4f7df26d488195b9b564e6de59c9b8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the provided evidence supports a role for EDA2R in hair-follicle biology and cycling.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the supplied evidence contains no specific information on EDA2R function in hair-follicle cycling.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately notes the lack of direct evidence, though it could have briefly summarized the indirect TNF receptor/NF-kappaB and ectodermal dysplasia associations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Clearly abstains from unsupported conclusions and confines the answer to the available evidence.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question by noting lack of evidence for EDA2R in hair-follicle cycling, but focuses only on the literature context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correct that the abstracts do not mention EDA2R, but the broader provided evidence does include EDA2R-related functional and disease-association information.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Omits relevant indirect information from the graph context, such as TNF receptor activity, NF-kappaB signaling, cell differentiation, and ectodermal dysplasia associations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly appropriately abstains, but the phrase 'nothing is known' is somewhat too broad relative to the indirect evidence provided.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_003e3d7c1fa8355f006a4f7e208f608195b588d4f96d35e08f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1944,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1483,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 3427
+          },
+          "user": null
+        },
+        "request_id": "8cecc7f1-4a59-4367-851c-7ef0d66634cc",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question by noting lack of evidence for EDA2R in hair-follicle cycling, but focuses only on the literature context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correct that the abstracts do not mention EDA2R, but the broader provided evidence does include EDA2R-related functional and disease-association information.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Omits relevant indirect information from the graph context, such as TNF receptor activity, NF-kappaB signaling, cell differentiation, and ectodermal dysplasia associations.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Mostly appropriately abstains, but the phrase 'nothing is known' is somewhat too broad relative to the indirect evidence provided.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q055",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q055.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.733861+00:00"
+}

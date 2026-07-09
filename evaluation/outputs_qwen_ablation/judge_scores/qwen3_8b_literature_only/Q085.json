@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q085",
+      "randomization_seed": "20260706:Q085:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q085",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q085",
+      "error": null,
+      "id": "batch_req_6a4f85d1d3d481908cac4fbaca48ea34",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594575,
+          "created_at": 1783594536,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_052867a6d1fbe1fb006a4f7e28d1048194aab7a7932d959cc5",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q085"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_052867a6d1fbe1fb006a4f7e2abd588194bf4f790fe40d3a73",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether PAX1 function in hair-follicle biology/cycling is supported by the supplied evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence lacks specific PAX1 hair-follicle or cycling function information.\"},\"completeness\":{\"score\":4,\"rationale\":\"Appropriately abstains, though it could have noted the weak androgenetic alopecia association is not functional follicle-cycling evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids unsupported claims and states that the context is insufficient.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly responds that no PAX1 hair-follicle role is described in the supplied literature context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The main conclusion is accurate, but it inaccurately describes the provided abstracts as mentioning PBX1 and ZHX family members.\"},\"completeness\":{\"score\":3,\"rationale\":\"Correctly abstains but omits the graph-context disease association with androgenetic alopecia and includes irrelevant inaccurate context summary.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the answer and does not invent a PAX1 follicle-cycling function.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_052867a6d1fbe1fb006a4f7e428960819498e2c82e34bef3ac",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2230,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 782,
+            "output_tokens_details": {
+              "reasoning_tokens": 469
+            },
+            "total_tokens": 3012
+          },
+          "user": null
+        },
+        "request_id": "75bfab6e-6373-43d4-924b-5d0944a0f957",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly responds that no PAX1 hair-follicle role is described in the supplied literature context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The main conclusion is accurate, but it inaccurately describes the provided abstracts as mentioning PBX1 and ZHX family members.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Correctly abstains but omits the graph-context disease association with androgenetic alopecia and includes irrelevant inaccurate context summary.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the answer and does not invent a PAX1 follicle-cycling function.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q085",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q085.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.745815+00:00"
+}

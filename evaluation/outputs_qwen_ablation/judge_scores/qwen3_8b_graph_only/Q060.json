@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q060",
+      "randomization_seed": "20260706:Q060:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q060",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q060",
+      "error": null,
+      "id": "batch_req_6a4f85d042a4819098dcacbf11eb0979",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594494,
+          "created_at": 1783594461,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0dd2678d5f58c4ae006a4f7ddd20548194b096c1fd3643de8e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q060"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0dd2678d5f58c4ae006a4f7ddf6fc48194bc630c0c1cf44237",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the question by abstaining, but overlooks relevant graph evidence linking SRD5A2 to androgenetic alopecia and finasteride.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Mostly accurate that the abstracts do not provide specific hair-follicle cycling information, but too strongly states the provided context lacks relevant information.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits important indirect evidence: SRD5A2 androgen metabolism, association with androgenetic alopecia, and targeting by finasteride/dutasteride.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids unsupported mechanistic claims given limited direct evidence about follicle cycling.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly addresses SRD5A2 in relation to hair biology using the available androgenetic alopecia and drug-target evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Scientifically consistent with the evidence that SRD5A2 is involved in androgen metabolism and is targeted by finasteride for androgenetic alopecia; however, it does not explicitly mention DHT production.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Captures the main indirect evidence but does not fully describe SRD5A2's established enzymatic role converting testosterone to DHT or clearly state that direct hair-cycle evidence is absent.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Carefully qualifies the inference and notes that further research would be needed for a direct hair-follicle cycling link.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0dd2678d5f58c4ae006a4f7df01e8881948952ae04d8844e5c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2520,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 909,
+            "output_tokens_details": {
+              "reasoning_tokens": 448
+            },
+            "total_tokens": 3429
+          },
+          "user": null
+        },
+        "request_id": "1fd12c6a-d914-454f-94e5-784d62ec494a",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses SRD5A2 in relation to hair biology using the available androgenetic alopecia and drug-target evidence.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Scientifically consistent with the evidence that SRD5A2 is involved in androgen metabolism and is targeted by finasteride for androgenetic alopecia; however, it does not explicitly mention DHT production.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Captures the main indirect evidence but does not fully describe SRD5A2's established enzymatic role converting testosterone to DHT or clearly state that direct hair-cycle evidence is absent.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Carefully qualifies the inference and notes that further research would be needed for a direct hair-follicle cycling link.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q060",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q060.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.735826+00:00"
+}

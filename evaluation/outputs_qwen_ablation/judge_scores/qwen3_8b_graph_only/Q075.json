@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q075",
+      "randomization_seed": "20260706:Q075:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q075",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q075",
+      "error": null,
+      "id": "batch_req_6a4f85d134048190ad2e7a415783940a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594496,
+          "created_at": 1783594482,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05f7e130de31644f006a4f7df2df90819090066daf45863922",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q075"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05f7e130de31644f006a4f7df8b07481908b2da525f447bbf8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question by stating that the supplied evidence does not support any conclusion about HDAC9 in hair-follicle biology or cycling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate against the reference packet, which contains no hair-follicle or hair-cycling evidence for HDAC9.\"},\"completeness\":{\"score\":4,\"rationale\":\"Appropriately abstains based on missing evidence, though it specifically mentions the graph context rather than explicitly covering all supplied evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids unsupported biological claims and qualifies the answer as limited to available data.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly responds that the provided context lacks information about HDAC9 function in hair follicles or cycling.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the supplied reference evidence, which provides no relevant hair-follicle biology information for HDAC9.\"},\"completeness\":{\"score\":4,\"rationale\":\"Concise and appropriate, but only refers to literature context and does not explicitly mention the graph context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly abstains from making unsupported conclusions.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05f7e130de31644f006a4f7dfcbd9481908f56da5140282daf",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2172,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 561,
+            "output_tokens_details": {
+              "reasoning_tokens": 259
+            },
+            "total_tokens": 2733
+          },
+          "user": null
+        },
+        "request_id": "072faa37-1c86-4d85-ad23-c79e4c98d8ee",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question by stating that the supplied evidence does not support any conclusion about HDAC9 in hair-follicle biology or cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurate against the reference packet, which contains no hair-follicle or hair-cycling evidence for HDAC9.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Appropriately abstains based on missing evidence, though it specifically mentions the graph context rather than explicitly covering all supplied evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly avoids unsupported biological claims and qualifies the answer as limited to available data.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q075",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q075.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.741826+00:00"
+}

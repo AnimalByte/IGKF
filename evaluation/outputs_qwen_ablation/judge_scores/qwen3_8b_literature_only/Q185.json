@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q185",
+      "randomization_seed": "20260706:Q185:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q185",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q185",
+      "error": null,
+      "id": "batch_req_6a4f85d82424819086d3cf4c5e986958",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594540,
+          "created_at": 1783594514,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0153828ac623d0c1006a4f7e125ba48195acddb42ecc94e94e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q185"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0153828ac623d0c1006a4f7e13ece48195b3fa1691f9428138",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether any loss-of-function variants are mapped to FGF5.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence does not identify any loss-of-function variants mapped to FGF5.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point needed: no such variants are reported in the supplied study context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the provided information and avoids inventing variants.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and states that no loss-of-function variants are mentioned for FGF5.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The core conclusion about FGF5 is correct, but it incorrectly references other studies/genes such as RUNX1 that are not in the provided evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the necessary answer, but includes unnecessary and partly inaccurate extra context.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately abstains from claiming FGF5 variants, though it adds unsupported details about unrelated genes.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0153828ac623d0c1006a4f7e236dbc819595bdd4cfc1b4b7f8",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2433,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 723,
+            "output_tokens_details": {
+              "reasoning_tokens": 433
+            },
+            "total_tokens": 3156
+          },
+          "user": null
+        },
+        "request_id": "aacbb528-8ea2-4bb9-903a-95c5807655d4",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question and states that no loss-of-function variants are mentioned for FGF5.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The core conclusion about FGF5 is correct, but it incorrectly references other studies/genes such as RUNX1 that are not in the provided evidence.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Provides the necessary answer, but includes unnecessary and partly inaccurate extra context.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from claiming FGF5 variants, though it adds unsupported details about unrelated genes.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q185",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q185.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.784211+00:00"
+}

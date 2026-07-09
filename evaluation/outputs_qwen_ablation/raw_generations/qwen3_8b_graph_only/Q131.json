@@ -1,0 +1,154 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q131.json",
+      "question_id": "Q131",
+      "sha256": "465b6f0ce6e80d80e030b52d0f5e057cf9f99ed0bf245ddfdd3adc58b2f82841"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q131.json",
+      "question_id": "Q131",
+      "sha256": "38879b2c2e5bae0045bafc38fcfb6fd2e4c60dae7ae2e142a6816366755253cc"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.761,
+  "git_commit": null,
+  "graph_context": "Entity: FINASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What evidence connects Finasteride to androgen metabolism in the integrated data?",
+  "parsed_answer": "The evidence connecting Finasteride to androgen metabolism in the integrated data is as follows:\n\n1. **Targeted Genes**: Finasteride targets the gene **SRD5A2**, which is directly involved in androgen biosynthesis. SRD5A2 encodes 5\u03b1-reductase, an enzyme that catalyzes the conversion of testosterone to dihydrotestosterone (DHT), a more potent androgen. This enzyme plays a central role in androgen metabolism.\n\n2. **Pathways of Targeted Genes**: The gene **SRD5A2** is part of the **Androgen biosynthesis** pathway, which is a key pathway in androgen metabolism. This pathway includes the synthesis and conversion of androgens, such as testosterone to DHT, and is essential for maintaining androgen levels in the body.\n\n3. **Interaction with Other Genes**: While the interactions of Finasteride with other genes like **DKK2**, **SH3GL2**, **FOXA1**, **PTCH1**, and **DHRS7** are not experimentally validated (experimental: 0, database: 0), the direct targeting of **SRD5A2** and its involvement in androgen biosynthesis provides strong evidence for Finasteride's role in androgen metabolism.\n\nIn summary, Finasteride is directly linked to androgen metabolism through its targeting of **SRD5A2**, which is a key enzyme in the androgen biosynthesis pathway.",
+  "question_id": "Q131",
+  "question_text": "What evidence connects Finasteride to androgen metabolism in the integrated data?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 305,
+    "prompt_token_count": 244,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The evidence connecting Finasteride to androgen metabolism in the integrated data is as follows:\n\n1. **Targeted Genes**: Finasteride targets the gene **SRD5A2**, which is directly involved in androgen biosynthesis. SRD5A2 encodes 5\u03b1-reductase, an enzyme that catalyzes the conversion of testosterone to dihydrotestosterone (DHT), a more potent androgen. This enzyme plays a central role in androgen metabolism.\n\n2. **Pathways of Targeted Genes**: The gene **SRD5A2** is part of the **Androgen biosynthesis** pathway, which is a key pathway in androgen metabolism. This pathway includes the synthesis and conversion of androgens, such as testosterone to DHT, and is essential for maintaining androgen levels in the body.\n\n3. **Interaction with Other Genes**: While the interactions of Finasteride with other genes like **DKK2**, **SH3GL2**, **FOXA1**, **PTCH1**, and **DHRS7** are not experimentally validated (experimental: 0, database: 0), the direct targeting of **SRD5A2** and its involvement in androgen biosynthesis provides strong evidence for Finasteride's role in androgen metabolism.\n\nIn summary, Finasteride is directly linked to androgen metabolism through its targeting of **SRD5A2**, which is a key enzyme in the androgen biosynthesis pathway."
+      }
+    ],
+    "created": 1783563144,
+    "id": "cmpl-57519972-80c2-49e9-92f6-0368134d1693",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 305,
+      "prompt_tokens": 223,
+      "total_tokens": 528
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: FINASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: FINASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)",
+    "graph_context_length": 416,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0239,
+    "original_retrieval_query": "What evidence connects Finasteride to androgen metabolism in the integrated data?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "finasteride"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgen metabolism"
+      },
+      {
+        "label": "ENTITY",
+        "text": "integrated data"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0239,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q131.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:12:27.656158+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: FINASTERIDE (Type: Drug)\n  - Targeted Genes: SRD5A2, AR\n  - Pathways of Targeted Genes: Androgen biosynthesis, Ub-specific processing proteases, Nuclear Receptor transcription pathway\n  - Target Gene Interactions (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n\n**Question:**\nWhat evidence connects Finasteride to androgen metabolism in the integrated data?",
+  "vector_context": ""
+}

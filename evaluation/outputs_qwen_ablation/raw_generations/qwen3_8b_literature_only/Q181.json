@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41722875",
+    "41501168",
+    "41673742",
+    "41640146",
+    "42151883",
+    "42315371",
+    "42260572",
+    "42361668",
+    "41893972",
+    "41796107",
+    "41145827",
+    "39695778",
+    "34552771",
+    "41493898",
+    "36270072"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q181.json",
+      "question_id": "Q181",
+      "sha256": "6331c92a18992715329c0c1ab3153cefdb593fb275ad090cf4a15ca1cd2f0213"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q181.json",
+      "question_id": "Q181",
+      "sha256": "83306af349fe537fd923da88971d967ece2f1e7c09b4a056b7a1c6a6d5351d8e"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "How does SRD5A2-mediated androgen metabolism contribute to the biological mechanism of androgenetic alopecia, based on the integrated evidence?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.6005,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "How does SRD5A2-mediated androgen metabolism contribute to the biological mechanism of androgenetic alopecia, based on the integrated evidence?",
+  "parsed_answer": "Based on the integrated evidence from the provided literature context, SRD5A2-mediated androgen metabolism contributes to the biological mechanism of androgenetic alopecia through its role in converting testosterone into dihydrotestosterone (DHT), a more potent androgen. The literature highlights that SRD5A2 is the dominant isoform in the prostate and plays a pivotal role in androgen metabolism by catalyzing the conversion of testosterone to DHT. This process is critical in androgen-mediated conditions, including androgenetic alopecia.\n\nIn androgenetic alopecia, increased DHT levels are associated with the miniaturization of hair follicles, leading to hair loss. Since SRD5A2 is responsible for the synthesis of DHT, its activity directly influences the concentration of this hormone. Therefore, alterations in SRD5A2 activity, such as genetic polymorphisms or epigenetic changes, may contribute to the pathogenesis of androgenetic alopecia by modulating DHT levels. This underscores the potential of SRD5A2 as a therapeutic target in conditions where androgen metabolism plays a central role, including androgenetic alopecia.",
+  "question_id": "Q181",
+  "question_text": "How does SRD5A2-mediated androgen metabolism contribute to the biological mechanism of androgenetic alopecia, based on the integrated evidence?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 234,
+    "prompt_token_count": 1312,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the integrated evidence from the provided literature context, SRD5A2-mediated androgen metabolism contributes to the biological mechanism of androgenetic alopecia through its role in converting testosterone into dihydrotestosterone (DHT), a more potent androgen. The literature highlights that SRD5A2 is the dominant isoform in the prostate and plays a pivotal role in androgen metabolism by catalyzing the conversion of testosterone to DHT. This process is critical in androgen-mediated conditions, including androgenetic alopecia.\n\nIn androgenetic alopecia, increased DHT levels are associated with the miniaturization of hair follicles, leading to hair loss. Since SRD5A2 is responsible for the synthesis of DHT, its activity directly influences the concentration of this hormone. Therefore, alterations in SRD5A2 activity, such as genetic polymorphisms or epigenetic changes, may contribute to the pathogenesis of androgenetic alopecia by modulating DHT levels. This underscores the potential of SRD5A2 as a therapeutic target in conditions where androgen metabolism plays a central role, including androgenetic alopecia."
+      }
+    ],
+    "created": 1783564659,
+    "id": "cmpl-eef242d4-2de9-4b73-8e66-6dbaddd16902",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 234,
+      "prompt_tokens": 1291,
+      "total_tokens": 1525
+    }
+  },
+  "reranker_scores": [
+    1.2531718015670776,
+    1.0917671918869019,
+    -0.2493942379951477
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      24.65907859802246,
+      26.171377182006836,
+      26.355712890625,
+      27.2440185546875,
+      29.18380355834961,
+      31.444868087768555,
+      33.210853576660156,
+      34.346893310546875,
+      35.37507247924805,
+      36.01533889770508,
+      36.17015838623047,
+      36.260162353515625,
+      36.91110610961914,
+      36.95516586303711,
+      37.25120544433594
+    ],
+    "candidate_pmids": [
+      "41722875",
+      "41501168",
+      "41673742",
+      "41640146",
+      "42151883",
+      "42315371",
+      "42260572",
+      "42361668",
+      "41893972",
+      "41796107",
+      "41145827",
+      "39695778",
+      "34552771",
+      "41493898",
+      "36270072"
+    ],
+    "expanded_retrieval_query": "How does SRD5A2-mediated androgen metabolism contribute to the biological mechanism of androgenetic alopecia, based on the integrated evidence?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41501168, relevance: 1.2532) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n--- Abstract 2 (PMID: 41722875, relevance: 1.0918) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.2494) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "How does SRD5A2-mediated androgen metabolism contribute to the biological mechanism of androgenetic alopecia, based on the integrated evidence?",
+    "rerank_seconds": 0.3341,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3503,
+    "score_max": 1.2531718015670776,
+    "score_mean": 0.6985149184862772,
+    "scores": [
+      1.2531718015670776,
+      1.0917671918869019,
+      -0.2493942379951477
+    ],
+    "selected_abstracts": [
+      "Benign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.",
+      "5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.",
+      "INTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY."
+    ],
+    "selected_pmids": [
+      "41501168",
+      "41722875",
+      "41640146"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0161
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q181.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41501168",
+    "41722875",
+    "41640146"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:37:41.960359+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41501168, relevance: 1.2532) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n--- Abstract 2 (PMID: 41722875, relevance: 1.0918) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.2494) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n\n\n**Question:**\nHow does SRD5A2-mediated androgen metabolism contribute to the biological mechanism of androgenetic alopecia, based on the integrated evidence?",
+  "vector_context": "--- Abstract 1 (PMID: 41501168, relevance: 1.2532) ---\nBenign prostatic hyperplasia (BPH) is one of the most prevalent urological disorders in ageing men. Medical therapies are widely used to treat BPH, but truly effective long-term treatments remain limited. Among the most commonly prescribed drugs are 5alpha-reductase inhibitors (5ARIs), which alleviate symptoms and slow disease progression by inhibiting steroid 5alpha-reductase (SRD5A) enzymes, particularly the SRD5A1 and SRD5A2 isoforms. SRD5A2, the dominant isoform in the prostate, has a pivotal role in androgen metabolism by converting testosterone into dihydrotestosterone, a potent driver of prostate growth. Proper regulation of SRD5A2 is essential to maintain the balance between androgenic and oestrogenic signalling, thereby supporting healthy prostate physiology. Emerging evidence links SRD5A2 alterations, such as genetic polymorphisms, epigenetic silencing and inflammation-induced changes to disease risk and progression, positioning these factors as promising biomarkers for personalized therapy. Beyond BPH, SRD5A2 has also been implicated as a potential therapeutic target in prostate cancer and androgenic alopecia. Thus, SRD5A2 has clinical relevance in BPH, prostate cancer and other androgen-mediated conditions. However, limitations of SRD5A2-targeted therapies need to be overcome for future strategies to enhance the efficacy of 5ARI-based treatments.\n\n--- Abstract 2 (PMID: 41722875, relevance: 1.0918) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.2494) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n"
+}

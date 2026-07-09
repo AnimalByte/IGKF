@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q151",
+      "randomization_seed": "20260706:Q151:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q151",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q151",
+      "error": null,
+      "id": "batch_req_6a4f85d5fe848190b2475fc1e3da6014",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579173,
+          "created_at": 1783579141,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01787c8a6ae19a1b006a4f42058d7081909e64ef53b054c682",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q151"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01787c8a6ae19a1b006a4f42194c348190804af3c5d7993f7f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether evidence supports epigenetic regulation of AR/hair-loss genes and separates direct evidence from indirect/general background.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Accurately states there is no direct evidence for AR DNA methylation in the provided context, but somewhat overstates relevance to hair loss by treating canities/hair follicle pigmentation as hair-loss evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the key distinction between no direct AR evidence and general DNA methylation/DNMT1 background, though it could more explicitly summarize the graph\u2019s lack of epigenetic annotations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately qualifies the main conclusion as indirect or absent direct evidence, with only mild unsupported extrapolation to AR and hair loss.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Addresses the graph evidence for AR but largely ignores the provided literature context and the requested direct-versus-background distinction.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Scientifically accurate that the graph provides no direct evidence for AR epigenetic regulation or DNA methylation.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Omits relevant literature background on DNA methylation, DNMT1, aging, and hair follicle pigmentation, and does not fully answer the broader question.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Does not overclaim and correctly abstains from inferring epigenetic regulation from insufficient graph evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01787c8a6ae19a1b006a4f422140e08190aecbbf2cbea7ea98",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3121,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 968,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4089
+          },
+          "user": null
+        },
+        "request_id": "28c0e22c-6459-44c8-aa4c-8b3d2f3f4def",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether evidence supports epigenetic regulation of AR/hair-loss genes and separates direct evidence from indirect/general background.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states there is no direct evidence for AR DNA methylation in the provided context, but somewhat overstates relevance to hair loss by treating canities/hair follicle pigmentation as hair-loss evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the key distinction between no direct AR evidence and general DNA methylation/DNMT1 background, though it could more explicitly summarize the graph\u2019s lack of epigenetic annotations.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the main conclusion as indirect or absent direct evidence, with only mild unsupported extrapolation to AR and hair loss.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q151",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q151.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.770677+00:00"
+}

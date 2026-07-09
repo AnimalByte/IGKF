@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "40134218",
+    "42196345",
+    "37737258",
+    "41733882",
+    "39245941",
+    "41417529",
+    "39267058",
+    "41710014",
+    "42269416",
+    "39032379",
+    "34552771",
+    "41912056",
+    "33593615",
+    "34984527",
+    "36244801"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q167.json",
+      "question_id": "Q167",
+      "sha256": "3c40d353c650faa5d85187443d84fee26f11df50602716fe1a77259ac7553dc1"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q167.json",
+      "question_id": "Q167",
+      "sha256": "4f0063899b91b85928d918e6645af682c508995c8c588213d7702f36df26aa19"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.8347,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+  "parsed_answer": "The dataset does not provide direct evidence for a shared genetic basis between male pattern baldness (MPHL) and frontal fibrosing alopecia (FFA). The literature context provided includes studies on the genetic underpinnings of MPHL and spermatogenic failure, but none of the abstracts specifically mention frontal fibrosing alopecia or compare it to MPHL in terms of genetic basis.\n\n- **Direct study evidence**: None of the abstracts provide evidence for a shared genetic basis between MPHL and FFA.\n- **External knowledge**: While external knowledge may suggest that both conditions involve hair loss and could share some genetic pathways, the literature context does not support this comparison.\n- **Conclusion**: The comparison is **unsupported** based on the provided dataset.",
+  "question_id": "Q167",
+  "question_text": "Does this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 153,
+    "prompt_token_count": 1297,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The dataset does not provide direct evidence for a shared genetic basis between male pattern baldness (MPHL) and frontal fibrosing alopecia (FFA). The literature context provided includes studies on the genetic underpinnings of MPHL and spermatogenic failure, but none of the abstracts specifically mention frontal fibrosing alopecia or compare it to MPHL in terms of genetic basis.\n\n- **Direct study evidence**: None of the abstracts provide evidence for a shared genetic basis between MPHL and FFA.\n- **External knowledge**: While external knowledge may suggest that both conditions involve hair loss and could share some genetic pathways, the literature context does not support this comparison.\n- **Conclusion**: The comparison is **unsupported** based on the provided dataset."
+      }
+    ],
+    "created": 1783564593,
+    "id": "cmpl-c01d351c-f8c4-422b-88a5-c5f133cd9c97",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 153,
+      "prompt_tokens": 1276,
+      "total_tokens": 1429
+    }
+  },
+  "reranker_scores": [
+    3.2893364429473877,
+    -1.2708202600479126,
+    -6.349494934082031
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      28.084117889404297,
+      34.25404357910156,
+      35.195594787597656,
+      35.217105865478516,
+      37.417030334472656,
+      37.578155517578125,
+      37.91400146484375,
+      38.21731948852539,
+      38.32504653930664,
+      38.55952835083008,
+      38.72731018066406,
+      38.79069900512695,
+      38.84075164794922,
+      38.841026306152344,
+      38.85786819458008
+    ],
+    "candidate_pmids": [
+      "40134218",
+      "42196345",
+      "37737258",
+      "41733882",
+      "39245941",
+      "41417529",
+      "39267058",
+      "41710014",
+      "42269416",
+      "39032379",
+      "34552771",
+      "41912056",
+      "33593615",
+      "34984527",
+      "36244801"
+    ],
+    "expanded_retrieval_query": "Does this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40134218, relevance: 3.2893) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 37737258, relevance: -1.2708) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 3 (PMID: 39267058, relevance: -6.3495) ---\nBACKGROUND: Spermatogenic failure is one of the leading causes of male infertility and its genetic etiology has not yet been fully understood. METHODS: The study screened a cohort of patients (n = 167) with primary male infertility in contrast to 210 normally fertile men using whole exome sequencing (WES). The expression analysis of the candidate genes based on public single cell sequencing data was performed using the R language Seurat package. RESULTS: No pathogenic copy number variations (CNVs) related to male infertility were identified using the the GATK-gCNV tool. Accordingly, variants of 17 known causative (five X-linked and twelve autosomal) genes, including ACTRT1, ADAD2, AR, BCORL1, CFAP47, CFAP54, DNAH17, DNAH6, DNAH7, DNAH8, DNAH9, FSIP2, MSH4, SLC9C1, TDRD9, TTC21A, and WNK3, were identified in 23 patients. Variants of 12 candidate (seven X-linked and five autosomal) genes were identified, among which CHTF18, DDB1, DNAH12, FANCB, GALNT3, OPHN1, SCML2, UPF3A, and ZMYM3 had altered fertility and semen characteristics in previously described knockout mouse models, whereas MAGEC1,RBMXL3, and ZNF185 were recurrently detected in patients with male factor infertility. The human testis single cell-sequencing database reveals that CHTF18, DDB1 and MAGEC1 are preferentially expressed in spermatogonial stem cells. DNAH12 and GALNT3 are found primarily in spermatocytes and early spermatids. UPF3A is present at a high level throughout spermatogenesis except in elongating spermatids. The testicular expression profiles of these candidate genes underlie their potential roles in spermatogenesis and the pathogenesis of male infertility. CONCLUSION: WES is an effective tool in the genetic diagnosis of primary male infertility. Our findings provide useful information on precise treatment, genetic counseling, and birth defect prevention for male factor infertility.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+    "rerank_seconds": 0.3309,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3504,
+    "score_max": 3.2893364429473877,
+    "score_mean": -1.4436595837275188,
+    "scores": [
+      3.2893364429473877,
+      -1.2708202600479126,
+      -6.349494934082031
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "Male-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.",
+      "BACKGROUND: Spermatogenic failure is one of the leading causes of male infertility and its genetic etiology has not yet been fully understood. METHODS: The study screened a cohort of patients (n = 167) with primary male infertility in contrast to 210 normally fertile men using whole exome sequencing (WES). The expression analysis of the candidate genes based on public single cell sequencing data was performed using the R language Seurat package. RESULTS: No pathogenic copy number variations (CNVs) related to male infertility were identified using the the GATK-gCNV tool. Accordingly, variants of 17 known causative (five X-linked and twelve autosomal) genes, including ACTRT1, ADAD2, AR, BCORL1, CFAP47, CFAP54, DNAH17, DNAH6, DNAH7, DNAH8, DNAH9, FSIP2, MSH4, SLC9C1, TDRD9, TTC21A, and WNK3, were identified in 23 patients. Variants of 12 candidate (seven X-linked and five autosomal) genes were identified, among which CHTF18, DDB1, DNAH12, FANCB, GALNT3, OPHN1, SCML2, UPF3A, and ZMYM3 had altered fertility and semen characteristics in previously described knockout mouse models, whereas MAGEC1,RBMXL3, and ZNF185 were recurrently detected in patients with male factor infertility. The human testis single cell-sequencing database reveals that CHTF18, DDB1 and MAGEC1 are preferentially expressed in spermatogonial stem cells. DNAH12 and GALNT3 are found primarily in spermatocytes and early spermatids. UPF3A is present at a high level throughout spermatogenesis except in elongating spermatids. The testicular expression profiles of these candidate genes underlie their potential roles in spermatogenesis and the pathogenesis of male infertility. CONCLUSION: WES is an effective tool in the genetic diagnosis of primary male infertility. Our findings provide useful information on precise treatment, genetic counseling, and birth defect prevention for male factor infertility."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "37737258",
+      "39267058"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0194
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q167.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40134218",
+    "37737258",
+    "39267058"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:36:35.773890+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: 3.2893) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 37737258, relevance: -1.2708) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 3 (PMID: 39267058, relevance: -6.3495) ---\nBACKGROUND: Spermatogenic failure is one of the leading causes of male infertility and its genetic etiology has not yet been fully understood. METHODS: The study screened a cohort of patients (n = 167) with primary male infertility in contrast to 210 normally fertile men using whole exome sequencing (WES). The expression analysis of the candidate genes based on public single cell sequencing data was performed using the R language Seurat package. RESULTS: No pathogenic copy number variations (CNVs) related to male infertility were identified using the the GATK-gCNV tool. Accordingly, variants of 17 known causative (five X-linked and twelve autosomal) genes, including ACTRT1, ADAD2, AR, BCORL1, CFAP47, CFAP54, DNAH17, DNAH6, DNAH7, DNAH8, DNAH9, FSIP2, MSH4, SLC9C1, TDRD9, TTC21A, and WNK3, were identified in 23 patients. Variants of 12 candidate (seven X-linked and five autosomal) genes were identified, among which CHTF18, DDB1, DNAH12, FANCB, GALNT3, OPHN1, SCML2, UPF3A, and ZMYM3 had altered fertility and semen characteristics in previously described knockout mouse models, whereas MAGEC1,RBMXL3, and ZNF185 were recurrently detected in patients with male factor infertility. The human testis single cell-sequencing database reveals that CHTF18, DDB1 and MAGEC1 are preferentially expressed in spermatogonial stem cells. DNAH12 and GALNT3 are found primarily in spermatocytes and early spermatids. UPF3A is present at a high level throughout spermatogenesis except in elongating spermatids. The testicular expression profiles of these candidate genes underlie their potential roles in spermatogenesis and the pathogenesis of male infertility. CONCLUSION: WES is an effective tool in the genetic diagnosis of primary male infertility. Our findings provide useful information on precise treatment, genetic counseling, and birth defect prevention for male factor infertility.\n\n\n\n**Question:**\nDoes this dataset provide evidence for a shared genetic basis between male pattern baldness and frontal fibrosing alopecia? Distinguish direct study evidence from external knowledge, and state if the comparison is unsupported.",
+  "vector_context": "--- Abstract 1 (PMID: 40134218, relevance: 3.2893) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 37737258, relevance: -1.2708) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n--- Abstract 3 (PMID: 39267058, relevance: -6.3495) ---\nBACKGROUND: Spermatogenic failure is one of the leading causes of male infertility and its genetic etiology has not yet been fully understood. METHODS: The study screened a cohort of patients (n = 167) with primary male infertility in contrast to 210 normally fertile men using whole exome sequencing (WES). The expression analysis of the candidate genes based on public single cell sequencing data was performed using the R language Seurat package. RESULTS: No pathogenic copy number variations (CNVs) related to male infertility were identified using the the GATK-gCNV tool. Accordingly, variants of 17 known causative (five X-linked and twelve autosomal) genes, including ACTRT1, ADAD2, AR, BCORL1, CFAP47, CFAP54, DNAH17, DNAH6, DNAH7, DNAH8, DNAH9, FSIP2, MSH4, SLC9C1, TDRD9, TTC21A, and WNK3, were identified in 23 patients. Variants of 12 candidate (seven X-linked and five autosomal) genes were identified, among which CHTF18, DDB1, DNAH12, FANCB, GALNT3, OPHN1, SCML2, UPF3A, and ZMYM3 had altered fertility and semen characteristics in previously described knockout mouse models, whereas MAGEC1,RBMXL3, and ZNF185 were recurrently detected in patients with male factor infertility. The human testis single cell-sequencing database reveals that CHTF18, DDB1 and MAGEC1 are preferentially expressed in spermatogonial stem cells. DNAH12 and GALNT3 are found primarily in spermatocytes and early spermatids. UPF3A is present at a high level throughout spermatogenesis except in elongating spermatids. The testicular expression profiles of these candidate genes underlie their potential roles in spermatogenesis and the pathogenesis of male infertility. CONCLUSION: WES is an effective tool in the genetic diagnosis of primary male infertility. Our findings provide useful information on precise treatment, genetic counseling, and birth defect prevention for male factor infertility.\n\n"
+}

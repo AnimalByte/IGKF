@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "general_biomedical",
+    "category": "general_biomedical_control",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41992294",
+    "41660923",
+    "31111759",
+    "42098349",
+    "38832928",
+    "38245717",
+    "41438687",
+    "41021161",
+    "38995528",
+    "39789996",
+    "41870815",
+    "35453681",
+    "41555274",
+    "42290554",
+    "41973002"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q202.json",
+      "question_id": "Q202",
+      "sha256": "1c835a4f7a6608967a6433a23c7891f91f01b3b06e186c69b0d1af8e1ac18f18"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q202.json",
+      "question_id": "Q202",
+      "sha256": "c9caef89105e5139cda2e86d3700f4c42a16b5635ef2ee11aeb84b24234da685"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What is the role of the BRCA1 gene in breast cancer susceptibility and tumor biology?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.9856,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What is the role of the BRCA1 gene in breast cancer susceptibility and tumor biology?",
+  "parsed_answer": "The BRCA1 gene is a well-known high-penetrance gene associated with hereditary breast cancer. Mutations in BRCA1 significantly increase the risk of developing breast and ovarian cancers. In the context of the provided literature, while the specific role of BRCA1 is not directly detailed in the abstracts, it is implied as a key gene in hereditary breast cancer susceptibility, alongside other genes such as BRCA2, TP53, PALB2, and CHEK2. These genes are recognized for their roles in DNA repair and maintaining genomic stability, which are critical in preventing cancer development. The absence of pathogenic BRCA1 mutations in one of the case studies suggests that while BRCA1 is a major susceptibility gene, other genetic factors, such as the CASR gene, may also contribute to breast cancer risk, particularly in cases where BRCA1 mutations are not present.",
+  "question_id": "Q202",
+  "question_text": "What is the role of the BRCA1 gene in breast cancer susceptibility and tumor biology?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 181,
+    "prompt_token_count": 1085,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The BRCA1 gene is a well-known high-penetrance gene associated with hereditary breast cancer. Mutations in BRCA1 significantly increase the risk of developing breast and ovarian cancers. In the context of the provided literature, while the specific role of BRCA1 is not directly detailed in the abstracts, it is implied as a key gene in hereditary breast cancer susceptibility, alongside other genes such as BRCA2, TP53, PALB2, and CHEK2. These genes are recognized for their roles in DNA repair and maintaining genomic stability, which are critical in preventing cancer development. The absence of pathogenic BRCA1 mutations in one of the case studies suggests that while BRCA1 is a major susceptibility gene, other genetic factors, such as the CASR gene, may also contribute to breast cancer risk, particularly in cases where BRCA1 mutations are not present."
+      }
+    ],
+    "created": 1783564758,
+    "id": "cmpl-71627c82-d712-4899-be0e-64b5f396043a",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 181,
+      "prompt_tokens": 1064,
+      "total_tokens": 1245
+    }
+  },
+  "reranker_scores": [
+    5.776166915893555,
+    4.37890625,
+    4.076016902923584
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      30.620187759399414,
+      33.07539367675781,
+      33.320960998535156,
+      33.74151611328125,
+      34.4238166809082,
+      35.304168701171875,
+      35.46672821044922,
+      35.5761604309082,
+      36.20090866088867,
+      36.41128921508789,
+      36.58486557006836,
+      36.73883056640625,
+      36.772911071777344,
+      37.06412887573242,
+      37.24930953979492
+    ],
+    "candidate_pmids": [
+      "41992294",
+      "41660923",
+      "31111759",
+      "42098349",
+      "38832928",
+      "38245717",
+      "41438687",
+      "41021161",
+      "38995528",
+      "39789996",
+      "41870815",
+      "35453681",
+      "41555274",
+      "42290554",
+      "41973002"
+    ],
+    "expanded_retrieval_query": "What is the role of the BRCA1 gene in breast cancer susceptibility and tumor biology?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42290554, relevance: 5.7762) ---\nAlthough highly penetrant genes such as BRCA1, BRCA2, TP53, PALB2, CHEK2, and ATM are well known in hereditary breast cancer, genes with low penetrance may also contribute to the disease risk. The CASR (Calcium-Sensing Receptor) gene, located on chromosome 3q13.3-q21, encodes a G-protein-coupled receptor that regulates calcium homeostasis and parathyroid hormone secretion. here we describe the clinical course and genetic findings in a breast cancer patient diagnosed with hER2-positive (hER2/neu +++) and ER/PR-negative infiltrating ductal carcinoma with a rare CASR mutation and explore its potential role in the hereditary breast cancer predisposition. Next-generation sequencing re- vealed a heterozygous CASR variant, c.2265G>t (p.Glu755Asp), classified as a variant of uncertain significance (VUS). No pathogenic mutations were found in BRCA1/2, CHEK2, or PALB2. The patient underwent neoadjuvant chemothera- py, right-sided mastectomy, and trastuzumab therapy, achieving complete pathological regression (pCR) with no recur- rence after ten months of follow-up. Although the CASR p.Glu755Asp variant's pathogenic role is unproven, emerging evidence links CASR overexpression with hER2-positive breast cancers, promoting tumor progression via calcium- dependent signaling pathways (PI3K/AKt, MAPK). This case highlights the potential role of CASR as a low-penetrance susceptibility gene in breast cancer and supports further functional and genomic studies to clarify its clinical impact.\n\n--- Abstract 2 (PMID: 39789996, relevance: 4.3789) ---\nInvasion and metastasis are major causes of mortality in breast cancer (BRCA) patients. LHPP, known for its tumor-suppressive effects, has an undefined role in BRCA. We found reduced LHPP protein in BRCA tissues, with lower levels correlating with poor patient outcomes. In vitro studies show LHPP inhibits BRCA cell proliferation, migration, invasion, and stemness. In vivo xenograft models support LHPP's role in curbing tumorigenesis and lung metastasis. Mechanistically, LHPP interacts with ERK and P38 MAPK, leading to their dephosphorylation and suppression of the MAPK pathway. We also reveal ETS1, a MAPK effector, repressing LHPP mRNA transcription, suggesting a LHPP-P38 MAPK/ERK-ETS1 negative feedback loop as a key regulatory mechanism in controlling BRCA invasion and metastasis.\n\n--- Abstract 3 (PMID: 41021161, relevance: 4.0760) ---\nBreast cancer (BRCA) remains the most common malignancy and the leading cause of cancer-related death among women worldwide. Recent studies have highlighted dysregulated copper homeostasis as a contributor to tumorigenesis, with cuproptosis-a copper-dependent form of regulated cell death-emerging as a potential therapeutic target. In this study, we systematically evaluated the prognostic significance of cuproptosis-related genes (CRGs) in BRCA by integrating multi-omics data from TCGA and GEO cohorts. Through weighted gene co-expression network analysis (WGCNA), we identified four key CRGs (CCDC24, TMEM65, XPOT, and NUDCD1) to construct a prognostic signature. The resulting risk score effectively stratified patients into high- and low-risk groups, with the high-risk group showing significantly worse overall survival, higher TP53 mutation frequency, and features of an immunosuppressive tumor microenvironment (TME). Functional enrichment analyses further implicated these genes in immune evasion and metabolic reprogramming pathways. Single-cell RNA sequencing (scRNAseq) confirmed heterogeneous expression of the signature genes across distinct cell populations, supporting their involvement in both tumor biology and immune modulation. Clinically, this CRG-based model provides a promising tool for individualized risk assessment and treatment planning. High-risk patients may benefit from intensified therapies or immunomodulatory strategies, while low-risk individuals could be considered for treatment de-escalation. In summary, our findings suggest that cuproptosis may play a regulatory role in BRCA progression and offer a novel, clinically actionable framework for prognostic stratification.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What is the role of the BRCA1 gene in breast cancer susceptibility and tumor biology?",
+    "rerank_seconds": 0.3437,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3587,
+    "score_max": 5.776166915893555,
+    "score_mean": 4.743696689605713,
+    "scores": [
+      5.776166915893555,
+      4.37890625,
+      4.076016902923584
+    ],
+    "selected_abstracts": [
+      "Although highly penetrant genes such as BRCA1, BRCA2, TP53, PALB2, CHEK2, and ATM are well known in hereditary breast cancer, genes with low penetrance may also contribute to the disease risk. The CASR (Calcium-Sensing Receptor) gene, located on chromosome 3q13.3-q21, encodes a G-protein-coupled receptor that regulates calcium homeostasis and parathyroid hormone secretion. here we describe the clinical course and genetic findings in a breast cancer patient diagnosed with hER2-positive (hER2/neu +++) and ER/PR-negative infiltrating ductal carcinoma with a rare CASR mutation and explore its potential role in the hereditary breast cancer predisposition. Next-generation sequencing re- vealed a heterozygous CASR variant, c.2265G>t (p.Glu755Asp), classified as a variant of uncertain significance (VUS). No pathogenic mutations were found in BRCA1/2, CHEK2, or PALB2. The patient underwent neoadjuvant chemothera- py, right-sided mastectomy, and trastuzumab therapy, achieving complete pathological regression (pCR) with no recur- rence after ten months of follow-up. Although the CASR p.Glu755Asp variant's pathogenic role is unproven, emerging evidence links CASR overexpression with hER2-positive breast cancers, promoting tumor progression via calcium- dependent signaling pathways (PI3K/AKt, MAPK). This case highlights the potential role of CASR as a low-penetrance susceptibility gene in breast cancer and supports further functional and genomic studies to clarify its clinical impact.",
+      "Invasion and metastasis are major causes of mortality in breast cancer (BRCA) patients. LHPP, known for its tumor-suppressive effects, has an undefined role in BRCA. We found reduced LHPP protein in BRCA tissues, with lower levels correlating with poor patient outcomes. In vitro studies show LHPP inhibits BRCA cell proliferation, migration, invasion, and stemness. In vivo xenograft models support LHPP's role in curbing tumorigenesis and lung metastasis. Mechanistically, LHPP interacts with ERK and P38 MAPK, leading to their dephosphorylation and suppression of the MAPK pathway. We also reveal ETS1, a MAPK effector, repressing LHPP mRNA transcription, suggesting a LHPP-P38 MAPK/ERK-ETS1 negative feedback loop as a key regulatory mechanism in controlling BRCA invasion and metastasis.",
+      "Breast cancer (BRCA) remains the most common malignancy and the leading cause of cancer-related death among women worldwide. Recent studies have highlighted dysregulated copper homeostasis as a contributor to tumorigenesis, with cuproptosis-a copper-dependent form of regulated cell death-emerging as a potential therapeutic target. In this study, we systematically evaluated the prognostic significance of cuproptosis-related genes (CRGs) in BRCA by integrating multi-omics data from TCGA and GEO cohorts. Through weighted gene co-expression network analysis (WGCNA), we identified four key CRGs (CCDC24, TMEM65, XPOT, and NUDCD1) to construct a prognostic signature. The resulting risk score effectively stratified patients into high- and low-risk groups, with the high-risk group showing significantly worse overall survival, higher TP53 mutation frequency, and features of an immunosuppressive tumor microenvironment (TME). Functional enrichment analyses further implicated these genes in immune evasion and metabolic reprogramming pathways. Single-cell RNA sequencing (scRNAseq) confirmed heterogeneous expression of the signature genes across distinct cell populations, supporting their involvement in both tumor biology and immune modulation. Clinically, this CRG-based model provides a promising tool for individualized risk assessment and treatment planning. High-risk patients may benefit from intensified therapies or immunomodulatory strategies, while low-risk individuals could be considered for treatment de-escalation. In summary, our findings suggest that cuproptosis may play a regulatory role in BRCA progression and offer a novel, clinically actionable framework for prognostic stratification."
+    ],
+    "selected_pmids": [
+      "42290554",
+      "39789996",
+      "41021161"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0148
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q202.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42290554",
+    "39789996",
+    "41021161"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:39:20.910326+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42290554, relevance: 5.7762) ---\nAlthough highly penetrant genes such as BRCA1, BRCA2, TP53, PALB2, CHEK2, and ATM are well known in hereditary breast cancer, genes with low penetrance may also contribute to the disease risk. The CASR (Calcium-Sensing Receptor) gene, located on chromosome 3q13.3-q21, encodes a G-protein-coupled receptor that regulates calcium homeostasis and parathyroid hormone secretion. here we describe the clinical course and genetic findings in a breast cancer patient diagnosed with hER2-positive (hER2/neu +++) and ER/PR-negative infiltrating ductal carcinoma with a rare CASR mutation and explore its potential role in the hereditary breast cancer predisposition. Next-generation sequencing re- vealed a heterozygous CASR variant, c.2265G>t (p.Glu755Asp), classified as a variant of uncertain significance (VUS). No pathogenic mutations were found in BRCA1/2, CHEK2, or PALB2. The patient underwent neoadjuvant chemothera- py, right-sided mastectomy, and trastuzumab therapy, achieving complete pathological regression (pCR) with no recur- rence after ten months of follow-up. Although the CASR p.Glu755Asp variant's pathogenic role is unproven, emerging evidence links CASR overexpression with hER2-positive breast cancers, promoting tumor progression via calcium- dependent signaling pathways (PI3K/AKt, MAPK). This case highlights the potential role of CASR as a low-penetrance susceptibility gene in breast cancer and supports further functional and genomic studies to clarify its clinical impact.\n\n--- Abstract 2 (PMID: 39789996, relevance: 4.3789) ---\nInvasion and metastasis are major causes of mortality in breast cancer (BRCA) patients. LHPP, known for its tumor-suppressive effects, has an undefined role in BRCA. We found reduced LHPP protein in BRCA tissues, with lower levels correlating with poor patient outcomes. In vitro studies show LHPP inhibits BRCA cell proliferation, migration, invasion, and stemness. In vivo xenograft models support LHPP's role in curbing tumorigenesis and lung metastasis. Mechanistically, LHPP interacts with ERK and P38 MAPK, leading to their dephosphorylation and suppression of the MAPK pathway. We also reveal ETS1, a MAPK effector, repressing LHPP mRNA transcription, suggesting a LHPP-P38 MAPK/ERK-ETS1 negative feedback loop as a key regulatory mechanism in controlling BRCA invasion and metastasis.\n\n--- Abstract 3 (PMID: 41021161, relevance: 4.0760) ---\nBreast cancer (BRCA) remains the most common malignancy and the leading cause of cancer-related death among women worldwide. Recent studies have highlighted dysregulated copper homeostasis as a contributor to tumorigenesis, with cuproptosis-a copper-dependent form of regulated cell death-emerging as a potential therapeutic target. In this study, we systematically evaluated the prognostic significance of cuproptosis-related genes (CRGs) in BRCA by integrating multi-omics data from TCGA and GEO cohorts. Through weighted gene co-expression network analysis (WGCNA), we identified four key CRGs (CCDC24, TMEM65, XPOT, and NUDCD1) to construct a prognostic signature. The resulting risk score effectively stratified patients into high- and low-risk groups, with the high-risk group showing significantly worse overall survival, higher TP53 mutation frequency, and features of an immunosuppressive tumor microenvironment (TME). Functional enrichment analyses further implicated these genes in immune evasion and metabolic reprogramming pathways. Single-cell RNA sequencing (scRNAseq) confirmed heterogeneous expression of the signature genes across distinct cell populations, supporting their involvement in both tumor biology and immune modulation. Clinically, this CRG-based model provides a promising tool for individualized risk assessment and treatment planning. High-risk patients may benefit from intensified therapies or immunomodulatory strategies, while low-risk individuals could be considered for treatment de-escalation. In summary, our findings suggest that cuproptosis may play a regulatory role in BRCA progression and offer a novel, clinically actionable framework for prognostic stratification.\n\n\n\n**Question:**\nWhat is the role of the BRCA1 gene in breast cancer susceptibility and tumor biology?",
+  "vector_context": "--- Abstract 1 (PMID: 42290554, relevance: 5.7762) ---\nAlthough highly penetrant genes such as BRCA1, BRCA2, TP53, PALB2, CHEK2, and ATM are well known in hereditary breast cancer, genes with low penetrance may also contribute to the disease risk. The CASR (Calcium-Sensing Receptor) gene, located on chromosome 3q13.3-q21, encodes a G-protein-coupled receptor that regulates calcium homeostasis and parathyroid hormone secretion. here we describe the clinical course and genetic findings in a breast cancer patient diagnosed with hER2-positive (hER2/neu +++) and ER/PR-negative infiltrating ductal carcinoma with a rare CASR mutation and explore its potential role in the hereditary breast cancer predisposition. Next-generation sequencing re- vealed a heterozygous CASR variant, c.2265G>t (p.Glu755Asp), classified as a variant of uncertain significance (VUS). No pathogenic mutations were found in BRCA1/2, CHEK2, or PALB2. The patient underwent neoadjuvant chemothera- py, right-sided mastectomy, and trastuzumab therapy, achieving complete pathological regression (pCR) with no recur- rence after ten months of follow-up. Although the CASR p.Glu755Asp variant's pathogenic role is unproven, emerging evidence links CASR overexpression with hER2-positive breast cancers, promoting tumor progression via calcium- dependent signaling pathways (PI3K/AKt, MAPK). This case highlights the potential role of CASR as a low-penetrance susceptibility gene in breast cancer and supports further functional and genomic studies to clarify its clinical impact.\n\n--- Abstract 2 (PMID: 39789996, relevance: 4.3789) ---\nInvasion and metastasis are major causes of mortality in breast cancer (BRCA) patients. LHPP, known for its tumor-suppressive effects, has an undefined role in BRCA. We found reduced LHPP protein in BRCA tissues, with lower levels correlating with poor patient outcomes. In vitro studies show LHPP inhibits BRCA cell proliferation, migration, invasion, and stemness. In vivo xenograft models support LHPP's role in curbing tumorigenesis and lung metastasis. Mechanistically, LHPP interacts with ERK and P38 MAPK, leading to their dephosphorylation and suppression of the MAPK pathway. We also reveal ETS1, a MAPK effector, repressing LHPP mRNA transcription, suggesting a LHPP-P38 MAPK/ERK-ETS1 negative feedback loop as a key regulatory mechanism in controlling BRCA invasion and metastasis.\n\n--- Abstract 3 (PMID: 41021161, relevance: 4.0760) ---\nBreast cancer (BRCA) remains the most common malignancy and the leading cause of cancer-related death among women worldwide. Recent studies have highlighted dysregulated copper homeostasis as a contributor to tumorigenesis, with cuproptosis-a copper-dependent form of regulated cell death-emerging as a potential therapeutic target. In this study, we systematically evaluated the prognostic significance of cuproptosis-related genes (CRGs) in BRCA by integrating multi-omics data from TCGA and GEO cohorts. Through weighted gene co-expression network analysis (WGCNA), we identified four key CRGs (CCDC24, TMEM65, XPOT, and NUDCD1) to construct a prognostic signature. The resulting risk score effectively stratified patients into high- and low-risk groups, with the high-risk group showing significantly worse overall survival, higher TP53 mutation frequency, and features of an immunosuppressive tumor microenvironment (TME). Functional enrichment analyses further implicated these genes in immune evasion and metabolic reprogramming pathways. Single-cell RNA sequencing (scRNAseq) confirmed heterogeneous expression of the signature genes across distinct cell populations, supporting their involvement in both tumor biology and immune modulation. Clinically, this CRG-based model provides a promising tool for individualized risk assessment and treatment planning. High-risk patients may benefit from intensified therapies or immunomodulatory strategies, while low-risk individuals could be considered for treatment de-escalation. In summary, our findings suggest that cuproptosis may play a regulatory role in BRCA progression and offer a novel, clinically actionable framework for prognostic stratification.\n\n"
+}

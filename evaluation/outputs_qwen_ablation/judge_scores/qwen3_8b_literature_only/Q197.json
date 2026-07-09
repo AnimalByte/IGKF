@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q197",
+      "randomization_seed": "20260706:Q197:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q197",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q197",
+      "error": null,
+      "id": "batch_req_6a4f85d8e674819091f518e28a883044",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594488,
+          "created_at": 1783594460,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01861676933b7fbe006a4f7ddc610c81959051ba00f4ed5371",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q197"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01861676933b7fbe006a4f7ddd53fc8195b48b235dddf1039f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether PAX1 and FOXA2 have a supported association in the provided integrated data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that FOXA2 is not listed among PAX1 PPI partners and that no supporting interaction evidence is provided.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key graph evidence and clearly states that no supported interaction is present.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming an interaction when the supplied evidence is insufficient.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Answers the main question, but includes extraneous discussion not needed for the association query.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The conclusion of no supported PAX1-FOXA2 interaction is correct, but the rationale contains unsupported or incorrect descriptions of the provided abstracts, including references to entities and topics not in the evidence packet.\"},\"completeness\":{\"score\":3,\"rationale\":\"States the correct conclusion but focuses mostly on literature context and does not address the PAX1 graph PPI evidence, which is central to the integrated data.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Correctly avoids inventing a PAX1-FOXA2 interaction, though it overstates and hallucinates some contextual details.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01861676933b7fbe006a4f7dee630c8195923fabe602655577",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2382,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 844,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3226
+          },
+          "user": null
+        },
+        "request_id": "860d7717-d211-45aa-9f9f-c914315e390b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Answers the main question, but includes extraneous discussion not needed for the association query.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The conclusion of no supported PAX1-FOXA2 interaction is correct, but the rationale contains unsupported or incorrect descriptions of the provided abstracts, including references to entities and topics not in the evidence packet.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "States the correct conclusion but focuses mostly on literature context and does not address the PAX1 graph PPI evidence, which is central to the integrated data.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Correctly avoids inventing a PAX1-FOXA2 interaction, though it overstates and hallucinates some contextual details.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q197",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q197.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.788704+00:00"
+}

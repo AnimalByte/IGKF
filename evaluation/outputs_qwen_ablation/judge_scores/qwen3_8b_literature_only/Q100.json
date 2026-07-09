@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q100",
+      "randomization_seed": "20260706:Q100:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q100",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q100",
+      "error": null,
+      "id": "batch_req_6a4f85d2d6248190b539e569b5b7a2cf",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594486,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ed5ce103dcaf396006a4f7dd9a5748197a01552163d69d0bf",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q100"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ed5ce103dcaf396006a4f7ddab11081979cbeda7be3a0be4e",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the provided evidence links Wnt signaling to androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correct that the supplied abstracts do not mention androgenetic alopecia or provide such a link, though it omits the graph context and slightly mischaracterizes the abstract set.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main point that no supplied literature evidence supports the link, but does not address the graph context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming a link when the provided evidence is insufficient.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately answers the question in relation to the provided evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied graph context does not mention androgenetic alopecia or provide a connection to it.\"},\"completeness\":{\"score\":5,\"rationale\":\"Addresses the graph context, associated genes, pathways, and phenotypes, and explains why they do not support the requested link.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported conclusions and limits the claim to the provided information.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ed5ce103dcaf396006a4f7deca45081979663d00b749aa19b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1838,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 814,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2652
+          },
+          "user": null
+        },
+        "request_id": "df62b44a-8fed-45f7-b6ae-8393011ed8b0",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether the provided evidence links Wnt signaling to androgenetic alopecia.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correct that the supplied abstracts do not mention androgenetic alopecia or provide such a link, though it omits the graph context and slightly mischaracterizes the abstract set.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Covers the main point that no supplied literature evidence supports the link, but does not address the graph context.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from claiming a link when the provided evidence is insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q100",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q100.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.751335+00:00"
+}

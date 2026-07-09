@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42169044",
+    "34984527",
+    "42232673",
+    "41417529",
+    "41408253",
+    "42099389",
+    "41872875",
+    "39234173",
+    "41972171",
+    "38123340",
+    "42316873",
+    "39245941",
+    "34552771",
+    "42267391",
+    "42255426"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q058.json",
+      "question_id": "Q058",
+      "sha256": "2f947f3ddcceeb13dc26adb59a721167447d4ab7dc1d3efdaca28ce1058b2564"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q058.json",
+      "question_id": "Q058",
+      "sha256": "b6c36dea5d1f790ba9e67cc1e6a68b0055634f71e09a627badce3a38312e0a03"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated evidence link EDA2R to any treatments used or investigated for hair loss? If so, which ones?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.813,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence link EDA2R to any treatments used or investigated for hair loss? If so, which ones?",
+  "parsed_answer": "The integrated evidence does not directly link EDA2R to any treatments used or investigated for hair loss. The literature context provided focuses on the genetic basis of ectodermal dysplasia (ED), particularly hypohidrotic ectodermal dysplasia (HED), and on treatments for androgenetic alopecia (AGA), such as exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) and bacterial extracellular vesicles (SoEVs). While EDA2R is a known gene associated with ED, the provided context does not mention its role or any therapeutic investigations related to hair loss. Therefore, based on the supplied literature, there is no evidence linking EDA2R to treatments for hair loss.",
+  "question_id": "Q058",
+  "question_text": "Does the integrated evidence link EDA2R to any treatments used or investigated for hair loss? If so, which ones?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 154,
+    "prompt_token_count": 1219,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not directly link EDA2R to any treatments used or investigated for hair loss. The literature context provided focuses on the genetic basis of ectodermal dysplasia (ED), particularly hypohidrotic ectodermal dysplasia (HED), and on treatments for androgenetic alopecia (AGA), such as exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) and bacterial extracellular vesicles (SoEVs). While EDA2R is a known gene associated with ED, the provided context does not mention its role or any therapeutic investigations related to hair loss. Therefore, based on the supplied literature, there is no evidence linking EDA2R to treatments for hair loss."
+      }
+    ],
+    "created": 1783564109,
+    "id": "cmpl-01849e90-1a05-4b6c-b67c-d69e822250d5",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 154,
+      "prompt_tokens": 1198,
+      "total_tokens": 1352
+    }
+  },
+  "reranker_scores": [
+    -2.092315435409546,
+    -2.7193994522094727,
+    -4.1311492919921875
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      37.36948776245117,
+      38.093353271484375,
+      38.92634582519531,
+      40.78974914550781,
+      40.93895721435547,
+      40.96938705444336,
+      41.28378677368164,
+      41.48170852661133,
+      41.64889907836914,
+      41.85289001464844,
+      42.59128952026367,
+      42.59803009033203,
+      42.88813018798828,
+      42.996768951416016,
+      43.154300689697266
+    ],
+    "candidate_pmids": [
+      "42169044",
+      "34984527",
+      "42232673",
+      "41417529",
+      "41408253",
+      "42099389",
+      "41872875",
+      "39234173",
+      "41972171",
+      "38123340",
+      "42316873",
+      "39245941",
+      "34552771",
+      "42267391",
+      "42255426"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence link EDA2R to any treatments used or investigated for hair loss? If so, which ones?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42267391, relevance: -2.0923) ---\nEctodermal dysplasia (ED) is characterized by sparse hair, reduced sweat gland secretion, and congenital absence of teeth. While genes such as EDA and EDAR have been identified as causative factors of ED, the underlying mechanisms remain unknown, and corresponding treatments are not available. Here, we report a pedigree with hypohidrotic ectodermal dysplasia (HED), the most common subtype of ED, caused by a mutation in the KDF1 gene. To investigate disease mechanisms, we generated induced pluripotent stem cells (iPSCs) of family members. Upon differentiation into embryoid bodies (EBs), the KDF1 mutation severely impaired EB size and morphology. The single-cell RNA sequencing further demonstrated that iPSCs from both HED patients showed a specific shortage of several cell populations, whose biological characteristics were closely related to synapse structure and signaling. Initially, iPSCs were differentiated into neurons to analyze their functional changes. Concurrently, patient-derived iPSCs were differentiated into epidermal progenitor cells, and the effect of the N-methyl-D-aspartate receptor antagonist MK-801 during this process was investigated. We found that the overexpression of excitatory neurotransmitters might disrupt ectodermal development. These deficits were partially rescued after CRISPR-mediated correction of the KDF1 mutation. Our work suggests that impaired synaptic structure and signaling impede ectodermal organogenesis in HED.\n\n--- Abstract 2 (PMID: 42169044, relevance: -2.7194) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 3 (PMID: 42316873, relevance: -4.1311) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated evidence link EDA2R to any treatments used or investigated for hair loss? If so, which ones?",
+    "rerank_seconds": 0.3465,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3627,
+    "score_max": -2.092315435409546,
+    "score_mean": -2.980954726537069,
+    "scores": [
+      -2.092315435409546,
+      -2.7193994522094727,
+      -4.1311492919921875
+    ],
+    "selected_abstracts": [
+      "Ectodermal dysplasia (ED) is characterized by sparse hair, reduced sweat gland secretion, and congenital absence of teeth. While genes such as EDA and EDAR have been identified as causative factors of ED, the underlying mechanisms remain unknown, and corresponding treatments are not available. Here, we report a pedigree with hypohidrotic ectodermal dysplasia (HED), the most common subtype of ED, caused by a mutation in the KDF1 gene. To investigate disease mechanisms, we generated induced pluripotent stem cells (iPSCs) of family members. Upon differentiation into embryoid bodies (EBs), the KDF1 mutation severely impaired EB size and morphology. The single-cell RNA sequencing further demonstrated that iPSCs from both HED patients showed a specific shortage of several cell populations, whose biological characteristics were closely related to synapse structure and signaling. Initially, iPSCs were differentiated into neurons to analyze their functional changes. Concurrently, patient-derived iPSCs were differentiated into epidermal progenitor cells, and the effect of the N-methyl-D-aspartate receptor antagonist MK-801 during this process was investigated. We found that the overexpression of excitatory neurotransmitters might disrupt ectodermal development. These deficits were partially rescued after CRISPR-mediated correction of the KDF1 mutation. Our work suggests that impaired synaptic structure and signaling impede ectodermal organogenesis in HED.",
+      "BACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.",
+      "Hair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation."
+    ],
+    "selected_pmids": [
+      "42267391",
+      "42169044",
+      "42316873"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.016
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q058.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42267391",
+    "42169044",
+    "42316873"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:28:31.080213+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42267391, relevance: -2.0923) ---\nEctodermal dysplasia (ED) is characterized by sparse hair, reduced sweat gland secretion, and congenital absence of teeth. While genes such as EDA and EDAR have been identified as causative factors of ED, the underlying mechanisms remain unknown, and corresponding treatments are not available. Here, we report a pedigree with hypohidrotic ectodermal dysplasia (HED), the most common subtype of ED, caused by a mutation in the KDF1 gene. To investigate disease mechanisms, we generated induced pluripotent stem cells (iPSCs) of family members. Upon differentiation into embryoid bodies (EBs), the KDF1 mutation severely impaired EB size and morphology. The single-cell RNA sequencing further demonstrated that iPSCs from both HED patients showed a specific shortage of several cell populations, whose biological characteristics were closely related to synapse structure and signaling. Initially, iPSCs were differentiated into neurons to analyze their functional changes. Concurrently, patient-derived iPSCs were differentiated into epidermal progenitor cells, and the effect of the N-methyl-D-aspartate receptor antagonist MK-801 during this process was investigated. We found that the overexpression of excitatory neurotransmitters might disrupt ectodermal development. These deficits were partially rescued after CRISPR-mediated correction of the KDF1 mutation. Our work suggests that impaired synaptic structure and signaling impede ectodermal organogenesis in HED.\n\n--- Abstract 2 (PMID: 42169044, relevance: -2.7194) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 3 (PMID: 42316873, relevance: -4.1311) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n\n\n**Question:**\nDoes the integrated evidence link EDA2R to any treatments used or investigated for hair loss? If so, which ones?",
+  "vector_context": "--- Abstract 1 (PMID: 42267391, relevance: -2.0923) ---\nEctodermal dysplasia (ED) is characterized by sparse hair, reduced sweat gland secretion, and congenital absence of teeth. While genes such as EDA and EDAR have been identified as causative factors of ED, the underlying mechanisms remain unknown, and corresponding treatments are not available. Here, we report a pedigree with hypohidrotic ectodermal dysplasia (HED), the most common subtype of ED, caused by a mutation in the KDF1 gene. To investigate disease mechanisms, we generated induced pluripotent stem cells (iPSCs) of family members. Upon differentiation into embryoid bodies (EBs), the KDF1 mutation severely impaired EB size and morphology. The single-cell RNA sequencing further demonstrated that iPSCs from both HED patients showed a specific shortage of several cell populations, whose biological characteristics were closely related to synapse structure and signaling. Initially, iPSCs were differentiated into neurons to analyze their functional changes. Concurrently, patient-derived iPSCs were differentiated into epidermal progenitor cells, and the effect of the N-methyl-D-aspartate receptor antagonist MK-801 during this process was investigated. We found that the overexpression of excitatory neurotransmitters might disrupt ectodermal development. These deficits were partially rescued after CRISPR-mediated correction of the KDF1 mutation. Our work suggests that impaired synaptic structure and signaling impede ectodermal organogenesis in HED.\n\n--- Abstract 2 (PMID: 42169044, relevance: -2.7194) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 3 (PMID: 42316873, relevance: -4.1311) ---\nHair loss is a common condition with limited therapeutic options, and bacterial extracellular vesicles have recently emerged as potential bioactive mediators in skin biology. Here, we investigated whether an extracellular vesicle-enriched preparation obtained from Sphingomonas olei, a bacterium isolated from healthy human skin (hereafter SoEVs), influences human hair-growth-related responses and whether these effects are associated with Wnt/beta-catenin-related signalling. SoEVs were non-cytotoxic to human dermal papilla (DP) cells and upregulated the hair-growth-related factors IGF1 and VEGFA. In DP cells, SoEV treatment was accompanied by increased levels of phosphorylated AKT and GSK-3beta, and total beta-catenin, alongside the induction of canonical Wnt readouts LEF1 and AXIN2. In ex vivo cultured human hair follicles, SoEVs promoted hair shaft elongation, counteracted shaft thinning and increased the number of Ki-67-positive cells around the DP. Together, these findings suggest that SoEVs may support human hair-growth-related responses in association with Wnt/beta-catenin-related signalling, warranting further mechanistic and in vivo investigation.\n\n"
+}

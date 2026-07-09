@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q189",
+      "randomization_seed": "20260706:Q189:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q189",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q189",
+      "error": null,
+      "id": "batch_req_6a4f85d84ce08190bf87c63e935392ff",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594560,
+          "created_at": 1783594520,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06ce783397f31fa2006a4f7e1854748197abe61a8de10403f8",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q189"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06ce783397f31fa2006a4f7e196ab4819797d5cadbaac44812",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly answers whether SRD5A2 genotype supports differential dutasteride response and explicitly distinguishes mechanism from pharmacogenomic evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states dutasteride inhibits 5-alpha-reductase isoenzymes including SRD5A1 and SRD5A2, and correctly notes the provided SRD5A2 variant evidence concerns enzyme deficiency rather than dutasteride response.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Covers the key mechanistic point, the SRD5A2 genotype/deficiency evidence, and the absence of direct pharmacogenomic response evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids claiming genotype-based response and clearly qualifies that the evidence is insufficient.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Addresses the central question and separates pharmacologic target information from pharmacogenomic response evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 3,\n        \"rationale\": \"The overall conclusion is correct, but it inaccurately characterizes dutasteride as primarily targeting SRD5A2 rather than inhibiting both type 1 and type 2 5-alpha-reductase, and it overlooks that the supplied abstracts do include SRD5A2 genotype-phenotype evidence, though not response evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Includes the main conclusion and mechanism/PGx distinction, but incompletely discusses the supplied SRD5A2 variant evidence and does not clearly contrast it with drug-response evidence.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly refrains from asserting unsupported differential dutasteride response by SRD5A2 genotype.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06ce783397f31fa2006a4f7e2f27048197a1f3a4c64c11375c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2830,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1010,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3840
+          },
+          "user": null
+        },
+        "request_id": "7e94948f-39b3-48ef-b8b5-6bf4beb1bcea",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether SRD5A2 genotype supports differential dutasteride response and explicitly distinguishes mechanism from pharmacogenomic evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states dutasteride inhibits 5-alpha-reductase isoenzymes including SRD5A1 and SRD5A2, and correctly notes the provided SRD5A2 variant evidence concerns enzyme deficiency rather than dutasteride response.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key mechanistic point, the SRD5A2 genotype/deficiency evidence, and the absence of direct pharmacogenomic response evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids claiming genotype-based response and clearly qualifies that the evidence is insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q189",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q189.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.785545+00:00"
+}

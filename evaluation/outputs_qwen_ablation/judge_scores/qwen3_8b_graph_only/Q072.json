@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q072",
+      "randomization_seed": "20260706:Q072:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q072",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q072",
+      "error": null,
+      "id": "batch_req_6a4f85d115b08190b7ebe5dd5184e4af",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783596283,
+          "created_at": 1783596272,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_067243a37a6ab513006a4f84f0f1288193ae62d607b5b2a50f",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q072"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_067243a37a6ab513006a4f84f1c7808193823c40f77cf9deb2",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"It attempts to answer whether any high-impact variants map to WNT10A, but it frames the question around Abstract 3 and misses the WNT10A-focused HED context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"The conclusion that no high-impact variants map to WNT10A is not supported by the provided evidence; the evidence mentions WNT10A variants but does not provide impact annotations or specific variant identities.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"It does not address the relevant WNT10A study context and does not explain that the available evidence lacks specific high-impact variant annotations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"It makes a definitive 'none' claim despite insufficient evidence, though it partially qualifies this by noting the context lacks specific WNT10A variants.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"It directly addresses the question by stating that the provided data do not support identifying high-impact variants mapped to WNT10A.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The provided evidence does not list specific variants annotated as high impact for WNT10A, so abstaining is scientifically appropriate, though the answer focuses only on the graph context.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"It gives the key conclusion that the question cannot be answered from the supplied data, but it could be more complete by noting that the vector context mentions WNT10A variants without specific impact annotations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"It appropriately avoids inventing variants or concluding absence when the evidence is insufficient.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_067243a37a6ab513006a4f84f7e0c48193a39cadf7b301d024",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2017,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 920,
+            "output_tokens_details": {
+              "reasoning_tokens": 444
+            },
+            "total_tokens": 2937
+          },
+          "user": null
+        },
+        "request_id": "2addc35e-5e2a-4031-b295-a4ad1f6688c1",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It directly addresses the question by stating that the provided data do not support identifying high-impact variants mapped to WNT10A.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The provided evidence does not list specific variants annotated as high impact for WNT10A, so abstaining is scientifically appropriate, though the answer focuses only on the graph context.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "It gives the key conclusion that the question cannot be answered from the supplied data, but it could be more complete by noting that the vector context mentions WNT10A variants without specific impact annotations.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "It appropriately avoids inventing variants or concluding absence when the evidence is insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q072",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q072.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.740761+00:00"
+}

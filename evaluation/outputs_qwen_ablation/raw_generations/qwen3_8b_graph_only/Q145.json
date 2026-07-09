@@ -1,0 +1,178 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q145.json",
+      "question_id": "Q145",
+      "sha256": "8f7635ab0c88486cd16dfabf76f76415339b93cbcfd04e66e78120a981f4ecea"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q145.json",
+      "question_id": "Q145",
+      "sha256": "71e1b03c3e2da4f78ed0b6e29668b8059e09777a45f4b6a8d3f939fb0158a803"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.1858,
+  "git_commit": null,
+  "graph_context": "Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this dataset support estimating a combined effect of variants mapped to AR and SRD5A2 on hair-loss severity? If not, explain what additional data or analysis would be required.",
+  "parsed_answer": "The provided dataset does not directly support estimating a combined effect of variants mapped to **AR** (Androgen Receptor) and **SRD5A2** on **hair-loss severity**. Here's why:\n\n1. **No Mention of Hair-Loss or Related Phenotypes**: The dataset lists phenotypes associated with **AR**, such as \"Abnormality of mental function,\" \"Abnormality of the musculoskeletal system,\" and \"Abnormal skin physiology.\" However, **hair-loss severity** is not explicitly mentioned as a phenotype or related to any of the listed phenotypes.\n\n2. **No Information on SRD5A2**: The dataset does not include any information about **SRD5A2**, including its gene pathways, interactions, or associations with phenotypes or diseases. Therefore, it is not possible to assess the role of **SRD5A2** in hair-loss severity based on the given data.\n\n3. **Lack of Genetic Variant Data**: The dataset does not provide specific information about genetic variants mapped to **AR** or **SRD5A2**, nor does it describe how these variants might influence hair-loss severity.\n\n### Additional Data or Analysis Required:\nTo estimate the combined effect of variants in **AR** and **SRD5A2** on **hair-loss severity**, the following would be necessary:\n\n- **Genetic Variant Data**: Information on specific variants in **AR** and **SRD5A2**, including their positions, types (e.g., SNPs), and functional annotations.\n- **Phenotype Data**: Explicit association of **hair-loss severity** or related traits (e.g., androgenetic alopecia) with these genes.\n- **Genetic Interaction Data**: Evidence of interaction between **AR** and **SRD5A2** in the context of hair-loss.\n- **Clinical or Population-Based Studies**: Data from studies that have investigated the combined effect of these genes on hair-loss severity, potentially using genome-wide association studies (GWAS) or other genetic analyses.\n- **Functional Data**: Information on how variants in these genes might affect protein function, gene expression, or downstream biological pathways relevant to hair growth.\n\nIn summary, the current dataset does not provide sufficient information to estimate the combined effect of **AR** and **SRD5A2** variants on **hair-loss severity**. Additional data and analysis would be required to address this question.",
+  "question_id": "Q145",
+  "question_text": "Does this dataset support estimating a combined effect of variants mapped to AR and SRD5A2 on hair-loss severity? If not, explain what additional data or analysis would be required.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 490,
+    "prompt_token_count": 654,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided dataset does not directly support estimating a combined effect of variants mapped to **AR** (Androgen Receptor) and **SRD5A2** on **hair-loss severity**. Here's why:\n\n1. **No Mention of Hair-Loss or Related Phenotypes**: The dataset lists phenotypes associated with **AR**, such as \"Abnormality of mental function,\" \"Abnormality of the musculoskeletal system,\" and \"Abnormal skin physiology.\" However, **hair-loss severity** is not explicitly mentioned as a phenotype or related to any of the listed phenotypes.\n\n2. **No Information on SRD5A2**: The dataset does not include any information about **SRD5A2**, including its gene pathways, interactions, or associations with phenotypes or diseases. Therefore, it is not possible to assess the role of **SRD5A2** in hair-loss severity based on the given data.\n\n3. **Lack of Genetic Variant Data**: The dataset does not provide specific information about genetic variants mapped to **AR** or **SRD5A2**, nor does it describe how these variants might influence hair-loss severity.\n\n### Additional Data or Analysis Required:\nTo estimate the combined effect of variants in **AR** and **SRD5A2** on **hair-loss severity**, the following would be necessary:\n\n- **Genetic Variant Data**: Information on specific variants in **AR** and **SRD5A2**, including their positions, types (e.g., SNPs), and functional annotations.\n- **Phenotype Data**: Explicit association of **hair-loss severity** or related traits (e.g., androgenetic alopecia) with these genes.\n- **Genetic Interaction Data**: Evidence of interaction between **AR** and **SRD5A2** in the context of hair-loss.\n- **Clinical or Population-Based Studies**: Data from studies that have investigated the combined effect of these genes on hair-loss severity, potentially using genome-wide association studies (GWAS) or other genetic analyses.\n- **Functional Data**: Information on how variants in these genes might affect protein function, gene expression, or downstream biological pathways relevant to hair growth.\n\nIn summary, the current dataset does not provide sufficient information to estimate the combined effect of **AR** and **SRD5A2** variants on **hair-loss severity**. Additional data and analysis would be required to address this question."
+      }
+    ],
+    "created": 1783563200,
+    "id": "cmpl-673ce34b-d372-4d11-a4fd-fbfc62ef90c8",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 490,
+      "prompt_tokens": 633,
+      "total_tokens": 1123
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "found_specific_entity": true,
+    "graph_context": "Entity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor",
+    "graph_context_length": 1823,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0149,
+    "original_retrieval_query": "Does this dataset support estimating a combined effect of variants mapped to AR and SRD5A2 on hair-loss severity? If not, explain what additional data or analysis would be required.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "dataset"
+      },
+      {
+        "label": "ENTITY",
+        "text": "effect"
+      },
+      {
+        "label": "ENTITY",
+        "text": "variants"
+      },
+      {
+        "label": "ENTITY",
+        "text": "mapped"
+      },
+      {
+        "label": "ENTITY",
+        "text": "ar"
+      },
+      {
+        "label": "ENTITY",
+        "text": "srd5a2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair-loss"
+      },
+      {
+        "label": "ENTITY",
+        "text": "severity"
+      },
+      {
+        "label": "ENTITY",
+        "text": "data"
+      },
+      {
+        "label": "ENTITY",
+        "text": "analysis"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0149,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q145.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:13:25.596677+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: AR (Type: Gene)\n  - Gene Pathways: Ub-specific processing proteases, Nuclear Receptor transcription pathway, RUNX2 regulates osteoblast differentiation\n  - Associated Phenotypes: Abnormality of mental function, Abnormality of the musculoskeletal system, Abnormal skin physiology\n  - Targeted by Drugs: CHLOROPHACINONE, FENTANYL CITRATE, PHENYL SALICYLATE, D[CHA4]AVP, PARAMETHASONE ACETATE\n  - GO Functions/Processes: cytoplasm, molecular adaptor activity, positive regulation of transcription by RNA polymerase III, protein-containing complex, regulation of protein localization to plasma membrane\n  - Interacts With (PPI): DES (experimental: 50, database: 0), UBE2D1 (experimental: 45, database: 0), RBL1 (experimental: 301, database: 0), FAM83C (experimental: 0, database: 0), SRPK1 (experimental: 53, database: 0)\n  - Open Targets Disease Associations: androgen insensitivity syndrome (score: 0.845), partial androgen insensitivity syndrome (score: 0.819), prostate cancer (score: 0.803), Kennedy disease (score: 0.742), prostate carcinoma (score: 0.736)\n  - Open Targets Drug Evidence: LGD-2941 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for osteoporosis; GSK2849466 | phase PHASE_1 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for heart failure; VK5211 | phase PHASE_2 | Androgen Receptor modulator | action=MODULATOR | target=Androgen receptor | for hip fracture; musculoskeletal system disorder; CR 1447 | phase PHASE_2 | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for breast cancer; TESTOSTERONE UNDECANOATE | phase APPROVAL | Androgen Receptor agonist | action=AGONIST | target=Androgen receptor | for Delayed puberty; Fatigue; Gonadotropin deficiency; Klinefelter syndrome; Leydig cell tumor\n\n**Question:**\nDoes this dataset support estimating a combined effect of variants mapped to AR and SRD5A2 on hair-loss severity? If not, explain what additional data or analysis would be required.",
+  "vector_context": ""
+}

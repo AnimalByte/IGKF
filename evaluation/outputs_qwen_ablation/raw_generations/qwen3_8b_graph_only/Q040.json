@@ -1,0 +1,137 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q040.json",
+      "question_id": "Q040",
+      "sha256": "b3443b000ccd8c81ee0992e5e0f7b35e125b55c6b927f903b9278d277413160e"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q040.json",
+      "question_id": "Q040",
+      "sha256": "f9a121106f9dfb5527c652b6078486b1ede51424939073be3cc3b59cb050c43a"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.7292,
+  "git_commit": null,
+  "graph_context": "This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Is rs4679956 located within a regulatory element in the integrated data? If so, which one?",
+  "parsed_answer": "The provided IGKF graph context does not include information about the location of rs4679956 within a regulatory element. Therefore, it is not possible to determine whether rs4679956 is located within a regulatory element or which one, based on the given data.",
+  "question_id": "Q040",
+  "question_text": "Is rs4679956 located within a regulatory element in the integrated data? If so, which one?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 60,
+    "prompt_token_count": 624,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided IGKF graph context does not include information about the location of rs4679956 within a regulatory element. Therefore, it is not possible to determine whether rs4679956 is located within a regulatory element or which one, based on the given data."
+      }
+    ],
+    "created": 1783558816,
+    "id": "cmpl-9d58eef7-e330-48f8-b0e7-9def01b81f53",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 603,
+      "total_tokens": 663
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "found_specific_entity": false,
+    "graph_context": "This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "graph_context_length": 1378,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 34.6898,
+    "original_retrieval_query": "Is rs4679956 located within a regulatory element in the integrated data? If so, which one?",
+    "resolved_entities": [],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 34.6898,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q040.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T01:00:17.209554+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\n**Question:**\nIs rs4679956 located within a regulatory element in the integrated data? If so, which one?",
+  "vector_context": ""
+}

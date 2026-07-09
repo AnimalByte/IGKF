@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct_or_integrated",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q149",
+      "randomization_seed": "20260706:Q149:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q149",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q149",
+      "error": null,
+      "id": "batch_req_6a4f85d5f1fc8190a1e6761d7ce6fac5",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579137,
+          "created_at": 1783579107,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c8aac89bd6e318d006a4f41e3744481968f53728b3b8703c7",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q149"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c8aac89bd6e318d006a4f41f52fbc8196a93a69f4749d60c3",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether reduced-risk variants can be identified from effect directions.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately states that the provided androgenetic alopecia abstract lacks effect directions, though it mislabels the relevant abstract number.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the key limitation and explains that no reduced-risk variants can be identified from the provided evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from naming variants because effect directions are unavailable.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":1,\"rationale\":\"Does not answer the question about effect directions or reduced-risk variants.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The statement matches the graph context but ignores the relevant vector evidence and is not a sufficient biomedical answer.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the relevant study context and the needed limitation about unavailable effect directions.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Does not invent variants, but abstains for an incomplete reason focused only on the graph.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c8aac89bd6e318d006a4f41fefc308196a1ea56a565bcb40f",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1884,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 778,
+            "output_tokens_details": {
+              "reasoning_tokens": 508
+            },
+            "total_tokens": 2662
+          },
+          "user": null
+        },
+        "request_id": "202d7c77-da30-485c-989c-e7b71815612b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether reduced-risk variants can be identified from effect directions.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided androgenetic alopecia abstract lacks effect directions, though it mislabels the relevant abstract number.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Includes the key limitation and explains that no reduced-risk variants can be identified from the provided evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from naming variants because effect directions are unavailable.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q149",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q149.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.769906+00:00"
+}

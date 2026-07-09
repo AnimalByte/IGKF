@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q112",
+      "randomization_seed": "20260706:Q112:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q112",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q112",
+      "error": null,
+      "id": "batch_req_6a4f85d387648190a73bb05b68b6bae7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594485,
+          "created_at": 1783594458,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d5ed098a7079701006a4f7ddacb288190a0b0d0adbb968f82",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q112"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d5ed098a7079701006a4f7ddbc900819082276274754350fc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses the lack of evidence in the supplied graph, though it does not mention the irrelevant vector abstracts.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph contains no relevant evidence linking FGF signaling to androgenetic alopecia.\"},\"completeness\":{\"score\":3,\"rationale\":\"Captures the main absence of graph evidence but does not fully assess all supplied evidence, including the unrelated vector context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making unsupported claims and limits the conclusion to the supplied evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses FGF signaling and AGA but largely through indirect speculation and unrelated examples.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correctly notes no direct evidence in the provided context, but introduces unsupported material and speculative links not present in the evidence packet.\"},\"completeness\":{\"score\":2,\"rationale\":\"Includes irrelevant discussion of NPC and cartilage studies and an unsupported DPSC-exosome example rather than clearly summarizing that no relevant AGA evidence is provided.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Uses some qualifying language, but still suggests potential links and mechanisms without support from the supplied evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d5ed098a7079701006a4f7de7ca9481908811c2991a17664e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1985,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 658,
+            "output_tokens_details": {
+              "reasoning_tokens": 351
+            },
+            "total_tokens": 2643
+          },
+          "user": null
+        },
+        "request_id": "1718da02-458a-4a2e-bcf5-38012e40840a",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the lack of evidence in the supplied graph, though it does not mention the irrelevant vector abstracts.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided graph contains no relevant evidence linking FGF signaling to androgenetic alopecia.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Captures the main absence of graph evidence but does not fully assess all supplied evidence, including the unrelated vector context.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from making unsupported claims and limits the conclusion to the supplied evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q112",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q112.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.755850+00:00"
+}

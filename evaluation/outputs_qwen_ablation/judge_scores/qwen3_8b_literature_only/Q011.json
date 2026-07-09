@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q011",
+      "randomization_seed": "20260706:Q011:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q011",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q011",
+      "error": null,
+      "id": "batch_req_6a4f85cd71e081909e90f13d14249caf",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594596,
+          "created_at": 1783594575,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a0aebaacf19d8df006a4f7e4f580481979b0993978466cb87",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q011"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a0aebaacf19d8df006a4f7e5b2d0881978feb0dd000047448",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the provided evidence supports an rs2180439-androgenetic alopecia association.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied evidence does not mention rs2180439 or support the association.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key conclusion that no association evidence is provided in the available context.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring an unsupported association.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses lack of graph evidence but does not fully address the study or vector evidence context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reports that the graph context contains no relevant data.\"},\"completeness\":{\"score\":3,\"rationale\":\"Incomplete because it limits the conclusion to the graph and omits that the literature abstract also does not mention rs2180439.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids claiming an association, though the abstention is framed narrowly around graph evidence only.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a0aebaacf19d8df006a4f7e60eb7c8197ae285282cc7886cb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1722,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 694,
+            "output_tokens_details": {
+              "reasoning_tokens": 419
+            },
+            "total_tokens": 2416
+          },
+          "user": null
+        },
+        "request_id": "b0559884-19c5-4e18-9977-09e59d483ffa",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether the provided evidence supports an rs2180439-androgenetic alopecia association.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the supplied evidence does not mention rs2180439 or support the association.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key conclusion that no association evidence is provided in the available context.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inferring an unsupported association.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q011",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q011.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.716735+00:00"
+}

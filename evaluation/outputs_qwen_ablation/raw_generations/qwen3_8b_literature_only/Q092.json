@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42147184",
+    "42100494",
+    "41733882",
+    "42032772",
+    "32193494",
+    "39103847",
+    "42308221",
+    "39539976",
+    "39267058",
+    "38663984",
+    "35638461",
+    "35719909",
+    "24410847",
+    "41792493",
+    "37496384"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q092.json",
+      "question_id": "Q092",
+      "sha256": "d89c63b06e0b5ccadd94498233b59f47c513b4e39cb25c4ed8540c86914bfb86"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q092.json",
+      "question_id": "Q092",
+      "sha256": "1052278b173ec0535e2148143f7737bde7f110fce75f71d00f1037db424a0480"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to FOXA2 in this study?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.0313,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to FOXA2 in this study?",
+  "parsed_answer": "None of the variants annotated as high impact are mapped to FOXA2 in this study. The literature context provided focuses on variants of the FOXL2 gene and the FOXP4-AS1 long non-coding RNA, but there is no mention of FOXA2 or any variants associated with it.",
+  "question_id": "Q092",
+  "question_text": "Which variants annotated as high impact, if any, are mapped to FOXA2 in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 61,
+    "prompt_token_count": 1491,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "None of the variants annotated as high impact are mapped to FOXA2 in this study. The literature context provided focuses on variants of the FOXL2 gene and the FOXP4-AS1 long non-coding RNA, but there is no mention of FOXA2 or any variants associated with it."
+      }
+    ],
+    "created": 1783564254,
+    "id": "cmpl-b2ab54d0-fd41-400b-a922-63dffb74b682",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 1470,
+      "total_tokens": 1531
+    }
+  },
+  "reranker_scores": [
+    -0.23430390655994415,
+    -1.8498930931091309,
+    -2.1765878200531006
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      35.984352111816406,
+      39.020751953125,
+      41.12051010131836,
+      41.70564270019531,
+      41.913055419921875,
+      42.26750946044922,
+      42.486732482910156,
+      42.56128692626953,
+      42.76863098144531,
+      43.09305191040039,
+      43.46514129638672,
+      43.47304153442383,
+      43.88615417480469,
+      44.43924331665039,
+      44.701568603515625
+    ],
+    "candidate_pmids": [
+      "42147184",
+      "42100494",
+      "41733882",
+      "42032772",
+      "32193494",
+      "39103847",
+      "42308221",
+      "39539976",
+      "39267058",
+      "38663984",
+      "35638461",
+      "35719909",
+      "24410847",
+      "41792493",
+      "37496384"
+    ],
+    "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to FOXA2 in this study?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42100494, relevance: -0.2343) ---\nHeterozygous FOXL2 (non)coding sequence and structural variants (SVs) lead to blepharophimosis, ptosis and epicanthus inversus syndrome (BPES), a rare, autosomal dominant developmental disorder characterized by a completely penetrant eyelid malformation and incompletely penetrant primary ovarian insufficiency (POI). We collected variants from our in-house database, generated via clinical genetic testing and downstream research testing in the Center for Medical Genetics Ghent, Belgium (2001-2024) and via literature and other resources in the same period. All retrieved variants were categorized using ACMG/AMP classifications to increase the knowledge of pathogenicity. We collected 413 unique genetic defects of the FOXL2 region, including 76 novel variants, in 864 index patients. Of these, 87% of patients were identified with a coding FOXL2 sequence variant. The polyalanine tract is a known mutational hotspot of FOXL2, illustrated here by the high percentage of pathogenic polyalanine expansions (24%). Furthermore, the molecular spectrum in typical BPES index patients is characterized by 8% coding deletions and 3% deletions located up- and downstream of FOXL2. The remaining 2% carry translocations along with chromosomal rearrangements of 3q23. This uniform and structured reclassification, incorporating the largest dataset of variants implicated in FOXL2-associated disease so far, will improve both the diagnosis as well as genetic counselling for individuals with BPES.\n\n--- Abstract 2 (PMID: 35719909, relevance: -1.8499) ---\nBACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.\n\n--- Abstract 3 (PMID: 41792493, relevance: -2.1766) ---\nGliomas are the most lethal primary brain tumors with poor survival and high recurrence. The role of long non-coding RNA FOXP4 antisense RNA 1 (lncRNA FOXP4-AS1) in glioma progression remains largely unknown. This study aimed to evaluate the clinical significance of FOXP4-AS1 in glioma and to elucidate its functional role and molecular mechanisms. FOXP4-AS1 expression was measured in 113 glioma tissues by reverse transcription-quantitative PCR (RT-qPCR) and correlated with clinicopathological features. In vitro functional assays, including Cell Counting Kit-8 (CCK-8), Transwell, apoptosis detection, and glycolysis evaluation, were performed following FOXP4-AS1 knockdown. Bioinformatics predictions and dual-luciferase reporter assays were used to validate the interaction among FOXP4-AS1, microRNA\u2011136\u20115p (miR\u2011136\u20115p), and ADCYAP receptor type I (ADCYAP1R1). FOXP4-AS1 was upregulated in glioma and correlated with higher World Health Organization (WHO) grade (III-IV), larger tumor size, and lower Karnofsky Performance Status (KPS) score, indicating aggressive progression and poor prognosis. Knockdown of FOXP4-AS1 inhibited glioma cell proliferation, migration, invasion, and glycolysis, while promoting apoptosis. Mechanistically, FOXP4-AS1 acted as a molecular sponge for miR\u2011136\u20115p, thereby upregulating ADCYAP1R1 expression. Rescue experiments demonstrated that FOXP4-AS1 promotes glioma progression by sponging miR\u2011136\u20115p and that miR\u2011136\u20115p suppresses tumor growth by targeting ADCYAP1R1, as shown by reversed phenotypes upon miR\u2011136\u20115p inhibition or ADCYAP1R1 overexpression. These findings demonstrate that FOXP4-AS1 promotes glioma progression via the miR\u2011136\u20115p/ADCYAP1R1 axis, highlighting its potential as a prognostic biomarker and therapeutic target in glioma.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to FOXA2 in this study?",
+    "rerank_seconds": 0.3359,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3506,
+    "score_max": -0.23430390655994415,
+    "score_mean": -1.4202616065740585,
+    "scores": [
+      -0.23430390655994415,
+      -1.8498930931091309,
+      -2.1765878200531006
+    ],
+    "selected_abstracts": [
+      "Heterozygous FOXL2 (non)coding sequence and structural variants (SVs) lead to blepharophimosis, ptosis and epicanthus inversus syndrome (BPES), a rare, autosomal dominant developmental disorder characterized by a completely penetrant eyelid malformation and incompletely penetrant primary ovarian insufficiency (POI). We collected variants from our in-house database, generated via clinical genetic testing and downstream research testing in the Center for Medical Genetics Ghent, Belgium (2001-2024) and via literature and other resources in the same period. All retrieved variants were categorized using ACMG/AMP classifications to increase the knowledge of pathogenicity. We collected 413 unique genetic defects of the FOXL2 region, including 76 novel variants, in 864 index patients. Of these, 87% of patients were identified with a coding FOXL2 sequence variant. The polyalanine tract is a known mutational hotspot of FOXL2, illustrated here by the high percentage of pathogenic polyalanine expansions (24%). Furthermore, the molecular spectrum in typical BPES index patients is characterized by 8% coding deletions and 3% deletions located up- and downstream of FOXL2. The remaining 2% carry translocations along with chromosomal rearrangements of 3q23. This uniform and structured reclassification, incorporating the largest dataset of variants implicated in FOXL2-associated disease so far, will improve both the diagnosis as well as genetic counselling for individuals with BPES.",
+      "BACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.",
+      "Gliomas are the most lethal primary brain tumors with poor survival and high recurrence. The role of long non-coding RNA FOXP4 antisense RNA 1 (lncRNA FOXP4-AS1) in glioma progression remains largely unknown. This study aimed to evaluate the clinical significance of FOXP4-AS1 in glioma and to elucidate its functional role and molecular mechanisms. FOXP4-AS1 expression was measured in 113 glioma tissues by reverse transcription-quantitative PCR (RT-qPCR) and correlated with clinicopathological features. In vitro functional assays, including Cell Counting Kit-8 (CCK-8), Transwell, apoptosis detection, and glycolysis evaluation, were performed following FOXP4-AS1 knockdown. Bioinformatics predictions and dual-luciferase reporter assays were used to validate the interaction among FOXP4-AS1, microRNA\u2011136\u20115p (miR\u2011136\u20115p), and ADCYAP receptor type I (ADCYAP1R1). FOXP4-AS1 was upregulated in glioma and correlated with higher World Health Organization (WHO) grade (III-IV), larger tumor size, and lower Karnofsky Performance Status (KPS) score, indicating aggressive progression and poor prognosis. Knockdown of FOXP4-AS1 inhibited glioma cell proliferation, migration, invasion, and glycolysis, while promoting apoptosis. Mechanistically, FOXP4-AS1 acted as a molecular sponge for miR\u2011136\u20115p, thereby upregulating ADCYAP1R1 expression. Rescue experiments demonstrated that FOXP4-AS1 promotes glioma progression by sponging miR\u2011136\u20115p and that miR\u2011136\u20115p suppresses tumor growth by targeting ADCYAP1R1, as shown by reversed phenotypes upon miR\u2011136\u20115p inhibition or ADCYAP1R1 overexpression. These findings demonstrate that FOXP4-AS1 promotes glioma progression via the miR\u2011136\u20115p/ADCYAP1R1 axis, highlighting its potential as a prognostic biomarker and therapeutic target in glioma."
+    ],
+    "selected_pmids": [
+      "42100494",
+      "35719909",
+      "41792493"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0146
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q092.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42100494",
+    "35719909",
+    "41792493"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:30:55.056430+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42100494, relevance: -0.2343) ---\nHeterozygous FOXL2 (non)coding sequence and structural variants (SVs) lead to blepharophimosis, ptosis and epicanthus inversus syndrome (BPES), a rare, autosomal dominant developmental disorder characterized by a completely penetrant eyelid malformation and incompletely penetrant primary ovarian insufficiency (POI). We collected variants from our in-house database, generated via clinical genetic testing and downstream research testing in the Center for Medical Genetics Ghent, Belgium (2001-2024) and via literature and other resources in the same period. All retrieved variants were categorized using ACMG/AMP classifications to increase the knowledge of pathogenicity. We collected 413 unique genetic defects of the FOXL2 region, including 76 novel variants, in 864 index patients. Of these, 87% of patients were identified with a coding FOXL2 sequence variant. The polyalanine tract is a known mutational hotspot of FOXL2, illustrated here by the high percentage of pathogenic polyalanine expansions (24%). Furthermore, the molecular spectrum in typical BPES index patients is characterized by 8% coding deletions and 3% deletions located up- and downstream of FOXL2. The remaining 2% carry translocations along with chromosomal rearrangements of 3q23. This uniform and structured reclassification, incorporating the largest dataset of variants implicated in FOXL2-associated disease so far, will improve both the diagnosis as well as genetic counselling for individuals with BPES.\n\n--- Abstract 2 (PMID: 35719909, relevance: -1.8499) ---\nBACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.\n\n--- Abstract 3 (PMID: 41792493, relevance: -2.1766) ---\nGliomas are the most lethal primary brain tumors with poor survival and high recurrence. The role of long non-coding RNA FOXP4 antisense RNA 1 (lncRNA FOXP4-AS1) in glioma progression remains largely unknown. This study aimed to evaluate the clinical significance of FOXP4-AS1 in glioma and to elucidate its functional role and molecular mechanisms. FOXP4-AS1 expression was measured in 113 glioma tissues by reverse transcription-quantitative PCR (RT-qPCR) and correlated with clinicopathological features. In vitro functional assays, including Cell Counting Kit-8 (CCK-8), Transwell, apoptosis detection, and glycolysis evaluation, were performed following FOXP4-AS1 knockdown. Bioinformatics predictions and dual-luciferase reporter assays were used to validate the interaction among FOXP4-AS1, microRNA\u2011136\u20115p (miR\u2011136\u20115p), and ADCYAP receptor type I (ADCYAP1R1). FOXP4-AS1 was upregulated in glioma and correlated with higher World Health Organization (WHO) grade (III-IV), larger tumor size, and lower Karnofsky Performance Status (KPS) score, indicating aggressive progression and poor prognosis. Knockdown of FOXP4-AS1 inhibited glioma cell proliferation, migration, invasion, and glycolysis, while promoting apoptosis. Mechanistically, FOXP4-AS1 acted as a molecular sponge for miR\u2011136\u20115p, thereby upregulating ADCYAP1R1 expression. Rescue experiments demonstrated that FOXP4-AS1 promotes glioma progression by sponging miR\u2011136\u20115p and that miR\u2011136\u20115p suppresses tumor growth by targeting ADCYAP1R1, as shown by reversed phenotypes upon miR\u2011136\u20115p inhibition or ADCYAP1R1 overexpression. These findings demonstrate that FOXP4-AS1 promotes glioma progression via the miR\u2011136\u20115p/ADCYAP1R1 axis, highlighting its potential as a prognostic biomarker and therapeutic target in glioma.\n\n\n\n**Question:**\nWhich variants annotated as high impact, if any, are mapped to FOXA2 in this study?",
+  "vector_context": "--- Abstract 1 (PMID: 42100494, relevance: -0.2343) ---\nHeterozygous FOXL2 (non)coding sequence and structural variants (SVs) lead to blepharophimosis, ptosis and epicanthus inversus syndrome (BPES), a rare, autosomal dominant developmental disorder characterized by a completely penetrant eyelid malformation and incompletely penetrant primary ovarian insufficiency (POI). We collected variants from our in-house database, generated via clinical genetic testing and downstream research testing in the Center for Medical Genetics Ghent, Belgium (2001-2024) and via literature and other resources in the same period. All retrieved variants were categorized using ACMG/AMP classifications to increase the knowledge of pathogenicity. We collected 413 unique genetic defects of the FOXL2 region, including 76 novel variants, in 864 index patients. Of these, 87% of patients were identified with a coding FOXL2 sequence variant. The polyalanine tract is a known mutational hotspot of FOXL2, illustrated here by the high percentage of pathogenic polyalanine expansions (24%). Furthermore, the molecular spectrum in typical BPES index patients is characterized by 8% coding deletions and 3% deletions located up- and downstream of FOXL2. The remaining 2% carry translocations along with chromosomal rearrangements of 3q23. This uniform and structured reclassification, incorporating the largest dataset of variants implicated in FOXL2-associated disease so far, will improve both the diagnosis as well as genetic counselling for individuals with BPES.\n\n--- Abstract 2 (PMID: 35719909, relevance: -1.8499) ---\nBACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.\n\n--- Abstract 3 (PMID: 41792493, relevance: -2.1766) ---\nGliomas are the most lethal primary brain tumors with poor survival and high recurrence. The role of long non-coding RNA FOXP4 antisense RNA 1 (lncRNA FOXP4-AS1) in glioma progression remains largely unknown. This study aimed to evaluate the clinical significance of FOXP4-AS1 in glioma and to elucidate its functional role and molecular mechanisms. FOXP4-AS1 expression was measured in 113 glioma tissues by reverse transcription-quantitative PCR (RT-qPCR) and correlated with clinicopathological features. In vitro functional assays, including Cell Counting Kit-8 (CCK-8), Transwell, apoptosis detection, and glycolysis evaluation, were performed following FOXP4-AS1 knockdown. Bioinformatics predictions and dual-luciferase reporter assays were used to validate the interaction among FOXP4-AS1, microRNA\u2011136\u20115p (miR\u2011136\u20115p), and ADCYAP receptor type I (ADCYAP1R1). FOXP4-AS1 was upregulated in glioma and correlated with higher World Health Organization (WHO) grade (III-IV), larger tumor size, and lower Karnofsky Performance Status (KPS) score, indicating aggressive progression and poor prognosis. Knockdown of FOXP4-AS1 inhibited glioma cell proliferation, migration, invasion, and glycolysis, while promoting apoptosis. Mechanistically, FOXP4-AS1 acted as a molecular sponge for miR\u2011136\u20115p, thereby upregulating ADCYAP1R1 expression. Rescue experiments demonstrated that FOXP4-AS1 promotes glioma progression by sponging miR\u2011136\u20115p and that miR\u2011136\u20115p suppresses tumor growth by targeting ADCYAP1R1, as shown by reversed phenotypes upon miR\u2011136\u20115p inhibition or ADCYAP1R1 overexpression. These findings demonstrate that FOXP4-AS1 promotes glioma progression via the miR\u2011136\u20115p/ADCYAP1R1 axis, highlighting its potential as a prognostic biomarker and therapeutic target in glioma.\n\n"
+}

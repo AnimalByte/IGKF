@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q133",
+      "randomization_seed": "20260706:Q133:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q133",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q133",
+      "error": null,
+      "id": "batch_req_6a4f85d4c6c081908c5f8a0a7e314d8e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594495,
+          "created_at": 1783594470,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0a32e35a81c33586006a4f7de6e75c819587886e556ff60316",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q133"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0a32e35a81c33586006a4f7de7eabc81959f3cbf4ff9d04997",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses the question but gives an answer inconsistent with the provided Dutasteride evidence and includes irrelevant study details.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly states that no genes are linked to Dutasteride, despite SRD5A2 and AR being explicitly listed; also introduces unsupported genes/studies.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key linked genes SRD5A2 and AR.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not appropriately qualify the claim and asserts an unsupported negative conclusion.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which genes are linked to Dutasteride.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies SRD5A2 and AR as Dutasteride targeted genes and distinguishes PPI genes from direct drug-gene links.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the important linked genes and clarifies other mentioned genes are not direct targets.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately limits the conclusion to the provided graph evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0a32e35a81c33586006a4f7df829e08195af5cdb50e4ecb9f1",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2337,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 784,
+            "output_tokens_details": {
+              "reasoning_tokens": 504
+            },
+            "total_tokens": 3121
+          },
+          "user": null
+        },
+        "request_id": "886941e5-f6cf-4ded-891d-c90d0b5e3fca",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question but gives an answer inconsistent with the provided Dutasteride evidence and includes irrelevant study details.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly states that no genes are linked to Dutasteride, despite SRD5A2 and AR being explicitly listed; also introduces unsupported genes/studies.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Omits the key linked genes SRD5A2 and AR.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not appropriately qualify the claim and asserts an unsupported negative conclusion.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q133",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q133.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.763637+00:00"
+}

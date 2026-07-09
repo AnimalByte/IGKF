@@ -1,0 +1,170 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q177.json",
+      "question_id": "Q177",
+      "sha256": "811cb87d72b4b5bbece3326a5bf06f76fc3916bf4f6dd42b857b316cac7cc80f"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q177.json",
+      "question_id": "Q177",
+      "sha256": "04b8bfcc881bcb623b1d6e46988f1bb40809d04979e7f93f1c415276c8383c46"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8325,
+  "git_commit": null,
+  "graph_context": "Entity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+  "parsed_answer": "The provided IGKF graph context does not include any direct regulatory relationships or downstream genes relevant to hair growth associated with FOXA2. The interactions listed are protein-protein interactions (PPIs) with other proteins, but none of these interactions are explicitly linked to hair growth or regulatory relationships involving downstream genes. Therefore, there is no direct or inferred regulatory evidence in the given context connecting FOXA2 to downstream genes relevant to hair growth.",
+  "question_id": "Q177",
+  "question_text": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 87,
+    "prompt_token_count": 219,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided IGKF graph context does not include any direct regulatory relationships or downstream genes relevant to hair growth associated with FOXA2. The interactions listed are protein-protein interactions (PPIs) with other proteins, but none of these interactions are explicitly linked to hair growth or regulatory relationships involving downstream genes. Therefore, there is no direct or inferred regulatory evidence in the given context connecting FOXA2 to downstream genes relevant to hair growth."
+      }
+    ],
+    "created": 1783563598,
+    "id": "cmpl-54c6a5af-2556-456b-9405-b60ec897c266",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 87,
+      "prompt_tokens": 198,
+      "total_tokens": 285
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)",
+    "graph_context_length": 238,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.013,
+    "original_retrieval_query": "What regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "regulatory relationships"
+      },
+      {
+        "label": "ENTITY",
+        "text": "foxa2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "downstream genes"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair growth"
+      },
+      {
+        "label": "ENTITY",
+        "text": "integrated evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "distinguish"
+      },
+      {
+        "label": "ENTITY",
+        "text": "regulatory"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.013,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q177.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:19:59.110705+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)\n\n**Question:**\nWhat regulatory relationships, if any, connect FOXA2 to downstream genes relevant to hair growth in the integrated evidence? Distinguish direct regulatory evidence from inferred links.",
+  "vector_context": ""
+}

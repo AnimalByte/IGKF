@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q102",
+      "randomization_seed": "20260706:Q102:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q102",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q102",
+      "error": null,
+      "id": "batch_req_6a4f85d2ef408190aea68d660637539f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594485,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_05774a1b5749dbd5006a4f7dd924308190b85b819470c2e190",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q102"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_05774a1b5749dbd5006a4f7dda9284819083652ca74d8de095",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses hair-follicle growth and cycling via Wnt signaling.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Broad claims about Wnt promoting proliferation/anagen are biologically plausible, but the supplied evidence does not support the specific hair-follicle, htSKP-EV, miR-221-3p, DKK2, or dermal papilla claims.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers several expected concepts for Wnt in hair cycling, but relies on unsupported details relative to the evidence packet.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents detailed conclusions as established despite insufficient supporting evidence in the provided materials.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly responds to the question by assessing whether the available evidence supports an answer.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that the provided evidence lacks direct information linking Wnt signaling to hair-follicle growth or cycling.\"},\"completeness\":{\"score\":5,\"rationale\":\"Appropriately complete given the limited evidence; it identifies the absence of direct hair-follicle evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly abstains from making unsupported mechanistic claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_05774a1b5749dbd5006a4f7ded4bb481908c26cabedefacff7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1855,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 830,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2685
+          },
+          "user": null
+        },
+        "request_id": "3b617642-6801-49f2-89d8-8623886c6f67",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses hair-follicle growth and cycling via Wnt signaling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Broad claims about Wnt promoting proliferation/anagen are biologically plausible, but the supplied evidence does not support the specific hair-follicle, htSKP-EV, miR-221-3p, DKK2, or dermal papilla claims.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Covers several expected concepts for Wnt in hair cycling, but relies on unsupported details relative to the evidence packet.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Presents detailed conclusions as established despite insufficient supporting evidence in the provided materials.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q102",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q102.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.752083+00:00"
+}

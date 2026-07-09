@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q041",
+      "randomization_seed": "20260706:Q041:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q041",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q041",
+      "error": null,
+      "id": "batch_req_6a4f85cf56388190b2cbd4082c4f937c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579107,
+          "created_at": 1783579078,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0367a4bdffaf60b8006a4f41c61fec819386e015e6d7bd1844",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q041"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0367a4bdffaf60b8006a4f41da36548193b2986cb453cd8de6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses rs4679956 by stating that no information is available, but frames this only around the literature abstracts rather than all provided context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that the supplied abstracts contain no information about rs4679956 and does not invent unsupported biomedical claims.\"},\"completeness\":{\"score\":3,\"rationale\":\"Appropriately abstains, but does not explicitly address the graph/study-specific context or integrated annotations beyond the abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly abstains due to insufficient evidence and avoids unsupported conclusions.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested SNP and the absence of annotations in the provided graph context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the evidence packet, which does not provide specific rs4679956 annotations.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key point that rs4679956-specific annotations are unavailable, though it does not explicitly mention the irrelevant vector-context abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the lack of evidence and does not fabricate annotations.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0367a4bdffaf60b8006a4f41e02fc48193af61573ceb672c6d",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2374,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 806,
+            "output_tokens_details": {
+              "reasoning_tokens": 509
+            },
+            "total_tokens": 3180
+          },
+          "user": null
+        },
+        "request_id": "cacdb4e2-09c2-4d75-ab57-16cda514050a",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the requested SNP and the absence of annotations in the provided graph context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Consistent with the evidence packet, which does not provide specific rs4679956 annotations.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key point that rs4679956-specific annotations are unavailable, though it does not explicitly mention the irrelevant vector-context abstracts.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the lack of evidence and does not fabricate annotations.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q041",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q041.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.728519+00:00"
+}

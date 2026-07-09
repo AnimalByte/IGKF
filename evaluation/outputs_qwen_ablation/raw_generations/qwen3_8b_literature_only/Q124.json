@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "37589509",
+    "29220522",
+    "40751759",
+    "39623312",
+    "34650599",
+    "42215996",
+    "41774401",
+    "42203178",
+    "41751509",
+    "42147184",
+    "42230622",
+    "41163957",
+    "41645416",
+    "41951763",
+    "34356054"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q124.json",
+      "question_id": "Q124",
+      "sha256": "476bc015e8cc4c788021bb700579eb414b79aa66810b93bcb5a333aa5586f7b1"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q124.json",
+      "question_id": "Q124",
+      "sha256": "366cd28e09887eaa7d6c3bb940e35a7817f7664eed3ca38fb3ae407d895b17e2"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does this study provide evidence for genes associated with telogen effluvium? If not, state that this phenotype is outside the study scope.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.672,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this study provide evidence for genes associated with telogen effluvium? If not, state that this phenotype is outside the study scope.",
+  "parsed_answer": "The study does not provide evidence for genes associated with telogen effluvium. This phenotype is outside the study scope.",
+  "question_id": "Q124",
+  "question_text": "Does this study provide evidence for genes associated with telogen effluvium? If not, state that this phenotype is outside the study scope.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 25,
+    "prompt_token_count": 1378,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The study does not provide evidence for genes associated with telogen effluvium. This phenotype is outside the study scope."
+      }
+    ],
+    "created": 1783564391,
+    "id": "cmpl-5883fb2b-c1fd-45a6-bd7c-41da9b0273b8",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 25,
+      "prompt_tokens": 1357,
+      "total_tokens": 1382
+    }
+  },
+  "reranker_scores": [
+    -3.374945640563965,
+    -3.3903005123138428,
+    -3.79828143119812
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      39.3897819519043,
+      41.01179504394531,
+      41.60276412963867,
+      41.73112487792969,
+      41.85124969482422,
+      42.04159164428711,
+      42.042606353759766,
+      42.05882263183594,
+      42.524810791015625,
+      42.55043029785156,
+      42.608306884765625,
+      42.636802673339844,
+      42.681026458740234,
+      42.84159851074219,
+      42.85280990600586
+    ],
+    "candidate_pmids": [
+      "37589509",
+      "29220522",
+      "40751759",
+      "39623312",
+      "34650599",
+      "42215996",
+      "41774401",
+      "42203178",
+      "41751509",
+      "42147184",
+      "42230622",
+      "41163957",
+      "41645416",
+      "41951763",
+      "34356054"
+    ],
+    "expanded_retrieval_query": "Does this study provide evidence for genes associated with telogen effluvium? If not, state that this phenotype is outside the study scope.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41751509, relevance: -3.3749) ---\nBACKGROUND/OBJECTIVES: Autism spectrum disorder (ASD) is a heritable neurodevelopmental condition that displays heterogeneity in both presentation and etiology, and often presents with concomitant communication difficulties. The hypothesis behind the New Jersey Language and Autism Genetic Study is that genetic heterogeneity for component phenotypes of ASD may be reduced relative to the disorder as a whole. We previously published an initial phase of this study with family recruitment that used very restricted inclusion/exclusion criteria for both autism and language deficits. Here, we present an expanded sample that includes a wider range of phenotypic presentations in the autism and language domains. METHODS: Bioinformatics tools focusing on variant prioritization were used to identify candidate risk genes. RESULTS: Our previous findings on 15q and 16q, connecting ASD and oral/written communication, are only relevant to the narrow ASD and language impairment phenotypes, though addition of families did reduce both critical regions. After variant and gene prioritization, we determined a set of ten and six top candidate risk genes with a strong association with language impairment and reading impairment, respectively. The top candidate genes include both genes previously implicated in neurodevelopmental disorders (e.g., ZNF774 and DNAH3) and genes not previously reported but with strong evidence of being involved in neurodevelopmental phenotypes. CONCLUSIONS: Our analysis elucidates the genetic architecture and interaction of ASD and language-related phenotypes. In addition, we reported a number of high-confidence candidate genes within the top linkage regions. These genes will provide insights into the genetic etiology of neurodevelopmental disorders.\n\n--- Abstract 2 (PMID: 37589509, relevance: -3.3903) ---\nOBJECTIVE: Telomere-related genes (TRGs) play a critical role in various types of tumors. However, there is a lack of comprehensive exploration of their relevance in lung cancer. This research aimed to verify the relationship between TRGs gene expression and the prognosis of patients with lung adenocarcinoma (LUAD), as well as the prediction of drug treatment efficiency. METHODS: A total of 2093 TRGs were acquired from TelNet. The clinical information including age, tumor stage, follow up and outcome (death/survival) and TRGs expression profile of LUAD were obtained from the patients in The Cancer Genome Atlas (TCGA) database and the Clinical Proteomic Tumor Analysis Consortium (CPTAC) database. The two databases were used to construct and verify a prognostic model based on the expression of hubTRGs. The tumor mutation burden, immune infiltration and subtypes, as well as IC50 prediction of multiple targeted drugs were also evaluated in TRGs-divided risk groups. RESULTS: A total of 335 TRGs were significantly differentially expressed in LUAD as compared with normal control. Among them, 9 TRGs (ABCC2, ABCC8, ALDH2, FOXP3, GNMT, JSRP1, MACF1, PLCD3, SULT4A1) were finally identified as hubGenes and used to construct a TRG risk score. The TRG risk score showed favorable performance in constructing a prognostic nomogram in predicting survival of LUAD, and the ROC curves at 1, 3 and 5 years were plotted and the AUROC values were 0.743, 0.754 and 0.735, respectively. Higher TRGs risk score correlated with worse immune subtypes and higher tumor mutation burden in LUAD tissues. In addition, the patients in TRG high risk group harbored a lower TIDE score which indicated potentially better response to immunotherapy. CONCLUSION: This study proposed a broad molecular signature of telomere-related genes that can be used in further functional and therapeutic investigations, and also represents an integrated modality for characterizing critical molecules when exploring novel targets for lung cancer immunotherapy.\n\n--- Abstract 3 (PMID: 42203178, relevance: -3.7983) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does this study provide evidence for genes associated with telogen effluvium? If not, state that this phenotype is outside the study scope.",
+    "rerank_seconds": 0.3345,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3527,
+    "score_max": -3.374945640563965,
+    "score_mean": -3.5211758613586426,
+    "scores": [
+      -3.374945640563965,
+      -3.3903005123138428,
+      -3.79828143119812
+    ],
+    "selected_abstracts": [
+      "BACKGROUND/OBJECTIVES: Autism spectrum disorder (ASD) is a heritable neurodevelopmental condition that displays heterogeneity in both presentation and etiology, and often presents with concomitant communication difficulties. The hypothesis behind the New Jersey Language and Autism Genetic Study is that genetic heterogeneity for component phenotypes of ASD may be reduced relative to the disorder as a whole. We previously published an initial phase of this study with family recruitment that used very restricted inclusion/exclusion criteria for both autism and language deficits. Here, we present an expanded sample that includes a wider range of phenotypic presentations in the autism and language domains. METHODS: Bioinformatics tools focusing on variant prioritization were used to identify candidate risk genes. RESULTS: Our previous findings on 15q and 16q, connecting ASD and oral/written communication, are only relevant to the narrow ASD and language impairment phenotypes, though addition of families did reduce both critical regions. After variant and gene prioritization, we determined a set of ten and six top candidate risk genes with a strong association with language impairment and reading impairment, respectively. The top candidate genes include both genes previously implicated in neurodevelopmental disorders (e.g., ZNF774 and DNAH3) and genes not previously reported but with strong evidence of being involved in neurodevelopmental phenotypes. CONCLUSIONS: Our analysis elucidates the genetic architecture and interaction of ASD and language-related phenotypes. In addition, we reported a number of high-confidence candidate genes within the top linkage regions. These genes will provide insights into the genetic etiology of neurodevelopmental disorders.",
+      "OBJECTIVE: Telomere-related genes (TRGs) play a critical role in various types of tumors. However, there is a lack of comprehensive exploration of their relevance in lung cancer. This research aimed to verify the relationship between TRGs gene expression and the prognosis of patients with lung adenocarcinoma (LUAD), as well as the prediction of drug treatment efficiency. METHODS: A total of 2093 TRGs were acquired from TelNet. The clinical information including age, tumor stage, follow up and outcome (death/survival) and TRGs expression profile of LUAD were obtained from the patients in The Cancer Genome Atlas (TCGA) database and the Clinical Proteomic Tumor Analysis Consortium (CPTAC) database. The two databases were used to construct and verify a prognostic model based on the expression of hubTRGs. The tumor mutation burden, immune infiltration and subtypes, as well as IC50 prediction of multiple targeted drugs were also evaluated in TRGs-divided risk groups. RESULTS: A total of 335 TRGs were significantly differentially expressed in LUAD as compared with normal control. Among them, 9 TRGs (ABCC2, ABCC8, ALDH2, FOXP3, GNMT, JSRP1, MACF1, PLCD3, SULT4A1) were finally identified as hubGenes and used to construct a TRG risk score. The TRG risk score showed favorable performance in constructing a prognostic nomogram in predicting survival of LUAD, and the ROC curves at 1, 3 and 5 years were plotted and the AUROC values were 0.743, 0.754 and 0.735, respectively. Higher TRGs risk score correlated with worse immune subtypes and higher tumor mutation burden in LUAD tissues. In addition, the patients in TRG high risk group harbored a lower TIDE score which indicated potentially better response to immunotherapy. CONCLUSION: This study proposed a broad molecular signature of telomere-related genes that can be used in further functional and therapeutic investigations, and also represents an integrated modality for characterizing critical molecules when exploring novel targets for lung cancer immunotherapy.",
+      "BACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS."
+    ],
+    "selected_pmids": [
+      "41751509",
+      "37589509",
+      "42203178"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0181
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q124.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41751509",
+    "37589509",
+    "42203178"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:33:11.799570+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41751509, relevance: -3.3749) ---\nBACKGROUND/OBJECTIVES: Autism spectrum disorder (ASD) is a heritable neurodevelopmental condition that displays heterogeneity in both presentation and etiology, and often presents with concomitant communication difficulties. The hypothesis behind the New Jersey Language and Autism Genetic Study is that genetic heterogeneity for component phenotypes of ASD may be reduced relative to the disorder as a whole. We previously published an initial phase of this study with family recruitment that used very restricted inclusion/exclusion criteria for both autism and language deficits. Here, we present an expanded sample that includes a wider range of phenotypic presentations in the autism and language domains. METHODS: Bioinformatics tools focusing on variant prioritization were used to identify candidate risk genes. RESULTS: Our previous findings on 15q and 16q, connecting ASD and oral/written communication, are only relevant to the narrow ASD and language impairment phenotypes, though addition of families did reduce both critical regions. After variant and gene prioritization, we determined a set of ten and six top candidate risk genes with a strong association with language impairment and reading impairment, respectively. The top candidate genes include both genes previously implicated in neurodevelopmental disorders (e.g., ZNF774 and DNAH3) and genes not previously reported but with strong evidence of being involved in neurodevelopmental phenotypes. CONCLUSIONS: Our analysis elucidates the genetic architecture and interaction of ASD and language-related phenotypes. In addition, we reported a number of high-confidence candidate genes within the top linkage regions. These genes will provide insights into the genetic etiology of neurodevelopmental disorders.\n\n--- Abstract 2 (PMID: 37589509, relevance: -3.3903) ---\nOBJECTIVE: Telomere-related genes (TRGs) play a critical role in various types of tumors. However, there is a lack of comprehensive exploration of their relevance in lung cancer. This research aimed to verify the relationship between TRGs gene expression and the prognosis of patients with lung adenocarcinoma (LUAD), as well as the prediction of drug treatment efficiency. METHODS: A total of 2093 TRGs were acquired from TelNet. The clinical information including age, tumor stage, follow up and outcome (death/survival) and TRGs expression profile of LUAD were obtained from the patients in The Cancer Genome Atlas (TCGA) database and the Clinical Proteomic Tumor Analysis Consortium (CPTAC) database. The two databases were used to construct and verify a prognostic model based on the expression of hubTRGs. The tumor mutation burden, immune infiltration and subtypes, as well as IC50 prediction of multiple targeted drugs were also evaluated in TRGs-divided risk groups. RESULTS: A total of 335 TRGs were significantly differentially expressed in LUAD as compared with normal control. Among them, 9 TRGs (ABCC2, ABCC8, ALDH2, FOXP3, GNMT, JSRP1, MACF1, PLCD3, SULT4A1) were finally identified as hubGenes and used to construct a TRG risk score. The TRG risk score showed favorable performance in constructing a prognostic nomogram in predicting survival of LUAD, and the ROC curves at 1, 3 and 5 years were plotted and the AUROC values were 0.743, 0.754 and 0.735, respectively. Higher TRGs risk score correlated with worse immune subtypes and higher tumor mutation burden in LUAD tissues. In addition, the patients in TRG high risk group harbored a lower TIDE score which indicated potentially better response to immunotherapy. CONCLUSION: This study proposed a broad molecular signature of telomere-related genes that can be used in further functional and therapeutic investigations, and also represents an integrated modality for characterizing critical molecules when exploring novel targets for lung cancer immunotherapy.\n\n--- Abstract 3 (PMID: 42203178, relevance: -3.7983) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n\n\n**Question:**\nDoes this study provide evidence for genes associated with telogen effluvium? If not, state that this phenotype is outside the study scope.",
+  "vector_context": "--- Abstract 1 (PMID: 41751509, relevance: -3.3749) ---\nBACKGROUND/OBJECTIVES: Autism spectrum disorder (ASD) is a heritable neurodevelopmental condition that displays heterogeneity in both presentation and etiology, and often presents with concomitant communication difficulties. The hypothesis behind the New Jersey Language and Autism Genetic Study is that genetic heterogeneity for component phenotypes of ASD may be reduced relative to the disorder as a whole. We previously published an initial phase of this study with family recruitment that used very restricted inclusion/exclusion criteria for both autism and language deficits. Here, we present an expanded sample that includes a wider range of phenotypic presentations in the autism and language domains. METHODS: Bioinformatics tools focusing on variant prioritization were used to identify candidate risk genes. RESULTS: Our previous findings on 15q and 16q, connecting ASD and oral/written communication, are only relevant to the narrow ASD and language impairment phenotypes, though addition of families did reduce both critical regions. After variant and gene prioritization, we determined a set of ten and six top candidate risk genes with a strong association with language impairment and reading impairment, respectively. The top candidate genes include both genes previously implicated in neurodevelopmental disorders (e.g., ZNF774 and DNAH3) and genes not previously reported but with strong evidence of being involved in neurodevelopmental phenotypes. CONCLUSIONS: Our analysis elucidates the genetic architecture and interaction of ASD and language-related phenotypes. In addition, we reported a number of high-confidence candidate genes within the top linkage regions. These genes will provide insights into the genetic etiology of neurodevelopmental disorders.\n\n--- Abstract 2 (PMID: 37589509, relevance: -3.3903) ---\nOBJECTIVE: Telomere-related genes (TRGs) play a critical role in various types of tumors. However, there is a lack of comprehensive exploration of their relevance in lung cancer. This research aimed to verify the relationship between TRGs gene expression and the prognosis of patients with lung adenocarcinoma (LUAD), as well as the prediction of drug treatment efficiency. METHODS: A total of 2093 TRGs were acquired from TelNet. The clinical information including age, tumor stage, follow up and outcome (death/survival) and TRGs expression profile of LUAD were obtained from the patients in The Cancer Genome Atlas (TCGA) database and the Clinical Proteomic Tumor Analysis Consortium (CPTAC) database. The two databases were used to construct and verify a prognostic model based on the expression of hubTRGs. The tumor mutation burden, immune infiltration and subtypes, as well as IC50 prediction of multiple targeted drugs were also evaluated in TRGs-divided risk groups. RESULTS: A total of 335 TRGs were significantly differentially expressed in LUAD as compared with normal control. Among them, 9 TRGs (ABCC2, ABCC8, ALDH2, FOXP3, GNMT, JSRP1, MACF1, PLCD3, SULT4A1) were finally identified as hubGenes and used to construct a TRG risk score. The TRG risk score showed favorable performance in constructing a prognostic nomogram in predicting survival of LUAD, and the ROC curves at 1, 3 and 5 years were plotted and the AUROC values were 0.743, 0.754 and 0.735, respectively. Higher TRGs risk score correlated with worse immune subtypes and higher tumor mutation burden in LUAD tissues. In addition, the patients in TRG high risk group harbored a lower TIDE score which indicated potentially better response to immunotherapy. CONCLUSION: This study proposed a broad molecular signature of telomere-related genes that can be used in further functional and therapeutic investigations, and also represents an integrated modality for characterizing critical molecules when exploring novel targets for lung cancer immunotherapy.\n\n--- Abstract 3 (PMID: 42203178, relevance: -3.7983) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n"
+}

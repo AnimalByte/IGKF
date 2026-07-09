@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "37827698",
+    "42148305",
+    "41759739",
+    "42367882",
+    "33741282",
+    "40641092",
+    "34453499",
+    "41289556",
+    "41505625",
+    "42209514",
+    "42032656",
+    "39523115",
+    "41958983",
+    "28618048",
+    "40209540"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q089.json",
+      "question_id": "Q089",
+      "sha256": "0dc919d0635809c705bdbdeed31b38e54d70aed88262acf84517ad85e4fd2de8"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q089.json",
+      "question_id": "Q089",
+      "sha256": "8488a8bdb479ca027c5f17ccefdb9ec6b6356331114ef5823f1be8243a0a230c"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which pathways in the integrated graph include PAX1?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.6892,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which pathways in the integrated graph include PAX1?",
+  "parsed_answer": "The provided literature context does not explicitly mention any integrated graph or pathways that include PAX1. Therefore, it is not possible to answer the question based on the given information.",
+  "question_id": "Q089",
+  "question_text": "Which pathways in the integrated graph include PAX1?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 35,
+    "prompt_token_count": 1204,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not explicitly mention any integrated graph or pathways that include PAX1. Therefore, it is not possible to answer the question based on the given information."
+      }
+    ],
+    "created": 1783564243,
+    "id": "cmpl-3b4175d9-6e39-4e79-9d4d-b96b109e4d69",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 35,
+      "prompt_tokens": 1183,
+      "total_tokens": 1218
+    }
+  },
+  "reranker_scores": [
+    0.001772567629814148,
+    -4.687396049499512,
+    -4.891485214233398
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      48.6427116394043,
+      49.51136016845703,
+      49.662353515625,
+      49.75558090209961,
+      49.78917694091797,
+      50.863433837890625,
+      50.931922912597656,
+      51.07537841796875,
+      51.2230339050293,
+      51.64241027832031,
+      51.76232147216797,
+      52.16411590576172,
+      52.180580139160156,
+      52.21295166015625,
+      52.79570770263672
+    ],
+    "candidate_pmids": [
+      "37827698",
+      "42148305",
+      "41759739",
+      "42367882",
+      "33741282",
+      "40641092",
+      "34453499",
+      "41289556",
+      "41505625",
+      "42209514",
+      "42032656",
+      "39523115",
+      "41958983",
+      "28618048",
+      "40209540"
+    ],
+    "expanded_retrieval_query": "Which pathways in the integrated graph include PAX1?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42148305, relevance: 0.0018) ---\nCraniofacial morphogenesis is a highly coordinated developmental process governed by complex genetic and molecular interactions. Among these, the PAX family of transcription factors plays a pivotal role in the regulation of neural crest specification, mesenchymal differentiation, and skeletal patterning. This review highlights the distinct and overlapping roles of PAX3, PAX7, and PAX9 in craniofacial development, focusing on their gene regulatory networks, developmental mechanisms, and clinical implications. PAX3 and PAX7 orchestrate neural crest and cranial mesodermal pathways, whereas PAX9 controls odontogenesis and skeletal morphogenesis. We also discuss emerging insights from systems biology, organoid models, and comparative genomics that advance our understanding of PAX-driven facial morphogenesis and its relevance to congenital craniofacial disorders.\n\n--- Abstract 2 (PMID: 41958983, relevance: -4.6874) ---\nTransient cell states that precede and support human myogenic lineage commitment, and the intrinsic and extrinsic signals that control them, remain poorly defined in vitro. Here, we used longitudinal single-nucleus profiling, together with a SIX1:H2B-GFP hPSC reporter for lineage tracing, resolved previously uncaptured transient intermediates and sequential waves of human myogenesis across differentiation and in vivo . We show that hPSC-directed myogenesis gives rise in parallel to paraxial mesoderm and a transient PAX8+ intermediate mesoderm population that forms a 3-dimensional pre-myogenic niche supporting the PAX3-to-PAX7 myogenic progenitor transition. LIANA+ analysis further identified a temporally restricted BMP7-BMPR1B interaction, together with laminin-linked signaling, between PAX8+ niche cells and skeletal muscle progenitors before commitment. We further show that dynamic SIX1 cofactor switching, including EYA3 activity, is required for PAX3-to-PAX7 progression, and that disruption of this program compromises multi-lineage niche integrity. Together, these findings define how transient niche populations and intrinsic regulatory networks coordinate early human myogenic lineage progression and provide a human in vitro platform to study parallel intermediate and paraxial mesoderm development during myogenesis. HIGHLIGHTS: SIX1+PAX8+ niche progenitors promote myogenic differentiation via BMP7- and laminin-dependent signaling.Loss of SIX1-EYA3 activity disrupts the pre-myogenic niche and impairs the PAX3-to-PAX7 transitionMulti-omics single-cell optimal transport resolves previously uncaptured transient intermediates and sequential waves of human myogenesisSIX1 lineage tracing identifies CREB5 as a top regulator of the PAX7+ state in human myogenesis.\n\n--- Abstract 3 (PMID: 42032656, relevance: -4.8915) ---\nBACKGROUND: The triage of Atypical Squamous Cells (ASC) is pivotal in cervical cancer (CC) screening. This study aimed to evaluate the performance of paired box 1 gene methylation (PAX1(m)) testing for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+) in an ASC population and to compare it with high-risk human papillomavirus (hrHPV) testing. METHODS: This retrospective study was conducted from June 2023 to October 2025 and analyzed 1,305 women with ASC. Residual cervical cell samples were used for PAX1(m) testing, and their hrHPV test results within two months were collected for comparison. All participants underwent colposcopy-biopsy to obtain the histopathological results. The area under the receiver operating characteristic curve (AUC), sensitivity, specificity of the two methods was calculated and compared. RESULTS PAX1M : difference of cross points (DeltaCp) values showed a negative correlation with lesion severity (P (trend) <0.001). For CIN3 + detection, PAX1(m) (cut-off: DeltaCp </= 11.74) demonstrated comparable sensitivity to hrHPV (94.6% vs. 94.6%), but with significantly higher specificity (66.0% vs. 10.4%, P < 0.001). Its AUC was also significantly higher to that of the hrHPV test. For CIN2 + detection, the AUC of PAX1(m) (cut-off: DeltaCp </= 11.74) was 0.716, which was significantly higher than that of the hrHPV test (0.544, P < 0.001). Furthermore, PAX1(m) detected all cases of CC. CONCLUSION: In the triage of ASC, PAX1(m) significantly improved the specificity for detecting CIN3 + while maintaining high sensitivity. These findings suggest that PAX1(m) is a promising triage strategy with diagnostic performance superior to that of hrHPV, warranting further prospective validation of its clinical impact and cost-effectiveness.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which pathways in the integrated graph include PAX1?",
+    "rerank_seconds": 0.3332,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3477,
+    "score_max": 0.001772567629814148,
+    "score_mean": -3.1923695653676987,
+    "scores": [
+      0.001772567629814148,
+      -4.687396049499512,
+      -4.891485214233398
+    ],
+    "selected_abstracts": [
+      "Craniofacial morphogenesis is a highly coordinated developmental process governed by complex genetic and molecular interactions. Among these, the PAX family of transcription factors plays a pivotal role in the regulation of neural crest specification, mesenchymal differentiation, and skeletal patterning. This review highlights the distinct and overlapping roles of PAX3, PAX7, and PAX9 in craniofacial development, focusing on their gene regulatory networks, developmental mechanisms, and clinical implications. PAX3 and PAX7 orchestrate neural crest and cranial mesodermal pathways, whereas PAX9 controls odontogenesis and skeletal morphogenesis. We also discuss emerging insights from systems biology, organoid models, and comparative genomics that advance our understanding of PAX-driven facial morphogenesis and its relevance to congenital craniofacial disorders.",
+      "Transient cell states that precede and support human myogenic lineage commitment, and the intrinsic and extrinsic signals that control them, remain poorly defined in vitro. Here, we used longitudinal single-nucleus profiling, together with a SIX1:H2B-GFP hPSC reporter for lineage tracing, resolved previously uncaptured transient intermediates and sequential waves of human myogenesis across differentiation and in vivo . We show that hPSC-directed myogenesis gives rise in parallel to paraxial mesoderm and a transient PAX8+ intermediate mesoderm population that forms a 3-dimensional pre-myogenic niche supporting the PAX3-to-PAX7 myogenic progenitor transition. LIANA+ analysis further identified a temporally restricted BMP7-BMPR1B interaction, together with laminin-linked signaling, between PAX8+ niche cells and skeletal muscle progenitors before commitment. We further show that dynamic SIX1 cofactor switching, including EYA3 activity, is required for PAX3-to-PAX7 progression, and that disruption of this program compromises multi-lineage niche integrity. Together, these findings define how transient niche populations and intrinsic regulatory networks coordinate early human myogenic lineage progression and provide a human in vitro platform to study parallel intermediate and paraxial mesoderm development during myogenesis. HIGHLIGHTS: SIX1+PAX8+ niche progenitors promote myogenic differentiation via BMP7- and laminin-dependent signaling.Loss of SIX1-EYA3 activity disrupts the pre-myogenic niche and impairs the PAX3-to-PAX7 transitionMulti-omics single-cell optimal transport resolves previously uncaptured transient intermediates and sequential waves of human myogenesisSIX1 lineage tracing identifies CREB5 as a top regulator of the PAX7+ state in human myogenesis.",
+      "BACKGROUND: The triage of Atypical Squamous Cells (ASC) is pivotal in cervical cancer (CC) screening. This study aimed to evaluate the performance of paired box 1 gene methylation (PAX1(m)) testing for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+) in an ASC population and to compare it with high-risk human papillomavirus (hrHPV) testing. METHODS: This retrospective study was conducted from June 2023 to October 2025 and analyzed 1,305 women with ASC. Residual cervical cell samples were used for PAX1(m) testing, and their hrHPV test results within two months were collected for comparison. All participants underwent colposcopy-biopsy to obtain the histopathological results. The area under the receiver operating characteristic curve (AUC), sensitivity, specificity of the two methods was calculated and compared. RESULTS PAX1M : difference of cross points (DeltaCp) values showed a negative correlation with lesion severity (P (trend) <0.001). For CIN3 + detection, PAX1(m) (cut-off: DeltaCp </= 11.74) demonstrated comparable sensitivity to hrHPV (94.6% vs. 94.6%), but with significantly higher specificity (66.0% vs. 10.4%, P < 0.001). Its AUC was also significantly higher to that of the hrHPV test. For CIN2 + detection, the AUC of PAX1(m) (cut-off: DeltaCp </= 11.74) was 0.716, which was significantly higher than that of the hrHPV test (0.544, P < 0.001). Furthermore, PAX1(m) detected all cases of CC. CONCLUSION: In the triage of ASC, PAX1(m) significantly improved the specificity for detecting CIN3 + while maintaining high sensitivity. These findings suggest that PAX1(m) is a promising triage strategy with diagnostic performance superior to that of hrHPV, warranting further prospective validation of its clinical impact and cost-effectiveness."
+    ],
+    "selected_pmids": [
+      "42148305",
+      "41958983",
+      "42032656"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0144
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q089.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42148305",
+    "41958983",
+    "42032656"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:30:44.216216+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42148305, relevance: 0.0018) ---\nCraniofacial morphogenesis is a highly coordinated developmental process governed by complex genetic and molecular interactions. Among these, the PAX family of transcription factors plays a pivotal role in the regulation of neural crest specification, mesenchymal differentiation, and skeletal patterning. This review highlights the distinct and overlapping roles of PAX3, PAX7, and PAX9 in craniofacial development, focusing on their gene regulatory networks, developmental mechanisms, and clinical implications. PAX3 and PAX7 orchestrate neural crest and cranial mesodermal pathways, whereas PAX9 controls odontogenesis and skeletal morphogenesis. We also discuss emerging insights from systems biology, organoid models, and comparative genomics that advance our understanding of PAX-driven facial morphogenesis and its relevance to congenital craniofacial disorders.\n\n--- Abstract 2 (PMID: 41958983, relevance: -4.6874) ---\nTransient cell states that precede and support human myogenic lineage commitment, and the intrinsic and extrinsic signals that control them, remain poorly defined in vitro. Here, we used longitudinal single-nucleus profiling, together with a SIX1:H2B-GFP hPSC reporter for lineage tracing, resolved previously uncaptured transient intermediates and sequential waves of human myogenesis across differentiation and in vivo . We show that hPSC-directed myogenesis gives rise in parallel to paraxial mesoderm and a transient PAX8+ intermediate mesoderm population that forms a 3-dimensional pre-myogenic niche supporting the PAX3-to-PAX7 myogenic progenitor transition. LIANA+ analysis further identified a temporally restricted BMP7-BMPR1B interaction, together with laminin-linked signaling, between PAX8+ niche cells and skeletal muscle progenitors before commitment. We further show that dynamic SIX1 cofactor switching, including EYA3 activity, is required for PAX3-to-PAX7 progression, and that disruption of this program compromises multi-lineage niche integrity. Together, these findings define how transient niche populations and intrinsic regulatory networks coordinate early human myogenic lineage progression and provide a human in vitro platform to study parallel intermediate and paraxial mesoderm development during myogenesis. HIGHLIGHTS: SIX1+PAX8+ niche progenitors promote myogenic differentiation via BMP7- and laminin-dependent signaling.Loss of SIX1-EYA3 activity disrupts the pre-myogenic niche and impairs the PAX3-to-PAX7 transitionMulti-omics single-cell optimal transport resolves previously uncaptured transient intermediates and sequential waves of human myogenesisSIX1 lineage tracing identifies CREB5 as a top regulator of the PAX7+ state in human myogenesis.\n\n--- Abstract 3 (PMID: 42032656, relevance: -4.8915) ---\nBACKGROUND: The triage of Atypical Squamous Cells (ASC) is pivotal in cervical cancer (CC) screening. This study aimed to evaluate the performance of paired box 1 gene methylation (PAX1(m)) testing for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+) in an ASC population and to compare it with high-risk human papillomavirus (hrHPV) testing. METHODS: This retrospective study was conducted from June 2023 to October 2025 and analyzed 1,305 women with ASC. Residual cervical cell samples were used for PAX1(m) testing, and their hrHPV test results within two months were collected for comparison. All participants underwent colposcopy-biopsy to obtain the histopathological results. The area under the receiver operating characteristic curve (AUC), sensitivity, specificity of the two methods was calculated and compared. RESULTS PAX1M : difference of cross points (DeltaCp) values showed a negative correlation with lesion severity (P (trend) <0.001). For CIN3 + detection, PAX1(m) (cut-off: DeltaCp </= 11.74) demonstrated comparable sensitivity to hrHPV (94.6% vs. 94.6%), but with significantly higher specificity (66.0% vs. 10.4%, P < 0.001). Its AUC was also significantly higher to that of the hrHPV test. For CIN2 + detection, the AUC of PAX1(m) (cut-off: DeltaCp </= 11.74) was 0.716, which was significantly higher than that of the hrHPV test (0.544, P < 0.001). Furthermore, PAX1(m) detected all cases of CC. CONCLUSION: In the triage of ASC, PAX1(m) significantly improved the specificity for detecting CIN3 + while maintaining high sensitivity. These findings suggest that PAX1(m) is a promising triage strategy with diagnostic performance superior to that of hrHPV, warranting further prospective validation of its clinical impact and cost-effectiveness.\n\n\n\n**Question:**\nWhich pathways in the integrated graph include PAX1?",
+  "vector_context": "--- Abstract 1 (PMID: 42148305, relevance: 0.0018) ---\nCraniofacial morphogenesis is a highly coordinated developmental process governed by complex genetic and molecular interactions. Among these, the PAX family of transcription factors plays a pivotal role in the regulation of neural crest specification, mesenchymal differentiation, and skeletal patterning. This review highlights the distinct and overlapping roles of PAX3, PAX7, and PAX9 in craniofacial development, focusing on their gene regulatory networks, developmental mechanisms, and clinical implications. PAX3 and PAX7 orchestrate neural crest and cranial mesodermal pathways, whereas PAX9 controls odontogenesis and skeletal morphogenesis. We also discuss emerging insights from systems biology, organoid models, and comparative genomics that advance our understanding of PAX-driven facial morphogenesis and its relevance to congenital craniofacial disorders.\n\n--- Abstract 2 (PMID: 41958983, relevance: -4.6874) ---\nTransient cell states that precede and support human myogenic lineage commitment, and the intrinsic and extrinsic signals that control them, remain poorly defined in vitro. Here, we used longitudinal single-nucleus profiling, together with a SIX1:H2B-GFP hPSC reporter for lineage tracing, resolved previously uncaptured transient intermediates and sequential waves of human myogenesis across differentiation and in vivo . We show that hPSC-directed myogenesis gives rise in parallel to paraxial mesoderm and a transient PAX8+ intermediate mesoderm population that forms a 3-dimensional pre-myogenic niche supporting the PAX3-to-PAX7 myogenic progenitor transition. LIANA+ analysis further identified a temporally restricted BMP7-BMPR1B interaction, together with laminin-linked signaling, between PAX8+ niche cells and skeletal muscle progenitors before commitment. We further show that dynamic SIX1 cofactor switching, including EYA3 activity, is required for PAX3-to-PAX7 progression, and that disruption of this program compromises multi-lineage niche integrity. Together, these findings define how transient niche populations and intrinsic regulatory networks coordinate early human myogenic lineage progression and provide a human in vitro platform to study parallel intermediate and paraxial mesoderm development during myogenesis. HIGHLIGHTS: SIX1+PAX8+ niche progenitors promote myogenic differentiation via BMP7- and laminin-dependent signaling.Loss of SIX1-EYA3 activity disrupts the pre-myogenic niche and impairs the PAX3-to-PAX7 transitionMulti-omics single-cell optimal transport resolves previously uncaptured transient intermediates and sequential waves of human myogenesisSIX1 lineage tracing identifies CREB5 as a top regulator of the PAX7+ state in human myogenesis.\n\n--- Abstract 3 (PMID: 42032656, relevance: -4.8915) ---\nBACKGROUND: The triage of Atypical Squamous Cells (ASC) is pivotal in cervical cancer (CC) screening. This study aimed to evaluate the performance of paired box 1 gene methylation (PAX1(m)) testing for triaging cervical intraepithelial neoplasia (CIN) grade 3 or worse (CIN3+) in an ASC population and to compare it with high-risk human papillomavirus (hrHPV) testing. METHODS: This retrospective study was conducted from June 2023 to October 2025 and analyzed 1,305 women with ASC. Residual cervical cell samples were used for PAX1(m) testing, and their hrHPV test results within two months were collected for comparison. All participants underwent colposcopy-biopsy to obtain the histopathological results. The area under the receiver operating characteristic curve (AUC), sensitivity, specificity of the two methods was calculated and compared. RESULTS PAX1M : difference of cross points (DeltaCp) values showed a negative correlation with lesion severity (P (trend) <0.001). For CIN3 + detection, PAX1(m) (cut-off: DeltaCp </= 11.74) demonstrated comparable sensitivity to hrHPV (94.6% vs. 94.6%), but with significantly higher specificity (66.0% vs. 10.4%, P < 0.001). Its AUC was also significantly higher to that of the hrHPV test. For CIN2 + detection, the AUC of PAX1(m) (cut-off: DeltaCp </= 11.74) was 0.716, which was significantly higher than that of the hrHPV test (0.544, P < 0.001). Furthermore, PAX1(m) detected all cases of CC. CONCLUSION: In the triage of ASC, PAX1(m) significantly improved the specificity for detecting CIN3 + while maintaining high sensitivity. These findings suggest that PAX1(m) is a promising triage strategy with diagnostic performance superior to that of hrHPV, warranting further prospective validation of its clinical impact and cost-effectiveness.\n\n"
+}

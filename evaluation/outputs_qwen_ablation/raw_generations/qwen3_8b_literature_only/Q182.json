@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "40138723",
+    "42086550",
+    "39030589",
+    "36244801",
+    "31849283",
+    "42326386",
+    "38886730",
+    "41503465",
+    "40685484",
+    "36238643",
+    "40554537",
+    "37254524",
+    "42269416",
+    "41951763",
+    "34552771"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q182.json",
+      "question_id": "Q182",
+      "sha256": "faac5904282b551146c084c90dda3e7737cca472dd3552ab045df45f7934dcd4"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q182.json",
+      "question_id": "Q182",
+      "sha256": "3fde4f259a1142140cdaec3f624938c2e843e5816682efdd1a9dc26f11002cfd"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does this dataset contain evidence that a polygenic risk score can predict response to Finasteride? If not, state what data and validation would be required.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 3.7738,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this dataset contain evidence that a polygenic risk score can predict response to Finasteride? If not, state what data and validation would be required.",
+  "parsed_answer": "The dataset does not contain evidence that a polygenic risk score (PRS) can predict response to Finasteride. The provided literature context includes studies on polygenic risk scores in relation to traits such as bone mineral density, stature, age at menopause, type 2 diabetes, coronary artery disease, and knee osteoarthritis progression. However, none of the studies mention Finasteride or its response to genetic risk scores.\n\nTo determine whether a polygenic risk score can predict response to Finasteride, the following data and validation would be required:\n\n1. **Genetic Data**: A dataset containing genetic variants (e.g., SNPs) associated with Finasteride response, ideally from genome-wide association studies (GWAS) or pharmacogenetic studies.\n\n2. **Phenotypic Data**: Information on Finasteride response, such as changes in serum testosterone levels, prostate-specific antigen (PSA) levels, or clinical outcomes like hair growth or prostate size.\n\n3. **Cohort Information**: A well-characterized cohort of individuals who have been treated with Finasteride, with both genetic and phenotypic data collected.\n\n4. **Statistical Analysis**: A PRS would need to be constructed using the genetic data, and its predictive power would be evaluated using statistical methods such as logistic regression, survival analysis, or machine learning models, with validation in independent cohorts.\n\n5. **Validation**: The PRS should be validated in multiple populations to ensure generalizability and robustness.\n\nIn summary, the current dataset does not provide evidence for the predictive power of a polygenic risk score in relation to Finasteride response, and additional data and validation would be required to establish such a relationship.",
+  "question_id": "Q182",
+  "question_text": "Does this dataset contain evidence that a polygenic risk score can predict response to Finasteride? If not, state what data and validation would be required.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 344,
+    "prompt_token_count": 1668,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The dataset does not contain evidence that a polygenic risk score (PRS) can predict response to Finasteride. The provided literature context includes studies on polygenic risk scores in relation to traits such as bone mineral density, stature, age at menopause, type 2 diabetes, coronary artery disease, and knee osteoarthritis progression. However, none of the studies mention Finasteride or its response to genetic risk scores.\n\nTo determine whether a polygenic risk score can predict response to Finasteride, the following data and validation would be required:\n\n1. **Genetic Data**: A dataset containing genetic variants (e.g., SNPs) associated with Finasteride response, ideally from genome-wide association studies (GWAS) or pharmacogenetic studies.\n\n2. **Phenotypic Data**: Information on Finasteride response, such as changes in serum testosterone levels, prostate-specific antigen (PSA) levels, or clinical outcomes like hair growth or prostate size.\n\n3. **Cohort Information**: A well-characterized cohort of individuals who have been treated with Finasteride, with both genetic and phenotypic data collected.\n\n4. **Statistical Analysis**: A PRS would need to be constructed using the genetic data, and its predictive power would be evaluated using statistical methods such as logistic regression, survival analysis, or machine learning models, with validation in independent cohorts.\n\n5. **Validation**: The PRS should be validated in multiple populations to ensure generalizability and robustness.\n\nIn summary, the current dataset does not provide evidence for the predictive power of a polygenic risk score in relation to Finasteride response, and additional data and validation would be required to establish such a relationship."
+      }
+    ],
+    "created": 1783564664,
+    "id": "cmpl-29644d5c-e658-4f17-b8c0-86e797490225",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 344,
+      "prompt_tokens": 1647,
+      "total_tokens": 1991
+    }
+  },
+  "reranker_scores": [
+    -0.1953340619802475,
+    -2.970888614654541,
+    -4.644708156585693
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      35.60308074951172,
+      37.763484954833984,
+      37.76658630371094,
+      37.869178771972656,
+      38.15793228149414,
+      38.84120178222656,
+      38.96393585205078,
+      39.36225128173828,
+      39.8453369140625,
+      39.88399124145508,
+      39.900352478027344,
+      40.104923248291016,
+      40.24174118041992,
+      40.497802734375,
+      40.552757263183594
+    ],
+    "candidate_pmids": [
+      "40138723",
+      "42086550",
+      "39030589",
+      "36244801",
+      "31849283",
+      "42326386",
+      "38886730",
+      "41503465",
+      "40685484",
+      "36238643",
+      "40554537",
+      "37254524",
+      "42269416",
+      "41951763",
+      "34552771"
+    ],
+    "expanded_retrieval_query": "Does this dataset contain evidence that a polygenic risk score can predict response to Finasteride? If not, state what data and validation would be required.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41503465, relevance: -0.1953) ---\nPolygenic scores (PGS) predict complex traits and stratify disease risk but often fail to fully capture individual-level variation. \"Misaligned\" individuals, whose observed phenotypes deviate from their genetically expected values based on polygenic scores (PGS), provide a powerful model for identifying factors beyond common-variant effects, including additional genetic factors. Here, we apply misalignment classification and enrichment testing frameworks to seven continuous and three dichotomous traits, assessing whether misaligned individuals in the UK Biobank are enriched for rare (minor allele frequency (MAF) < 0.1%) damaging genetic variation. We identify significant enrichment (false discovery rate (FDR)-adjusted P < 0.05) of predicted loss-of-function (pLoF) variants in COPB2 and GORAB among individuals misaligned for lower-than-expected bone mineral density. We refine previously observed grouped-gene enrichment in individuals with misaligned stature to the single-gene level: shorter-than-expected individuals are enriched for pLoF variants in ACAN and IGF1, and taller-than-expected individuals are enriched for predicted damaging missense in FBN1. Using an individual's misalignment classification as a phenotype, we perform an exome-wide scan across seven traits, resulting in 74 FDR-significant genes. We identify KANK1 as a gene associated with later age at menopause, potentially protective against primary ovarian insufficiency. For dichotomous disease status traits, we demonstrate evidence for the liability threshold model in the context of counteracting conditionally-orthogonal common and rare variant pathogenic/protective effects. Among individuals diagnosed with type 2 diabetes, carriers of rare pathogenic pLoF variants in HNF1A and HNF4A had significantly lower polygenic risk than non-carriers (FDR-adjusted one-sided t-test P < 5 x 10(-3)). We also show that coronary artery disease controls carrying rare protective pLoF variants in ANGPTL3 had nominally higher polygenic risk (one-sided t-test P = 0.03) than non-carriers. This study highlights the power of misalignment-based analyses in complex continuous phenotypes and disease, with the potential to validate known genetic contributors to traits and identify novel genes. This work paves the way for better molecular diagnoses and targeted therapeutic discovery.\n\n--- Abstract 2 (PMID: 40554537, relevance: -2.9709) ---\nOBJECTIVE: Knee osteoarthritis (OA) is a heterogeneous disease with different endotypes and phenotypes, resulting in patients' varying clinical and structural progression. Several genomic markers have been associated with knee OA presence. This study aimed to find new associations of these genetic markers with knee OA progression and to investigate the risk of knee OA progression using a polygenic risk score (PRS). METHODS: Data from knee OA patients (n = 297) from the IMI-APPROACH cohort with detailed measurements on disease progression were used. Knee OA progression definitions were based on the decrease in minimum joint space width in mm (minJSW; primary outcome), increase in pain on the Knee injury and Osteoarthritis Outcome Score (KOOS), and presence of radiographic OA (based on the Kellgren-Lawrence score) over 24 months. 30 previously reported single nucleotide polymorphisms (SNPs) associated with presence of OA irrespective of affected joints or knee OA specifically were investigated. We performed a SNP based genome-wide association analysis using the disease progression definitions. Furthermore, a PRS was created using the 30 presence SNPs to predict knee OA progression. RESULTS: Existing genetic markers for knee OA presence were not found to be associated with knee OA progression. The PRS of the SNPs for knee OA presence did also not show significant predictive value for knee OA progression. Unexpectedly, nineteen different variants were associated significantly (P < 5 x 10-8) with minJSW decrease. Ten SNPs are located near protein coding genes PLCL2, CDYL2, and NTNG1, and several SNPs are located in or near long non-coding RNAs (lncRNA). CONCLUSIONS: The 30 OA risk SNPs individually and combined in a PRS are not associated with progression of knee OA in the IMI-APPROACH cohort. 19 different SNPs were associated with minJSW decrease. We demonstrated how to employ multiple bioinformatics tools to, despite a limited dataset, still prioritise potential biomarkers for associations to knee OA progression.\n\n--- Abstract 3 (PMID: 42086550, relevance: -4.6447) ---\nTumor necrosis factor inhibitors (TNFi) have transformed the management of rheumatoid arthritis (RA); however, up to 40% of patients fail to achieve an adequate clinical response. Current clinical predictors remain insufficient, highlighting the need for pharmacogenetic biomarkers to guide biologic therapy selection. In this study, we investigated genetic variants associated with TNFi treatment response, with a particular focus on body mass index (BMI)-dependent effects, using a large real-world cohort. A total of 519 patients with RA were identified from the Taiwan Precision Medicine Initiative (TPMI), an electronic health record-linked biobank. Eligible patients had received TNFi therapy for at least 6 months and had available genotyping data. Ninety-seven candidate single nucleotide polymorphisms (SNPs) previously reported to be associated with TNFi response were identified through a systematic literature search. Five variants located in immune-metabolic genes (FTO, ZNF618, RANK, CD84, and LOC105375523) were further analyzed using univariable and multivariable logistic regression models. Subgroup analyses stratified by BMI were performed to explore potential effect modification. Three variants-FTO rs7195994, ZNF618 rs16911006, and LOC105375523 rs834811-were significantly associated with TNFi response in initial analyses. In multivariable models, only FTO rs7195994 remained an independent predictor of non-response (odds ratio [OR] 0.44, 95% confidence interval [CI] 0.22-0.87; p = 0.019). Among patients with BMI < 27 kg/m(2), carriers of the rs7195994 risk allele had a 49% lower likelihood of achieving treatment response (OR 0.51, 95% CI 0.28-0.92; p = 0.0249), whereas no significant association was observed in patients with higher BMI. These findings identify FTO rs7195994 as a novel, BMI-modulated pharmacogenetic marker of TNFi non-response in RA. Incorporating BMI-stratified genetic profiling into clinical decision-making may facilitate early identification of patients unlikely to benefit from TNFi therapy, thereby supporting precision treatment strategies. Further validation in multiethnic populations and functional studies is warranted.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does this dataset contain evidence that a polygenic risk score can predict response to Finasteride? If not, state what data and validation would be required.",
+    "rerank_seconds": 0.3328,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.35,
+    "score_max": -0.1953340619802475,
+    "score_mean": -2.603643611073494,
+    "scores": [
+      -0.1953340619802475,
+      -2.970888614654541,
+      -4.644708156585693
+    ],
+    "selected_abstracts": [
+      "Polygenic scores (PGS) predict complex traits and stratify disease risk but often fail to fully capture individual-level variation. \"Misaligned\" individuals, whose observed phenotypes deviate from their genetically expected values based on polygenic scores (PGS), provide a powerful model for identifying factors beyond common-variant effects, including additional genetic factors. Here, we apply misalignment classification and enrichment testing frameworks to seven continuous and three dichotomous traits, assessing whether misaligned individuals in the UK Biobank are enriched for rare (minor allele frequency (MAF) < 0.1%) damaging genetic variation. We identify significant enrichment (false discovery rate (FDR)-adjusted P < 0.05) of predicted loss-of-function (pLoF) variants in COPB2 and GORAB among individuals misaligned for lower-than-expected bone mineral density. We refine previously observed grouped-gene enrichment in individuals with misaligned stature to the single-gene level: shorter-than-expected individuals are enriched for pLoF variants in ACAN and IGF1, and taller-than-expected individuals are enriched for predicted damaging missense in FBN1. Using an individual's misalignment classification as a phenotype, we perform an exome-wide scan across seven traits, resulting in 74 FDR-significant genes. We identify KANK1 as a gene associated with later age at menopause, potentially protective against primary ovarian insufficiency. For dichotomous disease status traits, we demonstrate evidence for the liability threshold model in the context of counteracting conditionally-orthogonal common and rare variant pathogenic/protective effects. Among individuals diagnosed with type 2 diabetes, carriers of rare pathogenic pLoF variants in HNF1A and HNF4A had significantly lower polygenic risk than non-carriers (FDR-adjusted one-sided t-test P < 5 x 10(-3)). We also show that coronary artery disease controls carrying rare protective pLoF variants in ANGPTL3 had nominally higher polygenic risk (one-sided t-test P = 0.03) than non-carriers. This study highlights the power of misalignment-based analyses in complex continuous phenotypes and disease, with the potential to validate known genetic contributors to traits and identify novel genes. This work paves the way for better molecular diagnoses and targeted therapeutic discovery.",
+      "OBJECTIVE: Knee osteoarthritis (OA) is a heterogeneous disease with different endotypes and phenotypes, resulting in patients' varying clinical and structural progression. Several genomic markers have been associated with knee OA presence. This study aimed to find new associations of these genetic markers with knee OA progression and to investigate the risk of knee OA progression using a polygenic risk score (PRS). METHODS: Data from knee OA patients (n = 297) from the IMI-APPROACH cohort with detailed measurements on disease progression were used. Knee OA progression definitions were based on the decrease in minimum joint space width in mm (minJSW; primary outcome), increase in pain on the Knee injury and Osteoarthritis Outcome Score (KOOS), and presence of radiographic OA (based on the Kellgren-Lawrence score) over 24 months. 30 previously reported single nucleotide polymorphisms (SNPs) associated with presence of OA irrespective of affected joints or knee OA specifically were investigated. We performed a SNP based genome-wide association analysis using the disease progression definitions. Furthermore, a PRS was created using the 30 presence SNPs to predict knee OA progression. RESULTS: Existing genetic markers for knee OA presence were not found to be associated with knee OA progression. The PRS of the SNPs for knee OA presence did also not show significant predictive value for knee OA progression. Unexpectedly, nineteen different variants were associated significantly (P < 5 x 10-8) with minJSW decrease. Ten SNPs are located near protein coding genes PLCL2, CDYL2, and NTNG1, and several SNPs are located in or near long non-coding RNAs (lncRNA). CONCLUSIONS: The 30 OA risk SNPs individually and combined in a PRS are not associated with progression of knee OA in the IMI-APPROACH cohort. 19 different SNPs were associated with minJSW decrease. We demonstrated how to employ multiple bioinformatics tools to, despite a limited dataset, still prioritise potential biomarkers for associations to knee OA progression.",
+      "Tumor necrosis factor inhibitors (TNFi) have transformed the management of rheumatoid arthritis (RA); however, up to 40% of patients fail to achieve an adequate clinical response. Current clinical predictors remain insufficient, highlighting the need for pharmacogenetic biomarkers to guide biologic therapy selection. In this study, we investigated genetic variants associated with TNFi treatment response, with a particular focus on body mass index (BMI)-dependent effects, using a large real-world cohort. A total of 519 patients with RA were identified from the Taiwan Precision Medicine Initiative (TPMI), an electronic health record-linked biobank. Eligible patients had received TNFi therapy for at least 6 months and had available genotyping data. Ninety-seven candidate single nucleotide polymorphisms (SNPs) previously reported to be associated with TNFi response were identified through a systematic literature search. Five variants located in immune-metabolic genes (FTO, ZNF618, RANK, CD84, and LOC105375523) were further analyzed using univariable and multivariable logistic regression models. Subgroup analyses stratified by BMI were performed to explore potential effect modification. Three variants-FTO rs7195994, ZNF618 rs16911006, and LOC105375523 rs834811-were significantly associated with TNFi response in initial analyses. In multivariable models, only FTO rs7195994 remained an independent predictor of non-response (odds ratio [OR] 0.44, 95% confidence interval [CI] 0.22-0.87; p = 0.019). Among patients with BMI < 27 kg/m(2), carriers of the rs7195994 risk allele had a 49% lower likelihood of achieving treatment response (OR 0.51, 95% CI 0.28-0.92; p = 0.0249), whereas no significant association was observed in patients with higher BMI. These findings identify FTO rs7195994 as a novel, BMI-modulated pharmacogenetic marker of TNFi non-response in RA. Incorporating BMI-stratified genetic profiling into clinical decision-making may facilitate early identification of patients unlikely to benefit from TNFi therapy, thereby supporting precision treatment strategies. Further validation in multiethnic populations and functional studies is warranted."
+    ],
+    "selected_pmids": [
+      "41503465",
+      "40554537",
+      "42086550"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0171
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q182.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41503465",
+    "40554537",
+    "42086550"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:37:48.315173+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41503465, relevance: -0.1953) ---\nPolygenic scores (PGS) predict complex traits and stratify disease risk but often fail to fully capture individual-level variation. \"Misaligned\" individuals, whose observed phenotypes deviate from their genetically expected values based on polygenic scores (PGS), provide a powerful model for identifying factors beyond common-variant effects, including additional genetic factors. Here, we apply misalignment classification and enrichment testing frameworks to seven continuous and three dichotomous traits, assessing whether misaligned individuals in the UK Biobank are enriched for rare (minor allele frequency (MAF) < 0.1%) damaging genetic variation. We identify significant enrichment (false discovery rate (FDR)-adjusted P < 0.05) of predicted loss-of-function (pLoF) variants in COPB2 and GORAB among individuals misaligned for lower-than-expected bone mineral density. We refine previously observed grouped-gene enrichment in individuals with misaligned stature to the single-gene level: shorter-than-expected individuals are enriched for pLoF variants in ACAN and IGF1, and taller-than-expected individuals are enriched for predicted damaging missense in FBN1. Using an individual's misalignment classification as a phenotype, we perform an exome-wide scan across seven traits, resulting in 74 FDR-significant genes. We identify KANK1 as a gene associated with later age at menopause, potentially protective against primary ovarian insufficiency. For dichotomous disease status traits, we demonstrate evidence for the liability threshold model in the context of counteracting conditionally-orthogonal common and rare variant pathogenic/protective effects. Among individuals diagnosed with type 2 diabetes, carriers of rare pathogenic pLoF variants in HNF1A and HNF4A had significantly lower polygenic risk than non-carriers (FDR-adjusted one-sided t-test P < 5 x 10(-3)). We also show that coronary artery disease controls carrying rare protective pLoF variants in ANGPTL3 had nominally higher polygenic risk (one-sided t-test P = 0.03) than non-carriers. This study highlights the power of misalignment-based analyses in complex continuous phenotypes and disease, with the potential to validate known genetic contributors to traits and identify novel genes. This work paves the way for better molecular diagnoses and targeted therapeutic discovery.\n\n--- Abstract 2 (PMID: 40554537, relevance: -2.9709) ---\nOBJECTIVE: Knee osteoarthritis (OA) is a heterogeneous disease with different endotypes and phenotypes, resulting in patients' varying clinical and structural progression. Several genomic markers have been associated with knee OA presence. This study aimed to find new associations of these genetic markers with knee OA progression and to investigate the risk of knee OA progression using a polygenic risk score (PRS). METHODS: Data from knee OA patients (n = 297) from the IMI-APPROACH cohort with detailed measurements on disease progression were used. Knee OA progression definitions were based on the decrease in minimum joint space width in mm (minJSW; primary outcome), increase in pain on the Knee injury and Osteoarthritis Outcome Score (KOOS), and presence of radiographic OA (based on the Kellgren-Lawrence score) over 24 months. 30 previously reported single nucleotide polymorphisms (SNPs) associated with presence of OA irrespective of affected joints or knee OA specifically were investigated. We performed a SNP based genome-wide association analysis using the disease progression definitions. Furthermore, a PRS was created using the 30 presence SNPs to predict knee OA progression. RESULTS: Existing genetic markers for knee OA presence were not found to be associated with knee OA progression. The PRS of the SNPs for knee OA presence did also not show significant predictive value for knee OA progression. Unexpectedly, nineteen different variants were associated significantly (P < 5 x 10-8) with minJSW decrease. Ten SNPs are located near protein coding genes PLCL2, CDYL2, and NTNG1, and several SNPs are located in or near long non-coding RNAs (lncRNA). CONCLUSIONS: The 30 OA risk SNPs individually and combined in a PRS are not associated with progression of knee OA in the IMI-APPROACH cohort. 19 different SNPs were associated with minJSW decrease. We demonstrated how to employ multiple bioinformatics tools to, despite a limited dataset, still prioritise potential biomarkers for associations to knee OA progression.\n\n--- Abstract 3 (PMID: 42086550, relevance: -4.6447) ---\nTumor necrosis factor inhibitors (TNFi) have transformed the management of rheumatoid arthritis (RA); however, up to 40% of patients fail to achieve an adequate clinical response. Current clinical predictors remain insufficient, highlighting the need for pharmacogenetic biomarkers to guide biologic therapy selection. In this study, we investigated genetic variants associated with TNFi treatment response, with a particular focus on body mass index (BMI)-dependent effects, using a large real-world cohort. A total of 519 patients with RA were identified from the Taiwan Precision Medicine Initiative (TPMI), an electronic health record-linked biobank. Eligible patients had received TNFi therapy for at least 6 months and had available genotyping data. Ninety-seven candidate single nucleotide polymorphisms (SNPs) previously reported to be associated with TNFi response were identified through a systematic literature search. Five variants located in immune-metabolic genes (FTO, ZNF618, RANK, CD84, and LOC105375523) were further analyzed using univariable and multivariable logistic regression models. Subgroup analyses stratified by BMI were performed to explore potential effect modification. Three variants-FTO rs7195994, ZNF618 rs16911006, and LOC105375523 rs834811-were significantly associated with TNFi response in initial analyses. In multivariable models, only FTO rs7195994 remained an independent predictor of non-response (odds ratio [OR] 0.44, 95% confidence interval [CI] 0.22-0.87; p = 0.019). Among patients with BMI < 27 kg/m(2), carriers of the rs7195994 risk allele had a 49% lower likelihood of achieving treatment response (OR 0.51, 95% CI 0.28-0.92; p = 0.0249), whereas no significant association was observed in patients with higher BMI. These findings identify FTO rs7195994 as a novel, BMI-modulated pharmacogenetic marker of TNFi non-response in RA. Incorporating BMI-stratified genetic profiling into clinical decision-making may facilitate early identification of patients unlikely to benefit from TNFi therapy, thereby supporting precision treatment strategies. Further validation in multiethnic populations and functional studies is warranted.\n\n\n\n**Question:**\nDoes this dataset contain evidence that a polygenic risk score can predict response to Finasteride? If not, state what data and validation would be required.",
+  "vector_context": "--- Abstract 1 (PMID: 41503465, relevance: -0.1953) ---\nPolygenic scores (PGS) predict complex traits and stratify disease risk but often fail to fully capture individual-level variation. \"Misaligned\" individuals, whose observed phenotypes deviate from their genetically expected values based on polygenic scores (PGS), provide a powerful model for identifying factors beyond common-variant effects, including additional genetic factors. Here, we apply misalignment classification and enrichment testing frameworks to seven continuous and three dichotomous traits, assessing whether misaligned individuals in the UK Biobank are enriched for rare (minor allele frequency (MAF) < 0.1%) damaging genetic variation. We identify significant enrichment (false discovery rate (FDR)-adjusted P < 0.05) of predicted loss-of-function (pLoF) variants in COPB2 and GORAB among individuals misaligned for lower-than-expected bone mineral density. We refine previously observed grouped-gene enrichment in individuals with misaligned stature to the single-gene level: shorter-than-expected individuals are enriched for pLoF variants in ACAN and IGF1, and taller-than-expected individuals are enriched for predicted damaging missense in FBN1. Using an individual's misalignment classification as a phenotype, we perform an exome-wide scan across seven traits, resulting in 74 FDR-significant genes. We identify KANK1 as a gene associated with later age at menopause, potentially protective against primary ovarian insufficiency. For dichotomous disease status traits, we demonstrate evidence for the liability threshold model in the context of counteracting conditionally-orthogonal common and rare variant pathogenic/protective effects. Among individuals diagnosed with type 2 diabetes, carriers of rare pathogenic pLoF variants in HNF1A and HNF4A had significantly lower polygenic risk than non-carriers (FDR-adjusted one-sided t-test P < 5 x 10(-3)). We also show that coronary artery disease controls carrying rare protective pLoF variants in ANGPTL3 had nominally higher polygenic risk (one-sided t-test P = 0.03) than non-carriers. This study highlights the power of misalignment-based analyses in complex continuous phenotypes and disease, with the potential to validate known genetic contributors to traits and identify novel genes. This work paves the way for better molecular diagnoses and targeted therapeutic discovery.\n\n--- Abstract 2 (PMID: 40554537, relevance: -2.9709) ---\nOBJECTIVE: Knee osteoarthritis (OA) is a heterogeneous disease with different endotypes and phenotypes, resulting in patients' varying clinical and structural progression. Several genomic markers have been associated with knee OA presence. This study aimed to find new associations of these genetic markers with knee OA progression and to investigate the risk of knee OA progression using a polygenic risk score (PRS). METHODS: Data from knee OA patients (n = 297) from the IMI-APPROACH cohort with detailed measurements on disease progression were used. Knee OA progression definitions were based on the decrease in minimum joint space width in mm (minJSW; primary outcome), increase in pain on the Knee injury and Osteoarthritis Outcome Score (KOOS), and presence of radiographic OA (based on the Kellgren-Lawrence score) over 24 months. 30 previously reported single nucleotide polymorphisms (SNPs) associated with presence of OA irrespective of affected joints or knee OA specifically were investigated. We performed a SNP based genome-wide association analysis using the disease progression definitions. Furthermore, a PRS was created using the 30 presence SNPs to predict knee OA progression. RESULTS: Existing genetic markers for knee OA presence were not found to be associated with knee OA progression. The PRS of the SNPs for knee OA presence did also not show significant predictive value for knee OA progression. Unexpectedly, nineteen different variants were associated significantly (P < 5 x 10-8) with minJSW decrease. Ten SNPs are located near protein coding genes PLCL2, CDYL2, and NTNG1, and several SNPs are located in or near long non-coding RNAs (lncRNA). CONCLUSIONS: The 30 OA risk SNPs individually and combined in a PRS are not associated with progression of knee OA in the IMI-APPROACH cohort. 19 different SNPs were associated with minJSW decrease. We demonstrated how to employ multiple bioinformatics tools to, despite a limited dataset, still prioritise potential biomarkers for associations to knee OA progression.\n\n--- Abstract 3 (PMID: 42086550, relevance: -4.6447) ---\nTumor necrosis factor inhibitors (TNFi) have transformed the management of rheumatoid arthritis (RA); however, up to 40% of patients fail to achieve an adequate clinical response. Current clinical predictors remain insufficient, highlighting the need for pharmacogenetic biomarkers to guide biologic therapy selection. In this study, we investigated genetic variants associated with TNFi treatment response, with a particular focus on body mass index (BMI)-dependent effects, using a large real-world cohort. A total of 519 patients with RA were identified from the Taiwan Precision Medicine Initiative (TPMI), an electronic health record-linked biobank. Eligible patients had received TNFi therapy for at least 6 months and had available genotyping data. Ninety-seven candidate single nucleotide polymorphisms (SNPs) previously reported to be associated with TNFi response were identified through a systematic literature search. Five variants located in immune-metabolic genes (FTO, ZNF618, RANK, CD84, and LOC105375523) were further analyzed using univariable and multivariable logistic regression models. Subgroup analyses stratified by BMI were performed to explore potential effect modification. Three variants-FTO rs7195994, ZNF618 rs16911006, and LOC105375523 rs834811-were significantly associated with TNFi response in initial analyses. In multivariable models, only FTO rs7195994 remained an independent predictor of non-response (odds ratio [OR] 0.44, 95% confidence interval [CI] 0.22-0.87; p = 0.019). Among patients with BMI < 27 kg/m(2), carriers of the rs7195994 risk allele had a 49% lower likelihood of achieving treatment response (OR 0.51, 95% CI 0.28-0.92; p = 0.0249), whereas no significant association was observed in patients with higher BMI. These findings identify FTO rs7195994 as a novel, BMI-modulated pharmacogenetic marker of TNFi non-response in RA. Incorporating BMI-stratified genetic profiling into clinical decision-making may facilitate early identification of patients unlikely to benefit from TNFi therapy, thereby supporting precision treatment strategies. Further validation in multiethnic populations and functional studies is warranted.\n\n"
+}

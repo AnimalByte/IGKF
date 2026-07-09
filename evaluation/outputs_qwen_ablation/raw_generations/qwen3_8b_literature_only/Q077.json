@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42230622",
+    "42100975",
+    "34021162",
+    "39103847",
+    "37496384",
+    "42147184",
+    "41354990",
+    "35616059",
+    "37248219",
+    "40410387",
+    "41890122",
+    "29220522",
+    "32193494",
+    "36250278",
+    "37737258"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q077.json",
+      "question_id": "Q077",
+      "sha256": "16e870f0e54629a0648cb06dd94be61d5f934d40adf226675025c4016e2c902c"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q077.json",
+      "question_id": "Q077",
+      "sha256": "527c18d325c62ba5f9340d2dbce0a5bd338711df838d25b9e1e61f23276487bf"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to HDAC9 in this study?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.1338,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to HDAC9 in this study?",
+  "parsed_answer": "None of the studies provided in the literature context mention any variants annotated as high impact that are specifically mapped to HDAC9. The studies focus on HDAC9's structure, function, and interactions with flavonoids, as well as on the genetic architecture of atrial fibrillation and the role of rare variants in disease risk. There is no direct reference to high-impact variants associated with HDAC9 in the given context.",
+  "question_id": "Q077",
+  "question_text": "Which variants annotated as high impact, if any, are mapped to HDAC9 in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 86,
+    "prompt_token_count": 1111,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "None of the studies provided in the literature context mention any variants annotated as high impact that are specifically mapped to HDAC9. The studies focus on HDAC9's structure, function, and interactions with flavonoids, as well as on the genetic architecture of atrial fibrillation and the role of rare variants in disease risk. There is no direct reference to high-impact variants associated with HDAC9 in the given context."
+      }
+    ],
+    "created": 1783564193,
+    "id": "cmpl-0269a801-3b4f-4f88-a8ae-210a89a22619",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 86,
+      "prompt_tokens": 1090,
+      "total_tokens": 1176
+    }
+  },
+  "reranker_scores": [
+    -1.3419139385223389,
+    -5.479061126708984,
+    -6.182990074157715
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      41.59306716918945,
+      42.6490592956543,
+      42.981632232666016,
+      43.101402282714844,
+      44.00965881347656,
+      44.05482482910156,
+      44.562721252441406,
+      44.813480377197266,
+      44.96953582763672,
+      45.238372802734375,
+      45.38737106323242,
+      45.42006301879883,
+      45.66265869140625,
+      45.743473052978516,
+      45.85547637939453
+    ],
+    "candidate_pmids": [
+      "42230622",
+      "42100975",
+      "34021162",
+      "39103847",
+      "37496384",
+      "42147184",
+      "41354990",
+      "35616059",
+      "37248219",
+      "40410387",
+      "41890122",
+      "29220522",
+      "32193494",
+      "36250278",
+      "37737258"
+    ],
+    "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to HDAC9 in this study?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42100975, relevance: -1.3419) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41890122, relevance: -5.4791) ---\nHistone Deacetylase (HDAC) 1 and 2 are key enzymatic components in multiple large chromatin remodeling complexes including NuRD, SIN3, and CoREST. In addition, both HDAC 1 and 2 contain a large intrinsically disordered region (IDR) within their C-terminal domain (CTD). How HDAC1/2 assemble into these complexes and the structure of the CTD IDR remains poorly understood. Here, we used HDAC1/2 to isolate their protein interaction networks from cells and used crosslinking mass spectrometry (XL-MS) coupled with the Integrative Modeling Platform to build structural models of the NuRD, SIN3A, and CoREST complexes. Next, we implemented an AlphaFold-enabled XL-MS constrained modeling approach to investigate how HDAC1 could assemble into these complexes. We show that the CTD IDR of HDAC1 folds into alpha helices in these complexes. Finally, we built a complete integrative structural model of a NuRD subcomplex including the abundant HDAC1:MBD3:MTA1:GATAD2B:RBBP4 subunits, which included 6 IDRs. The approaches used herein are broadly applicable for the study of protein complexes and protein interaction networks that can provide important insights into IDRs.\n\n--- Abstract 3 (PMID: 42147184, relevance: -6.1830) ---\nRare coding genetic variants may exert large effects on risk of common disease, yet their contribution to disease architecture and their utility in gene prioritization remain limited by inadequate sample sizes. Here, we performed a massive-scale rare variant association study (RVAS), analyzing over 1.1 million sequenced participants among which 130,000 had atrial fibrillation (AF). Through a multi-mask burden testing approach, we identified 15 genes significantly associated with AF through rare large-effect variation. Integrative analyses revealed strong convergence between genes implicated by rare and common variation, and highlighted instances where RVAS data may aid in GWAS prioritization. Nevertheless, several RVAS genes were not among GWAS loci (FAM189A2, ACTC1, FNIP1, FBN1), or were not nominated through contemporary GWAS prioritization (KDM5B, ZFP36L2). Finally, we observed that ultra-rare protein-disrupting variants - concentrated in a small number of large-effect size genes - explained at least 2% of AF susceptibility across European and African ancestry groups. These findings refine the genetic architecture of AF, while highlighting the value and cost of RVAS for genomic discovery in common disease.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to HDAC9 in this study?",
+    "rerank_seconds": 0.3315,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3463,
+    "score_max": -1.3419139385223389,
+    "score_mean": -4.334655046463013,
+    "scores": [
+      -1.3419139385223389,
+      -5.479061126708984,
+      -6.182990074157715
+    ],
+    "selected_abstracts": [
+      "Aberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.",
+      "Histone Deacetylase (HDAC) 1 and 2 are key enzymatic components in multiple large chromatin remodeling complexes including NuRD, SIN3, and CoREST. In addition, both HDAC 1 and 2 contain a large intrinsically disordered region (IDR) within their C-terminal domain (CTD). How HDAC1/2 assemble into these complexes and the structure of the CTD IDR remains poorly understood. Here, we used HDAC1/2 to isolate their protein interaction networks from cells and used crosslinking mass spectrometry (XL-MS) coupled with the Integrative Modeling Platform to build structural models of the NuRD, SIN3A, and CoREST complexes. Next, we implemented an AlphaFold-enabled XL-MS constrained modeling approach to investigate how HDAC1 could assemble into these complexes. We show that the CTD IDR of HDAC1 folds into alpha helices in these complexes. Finally, we built a complete integrative structural model of a NuRD subcomplex including the abundant HDAC1:MBD3:MTA1:GATAD2B:RBBP4 subunits, which included 6 IDRs. The approaches used herein are broadly applicable for the study of protein complexes and protein interaction networks that can provide important insights into IDRs.",
+      "Rare coding genetic variants may exert large effects on risk of common disease, yet their contribution to disease architecture and their utility in gene prioritization remain limited by inadequate sample sizes. Here, we performed a massive-scale rare variant association study (RVAS), analyzing over 1.1 million sequenced participants among which 130,000 had atrial fibrillation (AF). Through a multi-mask burden testing approach, we identified 15 genes significantly associated with AF through rare large-effect variation. Integrative analyses revealed strong convergence between genes implicated by rare and common variation, and highlighted instances where RVAS data may aid in GWAS prioritization. Nevertheless, several RVAS genes were not among GWAS loci (FAM189A2, ACTC1, FNIP1, FBN1), or were not nominated through contemporary GWAS prioritization (KDM5B, ZFP36L2). Finally, we observed that ultra-rare protein-disrupting variants - concentrated in a small number of large-effect size genes - explained at least 2% of AF susceptibility across European and African ancestry groups. These findings refine the genetic architecture of AF, while highlighting the value and cost of RVAS for genomic discovery in common disease."
+    ],
+    "selected_pmids": [
+      "42100975",
+      "41890122",
+      "42147184"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0147
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q077.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42100975",
+    "41890122",
+    "42147184"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:29:54.525326+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42100975, relevance: -1.3419) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41890122, relevance: -5.4791) ---\nHistone Deacetylase (HDAC) 1 and 2 are key enzymatic components in multiple large chromatin remodeling complexes including NuRD, SIN3, and CoREST. In addition, both HDAC 1 and 2 contain a large intrinsically disordered region (IDR) within their C-terminal domain (CTD). How HDAC1/2 assemble into these complexes and the structure of the CTD IDR remains poorly understood. Here, we used HDAC1/2 to isolate their protein interaction networks from cells and used crosslinking mass spectrometry (XL-MS) coupled with the Integrative Modeling Platform to build structural models of the NuRD, SIN3A, and CoREST complexes. Next, we implemented an AlphaFold-enabled XL-MS constrained modeling approach to investigate how HDAC1 could assemble into these complexes. We show that the CTD IDR of HDAC1 folds into alpha helices in these complexes. Finally, we built a complete integrative structural model of a NuRD subcomplex including the abundant HDAC1:MBD3:MTA1:GATAD2B:RBBP4 subunits, which included 6 IDRs. The approaches used herein are broadly applicable for the study of protein complexes and protein interaction networks that can provide important insights into IDRs.\n\n--- Abstract 3 (PMID: 42147184, relevance: -6.1830) ---\nRare coding genetic variants may exert large effects on risk of common disease, yet their contribution to disease architecture and their utility in gene prioritization remain limited by inadequate sample sizes. Here, we performed a massive-scale rare variant association study (RVAS), analyzing over 1.1 million sequenced participants among which 130,000 had atrial fibrillation (AF). Through a multi-mask burden testing approach, we identified 15 genes significantly associated with AF through rare large-effect variation. Integrative analyses revealed strong convergence between genes implicated by rare and common variation, and highlighted instances where RVAS data may aid in GWAS prioritization. Nevertheless, several RVAS genes were not among GWAS loci (FAM189A2, ACTC1, FNIP1, FBN1), or were not nominated through contemporary GWAS prioritization (KDM5B, ZFP36L2). Finally, we observed that ultra-rare protein-disrupting variants - concentrated in a small number of large-effect size genes - explained at least 2% of AF susceptibility across European and African ancestry groups. These findings refine the genetic architecture of AF, while highlighting the value and cost of RVAS for genomic discovery in common disease.\n\n\n\n**Question:**\nWhich variants annotated as high impact, if any, are mapped to HDAC9 in this study?",
+  "vector_context": "--- Abstract 1 (PMID: 42100975, relevance: -1.3419) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41890122, relevance: -5.4791) ---\nHistone Deacetylase (HDAC) 1 and 2 are key enzymatic components in multiple large chromatin remodeling complexes including NuRD, SIN3, and CoREST. In addition, both HDAC 1 and 2 contain a large intrinsically disordered region (IDR) within their C-terminal domain (CTD). How HDAC1/2 assemble into these complexes and the structure of the CTD IDR remains poorly understood. Here, we used HDAC1/2 to isolate their protein interaction networks from cells and used crosslinking mass spectrometry (XL-MS) coupled with the Integrative Modeling Platform to build structural models of the NuRD, SIN3A, and CoREST complexes. Next, we implemented an AlphaFold-enabled XL-MS constrained modeling approach to investigate how HDAC1 could assemble into these complexes. We show that the CTD IDR of HDAC1 folds into alpha helices in these complexes. Finally, we built a complete integrative structural model of a NuRD subcomplex including the abundant HDAC1:MBD3:MTA1:GATAD2B:RBBP4 subunits, which included 6 IDRs. The approaches used herein are broadly applicable for the study of protein complexes and protein interaction networks that can provide important insights into IDRs.\n\n--- Abstract 3 (PMID: 42147184, relevance: -6.1830) ---\nRare coding genetic variants may exert large effects on risk of common disease, yet their contribution to disease architecture and their utility in gene prioritization remain limited by inadequate sample sizes. Here, we performed a massive-scale rare variant association study (RVAS), analyzing over 1.1 million sequenced participants among which 130,000 had atrial fibrillation (AF). Through a multi-mask burden testing approach, we identified 15 genes significantly associated with AF through rare large-effect variation. Integrative analyses revealed strong convergence between genes implicated by rare and common variation, and highlighted instances where RVAS data may aid in GWAS prioritization. Nevertheless, several RVAS genes were not among GWAS loci (FAM189A2, ACTC1, FNIP1, FBN1), or were not nominated through contemporary GWAS prioritization (KDM5B, ZFP36L2). Finally, we observed that ultra-rare protein-disrupting variants - concentrated in a small number of large-effect size genes - explained at least 2% of AF susceptibility across European and African ancestry groups. These findings refine the genetic architecture of AF, while highlighting the value and cost of RVAS for genomic discovery in common disease.\n\n"
+}

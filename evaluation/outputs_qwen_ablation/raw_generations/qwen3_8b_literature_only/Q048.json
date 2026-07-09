@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "37986797",
+    "34980917",
+    "39164264",
+    "34852643",
+    "38832928",
+    "41249621",
+    "32072174",
+    "38759092",
+    "41672071",
+    "33143250",
+    "35589867",
+    "40591711",
+    "41376825",
+    "41161132",
+    "42392035"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q048.json",
+      "question_id": "Q048",
+      "sha256": "df6192a15942dd6e36d4d024ac46ba9a1d5e94b4d4a28935ccb25bb32c1bca0d"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q048.json",
+      "question_id": "Q048",
+      "sha256": "86c961be802af3e42f1cec48fd5494c8443503c67dcfdb70c7130a2e00b709ae"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Summarize the study-specific and integrated annotations available for rs7313338.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8153,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the study-specific and integrated annotations available for rs7313338.",
+  "parsed_answer": "The provided literature context does not mention rs7313338, so there is no study-specific or integrated annotation available for this variant in the given abstracts.",
+  "question_id": "Q048",
+  "question_text": "Summarize the study-specific and integrated annotations available for rs7313338.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 35,
+    "prompt_token_count": 1607,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention rs7313338, so there is no study-specific or integrated annotation available for this variant in the given abstracts."
+      }
+    ],
+    "created": 1783564067,
+    "id": "cmpl-09a9c465-bf7d-4968-977c-4ac9742513c3",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 35,
+      "prompt_tokens": 1586,
+      "total_tokens": 1621
+    }
+  },
+  "reranker_scores": [
+    -4.030367851257324,
+    -5.270421981811523,
+    -5.654769420623779
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      37.7084846496582,
+      40.64322280883789,
+      40.732643127441406,
+      41.233062744140625,
+      41.489219665527344,
+      41.65421676635742,
+      41.73516082763672,
+      42.50299835205078,
+      42.77937316894531,
+      42.79779815673828,
+      42.92906188964844,
+      43.10041809082031,
+      43.3778190612793,
+      43.39807891845703,
+      43.408729553222656
+    ],
+    "candidate_pmids": [
+      "37986797",
+      "34980917",
+      "39164264",
+      "34852643",
+      "38832928",
+      "41249621",
+      "32072174",
+      "38759092",
+      "41672071",
+      "33143250",
+      "35589867",
+      "40591711",
+      "41376825",
+      "41161132",
+      "42392035"
+    ],
+    "expanded_retrieval_query": "Summarize the study-specific and integrated annotations available for rs7313338.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42392035, relevance: -4.0304) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 32072174, relevance: -5.2704) ---\nBACKGROUND: To clarify the genetic background of ulcerative colitis (UC) in the Japanese population, we conducted a genome-wide association study (GWAS) using a population-specific single nucleotide polymorphism (SNP) array. METHODS: We performed a GWAS and replication study including 1676 UC patients and 2381 healthy controls. The probability of colectomy was compared between genotypes of rs117506082, the top hit SNP at HLA loci, by the Kaplan-Meier method. We studied serum expression of miR-622, a newly identified candidate gene, from 32 UC patients and 8 healthy controls by quantitative reverse-transcription polymerase chain reaction. RESULTS: In the GWAS, only the HLA loci showed genome-wide significant associations with UC (rs117506082, P = 6.69E-28). Seven nominally significant regions included 2 known loci, IL23R (rs76418789, P = 6.29E-7) and IRF8 (rs16940202, P = 1.03E-6), and 5 novel loci: MIR622 (rs9560575, P = 8.23E-7), 14q31 (rs117618617, P = 1.53E-6), KAT6B (rs12260609, P = 1.81E-6), PAX3-CCDC140-SGPP2 (rs7589797, P = 2.87E-6), and KCNA2 (rs118020656, P = 4.01E-6). Combined analysis revealed that IL23R p.G149R (rs76418789, P = 9.03E-11; odds ratio [OR], 0.51) had genome-wide significant association with UC. Patients with GG genotype of rs117506082 had a significantly lower probability of total colectomy than those with the GA+AA genotype (P = 1.72E-2). Serum expression of miR-622 in patients with inactive UC tended to be higher than in healthy controls and patients with active UC (inactive UC vs healthy controls, P = 3.03E-02; inactive UC vs active UC, P = 6.44E-02). CONCLUSIONS: IL23R p.G149R is a susceptibility locus for UC in Japanese individuals. The GG genotype of rs117506082 at HLA loci may predict a better clinical course.\n\n--- Abstract 3 (PMID: 40591711, relevance: -5.6548) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Summarize the study-specific and integrated annotations available for rs7313338.",
+    "rerank_seconds": 0.3464,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3605,
+    "score_max": -4.030367851257324,
+    "score_mean": -4.985186417897542,
+    "scores": [
+      -4.030367851257324,
+      -5.270421981811523,
+      -5.654769420623779
+    ],
+    "selected_abstracts": [
+      "Genome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.",
+      "BACKGROUND: To clarify the genetic background of ulcerative colitis (UC) in the Japanese population, we conducted a genome-wide association study (GWAS) using a population-specific single nucleotide polymorphism (SNP) array. METHODS: We performed a GWAS and replication study including 1676 UC patients and 2381 healthy controls. The probability of colectomy was compared between genotypes of rs117506082, the top hit SNP at HLA loci, by the Kaplan-Meier method. We studied serum expression of miR-622, a newly identified candidate gene, from 32 UC patients and 8 healthy controls by quantitative reverse-transcription polymerase chain reaction. RESULTS: In the GWAS, only the HLA loci showed genome-wide significant associations with UC (rs117506082, P = 6.69E-28). Seven nominally significant regions included 2 known loci, IL23R (rs76418789, P = 6.29E-7) and IRF8 (rs16940202, P = 1.03E-6), and 5 novel loci: MIR622 (rs9560575, P = 8.23E-7), 14q31 (rs117618617, P = 1.53E-6), KAT6B (rs12260609, P = 1.81E-6), PAX3-CCDC140-SGPP2 (rs7589797, P = 2.87E-6), and KCNA2 (rs118020656, P = 4.01E-6). Combined analysis revealed that IL23R p.G149R (rs76418789, P = 9.03E-11; odds ratio [OR], 0.51) had genome-wide significant association with UC. Patients with GG genotype of rs117506082 had a significantly lower probability of total colectomy than those with the GA+AA genotype (P = 1.72E-2). Serum expression of miR-622 in patients with inactive UC tended to be higher than in healthy controls and patients with active UC (inactive UC vs healthy controls, P = 3.03E-02; inactive UC vs active UC, P = 6.44E-02). CONCLUSIONS: IL23R p.G149R is a susceptibility locus for UC in Japanese individuals. The GG genotype of rs117506082 at HLA loci may predict a better clinical course.",
+      "The identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment."
+    ],
+    "selected_pmids": [
+      "42392035",
+      "32072174",
+      "40591711"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0139
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q048.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42392035",
+    "32072174",
+    "40591711"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:27:48.039815+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42392035, relevance: -4.0304) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 32072174, relevance: -5.2704) ---\nBACKGROUND: To clarify the genetic background of ulcerative colitis (UC) in the Japanese population, we conducted a genome-wide association study (GWAS) using a population-specific single nucleotide polymorphism (SNP) array. METHODS: We performed a GWAS and replication study including 1676 UC patients and 2381 healthy controls. The probability of colectomy was compared between genotypes of rs117506082, the top hit SNP at HLA loci, by the Kaplan-Meier method. We studied serum expression of miR-622, a newly identified candidate gene, from 32 UC patients and 8 healthy controls by quantitative reverse-transcription polymerase chain reaction. RESULTS: In the GWAS, only the HLA loci showed genome-wide significant associations with UC (rs117506082, P = 6.69E-28). Seven nominally significant regions included 2 known loci, IL23R (rs76418789, P = 6.29E-7) and IRF8 (rs16940202, P = 1.03E-6), and 5 novel loci: MIR622 (rs9560575, P = 8.23E-7), 14q31 (rs117618617, P = 1.53E-6), KAT6B (rs12260609, P = 1.81E-6), PAX3-CCDC140-SGPP2 (rs7589797, P = 2.87E-6), and KCNA2 (rs118020656, P = 4.01E-6). Combined analysis revealed that IL23R p.G149R (rs76418789, P = 9.03E-11; odds ratio [OR], 0.51) had genome-wide significant association with UC. Patients with GG genotype of rs117506082 had a significantly lower probability of total colectomy than those with the GA+AA genotype (P = 1.72E-2). Serum expression of miR-622 in patients with inactive UC tended to be higher than in healthy controls and patients with active UC (inactive UC vs healthy controls, P = 3.03E-02; inactive UC vs active UC, P = 6.44E-02). CONCLUSIONS: IL23R p.G149R is a susceptibility locus for UC in Japanese individuals. The GG genotype of rs117506082 at HLA loci may predict a better clinical course.\n\n--- Abstract 3 (PMID: 40591711, relevance: -5.6548) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n\n\n**Question:**\nSummarize the study-specific and integrated annotations available for rs7313338.",
+  "vector_context": "--- Abstract 1 (PMID: 42392035, relevance: -4.0304) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 32072174, relevance: -5.2704) ---\nBACKGROUND: To clarify the genetic background of ulcerative colitis (UC) in the Japanese population, we conducted a genome-wide association study (GWAS) using a population-specific single nucleotide polymorphism (SNP) array. METHODS: We performed a GWAS and replication study including 1676 UC patients and 2381 healthy controls. The probability of colectomy was compared between genotypes of rs117506082, the top hit SNP at HLA loci, by the Kaplan-Meier method. We studied serum expression of miR-622, a newly identified candidate gene, from 32 UC patients and 8 healthy controls by quantitative reverse-transcription polymerase chain reaction. RESULTS: In the GWAS, only the HLA loci showed genome-wide significant associations with UC (rs117506082, P = 6.69E-28). Seven nominally significant regions included 2 known loci, IL23R (rs76418789, P = 6.29E-7) and IRF8 (rs16940202, P = 1.03E-6), and 5 novel loci: MIR622 (rs9560575, P = 8.23E-7), 14q31 (rs117618617, P = 1.53E-6), KAT6B (rs12260609, P = 1.81E-6), PAX3-CCDC140-SGPP2 (rs7589797, P = 2.87E-6), and KCNA2 (rs118020656, P = 4.01E-6). Combined analysis revealed that IL23R p.G149R (rs76418789, P = 9.03E-11; odds ratio [OR], 0.51) had genome-wide significant association with UC. Patients with GG genotype of rs117506082 had a significantly lower probability of total colectomy than those with the GA+AA genotype (P = 1.72E-2). Serum expression of miR-622 in patients with inactive UC tended to be higher than in healthy controls and patients with active UC (inactive UC vs healthy controls, P = 3.03E-02; inactive UC vs active UC, P = 6.44E-02). CONCLUSIONS: IL23R p.G149R is a susceptibility locus for UC in Japanese individuals. The GG genotype of rs117506082 at HLA loci may predict a better clinical course.\n\n--- Abstract 3 (PMID: 40591711, relevance: -5.6548) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n"
+}

@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41673742",
+    "41640146",
+    "42260572",
+    "41145827",
+    "29220522",
+    "41951763",
+    "41645416",
+    "41493898",
+    "41722875",
+    "42315371",
+    "41296172",
+    "42147184",
+    "41796107",
+    "41672400",
+    "38342585"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q137.json",
+      "question_id": "Q137",
+      "sha256": "79b3d939b10ea700f6c8be20bafc813067cc6987f09d3c84b0d81a275250c9c9"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q137.json",
+      "question_id": "Q137",
+      "sha256": "37ed1d928c122ac0d1b0d5ae546c52b4379d06a34aad0132252e16039b6958b0"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the study identify a variant mapped to SRD5A2 that also overlaps a regulatory element active in hair-follicle-relevant cells? If so, identify it and the supporting evidence.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.3254,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the study identify a variant mapped to SRD5A2 that also overlaps a regulatory element active in hair-follicle-relevant cells? If so, identify it and the supporting evidence.",
+  "parsed_answer": "The provided literature context does not mention any variant mapped to SRD5A2 that overlaps a regulatory element active in hair-follicle-relevant cells. The studies discussed focus on the role of SRD5A2 in androgen synthesis, male sexual development, and disorders of sex development (DSD), but none of the abstracts provide information about regulatory elements related to hair follicles. Therefore, based on the given context, the answer is no.",
+  "question_id": "Q137",
+  "question_text": "Does the study identify a variant mapped to SRD5A2 that also overlaps a regulatory element active in hair-follicle-relevant cells? If so, identify it and the supporting evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 93,
+    "prompt_token_count": 1444,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention any variant mapped to SRD5A2 that overlaps a regulatory element active in hair-follicle-relevant cells. The studies discussed focus on the role of SRD5A2 in androgen synthesis, male sexual development, and disorders of sex development (DSD), but none of the abstracts provide information about regulatory elements related to hair follicles. Therefore, based on the given context, the answer is no."
+      }
+    ],
+    "created": 1783564446,
+    "id": "cmpl-77aedf23-caa1-49a7-a045-f679be388169",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 93,
+      "prompt_tokens": 1423,
+      "total_tokens": 1516
+    }
+  },
+  "reranker_scores": [
+    1.190252661705017,
+    -0.21084439754486084,
+    -0.6240506768226624
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      32.25389099121094,
+      33.360694885253906,
+      33.52783203125,
+      34.20614242553711,
+      35.63211441040039,
+      35.66337966918945,
+      36.854217529296875,
+      37.139732360839844,
+      37.45458221435547,
+      37.48173904418945,
+      37.622314453125,
+      37.648719787597656,
+      37.75688171386719,
+      37.807029724121094,
+      38.07103729248047
+    ],
+    "candidate_pmids": [
+      "41673742",
+      "41640146",
+      "42260572",
+      "41145827",
+      "29220522",
+      "41951763",
+      "41645416",
+      "41493898",
+      "41722875",
+      "42315371",
+      "41296172",
+      "42147184",
+      "41796107",
+      "41672400",
+      "38342585"
+    ],
+    "expanded_retrieval_query": "Does the study identify a variant mapped to SRD5A2 that also overlaps a regulatory element active in hair-follicle-relevant cells? If so, identify it and the supporting evidence.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41722875, relevance: 1.1903) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 42260572, relevance: -0.2108) ---\nBACKGROUND: NR5A1 encodes a transcription factor essential for adrenal and gonadal development. Gene variants are a known cause of heterogeneous 46,XY disorders of sex development (DSD), but the mechanisms underlying the phenotypic variability remain unclear. We investigated how different NR5A1 variants affect downstream gene regulation and contribute to DSD pathogenesis. METHODS: We analyzed four naturally occurring NR5A1 variants identified in patients with 46,XY DSD-two novel (p.Cys65Ser, p.His310Arg) and two previously reported (p.Cys30Ser, p.Gln329*). We performed protein and transcriptomic analyses to characterize variant effects and identify dysregulated and candidate target genes, validated by qPCR and luciferase assays. Transcriptomic and CUT&Tag analyses focused on the p.Gln329* truncating variant. RESULTS: All four variants occurred at conserved residues and resulted in reduced NR5A1 protein expression and impaired nuclear localization upon transfection in HEK293T cells. Transcriptomic analysis using the p.Gln329* variant revealed broad downregulation of genes involved in steroidogenesis, including CYP11A1, STAR, and CYP17A1. Notably, AMHR2 and STARD8 were significantly downregulated and showed reduced CUT&Tag signal in variant-transfected cells. Promoter assays confirmed that all variants diminished CYP11A1 and AMHR2 promoter activity. Only the p.Gln329* variant affected STARD8 promoter activity. CONCLUSIONS: These findings indicate that NR5A1 variants impair protein expression and localization, leading to transcriptional dysregulation of genes involved in steroid hormone biosynthesis and sexual development. Based on analysis of the p.Gln329* truncating variant, AMHR2 and STARD8 are strong candidate novel downstream targets of NR5A1, offering further insight into the mechanisms driving 46,XY DSD.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.6241) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the study identify a variant mapped to SRD5A2 that also overlaps a regulatory element active in hair-follicle-relevant cells? If so, identify it and the supporting evidence.",
+    "rerank_seconds": 0.3335,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3519,
+    "score_max": 1.190252661705017,
+    "score_mean": 0.11845252911249797,
+    "scores": [
+      1.190252661705017,
+      -0.21084439754486084,
+      -0.6240506768226624
+    ],
+    "selected_abstracts": [
+      "5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.",
+      "BACKGROUND: NR5A1 encodes a transcription factor essential for adrenal and gonadal development. Gene variants are a known cause of heterogeneous 46,XY disorders of sex development (DSD), but the mechanisms underlying the phenotypic variability remain unclear. We investigated how different NR5A1 variants affect downstream gene regulation and contribute to DSD pathogenesis. METHODS: We analyzed four naturally occurring NR5A1 variants identified in patients with 46,XY DSD-two novel (p.Cys65Ser, p.His310Arg) and two previously reported (p.Cys30Ser, p.Gln329*). We performed protein and transcriptomic analyses to characterize variant effects and identify dysregulated and candidate target genes, validated by qPCR and luciferase assays. Transcriptomic and CUT&Tag analyses focused on the p.Gln329* truncating variant. RESULTS: All four variants occurred at conserved residues and resulted in reduced NR5A1 protein expression and impaired nuclear localization upon transfection in HEK293T cells. Transcriptomic analysis using the p.Gln329* variant revealed broad downregulation of genes involved in steroidogenesis, including CYP11A1, STAR, and CYP17A1. Notably, AMHR2 and STARD8 were significantly downregulated and showed reduced CUT&Tag signal in variant-transfected cells. Promoter assays confirmed that all variants diminished CYP11A1 and AMHR2 promoter activity. Only the p.Gln329* variant affected STARD8 promoter activity. CONCLUSIONS: These findings indicate that NR5A1 variants impair protein expression and localization, leading to transcriptional dysregulation of genes involved in steroid hormone biosynthesis and sexual development. Based on analysis of the p.Gln329* truncating variant, AMHR2 and STARD8 are strong candidate novel downstream targets of NR5A1, offering further insight into the mechanisms driving 46,XY DSD.",
+      "INTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY."
+    ],
+    "selected_pmids": [
+      "41722875",
+      "42260572",
+      "41640146"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0183
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q137.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41722875",
+    "42260572",
+    "41640146"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:34:07.877315+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41722875, relevance: 1.1903) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 42260572, relevance: -0.2108) ---\nBACKGROUND: NR5A1 encodes a transcription factor essential for adrenal and gonadal development. Gene variants are a known cause of heterogeneous 46,XY disorders of sex development (DSD), but the mechanisms underlying the phenotypic variability remain unclear. We investigated how different NR5A1 variants affect downstream gene regulation and contribute to DSD pathogenesis. METHODS: We analyzed four naturally occurring NR5A1 variants identified in patients with 46,XY DSD-two novel (p.Cys65Ser, p.His310Arg) and two previously reported (p.Cys30Ser, p.Gln329*). We performed protein and transcriptomic analyses to characterize variant effects and identify dysregulated and candidate target genes, validated by qPCR and luciferase assays. Transcriptomic and CUT&Tag analyses focused on the p.Gln329* truncating variant. RESULTS: All four variants occurred at conserved residues and resulted in reduced NR5A1 protein expression and impaired nuclear localization upon transfection in HEK293T cells. Transcriptomic analysis using the p.Gln329* variant revealed broad downregulation of genes involved in steroidogenesis, including CYP11A1, STAR, and CYP17A1. Notably, AMHR2 and STARD8 were significantly downregulated and showed reduced CUT&Tag signal in variant-transfected cells. Promoter assays confirmed that all variants diminished CYP11A1 and AMHR2 promoter activity. Only the p.Gln329* variant affected STARD8 promoter activity. CONCLUSIONS: These findings indicate that NR5A1 variants impair protein expression and localization, leading to transcriptional dysregulation of genes involved in steroid hormone biosynthesis and sexual development. Based on analysis of the p.Gln329* truncating variant, AMHR2 and STARD8 are strong candidate novel downstream targets of NR5A1, offering further insight into the mechanisms driving 46,XY DSD.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.6241) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n\n\n**Question:**\nDoes the study identify a variant mapped to SRD5A2 that also overlaps a regulatory element active in hair-follicle-relevant cells? If so, identify it and the supporting evidence.",
+  "vector_context": "--- Abstract 1 (PMID: 41722875, relevance: 1.1903) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 42260572, relevance: -0.2108) ---\nBACKGROUND: NR5A1 encodes a transcription factor essential for adrenal and gonadal development. Gene variants are a known cause of heterogeneous 46,XY disorders of sex development (DSD), but the mechanisms underlying the phenotypic variability remain unclear. We investigated how different NR5A1 variants affect downstream gene regulation and contribute to DSD pathogenesis. METHODS: We analyzed four naturally occurring NR5A1 variants identified in patients with 46,XY DSD-two novel (p.Cys65Ser, p.His310Arg) and two previously reported (p.Cys30Ser, p.Gln329*). We performed protein and transcriptomic analyses to characterize variant effects and identify dysregulated and candidate target genes, validated by qPCR and luciferase assays. Transcriptomic and CUT&Tag analyses focused on the p.Gln329* truncating variant. RESULTS: All four variants occurred at conserved residues and resulted in reduced NR5A1 protein expression and impaired nuclear localization upon transfection in HEK293T cells. Transcriptomic analysis using the p.Gln329* variant revealed broad downregulation of genes involved in steroidogenesis, including CYP11A1, STAR, and CYP17A1. Notably, AMHR2 and STARD8 were significantly downregulated and showed reduced CUT&Tag signal in variant-transfected cells. Promoter assays confirmed that all variants diminished CYP11A1 and AMHR2 promoter activity. Only the p.Gln329* variant affected STARD8 promoter activity. CONCLUSIONS: These findings indicate that NR5A1 variants impair protein expression and localization, leading to transcriptional dysregulation of genes involved in steroid hormone biosynthesis and sexual development. Based on analysis of the p.Gln329* truncating variant, AMHR2 and STARD8 are strong candidate novel downstream targets of NR5A1, offering further insight into the mechanisms driving 46,XY DSD.\n\n--- Abstract 3 (PMID: 41640146, relevance: -0.6241) ---\nINTRODUCTION: Among the disorders of sex development (DSD) with karyotype 46,XY, there is a group of diseases caused by defects of androgen synthesis. The last stage of in the synthesis of androgens is the conversion of testosterone into a more active androgen dihydrotestosterone, which occurs under the influence of the enzyme 5alpha-reductase type II (SRD5A2). SRD5A2 deficiency is a rare disease with autosomal recessive inheritance. AIM: To give a clinical and molecular genetic characterization of 14 new cases with confirmed molecular diagnosis of SRD5A2 deficiency, as well as 4 cases of DSD 46,XY, where monoallelic changes in the SRD5A2 gene were detected. MATERIALS AND METHODS: The study included 310 patients with DSD 46,XY. Molecular genetic analysis was performed using the NGS method using a targeted panel for multiplex amplification and subsequent sequencing of the coding regions of the following genes: AKR1C2, AKR1C4, AMH, AMHR2, AR, ARX, ATRX, CBX2, CYB5A, CYP11A1, CYP17A1, DHCR7, DHH, EMX2, ESR2, FGD1, FGF9, FGFR2, FKBP4, FOXF2, FOXL2, HOXA13, HSD17B3, HSD3B2, ICK, LHCGR, LHX1, LHX9, MAMLD1, MAP3K1, MID1, NR0B1, NR5A1, POR, PTGDS, SOX9, SRD5A2, SRY, STAR, SUPT3H, TSPYL1, WNT4, WT1, ZFPM2. RESULTS: By molecular genetic analysis 16 different variants were identified in the SRD5A2 gene (2 in several families), 4 of which had not been previously described. CONCLUSION: The study highlights the importance of molecular genetic analysis in the differential diagnosis of DSD 46,XY.\n\n"
+}

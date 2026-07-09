@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q029",
+      "randomization_seed": "20260706:Q029:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q029",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q029",
+      "error": null,
+      "id": "batch_req_6a4f85ce7a0c81909b78bbdcacd68e87",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594515,
+          "created_at": 1783594497,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0cb0983de29f66eb006a4f7e01a1c881938319340e48796165",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q029"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0cb0983de29f66eb006a4f7e07e31c8193b5aff6e2f8d93d4a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by identifying reported disease associations for rs929626.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reproduces the Open Targets disease associations and scores from the evidence packet and qualifies them as potential significance.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key reported associations, though it does not note that the provided abstracts do not directly discuss rs929626 or that these are association scores rather than established clinical classifications.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately uses cautious language such as 'may have clinical significance,' though it could more explicitly state the limits of the evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the question, but focuses only on the literature context and ignores relevant graph evidence.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Incorrectly concludes that no clinical significance can be reported despite Open Targets disease associations being provided for rs929626.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits all reported disease associations and scores from the evidence packet.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"It abstains rather than inventing details, but the abstention is not appropriate because relevant evidence was available.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0cb0983de29f66eb006a4f7e0ff8c48193823cb602a7fd504e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2404,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 821,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3225
+          },
+          "user": null
+        },
+        "request_id": "96087e0b-a600-4d8d-9530-8c089970535b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question, but focuses only on the literature context and ignores relevant graph evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly concludes that no clinical significance can be reported despite Open Targets disease associations being provided for rs929626.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Omits all reported disease associations and scores from the evidence packet.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "It abstains rather than inventing details, but the abstention is not appropriate because relevant evidence was available.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q029",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q029.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.723777+00:00"
+}

@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "35719909",
+    "41296172",
+    "42255426",
+    "39539976",
+    "29220522",
+    "33741282",
+    "41417529",
+    "30610764",
+    "36281152",
+    "33742056",
+    "38512300",
+    "31580512",
+    "42060917",
+    "41580713",
+    "42358832"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q163.json",
+      "question_id": "Q163",
+      "sha256": "9e62907fb094bc41096b7e343e1faed7be98ce4c0be0bef3a3065d10782e9d6b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q163.json",
+      "question_id": "Q163",
+      "sha256": "010950c311100f604024f408ce2e5d6027d8c95e4d2e8cd1902de6b6955e31de"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.5725,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+  "parsed_answer": "There is no evidence in the provided literature that connects FOXA2 to hair density, hair thickness, or hair-follicle biology. The literature context provided focuses on the role of FOXP4-AS1 (a long noncoding RNA) in cancer biology, particularly in endometrioid carcinoma and other solid tumors. It does not mention FOXA2 or its involvement in hair-related biological processes. Therefore, based on the given literature, no connection can be made between FOXA2 and hair density, hair thickness, or hair-follicle biology.",
+  "question_id": "Q163",
+  "question_text": "What evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 114,
+    "prompt_token_count": 1569,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "There is no evidence in the provided literature that connects FOXA2 to hair density, hair thickness, or hair-follicle biology. The literature context provided focuses on the role of FOXP4-AS1 (a long noncoding RNA) in cancer biology, particularly in endometrioid carcinoma and other solid tumors. It does not mention FOXA2 or its involvement in hair-related biological processes. Therefore, based on the given literature, no connection can be made between FOXA2 and hair density, hair thickness, or hair-follicle biology."
+      }
+    ],
+    "created": 1783564575,
+    "id": "cmpl-4315f249-4f07-436c-ac08-b52299c25ba1",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 114,
+      "prompt_tokens": 1548,
+      "total_tokens": 1662
+    }
+  },
+  "reranker_scores": [
+    -4.916592121124268,
+    -5.8684234619140625,
+    -5.982062816619873
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.53793716430664,
+      34.989585876464844,
+      36.166988372802734,
+      36.64258575439453,
+      36.80965805053711,
+      36.960018157958984,
+      37.79618835449219,
+      37.95750427246094,
+      38.07334899902344,
+      38.151554107666016,
+      38.36106872558594,
+      39.01445388793945,
+      39.16994094848633,
+      39.3739128112793,
+      39.49826431274414
+    ],
+    "candidate_pmids": [
+      "35719909",
+      "41296172",
+      "42255426",
+      "39539976",
+      "29220522",
+      "33741282",
+      "41417529",
+      "30610764",
+      "36281152",
+      "33742056",
+      "38512300",
+      "31580512",
+      "42060917",
+      "41580713",
+      "42358832"
+    ],
+    "expanded_retrieval_query": "What evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 38512300, relevance: -4.9166) ---\nBackground: Long noncoding RNAs (lncRNAs), as emerging regulators of a wide variety of biological processes via diverse mechanisms, have been demonstrated to be of increasing importance in biology. Genome-wide association studies of tumor samples have identified several lncRNAs as either oncogenes or tumor suppressors in various types of cancers. In recent years, the importance of lncRNAs, especially in endometrioid cancer (EEC), has become increasingly well understood. The lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) has been reported to fulfill roles in several types of cancers; however, the main biological function and associated underlying molecular mechanism of FOXP4-AS1 in EEC have yet to be fully elucidated. The present study therefore aimed to investigate how RNA FOXP4-AS1 may participate in the development and progression of endometrioid carcinoma tissues. Materials and Methods: In the present study, the expression level of FOXP4-AS1 was investigated in endometrioid carcinoma tissues and matching nearby normal endometrial tissues collected from patients receiving surgery at the hospital. A series of molecular biological assays were performed to investigate the effect of FOXP4-AS1 on cell proliferation, cell migration, and cell invasion. Results: An increased concentration of FOXP4-AS1 was identified in endometrioid carcinoma samples and cell lines compared with the corresponding controls, and this lncRNA was found to be positively correlated with advanced FIGO stages in patients with endometrial cancer. Furthermore, knocking down endogenous FOXP4-AS1 led to a significant reduction in the colony formation number and a significant inhibition of cell proliferation, cell migration, and cell invasion in endometrioid carcinoma cells. Moreover, dual-specificity phosphatase 5 (DUSP5), which is lowly expressed in endometrioid carcinoma tissues cells and negatively modulated by FOXP4-AS1, was identified as the downstream target molecule of FOXP4-AS1. Subsequently, the mechanistic experiments confirmed that, through binding to enhancer of zeste homolog 2 (EZH2; one of the catalytic subunits of polycomb repressive complex 2 [PRC2]), FOXP4-AS1 could epigenetically suppress the expression of DUSP5. Finally, the oncogenic function of the FOXP4-AS1/EZH2/DUSP5 axis in endometrioid carcinoma was confirmed via rescue assays. Conclusions: The findings of the present study have highlighted how FOXP4-AS1 fulfills an oncogenic role in endometrioid carcinoma, and targeting FOXP4-AS1 and its pathway may provide new biomarkers for patients with endometrioid carcinoma.\n\n--- Abstract 2 (PMID: 39539976, relevance: -5.8684) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n--- Abstract 3 (PMID: 35719909, relevance: -5.9821) ---\nBACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+    "rerank_seconds": 0.3436,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3597,
+    "score_max": -4.916592121124268,
+    "score_mean": -5.589026133219401,
+    "scores": [
+      -4.916592121124268,
+      -5.8684234619140625,
+      -5.982062816619873
+    ],
+    "selected_abstracts": [
+      "Background: Long noncoding RNAs (lncRNAs), as emerging regulators of a wide variety of biological processes via diverse mechanisms, have been demonstrated to be of increasing importance in biology. Genome-wide association studies of tumor samples have identified several lncRNAs as either oncogenes or tumor suppressors in various types of cancers. In recent years, the importance of lncRNAs, especially in endometrioid cancer (EEC), has become increasingly well understood. The lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) has been reported to fulfill roles in several types of cancers; however, the main biological function and associated underlying molecular mechanism of FOXP4-AS1 in EEC have yet to be fully elucidated. The present study therefore aimed to investigate how RNA FOXP4-AS1 may participate in the development and progression of endometrioid carcinoma tissues. Materials and Methods: In the present study, the expression level of FOXP4-AS1 was investigated in endometrioid carcinoma tissues and matching nearby normal endometrial tissues collected from patients receiving surgery at the hospital. A series of molecular biological assays were performed to investigate the effect of FOXP4-AS1 on cell proliferation, cell migration, and cell invasion. Results: An increased concentration of FOXP4-AS1 was identified in endometrioid carcinoma samples and cell lines compared with the corresponding controls, and this lncRNA was found to be positively correlated with advanced FIGO stages in patients with endometrial cancer. Furthermore, knocking down endogenous FOXP4-AS1 led to a significant reduction in the colony formation number and a significant inhibition of cell proliferation, cell migration, and cell invasion in endometrioid carcinoma cells. Moreover, dual-specificity phosphatase 5 (DUSP5), which is lowly expressed in endometrioid carcinoma tissues cells and negatively modulated by FOXP4-AS1, was identified as the downstream target molecule of FOXP4-AS1. Subsequently, the mechanistic experiments confirmed that, through binding to enhancer of zeste homolog 2 (EZH2; one of the catalytic subunits of polycomb repressive complex 2 [PRC2]), FOXP4-AS1 could epigenetically suppress the expression of DUSP5. Finally, the oncogenic function of the FOXP4-AS1/EZH2/DUSP5 axis in endometrioid carcinoma was confirmed via rescue assays. Conclusions: The findings of the present study have highlighted how FOXP4-AS1 fulfills an oncogenic role in endometrioid carcinoma, and targeting FOXP4-AS1 and its pathway may provide new biomarkers for patients with endometrioid carcinoma.",
+      "Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.",
+      "BACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267."
+    ],
+    "selected_pmids": [
+      "38512300",
+      "39539976",
+      "35719909"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0159
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q163.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "38512300",
+    "39539976",
+    "35719909"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:36:16.698088+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 38512300, relevance: -4.9166) ---\nBackground: Long noncoding RNAs (lncRNAs), as emerging regulators of a wide variety of biological processes via diverse mechanisms, have been demonstrated to be of increasing importance in biology. Genome-wide association studies of tumor samples have identified several lncRNAs as either oncogenes or tumor suppressors in various types of cancers. In recent years, the importance of lncRNAs, especially in endometrioid cancer (EEC), has become increasingly well understood. The lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) has been reported to fulfill roles in several types of cancers; however, the main biological function and associated underlying molecular mechanism of FOXP4-AS1 in EEC have yet to be fully elucidated. The present study therefore aimed to investigate how RNA FOXP4-AS1 may participate in the development and progression of endometrioid carcinoma tissues. Materials and Methods: In the present study, the expression level of FOXP4-AS1 was investigated in endometrioid carcinoma tissues and matching nearby normal endometrial tissues collected from patients receiving surgery at the hospital. A series of molecular biological assays were performed to investigate the effect of FOXP4-AS1 on cell proliferation, cell migration, and cell invasion. Results: An increased concentration of FOXP4-AS1 was identified in endometrioid carcinoma samples and cell lines compared with the corresponding controls, and this lncRNA was found to be positively correlated with advanced FIGO stages in patients with endometrial cancer. Furthermore, knocking down endogenous FOXP4-AS1 led to a significant reduction in the colony formation number and a significant inhibition of cell proliferation, cell migration, and cell invasion in endometrioid carcinoma cells. Moreover, dual-specificity phosphatase 5 (DUSP5), which is lowly expressed in endometrioid carcinoma tissues cells and negatively modulated by FOXP4-AS1, was identified as the downstream target molecule of FOXP4-AS1. Subsequently, the mechanistic experiments confirmed that, through binding to enhancer of zeste homolog 2 (EZH2; one of the catalytic subunits of polycomb repressive complex 2 [PRC2]), FOXP4-AS1 could epigenetically suppress the expression of DUSP5. Finally, the oncogenic function of the FOXP4-AS1/EZH2/DUSP5 axis in endometrioid carcinoma was confirmed via rescue assays. Conclusions: The findings of the present study have highlighted how FOXP4-AS1 fulfills an oncogenic role in endometrioid carcinoma, and targeting FOXP4-AS1 and its pathway may provide new biomarkers for patients with endometrioid carcinoma.\n\n--- Abstract 2 (PMID: 39539976, relevance: -5.8684) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n--- Abstract 3 (PMID: 35719909, relevance: -5.9821) ---\nBACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.\n\n\n\n**Question:**\nWhat evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+  "vector_context": "--- Abstract 1 (PMID: 38512300, relevance: -4.9166) ---\nBackground: Long noncoding RNAs (lncRNAs), as emerging regulators of a wide variety of biological processes via diverse mechanisms, have been demonstrated to be of increasing importance in biology. Genome-wide association studies of tumor samples have identified several lncRNAs as either oncogenes or tumor suppressors in various types of cancers. In recent years, the importance of lncRNAs, especially in endometrioid cancer (EEC), has become increasingly well understood. The lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) has been reported to fulfill roles in several types of cancers; however, the main biological function and associated underlying molecular mechanism of FOXP4-AS1 in EEC have yet to be fully elucidated. The present study therefore aimed to investigate how RNA FOXP4-AS1 may participate in the development and progression of endometrioid carcinoma tissues. Materials and Methods: In the present study, the expression level of FOXP4-AS1 was investigated in endometrioid carcinoma tissues and matching nearby normal endometrial tissues collected from patients receiving surgery at the hospital. A series of molecular biological assays were performed to investigate the effect of FOXP4-AS1 on cell proliferation, cell migration, and cell invasion. Results: An increased concentration of FOXP4-AS1 was identified in endometrioid carcinoma samples and cell lines compared with the corresponding controls, and this lncRNA was found to be positively correlated with advanced FIGO stages in patients with endometrial cancer. Furthermore, knocking down endogenous FOXP4-AS1 led to a significant reduction in the colony formation number and a significant inhibition of cell proliferation, cell migration, and cell invasion in endometrioid carcinoma cells. Moreover, dual-specificity phosphatase 5 (DUSP5), which is lowly expressed in endometrioid carcinoma tissues cells and negatively modulated by FOXP4-AS1, was identified as the downstream target molecule of FOXP4-AS1. Subsequently, the mechanistic experiments confirmed that, through binding to enhancer of zeste homolog 2 (EZH2; one of the catalytic subunits of polycomb repressive complex 2 [PRC2]), FOXP4-AS1 could epigenetically suppress the expression of DUSP5. Finally, the oncogenic function of the FOXP4-AS1/EZH2/DUSP5 axis in endometrioid carcinoma was confirmed via rescue assays. Conclusions: The findings of the present study have highlighted how FOXP4-AS1 fulfills an oncogenic role in endometrioid carcinoma, and targeting FOXP4-AS1 and its pathway may provide new biomarkers for patients with endometrioid carcinoma.\n\n--- Abstract 2 (PMID: 39539976, relevance: -5.8684) ---\nForkhead box P4 antisense RNA 1 (FOXP4-AS1) is a long non-coding RNA (lncRNA) situated on the human chromosome 6p21.1 locus. Previous research has demonstrated that FOXP4-AS1 is dysregulated in various cancers and exhibits a dual purpose as a tumor suppressor or oncogene in specific types of cancer. The levels of FOXP4-AS1 are significantly correlated with clinical features of cancer as well as prognosis. Additionally, FOXP4-AS1 is stimulated by transcription factors ATF3, YY1, PAX5, and SP4. The molecular mechanisms of FOXP4-AS1 in cancer are quite complex. It competitively sponges multiple miRNAs, bidirectionally regulates the levels of host gene FOXP4, activates the PI3K/AKT, Wnt/beta-catenin, and ERK/MAPK signaling pathways, and recruits chromatin-modifying enzymes or interacts with other proteins to regulate malignant phenotypes of tumors, including proliferation, invasion, epithelial-mesenchymal transition (EMT), and angiogenesis. In this review, we provide an overview of the latest developments in FOXP4-AS1 oncology research, outlines its molecular regulatory networks in cancer, and discusses its prospective relevance as a cancer therapeutic target as well as a biomarker for prognosis and diagnosis.\n\n--- Abstract 3 (PMID: 35719909, relevance: -5.9821) ---\nBACKGROUND: Cancer is one of the leading causes of death worldwide. Early diagnosis can significantly lower cancer-related mortality. Studies have shown that the lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) is aberrantly expressed in various solid tumors. A meta-analysis was performed to evaluate the correlation of FOXP4-AS1 with the prognosis of cancer patients and determine the clinical value of FOXP4-AS1 as a potential diagnostic marker. METHODS: Correlational studies from the Web of Science, Embase, OVID, Cochrane and PubMed databases were screened (up to April 1, 2021). Meta-analysis was performed using Stata SE12.0 software. RESULTS: Eleven original studies with 1,332 patients who were diagnosed with a solid cancer (nasopharyngeal carcinoma, hepatocellular carcinoma, colorectal cancer, gastric cancer, osteosarcoma, mantle cell lymphoma, prostate cancer, and pancreatic ductal adenocarcinoma) were included in the meta-analysis. High expression of FOXP4-AS1 was correlated with poor overall survival (OS) (HR = 1.77, 95% CI 1.29-2.44, P < 0.001) and shorter disease-free survival (DFS) (HR = 1.66, 95% CI 1.01-2.72, P = 0.044). Subgroup analysis based on sample size, follow-up time and Newcastle-Ottawa Scale (NOS) score revealed significant differences between FOXP4-AS1 levels and OS (P < 0.05). However, the expression level of FOXP4-AS1 was not significantly correlated with the OS of gastric cancer patients (P = 0.381). High expression of FOXP4-AS1 was predictive of a larger tumor size (OR = 3.82, 95% CI 2.3-6.3, P < 0.001). CONCLUSIONS: Overexpression of FOXP4-AS1 correlates with poor prognosis of cancer patients, and is a potential prognostic biomarker and therapeutic target. SYSTEMATIC REVIEW REGISTRATION: PROSPERO, identifier CRD42021245267.\n\n"
+}

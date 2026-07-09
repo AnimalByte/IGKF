@@ -1,0 +1,162 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q169.json",
+      "question_id": "Q169",
+      "sha256": "6de592c9b1103e88786fb05fe7cb75fdea8f0ddd0d6d2bf3051dc1820ada08c1"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q169.json",
+      "question_id": "Q169",
+      "sha256": "e7f1e796d2bcfb87eb1691873fc1ae794312d15ba7fd5f668e07d625ebbc4855"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.9147,
+  "git_commit": null,
+  "graph_context": "Entity: rs1160312 (Type: Variant)\n  - Implicated Gene: LINC01432\n  - Open Targets Disease Associations: Miyoshi myopathy (score: 0.046), cancer (score: 0.011), retroperitoneal cancer (score: 0.007), androgenetic alopecia (score: 0.007), carcinoma (score: 0.007)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this dataset provide evidence that rs1160312 modifies response to Finasteride? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+  "parsed_answer": "The dataset does not provide evidence that rs1160312 modifies response to Finasteride. The provided graph context lists the associations of rs1160312 with various diseases, including Miyoshi myopathy, cancer, and others, but it does not mention any pharmacogenomic interactions or drug response data, such as response to Finasteride. Therefore, any pharmacogenomic effect involving Finasteride cannot be inferred from the given information.",
+  "question_id": "Q169",
+  "question_text": "Does this dataset provide evidence that rs1160312 modifies response to Finasteride? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 95,
+    "prompt_token_count": 234,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The dataset does not provide evidence that rs1160312 modifies response to Finasteride. The provided graph context lists the associations of rs1160312 with various diseases, including Miyoshi myopathy, cancer, and others, but it does not mention any pharmacogenomic interactions or drug response data, such as response to Finasteride. Therefore, any pharmacogenomic effect involving Finasteride cannot be inferred from the given information."
+      }
+    ],
+    "created": 1783563499,
+    "id": "cmpl-70e59de7-451b-4e04-9231-900e9792c797",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 95,
+      "prompt_tokens": 213,
+      "total_tokens": 308
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: rs1160312 (Type: Variant)\n  - Implicated Gene: LINC01432\n  - Open Targets Disease Associations: Miyoshi myopathy (score: 0.046), cancer (score: 0.011), retroperitoneal cancer (score: 0.007), androgenetic alopecia (score: 0.007), carcinoma (score: 0.007)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: rs1160312 (Type: Variant)\n  - Implicated Gene: LINC01432\n  - Open Targets Disease Associations: Miyoshi myopathy (score: 0.046), cancer (score: 0.011), retroperitoneal cancer (score: 0.007), androgenetic alopecia (score: 0.007), carcinoma (score: 0.007)",
+    "graph_context_length": 261,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0138,
+    "original_retrieval_query": "Does this dataset provide evidence that rs1160312 modifies response to Finasteride? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "dataset"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "rs1160312"
+      },
+      {
+        "label": "ENTITY",
+        "text": "response"
+      },
+      {
+        "label": "ENTITY",
+        "text": "finasteride"
+      },
+      {
+        "label": "ENTITY",
+        "text": "pharmacogenomic effect"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0138,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q169.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:18:20.438000+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: rs1160312 (Type: Variant)\n  - Implicated Gene: LINC01432\n  - Open Targets Disease Associations: Miyoshi myopathy (score: 0.046), cancer (score: 0.011), retroperitoneal cancer (score: 0.007), androgenetic alopecia (score: 0.007), carcinoma (score: 0.007)\n\n**Question:**\nDoes this dataset provide evidence that rs1160312 modifies response to Finasteride? If not, explain why such a pharmacogenomic effect cannot be inferred.",
+  "vector_context": ""
+}

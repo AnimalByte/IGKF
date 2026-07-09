@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "34980917",
+    "32329860",
+    "41606982",
+    "42147184",
+    "31991592",
+    "40869374",
+    "42392035",
+    "31273931",
+    "38886730",
+    "36207305",
+    "37790540",
+    "42401575",
+    "42114689",
+    "42378135",
+    "38830989"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q034.json",
+      "question_id": "Q034",
+      "sha256": "71170c6755bce2a798a18f5d7f5b648efac347860e50245f94c87097219922a1"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q034.json",
+      "question_id": "Q034",
+      "sha256": "504f76ab7e348f2ef37355119f95bba4034edc321fd66d3408ae4d158bc5f99b"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Summarize the study-specific and integrated annotations available for rs929626.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.927,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the study-specific and integrated annotations available for rs929626.",
+  "parsed_answer": "The provided literature context does not mention rs929626 or any annotations related to this specific SNP. Therefore, I cannot provide a summary of study-specific or integrated annotations for rs929626 based on the given information.",
+  "question_id": "Q034",
+  "question_text": "Summarize the study-specific and integrated annotations available for rs929626.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 50,
+    "prompt_token_count": 1478,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention rs929626 or any annotations related to this specific SNP. Therefore, I cannot provide a summary of study-specific or integrated annotations for rs929626 based on the given information."
+      }
+    ],
+    "created": 1783564017,
+    "id": "cmpl-2e98bac0-f6a9-4f15-b457-0dbe9001078b",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 50,
+      "prompt_tokens": 1457,
+      "total_tokens": 1507
+    }
+  },
+  "reranker_scores": [
+    -2.8116660118103027,
+    -4.059130668640137,
+    -5.204403400421143
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.957759857177734,
+      40.21951675415039,
+      40.570899963378906,
+      40.576454162597656,
+      40.641727447509766,
+      40.660606384277344,
+      40.80231475830078,
+      40.89379119873047,
+      41.30908203125,
+      41.894317626953125,
+      42.31092834472656,
+      42.34463119506836,
+      42.44878005981445,
+      42.689537048339844,
+      42.78893280029297
+    ],
+    "candidate_pmids": [
+      "34980917",
+      "32329860",
+      "41606982",
+      "42147184",
+      "31991592",
+      "40869374",
+      "42392035",
+      "31273931",
+      "38886730",
+      "36207305",
+      "37790540",
+      "42401575",
+      "42114689",
+      "42378135",
+      "38830989"
+    ],
+    "expanded_retrieval_query": "Summarize the study-specific and integrated annotations available for rs929626.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42392035, relevance: -2.8117) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 40869374, relevance: -4.0591) ---\nSuicide, a major contributor to global mortality rates, especially among young patients, remains insufficiently integrated into public health initiatives despite notable progress in identifying its determinants. The prediction of suicidal behavior remains complex, often relying on subjective assessments rather than objective biomarkers. Single nucleotide polymorphisms (SNPs) such as rs110402 (CRHR1 gene), rs3800373 (FKBP5 gene), and rs2289656 (NTRK2 gene) have been linked to physiological mechanisms involving stress response and activation of the hypothalamic-pituitary-adrenal (HPA) axis, which contributes to anxiety and stress regulation. This study aimed to assess stress-related gene polymorphisms in individuals with suicidal behavior compared to controls. According to our results, the presence of the A allele of rs2289656 was associated with a protective effect, while the GG genotype conferred a higher susceptibility to suicidal behaviors. Significant associations were observed between trauma and abuse history and the rs110402 polymorphism in CRHR1 gene, highlighting a protective role for the GG genotype and increased predisposition to stress-related psychiatric conditions and suicidal behavior for A allele carriers. No valid associations were found for rs3800373 in the FKBP5 gene, although suggestive trends related to depression and self-aggression were noted. Our findings underscore the need to identify reliable biomarkers associated with suicide risk, highlighting the importance of integrating hereditary and psychosocial data to better understand the underlying mechanisms and to support the development of effective early interventions.\n\n--- Abstract 3 (PMID: 36207305, relevance: -5.2044) ---\nBipolar disorder (BD) is a complex mood disorder with a strong genetic component. Recent studies suggest that microRNAs contribute to psychiatric disorder development. In BD, specific candidate microRNAs have been implicated, in particular miR-137, miR-499a, miR-708, miR-1908 and miR-2113. The aim of the present study was to determine the contribution of these five microRNAs to BD development. For this purpose, we performed: (i) gene-based tests of the five microRNA coding genes, using data from a large genome-wide association study of BD; (ii) gene-set analyses of predicted, brain-expressed target genes of the five microRNAs; (iii) resequencing of the five microRNA coding genes in 960 BD patients and 960 controls and (iv) in silico and functional studies for selected variants. Gene-based tests revealed a significant association with BD for MIR499A, MIR708, MIR1908 and MIR2113. Gene-set analyses revealed a significant enrichment of BD associations in the brain-expressed target genes of miR-137 and miR-499a-5p. Resequencing identified 32 distinct rare variants (minor allele frequency < 1%), all of which showed a non-significant numerical overrepresentation in BD patients compared to controls (p = 0.214). Seven rare variants were identified in the predicted stem-loop sequences of MIR499A and MIR2113. These included rs142927919 in MIR2113 (p(nom) = 0.331) and rs140486571 in MIR499A (p(nom) = 0.297). In silico analyses predicted that rs140486571 might alter the miR-499a secondary structure. Functional analyses showed that rs140486571 significantly affects miR-499a processing and expression. Our results suggest that MIR499A dysregulation might contribute to BD development. Further research is warranted to elucidate the contribution of the MIR499A regulated network to BD susceptibility.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Summarize the study-specific and integrated annotations available for rs929626.",
+    "rerank_seconds": 0.3337,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3478,
+    "score_max": -2.8116660118103027,
+    "score_mean": -4.02506669362386,
+    "scores": [
+      -2.8116660118103027,
+      -4.059130668640137,
+      -5.204403400421143
+    ],
+    "selected_abstracts": [
+      "Genome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.",
+      "Suicide, a major contributor to global mortality rates, especially among young patients, remains insufficiently integrated into public health initiatives despite notable progress in identifying its determinants. The prediction of suicidal behavior remains complex, often relying on subjective assessments rather than objective biomarkers. Single nucleotide polymorphisms (SNPs) such as rs110402 (CRHR1 gene), rs3800373 (FKBP5 gene), and rs2289656 (NTRK2 gene) have been linked to physiological mechanisms involving stress response and activation of the hypothalamic-pituitary-adrenal (HPA) axis, which contributes to anxiety and stress regulation. This study aimed to assess stress-related gene polymorphisms in individuals with suicidal behavior compared to controls. According to our results, the presence of the A allele of rs2289656 was associated with a protective effect, while the GG genotype conferred a higher susceptibility to suicidal behaviors. Significant associations were observed between trauma and abuse history and the rs110402 polymorphism in CRHR1 gene, highlighting a protective role for the GG genotype and increased predisposition to stress-related psychiatric conditions and suicidal behavior for A allele carriers. No valid associations were found for rs3800373 in the FKBP5 gene, although suggestive trends related to depression and self-aggression were noted. Our findings underscore the need to identify reliable biomarkers associated with suicide risk, highlighting the importance of integrating hereditary and psychosocial data to better understand the underlying mechanisms and to support the development of effective early interventions.",
+      "Bipolar disorder (BD) is a complex mood disorder with a strong genetic component. Recent studies suggest that microRNAs contribute to psychiatric disorder development. In BD, specific candidate microRNAs have been implicated, in particular miR-137, miR-499a, miR-708, miR-1908 and miR-2113. The aim of the present study was to determine the contribution of these five microRNAs to BD development. For this purpose, we performed: (i) gene-based tests of the five microRNA coding genes, using data from a large genome-wide association study of BD; (ii) gene-set analyses of predicted, brain-expressed target genes of the five microRNAs; (iii) resequencing of the five microRNA coding genes in 960 BD patients and 960 controls and (iv) in silico and functional studies for selected variants. Gene-based tests revealed a significant association with BD for MIR499A, MIR708, MIR1908 and MIR2113. Gene-set analyses revealed a significant enrichment of BD associations in the brain-expressed target genes of miR-137 and miR-499a-5p. Resequencing identified 32 distinct rare variants (minor allele frequency < 1%), all of which showed a non-significant numerical overrepresentation in BD patients compared to controls (p = 0.214). Seven rare variants were identified in the predicted stem-loop sequences of MIR499A and MIR2113. These included rs142927919 in MIR2113 (p(nom) = 0.331) and rs140486571 in MIR499A (p(nom) = 0.297). In silico analyses predicted that rs140486571 might alter the miR-499a secondary structure. Functional analyses showed that rs140486571 significantly affects miR-499a processing and expression. Our results suggest that MIR499A dysregulation might contribute to BD development. Further research is warranted to elucidate the contribution of the MIR499A regulated network to BD susceptibility."
+    ],
+    "selected_pmids": [
+      "42392035",
+      "40869374",
+      "36207305"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.014
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q034.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42392035",
+    "40869374",
+    "36207305"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:26:58.847235+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42392035, relevance: -2.8117) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 40869374, relevance: -4.0591) ---\nSuicide, a major contributor to global mortality rates, especially among young patients, remains insufficiently integrated into public health initiatives despite notable progress in identifying its determinants. The prediction of suicidal behavior remains complex, often relying on subjective assessments rather than objective biomarkers. Single nucleotide polymorphisms (SNPs) such as rs110402 (CRHR1 gene), rs3800373 (FKBP5 gene), and rs2289656 (NTRK2 gene) have been linked to physiological mechanisms involving stress response and activation of the hypothalamic-pituitary-adrenal (HPA) axis, which contributes to anxiety and stress regulation. This study aimed to assess stress-related gene polymorphisms in individuals with suicidal behavior compared to controls. According to our results, the presence of the A allele of rs2289656 was associated with a protective effect, while the GG genotype conferred a higher susceptibility to suicidal behaviors. Significant associations were observed between trauma and abuse history and the rs110402 polymorphism in CRHR1 gene, highlighting a protective role for the GG genotype and increased predisposition to stress-related psychiatric conditions and suicidal behavior for A allele carriers. No valid associations were found for rs3800373 in the FKBP5 gene, although suggestive trends related to depression and self-aggression were noted. Our findings underscore the need to identify reliable biomarkers associated with suicide risk, highlighting the importance of integrating hereditary and psychosocial data to better understand the underlying mechanisms and to support the development of effective early interventions.\n\n--- Abstract 3 (PMID: 36207305, relevance: -5.2044) ---\nBipolar disorder (BD) is a complex mood disorder with a strong genetic component. Recent studies suggest that microRNAs contribute to psychiatric disorder development. In BD, specific candidate microRNAs have been implicated, in particular miR-137, miR-499a, miR-708, miR-1908 and miR-2113. The aim of the present study was to determine the contribution of these five microRNAs to BD development. For this purpose, we performed: (i) gene-based tests of the five microRNA coding genes, using data from a large genome-wide association study of BD; (ii) gene-set analyses of predicted, brain-expressed target genes of the five microRNAs; (iii) resequencing of the five microRNA coding genes in 960 BD patients and 960 controls and (iv) in silico and functional studies for selected variants. Gene-based tests revealed a significant association with BD for MIR499A, MIR708, MIR1908 and MIR2113. Gene-set analyses revealed a significant enrichment of BD associations in the brain-expressed target genes of miR-137 and miR-499a-5p. Resequencing identified 32 distinct rare variants (minor allele frequency < 1%), all of which showed a non-significant numerical overrepresentation in BD patients compared to controls (p = 0.214). Seven rare variants were identified in the predicted stem-loop sequences of MIR499A and MIR2113. These included rs142927919 in MIR2113 (p(nom) = 0.331) and rs140486571 in MIR499A (p(nom) = 0.297). In silico analyses predicted that rs140486571 might alter the miR-499a secondary structure. Functional analyses showed that rs140486571 significantly affects miR-499a processing and expression. Our results suggest that MIR499A dysregulation might contribute to BD development. Further research is warranted to elucidate the contribution of the MIR499A regulated network to BD susceptibility.\n\n\n\n**Question:**\nSummarize the study-specific and integrated annotations available for rs929626.",
+  "vector_context": "--- Abstract 1 (PMID: 42392035, relevance: -2.8117) ---\nGenome-wide association studies (GWASs) have identified at least 17 genetic variants associated with gastric cancer risk. However, the underlying genetic regulatory mechanisms remain poorly understood. We systematically performed genome-wide analyses of expression quantitative trait loci (eQTLs), splicing QTLs (sQTLs), and alternative polyadenylation QTLs (apaQTLs) using gastric biopsy tissues from 262 Chinese individuals, and we integrated these data with GWAS results from 10,254 gastric cancer cases and 10,914 controls. We identified 4,636 eGenes, 1,422 sGenes, and 511 apaGenes, with 55.3% of sGenes and 49.5% of apaGenes being distinct from eGenes. Notably, over half of the variants associated with shared genes were unique to a specific QTL type, with these variants characterized by a wide physical separation (median distance = 25.01 kb) and weak linkage disequilibrium (median r(2) = 0.42). Gastric cancer risk variants showed significant enrichment across all three QTL categories. Integrative transcriptome-wide association studies (TWASs) across expression, splicing, and alternative polyadenylation identified 34 genes at false discovery rate (FDR) <0.05; PSCA was implicated across all three regulatory layers. The candidates DIP2B and RMC1 were experimentally validated to promote gastric tumorigenesis both in vitro and in vivo. Functional analyses revealed that the rs11264361-T allele reduced FDPS exon 9 skipping, leading to increased expression of the full-length transcript, while the apaVariant rs7445 regulated UBE2L3 polyadenylation via ATXN2 binding, contributing to gastric cancer risk. Collectively, these results provide a comprehensive QTL resource in gastric tissues and demonstrate distinct regulatory mechanisms of eQTLs, sQTLs, and apaQTLs in gastric cancer development.\n\n--- Abstract 2 (PMID: 40869374, relevance: -4.0591) ---\nSuicide, a major contributor to global mortality rates, especially among young patients, remains insufficiently integrated into public health initiatives despite notable progress in identifying its determinants. The prediction of suicidal behavior remains complex, often relying on subjective assessments rather than objective biomarkers. Single nucleotide polymorphisms (SNPs) such as rs110402 (CRHR1 gene), rs3800373 (FKBP5 gene), and rs2289656 (NTRK2 gene) have been linked to physiological mechanisms involving stress response and activation of the hypothalamic-pituitary-adrenal (HPA) axis, which contributes to anxiety and stress regulation. This study aimed to assess stress-related gene polymorphisms in individuals with suicidal behavior compared to controls. According to our results, the presence of the A allele of rs2289656 was associated with a protective effect, while the GG genotype conferred a higher susceptibility to suicidal behaviors. Significant associations were observed between trauma and abuse history and the rs110402 polymorphism in CRHR1 gene, highlighting a protective role for the GG genotype and increased predisposition to stress-related psychiatric conditions and suicidal behavior for A allele carriers. No valid associations were found for rs3800373 in the FKBP5 gene, although suggestive trends related to depression and self-aggression were noted. Our findings underscore the need to identify reliable biomarkers associated with suicide risk, highlighting the importance of integrating hereditary and psychosocial data to better understand the underlying mechanisms and to support the development of effective early interventions.\n\n--- Abstract 3 (PMID: 36207305, relevance: -5.2044) ---\nBipolar disorder (BD) is a complex mood disorder with a strong genetic component. Recent studies suggest that microRNAs contribute to psychiatric disorder development. In BD, specific candidate microRNAs have been implicated, in particular miR-137, miR-499a, miR-708, miR-1908 and miR-2113. The aim of the present study was to determine the contribution of these five microRNAs to BD development. For this purpose, we performed: (i) gene-based tests of the five microRNA coding genes, using data from a large genome-wide association study of BD; (ii) gene-set analyses of predicted, brain-expressed target genes of the five microRNAs; (iii) resequencing of the five microRNA coding genes in 960 BD patients and 960 controls and (iv) in silico and functional studies for selected variants. Gene-based tests revealed a significant association with BD for MIR499A, MIR708, MIR1908 and MIR2113. Gene-set analyses revealed a significant enrichment of BD associations in the brain-expressed target genes of miR-137 and miR-499a-5p. Resequencing identified 32 distinct rare variants (minor allele frequency < 1%), all of which showed a non-significant numerical overrepresentation in BD patients compared to controls (p = 0.214). Seven rare variants were identified in the predicted stem-loop sequences of MIR499A and MIR2113. These included rs142927919 in MIR2113 (p(nom) = 0.331) and rs140486571 in MIR499A (p(nom) = 0.297). In silico analyses predicted that rs140486571 might alter the miR-499a secondary structure. Functional analyses showed that rs140486571 significantly affects miR-499a processing and expression. Our results suggest that MIR499A dysregulation might contribute to BD development. Further research is warranted to elucidate the contribution of the MIR499A regulated network to BD susceptibility.\n\n"
+}

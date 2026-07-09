@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q156",
+      "randomization_seed": "20260706:Q156:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q156",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q156",
+      "error": null,
+      "id": "batch_req_6a4f85d654e48190be0cb899f3228467",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594493,
+          "created_at": 1783594470,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0044f73e06380ee1006a4f7de603a88196b68306f1891fde07",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q156"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0044f73e06380ee1006a4f7de72e188196920268dedd53b1ff",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the provided dataset/context supports a role for Wnt signaling in anagen maintenance.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that the supplied evidence concerns Wnt signaling in gastric epithelium/cancer and pathway regulation, not hair cycle or anagen biology.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers both the absence of relevant hair-cycle evidence and the irrelevance of the provided Wnt-related abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from drawing unsupported conclusions and clearly states that the context cannot support or refute the claim.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the lack of evidence for the requested claim, but focuses mainly on the graph context rather than the full integrated context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that the graph contains no relevant data and that the provided information does not allow a supported summary.\"},\"completeness\":{\"score\":3,\"rationale\":\"Omits discussion of the vector-context abstracts, which are also not relevant to hair cycle or anagen maintenance.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids unsupported inference and states that the evidence is insufficient.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0044f73e06380ee1006a4f7df3f2a4819680c20200806a50f7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1662,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 683,
+            "output_tokens_details": {
+              "reasoning_tokens": 372
+            },
+            "total_tokens": 2345
+          },
+          "user": null
+        },
+        "request_id": "908305d2-9f07-4a71-b919-d131cdf60998",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the lack of evidence for the requested claim, but focuses mainly on the graph context rather than the full integrated context.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly states that the graph contains no relevant data and that the provided information does not allow a supported summary.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Omits discussion of the vector-context abstracts, which are also not relevant to hair cycle or anagen maintenance.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids unsupported inference and states that the evidence is insufficient.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q156",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q156.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.772818+00:00"
+}

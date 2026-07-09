@@ -1,0 +1,162 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q057.json",
+      "question_id": "Q057",
+      "sha256": "2a526a43b4d04b2745d03d2f0b603c165ba479ac15f94babd6db8299fa27941b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q057.json",
+      "question_id": "Q057",
+      "sha256": "f12d177f5c8d33bcfc10cece147e16ca2ef565f5f92310d218c6b055310f8a94"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.4118,
+  "git_commit": null,
+  "graph_context": "Entity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+  "parsed_answer": "The provided IGKF graph context does not contain any information about variants annotated as high impact or their mapping to EDA2R. Therefore, it is not possible to answer the question based on the given data.",
+  "question_id": "Q057",
+  "question_text": "Which variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 42,
+    "prompt_token_count": 210,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided IGKF graph context does not contain any information about variants annotated as high impact or their mapping to EDA2R. Therefore, it is not possible to answer the question based on the given data."
+      }
+    ],
+    "created": 1783559073,
+    "id": "cmpl-38f9797a-e16b-4e47-95d4-f35d527c9429",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 42,
+      "prompt_tokens": 189,
+      "total_tokens": 231
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)",
+    "graph_context_length": 244,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.011,
+    "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "variants"
+      },
+      {
+        "label": "ENTITY",
+        "text": "annotated"
+      },
+      {
+        "label": "ENTITY",
+        "text": "impact"
+      },
+      {
+        "label": "ENTITY",
+        "text": "mapped"
+      },
+      {
+        "label": "ENTITY",
+        "text": "eda2r"
+      },
+      {
+        "label": "ENTITY",
+        "text": "study"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.011,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q057.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T01:04:33.501276+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: IMPACT (Type: Gene)\n  - Interacts With (PPI): QDPR (experimental: 0, database: 169), HRH4 (experimental: 0, database: 0), DHX29 (experimental: 109, database: 0), IMPA2 (experimental: 0, database: 0), SCN2B (experimental: 0, database: 0)\n\n**Question:**\nWhich variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+  "vector_context": ""
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q079",
+      "randomization_seed": "20260706:Q079:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q079",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q079",
+      "error": null,
+      "id": "batch_req_6a4f85d16a64819098db2179c9b12a31",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783596315,
+          "created_at": 1783596310,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_09e1a6fc270ad46f006a4f85163c3081948a4eb1e247c8a77d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q079"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_09e1a6fc270ad46f006a4f8516c8fc819492b8f3b9473507a9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by listing the HDAC9 pathways from the integrated graph.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"All three listed pathways exactly match the reference graph evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes all pathways provided for HDAC9 without adding unsupported information.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not invent unsupported claims and appropriately confines the answer to the supplied graph evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Addresses pathways generally but not the integrated graph pathways asked for.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Lists unsupported preeclampsia-related pathways and omits the pathways present in the reference graph.\"},\"completeness\":{\"score\":1,\"rationale\":\"Fails to include any of the three required HDAC9 graph pathways.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents unsupported conclusions as if they were evidenced by the provided context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_09e1a6fc270ad46f006a4f8518cf288194bd19327257f9070e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2524,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 408,
+            "output_tokens_details": {
+              "reasoning_tokens": 159
+            },
+            "total_tokens": 2932
+          },
+          "user": null
+        },
+        "request_id": "ab95a5c2-c9e2-4c8e-84d8-3a835e687397",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question by listing the HDAC9 pathways from the integrated graph.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "All three listed pathways exactly match the reference graph evidence.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes all pathways provided for HDAC9 without adding unsupported information.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not invent unsupported claims and appropriately confines the answer to the supplied graph evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q079",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q079.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.743367+00:00"
+}

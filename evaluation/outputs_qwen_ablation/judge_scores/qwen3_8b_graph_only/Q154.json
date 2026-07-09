@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "insufficient_evidence_likely",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q154",
+      "randomization_seed": "20260706:Q154:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q154",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q154",
+      "error": null,
+      "id": "batch_req_6a4f85d628c88190a282820810e99e4b",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594559,
+          "created_at": 1783594527,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_03a9fedb26a18f9b006a4f7e1f2fd08195a826d83fc87a50b4",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q154"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_03a9fedb26a18f9b006a4f7e20564481958f01cc8356d27b80",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether gene\u2013environment interactions for hair thinning are supported and gives the appropriate negative conclusion.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied hair/balding evidence contains genetic associations, pathways, and PPIs but no environmental exposures or GxE evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion and supporting reason; it could be slightly more complete by noting that the vector abstracts also do not provide hair-thinning GxE evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring unsupported gene\u2013environment interactions.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the central question and concludes that hair-thinning GxE interactions cannot be inferred, but includes inaccurate contextual details.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The final conclusion is correct, but it misstates the provided literature context as colorectal cancer and melanoma rather than MPHL, cleft lip/palate, and COPD.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides the necessary negative conclusion, but omits the graph evidence and mischaracterizes the supporting abstracts.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately avoids claiming specific hair-thinning GxE effects, though the rationale includes unsupported claims about the evidence topics.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_03a9fedb26a18f9b006a4f7e3202348195b7714c966e6492fa",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2232,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 743,
+            "output_tokens_details": {
+              "reasoning_tokens": 410
+            },
+            "total_tokens": 2975
+          },
+          "user": null
+        },
+        "request_id": "605efea6-3fbc-48c6-993b-39acff6df583",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether gene\u2013environment interactions for hair thinning are supported and gives the appropriate negative conclusion.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the supplied hair/balding evidence contains genetic associations, pathways, and PPIs but no environmental exposures or GxE evidence.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key conclusion and supporting reason; it could be slightly more complete by noting that the vector abstracts also do not provide hair-thinning GxE evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inferring unsupported gene\u2013environment interactions.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q154",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q154.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.771902+00:00"
+}

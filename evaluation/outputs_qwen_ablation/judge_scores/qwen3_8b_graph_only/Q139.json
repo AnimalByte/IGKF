@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q139",
+      "randomization_seed": "20260706:Q139:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q139",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q139",
+      "error": null,
+      "id": "batch_req_6a4f85d533a48190a9b3f04ed8808d02",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594493,
+          "created_at": 1783594460,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d05684caf861163006a4f7ddc184c8197a65495a69f8d0749",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q139"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d05684caf861163006a4f7ddd1810819782a1189e33cdce6b",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether AR and SRD5A2 have physical or functional association evidence and distinguishes indirect functional from physical interaction.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately identifies indirect functional linkage through androgen/DHT biology and shared DSD context, and correctly notes no direct PPI evidence. Some strength labels and interpretation of MK-0773 as pathway cross-talk are somewhat overstated relative to the supplied evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the main evidence types: pathway/biochemical relationship, clinical genetic overlap, pharmacologic evidence, and absence of direct physical interaction. Includes some extra unsupported grading details.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately qualifies the association as indirect and non-physical, but is slightly too confident in calling the support strong/robust.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question and correctly evaluates the AR PPI list, but does not adequately consider the functional association evidence in the abstracts.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correct that no direct physical interaction is shown, but incorrectly states there is no functional relationship despite evidence linking SRD5A2-generated DHT/androgen metabolism and AR-related androgen signaling/DSD.\"},\"completeness\":{\"score\":2,\"rationale\":\"Only discusses PPI evidence and omits indirect functional evidence from androgen metabolism, DSD genetics, and pharmacology.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Overstates absence of evidence by denying any functional relationship rather than qualifying that only direct PPI evidence is absent while indirect functional evidence exists.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d05684caf861163006a4f7df03fd881978da4b6738d4de704",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2800,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 902,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3702
+          },
+          "user": null
+        },
+        "request_id": "88896fb9-a4d2-4ee1-8f88-ec999febb377",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the question and correctly evaluates the AR PPI list, but does not adequately consider the functional association evidence in the abstracts.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correct that no direct physical interaction is shown, but incorrectly states there is no functional relationship despite evidence linking SRD5A2-generated DHT/androgen metabolism and AR-related androgen signaling/DSD.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Only discusses PPI evidence and omits indirect functional evidence from androgen metabolism, DSD genetics, and pharmacology.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Overstates absence of evidence by denying any functional relationship rather than qualifying that only direct PPI evidence is absent while indirect functional evidence exists.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q139",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q139.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.766140+00:00"
+}

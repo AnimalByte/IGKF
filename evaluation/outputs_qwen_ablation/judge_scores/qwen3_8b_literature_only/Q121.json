@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q121",
+      "randomization_seed": "20260706:Q121:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q121",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q121",
+      "error": null,
+      "id": "batch_req_6a4f85d42a608190a110a25bd4f43667",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594615,
+          "created_at": 1783594579,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0b3818a531b7cf34006a4f7e537c0081968741a40e4acaffa2",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q121"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0b3818a531b7cf34006a4f7e551b848196b6fd8e0b7f234e6c",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Attempts to answer the question about strongest associations, but reports genes rather than specific variants and relies on indirect evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"The provided evidence does not list specific variants or smallest p-values; the answer invents or over-interprets strongest associations and incorrectly cites EDAR instead of EDA2R in one place.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not provide the requested variants with p-values and substitutes unsupported gene-level claims.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Acknowledges that specific variants are not listed, but then proceeds to make unsupported conclusions.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the requested variants and p-values can be determined from the provided evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the supplied context does not provide specific variants or p-values sufficient to identify the strongest associations.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly abstains due to insufficient data, though it could also mention that the vector abstracts similarly do not provide exact variants with p-values.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids inventing variants or rankings when the evidence is insufficient.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0b3818a531b7cf34006a4f7e6963b48196a55ed67c42391fed",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2367,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 837,
+            "output_tokens_details": {
+              "reasoning_tokens": 430
+            },
+            "total_tokens": 3204
+          },
+          "user": null
+        },
+        "request_id": "6dbfd512-a522-471e-8605-793c03c3efd2",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Attempts to answer the question about strongest associations, but reports genes rather than specific variants and relies on indirect evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The provided evidence does not list specific variants or smallest p-values; the answer invents or over-interprets strongest associations and incorrectly cites EDAR instead of EDA2R in one place.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Does not provide the requested variants with p-values and substitutes unsupported gene-level claims.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Acknowledges that specific variants are not listed, but then proceeds to make unsupported conclusions.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q121",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q121.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.759212+00:00"
+}

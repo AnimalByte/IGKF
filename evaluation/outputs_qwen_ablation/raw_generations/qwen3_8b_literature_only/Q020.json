@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "37986797",
+    "41766532",
+    "38832928",
+    "41221472",
+    "40591711",
+    "37517992",
+    "39164264",
+    "35589867",
+    "40926837",
+    "33143250",
+    "32072174",
+    "41161132",
+    "41936293",
+    "34980917",
+    "39198424"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q020.json",
+      "question_id": "Q020",
+      "sha256": "15907669b2df7f9aab98b840f4012d6df40b416eda32896d28b54c2387d5462b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q020.json",
+      "question_id": "Q020",
+      "sha256": "fb19c47c2cd416a55fe25502b4738445666de43902aa2df1329d3af910277f9e"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Summarize the study-specific and integrated annotations available for rs756853.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.9902,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the study-specific and integrated annotations available for rs756853.",
+  "parsed_answer": "The provided literature context does not mention rs756853 in any of the abstracts. Therefore, there is no study-specific or integrated annotation available for rs756853 based on the supplied information.",
+  "question_id": "Q020",
+  "question_text": "Summarize the study-specific and integrated annotations available for rs756853.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 46,
+    "prompt_token_count": 1853,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not mention rs756853 in any of the abstracts. Therefore, there is no study-specific or integrated annotation available for rs756853 based on the supplied information."
+      }
+    ],
+    "created": 1783563968,
+    "id": "cmpl-34a73f51-7ad9-4390-bc52-6e4261a93e70",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 1832,
+      "total_tokens": 1878
+    }
+  },
+  "reranker_scores": [
+    -4.194257736206055,
+    -4.601043701171875,
+    -6.12119722366333
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      38.535770416259766,
+      40.35210037231445,
+      41.12578201293945,
+      41.16963577270508,
+      41.44319534301758,
+      41.66240310668945,
+      41.87759017944336,
+      41.91136932373047,
+      42.03683090209961,
+      42.140838623046875,
+      42.26426315307617,
+      42.2802619934082,
+      42.34153366088867,
+      42.580322265625,
+      42.58738708496094
+    ],
+    "candidate_pmids": [
+      "37986797",
+      "41766532",
+      "38832928",
+      "41221472",
+      "40591711",
+      "37517992",
+      "39164264",
+      "35589867",
+      "40926837",
+      "33143250",
+      "32072174",
+      "41161132",
+      "41936293",
+      "34980917",
+      "39198424"
+    ],
+    "expanded_retrieval_query": "Summarize the study-specific and integrated annotations available for rs756853.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41766532, relevance: -4.1943) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 2 (PMID: 32072174, relevance: -4.6010) ---\nBACKGROUND: To clarify the genetic background of ulcerative colitis (UC) in the Japanese population, we conducted a genome-wide association study (GWAS) using a population-specific single nucleotide polymorphism (SNP) array. METHODS: We performed a GWAS and replication study including 1676 UC patients and 2381 healthy controls. The probability of colectomy was compared between genotypes of rs117506082, the top hit SNP at HLA loci, by the Kaplan-Meier method. We studied serum expression of miR-622, a newly identified candidate gene, from 32 UC patients and 8 healthy controls by quantitative reverse-transcription polymerase chain reaction. RESULTS: In the GWAS, only the HLA loci showed genome-wide significant associations with UC (rs117506082, P = 6.69E-28). Seven nominally significant regions included 2 known loci, IL23R (rs76418789, P = 6.29E-7) and IRF8 (rs16940202, P = 1.03E-6), and 5 novel loci: MIR622 (rs9560575, P = 8.23E-7), 14q31 (rs117618617, P = 1.53E-6), KAT6B (rs12260609, P = 1.81E-6), PAX3-CCDC140-SGPP2 (rs7589797, P = 2.87E-6), and KCNA2 (rs118020656, P = 4.01E-6). Combined analysis revealed that IL23R p.G149R (rs76418789, P = 9.03E-11; odds ratio [OR], 0.51) had genome-wide significant association with UC. Patients with GG genotype of rs117506082 had a significantly lower probability of total colectomy than those with the GA+AA genotype (P = 1.72E-2). Serum expression of miR-622 in patients with inactive UC tended to be higher than in healthy controls and patients with active UC (inactive UC vs healthy controls, P = 3.03E-02; inactive UC vs active UC, P = 6.44E-02). CONCLUSIONS: IL23R p.G149R is a susceptibility locus for UC in Japanese individuals. The GG genotype of rs117506082 at HLA loci may predict a better clinical course.\n\n--- Abstract 3 (PMID: 38832928, relevance: -6.1212) ---\nBreast cancer includes several subtypes with distinct characteristic biological, pathologic, and clinical features. Elucidating subtype-specific genetic etiology could provide insights into the heterogeneity of breast cancer to facilitate the development of improved prevention and treatment approaches. In this study, we conducted pairwise case-case comparisons among five breast cancer subtypes by applying a case-case genome-wide association study (CC-GWAS) approach to summary statistics data of the Breast Cancer Association Consortium. The approach identified 13 statistically significant loci and eight suggestive loci, the majority of which were identified from comparisons between triple-negative breast cancer (TNBC) and luminal A breast cancer. Associations of lead variants in 12 loci remained statistically significant after accounting for previously reported breast cancer susceptibility variants, among which, two were genome-wide significant. Fine mapping implicated putative functional/causal variants and risk genes at several loci, e.g., 3q26.31/TNFSF10, 8q22.3/NACAP1/GRHL2, and 8q23.3/LINC00536/TRPS1, for TNBC as compared with luminal cancer. Functional investigation further identified rs16867605 at 8q22.3 as a SNP that modulates the enhancer activity of GRHL2. Subtype-informative polygenic risk scores (PRS) were derived, and patients with a high subtype-informative PRS had an up to two-fold increased risk of being diagnosed with TNBC instead of luminal cancers. The CC-GWAS PRS remained statistically significant after adjusting for TNBC PRS derived from traditional case-control GWAS in The Cancer Genome Atlas and the African Ancestry Breast Cancer Genetic Consortium. The CC-GWAS PRS was also associated with overall survival and disease-specific survival among patients with breast cancer. Overall, these findings have advanced our understanding of the genetic etiology of breast cancer subtypes, particularly for TNBC. Significance: The discovery of subtype-informative genetic risk variants for breast cancer advances our understanding of the etiologic heterogeneity of breast cancer, which could accelerate the identification of targets and personalized strategies for prevention and treatment.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Summarize the study-specific and integrated annotations available for rs756853.",
+    "rerank_seconds": 0.3351,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3491,
+    "score_max": -4.194257736206055,
+    "score_mean": -4.972166220347087,
+    "scores": [
+      -4.194257736206055,
+      -4.601043701171875,
+      -6.12119722366333
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.",
+      "BACKGROUND: To clarify the genetic background of ulcerative colitis (UC) in the Japanese population, we conducted a genome-wide association study (GWAS) using a population-specific single nucleotide polymorphism (SNP) array. METHODS: We performed a GWAS and replication study including 1676 UC patients and 2381 healthy controls. The probability of colectomy was compared between genotypes of rs117506082, the top hit SNP at HLA loci, by the Kaplan-Meier method. We studied serum expression of miR-622, a newly identified candidate gene, from 32 UC patients and 8 healthy controls by quantitative reverse-transcription polymerase chain reaction. RESULTS: In the GWAS, only the HLA loci showed genome-wide significant associations with UC (rs117506082, P = 6.69E-28). Seven nominally significant regions included 2 known loci, IL23R (rs76418789, P = 6.29E-7) and IRF8 (rs16940202, P = 1.03E-6), and 5 novel loci: MIR622 (rs9560575, P = 8.23E-7), 14q31 (rs117618617, P = 1.53E-6), KAT6B (rs12260609, P = 1.81E-6), PAX3-CCDC140-SGPP2 (rs7589797, P = 2.87E-6), and KCNA2 (rs118020656, P = 4.01E-6). Combined analysis revealed that IL23R p.G149R (rs76418789, P = 9.03E-11; odds ratio [OR], 0.51) had genome-wide significant association with UC. Patients with GG genotype of rs117506082 had a significantly lower probability of total colectomy than those with the GA+AA genotype (P = 1.72E-2). Serum expression of miR-622 in patients with inactive UC tended to be higher than in healthy controls and patients with active UC (inactive UC vs healthy controls, P = 3.03E-02; inactive UC vs active UC, P = 6.44E-02). CONCLUSIONS: IL23R p.G149R is a susceptibility locus for UC in Japanese individuals. The GG genotype of rs117506082 at HLA loci may predict a better clinical course.",
+      "Breast cancer includes several subtypes with distinct characteristic biological, pathologic, and clinical features. Elucidating subtype-specific genetic etiology could provide insights into the heterogeneity of breast cancer to facilitate the development of improved prevention and treatment approaches. In this study, we conducted pairwise case-case comparisons among five breast cancer subtypes by applying a case-case genome-wide association study (CC-GWAS) approach to summary statistics data of the Breast Cancer Association Consortium. The approach identified 13 statistically significant loci and eight suggestive loci, the majority of which were identified from comparisons between triple-negative breast cancer (TNBC) and luminal A breast cancer. Associations of lead variants in 12 loci remained statistically significant after accounting for previously reported breast cancer susceptibility variants, among which, two were genome-wide significant. Fine mapping implicated putative functional/causal variants and risk genes at several loci, e.g., 3q26.31/TNFSF10, 8q22.3/NACAP1/GRHL2, and 8q23.3/LINC00536/TRPS1, for TNBC as compared with luminal cancer. Functional investigation further identified rs16867605 at 8q22.3 as a SNP that modulates the enhancer activity of GRHL2. Subtype-informative polygenic risk scores (PRS) were derived, and patients with a high subtype-informative PRS had an up to two-fold increased risk of being diagnosed with TNBC instead of luminal cancers. The CC-GWAS PRS remained statistically significant after adjusting for TNBC PRS derived from traditional case-control GWAS in The Cancer Genome Atlas and the African Ancestry Breast Cancer Genetic Consortium. The CC-GWAS PRS was also associated with overall survival and disease-specific survival among patients with breast cancer. Overall, these findings have advanced our understanding of the genetic etiology of breast cancer subtypes, particularly for TNBC. Significance: The discovery of subtype-informative genetic risk variants for breast cancer advances our understanding of the etiologic heterogeneity of breast cancer, which could accelerate the identification of targets and personalized strategies for prevention and treatment."
+    ],
+    "selected_pmids": [
+      "41766532",
+      "32072174",
+      "38832928"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0139
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q020.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41766532",
+    "32072174",
+    "38832928"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:26:09.617040+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41766532, relevance: -4.1943) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 2 (PMID: 32072174, relevance: -4.6010) ---\nBACKGROUND: To clarify the genetic background of ulcerative colitis (UC) in the Japanese population, we conducted a genome-wide association study (GWAS) using a population-specific single nucleotide polymorphism (SNP) array. METHODS: We performed a GWAS and replication study including 1676 UC patients and 2381 healthy controls. The probability of colectomy was compared between genotypes of rs117506082, the top hit SNP at HLA loci, by the Kaplan-Meier method. We studied serum expression of miR-622, a newly identified candidate gene, from 32 UC patients and 8 healthy controls by quantitative reverse-transcription polymerase chain reaction. RESULTS: In the GWAS, only the HLA loci showed genome-wide significant associations with UC (rs117506082, P = 6.69E-28). Seven nominally significant regions included 2 known loci, IL23R (rs76418789, P = 6.29E-7) and IRF8 (rs16940202, P = 1.03E-6), and 5 novel loci: MIR622 (rs9560575, P = 8.23E-7), 14q31 (rs117618617, P = 1.53E-6), KAT6B (rs12260609, P = 1.81E-6), PAX3-CCDC140-SGPP2 (rs7589797, P = 2.87E-6), and KCNA2 (rs118020656, P = 4.01E-6). Combined analysis revealed that IL23R p.G149R (rs76418789, P = 9.03E-11; odds ratio [OR], 0.51) had genome-wide significant association with UC. Patients with GG genotype of rs117506082 had a significantly lower probability of total colectomy than those with the GA+AA genotype (P = 1.72E-2). Serum expression of miR-622 in patients with inactive UC tended to be higher than in healthy controls and patients with active UC (inactive UC vs healthy controls, P = 3.03E-02; inactive UC vs active UC, P = 6.44E-02). CONCLUSIONS: IL23R p.G149R is a susceptibility locus for UC in Japanese individuals. The GG genotype of rs117506082 at HLA loci may predict a better clinical course.\n\n--- Abstract 3 (PMID: 38832928, relevance: -6.1212) ---\nBreast cancer includes several subtypes with distinct characteristic biological, pathologic, and clinical features. Elucidating subtype-specific genetic etiology could provide insights into the heterogeneity of breast cancer to facilitate the development of improved prevention and treatment approaches. In this study, we conducted pairwise case-case comparisons among five breast cancer subtypes by applying a case-case genome-wide association study (CC-GWAS) approach to summary statistics data of the Breast Cancer Association Consortium. The approach identified 13 statistically significant loci and eight suggestive loci, the majority of which were identified from comparisons between triple-negative breast cancer (TNBC) and luminal A breast cancer. Associations of lead variants in 12 loci remained statistically significant after accounting for previously reported breast cancer susceptibility variants, among which, two were genome-wide significant. Fine mapping implicated putative functional/causal variants and risk genes at several loci, e.g., 3q26.31/TNFSF10, 8q22.3/NACAP1/GRHL2, and 8q23.3/LINC00536/TRPS1, for TNBC as compared with luminal cancer. Functional investigation further identified rs16867605 at 8q22.3 as a SNP that modulates the enhancer activity of GRHL2. Subtype-informative polygenic risk scores (PRS) were derived, and patients with a high subtype-informative PRS had an up to two-fold increased risk of being diagnosed with TNBC instead of luminal cancers. The CC-GWAS PRS remained statistically significant after adjusting for TNBC PRS derived from traditional case-control GWAS in The Cancer Genome Atlas and the African Ancestry Breast Cancer Genetic Consortium. The CC-GWAS PRS was also associated with overall survival and disease-specific survival among patients with breast cancer. Overall, these findings have advanced our understanding of the genetic etiology of breast cancer subtypes, particularly for TNBC. Significance: The discovery of subtype-informative genetic risk variants for breast cancer advances our understanding of the etiologic heterogeneity of breast cancer, which could accelerate the identification of targets and personalized strategies for prevention and treatment.\n\n\n\n**Question:**\nSummarize the study-specific and integrated annotations available for rs756853.",
+  "vector_context": "--- Abstract 1 (PMID: 41766532, relevance: -4.1943) ---\nBACKGROUND: Moyamoya disease (MMD) has a strong genetic basis, with the rare RNF213 p.Arg4810Lys variant (rs112735431) representing a major risk factor, while the broader genetic architecture and disease-relevant vascular cell types remain incompletely understood. METHODS: We conducted a genome-wide association study in Japanese individuals (n=47 656; 401 MMD cases and 47 255 controls). Population-level features at MMD risk loci were examined by regional allele frequency and haplotype analyses. We performed single-nucleus RNA-seq of superficial temporal arteries from patients with MMD (n=3). Cell type-specific enrichment of genome-wide association study signals was assessed using the Single-Cell Disease Relevance Score. Endothelial signatures were validated by integration with publicly available single-cell data sets from controls (n=5) and immunohistochemistry for candidate markers (n=1). RESULTS: Beyond rs112735431, we identified a genome-wide significant signal in the HDAC9-TWIST1 region (rs12530920; P=3.3x10(-14); odds ratio, 1.77). Conditional analysis on rs112735431 revealed a protective RNF213 missense variant, p.Asp1331Gly (rs8074015; P=3.7x10(-)(9); odds ratio, 0.53), whose minor allele was mutually exclusive with rs112735431-A on haplotypes. Population analysis revealed geographic variation and extended haplotype structure of the rs112735431-A allele in Japan. Single-nucleus RNA-seq identified a mesenchymal-like endothelial cell (MEC) population with selective FN1 expression. Genome-wide association study-prioritized disease genes were strongly enriched in MECs. MECs showed mesenchymal pathway activation with a regulatory program distinct from canonical endothelial states. The proportion of MECs was markedly increased in MMD (72% versus 28% in controls), and fibronectin 1 (FN1) expression in endothelial regions was confirmed by immunohistochemistry. CONCLUSIONS: Our findings identify a protective RNF213 p.Asp1331Gly variant (rs8074015) that is mutually exclusive with the known rs112735431-A allele. Genetic risk converges on an MEC state markedly expanded in MMD.\n\n--- Abstract 2 (PMID: 32072174, relevance: -4.6010) ---\nBACKGROUND: To clarify the genetic background of ulcerative colitis (UC) in the Japanese population, we conducted a genome-wide association study (GWAS) using a population-specific single nucleotide polymorphism (SNP) array. METHODS: We performed a GWAS and replication study including 1676 UC patients and 2381 healthy controls. The probability of colectomy was compared between genotypes of rs117506082, the top hit SNP at HLA loci, by the Kaplan-Meier method. We studied serum expression of miR-622, a newly identified candidate gene, from 32 UC patients and 8 healthy controls by quantitative reverse-transcription polymerase chain reaction. RESULTS: In the GWAS, only the HLA loci showed genome-wide significant associations with UC (rs117506082, P = 6.69E-28). Seven nominally significant regions included 2 known loci, IL23R (rs76418789, P = 6.29E-7) and IRF8 (rs16940202, P = 1.03E-6), and 5 novel loci: MIR622 (rs9560575, P = 8.23E-7), 14q31 (rs117618617, P = 1.53E-6), KAT6B (rs12260609, P = 1.81E-6), PAX3-CCDC140-SGPP2 (rs7589797, P = 2.87E-6), and KCNA2 (rs118020656, P = 4.01E-6). Combined analysis revealed that IL23R p.G149R (rs76418789, P = 9.03E-11; odds ratio [OR], 0.51) had genome-wide significant association with UC. Patients with GG genotype of rs117506082 had a significantly lower probability of total colectomy than those with the GA+AA genotype (P = 1.72E-2). Serum expression of miR-622 in patients with inactive UC tended to be higher than in healthy controls and patients with active UC (inactive UC vs healthy controls, P = 3.03E-02; inactive UC vs active UC, P = 6.44E-02). CONCLUSIONS: IL23R p.G149R is a susceptibility locus for UC in Japanese individuals. The GG genotype of rs117506082 at HLA loci may predict a better clinical course.\n\n--- Abstract 3 (PMID: 38832928, relevance: -6.1212) ---\nBreast cancer includes several subtypes with distinct characteristic biological, pathologic, and clinical features. Elucidating subtype-specific genetic etiology could provide insights into the heterogeneity of breast cancer to facilitate the development of improved prevention and treatment approaches. In this study, we conducted pairwise case-case comparisons among five breast cancer subtypes by applying a case-case genome-wide association study (CC-GWAS) approach to summary statistics data of the Breast Cancer Association Consortium. The approach identified 13 statistically significant loci and eight suggestive loci, the majority of which were identified from comparisons between triple-negative breast cancer (TNBC) and luminal A breast cancer. Associations of lead variants in 12 loci remained statistically significant after accounting for previously reported breast cancer susceptibility variants, among which, two were genome-wide significant. Fine mapping implicated putative functional/causal variants and risk genes at several loci, e.g., 3q26.31/TNFSF10, 8q22.3/NACAP1/GRHL2, and 8q23.3/LINC00536/TRPS1, for TNBC as compared with luminal cancer. Functional investigation further identified rs16867605 at 8q22.3 as a SNP that modulates the enhancer activity of GRHL2. Subtype-informative polygenic risk scores (PRS) were derived, and patients with a high subtype-informative PRS had an up to two-fold increased risk of being diagnosed with TNBC instead of luminal cancers. The CC-GWAS PRS remained statistically significant after adjusting for TNBC PRS derived from traditional case-control GWAS in The Cancer Genome Atlas and the African Ancestry Breast Cancer Genetic Consortium. The CC-GWAS PRS was also associated with overall survival and disease-specific survival among patients with breast cancer. Overall, these findings have advanced our understanding of the genetic etiology of breast cancer subtypes, particularly for TNBC. Significance: The discovery of subtype-informative genetic risk variants for breast cancer advances our understanding of the etiologic heterogeneity of breast cancer, which could accelerate the identification of targets and personalized strategies for prevention and treatment.\n\n"
+}

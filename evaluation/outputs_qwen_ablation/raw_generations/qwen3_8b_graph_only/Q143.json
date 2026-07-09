@@ -1,0 +1,182 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q143.json",
+      "question_id": "Q143",
+      "sha256": "b85504a7a1ea5d738cef924b608de204fb2b5286d1947d41eb6d60c166fd11f6"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q143.json",
+      "question_id": "Q143",
+      "sha256": "e40e6162be2a084d2e7b8a13f37ddc36cb93dfaa4c5ee544c30ae211e71717e1"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.3523,
+  "git_commit": null,
+  "graph_context": "Entity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence support a link between Minoxidil and regulation of HDAC9 expression? Distinguish direct evidence from indirect or absent evidence.",
+  "parsed_answer": "The integrated evidence does not support a direct link between Minoxidil and regulation of HDAC9 expression. There is no mention of Minoxidil in the provided IGKF graph context related to HDAC9. The graph includes information about drugs that target HDAC9, such as VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, and ROMIDEPSIN, but Minoxidil is not listed among them. Therefore, the evidence is **absent** for a direct link between Minoxidil and HDAC9 regulation.",
+  "question_id": "Q143",
+  "question_text": "Does the integrated evidence support a link between Minoxidil and regulation of HDAC9 expression? Distinguish direct evidence from indirect or absent evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 125,
+    "prompt_token_count": 752,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not support a direct link between Minoxidil and regulation of HDAC9 expression. There is no mention of Minoxidil in the provided IGKF graph context related to HDAC9. The graph includes information about drugs that target HDAC9, such as VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, and ROMIDEPSIN, but Minoxidil is not listed among them. Therefore, the evidence is **absent** for a direct link between Minoxidil and HDAC9 regulation."
+      }
+    ],
+    "created": 1783563193,
+    "id": "cmpl-75042440-2b0d-4e05-ac36-698597493e83",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 125,
+      "prompt_tokens": 731,
+      "total_tokens": 856
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma",
+    "found_specific_entity": true,
+    "graph_context": "Entity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma",
+    "graph_context_length": 2177,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0131,
+    "original_retrieval_query": "Does the integrated evidence support a link between Minoxidil and regulation of HDAC9 expression? Distinguish direct evidence from indirect or absent evidence.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "integrated evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "minoxidil"
+      },
+      {
+        "label": "ENTITY",
+        "text": "regulation"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hdac9"
+      },
+      {
+        "label": "ENTITY",
+        "text": "expression"
+      },
+      {
+        "label": "ENTITY",
+        "text": "distinguish"
+      },
+      {
+        "label": "ENTITY",
+        "text": "direct"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "indirect"
+      },
+      {
+        "label": "ENTITY",
+        "text": "absent"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0131,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q143.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:13:14.760306+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: HDAC9 (Type: Gene)\n  - Gene Pathways: Differentiation of naive CD4+ T cells to T helper 2 cells (Th2 cells), Constitutive Signaling by NOTCH1 PEST Domain Mutants, Notch-HLH transcription pathway\n  - Associated Phenotypes: Abnormal cheek morphology, Abnormal nervous system physiology, Abnormality of the nervous system\n  - Targeted by Drugs: VALPROIC ACID, GIVINOSTAT, ABEXINOSTAT, CUDC-101, ROMIDEPSIN\n  - GO Functions/Processes: histone methyltransferase complex, chromatin remodeling, regulation of striated muscle cell differentiation, negative regulation of cytokine production, regulation of skeletal muscle fiber development\n  - Interacts With (PPI): CDKN1A (experimental: 0, database: 0), AASDHPPT (experimental: 0, database: 0), TNFSF11 (experimental: 0, database: 0), KIT (experimental: 52, database: 0), MSH4 (experimental: 126, database: 0)\n  - Open Targets Disease Associations: plasma cell myeloma (score: 0.562), neoplasm (score: 0.557), Duchenne muscular dystrophy (score: 0.526), type 2 diabetes mellitus (score: 0.523), peripheral T-cell lymphoma, not otherwise specified (score: 0.518)\n  - Open Targets Drug Evidence: CUDC-101 | phase PHASE_1 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for breast cancer; gastric cancer; head and neck cancer; liver cancer; non-small cell lung carcinoma; ROMIDEPSIN | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for B-cell chronic lymphocytic leukemia; B-cell non-Hodgkin lymphoma; HIV-1 infection; Hodgkins lymphoma; Sezary syndrome; PANOBINOSTAT LACTATE | phase APPROVAL | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for plasma cell myeloma; TACEDINALINE | phase PHASE_3 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for exocrine pancreatic carcinoma; non-small cell lung carcinoma; FIMEPINOSTAT | phase PHASE_2 | Histone deacetylase inhibitor | action=INHIBITOR | target=Histone deacetylase | for ACTH-dependent Cushing syndrome; acute myeloid leukemia; central nervous system cancer; central nervous system neoplasm; diffuse intrinsic pontine glioma\n\n**Question:**\nDoes the integrated evidence support a link between Minoxidil and regulation of HDAC9 expression? Distinguish direct evidence from indirect or absent evidence.",
+  "vector_context": ""
+}

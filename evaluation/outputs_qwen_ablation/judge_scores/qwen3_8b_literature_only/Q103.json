@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q103",
+      "randomization_seed": "20260706:Q103:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q103",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q103",
+      "error": null,
+      "id": "batch_req_6a4f85d2f4148190bde3a5e6ecd186fe",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594476,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_063d22142618a6d5006a4f7dd8faf881979bde8613c03abd5b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q103"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_063d22142618a6d5006a4f7dd9f54c8197a2b3141fc8eb47fc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that no drug links are provided in the supplied integrated data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the evidence packet, which lists Wnt-associated genes/targets and abstracts but no drugs linked to them.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion, though it could explicitly mention that neither graph nor vector context provides drug links.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing drug associations.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"It attempts to answer the drug-link question directly, but the listed drugs are not supported by the supplied data.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"CI-994 and W2A-28 are not present in the reference evidence packet, and no drug links to LRP6 or other Wnt genes are provided.\"},\"completeness\":{\"score\":2,\"rationale\":\"Provides specific drug claims but misses the evidence-supported conclusion that no drugs are linked in the provided integrated data.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Invents unsupported conclusions without qualifying the lack of evidence in the supplied context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_063d22142618a6d5006a4f7de46a9481979588a892da8887a8",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1936,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 615,
+            "output_tokens_details": {
+              "reasoning_tokens": 319
+            },
+            "total_tokens": 2551
+          },
+          "user": null
+        },
+        "request_id": "35e6848d-538b-47af-8a88-7f056c25d983",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It attempts to answer the drug-link question directly, but the listed drugs are not supported by the supplied data.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "CI-994 and W2A-28 are not present in the reference evidence packet, and no drug links to LRP6 or other Wnt genes are provided.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Provides specific drug claims but misses the evidence-supported conclusion that no drugs are linked in the provided integrated data.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Invents unsupported conclusions without qualifying the lack of evidence in the supplied context.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q103",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q103.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.752596+00:00"
+}

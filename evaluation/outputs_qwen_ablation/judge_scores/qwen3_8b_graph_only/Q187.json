@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q187",
+      "randomization_seed": "20260706:Q187:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q187",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q187",
+      "error": null,
+      "id": "batch_req_6a4f85d86ce08190a83409cf9e7f326d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579009,
+          "created_at": 1783578978,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_097ad15c553090b9006a4f4162a1348196b932186fd8e4da4e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q187"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_097ad15c553090b9006a4f4174bb788196a9196dd67bc4302a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset lacks evidence for a SRD5A2 gene\u2013environment interaction in hair loss and lists needed data.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The core conclusion and required data types are scientifically appropriate, though the characterization of the dataset as focused only on DSDs/having no hair-loss mention may be unsupported.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers genotype, exposure, phenotype, and interaction analysis requirements, but could be more explicit about cohort design, covariates, and interaction-term modeling.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately states that no conclusion can be drawn without environmental exposure and interaction data.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether evidence exists and specifies data needed to test a gene\u2013environment interaction.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly distinguishes drug/phenotype evidence from gene\u2013environment interaction evidence; however, it slightly overstates a genetic link/phenotype association without demonstrating interaction evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes environmental exposure data, population study data, genotype-environment interaction analysis, and functional follow-up evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Clearly qualifies that existing evidence is insufficient and does not claim a gene\u2013environment interaction.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_097ad15c553090b9006a4f417e5b748196967aa2df9fce62aa",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1147,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 846,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1993
+          },
+          "user": null
+        },
+        "request_id": "3d5c2a80-a6a9-4bd7-906f-715ea43ac24b",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether evidence exists and specifies data needed to test a gene\u2013environment interaction.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly distinguishes drug/phenotype evidence from gene\u2013environment interaction evidence; however, it slightly overstates a genetic link/phenotype association without demonstrating interaction evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Includes environmental exposure data, population study data, genotype-environment interaction analysis, and functional follow-up evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Clearly qualifies that existing evidence is insufficient and does not claim a gene\u2013environment interaction.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q187",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.784887+00:00"
+}

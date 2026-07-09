@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "34275739",
+    "35186941",
+    "41000054",
+    "31279575",
+    "42190016",
+    "38096226",
+    "33741282",
+    "32557953",
+    "39739588",
+    "32616903",
+    "42146354",
+    "37891420",
+    "42295123",
+    "42284885",
+    "41951763"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q109.json",
+      "question_id": "Q109",
+      "sha256": "c0118075ab13bfdbf4deb31a1ba8d9ac19c3f2f376aec61bca69e5cf7f90268b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q109.json",
+      "question_id": "Q109",
+      "sha256": "bf23f64515ba0f9badceb0f047467de54eb7c9fb12d87c65a7c0d33ff4a24782"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which genes from this study are connected to the Hedgehog signaling pathway in the integrated graph?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.7382,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which genes from this study are connected to the Hedgehog signaling pathway in the integrated graph?",
+  "parsed_answer": "Based on the provided literature context, the following genes are connected to the Hedgehog signaling pathway in the integrated graph:\n\n1. **Smoothened (SMO)** - Mentioned in the first abstract as a target of 20(S)-hydroxycholesterol, which acts as a small-molecule agonist of Smoothened in the Hedgehog pathway.\n\n2. **Gli transcription factors (Gli1, Gli2, Gli3, Gli4)** - These are key components of the Hedgehog signaling pathway and were discussed in the first and third abstracts. The first abstract mentions Gli transcription factors activity being activated by 20(S)-hydroxycholesterol, while the third abstract focuses on Gli2's role in renal fibrosis.\n\n3. **Suppressor of fused protein (SUFU)** - This gene is part of the Hedgehog signaling pathway and was discussed in the second abstract, where its mRNA expression was evaluated in patients with hypospadias.\n\n4. **Sonic hedgehog homologue (SHH)** - This gene is central to the Hedgehog signaling pathway and was investigated in the second abstract for its role in hypospadias.\n\n5. **Protein patched homologue (PTCH1 and PTCH2)** - These are core components of the Hedgehog signaling pathway and were evaluated in the second abstract for their expression in hypospadias patients.\n\n6. **Frizzled-class receptor (SMO)** - This gene is part of the Hedgehog signaling pathway and was mentioned in the second abstract.\n\n7. **Serine/threonine-protein kinase 36 (STK36)** - This gene is involved in the Hedgehog signaling pathway and was evaluated in the second abstract.\n\n8. **FoxM1** - While not a direct component of the Hedgehog pathway, it was identified as a downstream transcriptional target of Gli2 in the third abstract and is thus indirectly connected to the pathway.\n\nThese genes are interconnected through the Hedgehog signaling pathway and were studied in the context of various diseases, including ischemic stroke, hypospadias, and chronic kidney disease.",
+  "question_id": "Q109",
+  "question_text": "Which genes from this study are connected to the Hedgehog signaling pathway in the integrated graph?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 446,
+    "prompt_token_count": 1789,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided literature context, the following genes are connected to the Hedgehog signaling pathway in the integrated graph:\n\n1. **Smoothened (SMO)** - Mentioned in the first abstract as a target of 20(S)-hydroxycholesterol, which acts as a small-molecule agonist of Smoothened in the Hedgehog pathway.\n\n2. **Gli transcription factors (Gli1, Gli2, Gli3, Gli4)** - These are key components of the Hedgehog signaling pathway and were discussed in the first and third abstracts. The first abstract mentions Gli transcription factors activity being activated by 20(S)-hydroxycholesterol, while the third abstract focuses on Gli2's role in renal fibrosis.\n\n3. **Suppressor of fused protein (SUFU)** - This gene is part of the Hedgehog signaling pathway and was discussed in the second abstract, where its mRNA expression was evaluated in patients with hypospadias.\n\n4. **Sonic hedgehog homologue (SHH)** - This gene is central to the Hedgehog signaling pathway and was investigated in the second abstract for its role in hypospadias.\n\n5. **Protein patched homologue (PTCH1 and PTCH2)** - These are core components of the Hedgehog signaling pathway and were evaluated in the second abstract for their expression in hypospadias patients.\n\n6. **Frizzled-class receptor (SMO)** - This gene is part of the Hedgehog signaling pathway and was mentioned in the second abstract.\n\n7. **Serine/threonine-protein kinase 36 (STK36)** - This gene is involved in the Hedgehog signaling pathway and was evaluated in the second abstract.\n\n8. **FoxM1** - While not a direct component of the Hedgehog pathway, it was identified as a downstream transcriptional target of Gli2 in the third abstract and is thus indirectly connected to the pathway.\n\nThese genes are interconnected through the Hedgehog signaling pathway and were studied in the context of various diseases, including ischemic stroke, hypospadias, and chronic kidney disease."
+      }
+    ],
+    "created": 1783558181,
+    "id": "cmpl-afeae424-228c-448e-8017-becd9ec2ba78",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 446,
+      "prompt_tokens": 1768,
+      "total_tokens": 2214
+    }
+  },
+  "reranker_scores": [
+    2.0095412731170654,
+    1.3789737224578857,
+    -0.354744553565979
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      39.58957290649414,
+      41.905860900878906,
+      42.13616180419922,
+      42.596736907958984,
+      43.93976593017578,
+      45.187469482421875,
+      46.83171844482422,
+      47.31595993041992,
+      47.66566467285156,
+      47.7295036315918,
+      48.08803176879883,
+      48.1966667175293,
+      48.34938049316406,
+      48.627132415771484,
+      48.62833023071289
+    ],
+    "candidate_pmids": [
+      "34275739",
+      "35186941",
+      "41000054",
+      "31279575",
+      "42190016",
+      "38096226",
+      "33741282",
+      "32557953",
+      "39739588",
+      "32616903",
+      "42146354",
+      "37891420",
+      "42295123",
+      "42284885",
+      "41951763"
+    ],
+    "expanded_retrieval_query": "Which genes from this study are connected to the Hedgehog signaling pathway in the integrated graph?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42284885, relevance: 2.0095) ---\nBACKGROUND: The Hedgehog signaling pathway has played a key role promoting angiogenesis and neurogenesis in ischemic stroke. To harness the therapeutic potential of Hedgehog signaling in stroke, we investigated the function and potential clinic applications of 20(S)-hydroxycholesterol, a natural small-molecule agonist of Smoothened in the Hedgehog pathway, with respect to its capacity to promote post-stroke neuroprotection, angiogenesis, and cerebrovascular plasticity. METHODS: In vitro, hypoxia conditions were simulated in brain microvascular endothelial bEnd.3 cells using an oxygen-glucose deprivation/reoxygenation (OGD/R) model. Cell migration capability was evaluated by scratch assay and transwell assay. Endothelial cell angiogenic capacity was evaluated through tube formation assays. Male C57BL/6\u202fJ mice were subjected to middle cerebral artery occlusion (MCAO) to establish an ischemic stroke animal model. Neurological deficits were evaluated using the mNSS method. Cerebral infarct volume was measured using TTC staining. The expression levels of Hedgehog signaling pathway and angiogenesis-related proteins were evaluated by immunofluorescence. RESULTS: Our findings demonstrated that 20(S)-hydroxycholesterol enhanced cell viability, cell migration and tube formation capacity of bEnd.3 cells under OGD/R treatment. In addition, 20(S)-hydroxycholesterol up-regulated the expression of Smoothened and activated Gli transcription factors activity as well as angiogenesis-related genes including Angpt1, Efna5, and Cd31. Moreover. we discovered that 20(S)-hydroxycholesterol significantly reduced cerebral infarct volume and neurological deficits in MCAO model mice. CONCLUSIONS: 20(S)-hydroxycholesterol activates the Hedgehog signaling pathway in ischemic models. It exhibits neuroprotection functions after stroke associated with neuronal angiogenesis and vascular plasticity. This study highlights the therapeutic potential of 20(S)-hydroxycholesterol as a novel agent for ischemic stroke recovery.\n\n--- Abstract 2 (PMID: 34275739, relevance: 1.3790) ---\nINTRODUCTION: Hypospadias is one of the most common congenital anomalies of the male genitalia. Sonic hedgehog homologue (SHH) signalling pathway is believed to be involved in the development of the male genital system. OBJECTIVE: In this clinical prospective study, the role of the SHH pathway in hypospadias aetiology was investigated. STUDY DESIGN: In this study, 200 healthy children (boys without hypospadias, control group), 118 patients (boys with distal hypospadias) and 82 patients (boys with proximal hypospadias) of age 0-16 years were included. The expression of the genes suppressor of fused protein (SUFU), SHH, protein patched homologue (PTCH; PTCH1 and PTCH2), glioma-associated oncogene homologue (GLI; GLI1, GLI2, GLI3 and GLI4), smoothened, frizzled-class receptor (SMO) and serine/threonine-protein kinase 36 (STK36) that are involved in SHH pathway were investigated. Furthermore, polymorphism analyses of GLI2, SHH and PTCH1 genes were performed. The history of hypospadias in the first and second-degree relatives of the patients in boys with distal hypospadias and boys with proximal hypospadias was inquired. RESULTS: Ten patients in the boys with distal hypospadias and twenty patients in the boys with proximal hypospadias had a history of hypospadias in first or second-degree relatives (p < 0.05). There was a significant decrease in mRNA expressions of SHH and PTCH1 genes in boys with proximal hypospadias compared to boys without hypospadias (p < 0.05). Besides, a significant decrease in mRNA fold-change of GLI2 gene was detected in boys with both distal hypospadias and proximal hypospadias compared to boys without hypospadias (p < 0.05). In contrast, there was no significant difference in the mRNA fold-changes of PTCH2, SUFU, GLI1, GLI3, GLI4, SMO and STK36 genes among the groups. Moreover, there were no significant differences in the frequencies of variant genotypes and alleles rs735557, rs12711538 and rs4848632 (GLI2 gene), rs104894049 (SHH gene) and rs41313327 (PTCH1 gene) (p > 0.05). DISCUSSION: SHH expression is required for the growth and differentiation of the genital bulge. Developmental defects in the external genital organs were demonstrated in mice with SHH deletion. It has been demonstrated that SHH mainly plays a role in the formation of sinusoid morphology of the penis. In the present study, although SHH and PTCH gene expressions were found to be decreased only in the penile tissues of proximal hypospadias, GLI2 gene expression was decreased in penile tissues of boys with both distal hypospadias and boys with proximal hypospadias. CONCLUSION: Genes involved in the SHH pathway might play a role in the aetiology of hypospadias. Furthermore, there is a correlation between molecular defects in this pathway and severity of hypospadias.\n\n--- Abstract 3 (PMID: 42295123, relevance: -0.3547) ---\nAbnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which genes from this study are connected to the Hedgehog signaling pathway in the integrated graph?",
+    "rerank_seconds": 0.3348,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3514,
+    "score_max": 2.0095412731170654,
+    "score_mean": 1.0112568140029907,
+    "scores": [
+      2.0095412731170654,
+      1.3789737224578857,
+      -0.354744553565979
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: The Hedgehog signaling pathway has played a key role promoting angiogenesis and neurogenesis in ischemic stroke. To harness the therapeutic potential of Hedgehog signaling in stroke, we investigated the function and potential clinic applications of 20(S)-hydroxycholesterol, a natural small-molecule agonist of Smoothened in the Hedgehog pathway, with respect to its capacity to promote post-stroke neuroprotection, angiogenesis, and cerebrovascular plasticity. METHODS: In vitro, hypoxia conditions were simulated in brain microvascular endothelial bEnd.3 cells using an oxygen-glucose deprivation/reoxygenation (OGD/R) model. Cell migration capability was evaluated by scratch assay and transwell assay. Endothelial cell angiogenic capacity was evaluated through tube formation assays. Male C57BL/6\u202fJ mice were subjected to middle cerebral artery occlusion (MCAO) to establish an ischemic stroke animal model. Neurological deficits were evaluated using the mNSS method. Cerebral infarct volume was measured using TTC staining. The expression levels of Hedgehog signaling pathway and angiogenesis-related proteins were evaluated by immunofluorescence. RESULTS: Our findings demonstrated that 20(S)-hydroxycholesterol enhanced cell viability, cell migration and tube formation capacity of bEnd.3 cells under OGD/R treatment. In addition, 20(S)-hydroxycholesterol up-regulated the expression of Smoothened and activated Gli transcription factors activity as well as angiogenesis-related genes including Angpt1, Efna5, and Cd31. Moreover. we discovered that 20(S)-hydroxycholesterol significantly reduced cerebral infarct volume and neurological deficits in MCAO model mice. CONCLUSIONS: 20(S)-hydroxycholesterol activates the Hedgehog signaling pathway in ischemic models. It exhibits neuroprotection functions after stroke associated with neuronal angiogenesis and vascular plasticity. This study highlights the therapeutic potential of 20(S)-hydroxycholesterol as a novel agent for ischemic stroke recovery.",
+      "INTRODUCTION: Hypospadias is one of the most common congenital anomalies of the male genitalia. Sonic hedgehog homologue (SHH) signalling pathway is believed to be involved in the development of the male genital system. OBJECTIVE: In this clinical prospective study, the role of the SHH pathway in hypospadias aetiology was investigated. STUDY DESIGN: In this study, 200 healthy children (boys without hypospadias, control group), 118 patients (boys with distal hypospadias) and 82 patients (boys with proximal hypospadias) of age 0-16 years were included. The expression of the genes suppressor of fused protein (SUFU), SHH, protein patched homologue (PTCH; PTCH1 and PTCH2), glioma-associated oncogene homologue (GLI; GLI1, GLI2, GLI3 and GLI4), smoothened, frizzled-class receptor (SMO) and serine/threonine-protein kinase 36 (STK36) that are involved in SHH pathway were investigated. Furthermore, polymorphism analyses of GLI2, SHH and PTCH1 genes were performed. The history of hypospadias in the first and second-degree relatives of the patients in boys with distal hypospadias and boys with proximal hypospadias was inquired. RESULTS: Ten patients in the boys with distal hypospadias and twenty patients in the boys with proximal hypospadias had a history of hypospadias in first or second-degree relatives (p < 0.05). There was a significant decrease in mRNA expressions of SHH and PTCH1 genes in boys with proximal hypospadias compared to boys without hypospadias (p < 0.05). Besides, a significant decrease in mRNA fold-change of GLI2 gene was detected in boys with both distal hypospadias and proximal hypospadias compared to boys without hypospadias (p < 0.05). In contrast, there was no significant difference in the mRNA fold-changes of PTCH2, SUFU, GLI1, GLI3, GLI4, SMO and STK36 genes among the groups. Moreover, there were no significant differences in the frequencies of variant genotypes and alleles rs735557, rs12711538 and rs4848632 (GLI2 gene), rs104894049 (SHH gene) and rs41313327 (PTCH1 gene) (p > 0.05). DISCUSSION: SHH expression is required for the growth and differentiation of the genital bulge. Developmental defects in the external genital organs were demonstrated in mice with SHH deletion. It has been demonstrated that SHH mainly plays a role in the formation of sinusoid morphology of the penis. In the present study, although SHH and PTCH gene expressions were found to be decreased only in the penile tissues of proximal hypospadias, GLI2 gene expression was decreased in penile tissues of boys with both distal hypospadias and boys with proximal hypospadias. CONCLUSION: Genes involved in the SHH pathway might play a role in the aetiology of hypospadias. Furthermore, there is a correlation between molecular defects in this pathway and severity of hypospadias.",
+      "Abnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD."
+    ],
+    "selected_pmids": [
+      "42284885",
+      "34275739",
+      "42295123"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0164
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q109.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42284885",
+    "34275739",
+    "42295123"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T00:49:45.741204+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42284885, relevance: 2.0095) ---\nBACKGROUND: The Hedgehog signaling pathway has played a key role promoting angiogenesis and neurogenesis in ischemic stroke. To harness the therapeutic potential of Hedgehog signaling in stroke, we investigated the function and potential clinic applications of 20(S)-hydroxycholesterol, a natural small-molecule agonist of Smoothened in the Hedgehog pathway, with respect to its capacity to promote post-stroke neuroprotection, angiogenesis, and cerebrovascular plasticity. METHODS: In vitro, hypoxia conditions were simulated in brain microvascular endothelial bEnd.3 cells using an oxygen-glucose deprivation/reoxygenation (OGD/R) model. Cell migration capability was evaluated by scratch assay and transwell assay. Endothelial cell angiogenic capacity was evaluated through tube formation assays. Male C57BL/6\u202fJ mice were subjected to middle cerebral artery occlusion (MCAO) to establish an ischemic stroke animal model. Neurological deficits were evaluated using the mNSS method. Cerebral infarct volume was measured using TTC staining. The expression levels of Hedgehog signaling pathway and angiogenesis-related proteins were evaluated by immunofluorescence. RESULTS: Our findings demonstrated that 20(S)-hydroxycholesterol enhanced cell viability, cell migration and tube formation capacity of bEnd.3 cells under OGD/R treatment. In addition, 20(S)-hydroxycholesterol up-regulated the expression of Smoothened and activated Gli transcription factors activity as well as angiogenesis-related genes including Angpt1, Efna5, and Cd31. Moreover. we discovered that 20(S)-hydroxycholesterol significantly reduced cerebral infarct volume and neurological deficits in MCAO model mice. CONCLUSIONS: 20(S)-hydroxycholesterol activates the Hedgehog signaling pathway in ischemic models. It exhibits neuroprotection functions after stroke associated with neuronal angiogenesis and vascular plasticity. This study highlights the therapeutic potential of 20(S)-hydroxycholesterol as a novel agent for ischemic stroke recovery.\n\n--- Abstract 2 (PMID: 34275739, relevance: 1.3790) ---\nINTRODUCTION: Hypospadias is one of the most common congenital anomalies of the male genitalia. Sonic hedgehog homologue (SHH) signalling pathway is believed to be involved in the development of the male genital system. OBJECTIVE: In this clinical prospective study, the role of the SHH pathway in hypospadias aetiology was investigated. STUDY DESIGN: In this study, 200 healthy children (boys without hypospadias, control group), 118 patients (boys with distal hypospadias) and 82 patients (boys with proximal hypospadias) of age 0-16 years were included. The expression of the genes suppressor of fused protein (SUFU), SHH, protein patched homologue (PTCH; PTCH1 and PTCH2), glioma-associated oncogene homologue (GLI; GLI1, GLI2, GLI3 and GLI4), smoothened, frizzled-class receptor (SMO) and serine/threonine-protein kinase 36 (STK36) that are involved in SHH pathway were investigated. Furthermore, polymorphism analyses of GLI2, SHH and PTCH1 genes were performed. The history of hypospadias in the first and second-degree relatives of the patients in boys with distal hypospadias and boys with proximal hypospadias was inquired. RESULTS: Ten patients in the boys with distal hypospadias and twenty patients in the boys with proximal hypospadias had a history of hypospadias in first or second-degree relatives (p < 0.05). There was a significant decrease in mRNA expressions of SHH and PTCH1 genes in boys with proximal hypospadias compared to boys without hypospadias (p < 0.05). Besides, a significant decrease in mRNA fold-change of GLI2 gene was detected in boys with both distal hypospadias and proximal hypospadias compared to boys without hypospadias (p < 0.05). In contrast, there was no significant difference in the mRNA fold-changes of PTCH2, SUFU, GLI1, GLI3, GLI4, SMO and STK36 genes among the groups. Moreover, there were no significant differences in the frequencies of variant genotypes and alleles rs735557, rs12711538 and rs4848632 (GLI2 gene), rs104894049 (SHH gene) and rs41313327 (PTCH1 gene) (p > 0.05). DISCUSSION: SHH expression is required for the growth and differentiation of the genital bulge. Developmental defects in the external genital organs were demonstrated in mice with SHH deletion. It has been demonstrated that SHH mainly plays a role in the formation of sinusoid morphology of the penis. In the present study, although SHH and PTCH gene expressions were found to be decreased only in the penile tissues of proximal hypospadias, GLI2 gene expression was decreased in penile tissues of boys with both distal hypospadias and boys with proximal hypospadias. CONCLUSION: Genes involved in the SHH pathway might play a role in the aetiology of hypospadias. Furthermore, there is a correlation between molecular defects in this pathway and severity of hypospadias.\n\n--- Abstract 3 (PMID: 42295123, relevance: -0.3547) ---\nAbnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.\n\n\n\n**Question:**\nWhich genes from this study are connected to the Hedgehog signaling pathway in the integrated graph?",
+  "vector_context": "--- Abstract 1 (PMID: 42284885, relevance: 2.0095) ---\nBACKGROUND: The Hedgehog signaling pathway has played a key role promoting angiogenesis and neurogenesis in ischemic stroke. To harness the therapeutic potential of Hedgehog signaling in stroke, we investigated the function and potential clinic applications of 20(S)-hydroxycholesterol, a natural small-molecule agonist of Smoothened in the Hedgehog pathway, with respect to its capacity to promote post-stroke neuroprotection, angiogenesis, and cerebrovascular plasticity. METHODS: In vitro, hypoxia conditions were simulated in brain microvascular endothelial bEnd.3 cells using an oxygen-glucose deprivation/reoxygenation (OGD/R) model. Cell migration capability was evaluated by scratch assay and transwell assay. Endothelial cell angiogenic capacity was evaluated through tube formation assays. Male C57BL/6\u202fJ mice were subjected to middle cerebral artery occlusion (MCAO) to establish an ischemic stroke animal model. Neurological deficits were evaluated using the mNSS method. Cerebral infarct volume was measured using TTC staining. The expression levels of Hedgehog signaling pathway and angiogenesis-related proteins were evaluated by immunofluorescence. RESULTS: Our findings demonstrated that 20(S)-hydroxycholesterol enhanced cell viability, cell migration and tube formation capacity of bEnd.3 cells under OGD/R treatment. In addition, 20(S)-hydroxycholesterol up-regulated the expression of Smoothened and activated Gli transcription factors activity as well as angiogenesis-related genes including Angpt1, Efna5, and Cd31. Moreover. we discovered that 20(S)-hydroxycholesterol significantly reduced cerebral infarct volume and neurological deficits in MCAO model mice. CONCLUSIONS: 20(S)-hydroxycholesterol activates the Hedgehog signaling pathway in ischemic models. It exhibits neuroprotection functions after stroke associated with neuronal angiogenesis and vascular plasticity. This study highlights the therapeutic potential of 20(S)-hydroxycholesterol as a novel agent for ischemic stroke recovery.\n\n--- Abstract 2 (PMID: 34275739, relevance: 1.3790) ---\nINTRODUCTION: Hypospadias is one of the most common congenital anomalies of the male genitalia. Sonic hedgehog homologue (SHH) signalling pathway is believed to be involved in the development of the male genital system. OBJECTIVE: In this clinical prospective study, the role of the SHH pathway in hypospadias aetiology was investigated. STUDY DESIGN: In this study, 200 healthy children (boys without hypospadias, control group), 118 patients (boys with distal hypospadias) and 82 patients (boys with proximal hypospadias) of age 0-16 years were included. The expression of the genes suppressor of fused protein (SUFU), SHH, protein patched homologue (PTCH; PTCH1 and PTCH2), glioma-associated oncogene homologue (GLI; GLI1, GLI2, GLI3 and GLI4), smoothened, frizzled-class receptor (SMO) and serine/threonine-protein kinase 36 (STK36) that are involved in SHH pathway were investigated. Furthermore, polymorphism analyses of GLI2, SHH and PTCH1 genes were performed. The history of hypospadias in the first and second-degree relatives of the patients in boys with distal hypospadias and boys with proximal hypospadias was inquired. RESULTS: Ten patients in the boys with distal hypospadias and twenty patients in the boys with proximal hypospadias had a history of hypospadias in first or second-degree relatives (p < 0.05). There was a significant decrease in mRNA expressions of SHH and PTCH1 genes in boys with proximal hypospadias compared to boys without hypospadias (p < 0.05). Besides, a significant decrease in mRNA fold-change of GLI2 gene was detected in boys with both distal hypospadias and proximal hypospadias compared to boys without hypospadias (p < 0.05). In contrast, there was no significant difference in the mRNA fold-changes of PTCH2, SUFU, GLI1, GLI3, GLI4, SMO and STK36 genes among the groups. Moreover, there were no significant differences in the frequencies of variant genotypes and alleles rs735557, rs12711538 and rs4848632 (GLI2 gene), rs104894049 (SHH gene) and rs41313327 (PTCH1 gene) (p > 0.05). DISCUSSION: SHH expression is required for the growth and differentiation of the genital bulge. Developmental defects in the external genital organs were demonstrated in mice with SHH deletion. It has been demonstrated that SHH mainly plays a role in the formation of sinusoid morphology of the penis. In the present study, although SHH and PTCH gene expressions were found to be decreased only in the penile tissues of proximal hypospadias, GLI2 gene expression was decreased in penile tissues of boys with both distal hypospadias and boys with proximal hypospadias. CONCLUSION: Genes involved in the SHH pathway might play a role in the aetiology of hypospadias. Furthermore, there is a correlation between molecular defects in this pathway and severity of hypospadias.\n\n--- Abstract 3 (PMID: 42295123, relevance: -0.3547) ---\nAbnormal activation of Hedgehog signaling is involved in renal fibrogenesis, a key process in chronic kidney disease (CKD) progression. However, the isoform-specific roles of Gli transcription factors remain unclear. This study aimed to elucidate the contribution of Gli2 to renal fibrosis. Multiple murine models of renal fibrosis-unilateral ureteral obstruction, ischemia-reperfusion injury, and aristolochic acid nephropathy-were employed, alongside human CKD specimens. In vitro assays, including genetic silencing, overexpression, co-immunoprecipitation, immunofluorescence, promoter analysis, F-actin staining, and TGF-beta/SB431542 intervention assays were used to evaluate Gli2 function and its interaction with FoxM1. This study identifies Gli2, but not Gli1 or Gli3, as the primary Hedgehog signaling mediator in fibrotic kidneys, showing its activation in both epithelial and interstitial compartments. TGF-beta-induced Gli2 activation promoted fibrogenesis via tubular epithelial-mesenchymal transition (EMT) and fibroblast-to-myofibroblast differentiation (FMD), and cytoskeletal remodeling. FoxM1 is a potential dowgnstream candidate transcriptionally regulated by Gli2, with two conserved Gli-binding sites within its promoter. FoxM1 knockdown partially mitigated Gli2-driven fibrotic effects. Pharmacological Gli2 suppression with GANT61 alleviated fibrotic injury in the UUO mouse model. In conclusion, activated Gli2 is closely associated with renal tubulointerstitial fibrosis and may facilitate fibrogenesis in a FoxM1-relevant regulatory pattern. The TGF-beta/Hedgehog/Gli2/FoxM1 axis represents a promising therapeutic target for combating progressive CKD.\n\n"
+}

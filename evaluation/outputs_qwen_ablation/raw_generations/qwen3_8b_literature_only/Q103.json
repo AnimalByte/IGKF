@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41218118",
+    "39529066",
+    "41392205",
+    "42146614",
+    "42268900",
+    "42345162",
+    "41797924",
+    "42393221",
+    "42233622",
+    "42378331",
+    "41056281",
+    "42089627",
+    "41398956",
+    "39920102",
+    "41975070"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q103.json",
+      "question_id": "Q103",
+      "sha256": "c88a8c8d3d4872a5dcc289027cf6c7ddf5f29cd3aa5842af142337532fbe40af"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q103.json",
+      "question_id": "Q103",
+      "sha256": "b3be938b771d9df50c9221c4af185c78293fb8e4e1a0840572dd086bb5f0b337"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the Wnt signaling pathway?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.102,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the Wnt signaling pathway?",
+  "parsed_answer": "Based on the integrated data from the provided literature context, the following drugs are linked to genes or targets in the Wnt signaling pathway:\n\n1. **CI-994**: This is a class I HDAC inhibitor that also acts as an activator of the Wnt/beta-catenin signaling pathway by stabilizing the Wnt co-receptor LRP6. It is mentioned as a scaffold for developing dual modulators targeting both HDACs and Wnt signaling.\n\n2. **W2A-28**: This compound is derived from CI-994 and is noted to activate the Wnt/beta-catenin signaling pathway. It specifically elevates LRP6 protein levels, which is a key component of the Wnt signaling pathway.\n\nThese drugs are associated with the Wnt signaling pathway through their ability to modulate components such as LRP6, a co-receptor essential for Wnt signaling.",
+  "question_id": "Q103",
+  "question_text": "Which drugs, if any, are linked in the integrated data to genes or targets in the Wnt signaling pathway?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 187,
+    "prompt_token_count": 1130,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the integrated data from the provided literature context, the following drugs are linked to genes or targets in the Wnt signaling pathway:\n\n1. **CI-994**: This is a class I HDAC inhibitor that also acts as an activator of the Wnt/beta-catenin signaling pathway by stabilizing the Wnt co-receptor LRP6. It is mentioned as a scaffold for developing dual modulators targeting both HDACs and Wnt signaling.\n\n2. **W2A-28**: This compound is derived from CI-994 and is noted to activate the Wnt/beta-catenin signaling pathway. It specifically elevates LRP6 protein levels, which is a key component of the Wnt signaling pathway.\n\nThese drugs are associated with the Wnt signaling pathway through their ability to modulate components such as LRP6, a co-receptor essential for Wnt signaling."
+      }
+    ],
+    "created": 1783564295,
+    "id": "cmpl-443b017b-5206-4ed4-b6fe-60a428ca8809",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 187,
+      "prompt_tokens": 1109,
+      "total_tokens": 1296
+    }
+  },
+  "reranker_scores": [
+    0.5114971399307251,
+    -0.29388558864593506,
+    -0.31805306673049927
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      33.158905029296875,
+      36.300201416015625,
+      37.14741897583008,
+      38.662391662597656,
+      40.1095085144043,
+      40.562461853027344,
+      40.86699676513672,
+      41.24591064453125,
+      41.44911575317383,
+      42.13800048828125,
+      42.243385314941406,
+      42.289024353027344,
+      43.13576889038086,
+      43.19084548950195,
+      43.252445220947266
+    ],
+    "candidate_pmids": [
+      "41218118",
+      "39529066",
+      "41392205",
+      "42146614",
+      "42268900",
+      "42345162",
+      "41797924",
+      "42393221",
+      "42233622",
+      "42378331",
+      "41056281",
+      "42089627",
+      "41398956",
+      "39920102",
+      "41975070"
+    ],
+    "expanded_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the Wnt signaling pathway?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42146614, relevance: 0.5115) ---\nAlzheimer's disease (AD) is a multifactorial disease with mixed pathologies. Consequentially, drugs targeting multiple pathological processes may offer synergistic benefits. While histone deacetylase (HDAC) inhibitors have demonstrated efficacy in alleviating AD-related pathologies in animal models, the neuroprotective Wnt/beta-catenin signaling pathway remains compromised in AD brain. CI-994 is a class I HDAC inhibitor containing N-(2-aminophenyl)-benzamide. Our recent studies indicate that CI-994 is also an activator of Wnt/beta-catenin signaling by stabilizing Wnt co-receptor LRP6. We herein use CI-994 as a scaffold to develop novel potent dual modulators of class I HDACs and Wnt/beta-catenin signaling for AD therapy. Our lead compound, W2A-28, selectively inhibits class I HDAC1, 2 and 3 with IC(50) values of 0.51 muM, 0.68 muM, and 0.22 muM, respectively, and shows no inhibitory activities on other HDACs. Furthermore, W2A-28 potently activates Wnt reporter activity with an EC(50) value of 1.61 muM in Wnt-3A-expressing HEK293 cells. As expected, activation of Wnt/mu-catenin signaling by W2A-28 is associated with elevated LRP6 protein level. Importantly, W2A-28 displays excellent microsomal stability in both mouse and human liver microsomal stability assays, alongside high permeability and a lack of active efflux in MDR1-MDCKII models. Critically, W2A-28 treatment significantly enhances histone acetylation, activates Wnt/beta-catenin signaling, and suppresses tau phosphorylation in AD patient-specific cerebral organoids carrying APOEepsilon4/epsilon4 or APOEepsilon3/epsilon4 with PSEN1 M146V mutation. Our findings position W2A-28 as a promising multi-target drug candidate for AD therapy.\n\n--- Abstract 2 (PMID: 42378331, relevance: -0.2939) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n--- Abstract 3 (PMID: 41218118, relevance: -0.3181) ---\nThe WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which drugs, if any, are linked in the integrated data to genes or targets in the Wnt signaling pathway?",
+    "rerank_seconds": 0.3311,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3459,
+    "score_max": 0.5114971399307251,
+    "score_mean": -0.03348050514856974,
+    "scores": [
+      0.5114971399307251,
+      -0.29388558864593506,
+      -0.31805306673049927
+    ],
+    "selected_abstracts": [
+      "Alzheimer's disease (AD) is a multifactorial disease with mixed pathologies. Consequentially, drugs targeting multiple pathological processes may offer synergistic benefits. While histone deacetylase (HDAC) inhibitors have demonstrated efficacy in alleviating AD-related pathologies in animal models, the neuroprotective Wnt/beta-catenin signaling pathway remains compromised in AD brain. CI-994 is a class I HDAC inhibitor containing N-(2-aminophenyl)-benzamide. Our recent studies indicate that CI-994 is also an activator of Wnt/beta-catenin signaling by stabilizing Wnt co-receptor LRP6. We herein use CI-994 as a scaffold to develop novel potent dual modulators of class I HDACs and Wnt/beta-catenin signaling for AD therapy. Our lead compound, W2A-28, selectively inhibits class I HDAC1, 2 and 3 with IC(50) values of 0.51 muM, 0.68 muM, and 0.22 muM, respectively, and shows no inhibitory activities on other HDACs. Furthermore, W2A-28 potently activates Wnt reporter activity with an EC(50) value of 1.61 muM in Wnt-3A-expressing HEK293 cells. As expected, activation of Wnt/mu-catenin signaling by W2A-28 is associated with elevated LRP6 protein level. Importantly, W2A-28 displays excellent microsomal stability in both mouse and human liver microsomal stability assays, alongside high permeability and a lack of active efflux in MDR1-MDCKII models. Critically, W2A-28 treatment significantly enhances histone acetylation, activates Wnt/beta-catenin signaling, and suppresses tau phosphorylation in AD patient-specific cerebral organoids carrying APOEepsilon4/epsilon4 or APOEepsilon3/epsilon4 with PSEN1 M146V mutation. Our findings position W2A-28 as a promising multi-target drug candidate for AD therapy.",
+      "The WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.",
+      "The WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer."
+    ],
+    "selected_pmids": [
+      "42146614",
+      "42378331",
+      "41218118"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0146
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q103.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42146614",
+    "42378331",
+    "41218118"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:31:37.551651+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42146614, relevance: 0.5115) ---\nAlzheimer's disease (AD) is a multifactorial disease with mixed pathologies. Consequentially, drugs targeting multiple pathological processes may offer synergistic benefits. While histone deacetylase (HDAC) inhibitors have demonstrated efficacy in alleviating AD-related pathologies in animal models, the neuroprotective Wnt/beta-catenin signaling pathway remains compromised in AD brain. CI-994 is a class I HDAC inhibitor containing N-(2-aminophenyl)-benzamide. Our recent studies indicate that CI-994 is also an activator of Wnt/beta-catenin signaling by stabilizing Wnt co-receptor LRP6. We herein use CI-994 as a scaffold to develop novel potent dual modulators of class I HDACs and Wnt/beta-catenin signaling for AD therapy. Our lead compound, W2A-28, selectively inhibits class I HDAC1, 2 and 3 with IC(50) values of 0.51 muM, 0.68 muM, and 0.22 muM, respectively, and shows no inhibitory activities on other HDACs. Furthermore, W2A-28 potently activates Wnt reporter activity with an EC(50) value of 1.61 muM in Wnt-3A-expressing HEK293 cells. As expected, activation of Wnt/mu-catenin signaling by W2A-28 is associated with elevated LRP6 protein level. Importantly, W2A-28 displays excellent microsomal stability in both mouse and human liver microsomal stability assays, alongside high permeability and a lack of active efflux in MDR1-MDCKII models. Critically, W2A-28 treatment significantly enhances histone acetylation, activates Wnt/beta-catenin signaling, and suppresses tau phosphorylation in AD patient-specific cerebral organoids carrying APOEepsilon4/epsilon4 or APOEepsilon3/epsilon4 with PSEN1 M146V mutation. Our findings position W2A-28 as a promising multi-target drug candidate for AD therapy.\n\n--- Abstract 2 (PMID: 42378331, relevance: -0.2939) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n--- Abstract 3 (PMID: 41218118, relevance: -0.3181) ---\nThe WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.\n\n\n\n**Question:**\nWhich drugs, if any, are linked in the integrated data to genes or targets in the Wnt signaling pathway?",
+  "vector_context": "--- Abstract 1 (PMID: 42146614, relevance: 0.5115) ---\nAlzheimer's disease (AD) is a multifactorial disease with mixed pathologies. Consequentially, drugs targeting multiple pathological processes may offer synergistic benefits. While histone deacetylase (HDAC) inhibitors have demonstrated efficacy in alleviating AD-related pathologies in animal models, the neuroprotective Wnt/beta-catenin signaling pathway remains compromised in AD brain. CI-994 is a class I HDAC inhibitor containing N-(2-aminophenyl)-benzamide. Our recent studies indicate that CI-994 is also an activator of Wnt/beta-catenin signaling by stabilizing Wnt co-receptor LRP6. We herein use CI-994 as a scaffold to develop novel potent dual modulators of class I HDACs and Wnt/beta-catenin signaling for AD therapy. Our lead compound, W2A-28, selectively inhibits class I HDAC1, 2 and 3 with IC(50) values of 0.51 muM, 0.68 muM, and 0.22 muM, respectively, and shows no inhibitory activities on other HDACs. Furthermore, W2A-28 potently activates Wnt reporter activity with an EC(50) value of 1.61 muM in Wnt-3A-expressing HEK293 cells. As expected, activation of Wnt/mu-catenin signaling by W2A-28 is associated with elevated LRP6 protein level. Importantly, W2A-28 displays excellent microsomal stability in both mouse and human liver microsomal stability assays, alongside high permeability and a lack of active efflux in MDR1-MDCKII models. Critically, W2A-28 treatment significantly enhances histone acetylation, activates Wnt/beta-catenin signaling, and suppresses tau phosphorylation in AD patient-specific cerebral organoids carrying APOEepsilon4/epsilon4 or APOEepsilon3/epsilon4 with PSEN1 M146V mutation. Our findings position W2A-28 as a promising multi-target drug candidate for AD therapy.\n\n--- Abstract 2 (PMID: 42378331, relevance: -0.2939) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n--- Abstract 3 (PMID: 41218118, relevance: -0.3181) ---\nThe WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.\n\n"
+}

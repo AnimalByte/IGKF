@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q182",
+      "randomization_seed": "20260706:Q182:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q182",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q182",
+      "error": null,
+      "id": "batch_req_6a4f85d7e8288190a211dea50704e29a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594489,
+          "created_at": 1783594458,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0db582bee3a283cc006a4f7dda47fc81948156c2c6aa74ac84",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q182"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0db582bee3a283cc006a4f7ddb113c819487fc6be7fe6ff210",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the dataset lacks evidence for a PRS predicting Finasteride response and lists needed data.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Main conclusion is correct, but it inaccurately describes the provided literature context as including unrelated PRS studies not present in the evidence packet.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers genetic data, response phenotypes, treated cohorts, statistical modeling, and validation, though it could be more specific about Finasteride pharmacogenomic endpoints and independent external validation.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming predictive utility without supporting evidence.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately addresses whether the dataset supports PRS prediction of Finasteride response.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied evidence only covers Finasteride targets/pathways and does not include PRS, variant-response associations, or drug-response prediction data.\"},\"completeness\":{\"score\":4,\"rationale\":\"Identifies the major needed components: variant data, PRS construction, response phenotypes, validation cohort, and statistical performance metrics.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly avoids unsupported claims and states that prediction cannot be determined without additional data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0db582bee3a283cc006a4f7def85d08194982f45a653955f12",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2707,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 840,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3547
+          },
+          "user": null
+        },
+        "request_id": "4c089523-d9cc-4e62-aa48-495a6c1cfc13",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that the dataset lacks evidence for a PRS predicting Finasteride response and lists needed data.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Main conclusion is correct, but it inaccurately describes the provided literature context as including unrelated PRS studies not present in the evidence packet.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers genetic data, response phenotypes, treated cohorts, statistical modeling, and validation, though it could be more specific about Finasteride pharmacogenomic endpoints and independent external validation.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from claiming predictive utility without supporting evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q182",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q182.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.782871+00:00"
+}

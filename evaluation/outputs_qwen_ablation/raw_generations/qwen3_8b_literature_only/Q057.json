@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "32193494",
+    "42378135",
+    "42032772",
+    "35638461",
+    "24410847",
+    "32041475",
+    "41408253",
+    "38128201",
+    "42147184",
+    "42215996",
+    "38395944",
+    "41026804",
+    "34712749",
+    "39245941",
+    "41733882"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q057.json",
+      "question_id": "Q057",
+      "sha256": "2a526a43b4d04b2745d03d2f0b603c165ba479ac15f94babd6db8299fa27941b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q057.json",
+      "question_id": "Q057",
+      "sha256": "f12d177f5c8d33bcfc10cece147e16ca2ef565f5f92310d218c6b055310f8a94"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.3739,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+  "parsed_answer": "None of the studies provided in the literature context mention any variants annotated as high impact that are mapped to EDA2R. The studies focus on different genes and proteins, such as IL-4, TLR2, CCL2, SLC11A1, EDEM2, and EDAR, but none specifically address EDA2R or its associated variants. Therefore, based on the given context, there is no information about high-impact variants mapped to EDA2R.",
+  "question_id": "Q057",
+  "question_text": "Which variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 100,
+    "prompt_token_count": 1370,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "None of the studies provided in the literature context mention any variants annotated as high impact that are mapped to EDA2R. The studies focus on different genes and proteins, such as IL-4, TLR2, CCL2, SLC11A1, EDEM2, and EDAR, but none specifically address EDA2R or its associated variants. Therefore, based on the given context, there is no information about high-impact variants mapped to EDA2R."
+      }
+    ],
+    "created": 1783564105,
+    "id": "cmpl-96541006-0fd5-45d5-850a-62f8e42f5d72",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 100,
+      "prompt_tokens": 1349,
+      "total_tokens": 1449
+    }
+  },
+  "reranker_scores": [
+    -2.8331246376037598,
+    -2.8862826824188232,
+    -3.2574102878570557
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      42.64115905761719,
+      42.955284118652344,
+      42.967193603515625,
+      43.0980224609375,
+      43.115234375,
+      43.19104766845703,
+      44.96923828125,
+      45.19411849975586,
+      45.53295135498047,
+      45.609500885009766,
+      46.0433235168457,
+      46.062286376953125,
+      46.25694274902344,
+      46.280906677246094,
+      46.522918701171875
+    ],
+    "candidate_pmids": [
+      "32193494",
+      "42378135",
+      "42032772",
+      "35638461",
+      "24410847",
+      "32041475",
+      "41408253",
+      "38128201",
+      "42147184",
+      "42215996",
+      "38395944",
+      "41026804",
+      "34712749",
+      "39245941",
+      "41733882"
+    ],
+    "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42215996, relevance: -2.8331) ---\nBACKGROUND: Given its high mortality and broad societal impact, the COVID-19 pandemic is arguably one of the most consequential public health crises of the twenty-first century. Although previous studies have identified several genes associated with COVID-19 susceptibility, relatively little is known about the genes contributing to severe COVID-19, including their evolutionary histories. In the current study, we analyzed IL-4, TLR2, CCL2, and SLC11A1-immunity genes that have previously been implicated in severe COVID-19 and other immune-related diseases-in globally diverse populations from the 1000 Genomes Project. We also tested for associations between genetic variation at these genes and clinical COVID-19 phenotypes in nearly 4000 laboratory-confirmed COVID-19-positive individuals across two datasets from the GEN-COVID Multicenter Study in Italy. RESULTS: Based on our analyses, we identified striking signatures of positive selection within and around all four genes, including extensive haplotype structure, elevated population differentiation, and significant selection coefficients consistent with both ancient and more recent adaptive events. Notably, many of these signals were population-specific, highlighting the role of local selection in shaping immune gene diversity. Several selected alleles were also present in Neanderthal and/or Denisovan genomes, reflecting both shared ancestral polymorphism and archaic introgression within these genes. Functional predictions based on in silico analyses further revealed that a subset of selected alleles maps to transcription factor binding sites and is predicted to influence binding affinity. In addition, our genotype-phenotype analyses uncovered coding variants in TLR2 that were correlated with COVID-19 severity and a related comorbidity, with estimated effect sizes ranging from moderate to large. Interestingly, these significantly associated alleles occur at rare or low frequency in western European and East Asian populations but are absent in populations of African and South Asian descent, indicative of a relatively recent origin. CONCLUSIONS: Overall, our study provides new insights into the evolution of biologically relevant immunity genes in modern human populations and identifies genetic variation that may contribute to differences in risk for severe COVID-19.\n\n--- Abstract 2 (PMID: 34712749, relevance: -2.8863) ---\nEDEM2 (Endoplasmic reticulum Degradation-Enhancing alpha-Mannosidase-like protein 2) is one of the key-proteins suggested to be involved in the selection and degradation of misfolded proteins from the endoplasmic reticulum. The datasets discussed in this article are related to experiments covering affinity proteomics, label-free quantitative proteomics, deglycoproteomics and SILAC (Stable Isotope Labeling by Amino Acids in Cell Culture) proteomics data of A375 melanoma cells with modified expression of EDEM2. Our first aim was to affinity-enrich EDEM2 alongside its potential interaction partners and analyse the obtained samples by nanoLC-MS/MS to identify novel EDEM2 associated proteins. The dataset was substantiated by SDF (Sucrose Density Fractionation)-nanoLC-MS/MS experiments, in an integrated workflow to validate EDEM2 identified partners and corroborate these with previous data. Our second aim was to delineate novel EDEM2 substrate candidates using a two-step strategy. The first one refers to the deglycoproteomics dataset, which covers nanoLC-MS/MS analysis of Concanavalin A enriched glycopeptides released by endoglycosidase digestion from A375 melanoma cell lysates. This allowed us to map the fraction of glycoproteins with non-matured N-glycans from A375 melanoma cells and find or validate N-glycosylation sites of proteins from the secretory pathway. The same dataset was also used to define glycoproteins altered by the down-regulation of endogenous EDEM2, which should contain its candidate-substrates. In a second step we delineate the degradation kinetics of some of these proteins using a pulse SILAC strategy (pSILAC) thus complementing our initial findings with a fourth dataset. Beside nanoLC-MS/MS analysis our findings were also validated by various biochemical experiments. All the data described are associated with a research article published in Molecular and Cellular Proteomics [1].\n\n--- Abstract 3 (PMID: 41408253, relevance: -3.2574) ---\nHypohidrotic ectodermal dysplasia (HED) is a genetic disorder that can caused by mutations in the EDAR gene, which encodes the Ectodysplasin A receptor, leading to defective ectodermal structure development. This study investigates the molecular impact of a novel homozygous c.730 + 1G > T splice site variant in the EDAR gene, identified in a consanguineous Iranian family with HED. The 10-year-old proband presented with a classic, severe HED phenotype, including anhidrosis (impaired sweating) leading to recurrent hyperthermia, sparse hair, dry skin, and severe oligodontia with only three teeth present. Co-occurring thyroid dysfunction was also noted. To elucidate the variant's predicted structural and functional consequences (likely exon 8 skipping), Molecular Dynamics (MD) simulations were performed over 50 ns, focusing on the EDAR protein's conformational dynamics. The simulations revealed that the predicted variant-induced structural alteration leads to a more compact and rigid EDAR structure, significantly reducing its conformational flexibility. This structural change likely disrupts critical receptor interactions and downstream signaling, which are key factors in HED pathogenesis. These findings highlight the power of combining detailed clinical phenotyping with MD simulations in uncovering the precise molecular mechanisms underlying EDAR dysfunction in HED, expanding the mutational spectrum of the gene and supporting precise genetic diagnosis for improved clinical management.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+    "rerank_seconds": 0.3411,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.356,
+    "score_max": -2.8331246376037598,
+    "score_mean": -2.9922725359598794,
+    "scores": [
+      -2.8331246376037598,
+      -2.8862826824188232,
+      -3.2574102878570557
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Given its high mortality and broad societal impact, the COVID-19 pandemic is arguably one of the most consequential public health crises of the twenty-first century. Although previous studies have identified several genes associated with COVID-19 susceptibility, relatively little is known about the genes contributing to severe COVID-19, including their evolutionary histories. In the current study, we analyzed IL-4, TLR2, CCL2, and SLC11A1-immunity genes that have previously been implicated in severe COVID-19 and other immune-related diseases-in globally diverse populations from the 1000 Genomes Project. We also tested for associations between genetic variation at these genes and clinical COVID-19 phenotypes in nearly 4000 laboratory-confirmed COVID-19-positive individuals across two datasets from the GEN-COVID Multicenter Study in Italy. RESULTS: Based on our analyses, we identified striking signatures of positive selection within and around all four genes, including extensive haplotype structure, elevated population differentiation, and significant selection coefficients consistent with both ancient and more recent adaptive events. Notably, many of these signals were population-specific, highlighting the role of local selection in shaping immune gene diversity. Several selected alleles were also present in Neanderthal and/or Denisovan genomes, reflecting both shared ancestral polymorphism and archaic introgression within these genes. Functional predictions based on in silico analyses further revealed that a subset of selected alleles maps to transcription factor binding sites and is predicted to influence binding affinity. In addition, our genotype-phenotype analyses uncovered coding variants in TLR2 that were correlated with COVID-19 severity and a related comorbidity, with estimated effect sizes ranging from moderate to large. Interestingly, these significantly associated alleles occur at rare or low frequency in western European and East Asian populations but are absent in populations of African and South Asian descent, indicative of a relatively recent origin. CONCLUSIONS: Overall, our study provides new insights into the evolution of biologically relevant immunity genes in modern human populations and identifies genetic variation that may contribute to differences in risk for severe COVID-19.",
+      "EDEM2 (Endoplasmic reticulum Degradation-Enhancing alpha-Mannosidase-like protein 2) is one of the key-proteins suggested to be involved in the selection and degradation of misfolded proteins from the endoplasmic reticulum. The datasets discussed in this article are related to experiments covering affinity proteomics, label-free quantitative proteomics, deglycoproteomics and SILAC (Stable Isotope Labeling by Amino Acids in Cell Culture) proteomics data of A375 melanoma cells with modified expression of EDEM2. Our first aim was to affinity-enrich EDEM2 alongside its potential interaction partners and analyse the obtained samples by nanoLC-MS/MS to identify novel EDEM2 associated proteins. The dataset was substantiated by SDF (Sucrose Density Fractionation)-nanoLC-MS/MS experiments, in an integrated workflow to validate EDEM2 identified partners and corroborate these with previous data. Our second aim was to delineate novel EDEM2 substrate candidates using a two-step strategy. The first one refers to the deglycoproteomics dataset, which covers nanoLC-MS/MS analysis of Concanavalin A enriched glycopeptides released by endoglycosidase digestion from A375 melanoma cell lysates. This allowed us to map the fraction of glycoproteins with non-matured N-glycans from A375 melanoma cells and find or validate N-glycosylation sites of proteins from the secretory pathway. The same dataset was also used to define glycoproteins altered by the down-regulation of endogenous EDEM2, which should contain its candidate-substrates. In a second step we delineate the degradation kinetics of some of these proteins using a pulse SILAC strategy (pSILAC) thus complementing our initial findings with a fourth dataset. Beside nanoLC-MS/MS analysis our findings were also validated by various biochemical experiments. All the data described are associated with a research article published in Molecular and Cellular Proteomics [1].",
+      "Hypohidrotic ectodermal dysplasia (HED) is a genetic disorder that can caused by mutations in the EDAR gene, which encodes the Ectodysplasin A receptor, leading to defective ectodermal structure development. This study investigates the molecular impact of a novel homozygous c.730 + 1G > T splice site variant in the EDAR gene, identified in a consanguineous Iranian family with HED. The 10-year-old proband presented with a classic, severe HED phenotype, including anhidrosis (impaired sweating) leading to recurrent hyperthermia, sparse hair, dry skin, and severe oligodontia with only three teeth present. Co-occurring thyroid dysfunction was also noted. To elucidate the variant's predicted structural and functional consequences (likely exon 8 skipping), Molecular Dynamics (MD) simulations were performed over 50 ns, focusing on the EDAR protein's conformational dynamics. The simulations revealed that the predicted variant-induced structural alteration leads to a more compact and rigid EDAR structure, significantly reducing its conformational flexibility. This structural change likely disrupts critical receptor interactions and downstream signaling, which are key factors in HED pathogenesis. These findings highlight the power of combining detailed clinical phenotyping with MD simulations in uncovering the precise molecular mechanisms underlying EDAR dysfunction in HED, expanding the mutational spectrum of the gene and supporting precise genetic diagnosis for improved clinical management."
+    ],
+    "selected_pmids": [
+      "42215996",
+      "34712749",
+      "41408253"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0147
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q057.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42215996",
+    "34712749",
+    "41408253"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:28:26.672756+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42215996, relevance: -2.8331) ---\nBACKGROUND: Given its high mortality and broad societal impact, the COVID-19 pandemic is arguably one of the most consequential public health crises of the twenty-first century. Although previous studies have identified several genes associated with COVID-19 susceptibility, relatively little is known about the genes contributing to severe COVID-19, including their evolutionary histories. In the current study, we analyzed IL-4, TLR2, CCL2, and SLC11A1-immunity genes that have previously been implicated in severe COVID-19 and other immune-related diseases-in globally diverse populations from the 1000 Genomes Project. We also tested for associations between genetic variation at these genes and clinical COVID-19 phenotypes in nearly 4000 laboratory-confirmed COVID-19-positive individuals across two datasets from the GEN-COVID Multicenter Study in Italy. RESULTS: Based on our analyses, we identified striking signatures of positive selection within and around all four genes, including extensive haplotype structure, elevated population differentiation, and significant selection coefficients consistent with both ancient and more recent adaptive events. Notably, many of these signals were population-specific, highlighting the role of local selection in shaping immune gene diversity. Several selected alleles were also present in Neanderthal and/or Denisovan genomes, reflecting both shared ancestral polymorphism and archaic introgression within these genes. Functional predictions based on in silico analyses further revealed that a subset of selected alleles maps to transcription factor binding sites and is predicted to influence binding affinity. In addition, our genotype-phenotype analyses uncovered coding variants in TLR2 that were correlated with COVID-19 severity and a related comorbidity, with estimated effect sizes ranging from moderate to large. Interestingly, these significantly associated alleles occur at rare or low frequency in western European and East Asian populations but are absent in populations of African and South Asian descent, indicative of a relatively recent origin. CONCLUSIONS: Overall, our study provides new insights into the evolution of biologically relevant immunity genes in modern human populations and identifies genetic variation that may contribute to differences in risk for severe COVID-19.\n\n--- Abstract 2 (PMID: 34712749, relevance: -2.8863) ---\nEDEM2 (Endoplasmic reticulum Degradation-Enhancing alpha-Mannosidase-like protein 2) is one of the key-proteins suggested to be involved in the selection and degradation of misfolded proteins from the endoplasmic reticulum. The datasets discussed in this article are related to experiments covering affinity proteomics, label-free quantitative proteomics, deglycoproteomics and SILAC (Stable Isotope Labeling by Amino Acids in Cell Culture) proteomics data of A375 melanoma cells with modified expression of EDEM2. Our first aim was to affinity-enrich EDEM2 alongside its potential interaction partners and analyse the obtained samples by nanoLC-MS/MS to identify novel EDEM2 associated proteins. The dataset was substantiated by SDF (Sucrose Density Fractionation)-nanoLC-MS/MS experiments, in an integrated workflow to validate EDEM2 identified partners and corroborate these with previous data. Our second aim was to delineate novel EDEM2 substrate candidates using a two-step strategy. The first one refers to the deglycoproteomics dataset, which covers nanoLC-MS/MS analysis of Concanavalin A enriched glycopeptides released by endoglycosidase digestion from A375 melanoma cell lysates. This allowed us to map the fraction of glycoproteins with non-matured N-glycans from A375 melanoma cells and find or validate N-glycosylation sites of proteins from the secretory pathway. The same dataset was also used to define glycoproteins altered by the down-regulation of endogenous EDEM2, which should contain its candidate-substrates. In a second step we delineate the degradation kinetics of some of these proteins using a pulse SILAC strategy (pSILAC) thus complementing our initial findings with a fourth dataset. Beside nanoLC-MS/MS analysis our findings were also validated by various biochemical experiments. All the data described are associated with a research article published in Molecular and Cellular Proteomics [1].\n\n--- Abstract 3 (PMID: 41408253, relevance: -3.2574) ---\nHypohidrotic ectodermal dysplasia (HED) is a genetic disorder that can caused by mutations in the EDAR gene, which encodes the Ectodysplasin A receptor, leading to defective ectodermal structure development. This study investigates the molecular impact of a novel homozygous c.730 + 1G > T splice site variant in the EDAR gene, identified in a consanguineous Iranian family with HED. The 10-year-old proband presented with a classic, severe HED phenotype, including anhidrosis (impaired sweating) leading to recurrent hyperthermia, sparse hair, dry skin, and severe oligodontia with only three teeth present. Co-occurring thyroid dysfunction was also noted. To elucidate the variant's predicted structural and functional consequences (likely exon 8 skipping), Molecular Dynamics (MD) simulations were performed over 50 ns, focusing on the EDAR protein's conformational dynamics. The simulations revealed that the predicted variant-induced structural alteration leads to a more compact and rigid EDAR structure, significantly reducing its conformational flexibility. This structural change likely disrupts critical receptor interactions and downstream signaling, which are key factors in HED pathogenesis. These findings highlight the power of combining detailed clinical phenotyping with MD simulations in uncovering the precise molecular mechanisms underlying EDAR dysfunction in HED, expanding the mutational spectrum of the gene and supporting precise genetic diagnosis for improved clinical management.\n\n\n\n**Question:**\nWhich variants annotated as high impact, if any, are mapped to EDA2R in this study?",
+  "vector_context": "--- Abstract 1 (PMID: 42215996, relevance: -2.8331) ---\nBACKGROUND: Given its high mortality and broad societal impact, the COVID-19 pandemic is arguably one of the most consequential public health crises of the twenty-first century. Although previous studies have identified several genes associated with COVID-19 susceptibility, relatively little is known about the genes contributing to severe COVID-19, including their evolutionary histories. In the current study, we analyzed IL-4, TLR2, CCL2, and SLC11A1-immunity genes that have previously been implicated in severe COVID-19 and other immune-related diseases-in globally diverse populations from the 1000 Genomes Project. We also tested for associations between genetic variation at these genes and clinical COVID-19 phenotypes in nearly 4000 laboratory-confirmed COVID-19-positive individuals across two datasets from the GEN-COVID Multicenter Study in Italy. RESULTS: Based on our analyses, we identified striking signatures of positive selection within and around all four genes, including extensive haplotype structure, elevated population differentiation, and significant selection coefficients consistent with both ancient and more recent adaptive events. Notably, many of these signals were population-specific, highlighting the role of local selection in shaping immune gene diversity. Several selected alleles were also present in Neanderthal and/or Denisovan genomes, reflecting both shared ancestral polymorphism and archaic introgression within these genes. Functional predictions based on in silico analyses further revealed that a subset of selected alleles maps to transcription factor binding sites and is predicted to influence binding affinity. In addition, our genotype-phenotype analyses uncovered coding variants in TLR2 that were correlated with COVID-19 severity and a related comorbidity, with estimated effect sizes ranging from moderate to large. Interestingly, these significantly associated alleles occur at rare or low frequency in western European and East Asian populations but are absent in populations of African and South Asian descent, indicative of a relatively recent origin. CONCLUSIONS: Overall, our study provides new insights into the evolution of biologically relevant immunity genes in modern human populations and identifies genetic variation that may contribute to differences in risk for severe COVID-19.\n\n--- Abstract 2 (PMID: 34712749, relevance: -2.8863) ---\nEDEM2 (Endoplasmic reticulum Degradation-Enhancing alpha-Mannosidase-like protein 2) is one of the key-proteins suggested to be involved in the selection and degradation of misfolded proteins from the endoplasmic reticulum. The datasets discussed in this article are related to experiments covering affinity proteomics, label-free quantitative proteomics, deglycoproteomics and SILAC (Stable Isotope Labeling by Amino Acids in Cell Culture) proteomics data of A375 melanoma cells with modified expression of EDEM2. Our first aim was to affinity-enrich EDEM2 alongside its potential interaction partners and analyse the obtained samples by nanoLC-MS/MS to identify novel EDEM2 associated proteins. The dataset was substantiated by SDF (Sucrose Density Fractionation)-nanoLC-MS/MS experiments, in an integrated workflow to validate EDEM2 identified partners and corroborate these with previous data. Our second aim was to delineate novel EDEM2 substrate candidates using a two-step strategy. The first one refers to the deglycoproteomics dataset, which covers nanoLC-MS/MS analysis of Concanavalin A enriched glycopeptides released by endoglycosidase digestion from A375 melanoma cell lysates. This allowed us to map the fraction of glycoproteins with non-matured N-glycans from A375 melanoma cells and find or validate N-glycosylation sites of proteins from the secretory pathway. The same dataset was also used to define glycoproteins altered by the down-regulation of endogenous EDEM2, which should contain its candidate-substrates. In a second step we delineate the degradation kinetics of some of these proteins using a pulse SILAC strategy (pSILAC) thus complementing our initial findings with a fourth dataset. Beside nanoLC-MS/MS analysis our findings were also validated by various biochemical experiments. All the data described are associated with a research article published in Molecular and Cellular Proteomics [1].\n\n--- Abstract 3 (PMID: 41408253, relevance: -3.2574) ---\nHypohidrotic ectodermal dysplasia (HED) is a genetic disorder that can caused by mutations in the EDAR gene, which encodes the Ectodysplasin A receptor, leading to defective ectodermal structure development. This study investigates the molecular impact of a novel homozygous c.730 + 1G > T splice site variant in the EDAR gene, identified in a consanguineous Iranian family with HED. The 10-year-old proband presented with a classic, severe HED phenotype, including anhidrosis (impaired sweating) leading to recurrent hyperthermia, sparse hair, dry skin, and severe oligodontia with only three teeth present. Co-occurring thyroid dysfunction was also noted. To elucidate the variant's predicted structural and functional consequences (likely exon 8 skipping), Molecular Dynamics (MD) simulations were performed over 50 ns, focusing on the EDAR protein's conformational dynamics. The simulations revealed that the predicted variant-induced structural alteration leads to a more compact and rigid EDAR structure, significantly reducing its conformational flexibility. This structural change likely disrupts critical receptor interactions and downstream signaling, which are key factors in HED pathogenesis. These findings highlight the power of combining detailed clinical phenotyping with MD simulations in uncovering the precise molecular mechanisms underlying EDAR dysfunction in HED, expanding the mutational spectrum of the gene and supporting precise genetic diagnosis for improved clinical management.\n\n"
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q089",
+      "randomization_seed": "20260706:Q089:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q089",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q089",
+      "error": null,
+      "id": "batch_req_6a4f85d22a388190b55bdf908dbd6031",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578947,
+          "created_at": 1783578915,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00efb3625c000478006a4f41233a4c8195be396f7bb0b3c2b4",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q089"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00efb3625c000478006a4f4137afc88195bd15635e395603f9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the question by noting that no pathways including PAX1 are provided, though it refers mainly to literature context rather than the graph context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurate against the supplied evidence, which does not list any pathway memberships for PAX1.\"},\"completeness\":{\"score\":4,\"rationale\":\"Gives the key conclusion but does not explicitly summarize the graph fields showing that pathway information is absent.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inventing unsupported pathway associations.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question about pathways in the integrated graph including PAX1.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that the graph context provides phenotypes, GO functions/processes, PPIs, and disease associations but no pathway information for PAX1.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the important evidence categories and clearly explains why no pathway answer can be given.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the absence of evidence and avoids unsupported claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00efb3625c000478006a4f413dc6e08195b71c22d84fc53761",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1803,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 570,
+            "output_tokens_details": {
+              "reasoning_tokens": 283
+            },
+            "total_tokens": 2373
+          },
+          "user": null
+        },
+        "request_id": "28eabd19-382b-4299-b945-a0c25f1580e7",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question about pathways in the integrated graph including PAX1.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly states that the graph context provides phenotypes, GO functions/processes, PPIs, and disease associations but no pathway information for PAX1.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the important evidence categories and clearly explains why no pathway answer can be given.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly qualifies the absence of evidence and avoids unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q089",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q089.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.747311+00:00"
+}

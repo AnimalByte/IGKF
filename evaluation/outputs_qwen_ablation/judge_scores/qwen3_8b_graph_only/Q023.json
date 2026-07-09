@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q023",
+      "randomization_seed": "20260706:Q023:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q023",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q023",
+      "error": null,
+      "id": "batch_req_6a4f85ce15e08190afd46173dae638d0",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578909,
+          "created_at": 1783578881,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04f62a5c200c44bb006a4f4101e94881979dcaaa9a239686ba",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q023"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04f62a5c200c44bb006a4f411292448197be4da4f936852b9a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the question but does not provide the requested gene annotation.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly states that no associated gene can be determined, while the reference evidence annotates rs1160312 with LINC01432.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the key associated gene, LINC01432.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains despite sufficient evidence in the provided graph context.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers which gene is associated with rs1160312.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly identifies LINC01432 as the implicated gene in the reference evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the full required answer without unnecessary additions.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"No uncertainty qualification is needed because the evidence clearly supports the answer.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04f62a5c200c44bb006a4f411a207c8197b90cf616f382fa71",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2092,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 609,
+            "output_tokens_details": {
+              "reasoning_tokens": 363
+            },
+            "total_tokens": 2701
+          },
+          "user": null
+        },
+        "request_id": "d736838e-f028-49ba-8f29-0768c4114cca",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers which gene is associated with rs1160312.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly identifies LINC01432 as the implicated gene in the reference evidence.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the full required answer without unnecessary additions.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "No uncertainty qualification is needed because the evidence clearly supports the answer.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q023",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q023.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.721441+00:00"
+}

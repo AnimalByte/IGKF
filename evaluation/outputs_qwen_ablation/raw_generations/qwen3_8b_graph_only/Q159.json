@@ -1,0 +1,137 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q159.json",
+      "question_id": "Q159",
+      "sha256": "d5dd4bddd1d8cea40db08181e52d6dfebb0e56d4b614ab1a479e7616f0449ff1"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q159.json",
+      "question_id": "Q159",
+      "sha256": "e03b38a367d22f3ea36f6a787523bfc6c3daee5df4a0e72ff5aabe27aa5d1d98"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 6.49,
+  "git_commit": null,
+  "graph_context": "This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Using evidence from this study, explain a plausible mechanism by which a non-coding risk variant could influence hair-loss phenotypes. Clearly distinguish observed annotations from mechanistic hypotheses.",
+  "parsed_answer": "Based on the evidence from the GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1), a plausible mechanism by which a non-coding risk variant could influence hair-loss phenotypes involves the regulation of gene expression through epigenetic or transcriptional mechanisms. Here is a structured explanation:\n\n### Observed Annotations:\n- The study identifies several genes associated with hair-loss phenotypes, including **KANSL1**, **FAM186A**, **OPHN1**, **SPAG17**, and **CIROZ**.\n- These genes are involved in biological pathways such as:\n  - **Formation of WDR5-containing histone-modifying complexes** (KANSL1).\n  - **RHOG, RHOB, and RHOC GTPase cycles** (OPHN1).\n- The genes also interact with other proteins, as indicated by their PPI (protein-protein interaction) data, which may suggest functional relationships within biological networks.\n\n### Mechanistic Hypotheses:\nA non-coding risk variant, which may reside in regulatory regions such as enhancers, promoters, or non-coding RNA regions, could influence hair-loss phenotypes through the following plausible mechanisms:\n\n1. **Epigenetic Regulation**:\n   - The non-coding variant may alter the activity of histone-modifying complexes (e.g., those involving **KANSL1**), which are critical for chromatin remodeling and gene expression. For instance, **KANSL1** is involved in the formation of WDR5-containing histone-modifying complexes, which acetylate histones. A risk variant in this region could disrupt the recruitment or activity of these complexes, leading to altered histone acetylation patterns and, consequently, changes in gene expression that affect hair follicle development or maintenance.\n\n2. **Transcriptional Regulation**:\n   - The non-coding variant may act as an enhancer or silencer, influencing the transcription of nearby genes. For example, **FAM186A** is associated with multiple PPIs, suggesting it plays a role in complex biological processes. A regulatory variant near **FAM186A** could modulate its expression, thereby affecting pathways related to hair growth or cell cycle regulation.\n\n3. **Disruption of Protein Interactions**:\n   - While the PPI data show interactions between the genes and other proteins, a non-coding variant could indirectly affect these interactions by altering the expression levels or post-translational modifications of the interacting proteins. For instance, a variant near **OPHN1** might influence the activity of its interacting partners (e.g., **RAPGEF2**), thereby disrupting the RHOG/RHOB/RHOC GTPase cycles, which are essential for cell signaling and differentiation in hair follicles.\n\n### Conclusion:\nThe observed annotations provide a foundation for understanding the genetic architecture of hair-loss phenotypes. However, the mechanistic hypotheses are inferred based on the biological roles of the associated genes and their interactions. A non-coding risk variant could influence hair-loss phenotypes by modulating gene expression through epigenetic or transcriptional mechanisms, or by disrupting protein interactions that are critical for hair follicle biology. These hypotheses are consistent with the observed genetic associations but require further experimental validation.",
+  "question_id": "Q159",
+  "question_text": "Using evidence from this study, explain a plausible mechanism by which a non-coding risk variant could influence hair-loss phenotypes. Clearly distinguish observed annotations from mechanistic hypotheses.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 680,
+    "prompt_token_count": 633,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the evidence from the GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1), a plausible mechanism by which a non-coding risk variant could influence hair-loss phenotypes involves the regulation of gene expression through epigenetic or transcriptional mechanisms. Here is a structured explanation:\n\n### Observed Annotations:\n- The study identifies several genes associated with hair-loss phenotypes, including **KANSL1**, **FAM186A**, **OPHN1**, **SPAG17**, and **CIROZ**.\n- These genes are involved in biological pathways such as:\n  - **Formation of WDR5-containing histone-modifying complexes** (KANSL1).\n  - **RHOG, RHOB, and RHOC GTPase cycles** (OPHN1).\n- The genes also interact with other proteins, as indicated by their PPI (protein-protein interaction) data, which may suggest functional relationships within biological networks.\n\n### Mechanistic Hypotheses:\nA non-coding risk variant, which may reside in regulatory regions such as enhancers, promoters, or non-coding RNA regions, could influence hair-loss phenotypes through the following plausible mechanisms:\n\n1. **Epigenetic Regulation**:\n   - The non-coding variant may alter the activity of histone-modifying complexes (e.g., those involving **KANSL1**), which are critical for chromatin remodeling and gene expression. For instance, **KANSL1** is involved in the formation of WDR5-containing histone-modifying complexes, which acetylate histones. A risk variant in this region could disrupt the recruitment or activity of these complexes, leading to altered histone acetylation patterns and, consequently, changes in gene expression that affect hair follicle development or maintenance.\n\n2. **Transcriptional Regulation**:\n   - The non-coding variant may act as an enhancer or silencer, influencing the transcription of nearby genes. For example, **FAM186A** is associated with multiple PPIs, suggesting it plays a role in complex biological processes. A regulatory variant near **FAM186A** could modulate its expression, thereby affecting pathways related to hair growth or cell cycle regulation.\n\n3. **Disruption of Protein Interactions**:\n   - While the PPI data show interactions between the genes and other proteins, a non-coding variant could indirectly affect these interactions by altering the expression levels or post-translational modifications of the interacting proteins. For instance, a variant near **OPHN1** might influence the activity of its interacting partners (e.g., **RAPGEF2**), thereby disrupting the RHOG/RHOB/RHOC GTPase cycles, which are essential for cell signaling and differentiation in hair follicles.\n\n### Conclusion:\nThe observed annotations provide a foundation for understanding the genetic architecture of hair-loss phenotypes. However, the mechanistic hypotheses are inferred based on the biological roles of the associated genes and their interactions. A non-coding risk variant could influence hair-loss phenotypes by modulating gene expression through epigenetic or transcriptional mechanisms, or by disrupting protein interactions that are critical for hair follicle biology. These hypotheses are consistent with the observed genetic associations but require further experimental validation."
+      }
+    ],
+    "created": 1783563390,
+    "id": "cmpl-f5211d9e-b109-40e0-9e88-a489f8c9395f",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 680,
+      "prompt_tokens": 612,
+      "total_tokens": 1292
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "found_specific_entity": false,
+    "graph_context": "This knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)",
+    "graph_context_length": 1378,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 36.1154,
+    "original_retrieval_query": "Using evidence from this study, explain a plausible mechanism by which a non-coding risk variant could influence hair-loss phenotypes. Clearly distinguish observed annotations from mechanistic hypotheses.",
+    "resolved_entities": [],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 36.1154,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q159.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:16:37.371733+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nThis knowledge graph is built from a GWAS study on 'Hair/balding pattern: Pattern 1' (ID: ukb-d-2395_1).\nBased on this context, here are the most impactful genes and their associations:\n\n- Gene: KANSL1\n  - Pathways: Formation of WDR5-containing histone-modifying complexes, HATs acetylate histones\n  - Interacts With (PPI): LRCH1 (experimental: 0, database: 0), TRAF3IP1 (experimental: 342, database: 0), SP1 (experimental: 0, database: 0), EPC1 (experimental: 0, database: 720), GABRB3 (experimental: 0, database: 0)\n\n- Gene: FAM186A\n  - Interacts With (PPI): QDPR (experimental: 99, database: 98), CABP4 (experimental: 116, database: 0), RHBDL3 (experimental: 116, database: 0), LDHAL6B (experimental: 91, database: 0), MXD1 (experimental: 0, database: 0)\n\n- Gene: OPHN1\n  - Pathways: RHOG GTPase cycle, RHOB GTPase cycle, RHOC GTPase cycle\n  - Interacts With (PPI): USP11 (experimental: 0, database: 0), OPN1SW (experimental: 0, database: 0), SH3GL1 (experimental: 0, database: 0), RAPGEF2 (experimental: 97, database: 0), ERLEC1 (experimental: 0, database: 0)\n\n- Gene: SPAG17\n  - Interacts With (PPI): DDIT4 (experimental: 0, database: 0), PEG3 (experimental: 125, database: 0), ROPN1 (experimental: 0, database: 0), GAPDHS (experimental: 0, database: 0), RFFL (experimental: 0, database: 0)\n\n- Gene: CIROZ\n  - Interacts With (PPI): None (experimental: None, database: None)\n\n**Question:**\nUsing evidence from this study, explain a plausible mechanism by which a non-coding risk variant could influence hair-loss phenotypes. Clearly distinguish observed annotations from mechanistic hypotheses.",
+  "vector_context": ""
+}

@@ -1,0 +1,142 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q030.json",
+      "question_id": "Q030",
+      "sha256": "d24f671882dc21c137409ec0fdf5a1203288d48921e12572e5f1a61c98289b92"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q030.json",
+      "question_id": "Q030",
+      "sha256": "c65685cae3d4b39f1610855e587a30ec635fb19cfb4eb2afac3b4a32f3372e88"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.2258,
+  "git_commit": null,
+  "graph_context": "Entity: rs929626 (Type: Variant)\n  - Implicated Gene: EBF1\n  - Gene Pathways: Transcriptional regulation of white adipocyte differentiation, Expression and translocation of olfactory receptors\n  - Targeted by Drugs: TRAIL, SC-67655\n  - GO Functions/Processes: positive regulation of transcription by RNA polymerase II, zinc ion binding, chromatin, protein binding, metal ion binding\n  - Interacts With (PPI): ANXA2R (experimental: 0, database: 0), TBX21 (experimental: 0, database: 0), CSF3 (experimental: 0, database: 0), ASCL1 (experimental: 0, database: 0), ZNF467 (experimental: 71, database: 0)\n  - Open Targets Disease Associations: diffuse large B-cell lymphoma (score: 0.514), Abnormality of the skeletal system (score: 0.505), hypertensive disorder (score: 0.494), androgenetic alopecia (score: 0.493), neurodegenerative disease (score: 0.493)\n  - In Regulatory Element: EH38D3783439\n    - Label: dELS",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which gene or genes are annotated as associated with variant rs929626 in this study?",
+  "parsed_answer": "The gene annotated as associated with variant rs929626 in this study is EBF1.",
+  "question_id": "Q030",
+  "question_text": "Which gene or genes are annotated as associated with variant rs929626 in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 22,
+    "prompt_token_count": 407,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The gene annotated as associated with variant rs929626 in this study is EBF1."
+      }
+    ],
+    "created": 1783558647,
+    "id": "cmpl-65c02c77-cfa9-4d96-8fe5-acebfbd96744",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 22,
+      "prompt_tokens": 386,
+      "total_tokens": 408
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: rs929626 (Type: Variant)\n  - Implicated Gene: EBF1\n  - Gene Pathways: Transcriptional regulation of white adipocyte differentiation, Expression and translocation of olfactory receptors\n  - Targeted by Drugs: TRAIL, SC-67655\n  - GO Functions/Processes: positive regulation of transcription by RNA polymerase II, zinc ion binding, chromatin, protein binding, metal ion binding\n  - Interacts With (PPI): ANXA2R (experimental: 0, database: 0), TBX21 (experimental: 0, database: 0), CSF3 (experimental: 0, database: 0), ASCL1 (experimental: 0, database: 0), ZNF467 (experimental: 71, database: 0)\n  - Open Targets Disease Associations: diffuse large B-cell lymphoma (score: 0.514), Abnormality of the skeletal system (score: 0.505), hypertensive disorder (score: 0.494), androgenetic alopecia (score: 0.493), neurodegenerative disease (score: 0.493)\n  - In Regulatory Element: EH38D3783439\n    - Label: dELS",
+    "found_specific_entity": true,
+    "graph_context": "Entity: rs929626 (Type: Variant)\n  - Implicated Gene: EBF1\n  - Gene Pathways: Transcriptional regulation of white adipocyte differentiation, Expression and translocation of olfactory receptors\n  - Targeted by Drugs: TRAIL, SC-67655\n  - GO Functions/Processes: positive regulation of transcription by RNA polymerase II, zinc ion binding, chromatin, protein binding, metal ion binding\n  - Interacts With (PPI): ANXA2R (experimental: 0, database: 0), TBX21 (experimental: 0, database: 0), CSF3 (experimental: 0, database: 0), ASCL1 (experimental: 0, database: 0), ZNF467 (experimental: 71, database: 0)\n  - Open Targets Disease Associations: diffuse large B-cell lymphoma (score: 0.514), Abnormality of the skeletal system (score: 0.505), hypertensive disorder (score: 0.494), androgenetic alopecia (score: 0.493), neurodegenerative disease (score: 0.493)\n  - In Regulatory Element: EH38D3783439\n    - Label: dELS",
+    "graph_context_length": 910,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 33.6351,
+    "original_retrieval_query": "Which gene or genes are annotated as associated with variant rs929626 in this study?",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "rs929626"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 33.6351,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q030.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T00:57:27.903782+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: rs929626 (Type: Variant)\n  - Implicated Gene: EBF1\n  - Gene Pathways: Transcriptional regulation of white adipocyte differentiation, Expression and translocation of olfactory receptors\n  - Targeted by Drugs: TRAIL, SC-67655\n  - GO Functions/Processes: positive regulation of transcription by RNA polymerase II, zinc ion binding, chromatin, protein binding, metal ion binding\n  - Interacts With (PPI): ANXA2R (experimental: 0, database: 0), TBX21 (experimental: 0, database: 0), CSF3 (experimental: 0, database: 0), ASCL1 (experimental: 0, database: 0), ZNF467 (experimental: 71, database: 0)\n  - Open Targets Disease Associations: diffuse large B-cell lymphoma (score: 0.514), Abnormality of the skeletal system (score: 0.505), hypertensive disorder (score: 0.494), androgenetic alopecia (score: 0.493), neurodegenerative disease (score: 0.493)\n  - In Regulatory Element: EH38D3783439\n    - Label: dELS\n\n**Question:**\nWhich gene or genes are annotated as associated with variant rs929626 in this study?",
+  "vector_context": ""
+}

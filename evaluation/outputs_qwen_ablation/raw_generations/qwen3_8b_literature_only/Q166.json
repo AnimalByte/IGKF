@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "39789996",
+    "42378331",
+    "41056281",
+    "41218118",
+    "41034211",
+    "42089627",
+    "39920102",
+    "42268900",
+    "39529066",
+    "41959346",
+    "41797924",
+    "41258626",
+    "35908957",
+    "41588444",
+    "39373847"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q166.json",
+      "question_id": "Q166",
+      "sha256": "1b0b0a2e0f924aa89f3f4a5d4e8f36b3edec100ad242706744d9336e117a14e2"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q166.json",
+      "question_id": "Q166",
+      "sha256": "9d6a597b5d413a378fe0da924f51d71ab08ee990dcc4a87e77d5d24d4b3209c4"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Describe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.6333,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Describe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence.",
+  "parsed_answer": "The provided literature context does not support any direct relationship between Wnt signaling, WNT10A, and LHX2. The abstracts discuss the roles of Wnt signaling, particularly focusing on WNT7B and WNT10A in pancreatic ductal adenocarcinoma (PDAC), as well as the structural and functional mechanisms involving LGR4, RSPO2, and ZNRF3 in regulating Wnt/beta-catenin signaling. However, there is no mention of LHX2 in any of the provided abstracts. Therefore, based on the given information, no integrated evidence supports a relationship between Wnt signaling, WNT10A, and LHX2.",
+  "question_id": "Q166",
+  "question_text": "Describe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 144,
+    "prompt_token_count": 988,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not support any direct relationship between Wnt signaling, WNT10A, and LHX2. The abstracts discuss the roles of Wnt signaling, particularly focusing on WNT7B and WNT10A in pancreatic ductal adenocarcinoma (PDAC), as well as the structural and functional mechanisms involving LGR4, RSPO2, and ZNRF3 in regulating Wnt/beta-catenin signaling. However, there is no mention of LHX2 in any of the provided abstracts. Therefore, based on the given information, no integrated evidence supports a relationship between Wnt signaling, WNT10A, and LHX2."
+      }
+    ],
+    "created": 1783564589,
+    "id": "cmpl-71db0b11-85ea-447a-bc48-2a6a034d8c09",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 144,
+      "prompt_tokens": 967,
+      "total_tokens": 1111
+    }
+  },
+  "reranker_scores": [
+    2.852569580078125,
+    1.2595226764678955,
+    1.153662919998169
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      40.48271179199219,
+      42.18339538574219,
+      42.4044303894043,
+      42.4694709777832,
+      42.753578186035156,
+      42.953861236572266,
+      43.34143829345703,
+      43.37887191772461,
+      43.409942626953125,
+      43.576995849609375,
+      43.614646911621094,
+      43.756568908691406,
+      44.29707336425781,
+      44.535057067871094,
+      44.62409591674805
+    ],
+    "candidate_pmids": [
+      "39789996",
+      "42378331",
+      "41056281",
+      "41218118",
+      "41034211",
+      "42089627",
+      "39920102",
+      "42268900",
+      "39529066",
+      "41959346",
+      "41797924",
+      "41258626",
+      "35908957",
+      "41588444",
+      "39373847"
+    ],
+    "expanded_retrieval_query": "Describe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41797924, relevance: 2.8526) ---\nHyperactivation of WNT signaling is a hallmark of cancer, often driven by increased expression of WNT ligands. In pancreatic ductal adenocarcinoma (PDAC), elevated WNT7B and WNT10A correlate with aggressive, basal-like disease and poor patient survival, but the mechanisms underlying this association remain unclear. Using patient-derived organoids, we show that WNT7B promotes proliferation and maintains basal-like transcriptional states by preventing differentiation toward a more classical PDAC signature. Clonal WNT7B reporter organoids reveal that WNT-high cells are heterogeneously distributed and stably coexist with WNT-low/negative lineages. Hybrid co-cultures demonstrate that WNT7B-expressing cells support the survival and growth of neighboring WNT-negative cells via short-range, contact-dependent signaling. These findings highlight the functional importance of heterogeneous WNT7B/10A expression in driving PDAC aggressiveness and suggest that targeted WNT inhibition may shift tumors toward a more differentiated, less aggressive state, offering potential therapeutic benefit.\n\n--- Abstract 2 (PMID: 41034211, relevance: 1.2595) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 3 (PMID: 42378331, relevance: 1.1537) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Describe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence.",
+    "rerank_seconds": 0.3356,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3503,
+    "score_max": 2.852569580078125,
+    "score_mean": 1.7552517255147297,
+    "scores": [
+      2.852569580078125,
+      1.2595226764678955,
+      1.153662919998169
+    ],
+    "selected_abstracts": [
+      "Hyperactivation of WNT signaling is a hallmark of cancer, often driven by increased expression of WNT ligands. In pancreatic ductal adenocarcinoma (PDAC), elevated WNT7B and WNT10A correlate with aggressive, basal-like disease and poor patient survival, but the mechanisms underlying this association remain unclear. Using patient-derived organoids, we show that WNT7B promotes proliferation and maintains basal-like transcriptional states by preventing differentiation toward a more classical PDAC signature. Clonal WNT7B reporter organoids reveal that WNT-high cells are heterogeneously distributed and stably coexist with WNT-low/negative lineages. Hybrid co-cultures demonstrate that WNT7B-expressing cells support the survival and growth of neighboring WNT-negative cells via short-range, contact-dependent signaling. These findings highlight the functional importance of heterogeneous WNT7B/10A expression in driving PDAC aggressiveness and suggest that targeted WNT inhibition may shift tumors toward a more differentiated, less aggressive state, offering potential therapeutic benefit.",
+      "Leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.",
+      "The WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated."
+    ],
+    "selected_pmids": [
+      "41797924",
+      "41034211",
+      "42378331"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0145
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q166.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41797924",
+    "41034211",
+    "42378331"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:36:31.351601+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41797924, relevance: 2.8526) ---\nHyperactivation of WNT signaling is a hallmark of cancer, often driven by increased expression of WNT ligands. In pancreatic ductal adenocarcinoma (PDAC), elevated WNT7B and WNT10A correlate with aggressive, basal-like disease and poor patient survival, but the mechanisms underlying this association remain unclear. Using patient-derived organoids, we show that WNT7B promotes proliferation and maintains basal-like transcriptional states by preventing differentiation toward a more classical PDAC signature. Clonal WNT7B reporter organoids reveal that WNT-high cells are heterogeneously distributed and stably coexist with WNT-low/negative lineages. Hybrid co-cultures demonstrate that WNT7B-expressing cells support the survival and growth of neighboring WNT-negative cells via short-range, contact-dependent signaling. These findings highlight the functional importance of heterogeneous WNT7B/10A expression in driving PDAC aggressiveness and suggest that targeted WNT inhibition may shift tumors toward a more differentiated, less aggressive state, offering potential therapeutic benefit.\n\n--- Abstract 2 (PMID: 41034211, relevance: 1.2595) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 3 (PMID: 42378331, relevance: 1.1537) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n\n\n**Question:**\nDescribe the supported relationships between Wnt signaling, WNT10A, and LHX2 in the integrated evidence.",
+  "vector_context": "--- Abstract 1 (PMID: 41797924, relevance: 2.8526) ---\nHyperactivation of WNT signaling is a hallmark of cancer, often driven by increased expression of WNT ligands. In pancreatic ductal adenocarcinoma (PDAC), elevated WNT7B and WNT10A correlate with aggressive, basal-like disease and poor patient survival, but the mechanisms underlying this association remain unclear. Using patient-derived organoids, we show that WNT7B promotes proliferation and maintains basal-like transcriptional states by preventing differentiation toward a more classical PDAC signature. Clonal WNT7B reporter organoids reveal that WNT-high cells are heterogeneously distributed and stably coexist with WNT-low/negative lineages. Hybrid co-cultures demonstrate that WNT7B-expressing cells support the survival and growth of neighboring WNT-negative cells via short-range, contact-dependent signaling. These findings highlight the functional importance of heterogeneous WNT7B/10A expression in driving PDAC aggressiveness and suggest that targeted WNT inhibition may shift tumors toward a more differentiated, less aggressive state, offering potential therapeutic benefit.\n\n--- Abstract 2 (PMID: 41034211, relevance: 1.2595) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 3 (PMID: 42378331, relevance: 1.1537) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n"
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q049",
+      "randomization_seed": "20260706:Q049:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q049",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q049",
+      "error": null,
+      "id": "batch_req_6a4f85cfa7c081908790346c2929c2de",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594520,
+          "created_at": 1783594498,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_048e997a79db702c006a4f7e01fd108195936f00293b5d96b0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q049"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_048e997a79db702c006a4f7e03cb3c8195af92246751732de0",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the requested p-value by stating it is not available in the provided context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the supplied evidence does not mention rs7313338 or a specific p-value for its association with androgenetic alopecia.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the key necessary conclusion: the p-value cannot be determined from the provided evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing an unsupported p-value.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the question only partially by noting lack of graph data, but does not consider or summarize the vector evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The statement about the graph context is accurate, but it is incomplete because relevant vector context about androgenetic alopecia is present though it lacks the SNP-specific p-value.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits discussion of the provided vector context and does not explicitly state whether the p-value can be determined from all supplied evidence.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Does not invent a p-value and appropriately signals insufficient graph evidence, but the abstention is narrower than warranted.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_048e997a79db702c006a4f7e0c8a1c8195af46fd9cc141ca1e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3155,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 512,
+            "output_tokens_details": {
+              "reasoning_tokens": 200
+            },
+            "total_tokens": 3667
+          },
+          "user": null
+        },
+        "request_id": "7ef80e5c-9a98-4ef1-8286-645b559de068",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the requested p-value by stating it is not available in the provided context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects that the supplied evidence does not mention rs7313338 or a specific p-value for its association with androgenetic alopecia.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the key necessary conclusion: the p-value cannot be determined from the provided evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inventing an unsupported p-value.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q049",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q049.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.731372+00:00"
+}

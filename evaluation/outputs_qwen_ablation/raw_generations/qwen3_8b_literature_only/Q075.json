@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41935184",
+    "41416997",
+    "36408932",
+    "42091420",
+    "42100975",
+    "42250622",
+    "33846573",
+    "41962619",
+    "35085309",
+    "40222483",
+    "40368082",
+    "33133644",
+    "35314791",
+    "30610764",
+    "41890122"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q075.json",
+      "question_id": "Q075",
+      "sha256": "71449f651f2cb5b15bd6d8118e41e02d87b53111fb579709b00fe37ffc81f1e0"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q075.json",
+      "question_id": "Q075",
+      "sha256": "3bb754e10ec4faf48403d2297065c6c3b4f42236c224115bf27808c6135f1435"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What is known about the function of HDAC9 in hair-follicle biology and cycling?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.5992,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What is known about the function of HDAC9 in hair-follicle biology and cycling?",
+  "parsed_answer": "The provided literature context does not contain any information about the function of HDAC9 in hair-follicle biology and cycling.",
+  "question_id": "Q075",
+  "question_text": "What is known about the function of HDAC9 in hair-follicle biology and cycling?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 26,
+    "prompt_token_count": 1178,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided literature context does not contain any information about the function of HDAC9 in hair-follicle biology and cycling."
+      }
+    ],
+    "created": 1783564186,
+    "id": "cmpl-a7174c41-8a4d-4d80-81d1-68cc81ef43a1",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 26,
+      "prompt_tokens": 1157,
+      "total_tokens": 1183
+    }
+  },
+  "reranker_scores": [
+    -0.5537360310554504,
+    -0.9206598997116089,
+    -1.774890661239624
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      29.840389251708984,
+      31.324182510375977,
+      31.91571807861328,
+      34.13252639770508,
+      34.39738464355469,
+      35.65479278564453,
+      36.39890670776367,
+      36.680843353271484,
+      37.043731689453125,
+      37.39288330078125,
+      37.65531921386719,
+      38.198272705078125,
+      38.839630126953125,
+      38.906856536865234,
+      38.955230712890625
+    ],
+    "candidate_pmids": [
+      "41935184",
+      "41416997",
+      "36408932",
+      "42091420",
+      "42100975",
+      "42250622",
+      "33846573",
+      "41962619",
+      "35085309",
+      "40222483",
+      "40368082",
+      "33133644",
+      "35314791",
+      "30610764",
+      "41890122"
+    ],
+    "expanded_retrieval_query": "What is known about the function of HDAC9 in hair-follicle biology and cycling?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42100975, relevance: -0.5537) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41935184, relevance: -0.9207) ---\nEpigenetic regulation is a key determinant of the aging process, and its dysregulation contributes to cognitive aging and increased vulnerability to Alzheimer's disease (AD). As major regulators of epigenetic processes, histone deacetylases (HDACs) have emerged as potential therapeutic targets for cognitive enhancement in neurodegenerative diseases. However, the distinct roles of individual HDAC isoforms remain to be defined. Here, we report that HDAC9 is specifically expressed in neurons of human and mouse brains, and its expression declines with age. HDAC9 deficiency impairs cognitive function and synaptic plasticity in young mice. Selective deletion of HDAC9 in hippocampal CA1 neurons also induces cognitive impairment. In contrast, overexpression of HDAC9 in forebrain glutamatergic neurons preserves cognitive function in aged mice. Moreover, HDAC9 is also downregulated in the brain of AD mouse models, whereas neuronal overexpression of HDAC9 alleviates AD-related cognitive and synaptic deficits and reduces Abeta deposition. Together, these findings suggest neuronal HDAC9 is necessary and sufficient for maintaining cognitive and synaptic functions in the context of aging and AD.\n\n--- Abstract 3 (PMID: 42091420, relevance: -1.7749) ---\nAIM: To investigate the mechanisms of histone deacetylase (HDAC) 10 inhibitors (HDAC10Is) action in endometriosis and the target molecules of HDAC10Is. METHODS: We assessed the effects of HDAC10Is, tucidinostat and TH34, on the proliferation and the cell cycle in human endometriotic cyst stromal cells (ECSCs). Target genes of HDAC10 were identified by RNA sequencing. We assessed the expression of dachshund homolog 1 (DACH1) and interferon regulatory factor 6 (IRF6) mRNA in ECSCs and normal endometrial stromal cells. The functions of DACH1 and IRF6 were confirmed by compulsory expression of these genes in ECSCs using lentivirus. Effects of tucidinostat and TH34 on the promoter acetylation of the DACH1 and IRF6 genes in ECSCs were assessed by chromatin immunoprecipitation assays. RESULTS: Both HDAC10Is had an inhibitory effect on the proliferation of ECSCs and caused them to enter cell cycle arrest at G0/G1. DACH1 and IRF6 were identified as the target genes of HDAC10. HDAC10Is caused acetylated histones to accumulate in the promoters of the genes encoding DACH1 and IRF6 in ECSCs. CONCLUSIONS: These findings indicate that HDAC10 is a factor which contributes to endometriosis pathogenesis by inhibiting DACH1 and IRF6 expression, and that HDAC10Is are therefore promising agents for endometriosis treatment.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What is known about the function of HDAC9 in hair-follicle biology and cycling?",
+    "rerank_seconds": 0.3413,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3567,
+    "score_max": -0.5537360310554504,
+    "score_mean": -1.0830955306688945,
+    "scores": [
+      -0.5537360310554504,
+      -0.9206598997116089,
+      -1.774890661239624
+    ],
+    "selected_abstracts": [
+      "Aberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.",
+      "Epigenetic regulation is a key determinant of the aging process, and its dysregulation contributes to cognitive aging and increased vulnerability to Alzheimer's disease (AD). As major regulators of epigenetic processes, histone deacetylases (HDACs) have emerged as potential therapeutic targets for cognitive enhancement in neurodegenerative diseases. However, the distinct roles of individual HDAC isoforms remain to be defined. Here, we report that HDAC9 is specifically expressed in neurons of human and mouse brains, and its expression declines with age. HDAC9 deficiency impairs cognitive function and synaptic plasticity in young mice. Selective deletion of HDAC9 in hippocampal CA1 neurons also induces cognitive impairment. In contrast, overexpression of HDAC9 in forebrain glutamatergic neurons preserves cognitive function in aged mice. Moreover, HDAC9 is also downregulated in the brain of AD mouse models, whereas neuronal overexpression of HDAC9 alleviates AD-related cognitive and synaptic deficits and reduces Abeta deposition. Together, these findings suggest neuronal HDAC9 is necessary and sufficient for maintaining cognitive and synaptic functions in the context of aging and AD.",
+      "AIM: To investigate the mechanisms of histone deacetylase (HDAC) 10 inhibitors (HDAC10Is) action in endometriosis and the target molecules of HDAC10Is. METHODS: We assessed the effects of HDAC10Is, tucidinostat and TH34, on the proliferation and the cell cycle in human endometriotic cyst stromal cells (ECSCs). Target genes of HDAC10 were identified by RNA sequencing. We assessed the expression of dachshund homolog 1 (DACH1) and interferon regulatory factor 6 (IRF6) mRNA in ECSCs and normal endometrial stromal cells. The functions of DACH1 and IRF6 were confirmed by compulsory expression of these genes in ECSCs using lentivirus. Effects of tucidinostat and TH34 on the promoter acetylation of the DACH1 and IRF6 genes in ECSCs were assessed by chromatin immunoprecipitation assays. RESULTS: Both HDAC10Is had an inhibitory effect on the proliferation of ECSCs and caused them to enter cell cycle arrest at G0/G1. DACH1 and IRF6 were identified as the target genes of HDAC10. HDAC10Is caused acetylated histones to accumulate in the promoters of the genes encoding DACH1 and IRF6 in ECSCs. CONCLUSIONS: These findings indicate that HDAC10 is a factor which contributes to endometriosis pathogenesis by inhibiting DACH1 and IRF6 expression, and that HDAC10Is are therefore promising agents for endometriosis treatment."
+    ],
+    "selected_pmids": [
+      "42100975",
+      "41935184",
+      "42091420"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0152
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q075.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42100975",
+    "41935184",
+    "42091420"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:29:47.120074+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42100975, relevance: -0.5537) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41935184, relevance: -0.9207) ---\nEpigenetic regulation is a key determinant of the aging process, and its dysregulation contributes to cognitive aging and increased vulnerability to Alzheimer's disease (AD). As major regulators of epigenetic processes, histone deacetylases (HDACs) have emerged as potential therapeutic targets for cognitive enhancement in neurodegenerative diseases. However, the distinct roles of individual HDAC isoforms remain to be defined. Here, we report that HDAC9 is specifically expressed in neurons of human and mouse brains, and its expression declines with age. HDAC9 deficiency impairs cognitive function and synaptic plasticity in young mice. Selective deletion of HDAC9 in hippocampal CA1 neurons also induces cognitive impairment. In contrast, overexpression of HDAC9 in forebrain glutamatergic neurons preserves cognitive function in aged mice. Moreover, HDAC9 is also downregulated in the brain of AD mouse models, whereas neuronal overexpression of HDAC9 alleviates AD-related cognitive and synaptic deficits and reduces Abeta deposition. Together, these findings suggest neuronal HDAC9 is necessary and sufficient for maintaining cognitive and synaptic functions in the context of aging and AD.\n\n--- Abstract 3 (PMID: 42091420, relevance: -1.7749) ---\nAIM: To investigate the mechanisms of histone deacetylase (HDAC) 10 inhibitors (HDAC10Is) action in endometriosis and the target molecules of HDAC10Is. METHODS: We assessed the effects of HDAC10Is, tucidinostat and TH34, on the proliferation and the cell cycle in human endometriotic cyst stromal cells (ECSCs). Target genes of HDAC10 were identified by RNA sequencing. We assessed the expression of dachshund homolog 1 (DACH1) and interferon regulatory factor 6 (IRF6) mRNA in ECSCs and normal endometrial stromal cells. The functions of DACH1 and IRF6 were confirmed by compulsory expression of these genes in ECSCs using lentivirus. Effects of tucidinostat and TH34 on the promoter acetylation of the DACH1 and IRF6 genes in ECSCs were assessed by chromatin immunoprecipitation assays. RESULTS: Both HDAC10Is had an inhibitory effect on the proliferation of ECSCs and caused them to enter cell cycle arrest at G0/G1. DACH1 and IRF6 were identified as the target genes of HDAC10. HDAC10Is caused acetylated histones to accumulate in the promoters of the genes encoding DACH1 and IRF6 in ECSCs. CONCLUSIONS: These findings indicate that HDAC10 is a factor which contributes to endometriosis pathogenesis by inhibiting DACH1 and IRF6 expression, and that HDAC10Is are therefore promising agents for endometriosis treatment.\n\n\n\n**Question:**\nWhat is known about the function of HDAC9 in hair-follicle biology and cycling?",
+  "vector_context": "--- Abstract 1 (PMID: 42100975, relevance: -0.5537) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41935184, relevance: -0.9207) ---\nEpigenetic regulation is a key determinant of the aging process, and its dysregulation contributes to cognitive aging and increased vulnerability to Alzheimer's disease (AD). As major regulators of epigenetic processes, histone deacetylases (HDACs) have emerged as potential therapeutic targets for cognitive enhancement in neurodegenerative diseases. However, the distinct roles of individual HDAC isoforms remain to be defined. Here, we report that HDAC9 is specifically expressed in neurons of human and mouse brains, and its expression declines with age. HDAC9 deficiency impairs cognitive function and synaptic plasticity in young mice. Selective deletion of HDAC9 in hippocampal CA1 neurons also induces cognitive impairment. In contrast, overexpression of HDAC9 in forebrain glutamatergic neurons preserves cognitive function in aged mice. Moreover, HDAC9 is also downregulated in the brain of AD mouse models, whereas neuronal overexpression of HDAC9 alleviates AD-related cognitive and synaptic deficits and reduces Abeta deposition. Together, these findings suggest neuronal HDAC9 is necessary and sufficient for maintaining cognitive and synaptic functions in the context of aging and AD.\n\n--- Abstract 3 (PMID: 42091420, relevance: -1.7749) ---\nAIM: To investigate the mechanisms of histone deacetylase (HDAC) 10 inhibitors (HDAC10Is) action in endometriosis and the target molecules of HDAC10Is. METHODS: We assessed the effects of HDAC10Is, tucidinostat and TH34, on the proliferation and the cell cycle in human endometriotic cyst stromal cells (ECSCs). Target genes of HDAC10 were identified by RNA sequencing. We assessed the expression of dachshund homolog 1 (DACH1) and interferon regulatory factor 6 (IRF6) mRNA in ECSCs and normal endometrial stromal cells. The functions of DACH1 and IRF6 were confirmed by compulsory expression of these genes in ECSCs using lentivirus. Effects of tucidinostat and TH34 on the promoter acetylation of the DACH1 and IRF6 genes in ECSCs were assessed by chromatin immunoprecipitation assays. RESULTS: Both HDAC10Is had an inhibitory effect on the proliferation of ECSCs and caused them to enter cell cycle arrest at G0/G1. DACH1 and IRF6 were identified as the target genes of HDAC10. HDAC10Is caused acetylated histones to accumulate in the promoters of the genes encoding DACH1 and IRF6 in ECSCs. CONCLUSIONS: These findings indicate that HDAC10 is a factor which contributes to endometriosis pathogenesis by inhibiting DACH1 and IRF6 expression, and that HDAC10Is are therefore promising agents for endometriosis treatment.\n\n"
+}

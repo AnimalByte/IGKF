@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "therapeutic_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q138",
+      "randomization_seed": "20260706:Q138:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q138",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q138",
+      "error": null,
+      "id": "batch_req_6a4f85d5480c81909fd5944a65e8fd51",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579050,
+          "created_at": 1783579023,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_041c6dbbe0812c2c006a4f418f189c8194ae838de356657c3e",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q138"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_041c6dbbe0812c2c006a4f41a113c88194b5a42b21ba133dbd",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the evidence supports a Minoxidil-FGF5 expression-regulation link.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided evidence does not mention Minoxidil and provides no direct or indirect support for regulation of FGF5 by Minoxidil.\"},\"completeness\":{\"score\":5,\"rationale\":\"Clearly distinguishes direct evidence, indirect evidence, and absent evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming a link when evidence is absent.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the integrated evidence does not support the proposed link.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly notes the absence of Minoxidil-related evidence linking it to FGF5 regulation in the supplied context.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers absence of direct evidence and overall lack of support, but less explicitly separates indirect evidence from absent evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not overstate the evidence and appropriately concludes evidence is absent.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_041c6dbbe0812c2c006a4f41a873148194b0f25fa7ce77d7cd",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1966,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 608,
+            "output_tokens_details": {
+              "reasoning_tokens": 327
+            },
+            "total_tokens": 2574
+          },
+          "user": null
+        },
+        "request_id": "a00c5922-4194-4af7-a09a-0be0857eeb34",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that the integrated evidence does not support the proposed link.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly notes the absence of Minoxidil-related evidence linking it to FGF5 regulation in the supplied context.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers absence of direct evidence and overall lack of support, but less explicitly separates indirect evidence from absent evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not overstate the evidence and appropriately concludes evidence is absent.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q138",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q138.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.765744+00:00"
+}

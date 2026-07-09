@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q171",
+      "randomization_seed": "20260706:Q171:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q171",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q171",
+      "error": null,
+      "id": "batch_req_6a4f85d7648c8190a4427b83c313341e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579000,
+          "created_at": 1783578969,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0102e2d06ce2981d006a4f41596bbc81978f25f689f5b4862d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q171"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0102e2d06ce2981d006a4f416bddf88197ae4ec4c402b4f529",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the dataset supports a shared genetic basis and explicitly frames the comparison as unsupported.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly states that the dataset provides no direct evidence, but the external-knowledge claim about shared androgen receptor or hormonal pathways with telogen effluvium is not well supported and may be misleading.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers direct study evidence, external knowledge, and conclusion, though the external-knowledge discussion introduces questionable content.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Appropriately concludes the comparison is unsupported, but weakens abstention by speculating about possible shared pathways.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly answers that the dataset does not support the shared genetic-basis comparison, but does not fully address the requested external-knowledge distinction.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Scientifically appropriate in stating that absence of relevant dataset evidence means the comparison is unsupported.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes the key unsupported conclusion and lack of direct evidence, but omits discussion of external knowledge as requested.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly abstains from making unsupported biomedical claims and clearly states the evidence is insufficient.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0102e2d06ce2981d006a4f4173a948819793129af225c29384",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 774,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 833,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 1607
+          },
+          "user": null
+        },
+        "request_id": "ce1ddd1b-63c7-496b-85a8-5e813a19c3df",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether the dataset supports a shared genetic basis and explicitly frames the comparison as unsupported.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly states that the dataset provides no direct evidence, but the external-knowledge claim about shared androgen receptor or hormonal pathways with telogen effluvium is not well supported and may be misleading.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Covers direct study evidence, external knowledge, and conclusion, though the external-knowledge discussion introduces questionable content.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately concludes the comparison is unsupported, but weakens abstention by speculating about possible shared pathways.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q171",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.778615+00:00"
+}

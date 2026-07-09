@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "39539976",
+    "35719909",
+    "38512300",
+    "36281152",
+    "41296172",
+    "34552771",
+    "42066828",
+    "41999395",
+    "41792493",
+    "34984527",
+    "40868166",
+    "39267058",
+    "37114256",
+    "42029952",
+    "41241001"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q091.json",
+      "question_id": "Q091",
+      "sha256": "946b77172a23a0a6826d4aa02ea95d71d70e61ead6b5d1bcab46e865ba2b34e6"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q091.json",
+      "question_id": "Q091",
+      "sha256": "5320ac85dc3b3bc8a2de20448167c62f8fd6c6f4b1cd04d92fe96bef0554ed1f"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Summarize the evidence linking FOXA2 to androgenetic alopecia.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8541,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the evidence linking FOXA2 to androgenetic alopecia.",
+  "parsed_answer": "The literature context provided does not mention FOXA2 or androgenetic alopecia. Therefore, there is no evidence linking FOXA2 to androgenetic alopecia based on the supplied information.",
+  "question_id": "Q091",
+  "question_text": "Summarize the evidence linking FOXA2 to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 39,
+    "prompt_token_count": 1525,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The literature context provided does not mention FOXA2 or androgenetic alopecia. Therefore, there is no evidence linking FOXA2 to androgenetic alopecia based on the supplied information."
+      }
+    ],
+    "created": 1783564250,
+    "id": "cmpl-5a359f7b-226c-4f30-aba4-91b97cbc2b6d",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 39,
+      "prompt_tokens": 1504,
+      "total_tokens": 1543
+    }
+  },
+  "reranker_scores": [
+    -1.9295003414154053,
+    -2.88228178024292,
+    -3.0615038871765137
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      37.22524642944336,
+      38.090206146240234,
+      40.26148223876953,
+      40.45655059814453,
+      42.04100036621094,
+      42.18684387207031,
+      42.18840789794922,
+      42.90729904174805,
+      42.972232818603516,
+      42.99634552001953,
+      43.619224548339844,
+      44.07623291015625,
+      44.188777923583984,
+      44.23174285888672,
+      44.83143997192383
+    ],
+    "candidate_pmids": [
+      "39539976",
+      "35719909",
+      "38512300",
+      "36281152",
+      "41296172",
+      "34552771",
+      "42066828",
+      "41999395",
+      "41792493",
+      "34984527",
+      "40868166",
+      "39267058",
+      "37114256",
+      "42029952",
+      "41241001"
+    ],
+    "expanded_retrieval_query": "Summarize the evidence linking FOXA2 to androgenetic alopecia.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42066828, relevance: -1.9295) ---\nAlthough FOXP4-AS1 exerts oncogenic effects in multiple cancers, this study reveals that it suppresses PTC progression. A series of experiments demonstrate that overexpression of FOXP4-AS1 inhibits PTC cell proliferation, migration, and invasion, whereas its knockdown promotes these malignant phenotypes and enhances tumorigenesis in nude mice. FOXP4-AS1 is distributed in both the nucleus and cytoplasm, enriched in the aerobic glycolysis pathway, and binds to Lactate Dehydrogenase A (LDHA)-a key enzyme in aerobic glycolysis with known links to tumor metabolic microenvironment. LDHA was primarily localized in the cytoplasm, and its downregulation suppressed the malignant behavior of PTC cells. Further mechanistic investigations reveal that knockdown of FOXP4-AS1 increases LDHA expression, and additional inhibition of LDHA partially reverses the pro-tumor effects induced by FOXP4-AS1 silencing. In conclusion, this study identifies FOXP4-AS1 as a tumor suppressor in PTC and elucidates the regulatory mechanism of the FOXP4-AS1/LDHA axis by which FOXP4-AS1 represses LDHA expression to attenuate aerobic glycolysis, providing novel insights into the mechanisms of PTC progression and potential therapeutic targets and diagnostic biomarkers relevant to metabolic modulation in PTC.\n\n--- Abstract 2 (PMID: 41792493, relevance: -2.8823) ---\nGliomas are the most lethal primary brain tumors with poor survival and high recurrence. The role of long non-coding RNA FOXP4 antisense RNA 1 (lncRNA FOXP4-AS1) in glioma progression remains largely unknown. This study aimed to evaluate the clinical significance of FOXP4-AS1 in glioma and to elucidate its functional role and molecular mechanisms. FOXP4-AS1 expression was measured in 113 glioma tissues by reverse transcription-quantitative PCR (RT-qPCR) and correlated with clinicopathological features. In vitro functional assays, including Cell Counting Kit-8 (CCK-8), Transwell, apoptosis detection, and glycolysis evaluation, were performed following FOXP4-AS1 knockdown. Bioinformatics predictions and dual-luciferase reporter assays were used to validate the interaction among FOXP4-AS1, microRNA\u2011136\u20115p (miR\u2011136\u20115p), and ADCYAP receptor type I (ADCYAP1R1). FOXP4-AS1 was upregulated in glioma and correlated with higher World Health Organization (WHO) grade (III-IV), larger tumor size, and lower Karnofsky Performance Status (KPS) score, indicating aggressive progression and poor prognosis. Knockdown of FOXP4-AS1 inhibited glioma cell proliferation, migration, invasion, and glycolysis, while promoting apoptosis. Mechanistically, FOXP4-AS1 acted as a molecular sponge for miR\u2011136\u20115p, thereby upregulating ADCYAP1R1 expression. Rescue experiments demonstrated that FOXP4-AS1 promotes glioma progression by sponging miR\u2011136\u20115p and that miR\u2011136\u20115p suppresses tumor growth by targeting ADCYAP1R1, as shown by reversed phenotypes upon miR\u2011136\u20115p inhibition or ADCYAP1R1 overexpression. These findings demonstrate that FOXP4-AS1 promotes glioma progression via the miR\u2011136\u20115p/ADCYAP1R1 axis, highlighting its potential as a prognostic biomarker and therapeutic target in glioma.\n\n--- Abstract 3 (PMID: 38512300, relevance: -3.0615) ---\nBackground: Long noncoding RNAs (lncRNAs), as emerging regulators of a wide variety of biological processes via diverse mechanisms, have been demonstrated to be of increasing importance in biology. Genome-wide association studies of tumor samples have identified several lncRNAs as either oncogenes or tumor suppressors in various types of cancers. In recent years, the importance of lncRNAs, especially in endometrioid cancer (EEC), has become increasingly well understood. The lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) has been reported to fulfill roles in several types of cancers; however, the main biological function and associated underlying molecular mechanism of FOXP4-AS1 in EEC have yet to be fully elucidated. The present study therefore aimed to investigate how RNA FOXP4-AS1 may participate in the development and progression of endometrioid carcinoma tissues. Materials and Methods: In the present study, the expression level of FOXP4-AS1 was investigated in endometrioid carcinoma tissues and matching nearby normal endometrial tissues collected from patients receiving surgery at the hospital. A series of molecular biological assays were performed to investigate the effect of FOXP4-AS1 on cell proliferation, cell migration, and cell invasion. Results: An increased concentration of FOXP4-AS1 was identified in endometrioid carcinoma samples and cell lines compared with the corresponding controls, and this lncRNA was found to be positively correlated with advanced FIGO stages in patients with endometrial cancer. Furthermore, knocking down endogenous FOXP4-AS1 led to a significant reduction in the colony formation number and a significant inhibition of cell proliferation, cell migration, and cell invasion in endometrioid carcinoma cells. Moreover, dual-specificity phosphatase 5 (DUSP5), which is lowly expressed in endometrioid carcinoma tissues cells and negatively modulated by FOXP4-AS1, was identified as the downstream target molecule of FOXP4-AS1. Subsequently, the mechanistic experiments confirmed that, through binding to enhancer of zeste homolog 2 (EZH2; one of the catalytic subunits of polycomb repressive complex 2 [PRC2]), FOXP4-AS1 could epigenetically suppress the expression of DUSP5. Finally, the oncogenic function of the FOXP4-AS1/EZH2/DUSP5 axis in endometrioid carcinoma was confirmed via rescue assays. Conclusions: The findings of the present study have highlighted how FOXP4-AS1 fulfills an oncogenic role in endometrioid carcinoma, and targeting FOXP4-AS1 and its pathway may provide new biomarkers for patients with endometrioid carcinoma.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Summarize the evidence linking FOXA2 to androgenetic alopecia.",
+    "rerank_seconds": 0.3346,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3478,
+    "score_max": -1.9295003414154053,
+    "score_mean": -2.624428669611613,
+    "scores": [
+      -1.9295003414154053,
+      -2.88228178024292,
+      -3.0615038871765137
+    ],
+    "selected_abstracts": [
+      "Although FOXP4-AS1 exerts oncogenic effects in multiple cancers, this study reveals that it suppresses PTC progression. A series of experiments demonstrate that overexpression of FOXP4-AS1 inhibits PTC cell proliferation, migration, and invasion, whereas its knockdown promotes these malignant phenotypes and enhances tumorigenesis in nude mice. FOXP4-AS1 is distributed in both the nucleus and cytoplasm, enriched in the aerobic glycolysis pathway, and binds to Lactate Dehydrogenase A (LDHA)-a key enzyme in aerobic glycolysis with known links to tumor metabolic microenvironment. LDHA was primarily localized in the cytoplasm, and its downregulation suppressed the malignant behavior of PTC cells. Further mechanistic investigations reveal that knockdown of FOXP4-AS1 increases LDHA expression, and additional inhibition of LDHA partially reverses the pro-tumor effects induced by FOXP4-AS1 silencing. In conclusion, this study identifies FOXP4-AS1 as a tumor suppressor in PTC and elucidates the regulatory mechanism of the FOXP4-AS1/LDHA axis by which FOXP4-AS1 represses LDHA expression to attenuate aerobic glycolysis, providing novel insights into the mechanisms of PTC progression and potential therapeutic targets and diagnostic biomarkers relevant to metabolic modulation in PTC.",
+      "Gliomas are the most lethal primary brain tumors with poor survival and high recurrence. The role of long non-coding RNA FOXP4 antisense RNA 1 (lncRNA FOXP4-AS1) in glioma progression remains largely unknown. This study aimed to evaluate the clinical significance of FOXP4-AS1 in glioma and to elucidate its functional role and molecular mechanisms. FOXP4-AS1 expression was measured in 113 glioma tissues by reverse transcription-quantitative PCR (RT-qPCR) and correlated with clinicopathological features. In vitro functional assays, including Cell Counting Kit-8 (CCK-8), Transwell, apoptosis detection, and glycolysis evaluation, were performed following FOXP4-AS1 knockdown. Bioinformatics predictions and dual-luciferase reporter assays were used to validate the interaction among FOXP4-AS1, microRNA\u2011136\u20115p (miR\u2011136\u20115p), and ADCYAP receptor type I (ADCYAP1R1). FOXP4-AS1 was upregulated in glioma and correlated with higher World Health Organization (WHO) grade (III-IV), larger tumor size, and lower Karnofsky Performance Status (KPS) score, indicating aggressive progression and poor prognosis. Knockdown of FOXP4-AS1 inhibited glioma cell proliferation, migration, invasion, and glycolysis, while promoting apoptosis. Mechanistically, FOXP4-AS1 acted as a molecular sponge for miR\u2011136\u20115p, thereby upregulating ADCYAP1R1 expression. Rescue experiments demonstrated that FOXP4-AS1 promotes glioma progression by sponging miR\u2011136\u20115p and that miR\u2011136\u20115p suppresses tumor growth by targeting ADCYAP1R1, as shown by reversed phenotypes upon miR\u2011136\u20115p inhibition or ADCYAP1R1 overexpression. These findings demonstrate that FOXP4-AS1 promotes glioma progression via the miR\u2011136\u20115p/ADCYAP1R1 axis, highlighting its potential as a prognostic biomarker and therapeutic target in glioma.",
+      "Background: Long noncoding RNAs (lncRNAs), as emerging regulators of a wide variety of biological processes via diverse mechanisms, have been demonstrated to be of increasing importance in biology. Genome-wide association studies of tumor samples have identified several lncRNAs as either oncogenes or tumor suppressors in various types of cancers. In recent years, the importance of lncRNAs, especially in endometrioid cancer (EEC), has become increasingly well understood. The lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) has been reported to fulfill roles in several types of cancers; however, the main biological function and associated underlying molecular mechanism of FOXP4-AS1 in EEC have yet to be fully elucidated. The present study therefore aimed to investigate how RNA FOXP4-AS1 may participate in the development and progression of endometrioid carcinoma tissues. Materials and Methods: In the present study, the expression level of FOXP4-AS1 was investigated in endometrioid carcinoma tissues and matching nearby normal endometrial tissues collected from patients receiving surgery at the hospital. A series of molecular biological assays were performed to investigate the effect of FOXP4-AS1 on cell proliferation, cell migration, and cell invasion. Results: An increased concentration of FOXP4-AS1 was identified in endometrioid carcinoma samples and cell lines compared with the corresponding controls, and this lncRNA was found to be positively correlated with advanced FIGO stages in patients with endometrial cancer. Furthermore, knocking down endogenous FOXP4-AS1 led to a significant reduction in the colony formation number and a significant inhibition of cell proliferation, cell migration, and cell invasion in endometrioid carcinoma cells. Moreover, dual-specificity phosphatase 5 (DUSP5), which is lowly expressed in endometrioid carcinoma tissues cells and negatively modulated by FOXP4-AS1, was identified as the downstream target molecule of FOXP4-AS1. Subsequently, the mechanistic experiments confirmed that, through binding to enhancer of zeste homolog 2 (EZH2; one of the catalytic subunits of polycomb repressive complex 2 [PRC2]), FOXP4-AS1 could epigenetically suppress the expression of DUSP5. Finally, the oncogenic function of the FOXP4-AS1/EZH2/DUSP5 axis in endometrioid carcinoma was confirmed via rescue assays. Conclusions: The findings of the present study have highlighted how FOXP4-AS1 fulfills an oncogenic role in endometrioid carcinoma, and targeting FOXP4-AS1 and its pathway may provide new biomarkers for patients with endometrioid carcinoma."
+    ],
+    "selected_pmids": [
+      "42066828",
+      "41792493",
+      "38512300"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0131
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q091.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42066828",
+    "41792493",
+    "38512300"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:30:51.451730+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42066828, relevance: -1.9295) ---\nAlthough FOXP4-AS1 exerts oncogenic effects in multiple cancers, this study reveals that it suppresses PTC progression. A series of experiments demonstrate that overexpression of FOXP4-AS1 inhibits PTC cell proliferation, migration, and invasion, whereas its knockdown promotes these malignant phenotypes and enhances tumorigenesis in nude mice. FOXP4-AS1 is distributed in both the nucleus and cytoplasm, enriched in the aerobic glycolysis pathway, and binds to Lactate Dehydrogenase A (LDHA)-a key enzyme in aerobic glycolysis with known links to tumor metabolic microenvironment. LDHA was primarily localized in the cytoplasm, and its downregulation suppressed the malignant behavior of PTC cells. Further mechanistic investigations reveal that knockdown of FOXP4-AS1 increases LDHA expression, and additional inhibition of LDHA partially reverses the pro-tumor effects induced by FOXP4-AS1 silencing. In conclusion, this study identifies FOXP4-AS1 as a tumor suppressor in PTC and elucidates the regulatory mechanism of the FOXP4-AS1/LDHA axis by which FOXP4-AS1 represses LDHA expression to attenuate aerobic glycolysis, providing novel insights into the mechanisms of PTC progression and potential therapeutic targets and diagnostic biomarkers relevant to metabolic modulation in PTC.\n\n--- Abstract 2 (PMID: 41792493, relevance: -2.8823) ---\nGliomas are the most lethal primary brain tumors with poor survival and high recurrence. The role of long non-coding RNA FOXP4 antisense RNA 1 (lncRNA FOXP4-AS1) in glioma progression remains largely unknown. This study aimed to evaluate the clinical significance of FOXP4-AS1 in glioma and to elucidate its functional role and molecular mechanisms. FOXP4-AS1 expression was measured in 113 glioma tissues by reverse transcription-quantitative PCR (RT-qPCR) and correlated with clinicopathological features. In vitro functional assays, including Cell Counting Kit-8 (CCK-8), Transwell, apoptosis detection, and glycolysis evaluation, were performed following FOXP4-AS1 knockdown. Bioinformatics predictions and dual-luciferase reporter assays were used to validate the interaction among FOXP4-AS1, microRNA\u2011136\u20115p (miR\u2011136\u20115p), and ADCYAP receptor type I (ADCYAP1R1). FOXP4-AS1 was upregulated in glioma and correlated with higher World Health Organization (WHO) grade (III-IV), larger tumor size, and lower Karnofsky Performance Status (KPS) score, indicating aggressive progression and poor prognosis. Knockdown of FOXP4-AS1 inhibited glioma cell proliferation, migration, invasion, and glycolysis, while promoting apoptosis. Mechanistically, FOXP4-AS1 acted as a molecular sponge for miR\u2011136\u20115p, thereby upregulating ADCYAP1R1 expression. Rescue experiments demonstrated that FOXP4-AS1 promotes glioma progression by sponging miR\u2011136\u20115p and that miR\u2011136\u20115p suppresses tumor growth by targeting ADCYAP1R1, as shown by reversed phenotypes upon miR\u2011136\u20115p inhibition or ADCYAP1R1 overexpression. These findings demonstrate that FOXP4-AS1 promotes glioma progression via the miR\u2011136\u20115p/ADCYAP1R1 axis, highlighting its potential as a prognostic biomarker and therapeutic target in glioma.\n\n--- Abstract 3 (PMID: 38512300, relevance: -3.0615) ---\nBackground: Long noncoding RNAs (lncRNAs), as emerging regulators of a wide variety of biological processes via diverse mechanisms, have been demonstrated to be of increasing importance in biology. Genome-wide association studies of tumor samples have identified several lncRNAs as either oncogenes or tumor suppressors in various types of cancers. In recent years, the importance of lncRNAs, especially in endometrioid cancer (EEC), has become increasingly well understood. The lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) has been reported to fulfill roles in several types of cancers; however, the main biological function and associated underlying molecular mechanism of FOXP4-AS1 in EEC have yet to be fully elucidated. The present study therefore aimed to investigate how RNA FOXP4-AS1 may participate in the development and progression of endometrioid carcinoma tissues. Materials and Methods: In the present study, the expression level of FOXP4-AS1 was investigated in endometrioid carcinoma tissues and matching nearby normal endometrial tissues collected from patients receiving surgery at the hospital. A series of molecular biological assays were performed to investigate the effect of FOXP4-AS1 on cell proliferation, cell migration, and cell invasion. Results: An increased concentration of FOXP4-AS1 was identified in endometrioid carcinoma samples and cell lines compared with the corresponding controls, and this lncRNA was found to be positively correlated with advanced FIGO stages in patients with endometrial cancer. Furthermore, knocking down endogenous FOXP4-AS1 led to a significant reduction in the colony formation number and a significant inhibition of cell proliferation, cell migration, and cell invasion in endometrioid carcinoma cells. Moreover, dual-specificity phosphatase 5 (DUSP5), which is lowly expressed in endometrioid carcinoma tissues cells and negatively modulated by FOXP4-AS1, was identified as the downstream target molecule of FOXP4-AS1. Subsequently, the mechanistic experiments confirmed that, through binding to enhancer of zeste homolog 2 (EZH2; one of the catalytic subunits of polycomb repressive complex 2 [PRC2]), FOXP4-AS1 could epigenetically suppress the expression of DUSP5. Finally, the oncogenic function of the FOXP4-AS1/EZH2/DUSP5 axis in endometrioid carcinoma was confirmed via rescue assays. Conclusions: The findings of the present study have highlighted how FOXP4-AS1 fulfills an oncogenic role in endometrioid carcinoma, and targeting FOXP4-AS1 and its pathway may provide new biomarkers for patients with endometrioid carcinoma.\n\n\n\n**Question:**\nSummarize the evidence linking FOXA2 to androgenetic alopecia.",
+  "vector_context": "--- Abstract 1 (PMID: 42066828, relevance: -1.9295) ---\nAlthough FOXP4-AS1 exerts oncogenic effects in multiple cancers, this study reveals that it suppresses PTC progression. A series of experiments demonstrate that overexpression of FOXP4-AS1 inhibits PTC cell proliferation, migration, and invasion, whereas its knockdown promotes these malignant phenotypes and enhances tumorigenesis in nude mice. FOXP4-AS1 is distributed in both the nucleus and cytoplasm, enriched in the aerobic glycolysis pathway, and binds to Lactate Dehydrogenase A (LDHA)-a key enzyme in aerobic glycolysis with known links to tumor metabolic microenvironment. LDHA was primarily localized in the cytoplasm, and its downregulation suppressed the malignant behavior of PTC cells. Further mechanistic investigations reveal that knockdown of FOXP4-AS1 increases LDHA expression, and additional inhibition of LDHA partially reverses the pro-tumor effects induced by FOXP4-AS1 silencing. In conclusion, this study identifies FOXP4-AS1 as a tumor suppressor in PTC and elucidates the regulatory mechanism of the FOXP4-AS1/LDHA axis by which FOXP4-AS1 represses LDHA expression to attenuate aerobic glycolysis, providing novel insights into the mechanisms of PTC progression and potential therapeutic targets and diagnostic biomarkers relevant to metabolic modulation in PTC.\n\n--- Abstract 2 (PMID: 41792493, relevance: -2.8823) ---\nGliomas are the most lethal primary brain tumors with poor survival and high recurrence. The role of long non-coding RNA FOXP4 antisense RNA 1 (lncRNA FOXP4-AS1) in glioma progression remains largely unknown. This study aimed to evaluate the clinical significance of FOXP4-AS1 in glioma and to elucidate its functional role and molecular mechanisms. FOXP4-AS1 expression was measured in 113 glioma tissues by reverse transcription-quantitative PCR (RT-qPCR) and correlated with clinicopathological features. In vitro functional assays, including Cell Counting Kit-8 (CCK-8), Transwell, apoptosis detection, and glycolysis evaluation, were performed following FOXP4-AS1 knockdown. Bioinformatics predictions and dual-luciferase reporter assays were used to validate the interaction among FOXP4-AS1, microRNA\u2011136\u20115p (miR\u2011136\u20115p), and ADCYAP receptor type I (ADCYAP1R1). FOXP4-AS1 was upregulated in glioma and correlated with higher World Health Organization (WHO) grade (III-IV), larger tumor size, and lower Karnofsky Performance Status (KPS) score, indicating aggressive progression and poor prognosis. Knockdown of FOXP4-AS1 inhibited glioma cell proliferation, migration, invasion, and glycolysis, while promoting apoptosis. Mechanistically, FOXP4-AS1 acted as a molecular sponge for miR\u2011136\u20115p, thereby upregulating ADCYAP1R1 expression. Rescue experiments demonstrated that FOXP4-AS1 promotes glioma progression by sponging miR\u2011136\u20115p and that miR\u2011136\u20115p suppresses tumor growth by targeting ADCYAP1R1, as shown by reversed phenotypes upon miR\u2011136\u20115p inhibition or ADCYAP1R1 overexpression. These findings demonstrate that FOXP4-AS1 promotes glioma progression via the miR\u2011136\u20115p/ADCYAP1R1 axis, highlighting its potential as a prognostic biomarker and therapeutic target in glioma.\n\n--- Abstract 3 (PMID: 38512300, relevance: -3.0615) ---\nBackground: Long noncoding RNAs (lncRNAs), as emerging regulators of a wide variety of biological processes via diverse mechanisms, have been demonstrated to be of increasing importance in biology. Genome-wide association studies of tumor samples have identified several lncRNAs as either oncogenes or tumor suppressors in various types of cancers. In recent years, the importance of lncRNAs, especially in endometrioid cancer (EEC), has become increasingly well understood. The lncRNA Forkhead box P4 antisense RNA 1 (FOXP4-AS1) has been reported to fulfill roles in several types of cancers; however, the main biological function and associated underlying molecular mechanism of FOXP4-AS1 in EEC have yet to be fully elucidated. The present study therefore aimed to investigate how RNA FOXP4-AS1 may participate in the development and progression of endometrioid carcinoma tissues. Materials and Methods: In the present study, the expression level of FOXP4-AS1 was investigated in endometrioid carcinoma tissues and matching nearby normal endometrial tissues collected from patients receiving surgery at the hospital. A series of molecular biological assays were performed to investigate the effect of FOXP4-AS1 on cell proliferation, cell migration, and cell invasion. Results: An increased concentration of FOXP4-AS1 was identified in endometrioid carcinoma samples and cell lines compared with the corresponding controls, and this lncRNA was found to be positively correlated with advanced FIGO stages in patients with endometrial cancer. Furthermore, knocking down endogenous FOXP4-AS1 led to a significant reduction in the colony formation number and a significant inhibition of cell proliferation, cell migration, and cell invasion in endometrioid carcinoma cells. Moreover, dual-specificity phosphatase 5 (DUSP5), which is lowly expressed in endometrioid carcinoma tissues cells and negatively modulated by FOXP4-AS1, was identified as the downstream target molecule of FOXP4-AS1. Subsequently, the mechanistic experiments confirmed that, through binding to enhancer of zeste homolog 2 (EZH2; one of the catalytic subunits of polycomb repressive complex 2 [PRC2]), FOXP4-AS1 could epigenetically suppress the expression of DUSP5. Finally, the oncogenic function of the FOXP4-AS1/EZH2/DUSP5 axis in endometrioid carcinoma was confirmed via rescue assays. Conclusions: The findings of the present study have highlighted how FOXP4-AS1 fulfills an oncogenic role in endometrioid carcinoma, and targeting FOXP4-AS1 and its pathway may provide new biomarkers for patients with endometrioid carcinoma.\n\n"
+}

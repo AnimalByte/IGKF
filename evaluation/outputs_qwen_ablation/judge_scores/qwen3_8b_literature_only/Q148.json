@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q148",
+      "randomization_seed": "20260706:Q148:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q148",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q148",
+      "error": null,
+      "id": "batch_req_6a4f85d5f1788190a31d6e24731e0a38",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579105,
+          "created_at": 1783579076,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0f99067618c34dc5006a4f41c3fa848196a329322eb97f0b1d",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q148"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0f99067618c34dc5006a4f41d6789881968aeb7b4e23dafd4d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the evidence does not identify shared upstream regulators.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the supplied evidence, which provides no supported common upstream regulator for AR, SRD5A2, and EDA2R.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion, but does not explicitly mention the requested direct-regulation versus association distinction; this is acceptable because no regulator is supported.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from reporting unsupported regulators.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and explains that no shared upstream regulators are identified.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the evidence discusses AR and SRD5A2 but lacks EDA2R regulatory evidence or common upstream regulators.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes the absence of EDA2R evidence and concludes that no common regulators are supported.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly avoids inferring unsupported direct regulation or association.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0f99067618c34dc5006a4f41dd249c8196a719a78227a6f4b4",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2253,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 626,
+            "output_tokens_details": {
+              "reasoning_tokens": 341
+            },
+            "total_tokens": 2879
+          },
+          "user": null
+        },
+        "request_id": "96eb1974-57a3-4316-9206-912498a9c841",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question and explains that no shared upstream regulators are identified.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects that the evidence discusses AR and SRD5A2 but lacks EDA2R regulatory evidence or common upstream regulators.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes the absence of EDA2R evidence and concludes that no common regulators are supported.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Correctly avoids inferring unsupported direct regulation or association.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q148",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q148.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.769682+00:00"
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q069",
+      "randomization_seed": "20260706:Q069:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q069",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q069",
+      "error": null,
+      "id": "batch_req_6a4f85d0d2cc8190952930560644db5c",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594486,
+          "created_at": 1783594460,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_011db3c7af30273c006a4f7ddcf1f88190bd2d893fd372b3f0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q069"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_011db3c7af30273c006a4f7dde26a08190b808f6109086d836",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses the question by stating that no FGF5-containing pathways are provided in the integrated graph context.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately reflects the supplied graph evidence, which lists phenotypes, GO terms, PPIs, and diseases but no pathways.\"\n      },\n      \"completeness\": {\n        \"score\": 5,\n        \"rationale\": \"Provides the key necessary conclusion: the available evidence is insufficient to identify pathways including FGF5.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains rather than inventing pathway memberships not present in the graph context.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"It discusses possible pathways involving FGF5, but the question asks specifically about pathways in the integrated graph.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Overstates the evidence by saying FGF5 explicitly activates MAPK, PI3K/AKT, and JAK/STAT; the abstract mentions these pathways for FGFs generally, while the graph provides no pathway memberships.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not correctly answer the graph-based question and includes unsupported inferred pathway associations.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 3,\n        \"rationale\": \"Includes some qualification about the lack of an integrated graph description, but still presents unsupported pathway claims.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_011db3c7af30273c006a4f7debf674819086358445c9615b2e",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2340,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 833,
+            "output_tokens_details": {
+              "reasoning_tokens": 419
+            },
+            "total_tokens": 3173
+          },
+          "user": null
+        },
+        "request_id": "64a3c90d-8322-4624-a304-a918ef7753a6",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the question by stating that no FGF5-containing pathways are provided in the integrated graph context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects the supplied graph evidence, which lists phenotypes, GO terms, PPIs, and diseases but no pathways.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the key necessary conclusion: the available evidence is insufficient to identify pathways including FGF5.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains rather than inventing pathway memberships not present in the graph context.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q069",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q069.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.739465+00:00"
+}

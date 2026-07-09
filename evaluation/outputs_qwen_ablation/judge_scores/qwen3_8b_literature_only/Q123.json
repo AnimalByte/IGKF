@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q123",
+      "randomization_seed": "20260706:Q123:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q123",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q123",
+      "error": null,
+      "id": "batch_req_6a4f85d43b308190a5605aed41d62b5d",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594620,
+          "created_at": 1783594595,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_031118f344f69578006a4f7e635cc88197840b1f015d07ed47",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q123"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_031118f344f69578006a4f7e64b6888197a285e3b608df5fbb",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses absence of relevant data but does not directly answer the study-scope phrasing.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Consistent with no reported association statistics, but vague and not explicitly tied to the phenotype being outside scope.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the requested statement that frontal fibrosing alopecia is outside the study scope.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Does not invent statistics, but the wording is nonspecific.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that no variant association statistics are reported for the phenotype.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states the phenotype is outside the study scope.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes both required components: no statistics reported and phenotype outside scope.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from unsupported association claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_031118f344f69578006a4f7e7327508197aee7e3209ac1b0f4",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 516,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 551,
+            "output_tokens_details": {
+              "reasoning_tokens": 302
+            },
+            "total_tokens": 1067
+          },
+          "user": null
+        },
+        "request_id": "cd0839d7-2055-4aae-939e-4f1bcc3805b5",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that no variant association statistics are reported for the phenotype.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states the phenotype is outside the study scope.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes both required components: no statistics reported and phenotype outside scope.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from unsupported association claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q123",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.760018+00:00"
+}

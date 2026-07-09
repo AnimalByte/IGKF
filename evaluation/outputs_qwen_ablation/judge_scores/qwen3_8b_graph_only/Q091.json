@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q091",
+      "randomization_seed": "20260706:Q091:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q091",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q091",
+      "error": null,
+      "id": "batch_req_6a4f85d254188190a9a344ce46699f17",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578942,
+          "created_at": 1783578915,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0687c6df4eb88dd5006a4f412316248194b62bf482cce4e1f8",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q091"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0687c6df4eb88dd5006a4f413557d481949e22369a65b4213a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the supplied evidence links FOXA2 to androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Correctly concludes there is no supplied evidence linking FOXA2 to androgenetic alopecia, but inaccurately states the context does not mention androgenetic alopecia at all.\"},\"completeness\":{\"score\":4,\"rationale\":\"Captures the key conclusion, though it does not distinguish that androgenetic alopecia is mentioned in an unrelated GWAS abstract while FOXA2 is not linked.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from asserting a link when evidence is insufficient.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly and appropriately addresses the requested evidence summary.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the provided graph context does not link FOXA2 to androgenetic alopecia and that evidence is insufficient.\"},\"completeness\":{\"score\":4,\"rationale\":\"Gives the correct bottom-line summary, though it does not explicitly mention that the vector abstracts also fail to link FOXA2 to androgenetic alopecia.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the absence of evidence and avoids unsupported claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0687c6df4eb88dd5006a4f413abadc8194a30a3164e41990a6",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1981,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 616,
+            "output_tokens_details": {
+              "reasoning_tokens": 307
+            },
+            "total_tokens": 2597
+          },
+          "user": null
+        },
+        "request_id": "001a4d06-e9a0-4704-b4e3-2701194e21f3",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly and appropriately addresses the requested evidence summary.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided graph context does not link FOXA2 to androgenetic alopecia and that evidence is insufficient.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Gives the correct bottom-line summary, though it does not explicitly mention that the vector abstracts also fail to link FOXA2 to androgenetic alopecia.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately qualifies the absence of evidence and avoids unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q091",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q091.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.748072+00:00"
+}

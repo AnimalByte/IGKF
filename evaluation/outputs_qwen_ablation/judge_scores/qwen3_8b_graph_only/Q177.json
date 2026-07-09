@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "regulatory_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q177",
+      "randomization_seed": "20260706:Q177:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q177",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q177",
+      "error": null,
+      "id": "batch_req_6a4f85d7b34c81908e91ed66f660e0f3",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594485,
+          "created_at": 1783594458,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_072bb0d1e2732a63006a4f7dda04c08196b70c304abfd95122",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q177"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_072bb0d1e2732a63006a4f7ddb4cfc8196a893898bd9a3a82f",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether FOXA2 has regulatory links to hair-growth-related downstream genes and distinguishes PPIs from regulatory evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reflects that the supplied evidence contains only unsupported FOXA2 PPIs and no direct or inferred regulatory relationship to hair-growth genes.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion and distinction, though it does not explicitly mention that the vector abstracts list hair-follicle genes without connecting them to FOXA2.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring unsupported regulatory or hair-growth connections.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the main question and states no direct or inferred link, but focuses only on literature context and omits the graph evidence.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The conclusion is consistent with the supplied evidence, though it overlooks that FOXA2 appears in the graph context with non-regulatory PPIs.\"},\"completeness\":{\"score\":3,\"rationale\":\"Partially complete; it does not discuss the FOXA2 PPI graph entries or explicitly separate regulatory evidence from non-regulatory interaction evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly avoids making unsupported claims and abstains given insufficient evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_072bb0d1e2732a63006a4f7deca04881969a65795ab23f90bf",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2204,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 842,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3046
+          },
+          "user": null
+        },
+        "request_id": "2c3072f4-8872-4a58-9a94-722f977dd1cd",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether FOXA2 has regulatory links to hair-growth-related downstream genes and distinguishes PPIs from regulatory evidence.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately reflects that the supplied evidence contains only unsupported FOXA2 PPIs and no direct or inferred regulatory relationship to hair-growth genes.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key conclusion and distinction, though it does not explicitly mention that the vector abstracts list hair-follicle genes without connecting them to FOXA2.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inferring unsupported regulatory or hair-growth connections.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q177",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q177.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.780964+00:00"
+}

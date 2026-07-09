@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q073",
+      "randomization_seed": "20260706:Q073:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q073",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q073",
+      "error": null,
+      "id": "batch_req_6a4f85d11fc08190ad33cb6be9cf788a",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594511,
+          "created_at": 1783594486,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ee28d3a5f6b0e6f006a4f7df6e69881979ee0052e11215268",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q073"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ee28d3a5f6b0e6f006a4f7df7ffd88197bc132e802f596deb",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether WNT10A is linked to hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that the supplied evidence links WNT10A to hair biology/hair loss associations but not to treatments.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key conclusion, though it does not explicitly mention the vector evidence showing MPHL/alopecia associations without treatments.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inferring therapeutic links not present in the evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the treatment question but shifts into speculative pathway-treatment implications.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correct that WNT10A is implicated in hair-related biology, but it invents or imports unsupported evidence about Sphingomonas olei extracellular vesicles and hair-loss treatment.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes the key lack of direct treatment evidence, but adds unsupported treatment discussion rather than limiting to the supplied evidence.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some qualification, but still suggests treatment relevance unsupported by the reference evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ee28d3a5f6b0e6f006a4f7e04ec8c819790981baffa80659c",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2283,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 655,
+            "output_tokens_details": {
+              "reasoning_tokens": 357
+            },
+            "total_tokens": 2938
+          },
+          "user": null
+        },
+        "request_id": "aee2834d-234b-4ba1-b3a3-3822b79db063",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the treatment question but shifts into speculative pathway-treatment implications.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correct that WNT10A is implicated in hair-related biology, but it invents or imports unsupported evidence about Sphingomonas olei extracellular vesicles and hair-loss treatment.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Includes the key lack of direct treatment evidence, but adds unsupported treatment discussion rather than limiting to the supplied evidence.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Uses some qualification, but still suggests treatment relevance unsupported by the reference evidence.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q073",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q073.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.741177+00:00"
+}

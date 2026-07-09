@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q118",
+      "randomization_seed": "20260706:Q118:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q118",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q118",
+      "error": null,
+      "id": "batch_req_6a4f85d3f7e48190bf685dd79ca8590f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594530,
+          "created_at": 1783594498,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0abbf7bbf2220ca4006a4f7e02bdf88190be6f3a790a0ebda0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q118"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0abbf7bbf2220ca4006a4f7e03e2d88190b3d4db017cf6b31b",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses which variants might be most associated, but relies on inference rather than reported p-values.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"The evidence mentions SNPs near EDA2R and AR, but not that they have the smallest p-values; concluding they are strongest is unsupported.\"},\"completeness\":{\"score\":3,\"rationale\":\"Notes that exact p-values are not provided, but does not fully acknowledge that specific strongest variants cannot be identified from the evidence.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Includes some qualification, but ultimately makes an unsupported conclusion about the strongest associations.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Does not identify variants and only refers to the graph, though the question asks for strongest associations.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The statement is consistent with the graph context and does not introduce false biomedical claims, but ignores the vector evidence.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits the relevant abstract context and does not answer whether variants can be identified from the available evidence.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Avoids unsupported variant claims, but the abstention is too terse and limited to graph data only.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0abbf7bbf2220ca4006a4f7e177e088190b663cf4062119ec9",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3373,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 819,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 4192
+          },
+          "user": null
+        },
+        "request_id": "a074894a-ade3-474b-a9b0-b04470b90ecf",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses which variants might be most associated, but relies on inference rather than reported p-values.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The evidence mentions SNPs near EDA2R and AR, but not that they have the smallest p-values; concluding they are strongest is unsupported.",
+      "score": 3.0
+    },
+    "completeness": {
+      "rationale": "Notes that exact p-values are not provided, but does not fully acknowledge that specific strongest variants cannot be identified from the evidence.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Includes some qualification, but ultimately makes an unsupported conclusion about the strongest associations.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q118",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q118.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.758064+00:00"
+}

@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "34980917",
+    "42392035",
+    "42147184",
+    "31273931",
+    "32329860",
+    "42114689",
+    "40869374",
+    "37986797",
+    "41161132",
+    "42378135",
+    "41606982",
+    "42260572",
+    "36207305",
+    "40591711",
+    "41555274"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q037.json",
+      "question_id": "Q037",
+      "sha256": "85afe53609b68387f98766961bee47f65e415132295235072b5c0a255e0dc4b3"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q037.json",
+      "question_id": "Q037",
+      "sha256": "cdce741a04972ea6096773ab644c4f6592c616bd234a011f7e5d160d924245e4"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which gene or genes are annotated as associated with variant rs4679956 in this study?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8995,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which gene or genes are annotated as associated with variant rs4679956 in this study?",
+  "parsed_answer": "None of the provided literature contexts mention the variant rs4679956 or any gene associated with it. Therefore, based on the given information, it is not possible to determine which gene or genes are annotated as associated with variant rs4679956.",
+  "question_id": "Q037",
+  "question_text": "Which gene or genes are annotated as associated with variant rs4679956 in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 57,
+    "prompt_token_count": 1235,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "None of the provided literature contexts mention the variant rs4679956 or any gene associated with it. Therefore, based on the given information, it is not possible to determine which gene or genes are annotated as associated with variant rs4679956."
+      }
+    ],
+    "created": 1783564028,
+    "id": "cmpl-22c7e916-c464-4c62-832a-cf958fbffc47",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 57,
+      "prompt_tokens": 1214,
+      "total_tokens": 1271
+    }
+  },
+  "reranker_scores": [
+    3.954481601715088,
+    3.5028090476989746,
+    3.062014579772949
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      30.47064971923828,
+      32.49726104736328,
+      32.66061782836914,
+      33.228031158447266,
+      33.638885498046875,
+      34.107887268066406,
+      34.12005615234375,
+      34.704288482666016,
+      35.433876037597656,
+      35.9344367980957,
+      36.53974914550781,
+      36.95466613769531,
+      37.154666900634766,
+      37.36040115356445,
+      37.5145263671875
+    ],
+    "candidate_pmids": [
+      "34980917",
+      "42392035",
+      "42147184",
+      "31273931",
+      "32329860",
+      "42114689",
+      "40869374",
+      "37986797",
+      "41161132",
+      "42378135",
+      "41606982",
+      "42260572",
+      "36207305",
+      "40591711",
+      "41555274"
+    ],
+    "expanded_retrieval_query": "Which gene or genes are annotated as associated with variant rs4679956 in this study?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40591711, relevance: 3.9545) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n--- Abstract 2 (PMID: 42378135, relevance: 3.5028) ---\nIntroduction. The EDAR (ectodysplasin A receptor) gene is associated with the development of ectodermal structures. The rs3827760 variant is highly frequent in East Asian and Native American populations, and this study analyzes its relationship with genetic ancestry proportions in a Latin American population sample. Objective. To analyze how genetic ancestry proportions influence the distribution of single nucleotide polymorphism (SNP) rs3827760 genotypes of the EDAR gene in Latin American populations. Materials and methods. Genetic ancestry proportions were estimated using a panel of 446 ancestry-informative SNPs, applying the STRUCTURE program and univariate and multivariate logistic regression models. Results. Native American ancestry proportions showed a significant positive association with the prevalence of rs3827760 GG genotypes, while European ancestry showed a negative association. Conclusion. Native American and European genetic ancestry proportions influence the distribution of SNP rs3827760 genotypes of the EDAR gene in Latin American populations.\n\n--- Abstract 3 (PMID: 31273931, relevance: 3.0620) ---\nBACKGROUND: MicroRNAs are small regulatory RNAs with important roles in carcinogenesis. Genetic variants in these regulatory molecules may contribute to disease. We aim to identify allelic variants in microRNAs as susceptibility factors to gastric cancer using association studies and functional approaches. METHODS: Twenty-one single nucleotide variants potentially functional, because of their location in either the seed, mature or precursor region of 22 microRNAs, were selected for association studies. Genetic association with gastric cancer in 365 cases and 1,284 matched controls (European Prospective Investigation into Cancer and Nutrition Cohort) was analysed using logistic regression. MicroRNA overexpression, transcriptome analysis, and target gene validation experiments were performed for functional studies. RESULTS: rs3746444:T>C, in the seed of MIR499A and mature MIR499B, associated with the cardia adenocarcinoma location; rs12416605:C>T, in the seed of MIR938, associated with the diffuse subtype; and rs2114358:T>C, in the precursor MIR1206, associated with the noncardia phenotype. In all cases, the association was inverse, indicating a protective affect against gastric cancer of the three minor allelic variants. MIR499 rs3746444:T>C and MIR1206 rs2114358:T>C are reported to affect the expression of these miRNAs, but the effect of MIR938 rs12416605:C>T is unknown yet. Functional approaches showed that the expression of MIR938 is affected by rs12416605:C>T and revealed that MIR938 could regulate a subset of cancer-related genes in an allele-specific fashion. Furthermore, we demonstrated that CXCL12, a chemokine participating in gastric cancer metastasis, is specifically regulated by only one of the rs12416605:C>T alleles. CONCLUSION: rs12416605 appears to be involved in gastric cancer by affecting the regulatory function of MIR938 on genes related to this cancer type, particularly on CXCL12 posttranscriptional regulation.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which gene or genes are annotated as associated with variant rs4679956 in this study?",
+    "rerank_seconds": 0.3328,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3468,
+    "score_max": 3.954481601715088,
+    "score_mean": 3.5064350763956704,
+    "scores": [
+      3.954481601715088,
+      3.5028090476989746,
+      3.062014579772949
+    ],
+    "selected_abstracts": [
+      "The identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.",
+      "Introduction. The EDAR (ectodysplasin A receptor) gene is associated with the development of ectodermal structures. The rs3827760 variant is highly frequent in East Asian and Native American populations, and this study analyzes its relationship with genetic ancestry proportions in a Latin American population sample. Objective. To analyze how genetic ancestry proportions influence the distribution of single nucleotide polymorphism (SNP) rs3827760 genotypes of the EDAR gene in Latin American populations. Materials and methods. Genetic ancestry proportions were estimated using a panel of 446 ancestry-informative SNPs, applying the STRUCTURE program and univariate and multivariate logistic regression models. Results. Native American ancestry proportions showed a significant positive association with the prevalence of rs3827760 GG genotypes, while European ancestry showed a negative association. Conclusion. Native American and European genetic ancestry proportions influence the distribution of SNP rs3827760 genotypes of the EDAR gene in Latin American populations.",
+      "BACKGROUND: MicroRNAs are small regulatory RNAs with important roles in carcinogenesis. Genetic variants in these regulatory molecules may contribute to disease. We aim to identify allelic variants in microRNAs as susceptibility factors to gastric cancer using association studies and functional approaches. METHODS: Twenty-one single nucleotide variants potentially functional, because of their location in either the seed, mature or precursor region of 22 microRNAs, were selected for association studies. Genetic association with gastric cancer in 365 cases and 1,284 matched controls (European Prospective Investigation into Cancer and Nutrition Cohort) was analysed using logistic regression. MicroRNA overexpression, transcriptome analysis, and target gene validation experiments were performed for functional studies. RESULTS: rs3746444:T>C, in the seed of MIR499A and mature MIR499B, associated with the cardia adenocarcinoma location; rs12416605:C>T, in the seed of MIR938, associated with the diffuse subtype; and rs2114358:T>C, in the precursor MIR1206, associated with the noncardia phenotype. In all cases, the association was inverse, indicating a protective affect against gastric cancer of the three minor allelic variants. MIR499 rs3746444:T>C and MIR1206 rs2114358:T>C are reported to affect the expression of these miRNAs, but the effect of MIR938 rs12416605:C>T is unknown yet. Functional approaches showed that the expression of MIR938 is affected by rs12416605:C>T and revealed that MIR938 could regulate a subset of cancer-related genes in an allele-specific fashion. Furthermore, we demonstrated that CXCL12, a chemokine participating in gastric cancer metastasis, is specifically regulated by only one of the rs12416605:C>T alleles. CONCLUSION: rs12416605 appears to be involved in gastric cancer by affecting the regulatory function of MIR938 on genes related to this cancer type, particularly on CXCL12 posttranscriptional regulation."
+    ],
+    "selected_pmids": [
+      "40591711",
+      "42378135",
+      "31273931"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0139
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q037.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40591711",
+    "42378135",
+    "31273931"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:27:09.662559+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40591711, relevance: 3.9545) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n--- Abstract 2 (PMID: 42378135, relevance: 3.5028) ---\nIntroduction. The EDAR (ectodysplasin A receptor) gene is associated with the development of ectodermal structures. The rs3827760 variant is highly frequent in East Asian and Native American populations, and this study analyzes its relationship with genetic ancestry proportions in a Latin American population sample. Objective. To analyze how genetic ancestry proportions influence the distribution of single nucleotide polymorphism (SNP) rs3827760 genotypes of the EDAR gene in Latin American populations. Materials and methods. Genetic ancestry proportions were estimated using a panel of 446 ancestry-informative SNPs, applying the STRUCTURE program and univariate and multivariate logistic regression models. Results. Native American ancestry proportions showed a significant positive association with the prevalence of rs3827760 GG genotypes, while European ancestry showed a negative association. Conclusion. Native American and European genetic ancestry proportions influence the distribution of SNP rs3827760 genotypes of the EDAR gene in Latin American populations.\n\n--- Abstract 3 (PMID: 31273931, relevance: 3.0620) ---\nBACKGROUND: MicroRNAs are small regulatory RNAs with important roles in carcinogenesis. Genetic variants in these regulatory molecules may contribute to disease. We aim to identify allelic variants in microRNAs as susceptibility factors to gastric cancer using association studies and functional approaches. METHODS: Twenty-one single nucleotide variants potentially functional, because of their location in either the seed, mature or precursor region of 22 microRNAs, were selected for association studies. Genetic association with gastric cancer in 365 cases and 1,284 matched controls (European Prospective Investigation into Cancer and Nutrition Cohort) was analysed using logistic regression. MicroRNA overexpression, transcriptome analysis, and target gene validation experiments were performed for functional studies. RESULTS: rs3746444:T>C, in the seed of MIR499A and mature MIR499B, associated with the cardia adenocarcinoma location; rs12416605:C>T, in the seed of MIR938, associated with the diffuse subtype; and rs2114358:T>C, in the precursor MIR1206, associated with the noncardia phenotype. In all cases, the association was inverse, indicating a protective affect against gastric cancer of the three minor allelic variants. MIR499 rs3746444:T>C and MIR1206 rs2114358:T>C are reported to affect the expression of these miRNAs, but the effect of MIR938 rs12416605:C>T is unknown yet. Functional approaches showed that the expression of MIR938 is affected by rs12416605:C>T and revealed that MIR938 could regulate a subset of cancer-related genes in an allele-specific fashion. Furthermore, we demonstrated that CXCL12, a chemokine participating in gastric cancer metastasis, is specifically regulated by only one of the rs12416605:C>T alleles. CONCLUSION: rs12416605 appears to be involved in gastric cancer by affecting the regulatory function of MIR938 on genes related to this cancer type, particularly on CXCL12 posttranscriptional regulation.\n\n\n\n**Question:**\nWhich gene or genes are annotated as associated with variant rs4679956 in this study?",
+  "vector_context": "--- Abstract 1 (PMID: 40591711, relevance: 3.9545) ---\nThe identification of Alzheimer's disease (AD)-associated genomic variants has provided powerful insight into disease etiology. Genome-wide association studies (GWASs) of AD have successfully identified previously unidentified targets but have almost exclusively used additive genetic models. Here, we performed a family-based GWAS of a recessive inheritance model using whole-genome sequencing from families affected by AD. We found an association between AD risk and the variant rs7161410, which is located in an intron of the PRKCH gene encoding protein kinase C eta (PKCeta). In addition, a rare PRKCH missense mutation, K65R, was in linkage disequilibrium with rs7161410 and was present in homozygous carriers of the rs7161410 risk allele. In vitro analysis revealed that the catalytic rate, lipid dependence, and peptide substrate binding of the purified variant were indistinguishable from those of the wild-type kinase. However, cellular studies revealed that the K65R PKCeta variant had reduced cytosolic activity and, instead, enhanced localization and signaling at the Golgi. Moreover, the K65R variant had altered interaction networks in transfected cells, particularly with proteins involved in Golgi processes such as vesicle transport. In human brain tissue, the AD-associated recessive genotype of rs7161410 was associated with increased expression of PRKCH, particularly in the amygdala. This association of aberrant PKCeta signaling with AD and the insight into how its function is altered may lead to previously unidentified therapeutic targets for prevention and treatment.\n\n--- Abstract 2 (PMID: 42378135, relevance: 3.5028) ---\nIntroduction. The EDAR (ectodysplasin A receptor) gene is associated with the development of ectodermal structures. The rs3827760 variant is highly frequent in East Asian and Native American populations, and this study analyzes its relationship with genetic ancestry proportions in a Latin American population sample. Objective. To analyze how genetic ancestry proportions influence the distribution of single nucleotide polymorphism (SNP) rs3827760 genotypes of the EDAR gene in Latin American populations. Materials and methods. Genetic ancestry proportions were estimated using a panel of 446 ancestry-informative SNPs, applying the STRUCTURE program and univariate and multivariate logistic regression models. Results. Native American ancestry proportions showed a significant positive association with the prevalence of rs3827760 GG genotypes, while European ancestry showed a negative association. Conclusion. Native American and European genetic ancestry proportions influence the distribution of SNP rs3827760 genotypes of the EDAR gene in Latin American populations.\n\n--- Abstract 3 (PMID: 31273931, relevance: 3.0620) ---\nBACKGROUND: MicroRNAs are small regulatory RNAs with important roles in carcinogenesis. Genetic variants in these regulatory molecules may contribute to disease. We aim to identify allelic variants in microRNAs as susceptibility factors to gastric cancer using association studies and functional approaches. METHODS: Twenty-one single nucleotide variants potentially functional, because of their location in either the seed, mature or precursor region of 22 microRNAs, were selected for association studies. Genetic association with gastric cancer in 365 cases and 1,284 matched controls (European Prospective Investigation into Cancer and Nutrition Cohort) was analysed using logistic regression. MicroRNA overexpression, transcriptome analysis, and target gene validation experiments were performed for functional studies. RESULTS: rs3746444:T>C, in the seed of MIR499A and mature MIR499B, associated with the cardia adenocarcinoma location; rs12416605:C>T, in the seed of MIR938, associated with the diffuse subtype; and rs2114358:T>C, in the precursor MIR1206, associated with the noncardia phenotype. In all cases, the association was inverse, indicating a protective affect against gastric cancer of the three minor allelic variants. MIR499 rs3746444:T>C and MIR1206 rs2114358:T>C are reported to affect the expression of these miRNAs, but the effect of MIR938 rs12416605:C>T is unknown yet. Functional approaches showed that the expression of MIR938 is affected by rs12416605:C>T and revealed that MIR938 could regulate a subset of cancer-related genes in an allele-specific fashion. Furthermore, we demonstrated that CXCL12, a chemokine participating in gastric cancer metastasis, is specifically regulated by only one of the rs12416605:C>T alleles. CONCLUSION: rs12416605 appears to be involved in gastric cancer by affecting the regulatory function of MIR938 on genes related to this cancer type, particularly on CXCL12 posttranscriptional regulation.\n\n"
+}

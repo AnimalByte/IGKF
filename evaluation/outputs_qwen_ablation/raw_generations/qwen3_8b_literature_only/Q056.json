@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "34552771",
+    "42169044",
+    "40134218",
+    "34984527",
+    "42315371",
+    "42232673",
+    "41640146",
+    "41408253",
+    "42378135",
+    "39245941",
+    "40245183",
+    "41893972",
+    "41093938",
+    "42361668",
+    "42151883"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q056.json",
+      "question_id": "Q056",
+      "sha256": "27b7b374421c67bcb57eb221d9bbecb3718e45b7998db7be9a2a045149eb1542"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q056.json",
+      "question_id": "Q056",
+      "sha256": "28c5cb40ad032aae38fb83535871d6b9cd6f8486cfb94c5290e62c0328f82b0d"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Summarize the evidence linking EDA2R to androgenetic alopecia.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.9568,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the evidence linking EDA2R to androgenetic alopecia.",
+  "parsed_answer": "The evidence linking the **EDA2R** gene to **androgenetic alopecia (AGA)** is derived from a genome-wide association study (GWAS) conducted on African populations. The study found that multiple **baldness-associated SNPs near the EDA2R gene** have **large allele frequency differences between continents**. This suggests that genetic variants in the **EDA2R gene** may play a role in the development of AGA, particularly in African populations. However, the study did not find strong integrative haplotype scores or fixation index statistics for EDA2R, indicating that while the gene is associated with AGA, its contribution may be moderate or context-dependent. The findings highlight the importance of population-specific genetic studies in understanding the genetic architecture of AGA.",
+  "question_id": "Q056",
+  "question_text": "Summarize the evidence linking EDA2R to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 160,
+    "prompt_token_count": 1480,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The evidence linking the **EDA2R** gene to **androgenetic alopecia (AGA)** is derived from a genome-wide association study (GWAS) conducted on African populations. The study found that multiple **baldness-associated SNPs near the EDA2R gene** have **large allele frequency differences between continents**. This suggests that genetic variants in the **EDA2R gene** may play a role in the development of AGA, particularly in African populations. However, the study did not find strong integrative haplotype scores or fixation index statistics for EDA2R, indicating that while the gene is associated with AGA, its contribution may be moderate or context-dependent. The findings highlight the importance of population-specific genetic studies in understanding the genetic architecture of AGA."
+      }
+    ],
+    "created": 1783564100,
+    "id": "cmpl-673b03e9-3e07-4ec8-ae26-c9471a49f42e",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 160,
+      "prompt_tokens": 1459,
+      "total_tokens": 1619
+    }
+  },
+  "reranker_scores": [
+    3.5978403091430664,
+    1.8779213428497314,
+    0.04240821301937103
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      40.84858703613281,
+      41.745643615722656,
+      42.78325271606445,
+      42.9123420715332,
+      43.10403823852539,
+      43.31044006347656,
+      44.04291915893555,
+      44.09105682373047,
+      44.171142578125,
+      44.91032028198242,
+      44.916194915771484,
+      44.99903869628906,
+      45.335533142089844,
+      45.78620910644531,
+      45.88268280029297
+    ],
+    "candidate_pmids": [
+      "34552771",
+      "42169044",
+      "40134218",
+      "34984527",
+      "42315371",
+      "42232673",
+      "41640146",
+      "41408253",
+      "42378135",
+      "39245941",
+      "40245183",
+      "41893972",
+      "41093938",
+      "42361668",
+      "42151883"
+    ],
+    "expanded_retrieval_query": "Summarize the evidence linking EDA2R to androgenetic alopecia.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40134218, relevance: 3.5978) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42169044, relevance: 1.8779) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 3 (PMID: 41093938, relevance: 0.0424) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Summarize the evidence linking EDA2R to androgenetic alopecia.",
+    "rerank_seconds": 0.3333,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3468,
+    "score_max": 3.5978403091430664,
+    "score_mean": 1.8393899550040562,
+    "scores": [
+      3.5978403091430664,
+      1.8779213428497314,
+      0.04240821301937103
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "BACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.",
+      "Endometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "42169044",
+      "41093938"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0134
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q056.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40134218",
+    "42169044",
+    "41093938"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:28:22.714589+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: 3.5978) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42169044, relevance: 1.8779) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 3 (PMID: 41093938, relevance: 0.0424) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n\n\n**Question:**\nSummarize the evidence linking EDA2R to androgenetic alopecia.",
+  "vector_context": "--- Abstract 1 (PMID: 40134218, relevance: 3.5978) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42169044, relevance: 1.8779) ---\nBACKGROUND: Androgenetic alopecia (AGA), the most common form of hair loss, is currently treated with pharmacological agents that often yield inconsistent results and side effects, highlighting the need for novel therapeutic approaches. This study aimed to investigate the therapeutic potential and molecular mechanisms of exosomes derived from dental pulp mesenchymal stem cells (DPSC-Exos) for AGA. METHODS: We employed a dihydrotestosterone (DHT)-induced AGA mouse model and treated groups with DPSC-Exos or minoxidil. Hair growth was assessed macroscopically and histologically. In vitro, human dermal papilla cells (DPCs) were treated with DHT and/or DPSC-Exos, with or without the PI3K inhibitor LY294002. Analyses included RNA sequencing, RT-qPCR, western blotting, immunofluorescence, and functional assays (proliferation, migration). Statistical significance was determined using Student's t-test or one-way ANOVA with appropriate post-hoc tests. RESULTS: DPSC-Exos significantly promoted hair regrowth, increased hair follicle density, and enhanced dermal thickness in mice, with efficacy comparable to minoxidil. Transcriptomic and protein analysis revealed DPSC-Exos activated the PI3K/Akt pathway and upregulated VEGFA, leading to perifollicular vascular network reconstruction. In vitro, DPSC-Exos rescued DHT-induced suppression of DPC proliferation, migration, and expression of hair-inductive markers (ALP, alpha-SMA). These effects were mediated through upregulation of pro-angiogenic factors (VEGFA, FGF2, ANGPT1) and were completely abolished by PI3K inhibition, confirming the pathway's necessity. A positive feedback loop between PI3K/Akt activation and VEGFA expression was identified. CONCLUSION: Our findings demonstrate that DPSC-Exos promote hair regeneration by activating the PI3K/Akt-VEGFA axis, thereby restoring the follicular vascular niche and DPC function. This study positions DPSC-Exos as a promising, cell-free therapeutic strategy for AGA, with clear mechanistic foundations for future translational development.\n\n--- Abstract 3 (PMID: 41093938, relevance: 0.0424) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n"
+}

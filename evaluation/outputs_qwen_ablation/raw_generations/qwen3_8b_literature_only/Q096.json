@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "39789996",
+    "41866304",
+    "35908957",
+    "30610764",
+    "34984527",
+    "39373847",
+    "35280661",
+    "34552771",
+    "39484770",
+    "41580713",
+    "40983122",
+    "41733803",
+    "41343666",
+    "37752532",
+    "39267058"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q096.json",
+      "question_id": "Q096",
+      "sha256": "ef6f7b8721c3b9b5f91741c8d13b3ab93c8d458b7d77715dc8bd97f38201f65d"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q096.json",
+      "question_id": "Q096",
+      "sha256": "2f62d900134d08d7cccc7a15c3d7bb8ba1f7ca20d73191585a4c5c6d055febfc"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Summarize the evidence linking LHX2 to androgenetic alopecia.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.3774,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the evidence linking LHX2 to androgenetic alopecia.",
+  "parsed_answer": "The literature context provided does not contain any information linking LHX2 (LIM homeobox 2) to androgenetic alopecia. The abstracts discuss lanthanum hydroxide (LH), lanthanum hydroxide phosphatase (LHPP), and their roles in chronic kidney disease, cancer, and hypoxic pulmonary hypertension, but none mention LHX2 or androgenetic alopecia. Therefore, there is no evidence in the provided context to support a link between LHX2 and androgenetic alopecia.",
+  "question_id": "Q096",
+  "question_text": "Summarize the evidence linking LHX2 to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 110,
+    "prompt_token_count": 1125,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The literature context provided does not contain any information linking LHX2 (LIM homeobox 2) to androgenetic alopecia. The abstracts discuss lanthanum hydroxide (LH), lanthanum hydroxide phosphatase (LHPP), and their roles in chronic kidney disease, cancer, and hypoxic pulmonary hypertension, but none mention LHX2 or androgenetic alopecia. Therefore, there is no evidence in the provided context to support a link between LHX2 and androgenetic alopecia."
+      }
+    ],
+    "created": 1783564268,
+    "id": "cmpl-c67021d9-61dd-4708-b6b4-b2c7818af331",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 110,
+      "prompt_tokens": 1104,
+      "total_tokens": 1214
+    }
+  },
+  "reranker_scores": [
+    -3.452415943145752,
+    -4.389055252075195,
+    -4.939817905426025
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      41.15251159667969,
+      41.77344512939453,
+      43.993412017822266,
+      44.021034240722656,
+      45.19369888305664,
+      45.27422332763672,
+      45.34428405761719,
+      45.36040496826172,
+      45.702064514160156,
+      45.980533599853516,
+      46.214210510253906,
+      46.714813232421875,
+      46.773956298828125,
+      46.878395080566406,
+      46.969757080078125
+    ],
+    "candidate_pmids": [
+      "39789996",
+      "41866304",
+      "35908957",
+      "30610764",
+      "34984527",
+      "39373847",
+      "35280661",
+      "34552771",
+      "39484770",
+      "41580713",
+      "40983122",
+      "41733803",
+      "41343666",
+      "37752532",
+      "39267058"
+    ],
+    "expanded_retrieval_query": "Summarize the evidence linking LHX2 to androgenetic alopecia.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 35908957, relevance: -3.4524) ---\nPrevious studies showed that lanthanum hydroxide (LH) has a therapeutic effect on chronic kidney disease (CKD) and vascular calcification, which suggests that it might have clinical value. However, the target and mechanism of action of LH are unclear. Metabolomics of clinical samples can be used to predict the mechanism of drug action. In this study, metabolomic profiles in patients with end-stage renal disease (ESRD) were used to screen related signaling pathways, and we verified the influence of LH on the ROS-PI3K-AKT-mTOR-HIF-1alpha signaling pathway by western blotting and quantitative real-time RT-qPCR in vivo and in vitro. We found that ROS and SLC16A10 genes were activated in patients with ESRD. The SLC16A10 gene is associated with six significant metabolites (L-cysteine, L-cystine, L-isoleucine, L-arginine, L-aspartic acid, and L-phenylalanine) and the PI3K-AKT signaling pathway. The results showed that LH inhibits the ESRD process and its cardiovascular complications by inhibiting the ROS-PI3K-AKT-mTOR-HIF-1alpha signaling pathway. Collectively, LH may be a candidate phosphorus binder for the treatment of vascular calcification in ESRD.\n\n--- Abstract 2 (PMID: 41733803, relevance: -4.3891) ---\nPhospholysine phosphohistidine inorganic pyrophosphate phosphatase (LHPP) is a newly discovered histidine phosphatase that can remove histidine-linked phosphate groups from proteins, but its function is unclear. Given that the LHPP protein might participate in histidine phosphorylation, it is receiving increasing attention from researchers. Recent evidence has suggested that LHPP is a novel tumor suppressor with a crucial role in cancers, as its expression is decreased in different cancers. Previous studies have confirmed that abnormal LHPP levels can lead to overactivation of pathways such as the PI3K/AKT pathway during the course of tumor pathogenesis. In addition, LHPP has been confirmed as a susceptibility gene for depression, which has triggered many related studies. However, the current understanding of the functions of LHPP in diseases is relatively limited, and a systematic summary of its mechanism is lacking. Therefore, this paper reviews relevant studies of LHPP to clarify the mechanism of its involvement in cancers and nervous system diseases and provides new strategies for disease research involving LHPP.\n\n--- Abstract 3 (PMID: 40983122, relevance: -4.9398) ---\nBACKGROUND: Hypoxic pulmonary hypertension (HPH) is a progressive disorder marked by pulmonary vasculature remodeling, primarily driven by the overproliferation of pulmonary artery smooth muscle cells (PASMCs). Phospholysine phosphohistidine inorganic pyrophosphate phosphatase (LHPP) has been identified as a tumor suppressor in cancer. However, its role in the proliferation of PASMCs and its implications in HPH remain unexplored. METHODS: Hypoxia and SU5416 (SuHx) were used to establish HPH rat models. Rat and human PASMCs models with LHPP overexpression and silencing were constructed to evaluate the role of LHPP in HPH. Cell proliferation was assessed using both CCK-8 and EdU assays. LHPP targeting approach (siRNA, adenovirus, and adeno-associated virus AAV) was used for in vitro and in vivo experiments to investigate the impact of LHPP on PASMCs glycolysis. We measured lactate levels, and key glycolytic enzymes, focusing on LHPP's influence on lactate dehydrogenase A (LDHA). Additionally, the effect of methyltransferase-like 3 (METTL3) on the reduction of LHPP expression was examined. RESULTS: LHPP levels were significantly decreased in both the pulmonary arteries of rats with SuHx-induced HPH and in hypoxia-treated PASMCs. Overexpression of LHPP inhibited the hypoxia-induced increase in proliferation potential and alleviated pulmonary vascular remodeling (PVR) in vivo. Conversely, silencing LHPP promoted PASMCs proliferation. LHPP overexpression suppressed PASMCs glycolysis and proliferation by lactate dehydrogenase A (LDHA)-mediated glycolysis. Mechanistic studies revealed that METTL3 downregulated LHPP expression. CONCLUSION: This study emphasizes the METTL3/LHPP/LDHA axis's role in enhancing PASMC proliferation and HPH. LHPP may represent a potential therapeutic target for the treatment of hypoxic pulmonary hypertension.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Summarize the evidence linking LHX2 to androgenetic alopecia.",
+    "rerank_seconds": 0.3435,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3568,
+    "score_max": -3.452415943145752,
+    "score_mean": -4.260429700215657,
+    "scores": [
+      -3.452415943145752,
+      -4.389055252075195,
+      -4.939817905426025
+    ],
+    "selected_abstracts": [
+      "Previous studies showed that lanthanum hydroxide (LH) has a therapeutic effect on chronic kidney disease (CKD) and vascular calcification, which suggests that it might have clinical value. However, the target and mechanism of action of LH are unclear. Metabolomics of clinical samples can be used to predict the mechanism of drug action. In this study, metabolomic profiles in patients with end-stage renal disease (ESRD) were used to screen related signaling pathways, and we verified the influence of LH on the ROS-PI3K-AKT-mTOR-HIF-1alpha signaling pathway by western blotting and quantitative real-time RT-qPCR in vivo and in vitro. We found that ROS and SLC16A10 genes were activated in patients with ESRD. The SLC16A10 gene is associated with six significant metabolites (L-cysteine, L-cystine, L-isoleucine, L-arginine, L-aspartic acid, and L-phenylalanine) and the PI3K-AKT signaling pathway. The results showed that LH inhibits the ESRD process and its cardiovascular complications by inhibiting the ROS-PI3K-AKT-mTOR-HIF-1alpha signaling pathway. Collectively, LH may be a candidate phosphorus binder for the treatment of vascular calcification in ESRD.",
+      "Phospholysine phosphohistidine inorganic pyrophosphate phosphatase (LHPP) is a newly discovered histidine phosphatase that can remove histidine-linked phosphate groups from proteins, but its function is unclear. Given that the LHPP protein might participate in histidine phosphorylation, it is receiving increasing attention from researchers. Recent evidence has suggested that LHPP is a novel tumor suppressor with a crucial role in cancers, as its expression is decreased in different cancers. Previous studies have confirmed that abnormal LHPP levels can lead to overactivation of pathways such as the PI3K/AKT pathway during the course of tumor pathogenesis. In addition, LHPP has been confirmed as a susceptibility gene for depression, which has triggered many related studies. However, the current understanding of the functions of LHPP in diseases is relatively limited, and a systematic summary of its mechanism is lacking. Therefore, this paper reviews relevant studies of LHPP to clarify the mechanism of its involvement in cancers and nervous system diseases and provides new strategies for disease research involving LHPP.",
+      "BACKGROUND: Hypoxic pulmonary hypertension (HPH) is a progressive disorder marked by pulmonary vasculature remodeling, primarily driven by the overproliferation of pulmonary artery smooth muscle cells (PASMCs). Phospholysine phosphohistidine inorganic pyrophosphate phosphatase (LHPP) has been identified as a tumor suppressor in cancer. However, its role in the proliferation of PASMCs and its implications in HPH remain unexplored. METHODS: Hypoxia and SU5416 (SuHx) were used to establish HPH rat models. Rat and human PASMCs models with LHPP overexpression and silencing were constructed to evaluate the role of LHPP in HPH. Cell proliferation was assessed using both CCK-8 and EdU assays. LHPP targeting approach (siRNA, adenovirus, and adeno-associated virus AAV) was used for in vitro and in vivo experiments to investigate the impact of LHPP on PASMCs glycolysis. We measured lactate levels, and key glycolytic enzymes, focusing on LHPP's influence on lactate dehydrogenase A (LDHA). Additionally, the effect of methyltransferase-like 3 (METTL3) on the reduction of LHPP expression was examined. RESULTS: LHPP levels were significantly decreased in both the pulmonary arteries of rats with SuHx-induced HPH and in hypoxia-treated PASMCs. Overexpression of LHPP inhibited the hypoxia-induced increase in proliferation potential and alleviated pulmonary vascular remodeling (PVR) in vivo. Conversely, silencing LHPP promoted PASMCs proliferation. LHPP overexpression suppressed PASMCs glycolysis and proliferation by lactate dehydrogenase A (LDHA)-mediated glycolysis. Mechanistic studies revealed that METTL3 downregulated LHPP expression. CONCLUSION: This study emphasizes the METTL3/LHPP/LDHA axis's role in enhancing PASMC proliferation and HPH. LHPP may represent a potential therapeutic target for the treatment of hypoxic pulmonary hypertension."
+    ],
+    "selected_pmids": [
+      "35908957",
+      "41733803",
+      "40983122"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0131
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q096.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "35908957",
+    "41733803",
+    "40983122"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:31:10.052188+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 35908957, relevance: -3.4524) ---\nPrevious studies showed that lanthanum hydroxide (LH) has a therapeutic effect on chronic kidney disease (CKD) and vascular calcification, which suggests that it might have clinical value. However, the target and mechanism of action of LH are unclear. Metabolomics of clinical samples can be used to predict the mechanism of drug action. In this study, metabolomic profiles in patients with end-stage renal disease (ESRD) were used to screen related signaling pathways, and we verified the influence of LH on the ROS-PI3K-AKT-mTOR-HIF-1alpha signaling pathway by western blotting and quantitative real-time RT-qPCR in vivo and in vitro. We found that ROS and SLC16A10 genes were activated in patients with ESRD. The SLC16A10 gene is associated with six significant metabolites (L-cysteine, L-cystine, L-isoleucine, L-arginine, L-aspartic acid, and L-phenylalanine) and the PI3K-AKT signaling pathway. The results showed that LH inhibits the ESRD process and its cardiovascular complications by inhibiting the ROS-PI3K-AKT-mTOR-HIF-1alpha signaling pathway. Collectively, LH may be a candidate phosphorus binder for the treatment of vascular calcification in ESRD.\n\n--- Abstract 2 (PMID: 41733803, relevance: -4.3891) ---\nPhospholysine phosphohistidine inorganic pyrophosphate phosphatase (LHPP) is a newly discovered histidine phosphatase that can remove histidine-linked phosphate groups from proteins, but its function is unclear. Given that the LHPP protein might participate in histidine phosphorylation, it is receiving increasing attention from researchers. Recent evidence has suggested that LHPP is a novel tumor suppressor with a crucial role in cancers, as its expression is decreased in different cancers. Previous studies have confirmed that abnormal LHPP levels can lead to overactivation of pathways such as the PI3K/AKT pathway during the course of tumor pathogenesis. In addition, LHPP has been confirmed as a susceptibility gene for depression, which has triggered many related studies. However, the current understanding of the functions of LHPP in diseases is relatively limited, and a systematic summary of its mechanism is lacking. Therefore, this paper reviews relevant studies of LHPP to clarify the mechanism of its involvement in cancers and nervous system diseases and provides new strategies for disease research involving LHPP.\n\n--- Abstract 3 (PMID: 40983122, relevance: -4.9398) ---\nBACKGROUND: Hypoxic pulmonary hypertension (HPH) is a progressive disorder marked by pulmonary vasculature remodeling, primarily driven by the overproliferation of pulmonary artery smooth muscle cells (PASMCs). Phospholysine phosphohistidine inorganic pyrophosphate phosphatase (LHPP) has been identified as a tumor suppressor in cancer. However, its role in the proliferation of PASMCs and its implications in HPH remain unexplored. METHODS: Hypoxia and SU5416 (SuHx) were used to establish HPH rat models. Rat and human PASMCs models with LHPP overexpression and silencing were constructed to evaluate the role of LHPP in HPH. Cell proliferation was assessed using both CCK-8 and EdU assays. LHPP targeting approach (siRNA, adenovirus, and adeno-associated virus AAV) was used for in vitro and in vivo experiments to investigate the impact of LHPP on PASMCs glycolysis. We measured lactate levels, and key glycolytic enzymes, focusing on LHPP's influence on lactate dehydrogenase A (LDHA). Additionally, the effect of methyltransferase-like 3 (METTL3) on the reduction of LHPP expression was examined. RESULTS: LHPP levels were significantly decreased in both the pulmonary arteries of rats with SuHx-induced HPH and in hypoxia-treated PASMCs. Overexpression of LHPP inhibited the hypoxia-induced increase in proliferation potential and alleviated pulmonary vascular remodeling (PVR) in vivo. Conversely, silencing LHPP promoted PASMCs proliferation. LHPP overexpression suppressed PASMCs glycolysis and proliferation by lactate dehydrogenase A (LDHA)-mediated glycolysis. Mechanistic studies revealed that METTL3 downregulated LHPP expression. CONCLUSION: This study emphasizes the METTL3/LHPP/LDHA axis's role in enhancing PASMC proliferation and HPH. LHPP may represent a potential therapeutic target for the treatment of hypoxic pulmonary hypertension.\n\n\n\n**Question:**\nSummarize the evidence linking LHX2 to androgenetic alopecia.",
+  "vector_context": "--- Abstract 1 (PMID: 35908957, relevance: -3.4524) ---\nPrevious studies showed that lanthanum hydroxide (LH) has a therapeutic effect on chronic kidney disease (CKD) and vascular calcification, which suggests that it might have clinical value. However, the target and mechanism of action of LH are unclear. Metabolomics of clinical samples can be used to predict the mechanism of drug action. In this study, metabolomic profiles in patients with end-stage renal disease (ESRD) were used to screen related signaling pathways, and we verified the influence of LH on the ROS-PI3K-AKT-mTOR-HIF-1alpha signaling pathway by western blotting and quantitative real-time RT-qPCR in vivo and in vitro. We found that ROS and SLC16A10 genes were activated in patients with ESRD. The SLC16A10 gene is associated with six significant metabolites (L-cysteine, L-cystine, L-isoleucine, L-arginine, L-aspartic acid, and L-phenylalanine) and the PI3K-AKT signaling pathway. The results showed that LH inhibits the ESRD process and its cardiovascular complications by inhibiting the ROS-PI3K-AKT-mTOR-HIF-1alpha signaling pathway. Collectively, LH may be a candidate phosphorus binder for the treatment of vascular calcification in ESRD.\n\n--- Abstract 2 (PMID: 41733803, relevance: -4.3891) ---\nPhospholysine phosphohistidine inorganic pyrophosphate phosphatase (LHPP) is a newly discovered histidine phosphatase that can remove histidine-linked phosphate groups from proteins, but its function is unclear. Given that the LHPP protein might participate in histidine phosphorylation, it is receiving increasing attention from researchers. Recent evidence has suggested that LHPP is a novel tumor suppressor with a crucial role in cancers, as its expression is decreased in different cancers. Previous studies have confirmed that abnormal LHPP levels can lead to overactivation of pathways such as the PI3K/AKT pathway during the course of tumor pathogenesis. In addition, LHPP has been confirmed as a susceptibility gene for depression, which has triggered many related studies. However, the current understanding of the functions of LHPP in diseases is relatively limited, and a systematic summary of its mechanism is lacking. Therefore, this paper reviews relevant studies of LHPP to clarify the mechanism of its involvement in cancers and nervous system diseases and provides new strategies for disease research involving LHPP.\n\n--- Abstract 3 (PMID: 40983122, relevance: -4.9398) ---\nBACKGROUND: Hypoxic pulmonary hypertension (HPH) is a progressive disorder marked by pulmonary vasculature remodeling, primarily driven by the overproliferation of pulmonary artery smooth muscle cells (PASMCs). Phospholysine phosphohistidine inorganic pyrophosphate phosphatase (LHPP) has been identified as a tumor suppressor in cancer. However, its role in the proliferation of PASMCs and its implications in HPH remain unexplored. METHODS: Hypoxia and SU5416 (SuHx) were used to establish HPH rat models. Rat and human PASMCs models with LHPP overexpression and silencing were constructed to evaluate the role of LHPP in HPH. Cell proliferation was assessed using both CCK-8 and EdU assays. LHPP targeting approach (siRNA, adenovirus, and adeno-associated virus AAV) was used for in vitro and in vivo experiments to investigate the impact of LHPP on PASMCs glycolysis. We measured lactate levels, and key glycolytic enzymes, focusing on LHPP's influence on lactate dehydrogenase A (LDHA). Additionally, the effect of methyltransferase-like 3 (METTL3) on the reduction of LHPP expression was examined. RESULTS: LHPP levels were significantly decreased in both the pulmonary arteries of rats with SuHx-induced HPH and in hypoxia-treated PASMCs. Overexpression of LHPP inhibited the hypoxia-induced increase in proliferation potential and alleviated pulmonary vascular remodeling (PVR) in vivo. Conversely, silencing LHPP promoted PASMCs proliferation. LHPP overexpression suppressed PASMCs glycolysis and proliferation by lactate dehydrogenase A (LDHA)-mediated glycolysis. Mechanistic studies revealed that METTL3 downregulated LHPP expression. CONCLUSION: This study emphasizes the METTL3/LHPP/LDHA axis's role in enhancing PASMC proliferation and HPH. LHPP may represent a potential therapeutic target for the treatment of hypoxic pulmonary hypertension.\n\n"
+}

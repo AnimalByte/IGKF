@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q062",
+      "randomization_seed": "20260706:Q062:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q062",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q062",
+      "error": null,
+      "id": "batch_req_6a4f85d08fcc81909f37878d73049cd6",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578946,
+          "created_at": 1783578918,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0553c67a4cb5008c006a4f4126c39881979ed3b321033755df",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q062"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0553c67a4cb5008c006a4f413918c48197b7e9bcb1d7e3251d",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Attempts to identify SRD5A2 variants, but does not specifically answer which were annotated as high impact.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 1,\n        \"rationale\": \"Infers high-impact annotation without evidence, and introduces unsupported claims such as eleven novel Egyptian SRD5A2 variants.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Mentions variants from the abstract but fails to distinguish reported variants from high-impact annotations and adds unsupported content.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Acknowledges that 'high impact' is not explicitly stated, but then overextends to unsupported conclusions.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether the provided evidence supports identifying high-impact variants mapped to SRD5A2.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Correctly states that the provided evidence does not contain information on variants annotated as high impact mapped to SRD5A2.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Gives the key conclusion, though it could note that some SRD5A2 variants are mentioned but not annotated as high impact.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately abstains from naming variants when the evidence is insufficient.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0553c67a4cb5008c006a4f413f74ac8197af55631510eb44ef",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2563,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 918,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3481
+          },
+          "user": null
+        },
+        "request_id": "174b01b3-4037-474f-8da1-35119b291cf8",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Attempts to identify SRD5A2 variants, but does not specifically answer which were annotated as high impact.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Infers high-impact annotation without evidence, and introduces unsupported claims such as eleven novel Egyptian SRD5A2 variants.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Mentions variants from the abstract but fails to distinguish reported variants from high-impact annotations and adds unsupported content.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Acknowledges that 'high impact' is not explicitly stated, but then overextends to unsupported conclusions.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q062",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q062.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.736701+00:00"
+}

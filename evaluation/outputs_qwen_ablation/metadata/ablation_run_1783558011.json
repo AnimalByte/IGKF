@@ -1,0 +1,96 @@
+{
+  "benchmark_path": "data/testset.jsonl",
+  "benchmark_sha256": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "canonical_references": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q002.json",
+      "question_id": "Q002",
+      "sha256": "ab64eb7a3f3bc298262dd5b95ec7a81979c94cf15bd434155bae8186b744b494"
+    },
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q100.json",
+      "question_id": "Q100",
+      "sha256": "ddfa703b11308ef70710948fb9570562f2d1625bf1d3702de350d623e50a1d68"
+    },
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q109.json",
+      "question_id": "Q109",
+      "sha256": "c0118075ab13bfdbf4deb31a1ba8d9ac19c3f2f376aec61bca69e5cf7f90268b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q002.json",
+      "question_id": "Q002",
+      "sha256": "ec789d06c4c4d09d746910a063425a988f44c96c612e4ce5f667ad0248783cfc"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q100.json",
+      "question_id": "Q100",
+      "sha256": "307775efbc516a018bcd8c2fb6968a82988f876a7e2e029646975167a6325ef2"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q109.json",
+      "question_id": "Q109",
+      "sha256": "bf23f64515ba0f9badceb0f047467de54eb7c9fb12d87c65a7c0d33ff4a24782"
+    }
+  ],
+  "config_sha256": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "created_at": "2026-07-09T00:46:51.262004+00:00",
+  "dry_run": true,
+  "git_commit": null,
+  "git_status_short": null,
+  "local_model": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "retrieval": {
+    "embedding_model": "pritamdeka/S-PubMedBert-MS-MARCO",
+    "initial_k": 15,
+    "rerank_top_n": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "retrieval_model_device": "cpu"
+  },
+  "schema_version": "qwen_ablation_run_metadata_v1",
+  "selected_conditions": [
+    "qwen3_8b_graph_only",
+    "qwen3_8b_literature_only"
+  ],
+  "selected_question_count": 3,
+  "selected_question_ids": [
+    "Q002",
+    "Q100",
+    "Q109"
+  ],
+  "statistics": {
+    "multiple_comparison_correction": "holm",
+    "wilcoxon_zero_method": "wilcox"
+  }
+}

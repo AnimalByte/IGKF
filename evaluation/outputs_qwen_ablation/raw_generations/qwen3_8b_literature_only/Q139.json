@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41722875",
+    "41673742",
+    "42019823",
+    "41640146",
+    "38869147",
+    "42315371",
+    "41145827",
+    "41444608",
+    "41796107",
+    "35914715",
+    "31886567",
+    "42260572",
+    "39210538",
+    "36750132",
+    "41501168"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q139.json",
+      "question_id": "Q139",
+      "sha256": "347f6d644f0e46f31f989e6a03493e466da43f15e94500ce0ddba9e0dc22cb36"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q139.json",
+      "question_id": "Q139",
+      "sha256": "0468893d820930af9e512e794ee21397239eb66c78efbd3ac2876d7b3adbc192"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated data contain evidence of a physical or functional association between the protein products of AR and SRD5A2? Describe the evidence type and strength.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 5.517,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated data contain evidence of a physical or functional association between the protein products of AR and SRD5A2? Describe the evidence type and strength.",
+  "parsed_answer": "The integrated data provides **indirect evidence of a functional association** between the protein products of **AR (androgen receptor)** and **SRD5A2 (steroid 5alpha-reductase 2)**, based on their shared involvement in androgen signaling pathways and male sexual development.\n\n### Evidence Type and Strength:\n1. **Shared Pathophysiological Role**:  \n   - Both **AR** and **SRD5A2** are involved in androgen signaling. **SRD5A2** catalyzes the conversion of testosterone to **DHT**, which is a potent androgen that binds to the **AR** to exert its biological effects. This biochemical relationship suggests a functional interaction between the two proteins.  \n   - **Evidence Strength**: **Strong** (Level 2), as it is based on well-established biochemical pathways and physiological roles.\n\n2. **Clinical and Genetic Correlation**:  \n   - In the study on 46,XY differences in sex development (DSD), **SRD5A2** and **AR** were both implicated in the pathophysiology of **5alpha-reductase type 2 deficiency** and **androgen insensitivity syndrome (AIS)**. These conditions are caused by mutations in **SRD5A2** or **AR**, respectively, and both result in impaired androgen action.  \n   - This indicates that **AR** and **SRD5A2** are functionally linked in the androgen signaling cascade.  \n   - **Evidence Strength**: **Moderate** (Level 3), as it is based on clinical and genetic data from a cohort study.\n\n3. **Inhibition Studies**:  \n   - The study on **SRD5A2 inhibitors** mentions that **MK-0773**, an **androgen receptor modulator**, is a moderate **SRD5A2 inhibitor**. This suggests that **AR modulators** can also affect **SRD5A2** activity, possibly through shared signaling pathways or structural interactions.  \n   - **Evidence Strength**: **Moderate** (Level 3), as it is based on pharmacological data from an in vitro study.\n\n### Conclusion:\nWhile there is **no direct physical interaction** (e.g., protein-protein binding) reported between **AR** and **SRD5A2**, the **functional association** is **strongly supported** by their shared role in androgen signaling, clinical and genetic overlap in DSD, and pharmacological evidence of cross-talk. The evidence is **indirect but robust**, suggesting a **functional relationship** rather than a direct physical one.",
+  "question_id": "Q139",
+  "question_text": "Does the integrated data contain evidence of a physical or functional association between the protein products of AR and SRD5A2? Describe the evidence type and strength.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 536,
+    "prompt_token_count": 1323,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated data provides **indirect evidence of a functional association** between the protein products of **AR (androgen receptor)** and **SRD5A2 (steroid 5alpha-reductase 2)**, based on their shared involvement in androgen signaling pathways and male sexual development.\n\n### Evidence Type and Strength:\n1. **Shared Pathophysiological Role**:  \n   - Both **AR** and **SRD5A2** are involved in androgen signaling. **SRD5A2** catalyzes the conversion of testosterone to **DHT**, which is a potent androgen that binds to the **AR** to exert its biological effects. This biochemical relationship suggests a functional interaction between the two proteins.  \n   - **Evidence Strength**: **Strong** (Level 2), as it is based on well-established biochemical pathways and physiological roles.\n\n2. **Clinical and Genetic Correlation**:  \n   - In the study on 46,XY differences in sex development (DSD), **SRD5A2** and **AR** were both implicated in the pathophysiology of **5alpha-reductase type 2 deficiency** and **androgen insensitivity syndrome (AIS)**. These conditions are caused by mutations in **SRD5A2** or **AR**, respectively, and both result in impaired androgen action.  \n   - This indicates that **AR** and **SRD5A2** are functionally linked in the androgen signaling cascade.  \n   - **Evidence Strength**: **Moderate** (Level 3), as it is based on clinical and genetic data from a cohort study.\n\n3. **Inhibition Studies**:  \n   - The study on **SRD5A2 inhibitors** mentions that **MK-0773**, an **androgen receptor modulator**, is a moderate **SRD5A2 inhibitor**. This suggests that **AR modulators** can also affect **SRD5A2** activity, possibly through shared signaling pathways or structural interactions.  \n   - **Evidence Strength**: **Moderate** (Level 3), as it is based on pharmacological data from an in vitro study.\n\n### Conclusion:\nWhile there is **no direct physical interaction** (e.g., protein-protein binding) reported between **AR** and **SRD5A2**, the **functional association** is **strongly supported** by their shared role in androgen signaling, clinical and genetic overlap in DSD, and pharmacological evidence of cross-talk. The evidence is **indirect but robust**, suggesting a **functional relationship** rather than a direct physical one."
+      }
+    ],
+    "created": 1783564454,
+    "id": "cmpl-a8fc1f0d-8cf9-4c41-ab7c-6332c33ce220",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 536,
+      "prompt_tokens": 1302,
+      "total_tokens": 1838
+    }
+  },
+  "reranker_scores": [
+    -1.528363585472107,
+    -2.3120205402374268,
+    -2.6395962238311768
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.664573669433594,
+      35.24842834472656,
+      37.71503448486328,
+      39.40452575683594,
+      39.79901123046875,
+      40.13285446166992,
+      40.269081115722656,
+      40.439537048339844,
+      40.52558135986328,
+      40.962276458740234,
+      41.743072509765625,
+      41.98744583129883,
+      42.14130783081055,
+      42.383628845214844,
+      42.61017608642578
+    ],
+    "candidate_pmids": [
+      "41722875",
+      "41673742",
+      "42019823",
+      "41640146",
+      "38869147",
+      "42315371",
+      "41145827",
+      "41444608",
+      "41796107",
+      "35914715",
+      "31886567",
+      "42260572",
+      "39210538",
+      "36750132",
+      "41501168"
+    ],
+    "expanded_retrieval_query": "Does the integrated data contain evidence of a physical or functional association between the protein products of AR and SRD5A2? Describe the evidence type and strength.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41722875, relevance: -1.5284) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 41796107, relevance: -2.3120) ---\nBACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.\n\n--- Abstract 3 (PMID: 41145827, relevance: -2.6396) ---\nSerine/arginine repetitive matrix protein 1 (SRRM1) is a key component of spliceosomes and plays various roles in messenger RNA processing. To date, its function in the nervous system has not been elucidated, and germline variants in SRRM1 have not yet been implicated in disease. Through international collaboration, we have identified three individuals harbouring heterozygous truncating variants in SRRM1, presenting variably with developmental delay, intellectual disability, short stature, behavioural and skeletal anomalies, and facial dysmorphism. Two of the variants occurred de novo, while the third could not be tested in the parents. Reduction of SRRM1 to 50% in SKNBE2 cells by introducing a truncating variant via CRISPR-Cas9 editing, followed by differentiation into neuron-like cells, resulted in impaired cell proliferation, migration, and neurite outgrowth compared to wild-type cells. Additionally, the role of SRRM1 in nervous system development and functioning was investigated in vivo using a Drosophila model. Pan-neuronal knockdown of the orthologue Srrm1 led to reduced viability, while motoneuronal knockdown impaired gross neurological function. Taken together, we provide multiple lines of evidence that loss of SRRM1 is associated with nervous system-related phenotypes, and that its haploinsufficiency may be causative for a neurodevelopmental disorder.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated data contain evidence of a physical or functional association between the protein products of AR and SRD5A2? Describe the evidence type and strength.",
+    "rerank_seconds": 0.3428,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3599,
+    "score_max": -1.528363585472107,
+    "score_mean": -2.1599934498469033,
+    "scores": [
+      -1.528363585472107,
+      -2.3120205402374268,
+      -2.6395962238311768
+    ],
+    "selected_abstracts": [
+      "5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.",
+      "BACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.",
+      "Serine/arginine repetitive matrix protein 1 (SRRM1) is a key component of spliceosomes and plays various roles in messenger RNA processing. To date, its function in the nervous system has not been elucidated, and germline variants in SRRM1 have not yet been implicated in disease. Through international collaboration, we have identified three individuals harbouring heterozygous truncating variants in SRRM1, presenting variably with developmental delay, intellectual disability, short stature, behavioural and skeletal anomalies, and facial dysmorphism. Two of the variants occurred de novo, while the third could not be tested in the parents. Reduction of SRRM1 to 50% in SKNBE2 cells by introducing a truncating variant via CRISPR-Cas9 editing, followed by differentiation into neuron-like cells, resulted in impaired cell proliferation, migration, and neurite outgrowth compared to wild-type cells. Additionally, the role of SRRM1 in nervous system development and functioning was investigated in vivo using a Drosophila model. Pan-neuronal knockdown of the orthologue Srrm1 led to reduced viability, while motoneuronal knockdown impaired gross neurological function. Taken together, we provide multiple lines of evidence that loss of SRRM1 is associated with nervous system-related phenotypes, and that its haploinsufficiency may be causative for a neurodevelopmental disorder."
+    ],
+    "selected_pmids": [
+      "41722875",
+      "41796107",
+      "41145827"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.017
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q139.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41722875",
+    "41796107",
+    "41145827"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:34:19.889395+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41722875, relevance: -1.5284) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 41796107, relevance: -2.3120) ---\nBACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.\n\n--- Abstract 3 (PMID: 41145827, relevance: -2.6396) ---\nSerine/arginine repetitive matrix protein 1 (SRRM1) is a key component of spliceosomes and plays various roles in messenger RNA processing. To date, its function in the nervous system has not been elucidated, and germline variants in SRRM1 have not yet been implicated in disease. Through international collaboration, we have identified three individuals harbouring heterozygous truncating variants in SRRM1, presenting variably with developmental delay, intellectual disability, short stature, behavioural and skeletal anomalies, and facial dysmorphism. Two of the variants occurred de novo, while the third could not be tested in the parents. Reduction of SRRM1 to 50% in SKNBE2 cells by introducing a truncating variant via CRISPR-Cas9 editing, followed by differentiation into neuron-like cells, resulted in impaired cell proliferation, migration, and neurite outgrowth compared to wild-type cells. Additionally, the role of SRRM1 in nervous system development and functioning was investigated in vivo using a Drosophila model. Pan-neuronal knockdown of the orthologue Srrm1 led to reduced viability, while motoneuronal knockdown impaired gross neurological function. Taken together, we provide multiple lines of evidence that loss of SRRM1 is associated with nervous system-related phenotypes, and that its haploinsufficiency may be causative for a neurodevelopmental disorder.\n\n\n\n**Question:**\nDoes the integrated data contain evidence of a physical or functional association between the protein products of AR and SRD5A2? Describe the evidence type and strength.",
+  "vector_context": "--- Abstract 1 (PMID: 41722875, relevance: -1.5284) ---\n5alpha-Dihydroxytestosterone (DHT) is essential for male sexual development, and its synthesis from testosterone is mediated by the steroid 5alpha-reductase (SRD5A) isoenzymes, SRD5A1 and SRD5A2. SRD5A2 is the predominant isoform expressed in reproductive organs. Disruption of SRD5A2 activity can significantly lower the available DHT concentration in human reproductive organs and cause complications during development. Hence, unintentional inhibition of this enzyme should be avoided. This study aimed to establish an in silico/in vitro approach to identify potential inhibitors of SRD5A2 through virtual screening. Therefore, we generated an ensemble of minimized SRD5A2 receptor conformational states using molecular dynamics simulations, and applied consensus docking with a validation set to select the most representative structure. Next, compounds from various databases were docked to the selected protein structure and their binding poses were evaluated through an automated protocol. The selected potential inhibitors were then tested in an enzyme activity assay, revealing that the androgen receptor modulator MK-0773 is a moderate SRD5A2 inhibitor with an IC(50) value of 1.70 +/-0.54muM. Quantum-mechanical calculations suggested, however, that MK-0773 does not act as a covalent inhibitor, as observed for the structurally similar known inhibitor finasteride. These findings improve our understanding of the SRD5A2-ligand interactions. Lastly, our in silico/in vitro approach can be used to identify new SRD5A2 inhibitors.\n\n--- Abstract 2 (PMID: 41796107, relevance: -2.3120) ---\nBACKGROUND: 46,XY differences in sex development (DSD) comprise a heterogeneous group of conditions. Molecular diagnosis guides management by giving insights into the pathophysiology of sex development, reproduction, tumour formation and extragenital issues. METHODS: Children with 46,XY DSD from a tertiary hospital in India underwent comprehensive assessment and stepwise genetic testing. Targeted testing for SRD5A2 and AR was performed in cases with suspected 5alpha-reductase type 2 (5alphaR2) deficiency/androgen insensitivity syndrome (AIS). For all other patients, and those without variants in SRD5A2 or AR on Sanger sequencing, NGS using a targeted 155-gene panel was performed. Longitudinal clinical data was also collated. RESULTS: One hundred and forty-seven children with 46,XY DSD with a median (interquartile range) age of 3.8 (1.4, 10.6) years were enrolled. Provisional clinical diagnoses were 5alphaR2 deficiency/AIS (n = 83, 56.5%), gonadal dysgenesis (n = 31, 21%), testosterone biosynthetic defect (n = 11, 7.5%) and others (n = 22, 15%) based on clinical, biochemical and radiological assessment. Sequential single gene testing for SRD5A2 and AR performed in 75 patients with a clinical diagnosis of 5alphaR2 deficiency/AIS identified pathogenic/likely pathogenic variants in 44 subjects. NGS in the remaining 103 children revealed pathogenic/likely pathogenic variants in 20 subjects across 12 genes, with NR5A1 being the most frequent (7/103). Four subjects had variants of uncertain significance (VUS) deemed possibly pathogenic due to good genotype-phenotype correlation. Overall, 68/147 (46%) achieved a molecular diagnosis in this cohort. CONCLUSION: Sanger sequencing followed by NGS could provide molecular diagnosis in 46% of this Indian cohort with 46,XY DSD. SRD5A2, AR and NR5A1 were the most frequently implicated genes.\n\n--- Abstract 3 (PMID: 41145827, relevance: -2.6396) ---\nSerine/arginine repetitive matrix protein 1 (SRRM1) is a key component of spliceosomes and plays various roles in messenger RNA processing. To date, its function in the nervous system has not been elucidated, and germline variants in SRRM1 have not yet been implicated in disease. Through international collaboration, we have identified three individuals harbouring heterozygous truncating variants in SRRM1, presenting variably with developmental delay, intellectual disability, short stature, behavioural and skeletal anomalies, and facial dysmorphism. Two of the variants occurred de novo, while the third could not be tested in the parents. Reduction of SRRM1 to 50% in SKNBE2 cells by introducing a truncating variant via CRISPR-Cas9 editing, followed by differentiation into neuron-like cells, resulted in impaired cell proliferation, migration, and neurite outgrowth compared to wild-type cells. Additionally, the role of SRRM1 in nervous system development and functioning was investigated in vivo using a Drosophila model. Pan-neuronal knockdown of the orthologue Srrm1 led to reduced viability, while motoneuronal knockdown impaired gross neurological function. Taken together, we provide multiple lines of evidence that loss of SRRM1 is associated with nervous system-related phenotypes, and that its haploinsufficiency may be causative for a neurodevelopmental disorder.\n\n"
+}

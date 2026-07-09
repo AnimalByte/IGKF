@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41056281",
+    "40765829",
+    "41000054",
+    "31279575",
+    "35186941",
+    "39529066",
+    "41218118",
+    "34275739",
+    "34564982",
+    "42302347",
+    "38096226",
+    "40869924",
+    "42233622",
+    "42146354",
+    "38548715"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q141.json",
+      "question_id": "Q141",
+      "sha256": "e41e225c48e0d185004178c5190d2354ded14fcbb4a83258ce89fd94f85a728a"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q141.json",
+      "question_id": "Q141",
+      "sha256": "a6e2bcf746e13cbb1439e7ce428255f5de1aeb15e24587918982ee41a2a021a8"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.9643,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent.",
+  "parsed_answer": "The integrated evidence does not support connections between FGF5 and both Hedgehog and Wnt signaling. The literature context provided does not mention FGF5 in relation to either the Hedgehog or Wnt signaling pathways. Therefore, there is no supported link between FGF5 and these signaling pathways based on the given information.",
+  "question_id": "Q141",
+  "question_text": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 64,
+    "prompt_token_count": 1122,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not support connections between FGF5 and both Hedgehog and Wnt signaling. The literature context provided does not mention FGF5 in relation to either the Hedgehog or Wnt signaling pathways. Therefore, there is no supported link between FGF5 and these signaling pathways based on the given information."
+      }
+    ],
+    "created": 1783564466,
+    "id": "cmpl-fcce7699-49f7-4b72-bd0c-f9c389e02013",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 64,
+      "prompt_tokens": 1101,
+      "total_tokens": 1165
+    }
+  },
+  "reranker_scores": [
+    -4.212353229522705,
+    -4.829793930053711,
+    -5.251962661743164
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      37.185096740722656,
+      37.353759765625,
+      38.2364616394043,
+      38.864009857177734,
+      40.03145980834961,
+      40.58320999145508,
+      41.38158416748047,
+      41.46433639526367,
+      42.24440383911133,
+      42.740840911865234,
+      42.915714263916016,
+      43.3496208190918,
+      43.37944412231445,
+      43.833614349365234,
+      44.00521469116211
+    ],
+    "candidate_pmids": [
+      "41056281",
+      "40765829",
+      "41000054",
+      "31279575",
+      "35186941",
+      "39529066",
+      "41218118",
+      "34275739",
+      "34564982",
+      "42302347",
+      "38096226",
+      "40869924",
+      "42233622",
+      "42146354",
+      "38548715"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41218118, relevance: -4.2124) ---\nThe WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.\n\n--- Abstract 2 (PMID: 41056281, relevance: -4.8298) ---\nFZD7 is one of the key players in the subset of WNT-TGFbeta-activated hepatocellular carcinomas (HCC), but the consequences of its abnormal expression on hepatocarcinogenesis remain to be better understood. Herein, we aimed to investigate the role of the FZD7-mediated signaling in immature phenotype and aggressiveness of HCC. Firstly, 499 human HCCs were used for clinical and molecular comparisons regarding the expression of FZD7 and stemness-associated markers. We showed that FZD7 overexpression was associated with poor differentiation and, in combination with CD133, predicted a poor outcome of patients with aggressive recurrence. Next, the impact of WNT3/FZD7 signaling on the differentiation of hepatic cells was assessed in HCC cell lines, as well in the non-transformed progenitor HepaRG cell line and in primary human hepatocytes, transduced with WNT3 and FZD7-expressing lentiviruses. We demonstrated that the ectopic expression of WNT3 and FZD7 inhibited the differentiation behavior of HepaRG cells and human primary hepatocytes, amplified the pool of EpCAM(+), CD90(+) and CD133(+) subsets of HCC cell lines, and increased their cancer stem cell features. Moreover, we found that WNT3/FZD7-mediated stemness properties of cancer cells were independent of the stemness-associated marker NANOG. In conclusion, we identified the FZD7(+)/CD133(+) signature as a potential prognosis marker and molecular therapeutic target, and we strengthened the hypothesis for the involvement of FZD7 in the enrichment of a cancer stem cell pool in HCC.\n\n--- Abstract 3 (PMID: 35186941, relevance: -5.2520) ---\nHedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent.",
+    "rerank_seconds": 0.3457,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3646,
+    "score_max": -4.212353229522705,
+    "score_mean": -4.764703273773193,
+    "scores": [
+      -4.212353229522705,
+      -4.829793930053711,
+      -5.251962661743164
+    ],
+    "selected_abstracts": [
+      "The WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.",
+      "FZD7 is one of the key players in the subset of WNT-TGFbeta-activated hepatocellular carcinomas (HCC), but the consequences of its abnormal expression on hepatocarcinogenesis remain to be better understood. Herein, we aimed to investigate the role of the FZD7-mediated signaling in immature phenotype and aggressiveness of HCC. Firstly, 499 human HCCs were used for clinical and molecular comparisons regarding the expression of FZD7 and stemness-associated markers. We showed that FZD7 overexpression was associated with poor differentiation and, in combination with CD133, predicted a poor outcome of patients with aggressive recurrence. Next, the impact of WNT3/FZD7 signaling on the differentiation of hepatic cells was assessed in HCC cell lines, as well in the non-transformed progenitor HepaRG cell line and in primary human hepatocytes, transduced with WNT3 and FZD7-expressing lentiviruses. We demonstrated that the ectopic expression of WNT3 and FZD7 inhibited the differentiation behavior of HepaRG cells and human primary hepatocytes, amplified the pool of EpCAM(+), CD90(+) and CD133(+) subsets of HCC cell lines, and increased their cancer stem cell features. Moreover, we found that WNT3/FZD7-mediated stemness properties of cancer cells were independent of the stemness-associated marker NANOG. In conclusion, we identified the FZD7(+)/CD133(+) signature as a potential prognosis marker and molecular therapeutic target, and we strengthened the hypothesis for the involvement of FZD7 in the enrichment of a cancer stem cell pool in HCC.",
+      "Hedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction."
+    ],
+    "selected_pmids": [
+      "41218118",
+      "41056281",
+      "35186941"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0187
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q141.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41218118",
+    "41056281",
+    "35186941"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:34:27.684840+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41218118, relevance: -4.2124) ---\nThe WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.\n\n--- Abstract 2 (PMID: 41056281, relevance: -4.8298) ---\nFZD7 is one of the key players in the subset of WNT-TGFbeta-activated hepatocellular carcinomas (HCC), but the consequences of its abnormal expression on hepatocarcinogenesis remain to be better understood. Herein, we aimed to investigate the role of the FZD7-mediated signaling in immature phenotype and aggressiveness of HCC. Firstly, 499 human HCCs were used for clinical and molecular comparisons regarding the expression of FZD7 and stemness-associated markers. We showed that FZD7 overexpression was associated with poor differentiation and, in combination with CD133, predicted a poor outcome of patients with aggressive recurrence. Next, the impact of WNT3/FZD7 signaling on the differentiation of hepatic cells was assessed in HCC cell lines, as well in the non-transformed progenitor HepaRG cell line and in primary human hepatocytes, transduced with WNT3 and FZD7-expressing lentiviruses. We demonstrated that the ectopic expression of WNT3 and FZD7 inhibited the differentiation behavior of HepaRG cells and human primary hepatocytes, amplified the pool of EpCAM(+), CD90(+) and CD133(+) subsets of HCC cell lines, and increased their cancer stem cell features. Moreover, we found that WNT3/FZD7-mediated stemness properties of cancer cells were independent of the stemness-associated marker NANOG. In conclusion, we identified the FZD7(+)/CD133(+) signature as a potential prognosis marker and molecular therapeutic target, and we strengthened the hypothesis for the involvement of FZD7 in the enrichment of a cancer stem cell pool in HCC.\n\n--- Abstract 3 (PMID: 35186941, relevance: -5.2520) ---\nHedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.\n\n\n\n**Question:**\nDoes the integrated evidence support connections between FGF5 and both Hedgehog and Wnt signaling? Describe only supported links and state when a connection is absent.",
+  "vector_context": "--- Abstract 1 (PMID: 41218118, relevance: -4.2124) ---\nThe WNT signaling pathway has long been implicated in tumorigenesis across multiple cancer types, including breast cancer. However, the complexity arising from the large number of WNTs and their receptors has made it challenging to pinpoint specific components driving tumor development. Using the MMTV-Wnt1 genetically engineered mouse model, which develops mixed-lineage mammary tumors resembling triple-negative breast cancer and composed of both basal and luminal subtypes, we identify the frizzled class receptor 7 (Fzd7) as a key player. Fzd7 is expressed on mammary tumor cells that show enhanced tumorigenic potential in both orthotopic transplantation and tumor organoid assays. Despite the cellular heterogeneity of MMTV-Wnt1 tumors, treatment with a Fzd7-specific antibody-drug conjugate significantly suppresses tumor growth, suggesting that Fzd7-expressing cells are critical drivers of tumor progression. These findings show that Fzd7 marks a population of putative tumor-initiating cells and that targeting Fzd7 offers a promising therapeutic strategy for breast cancer.\n\n--- Abstract 2 (PMID: 41056281, relevance: -4.8298) ---\nFZD7 is one of the key players in the subset of WNT-TGFbeta-activated hepatocellular carcinomas (HCC), but the consequences of its abnormal expression on hepatocarcinogenesis remain to be better understood. Herein, we aimed to investigate the role of the FZD7-mediated signaling in immature phenotype and aggressiveness of HCC. Firstly, 499 human HCCs were used for clinical and molecular comparisons regarding the expression of FZD7 and stemness-associated markers. We showed that FZD7 overexpression was associated with poor differentiation and, in combination with CD133, predicted a poor outcome of patients with aggressive recurrence. Next, the impact of WNT3/FZD7 signaling on the differentiation of hepatic cells was assessed in HCC cell lines, as well in the non-transformed progenitor HepaRG cell line and in primary human hepatocytes, transduced with WNT3 and FZD7-expressing lentiviruses. We demonstrated that the ectopic expression of WNT3 and FZD7 inhibited the differentiation behavior of HepaRG cells and human primary hepatocytes, amplified the pool of EpCAM(+), CD90(+) and CD133(+) subsets of HCC cell lines, and increased their cancer stem cell features. Moreover, we found that WNT3/FZD7-mediated stemness properties of cancer cells were independent of the stemness-associated marker NANOG. In conclusion, we identified the FZD7(+)/CD133(+) signature as a potential prognosis marker and molecular therapeutic target, and we strengthened the hypothesis for the involvement of FZD7 in the enrichment of a cancer stem cell pool in HCC.\n\n--- Abstract 3 (PMID: 35186941, relevance: -5.2520) ---\nHedgehog (Hh) family of secreted proteins governs many key processes in embryonic development and adult tissue homeostasis in species ranging from insects to human. Deregulation of Hh signaling has been implicated in a wide range of human diseases including birth defect and cancer. Hh signaling pathway culminates in the conversion of the latent transcription factor Cubitus interruptus (Ci)/Gli from a repressor form (Ci(R)/Gli(R)) into an activator form (Ci(A)/Gli(A)). Both the production of Ci(R)/Gli(R) in the absence of Hh and the formation of Ci(A)/Gli(A) in response to Hh are regulated by phosphorylation. Whereas previous studies demonstrated that sequential phosphorylation by protein kinase A (PKA), glycogen synthase kinase 3 (GSK3), and casein kinase 1 (CK1) at multiple Ser/Thr clusters in the C-terminal region of Ci/Gli targets it for proteolytic processing to generate Ci(R)/Gli(R), recent studies revealed that phosphorylation of Ci/Gli by the Fused (Fu)/Unc-51 like kinase (Ulk) family kinases Fu/Ulk3/Stk36 and other kinases contributes to Ci/Gli activation. Fu/Ulk3/Stk36-mediated phosphorylation of Ci/Gli is stimulated by Hh, leading to altered interaction between Ci/Gli and the Hh pathway repressor Sufu. Here we review our current understanding of how various Ci/Gli phosphorylation events are regulated and how they influence Hh signal transduction.\n\n"
+}

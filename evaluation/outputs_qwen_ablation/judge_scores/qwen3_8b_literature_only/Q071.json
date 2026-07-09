@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q071",
+      "randomization_seed": "20260706:Q071:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q071",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q071",
+      "error": null,
+      "id": "batch_req_6a4f85d10e6c8190af4bad5c23b2a097",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594588,
+          "created_at": 1783594548,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0bb4d5eb83a01bb9006a4f7e340b4481909aeb1eb37a70d730",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q071"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0bb4d5eb83a01bb9006a4f7e3596e88190bc260f1c9b1bb492",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether WNT10A is linked to androgenetic alopecia.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Accurately states that the provided evidence supports WNT10A links to ectodermal dysplasia-associated alopecia but not specifically to androgenetic alopecia.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Covers the key direct-versus-indirect distinction, though it omits supporting graph details such as hair follicle morphogenesis.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Appropriately avoids overstating the evidence and clearly qualifies the lack of AGA-specific support.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Addresses the question and correctly notes lack of direct androgenetic alopecia evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"The main conclusion is broadly accurate, but it underrecognizes indirect evidence from WNT10A roles in hair follicle biology and alopecia in ectodermal dysplasia.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Omits important indirect evidence, including WNT10A involvement in hair follicle morphogenesis and syndromic alopecia.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Generally abstains from unsupported claims, but the statement that there is no evidence to support a link is somewhat too strong given indirect biological evidence.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0bb4d5eb83a01bb9006a4f7e4a578c81908f65b6baeb82bf6a",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2160,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 835,
+            "output_tokens_details": {
+              "reasoning_tokens": 408
+            },
+            "total_tokens": 2995
+          },
+          "user": null
+        },
+        "request_id": "5326bf90-a928-4830-9d6a-afd1867258fe",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether WNT10A is linked to androgenetic alopecia.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the provided evidence supports WNT10A links to ectodermal dysplasia-associated alopecia but not specifically to androgenetic alopecia.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key direct-versus-indirect distinction, though it omits supporting graph details such as hair follicle morphogenesis.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids overstating the evidence and clearly qualifies the lack of AGA-specific support.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q071",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q071.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.740225+00:00"
+}

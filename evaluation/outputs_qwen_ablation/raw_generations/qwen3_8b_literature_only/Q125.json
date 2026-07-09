@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42147184",
+    "38128201",
+    "35727948",
+    "42401575",
+    "41838254",
+    "37737258",
+    "42378135",
+    "29220522",
+    "36716280",
+    "38357128",
+    "38087053",
+    "40751759",
+    "41593677",
+    "29050564",
+    "39357799"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q125.json",
+      "question_id": "Q125",
+      "sha256": "17f03712f461710e9b611f184371f97cdc3c1753dd25190188f0ce6bc7f71c0a"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q125.json",
+      "question_id": "Q125",
+      "sha256": "4f3c24c72b9c3bc581f224cd6c622f236afb82eb63356a807162a63d864fa7cc"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does this study report variant association statistics for telogen effluvium? If not, state that this phenotype is outside the study scope.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.5736,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this study report variant association statistics for telogen effluvium? If not, state that this phenotype is outside the study scope.",
+  "parsed_answer": "The study does not report variant association statistics for telogen effluvium. This phenotype is outside the study scope.",
+  "question_id": "Q125",
+  "question_text": "Does this study report variant association statistics for telogen effluvium? If not, state that this phenotype is outside the study scope.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 24,
+    "prompt_token_count": 1145,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The study does not report variant association statistics for telogen effluvium. This phenotype is outside the study scope."
+      }
+    ],
+    "created": 1783564394,
+    "id": "cmpl-e0357ca0-d04d-4938-8541-98cea6a9caaa",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 24,
+      "prompt_tokens": 1124,
+      "total_tokens": 1148
+    }
+  },
+  "reranker_scores": [
+    -2.514364004135132,
+    -3.110076665878296,
+    -4.293680191040039
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      39.024658203125,
+      39.83152770996094,
+      40.244258880615234,
+      40.27732849121094,
+      40.49026870727539,
+      41.826107025146484,
+      42.00667953491211,
+      42.35437774658203,
+      42.387840270996094,
+      42.55842590332031,
+      42.76833724975586,
+      42.81888198852539,
+      42.877906799316406,
+      42.958396911621094,
+      43.07979202270508
+    ],
+    "candidate_pmids": [
+      "42147184",
+      "38128201",
+      "35727948",
+      "42401575",
+      "41838254",
+      "37737258",
+      "42378135",
+      "29220522",
+      "36716280",
+      "38357128",
+      "38087053",
+      "40751759",
+      "41593677",
+      "29050564",
+      "39357799"
+    ],
+    "expanded_retrieval_query": "Does this study report variant association statistics for telogen effluvium? If not, state that this phenotype is outside the study scope.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 29050564, relevance: -2.5144) ---\nBACKGROUND: Genome-wide association studies (GWAS) have yielded variants at >30 loci that associate with atrial fibrillation (AF), including rare coding mutations in the sarcomere genes MYH6 and MYL4. OBJECTIVES: The aim of this study was to search for novel AF associations and in doing so gain insights into the mechanisms whereby variants affect AF risk, using electrocardiogram (ECG) measurements. METHODS: The authors performed a GWAS of 14,255 AF cases and 374,939 controls, using whole-genome sequence data from the Icelandic population, and tested novel signals in 2,002 non-Icelandic cases and 12,324 controls. They then tested the AF variants for effect on cardiac electrical function by using measurements in 289,297 ECGs from 62,974 individuals. RESULTS: The authors discovered 2 novel AF variants, the intergenic variant rs72700114, between the genes LINC01142 and METTL11B (risk allele frequency = 8.1%; odds ratio [OR]: 1.26; p = 3.1 x 10(-18)), and the missense variant p.Gly4098Ser in PLEC (frequency = 1.2%; OR: 1.55; p = 8.0 x 10(-10)), encoding plectin, a cytoskeletal cross-linking protein that contributes to integrity of cardiac tissue. The authors also confirmed 29 reported variants. p.Gly4098Ser in PLEC significantly affects various ECG measurements in the absence of AF. Other AF variants have diverse effects on the conduction system, ranging from none to extensive. CONCLUSIONS: The discovery of a missense variant in PLEC affecting AF combined with recent discoveries of variants in the sarcomere genes MYH6 and MYL4 points to an important role of myocardial structure in the pathogenesis of the disease. The diverse associations between AF variants and ECG measurements suggest fundamentally different categories of mechanisms contributing to the development of AF.\n\n--- Abstract 2 (PMID: 42147184, relevance: -3.1101) ---\nRare coding genetic variants may exert large effects on risk of common disease, yet their contribution to disease architecture and their utility in gene prioritization remain limited by inadequate sample sizes. Here, we performed a massive-scale rare variant association study (RVAS), analyzing over 1.1 million sequenced participants among which 130,000 had atrial fibrillation (AF). Through a multi-mask burden testing approach, we identified 15 genes significantly associated with AF through rare large-effect variation. Integrative analyses revealed strong convergence between genes implicated by rare and common variation, and highlighted instances where RVAS data may aid in GWAS prioritization. Nevertheless, several RVAS genes were not among GWAS loci (FAM189A2, ACTC1, FNIP1, FBN1), or were not nominated through contemporary GWAS prioritization (KDM5B, ZFP36L2). Finally, we observed that ultra-rare protein-disrupting variants - concentrated in a small number of large-effect size genes - explained at least 2% of AF susceptibility across European and African ancestry groups. These findings refine the genetic architecture of AF, while highlighting the value and cost of RVAS for genomic discovery in common disease.\n\n--- Abstract 3 (PMID: 37737258, relevance: -4.2937) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does this study report variant association statistics for telogen effluvium? If not, state that this phenotype is outside the study scope.",
+    "rerank_seconds": 0.3482,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.364,
+    "score_max": -2.514364004135132,
+    "score_mean": -3.3060402870178223,
+    "scores": [
+      -2.514364004135132,
+      -3.110076665878296,
+      -4.293680191040039
+    ],
+    "selected_abstracts": [
+      "BACKGROUND: Genome-wide association studies (GWAS) have yielded variants at >30 loci that associate with atrial fibrillation (AF), including rare coding mutations in the sarcomere genes MYH6 and MYL4. OBJECTIVES: The aim of this study was to search for novel AF associations and in doing so gain insights into the mechanisms whereby variants affect AF risk, using electrocardiogram (ECG) measurements. METHODS: The authors performed a GWAS of 14,255 AF cases and 374,939 controls, using whole-genome sequence data from the Icelandic population, and tested novel signals in 2,002 non-Icelandic cases and 12,324 controls. They then tested the AF variants for effect on cardiac electrical function by using measurements in 289,297 ECGs from 62,974 individuals. RESULTS: The authors discovered 2 novel AF variants, the intergenic variant rs72700114, between the genes LINC01142 and METTL11B (risk allele frequency = 8.1%; odds ratio [OR]: 1.26; p = 3.1 x 10(-18)), and the missense variant p.Gly4098Ser in PLEC (frequency = 1.2%; OR: 1.55; p = 8.0 x 10(-10)), encoding plectin, a cytoskeletal cross-linking protein that contributes to integrity of cardiac tissue. The authors also confirmed 29 reported variants. p.Gly4098Ser in PLEC significantly affects various ECG measurements in the absence of AF. Other AF variants have diverse effects on the conduction system, ranging from none to extensive. CONCLUSIONS: The discovery of a missense variant in PLEC affecting AF combined with recent discoveries of variants in the sarcomere genes MYH6 and MYL4 points to an important role of myocardial structure in the pathogenesis of the disease. The diverse associations between AF variants and ECG measurements suggest fundamentally different categories of mechanisms contributing to the development of AF.",
+      "Rare coding genetic variants may exert large effects on risk of common disease, yet their contribution to disease architecture and their utility in gene prioritization remain limited by inadequate sample sizes. Here, we performed a massive-scale rare variant association study (RVAS), analyzing over 1.1 million sequenced participants among which 130,000 had atrial fibrillation (AF). Through a multi-mask burden testing approach, we identified 15 genes significantly associated with AF through rare large-effect variation. Integrative analyses revealed strong convergence between genes implicated by rare and common variation, and highlighted instances where RVAS data may aid in GWAS prioritization. Nevertheless, several RVAS genes were not among GWAS loci (FAM189A2, ACTC1, FNIP1, FBN1), or were not nominated through contemporary GWAS prioritization (KDM5B, ZFP36L2). Finally, we observed that ultra-rare protein-disrupting variants - concentrated in a small number of large-effect size genes - explained at least 2% of AF susceptibility across European and African ancestry groups. These findings refine the genetic architecture of AF, while highlighting the value and cost of RVAS for genomic discovery in common disease.",
+      "Male-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders."
+    ],
+    "selected_pmids": [
+      "29050564",
+      "42147184",
+      "37737258"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0156
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q125.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "29050564",
+    "42147184",
+    "37737258"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:33:14.970524+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 29050564, relevance: -2.5144) ---\nBACKGROUND: Genome-wide association studies (GWAS) have yielded variants at >30 loci that associate with atrial fibrillation (AF), including rare coding mutations in the sarcomere genes MYH6 and MYL4. OBJECTIVES: The aim of this study was to search for novel AF associations and in doing so gain insights into the mechanisms whereby variants affect AF risk, using electrocardiogram (ECG) measurements. METHODS: The authors performed a GWAS of 14,255 AF cases and 374,939 controls, using whole-genome sequence data from the Icelandic population, and tested novel signals in 2,002 non-Icelandic cases and 12,324 controls. They then tested the AF variants for effect on cardiac electrical function by using measurements in 289,297 ECGs from 62,974 individuals. RESULTS: The authors discovered 2 novel AF variants, the intergenic variant rs72700114, between the genes LINC01142 and METTL11B (risk allele frequency = 8.1%; odds ratio [OR]: 1.26; p = 3.1 x 10(-18)), and the missense variant p.Gly4098Ser in PLEC (frequency = 1.2%; OR: 1.55; p = 8.0 x 10(-10)), encoding plectin, a cytoskeletal cross-linking protein that contributes to integrity of cardiac tissue. The authors also confirmed 29 reported variants. p.Gly4098Ser in PLEC significantly affects various ECG measurements in the absence of AF. Other AF variants have diverse effects on the conduction system, ranging from none to extensive. CONCLUSIONS: The discovery of a missense variant in PLEC affecting AF combined with recent discoveries of variants in the sarcomere genes MYH6 and MYL4 points to an important role of myocardial structure in the pathogenesis of the disease. The diverse associations between AF variants and ECG measurements suggest fundamentally different categories of mechanisms contributing to the development of AF.\n\n--- Abstract 2 (PMID: 42147184, relevance: -3.1101) ---\nRare coding genetic variants may exert large effects on risk of common disease, yet their contribution to disease architecture and their utility in gene prioritization remain limited by inadequate sample sizes. Here, we performed a massive-scale rare variant association study (RVAS), analyzing over 1.1 million sequenced participants among which 130,000 had atrial fibrillation (AF). Through a multi-mask burden testing approach, we identified 15 genes significantly associated with AF through rare large-effect variation. Integrative analyses revealed strong convergence between genes implicated by rare and common variation, and highlighted instances where RVAS data may aid in GWAS prioritization. Nevertheless, several RVAS genes were not among GWAS loci (FAM189A2, ACTC1, FNIP1, FBN1), or were not nominated through contemporary GWAS prioritization (KDM5B, ZFP36L2). Finally, we observed that ultra-rare protein-disrupting variants - concentrated in a small number of large-effect size genes - explained at least 2% of AF susceptibility across European and African ancestry groups. These findings refine the genetic architecture of AF, while highlighting the value and cost of RVAS for genomic discovery in common disease.\n\n--- Abstract 3 (PMID: 37737258, relevance: -4.2937) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n\n\n**Question:**\nDoes this study report variant association statistics for telogen effluvium? If not, state that this phenotype is outside the study scope.",
+  "vector_context": "--- Abstract 1 (PMID: 29050564, relevance: -2.5144) ---\nBACKGROUND: Genome-wide association studies (GWAS) have yielded variants at >30 loci that associate with atrial fibrillation (AF), including rare coding mutations in the sarcomere genes MYH6 and MYL4. OBJECTIVES: The aim of this study was to search for novel AF associations and in doing so gain insights into the mechanisms whereby variants affect AF risk, using electrocardiogram (ECG) measurements. METHODS: The authors performed a GWAS of 14,255 AF cases and 374,939 controls, using whole-genome sequence data from the Icelandic population, and tested novel signals in 2,002 non-Icelandic cases and 12,324 controls. They then tested the AF variants for effect on cardiac electrical function by using measurements in 289,297 ECGs from 62,974 individuals. RESULTS: The authors discovered 2 novel AF variants, the intergenic variant rs72700114, between the genes LINC01142 and METTL11B (risk allele frequency = 8.1%; odds ratio [OR]: 1.26; p = 3.1 x 10(-18)), and the missense variant p.Gly4098Ser in PLEC (frequency = 1.2%; OR: 1.55; p = 8.0 x 10(-10)), encoding plectin, a cytoskeletal cross-linking protein that contributes to integrity of cardiac tissue. The authors also confirmed 29 reported variants. p.Gly4098Ser in PLEC significantly affects various ECG measurements in the absence of AF. Other AF variants have diverse effects on the conduction system, ranging from none to extensive. CONCLUSIONS: The discovery of a missense variant in PLEC affecting AF combined with recent discoveries of variants in the sarcomere genes MYH6 and MYL4 points to an important role of myocardial structure in the pathogenesis of the disease. The diverse associations between AF variants and ECG measurements suggest fundamentally different categories of mechanisms contributing to the development of AF.\n\n--- Abstract 2 (PMID: 42147184, relevance: -3.1101) ---\nRare coding genetic variants may exert large effects on risk of common disease, yet their contribution to disease architecture and their utility in gene prioritization remain limited by inadequate sample sizes. Here, we performed a massive-scale rare variant association study (RVAS), analyzing over 1.1 million sequenced participants among which 130,000 had atrial fibrillation (AF). Through a multi-mask burden testing approach, we identified 15 genes significantly associated with AF through rare large-effect variation. Integrative analyses revealed strong convergence between genes implicated by rare and common variation, and highlighted instances where RVAS data may aid in GWAS prioritization. Nevertheless, several RVAS genes were not among GWAS loci (FAM189A2, ACTC1, FNIP1, FBN1), or were not nominated through contemporary GWAS prioritization (KDM5B, ZFP36L2). Finally, we observed that ultra-rare protein-disrupting variants - concentrated in a small number of large-effect size genes - explained at least 2% of AF susceptibility across European and African ancestry groups. These findings refine the genetic architecture of AF, while highlighting the value and cost of RVAS for genomic discovery in common disease.\n\n--- Abstract 3 (PMID: 37737258, relevance: -4.2937) ---\nMale-pattern hair loss (MPHL) is common and highly heritable. While genome-wide association studies (GWAS) have generated insights into the contribution of common variants to MPHL etiology, the relevance of rare variants remains unclear. To determine the contribution of rare variants to MPHL etiology, we perform gene-based and single-variant analyses in exome-sequencing data from 72,469 male UK Biobank participants. While our population-level risk prediction suggests that rare variants make only a minor contribution to general MPHL risk, our rare variant collapsing tests identified a total of five significant gene associations. These findings provide additional evidence for previously implicated genes (EDA2R, WNT10A) and highlight novel risk genes at and beyond GWAS loci (HEPH, CEPT1, EIF3F). Furthermore, MPHL-associated genes are enriched for genes considered causal for monogenic trichoses. Together, our findings broaden the MPHL-associated allelic spectrum and provide insights into MPHL pathobiology and a shared basis with monogenic hair loss disorders.\n\n"
+}

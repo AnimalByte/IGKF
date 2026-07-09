@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q178",
+      "randomization_seed": "20260706:Q178:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q178",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q178",
+      "error": null,
+      "id": "batch_req_6a4f85d7b0608190a0d93a3d9c4b7afe",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594509,
+          "created_at": 1783594461,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_058c9e885d7c32d6006a4f7ddd14188194b6a6f1bfbce73eed",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q178"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_058c9e885d7c32d6006a4f7dde0f008194989705eedc98bcfa",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses the comparison request by stating that the provided evidence lacks the needed EDA2R/PAX1 variant association data.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately notes that the supplied context does not provide statistical variant-association evidence for comparing EDA2R and PAX1, though it slightly overstates that EDA2R is not mentioned at all.\"},\"completeness\":{\"score\":4,\"rationale\":\"Explains why no stronger locus or comparison metric can be identified, but does not explicitly specify that the missing metric would need to be a study association statistic.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making an unsupported comparison.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses the requested comparison and explains that the available data are insufficient.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Correctly states that PAX1 and statistical support for EDA2R variants are not provided in the graph/context, so the comparison cannot be made.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the key limitation and conclusion, though it does not discuss any possible comparison metric because none is supplied.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately avoids inferring unsupported statistical support or a stronger locus.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_058c9e885d7c32d6006a4f7e02768c81948855fe5977c78ad6",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1772,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1357,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 3129
+          },
+          "user": null
+        },
+        "request_id": "14f68d8c-cf03-4ef6-86ec-f23293003b01",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses the requested comparison and explains that the available data are insufficient.",
+      "score": 4.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Correctly states that PAX1 and statistical support for EDA2R variants are not provided in the graph/context, so the comparison cannot be made.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key limitation and conclusion, though it does not discuss any possible comparison metric because none is supplied.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inferring unsupported statistical support or a stronger locus.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q178",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q178.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.781514+00:00"
+}

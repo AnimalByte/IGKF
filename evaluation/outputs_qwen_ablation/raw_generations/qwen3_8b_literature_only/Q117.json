@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "40134218",
+    "34984527",
+    "41226524",
+    "29220522",
+    "42203178",
+    "42032772",
+    "41733882",
+    "41645416",
+    "31042289",
+    "37737258",
+    "41751509",
+    "34552771",
+    "41912808",
+    "39267058",
+    "40868166"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q117.json",
+      "question_id": "Q117",
+      "sha256": "465dd290c7d4d20f963b8df9381e991b6291ef26095472ea9ce8e1d47e4a0899"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q117.json",
+      "question_id": "Q117",
+      "sha256": "790adc4f304f0c181e6ea3c405749bfececbe2a9ae38b9ee9894e7aaea39b5bd"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare its genetic basis with telogen effluvium? Summarize supported overlap, or state that the comparison is not supported.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.572,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare its genetic basis with telogen effluvium? Summarize supported overlap, or state that the comparison is not supported.",
+  "parsed_answer": "The androgenetic-alopecia dataset described in the literature context does not contain sufficient evidence to compare its genetic basis with telogen effluvium. The provided abstracts focus on the genetic architecture of androgenetic alopecia in African populations, highlighting polygenic associations, population-specific allele frequency differences, and the limitations of polygenic score generalizability across ancestries. There is no mention of telogen effluvium or any genetic comparison between androgenetic alopecia and telogen effluvium in the context provided. Therefore, the comparison is not supported by the given literature.",
+  "question_id": "Q117",
+  "question_text": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare its genetic basis with telogen effluvium? Summarize supported overlap, or state that the comparison is not supported.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 120,
+    "prompt_token_count": 1424,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The androgenetic-alopecia dataset described in the literature context does not contain sufficient evidence to compare its genetic basis with telogen effluvium. The provided abstracts focus on the genetic architecture of androgenetic alopecia in African populations, highlighting polygenic associations, population-specific allele frequency differences, and the limitations of polygenic score generalizability across ancestries. There is no mention of telogen effluvium or any genetic comparison between androgenetic alopecia and telogen effluvium in the context provided. Therefore, the comparison is not supported by the given literature."
+      }
+    ],
+    "created": 1783564360,
+    "id": "cmpl-c39587b3-d834-470f-86fd-071bf443c372",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 120,
+      "prompt_tokens": 1403,
+      "total_tokens": 1523
+    }
+  },
+  "reranker_scores": [
+    1.2338573932647705,
+    -4.927033424377441,
+    -5.743009567260742
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      34.76169967651367,
+      40.50049591064453,
+      41.90310287475586,
+      42.44954299926758,
+      42.62306213378906,
+      43.15165710449219,
+      43.41218948364258,
+      43.46918869018555,
+      43.64979553222656,
+      43.65321350097656,
+      43.830039978027344,
+      43.863712310791016,
+      43.89693069458008,
+      43.95847702026367,
+      44.061100006103516
+    ],
+    "candidate_pmids": [
+      "40134218",
+      "34984527",
+      "41226524",
+      "29220522",
+      "42203178",
+      "42032772",
+      "41733882",
+      "41645416",
+      "31042289",
+      "37737258",
+      "41751509",
+      "34552771",
+      "41912808",
+      "39267058",
+      "40868166"
+    ],
+    "expanded_retrieval_query": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare its genetic basis with telogen effluvium? Summarize supported overlap, or state that the comparison is not supported.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40134218, relevance: 1.2339) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42203178, relevance: -4.9270) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n--- Abstract 3 (PMID: 40868166, relevance: -5.7430) ---\nBackground: Polycystic ovary syndrome (PCOS) is a complex and multifactorial disorder affecting reproductive, endocrine, and metabolic functions in women of reproductive age. While environmental and lifestyle factors play a role, increasing evidence highlights the contribution of genetic and epigenetic mechanisms to its pathogenesis. Objective: This narrative review aims to provide an updated overview of the current evidence regarding the role of genetic variants, gene expression patterns, and epigenetic modifications in the etiopathogenesis of PCOS, with a focus on their impact on ovarian function, fertility, and systemic alterations. Methods: A comprehensive search was conducted across MEDLINE, EMBASE, PubMed, Web of Science, and the Cochrane Library using MeSH terms including \"PCOS\", \"Genes involved in PCOS\", and \"Etiopathogenesis of PCOS\" from January 2015 to June 2025. The selection process followed the SANRA quality criteria for narrative reviews. Seventeen studies published in English were included, focusing on original data regarding gene expression, polymorphisms, and epigenetic changes associated with PCOS. Results: The studies analyzed revealed a wide array of molecular alterations in PCOS, including the dysregulation of SIRT and estrogen receptor genes, altered transcriptome profiles in cumulus cells, and the involvement of long non-coding RNAs and circular RNAs in granulosa cell function and endometrial receptivity. Epigenetic mechanisms such as the DNA methylation of TGF-beta1 and inflammation-related signaling pathways (e.g., TLR4/NF-kappaB/NLRP3) were also implicated. Some genetic variants-particularly in DENND1A, THADA, and MTNR1B-exhibit signs of positive evolutionary selection, suggesting possible ancestral adaptive roles. Conclusions: PCOS is increasingly recognized as a syndrome with a strong genetic and epigenetic background. The identification of specific molecular signatures holds promise for the development of personalized diagnostic markers and therapeutic targets. Future research should focus on large-scale genomic studies and functional validation to better understand gene-environment interactions and their influence on phenotypic variability in PCOS.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does this androgenetic-alopecia dataset contain sufficient evidence to compare its genetic basis with telogen effluvium? Summarize supported overlap, or state that the comparison is not supported.",
+    "rerank_seconds": 0.3476,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3705,
+    "score_max": 1.2338573932647705,
+    "score_mean": -3.145395199457804,
+    "scores": [
+      1.2338573932647705,
+      -4.927033424377441,
+      -5.743009567260742
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "BACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.",
+      "Background: Polycystic ovary syndrome (PCOS) is a complex and multifactorial disorder affecting reproductive, endocrine, and metabolic functions in women of reproductive age. While environmental and lifestyle factors play a role, increasing evidence highlights the contribution of genetic and epigenetic mechanisms to its pathogenesis. Objective: This narrative review aims to provide an updated overview of the current evidence regarding the role of genetic variants, gene expression patterns, and epigenetic modifications in the etiopathogenesis of PCOS, with a focus on their impact on ovarian function, fertility, and systemic alterations. Methods: A comprehensive search was conducted across MEDLINE, EMBASE, PubMed, Web of Science, and the Cochrane Library using MeSH terms including \"PCOS\", \"Genes involved in PCOS\", and \"Etiopathogenesis of PCOS\" from January 2015 to June 2025. The selection process followed the SANRA quality criteria for narrative reviews. Seventeen studies published in English were included, focusing on original data regarding gene expression, polymorphisms, and epigenetic changes associated with PCOS. Results: The studies analyzed revealed a wide array of molecular alterations in PCOS, including the dysregulation of SIRT and estrogen receptor genes, altered transcriptome profiles in cumulus cells, and the involvement of long non-coding RNAs and circular RNAs in granulosa cell function and endometrial receptivity. Epigenetic mechanisms such as the DNA methylation of TGF-beta1 and inflammation-related signaling pathways (e.g., TLR4/NF-kappaB/NLRP3) were also implicated. Some genetic variants-particularly in DENND1A, THADA, and MTNR1B-exhibit signs of positive evolutionary selection, suggesting possible ancestral adaptive roles. Conclusions: PCOS is increasingly recognized as a syndrome with a strong genetic and epigenetic background. The identification of specific molecular signatures holds promise for the development of personalized diagnostic markers and therapeutic targets. Future research should focus on large-scale genomic studies and functional validation to better understand gene-environment interactions and their influence on phenotypic variability in PCOS."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "42203178",
+      "40868166"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0227
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q117.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40134218",
+    "42203178",
+    "40868166"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:32:41.909486+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: 1.2339) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42203178, relevance: -4.9270) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n--- Abstract 3 (PMID: 40868166, relevance: -5.7430) ---\nBackground: Polycystic ovary syndrome (PCOS) is a complex and multifactorial disorder affecting reproductive, endocrine, and metabolic functions in women of reproductive age. While environmental and lifestyle factors play a role, increasing evidence highlights the contribution of genetic and epigenetic mechanisms to its pathogenesis. Objective: This narrative review aims to provide an updated overview of the current evidence regarding the role of genetic variants, gene expression patterns, and epigenetic modifications in the etiopathogenesis of PCOS, with a focus on their impact on ovarian function, fertility, and systemic alterations. Methods: A comprehensive search was conducted across MEDLINE, EMBASE, PubMed, Web of Science, and the Cochrane Library using MeSH terms including \"PCOS\", \"Genes involved in PCOS\", and \"Etiopathogenesis of PCOS\" from January 2015 to June 2025. The selection process followed the SANRA quality criteria for narrative reviews. Seventeen studies published in English were included, focusing on original data regarding gene expression, polymorphisms, and epigenetic changes associated with PCOS. Results: The studies analyzed revealed a wide array of molecular alterations in PCOS, including the dysregulation of SIRT and estrogen receptor genes, altered transcriptome profiles in cumulus cells, and the involvement of long non-coding RNAs and circular RNAs in granulosa cell function and endometrial receptivity. Epigenetic mechanisms such as the DNA methylation of TGF-beta1 and inflammation-related signaling pathways (e.g., TLR4/NF-kappaB/NLRP3) were also implicated. Some genetic variants-particularly in DENND1A, THADA, and MTNR1B-exhibit signs of positive evolutionary selection, suggesting possible ancestral adaptive roles. Conclusions: PCOS is increasingly recognized as a syndrome with a strong genetic and epigenetic background. The identification of specific molecular signatures holds promise for the development of personalized diagnostic markers and therapeutic targets. Future research should focus on large-scale genomic studies and functional validation to better understand gene-environment interactions and their influence on phenotypic variability in PCOS.\n\n\n\n**Question:**\nDoes this androgenetic-alopecia dataset contain sufficient evidence to compare its genetic basis with telogen effluvium? Summarize supported overlap, or state that the comparison is not supported.",
+  "vector_context": "--- Abstract 1 (PMID: 40134218, relevance: 1.2339) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42203178, relevance: -4.9270) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n--- Abstract 3 (PMID: 40868166, relevance: -5.7430) ---\nBackground: Polycystic ovary syndrome (PCOS) is a complex and multifactorial disorder affecting reproductive, endocrine, and metabolic functions in women of reproductive age. While environmental and lifestyle factors play a role, increasing evidence highlights the contribution of genetic and epigenetic mechanisms to its pathogenesis. Objective: This narrative review aims to provide an updated overview of the current evidence regarding the role of genetic variants, gene expression patterns, and epigenetic modifications in the etiopathogenesis of PCOS, with a focus on their impact on ovarian function, fertility, and systemic alterations. Methods: A comprehensive search was conducted across MEDLINE, EMBASE, PubMed, Web of Science, and the Cochrane Library using MeSH terms including \"PCOS\", \"Genes involved in PCOS\", and \"Etiopathogenesis of PCOS\" from January 2015 to June 2025. The selection process followed the SANRA quality criteria for narrative reviews. Seventeen studies published in English were included, focusing on original data regarding gene expression, polymorphisms, and epigenetic changes associated with PCOS. Results: The studies analyzed revealed a wide array of molecular alterations in PCOS, including the dysregulation of SIRT and estrogen receptor genes, altered transcriptome profiles in cumulus cells, and the involvement of long non-coding RNAs and circular RNAs in granulosa cell function and endometrial receptivity. Epigenetic mechanisms such as the DNA methylation of TGF-beta1 and inflammation-related signaling pathways (e.g., TLR4/NF-kappaB/NLRP3) were also implicated. Some genetic variants-particularly in DENND1A, THADA, and MTNR1B-exhibit signs of positive evolutionary selection, suggesting possible ancestral adaptive roles. Conclusions: PCOS is increasingly recognized as a syndrome with a strong genetic and epigenetic background. The identification of specific molecular signatures holds promise for the development of personalized diagnostic markers and therapeutic targets. Future research should focus on large-scale genomic studies and functional validation to better understand gene-environment interactions and their influence on phenotypic variability in PCOS.\n\n"
+}

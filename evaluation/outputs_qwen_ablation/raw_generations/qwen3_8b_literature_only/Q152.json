@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "36979151",
+    "41456534",
+    "39539976",
+    "33143250",
+    "42118112",
+    "40908689",
+    "35409173",
+    "39152124",
+    "40765829",
+    "40225327",
+    "36100870",
+    "32320642",
+    "42353091",
+    "36311195",
+    "35463352"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q152.json",
+      "question_id": "Q152",
+      "sha256": "6c9a260ae50cdb88a0c7816176adbd2965097ed8b72a4afd0cea00004a771807"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q152.json",
+      "question_id": "Q152",
+      "sha256": "189801e0f18c51f84055e421bab97791db9ba272c3fea490a29f5dd3493f6a34"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which microRNAs, if any, are reported in the available abstracts to target the 3\u2032 UTR of FGF5? Cite the supporting abstract evidence or state that none is available.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.0547,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which microRNAs, if any, are reported in the available abstracts to target the 3\u2032 UTR of FGF5? Cite the supporting abstract evidence or state that none is available.",
+  "parsed_answer": "None of the available abstracts report that any microRNAs target the 3\u2032 UTR of FGF5. The literature context provided discusses microRNAs targeting FGFBP1, microRNA-597 targeting RUNX1, and miR-7704 targeting HAGLR, but there is no mention of microRNAs targeting FGF5.",
+  "question_id": "Q152",
+  "question_text": "Which microRNAs, if any, are reported in the available abstracts to target the 3\u2032 UTR of FGF5? Cite the supporting abstract evidence or state that none is available.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 76,
+    "prompt_token_count": 1146,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "None of the available abstracts report that any microRNAs target the 3\u2032 UTR of FGF5. The literature context provided discusses microRNAs targeting FGFBP1, microRNA-597 targeting RUNX1, and miR-7704 targeting HAGLR, but there is no mention of microRNAs targeting FGF5."
+      }
+    ],
+    "created": 1783564522,
+    "id": "cmpl-4c654878-dce0-4474-aea8-a72fa4206bac",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 76,
+      "prompt_tokens": 1125,
+      "total_tokens": 1201
+    }
+  },
+  "reranker_scores": [
+    -0.6266481876373291,
+    -2.368837356567383,
+    -4.196666717529297
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      29.850791931152344,
+      33.37541198730469,
+      34.26060104370117,
+      34.41680908203125,
+      35.0543327331543,
+      35.226112365722656,
+      35.64482116699219,
+      35.939395904541016,
+      36.189430236816406,
+      36.51276397705078,
+      37.24801254272461,
+      37.65583038330078,
+      37.67523193359375,
+      37.733394622802734,
+      37.80328369140625
+    ],
+    "candidate_pmids": [
+      "36979151",
+      "41456534",
+      "39539976",
+      "33143250",
+      "42118112",
+      "40908689",
+      "35409173",
+      "39152124",
+      "40765829",
+      "40225327",
+      "36100870",
+      "32320642",
+      "42353091",
+      "36311195",
+      "35463352"
+    ],
+    "expanded_retrieval_query": "Which microRNAs, if any, are reported in the available abstracts to target the 3\u2032 UTR of FGF5? Cite the supporting abstract evidence or state that none is available.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 36979151, relevance: -0.6266) ---\nMicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.\n\n--- Abstract 2 (PMID: 42353091, relevance: -2.3688) ---\nAberrant expression of multiple microRNAs has been reported in gastric cancer. In particular, microRNA-597 has been associated with poor survival rates but is not yet well characterized. Seventy-five clinical samples, four cell lines, and two patient-derived organoids were evaluated for the expression of microRNA-597 and its target genes. microRNA-597 was transiently transfected for analysis of cell migration, invasion, wound healing, colony formation, and cell viability, and its regulation by long non-coding RNAs was explored using the TCGA-STAD and LncBook tools. In clinical samples, low expression of microRNA-597 was associated with the intestinal subtype (p = 0.002) and stages III and IV (p = 0.048). All functional readouts were reduced after microRNA-597 transfection, including colony formation, in patient-derived organoids. Among target genes, RUNX1 was directly regulated by microRNA-597. Other cell invasion genes were dependent on RUNX1 as a hub for regulation. Analysis of the Intersection between long non-coding RNAs co-expressed with RUNX1 and those with the highest microRNA-597 prediction binding identified KCNQ1OT1 as the top transcript. Silencing of KCNQ1OT1 and co-expression in clinical samples suggest the existence of a KCNQ1OT1/microRNA-597/RUNX1 network. The results indicate that microRNA-597 directly suppresses RUNX1, while KCNQ1OT1 modulates this interaction. Our approach enabled the simultaneous analysis of dysregulation in three families of transcripts in gastric cancer progression.\n\n--- Abstract 3 (PMID: 33143250, relevance: -4.1967) ---\nMicroRNAs (miRNAs) act as negative regulators of gene expression in the cytoplasm. Previous studies have identified the presence of miRNAs in the nucleus. Here we study human breast cancer-derived cell-lines (MCF-7 and MDA-MB-231) and a non-tumorigenic cell-line (MCF-10A) and compare their miRNA sequences at the spliceosome fraction (SF). We report that the levels of miRNAs found in the spliceosome, their identity, and pre-miRNA segmental composition are cell-line specific. One such miRNA is miR-7704 whose genomic position overlaps HAGLR, a cancer-related lncRNA. We detected an inverse expression of miR-7704 and HAGLR in the tested cell lines. Specifically, inhibition of miR-7704 caused an increase in HAGLR expression. Furthermore, elevated levels of miR-7704 slightly altered the cell-cycle in MDA-MB-231. Altogether, we show that SF-miR-7704 acts as a tumor-suppressor gene with HAGLR being its nuclear target. The relative levels of miRNAs found in the spliceosome fractions (e.g., miR-100, miR-30a, and let-7 family) in non-tumorigenic relative to cancer-derived cell-lines was monitored. We found that the expression trend of the abundant miRNAs in SF was different from that reported in the literature and from the observation of large cohorts of breast cancer patients, suggesting that many SF-miRNAs act on targets that are different from the cytoplasmic ones. Altogether, we report on the potential of SF-miRNAs as an unexplored route for cancerous cell state.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which microRNAs, if any, are reported in the available abstracts to target the 3\u2032 UTR of FGF5? Cite the supporting abstract evidence or state that none is available.",
+    "rerank_seconds": 0.3063,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3268,
+    "score_max": -0.6266481876373291,
+    "score_mean": -2.3973840872446694,
+    "scores": [
+      -0.6266481876373291,
+      -2.368837356567383,
+      -4.196666717529297
+    ],
+    "selected_abstracts": [
+      "MicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.",
+      "Aberrant expression of multiple microRNAs has been reported in gastric cancer. In particular, microRNA-597 has been associated with poor survival rates but is not yet well characterized. Seventy-five clinical samples, four cell lines, and two patient-derived organoids were evaluated for the expression of microRNA-597 and its target genes. microRNA-597 was transiently transfected for analysis of cell migration, invasion, wound healing, colony formation, and cell viability, and its regulation by long non-coding RNAs was explored using the TCGA-STAD and LncBook tools. In clinical samples, low expression of microRNA-597 was associated with the intestinal subtype (p = 0.002) and stages III and IV (p = 0.048). All functional readouts were reduced after microRNA-597 transfection, including colony formation, in patient-derived organoids. Among target genes, RUNX1 was directly regulated by microRNA-597. Other cell invasion genes were dependent on RUNX1 as a hub for regulation. Analysis of the Intersection between long non-coding RNAs co-expressed with RUNX1 and those with the highest microRNA-597 prediction binding identified KCNQ1OT1 as the top transcript. Silencing of KCNQ1OT1 and co-expression in clinical samples suggest the existence of a KCNQ1OT1/microRNA-597/RUNX1 network. The results indicate that microRNA-597 directly suppresses RUNX1, while KCNQ1OT1 modulates this interaction. Our approach enabled the simultaneous analysis of dysregulation in three families of transcripts in gastric cancer progression.",
+      "MicroRNAs (miRNAs) act as negative regulators of gene expression in the cytoplasm. Previous studies have identified the presence of miRNAs in the nucleus. Here we study human breast cancer-derived cell-lines (MCF-7 and MDA-MB-231) and a non-tumorigenic cell-line (MCF-10A) and compare their miRNA sequences at the spliceosome fraction (SF). We report that the levels of miRNAs found in the spliceosome, their identity, and pre-miRNA segmental composition are cell-line specific. One such miRNA is miR-7704 whose genomic position overlaps HAGLR, a cancer-related lncRNA. We detected an inverse expression of miR-7704 and HAGLR in the tested cell lines. Specifically, inhibition of miR-7704 caused an increase in HAGLR expression. Furthermore, elevated levels of miR-7704 slightly altered the cell-cycle in MDA-MB-231. Altogether, we show that SF-miR-7704 acts as a tumor-suppressor gene with HAGLR being its nuclear target. The relative levels of miRNAs found in the spliceosome fractions (e.g., miR-100, miR-30a, and let-7 family) in non-tumorigenic relative to cancer-derived cell-lines was monitored. We found that the expression trend of the abundant miRNAs in SF was different from that reported in the literature and from the observation of large cohorts of breast cancer patients, suggesting that many SF-miRNAs act on targets that are different from the cytoplasmic ones. Altogether, we report on the potential of SF-miRNAs as an unexplored route for cancerous cell state."
+    ],
+    "selected_pmids": [
+      "36979151",
+      "42353091",
+      "33143250"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0203
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q152.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "36979151",
+    "42353091",
+    "33143250"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:35:23.495584+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 36979151, relevance: -0.6266) ---\nMicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.\n\n--- Abstract 2 (PMID: 42353091, relevance: -2.3688) ---\nAberrant expression of multiple microRNAs has been reported in gastric cancer. In particular, microRNA-597 has been associated with poor survival rates but is not yet well characterized. Seventy-five clinical samples, four cell lines, and two patient-derived organoids were evaluated for the expression of microRNA-597 and its target genes. microRNA-597 was transiently transfected for analysis of cell migration, invasion, wound healing, colony formation, and cell viability, and its regulation by long non-coding RNAs was explored using the TCGA-STAD and LncBook tools. In clinical samples, low expression of microRNA-597 was associated with the intestinal subtype (p = 0.002) and stages III and IV (p = 0.048). All functional readouts were reduced after microRNA-597 transfection, including colony formation, in patient-derived organoids. Among target genes, RUNX1 was directly regulated by microRNA-597. Other cell invasion genes were dependent on RUNX1 as a hub for regulation. Analysis of the Intersection between long non-coding RNAs co-expressed with RUNX1 and those with the highest microRNA-597 prediction binding identified KCNQ1OT1 as the top transcript. Silencing of KCNQ1OT1 and co-expression in clinical samples suggest the existence of a KCNQ1OT1/microRNA-597/RUNX1 network. The results indicate that microRNA-597 directly suppresses RUNX1, while KCNQ1OT1 modulates this interaction. Our approach enabled the simultaneous analysis of dysregulation in three families of transcripts in gastric cancer progression.\n\n--- Abstract 3 (PMID: 33143250, relevance: -4.1967) ---\nMicroRNAs (miRNAs) act as negative regulators of gene expression in the cytoplasm. Previous studies have identified the presence of miRNAs in the nucleus. Here we study human breast cancer-derived cell-lines (MCF-7 and MDA-MB-231) and a non-tumorigenic cell-line (MCF-10A) and compare their miRNA sequences at the spliceosome fraction (SF). We report that the levels of miRNAs found in the spliceosome, their identity, and pre-miRNA segmental composition are cell-line specific. One such miRNA is miR-7704 whose genomic position overlaps HAGLR, a cancer-related lncRNA. We detected an inverse expression of miR-7704 and HAGLR in the tested cell lines. Specifically, inhibition of miR-7704 caused an increase in HAGLR expression. Furthermore, elevated levels of miR-7704 slightly altered the cell-cycle in MDA-MB-231. Altogether, we show that SF-miR-7704 acts as a tumor-suppressor gene with HAGLR being its nuclear target. The relative levels of miRNAs found in the spliceosome fractions (e.g., miR-100, miR-30a, and let-7 family) in non-tumorigenic relative to cancer-derived cell-lines was monitored. We found that the expression trend of the abundant miRNAs in SF was different from that reported in the literature and from the observation of large cohorts of breast cancer patients, suggesting that many SF-miRNAs act on targets that are different from the cytoplasmic ones. Altogether, we report on the potential of SF-miRNAs as an unexplored route for cancerous cell state.\n\n\n\n**Question:**\nWhich microRNAs, if any, are reported in the available abstracts to target the 3\u2032 UTR of FGF5? Cite the supporting abstract evidence or state that none is available.",
+  "vector_context": "--- Abstract 1 (PMID: 36979151, relevance: -0.6266) ---\nMicroRNAs (miRs) are small non-coding RNAs that modulate the expression of several target genes. Fibroblast growth factor binding protein 1 (FGFBP1) has been associated with endothelial dysfunction at the level of the blood-brain barrier (BBB). However, the underlying mechanisms are mostly unknown and there are no studies investigating the relationship between miRs and FGFBP1. Thus, the overarching aim of the present study was to identify and validate which miR can specifically target FGFBP1 in human brain microvascular endothelial cells, which represent the best in vitro model of the BBB. We were able to identify and validate miR-4432 as a fundamental modulator of FGFBP1 and we demonstrated that miR-4432 significantly reduces mitochondrial oxidative stress, a well-established pathophysiological hallmark of hypertension.\n\n--- Abstract 2 (PMID: 42353091, relevance: -2.3688) ---\nAberrant expression of multiple microRNAs has been reported in gastric cancer. In particular, microRNA-597 has been associated with poor survival rates but is not yet well characterized. Seventy-five clinical samples, four cell lines, and two patient-derived organoids were evaluated for the expression of microRNA-597 and its target genes. microRNA-597 was transiently transfected for analysis of cell migration, invasion, wound healing, colony formation, and cell viability, and its regulation by long non-coding RNAs was explored using the TCGA-STAD and LncBook tools. In clinical samples, low expression of microRNA-597 was associated with the intestinal subtype (p = 0.002) and stages III and IV (p = 0.048). All functional readouts were reduced after microRNA-597 transfection, including colony formation, in patient-derived organoids. Among target genes, RUNX1 was directly regulated by microRNA-597. Other cell invasion genes were dependent on RUNX1 as a hub for regulation. Analysis of the Intersection between long non-coding RNAs co-expressed with RUNX1 and those with the highest microRNA-597 prediction binding identified KCNQ1OT1 as the top transcript. Silencing of KCNQ1OT1 and co-expression in clinical samples suggest the existence of a KCNQ1OT1/microRNA-597/RUNX1 network. The results indicate that microRNA-597 directly suppresses RUNX1, while KCNQ1OT1 modulates this interaction. Our approach enabled the simultaneous analysis of dysregulation in three families of transcripts in gastric cancer progression.\n\n--- Abstract 3 (PMID: 33143250, relevance: -4.1967) ---\nMicroRNAs (miRNAs) act as negative regulators of gene expression in the cytoplasm. Previous studies have identified the presence of miRNAs in the nucleus. Here we study human breast cancer-derived cell-lines (MCF-7 and MDA-MB-231) and a non-tumorigenic cell-line (MCF-10A) and compare their miRNA sequences at the spliceosome fraction (SF). We report that the levels of miRNAs found in the spliceosome, their identity, and pre-miRNA segmental composition are cell-line specific. One such miRNA is miR-7704 whose genomic position overlaps HAGLR, a cancer-related lncRNA. We detected an inverse expression of miR-7704 and HAGLR in the tested cell lines. Specifically, inhibition of miR-7704 caused an increase in HAGLR expression. Furthermore, elevated levels of miR-7704 slightly altered the cell-cycle in MDA-MB-231. Altogether, we show that SF-miR-7704 acts as a tumor-suppressor gene with HAGLR being its nuclear target. The relative levels of miRNAs found in the spliceosome fractions (e.g., miR-100, miR-30a, and let-7 family) in non-tumorigenic relative to cancer-derived cell-lines was monitored. We found that the expression trend of the abundant miRNAs in SF was different from that reported in the literature and from the observation of large cohorts of breast cancer patients, suggesting that many SF-miRNAs act on targets that are different from the cytoplasmic ones. Altogether, we report on the potential of SF-miRNAs as an unexplored route for cancerous cell state.\n\n"
+}

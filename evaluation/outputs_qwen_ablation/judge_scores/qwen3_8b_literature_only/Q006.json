@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q006",
+      "randomization_seed": "20260706:Q006:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q006",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q006",
+      "error": null,
+      "id": "batch_req_6a4f85ccde308190877b5a95b4854c07",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594491,
+          "created_at": 1783594473,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_01a76ebe3648df51006a4f7de905d88196bcdf457538c23b25",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q006"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_01a76ebe3648df51006a4f7dea6ee88196a5b87998d8ebce84",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly summarizes the annotations available for rs6152.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately reproduces the implicated gene, pathways, phenotypes, drugs, GO terms, PPIs, disease associations, drug evidence, and regulatory element from the reference evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers essentially all important annotation categories supplied in the evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Does not make unsupported claims beyond the provided annotations and stays within the evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"It mentions rs6152 but fails to answer the requested summary despite available graph annotations.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Incorrectly implies the provided information lacks annotations for rs6152, ignoring the supplied graph context.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits nearly all relevant annotations, including AR, pathways, phenotypes, drugs, disease associations, PPIs, and regulatory element information.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Abstains, but the abstention is inappropriate because sufficient evidence was provided in the graph context.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_01a76ebe3648df51006a4f7df41fc481969abf38d6f3b10c19",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3132,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 589,
+            "output_tokens_details": {
+              "reasoning_tokens": 299
+            },
+            "total_tokens": 3721
+          },
+          "user": null
+        },
+        "request_id": "5bfae4d1-9142-41f3-8388-eb97b2610230",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "It mentions rs6152 but fails to answer the requested summary despite available graph annotations.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly implies the provided information lacks annotations for rs6152, ignoring the supplied graph context.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Omits nearly all relevant annotations, including AR, pathways, phenotypes, drugs, disease associations, PPIs, and regulatory element information.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Abstains, but the abstention is inappropriate because sufficient evidence was provided in the graph context.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q006",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q006.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.715000+00:00"
+}

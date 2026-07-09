@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q003",
+      "randomization_seed": "20260706:Q003:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q003",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q003",
+      "error": null,
+      "id": "batch_req_6a4f85ccd7408190b1ad7cc979cacbe3",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594497,
+          "created_at": 1783594464,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0beb6eeb32526a27006a4f7de031d08197984bdfdd045e6030",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q003"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0beb6eeb32526a27006a4f7de17b9c8197a8531b97c89eba7a",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses whether a functional consequence is supported, but does not mention the implicated AR gene or the regulatory-element annotation present in the graph context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Accurately avoids inventing a consequence from the provided abstracts; however, it overlooks graph evidence that rs6152 is implicated in AR and lies in a pELS regulatory element, which could suggest regulatory relevance.\"},\"completeness\":{\"score\":3,\"rationale\":\"Covers the absence of explicit functional-consequence evidence, but omits the possible regulatory context and how it might affect AR expression.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making unsupported claims about functional impact.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses the associated AR gene and possible effects, but treats broad gene/pathway annotations as variant-specific functional consequences.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Overinterprets the evidence by claiming rs6152 may affect AR transcriptional activity, osteoblast differentiation, protein localization, and androgen signaling without direct support for those variant-specific effects.\"},\"completeness\":{\"score\":3,\"rationale\":\"Mentions AR and several contextual annotations, but fails to state that no explicit functional consequence is provided and does not focus on the regulatory-element evidence.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Presents speculative consequences as if supported, with insufficient qualification.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0beb6eeb32526a27006a4f7df5b95881978fa15da2dec948de",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2444,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 857,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3301
+          },
+          "user": null
+        },
+        "request_id": "799fbcd5-0714-4443-8790-fc9c8035e6a9",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Addresses the associated AR gene and possible effects, but treats broad gene/pathway annotations as variant-specific functional consequences.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Overinterprets the evidence by claiming rs6152 may affect AR transcriptional activity, osteoblast differentiation, protein localization, and androgen signaling without direct support for those variant-specific effects.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Mentions AR and several contextual annotations, but fails to state that no explicit functional consequence is provided and does not focus on the regulatory-element evidence.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Presents speculative consequences as if supported, with insufficient qualification.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q003",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q003.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.713830+00:00"
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q114",
+      "randomization_seed": "20260706:Q114:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q114",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q114",
+      "error": null,
+      "id": "batch_req_6a4f85d39ed481908087c3d69abeb19e",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783579050,
+          "created_at": 1783579019,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_07c91849339b8650006a4f418b96a881909afe802d19d92de6",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q114"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_07c91849339b8650006a4f419d3510819099b59f93661afc97",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 3,\n        \"rationale\": \"Partially addresses hair-follicle growth/cycling, but focuses mainly on Wnt signaling rather than direct FGF signaling evidence.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"Accurately summarizes the htSKP-EV/Wnt findings, but makes unsupported claims that FGF-related factors or FGF signaling contribute indirectly to hair cycling based on the supplied evidence.\"\n      },\n      \"completeness\": {\n        \"score\": 2,\n        \"rationale\": \"Does not clearly state that the provided evidence lacks direct support for FGF signaling in hair-follicle growth or cycling, and instead adds speculative mechanisms.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 2,\n        \"rationale\": \"Includes some qualification, but still draws an unsupported conclusion about FGF pathway involvement.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 4,\n        \"rationale\": \"Directly responds by noting insufficient relevant evidence for the requested FGF-hair follicle relationship.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 5,\n        \"rationale\": \"Consistent with the supplied evidence, which does not provide direct data linking FGF signaling to hair-follicle growth or cycling.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Appropriately abstains, but only mentions the graph context and does not acknowledge that the vector evidence also lacks direct FGF-hair follicle support.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 5,\n        \"rationale\": \"Properly avoids inventing a mechanism when relevant evidence is insufficient.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_07c91849339b8650006a4f41a6370481908a521588fdb17f10",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1951,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 948,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2899
+          },
+          "user": null
+        },
+        "request_id": "5d01e712-e882-47dd-8023-8f992303bac8",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partially addresses hair-follicle growth/cycling, but focuses mainly on Wnt signaling rather than direct FGF signaling evidence.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately summarizes the htSKP-EV/Wnt findings, but makes unsupported claims that FGF-related factors or FGF signaling contribute indirectly to hair cycling based on the supplied evidence.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Does not clearly state that the provided evidence lacks direct support for FGF signaling in hair-follicle growth or cycling, and instead adds speculative mechanisms.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Includes some qualification, but still draws an unsupported conclusion about FGF pathway involvement.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q114",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q114.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.756599+00:00"
+}

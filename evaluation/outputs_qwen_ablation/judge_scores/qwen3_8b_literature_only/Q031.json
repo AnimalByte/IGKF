@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q031",
+      "randomization_seed": "20260706:Q031:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q031",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q031",
+      "error": null,
+      "id": "batch_req_6a4f85ceb78081908f40a97c791bc8af",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578960,
+          "created_at": 1783578928,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0db384a8e9b9ebce006a4f41302f5c81979d4192a1467fdff5",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q031"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0db384a8e9b9ebce006a4f4142658881978143ef1c736828d9",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Addresses rs929626 and EBF1, but focuses on gene GO annotations rather than the variant's annotated consequence.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Correctly notes EBF1 association, but incorrectly treats EBF1 GO terms as the functional consequence of rs929626 and speculates unsupported effects on EBF1 structure/function.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the key annotation that rs929626 lies in a dELS regulatory element and does not clearly state that no specific coding consequence is provided.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some hedging, but still makes unsupported claims about altered EBF1 structure or transcriptional activity.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Responds to the question but bases the answer only on absent literature mentions and ignores supplied graph context.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"It is true the abstracts do not discuss rs929626, but the reference evidence does provide an implicated gene, EBF1, and a regulatory-element annotation.\"},\"completeness\":{\"score\":1,\"rationale\":\"Fails to mention EBF1 or the dELS regulatory element, which are central to answering the question.\"},\"uncertainty_abstention\":{\"score\":3,\"rationale\":\"Appropriately avoids inventing a specific functional effect, but over-abstains despite available graph evidence.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0db384a8e9b9ebce006a4f414c0c088197afdc95c735a1bd69",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2369,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 851,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3220
+          },
+          "user": null
+        },
+        "request_id": "1f7ad508-bbf5-4882-9e82-3c58c2f1b68e",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Responds to the question but bases the answer only on absent literature mentions and ignores supplied graph context.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "It is true the abstracts do not discuss rs929626, but the reference evidence does provide an implicated gene, EBF1, and a regulatory-element annotation.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Fails to mention EBF1 or the dELS regulatory element, which are central to answering the question.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately avoids inventing a specific functional effect, but over-abstains despite available graph evidence.",
+      "score": 3.0
+    }
+  },
+  "question_id": "Q031",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q031.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.724544+00:00"
+}

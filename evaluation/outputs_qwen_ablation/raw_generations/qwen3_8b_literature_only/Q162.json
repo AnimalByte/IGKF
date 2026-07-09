@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41416997",
+    "41935184",
+    "35551428",
+    "42335985",
+    "41962619",
+    "30610764",
+    "34984527",
+    "42091420",
+    "38123340",
+    "32776659",
+    "36471583",
+    "42100975",
+    "42400233",
+    "42127421",
+    "33133644"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q162.json",
+      "question_id": "Q162",
+      "sha256": "7ff2d009e6eec9a79c49f9caff07ba08f2340cafd2c28a934854173e66daeb55"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q162.json",
+      "question_id": "Q162",
+      "sha256": "58034233df252e258cab585b740840c3ea9a11d31454c2920bb16cabdec5c400"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the provided data support a link between HDAC9 and inflammatory processes relevant to the scalp or hair follicle? Summarize supported evidence or state the limitation.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.1844,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the provided data support a link between HDAC9 and inflammatory processes relevant to the scalp or hair follicle? Summarize supported evidence or state the limitation.",
+  "parsed_answer": "The provided data does not support a direct link between HDAC9 and inflammatory processes relevant to the scalp or hair follicle. The literature context focuses on HDAC9's roles in cancer, preeclampsia, and gut microbiota interactions, but it does not mention any studies or findings related to the scalp, hair follicles, or inflammatory processes in these specific contexts. Therefore, the evidence is insufficient to establish such a link.",
+  "question_id": "Q162",
+  "question_text": "Does the provided data support a link between HDAC9 and inflammatory processes relevant to the scalp or hair follicle? Summarize supported evidence or state the limitation.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 88,
+    "prompt_token_count": 1141,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided data does not support a direct link between HDAC9 and inflammatory processes relevant to the scalp or hair follicle. The literature context focuses on HDAC9's roles in cancer, preeclampsia, and gut microbiota interactions, but it does not mention any studies or findings related to the scalp, hair follicles, or inflammatory processes in these specific contexts. Therefore, the evidence is insufficient to establish such a link."
+      }
+    ],
+    "created": 1783564571,
+    "id": "cmpl-67b44186-d1c4-45b4-afdd-607ed37b0e7c",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 88,
+      "prompt_tokens": 1120,
+      "total_tokens": 1208
+    }
+  },
+  "reranker_scores": [
+    -5.410473823547363,
+    -5.4309539794921875,
+    -5.902383804321289
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      30.997230529785156,
+      33.0471076965332,
+      33.70139694213867,
+      35.63901901245117,
+      35.850460052490234,
+      36.483917236328125,
+      36.53763961791992,
+      36.697696685791016,
+      37.45214080810547,
+      37.89023208618164,
+      37.913360595703125,
+      38.32210922241211,
+      38.434608459472656,
+      38.5745849609375,
+      38.64920425415039
+    ],
+    "candidate_pmids": [
+      "41416997",
+      "41935184",
+      "35551428",
+      "42335985",
+      "41962619",
+      "30610764",
+      "34984527",
+      "42091420",
+      "38123340",
+      "32776659",
+      "36471583",
+      "42100975",
+      "42400233",
+      "42127421",
+      "33133644"
+    ],
+    "expanded_retrieval_query": "Does the provided data support a link between HDAC9 and inflammatory processes relevant to the scalp or hair follicle? Summarize supported evidence or state the limitation.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42100975, relevance: -5.4105) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41416997, relevance: -5.4310) ---\nPreeclampsia, defined by hypertension and end organ damage after 20 weeks of gestation, remains a significant cause of maternal and fetal morbidity and mortality. This disorder has a diverse clinical presentation and is likely driven by several underlying mechanisms, many remaining poorly understood. However, there is emerging evidence that epigenetic regulators, including histone deacetylases (HDACs), may contribute to the pathophysiology of preeclampsia. Of the many HDACs, HDAC9 is particularly intriguing in the context of preeclampsia due to its decreased presence in preeclamptic placenta and prominent role in controlling trophoblast, vascular, and immune behavior, which are often dysregulated in this condition. This review focuses specifically on HDAC9, detailing its expression patterns, molecular properties, known and hypothesized targets at the maternal-fetal interface, and potential causes of dysregulation. Special emphasis is placed on its impact on trophoblast function, immune signaling, angiogenesis, and G-protein-coupled receptor pathways, which are frequently disrupted in preeclampsia. Although current evidence for altered HDAC9 expression in this disorder is confined to the placenta, its potential role in maternal physiology remains an open and important question. By integrating findings from placental biology and disorders with overlapping pathways such as cardiovascular disease and cancer research, this review aims to establish a framework for understanding how HDAC9 contributes to preeclampsia pathogenesis and to identify promising directions for future investigation and therapeutic development.\n\n--- Abstract 3 (PMID: 42127421, relevance: -5.9024) ---\nThe healthy gut microbiota communities play a complex and significant role in lipid absorption and deposition, leading to multiple health benefits. Here, we confirmed an impaired absorption and deposition function in germ-free pigs and mice, which was partially reversed after human fecal microbiota transplantation. By integrating single-cell data from adipose tissue, we identified HDAC9 as a key regulator, marked by the presence of a population of small mature adipocytes exhibiting high HDAC9 and low PPARgamma expression in germ-free pigs. HDAC9 deficiency of preadipocytes drove FABP4/5-mediated lipid deposition by directly targeting PPARgamma expression and acetylation modification. Finally, we verified the interaction between gut microbiota and host HDAC9/PPARgamma/FABP4/5 signaling cascade might be microbial receptors (ie, Dectin1 or TLRs)-dependent rather than microbial metabolites. Altogether, our study uncovers the gut microbiota-HDAC9-PPARgamma axis as a key regulator of adipocyte function and lipid deposition, offering a potential therapeutic target for lipid-related metabolic diseases.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the provided data support a link between HDAC9 and inflammatory processes relevant to the scalp or hair follicle? Summarize supported evidence or state the limitation.",
+    "rerank_seconds": 0.3336,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3504,
+    "score_max": -5.410473823547363,
+    "score_mean": -5.581270535786946,
+    "scores": [
+      -5.410473823547363,
+      -5.4309539794921875,
+      -5.902383804321289
+    ],
+    "selected_abstracts": [
+      "Aberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.",
+      "Preeclampsia, defined by hypertension and end organ damage after 20 weeks of gestation, remains a significant cause of maternal and fetal morbidity and mortality. This disorder has a diverse clinical presentation and is likely driven by several underlying mechanisms, many remaining poorly understood. However, there is emerging evidence that epigenetic regulators, including histone deacetylases (HDACs), may contribute to the pathophysiology of preeclampsia. Of the many HDACs, HDAC9 is particularly intriguing in the context of preeclampsia due to its decreased presence in preeclamptic placenta and prominent role in controlling trophoblast, vascular, and immune behavior, which are often dysregulated in this condition. This review focuses specifically on HDAC9, detailing its expression patterns, molecular properties, known and hypothesized targets at the maternal-fetal interface, and potential causes of dysregulation. Special emphasis is placed on its impact on trophoblast function, immune signaling, angiogenesis, and G-protein-coupled receptor pathways, which are frequently disrupted in preeclampsia. Although current evidence for altered HDAC9 expression in this disorder is confined to the placenta, its potential role in maternal physiology remains an open and important question. By integrating findings from placental biology and disorders with overlapping pathways such as cardiovascular disease and cancer research, this review aims to establish a framework for understanding how HDAC9 contributes to preeclampsia pathogenesis and to identify promising directions for future investigation and therapeutic development.",
+      "The healthy gut microbiota communities play a complex and significant role in lipid absorption and deposition, leading to multiple health benefits. Here, we confirmed an impaired absorption and deposition function in germ-free pigs and mice, which was partially reversed after human fecal microbiota transplantation. By integrating single-cell data from adipose tissue, we identified HDAC9 as a key regulator, marked by the presence of a population of small mature adipocytes exhibiting high HDAC9 and low PPARgamma expression in germ-free pigs. HDAC9 deficiency of preadipocytes drove FABP4/5-mediated lipid deposition by directly targeting PPARgamma expression and acetylation modification. Finally, we verified the interaction between gut microbiota and host HDAC9/PPARgamma/FABP4/5 signaling cascade might be microbial receptors (ie, Dectin1 or TLRs)-dependent rather than microbial metabolites. Altogether, our study uncovers the gut microbiota-HDAC9-PPARgamma axis as a key regulator of adipocyte function and lipid deposition, offering a potential therapeutic target for lipid-related metabolic diseases."
+    ],
+    "selected_pmids": [
+      "42100975",
+      "41416997",
+      "42127421"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0167
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q162.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42100975",
+    "41416997",
+    "42127421"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:36:12.562496+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42100975, relevance: -5.4105) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41416997, relevance: -5.4310) ---\nPreeclampsia, defined by hypertension and end organ damage after 20 weeks of gestation, remains a significant cause of maternal and fetal morbidity and mortality. This disorder has a diverse clinical presentation and is likely driven by several underlying mechanisms, many remaining poorly understood. However, there is emerging evidence that epigenetic regulators, including histone deacetylases (HDACs), may contribute to the pathophysiology of preeclampsia. Of the many HDACs, HDAC9 is particularly intriguing in the context of preeclampsia due to its decreased presence in preeclamptic placenta and prominent role in controlling trophoblast, vascular, and immune behavior, which are often dysregulated in this condition. This review focuses specifically on HDAC9, detailing its expression patterns, molecular properties, known and hypothesized targets at the maternal-fetal interface, and potential causes of dysregulation. Special emphasis is placed on its impact on trophoblast function, immune signaling, angiogenesis, and G-protein-coupled receptor pathways, which are frequently disrupted in preeclampsia. Although current evidence for altered HDAC9 expression in this disorder is confined to the placenta, its potential role in maternal physiology remains an open and important question. By integrating findings from placental biology and disorders with overlapping pathways such as cardiovascular disease and cancer research, this review aims to establish a framework for understanding how HDAC9 contributes to preeclampsia pathogenesis and to identify promising directions for future investigation and therapeutic development.\n\n--- Abstract 3 (PMID: 42127421, relevance: -5.9024) ---\nThe healthy gut microbiota communities play a complex and significant role in lipid absorption and deposition, leading to multiple health benefits. Here, we confirmed an impaired absorption and deposition function in germ-free pigs and mice, which was partially reversed after human fecal microbiota transplantation. By integrating single-cell data from adipose tissue, we identified HDAC9 as a key regulator, marked by the presence of a population of small mature adipocytes exhibiting high HDAC9 and low PPARgamma expression in germ-free pigs. HDAC9 deficiency of preadipocytes drove FABP4/5-mediated lipid deposition by directly targeting PPARgamma expression and acetylation modification. Finally, we verified the interaction between gut microbiota and host HDAC9/PPARgamma/FABP4/5 signaling cascade might be microbial receptors (ie, Dectin1 or TLRs)-dependent rather than microbial metabolites. Altogether, our study uncovers the gut microbiota-HDAC9-PPARgamma axis as a key regulator of adipocyte function and lipid deposition, offering a potential therapeutic target for lipid-related metabolic diseases.\n\n\n\n**Question:**\nDoes the provided data support a link between HDAC9 and inflammatory processes relevant to the scalp or hair follicle? Summarize supported evidence or state the limitation.",
+  "vector_context": "--- Abstract 1 (PMID: 42100975, relevance: -5.4105) ---\nAberrant histone deacetylase-9 (HDAC9) activity has been recorded in a plethora of malignant tumors, including gastric cancer, hepatocellular carcinoma, and non-small cell lung cancer. Despite the discovery of HDAC9 as an important pharmacological target, the non-availability of its three-dimensional structure has substantially obstructed the process of discovering potent plant-based therapeutics against it. The present study determined the tertiary structure of human HDAC9 and validated its accuracy. Following this, the binding characteristics of diverse flavonoids against HDAC9 were compared using givinostat as a reference molecule. Moreover, the dynamics of the highest affinity flavonoid and HDAC9 were also investigated in the bound state. Furthermore, the energy gap of the defined flavonoid, signifying the reactivity and kinetic stability, was quantified. We employed multiple techniques, including template-steered modeling, molecular docking, all-atom molecular dynamics, and an atomistic quantum mechanical density functional theory in tandem, for comparing the binding strength of 12 flavonoid molecules against HDAC9 using givinostat (an orphan-approved HDAC inhibitor) as the positive control. Following these procedures, it became discernible that all the flavonoid molecules exhibit stronger binding character and interaction status with this epigenetic target than givinostat. Kaempferol, a flavonol, manifested the strongest affinity among the selected flavonoids and interacted with multiple residues of the deacetylase domain of HDAC9. Similar to givinostat, kaempferol exhibited tenable stability in bound form with this acetylation-eraser enzymatic protein. Most importantly, this flavonol demonstrated higher chemical reactivity and, as such, lower kinetic stability than givinostat which is quite important from a pharmacological perspective.\n\n--- Abstract 2 (PMID: 41416997, relevance: -5.4310) ---\nPreeclampsia, defined by hypertension and end organ damage after 20 weeks of gestation, remains a significant cause of maternal and fetal morbidity and mortality. This disorder has a diverse clinical presentation and is likely driven by several underlying mechanisms, many remaining poorly understood. However, there is emerging evidence that epigenetic regulators, including histone deacetylases (HDACs), may contribute to the pathophysiology of preeclampsia. Of the many HDACs, HDAC9 is particularly intriguing in the context of preeclampsia due to its decreased presence in preeclamptic placenta and prominent role in controlling trophoblast, vascular, and immune behavior, which are often dysregulated in this condition. This review focuses specifically on HDAC9, detailing its expression patterns, molecular properties, known and hypothesized targets at the maternal-fetal interface, and potential causes of dysregulation. Special emphasis is placed on its impact on trophoblast function, immune signaling, angiogenesis, and G-protein-coupled receptor pathways, which are frequently disrupted in preeclampsia. Although current evidence for altered HDAC9 expression in this disorder is confined to the placenta, its potential role in maternal physiology remains an open and important question. By integrating findings from placental biology and disorders with overlapping pathways such as cardiovascular disease and cancer research, this review aims to establish a framework for understanding how HDAC9 contributes to preeclampsia pathogenesis and to identify promising directions for future investigation and therapeutic development.\n\n--- Abstract 3 (PMID: 42127421, relevance: -5.9024) ---\nThe healthy gut microbiota communities play a complex and significant role in lipid absorption and deposition, leading to multiple health benefits. Here, we confirmed an impaired absorption and deposition function in germ-free pigs and mice, which was partially reversed after human fecal microbiota transplantation. By integrating single-cell data from adipose tissue, we identified HDAC9 as a key regulator, marked by the presence of a population of small mature adipocytes exhibiting high HDAC9 and low PPARgamma expression in germ-free pigs. HDAC9 deficiency of preadipocytes drove FABP4/5-mediated lipid deposition by directly targeting PPARgamma expression and acetylation modification. Finally, we verified the interaction between gut microbiota and host HDAC9/PPARgamma/FABP4/5 signaling cascade might be microbial receptors (ie, Dectin1 or TLRs)-dependent rather than microbial metabolites. Altogether, our study uncovers the gut microbiota-HDAC9-PPARgamma axis as a key regulator of adipocyte function and lipid deposition, offering a potential therapeutic target for lipid-related metabolic diseases.\n\n"
+}

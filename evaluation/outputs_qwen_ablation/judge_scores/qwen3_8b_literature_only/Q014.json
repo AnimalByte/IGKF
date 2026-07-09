@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q014",
+      "randomization_seed": "20260706:Q014:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q014",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q014",
+      "error": null,
+      "id": "batch_req_6a4f85cd78c88190809348bcf29bb81f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594497,
+          "created_at": 1783594472,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0d5383d58043387a006a4f7de8c7188195beb2299eaca67f63",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q014"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0d5383d58043387a006a4f7dea0440819592de542f422e8f99",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"It addresses inability to answer, but limits the explanation to the graph context and does not consider the provided literature context.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The statement that the graph context lacks relevant data is supported, but it is an incomplete basis for answering the biomedical question.\"},\"completeness\":{\"score\":2,\"rationale\":\"It does not state whether the provided study/literature evidence reports a p-value for rs2180439.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"It appropriately avoids inventing a p-value, though the abstention is framed too narrowly around graph data only.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether a p-value for rs2180439 and androgenetic alopecia is available in the provided context.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"The supplied evidence does not mention rs2180439 or a specific p-value for that SNP, so the statement is accurate against the reference packet.\"},\"completeness\":{\"score\":5,\"rationale\":\"Provides the key conclusion that no p-value is reported for the specified SNP in the given evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from inventing a p-value and qualifies the answer based on the provided studies.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0d5383d58043387a006a4f7df747fc8195941df51211df57a2",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1837,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 685,
+            "output_tokens_details": {
+              "reasoning_tokens": 369
+            },
+            "total_tokens": 2522
+          },
+          "user": null
+        },
+        "request_id": "2472b4a9-aef1-4b3f-98e4-76a894a39a00",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether a p-value for rs2180439 and androgenetic alopecia is available in the provided context.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The supplied evidence does not mention rs2180439 or a specific p-value for that SNP, so the statement is accurate against the reference packet.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the key conclusion that no p-value is reported for the specified SNP in the given evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from inventing a p-value and qualifies the answer based on the provided studies.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q014",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q014.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.718005+00:00"
+}

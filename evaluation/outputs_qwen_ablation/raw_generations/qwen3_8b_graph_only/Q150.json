@@ -1,0 +1,146 @@
+{
+  "benchmark_annotations": {
+    "answerability": "insufficient_evidence_likely",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q150.json",
+      "question_id": "Q150",
+      "sha256": "5c03e5bb677c0c0c6dcb6ded7d42e43326876448e9dce847e6899a05562ef288"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q150.json",
+      "question_id": "Q150",
+      "sha256": "54428b684a7b53de6fc5edb2dc96a90ad526c22cbff0f113a9d10505c59ae863"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.3346,
+  "git_commit": null,
+  "graph_context": "No relevant data found in the graph.",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this dataset contain ancestry-stratified allele-frequency data sufficient to compare the prevalence of androgenetic-alopecia risk alleles across populations? If so, summarize the evidence; otherwise state the limitation.",
+  "parsed_answer": "The dataset does not contain ancestry-stratified allele-frequency data. Therefore, it is insufficient to compare the prevalence of androgenetic-alopecia risk alleles across populations.",
+  "question_id": "Q150",
+  "question_text": "Does this dataset contain ancestry-stratified allele-frequency data sufficient to compare the prevalence of androgenetic-alopecia risk alleles across populations? If so, summarize the evidence; otherwise state the limitation.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 34,
+    "prompt_token_count": 144,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The dataset does not contain ancestry-stratified allele-frequency data. Therefore, it is insufficient to compare the prevalence of androgenetic-alopecia risk alleles across populations."
+      }
+    ],
+    "created": 1783563256,
+    "id": "cmpl-c1596cce-c696-476f-9fcc-7c8fb9c3d70d",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 34,
+      "prompt_tokens": 123,
+      "total_tokens": 157
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nNo relevant data found in the graph.",
+    "found_specific_entity": true,
+    "graph_context": "No relevant data found in the graph.",
+    "graph_context_length": 36,
+    "graph_context_present": false,
+    "graph_retrieval_seconds": 36.8818,
+    "original_retrieval_query": "Does this dataset contain ancestry-stratified allele-frequency data sufficient to compare the prevalence of androgenetic-alopecia risk alleles across populations? If so, summarize the evidence; otherwise state the limitation.",
+    "resolved_entities": [
+      {
+        "label": "KEYWORD",
+        "text": "frequency"
+      },
+      {
+        "label": "KEYWORD",
+        "text": "alopecia"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 36.8818,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q150.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:14:16.356429+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nNo relevant data found in the graph.\n\n**Question:**\nDoes this dataset contain ancestry-stratified allele-frequency data sufficient to compare the prevalence of androgenetic-alopecia risk alleles across populations? If so, summarize the evidence; otherwise state the limitation.",
+  "vector_context": ""
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q186",
+      "randomization_seed": "20260706:Q186:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q186",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q186",
+      "error": null,
+      "id": "batch_req_6a4f85d828108190ba3b54810b3b4a05",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594529,
+          "created_at": 1783594513,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_06d1c5f0c9989177006a4f7e112f8c8197bc2626fcbb52e4a1",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q186"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_06d1c5f0c9989177006a4f7e1a92bc8197a5d50e7afea902cc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that population-stratified data are not sufficient for comparing AR-mediated androgen sensitivity across populations.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The conclusion is scientifically plausible and appropriately framed, though no reference evidence is provided to verify the described study context.\"},\"completeness\":{\"score\":4,\"rationale\":\"States the negative answer and the key limitation; includes some extra contextual detail that is not necessary.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making cross-population conclusions due to insufficient stratified data.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the available study/context supports population-stratified comparison of AR-mediated androgen sensitivity.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"The limitation described is plausible and internally consistent, but cannot be fully verified without reference evidence.\"},\"completeness\":{\"score\":5,\"rationale\":\"Clearly states the absence of population stratification and explains why this prevents the requested comparison.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly limits the conclusion to insufficiency of available data and avoids unsupported claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_06d1c5f0c9989177006a4f7e1e4ff8819785f33644bdd32cf0",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 683,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 581,
+            "output_tokens_details": {
+              "reasoning_tokens": 298
+            },
+            "total_tokens": 1264
+          },
+          "user": null
+        },
+        "request_id": "9a929386-6cd2-4cc7-8dd4-4b6be5a0f9cd",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether the available study/context supports population-stratified comparison of AR-mediated androgen sensitivity.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The limitation described is plausible and internally consistent, but cannot be fully verified without reference evidence.",
+      "score": 4.0
+    },
+    "completeness": {
+      "rationale": "Clearly states the absence of population stratification and explains why this prevents the requested comparison.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly limits the conclusion to insufficiency of available data and avoids unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q186",
+  "reference_evidence_packet_id": null,
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.784543+00:00"
+}

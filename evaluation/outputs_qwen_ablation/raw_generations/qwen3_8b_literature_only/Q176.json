@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "39923055",
+    "40751759",
+    "38342585",
+    "31078570",
+    "41417529",
+    "34648798",
+    "41233983",
+    "36471583",
+    "35449187",
+    "35462437",
+    "39245941",
+    "41951763",
+    "34968235",
+    "42309414",
+    "24410847"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q176.json",
+      "question_id": "Q176",
+      "sha256": "5c224b152396c5488cef147d3817a0a981b766c07b0a5d7b2363d6f34053182b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q176.json",
+      "question_id": "Q176",
+      "sha256": "ba506cec33271c1a8843ac3f13e7a3682404338d58b1bd36e85cf30e7d87dbf8"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which genes identified in this study are also linked in the integrated evidence to skin development or skin-related biological processes?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 4.8368,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which genes identified in this study are also linked in the integrated evidence to skin development or skin-related biological processes?",
+  "parsed_answer": "Based on the provided literature context, the following genes are identified as being linked to skin development or skin-related biological processes:\n\n1. **HOX gene family** - These genes are crucial for embryonic development and various biological processes. The study highlights specific HOX genes, such as HOXA10, 11, 13, HOXB13, HOXC11, and HOXD9-13 (downregulated in older skin), and HOXA2-7, HOXB1-9, HOXC4-6 and 8-9, and HOXD1,3,4 and 8 (upregulated in older skin), which are associated with skin aging and development.\n\n2. **FLG (Filaggrin)** - This gene is associated with skin barrier dysfunction and atopic dermatitis (AD). Variants in FLG, such as R501X, 3321delA, and rs61816761, are linked to impaired skin barrier integrity and increased susceptibility to AD.\n\n3. **SPINK5** - Variants in this gene, such as A1103G and G1258A, are associated with skin barrier dysfunction and AD, particularly in Asian populations.\n\n4. **LAMA3, HRNR, and COL8A1** - These genes are also linked to skin barrier dysfunction and the development of atopic dermatitis.\n\n5. **OCA2** - This gene is associated with hyperpigmentation, a skin-related phenotype.\n\n6. **SPATA33 and IRF4** - These genes exhibit pleiotropic effects, contributing to both wrinkling and pigmentation changes in skin aging.\n\n7. **SPTLC1 and REEP3** - These genes have paradoxical effects, influencing skin sagging and other aging-related changes.\n\n8. **SMYD3 and CYP1A1** - These genes are associated with ECM degradation and responses to environmental pollutants, which affect skin structure and aging.\n\n9. **COL1A2 and COL13A1** - These genes support ECM integrity and skin resilience, providing protective effects against skin aging.\n\nThese genes are identified in the context of skin development, aging, and related biological processes, as described in the literature.",
+  "question_id": "Q176",
+  "question_text": "Which genes identified in this study are also linked in the integrated evidence to skin development or skin-related biological processes?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 473,
+    "prompt_token_count": 1188,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the provided literature context, the following genes are identified as being linked to skin development or skin-related biological processes:\n\n1. **HOX gene family** - These genes are crucial for embryonic development and various biological processes. The study highlights specific HOX genes, such as HOXA10, 11, 13, HOXB13, HOXC11, and HOXD9-13 (downregulated in older skin), and HOXA2-7, HOXB1-9, HOXC4-6 and 8-9, and HOXD1,3,4 and 8 (upregulated in older skin), which are associated with skin aging and development.\n\n2. **FLG (Filaggrin)** - This gene is associated with skin barrier dysfunction and atopic dermatitis (AD). Variants in FLG, such as R501X, 3321delA, and rs61816761, are linked to impaired skin barrier integrity and increased susceptibility to AD.\n\n3. **SPINK5** - Variants in this gene, such as A1103G and G1258A, are associated with skin barrier dysfunction and AD, particularly in Asian populations.\n\n4. **LAMA3, HRNR, and COL8A1** - These genes are also linked to skin barrier dysfunction and the development of atopic dermatitis.\n\n5. **OCA2** - This gene is associated with hyperpigmentation, a skin-related phenotype.\n\n6. **SPATA33 and IRF4** - These genes exhibit pleiotropic effects, contributing to both wrinkling and pigmentation changes in skin aging.\n\n7. **SPTLC1 and REEP3** - These genes have paradoxical effects, influencing skin sagging and other aging-related changes.\n\n8. **SMYD3 and CYP1A1** - These genes are associated with ECM degradation and responses to environmental pollutants, which affect skin structure and aging.\n\n9. **COL1A2 and COL13A1** - These genes support ECM integrity and skin resilience, providing protective effects against skin aging.\n\nThese genes are identified in the context of skin development, aging, and related biological processes, as described in the literature."
+      }
+    ],
+    "created": 1783564634,
+    "id": "cmpl-392584de-9f9d-4098-bd04-970d7f75ccb8",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 473,
+      "prompt_tokens": 1167,
+      "total_tokens": 1640
+    }
+  },
+  "reranker_scores": [
+    4.554947853088379,
+    2.9051902294158936,
+    2.8835532665252686
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      27.6767578125,
+      28.16898536682129,
+      29.627046585083008,
+      33.57182312011719,
+      33.96820068359375,
+      35.68595504760742,
+      36.298240661621094,
+      36.860137939453125,
+      36.87215805053711,
+      37.047203063964844,
+      37.14056396484375,
+      37.905113220214844,
+      38.1463623046875,
+      38.219905853271484,
+      38.550968170166016
+    ],
+    "candidate_pmids": [
+      "39923055",
+      "40751759",
+      "38342585",
+      "31078570",
+      "41417529",
+      "34648798",
+      "41233983",
+      "36471583",
+      "35449187",
+      "35462437",
+      "39245941",
+      "41951763",
+      "34968235",
+      "42309414",
+      "24410847"
+    ],
+    "expanded_retrieval_query": "Which genes identified in this study are also linked in the integrated evidence to skin development or skin-related biological processes?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 38342585, relevance: 4.5549) ---\nSkin is an organ having a crucial role in the protection of muscle, bone, and internal organs and undergoing continuous self-renewal and aged. The growing interest in the prevention of skin aging and rejuvenation has sparked a surge of industrial and research studies focusing on the biological and transcriptional changes that occur during skin development and aging. In this study, the aim is to identify transcriptional differences between two main types of human skin cells: the human dermal fibroblasts (HDFs) and the human epidermis keratinocytes (HEKs) isolated from 30 neonatal and 30 adults (old) skin. Through differentially expressed gene (DEG) profiling using DEseq2, 604 up-, and 769 down-regulated genes are identified in the old group. A functional analysis using Metascape Gene Ontology and Reactome pathways revealed systematic transcriptomic shifts in key skin formation and maintenance markers, alongside a distinct difference in HOX gene families crucial for embryonic development and diverse biological processes. Among the 39 human HOX gene family, ten posterior HOX genes (HOXA10, 11, 13, HOXB13, HOXC11, and HOXD9-13) are significantly downregulated, and anterior 25 genes (HOXA2-7, HOXB1-9, HOXC4-6 and 8-9, and HOXD1,3,4 and 8) are upregulated, especially in the old HDFs. The study successfully demonstrates the correlation between HOX genes and the skin aging process, providing strong evidence that HOX genes are proposed as a new marker for skin aging assessment.\n\n--- Abstract 2 (PMID: 41417529, relevance: 2.9052) ---\nOBJECTIVE: The aim of this systematic review and meta-analysis was to identify genetic variants associated with skin barrier dysfunction and analyze their contribution to the development of atopic dermatitis (AD). DATA SOURCE: A comprehensive search of six databases (2002-2022) yielded 20 eligible casecontrol studies involving European and Asian populations. DATA SYNTHESIS: Meta-analyses revealed significant associations between AD and specific variants in the FLG, SPINK5, LAMA3, HRNR, and COL8A1 genes. Notably, FLG variants such as R501X, 3321delA, and rs61816761 showed high odds ratios (up to OR=11.22), particularly in Spanish and Korean populations. SPINK5 variants including A1103G and G1258A were also significantly associated, especially in Asian cohorts. CONCLUSIONS: Variants affecting skin barrier integrity are strongly linked to AD susceptibility. These findings confirm the role of genetic factors across diverse populations and support translational strategies such as genetic screening, early diagnosis, and personalized treatment in pediatric dermatology.\n\n--- Abstract 3 (PMID: 40751759, relevance: 2.8836) ---\nSkin ageing is a multifaceted process influenced by both intrinsic genetic factors and extrinsic environmental exposures. This review explores the genetic variants and molecular mechanisms underlying skin ageing phenotypes, while identifying gaps in current research to inform future studies. A systematic search of the Scopus and Web of Science databases was conducted, with articles screened based on criteria including a focus on human genetic association studies and indexing in either Scopus or the Institute for Scientific Information (ISI) Web of Science. The quality of included studies was assessed using the Q-Genie tool. Thirteen studies met the inclusion criteria, collectively analysing 115 single nucleotide polymorphisms (SNPs) across 99 genes. The OCA2 gene emerged as the most frequently investigated, consistently linked to hyperpigmentation. Overall, findings indicate that skin ageing phenotypes are associated with genes involved in collagen metabolism, melanogenesis, oxidative stress, and mechanical properties of the skin. Notably, SPATA33 rs35063026 and IRF4 rs12203592 polymorphisms exhibit pleiotropic effects, contributing to both wrinkling and pigmentation changes. Interestingly, some variants, such as SPTLC1 rs7042102 and REEP3 rs11961184, display paradoxical effects, underscoring the complexity of genetic modulation. Genes implicated in extracellular matrix (ECM) degradation, such as SMYD3, and those responsive to environmental pollutants, like CYP1A1, were associated with increased skin sagging. Conversely, variants in genes such as COL1A2 and COL13A1, which support ECM integrity and skin resilience, were linked to protective effects. Despite these insights, many genetic associations remain poorly understood, highlighting substantial gaps in knowledge and the need for more comprehensive genetic research into skin ageing.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which genes identified in this study are also linked in the integrated evidence to skin development or skin-related biological processes?",
+    "rerank_seconds": 0.3429,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3585,
+    "score_max": 4.554947853088379,
+    "score_mean": 3.44789711634318,
+    "scores": [
+      4.554947853088379,
+      2.9051902294158936,
+      2.8835532665252686
+    ],
+    "selected_abstracts": [
+      "Skin is an organ having a crucial role in the protection of muscle, bone, and internal organs and undergoing continuous self-renewal and aged. The growing interest in the prevention of skin aging and rejuvenation has sparked a surge of industrial and research studies focusing on the biological and transcriptional changes that occur during skin development and aging. In this study, the aim is to identify transcriptional differences between two main types of human skin cells: the human dermal fibroblasts (HDFs) and the human epidermis keratinocytes (HEKs) isolated from 30 neonatal and 30 adults (old) skin. Through differentially expressed gene (DEG) profiling using DEseq2, 604 up-, and 769 down-regulated genes are identified in the old group. A functional analysis using Metascape Gene Ontology and Reactome pathways revealed systematic transcriptomic shifts in key skin formation and maintenance markers, alongside a distinct difference in HOX gene families crucial for embryonic development and diverse biological processes. Among the 39 human HOX gene family, ten posterior HOX genes (HOXA10, 11, 13, HOXB13, HOXC11, and HOXD9-13) are significantly downregulated, and anterior 25 genes (HOXA2-7, HOXB1-9, HOXC4-6 and 8-9, and HOXD1,3,4 and 8) are upregulated, especially in the old HDFs. The study successfully demonstrates the correlation between HOX genes and the skin aging process, providing strong evidence that HOX genes are proposed as a new marker for skin aging assessment.",
+      "OBJECTIVE: The aim of this systematic review and meta-analysis was to identify genetic variants associated with skin barrier dysfunction and analyze their contribution to the development of atopic dermatitis (AD). DATA SOURCE: A comprehensive search of six databases (2002-2022) yielded 20 eligible casecontrol studies involving European and Asian populations. DATA SYNTHESIS: Meta-analyses revealed significant associations between AD and specific variants in the FLG, SPINK5, LAMA3, HRNR, and COL8A1 genes. Notably, FLG variants such as R501X, 3321delA, and rs61816761 showed high odds ratios (up to OR=11.22), particularly in Spanish and Korean populations. SPINK5 variants including A1103G and G1258A were also significantly associated, especially in Asian cohorts. CONCLUSIONS: Variants affecting skin barrier integrity are strongly linked to AD susceptibility. These findings confirm the role of genetic factors across diverse populations and support translational strategies such as genetic screening, early diagnosis, and personalized treatment in pediatric dermatology.",
+      "Skin ageing is a multifaceted process influenced by both intrinsic genetic factors and extrinsic environmental exposures. This review explores the genetic variants and molecular mechanisms underlying skin ageing phenotypes, while identifying gaps in current research to inform future studies. A systematic search of the Scopus and Web of Science databases was conducted, with articles screened based on criteria including a focus on human genetic association studies and indexing in either Scopus or the Institute for Scientific Information (ISI) Web of Science. The quality of included studies was assessed using the Q-Genie tool. Thirteen studies met the inclusion criteria, collectively analysing 115 single nucleotide polymorphisms (SNPs) across 99 genes. The OCA2 gene emerged as the most frequently investigated, consistently linked to hyperpigmentation. Overall, findings indicate that skin ageing phenotypes are associated with genes involved in collagen metabolism, melanogenesis, oxidative stress, and mechanical properties of the skin. Notably, SPATA33 rs35063026 and IRF4 rs12203592 polymorphisms exhibit pleiotropic effects, contributing to both wrinkling and pigmentation changes. Interestingly, some variants, such as SPTLC1 rs7042102 and REEP3 rs11961184, display paradoxical effects, underscoring the complexity of genetic modulation. Genes implicated in extracellular matrix (ECM) degradation, such as SMYD3, and those responsive to environmental pollutants, like CYP1A1, were associated with increased skin sagging. Conversely, variants in genes such as COL1A2 and COL13A1, which support ECM integrity and skin resilience, were linked to protective effects. Despite these insights, many genetic associations remain poorly understood, highlighting substantial gaps in knowledge and the need for more comprehensive genetic research into skin ageing."
+    ],
+    "selected_pmids": [
+      "38342585",
+      "41417529",
+      "40751759"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0154
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q176.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "38342585",
+    "41417529",
+    "40751759"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:37:19.778209+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 38342585, relevance: 4.5549) ---\nSkin is an organ having a crucial role in the protection of muscle, bone, and internal organs and undergoing continuous self-renewal and aged. The growing interest in the prevention of skin aging and rejuvenation has sparked a surge of industrial and research studies focusing on the biological and transcriptional changes that occur during skin development and aging. In this study, the aim is to identify transcriptional differences between two main types of human skin cells: the human dermal fibroblasts (HDFs) and the human epidermis keratinocytes (HEKs) isolated from 30 neonatal and 30 adults (old) skin. Through differentially expressed gene (DEG) profiling using DEseq2, 604 up-, and 769 down-regulated genes are identified in the old group. A functional analysis using Metascape Gene Ontology and Reactome pathways revealed systematic transcriptomic shifts in key skin formation and maintenance markers, alongside a distinct difference in HOX gene families crucial for embryonic development and diverse biological processes. Among the 39 human HOX gene family, ten posterior HOX genes (HOXA10, 11, 13, HOXB13, HOXC11, and HOXD9-13) are significantly downregulated, and anterior 25 genes (HOXA2-7, HOXB1-9, HOXC4-6 and 8-9, and HOXD1,3,4 and 8) are upregulated, especially in the old HDFs. The study successfully demonstrates the correlation between HOX genes and the skin aging process, providing strong evidence that HOX genes are proposed as a new marker for skin aging assessment.\n\n--- Abstract 2 (PMID: 41417529, relevance: 2.9052) ---\nOBJECTIVE: The aim of this systematic review and meta-analysis was to identify genetic variants associated with skin barrier dysfunction and analyze their contribution to the development of atopic dermatitis (AD). DATA SOURCE: A comprehensive search of six databases (2002-2022) yielded 20 eligible casecontrol studies involving European and Asian populations. DATA SYNTHESIS: Meta-analyses revealed significant associations between AD and specific variants in the FLG, SPINK5, LAMA3, HRNR, and COL8A1 genes. Notably, FLG variants such as R501X, 3321delA, and rs61816761 showed high odds ratios (up to OR=11.22), particularly in Spanish and Korean populations. SPINK5 variants including A1103G and G1258A were also significantly associated, especially in Asian cohorts. CONCLUSIONS: Variants affecting skin barrier integrity are strongly linked to AD susceptibility. These findings confirm the role of genetic factors across diverse populations and support translational strategies such as genetic screening, early diagnosis, and personalized treatment in pediatric dermatology.\n\n--- Abstract 3 (PMID: 40751759, relevance: 2.8836) ---\nSkin ageing is a multifaceted process influenced by both intrinsic genetic factors and extrinsic environmental exposures. This review explores the genetic variants and molecular mechanisms underlying skin ageing phenotypes, while identifying gaps in current research to inform future studies. A systematic search of the Scopus and Web of Science databases was conducted, with articles screened based on criteria including a focus on human genetic association studies and indexing in either Scopus or the Institute for Scientific Information (ISI) Web of Science. The quality of included studies was assessed using the Q-Genie tool. Thirteen studies met the inclusion criteria, collectively analysing 115 single nucleotide polymorphisms (SNPs) across 99 genes. The OCA2 gene emerged as the most frequently investigated, consistently linked to hyperpigmentation. Overall, findings indicate that skin ageing phenotypes are associated with genes involved in collagen metabolism, melanogenesis, oxidative stress, and mechanical properties of the skin. Notably, SPATA33 rs35063026 and IRF4 rs12203592 polymorphisms exhibit pleiotropic effects, contributing to both wrinkling and pigmentation changes. Interestingly, some variants, such as SPTLC1 rs7042102 and REEP3 rs11961184, display paradoxical effects, underscoring the complexity of genetic modulation. Genes implicated in extracellular matrix (ECM) degradation, such as SMYD3, and those responsive to environmental pollutants, like CYP1A1, were associated with increased skin sagging. Conversely, variants in genes such as COL1A2 and COL13A1, which support ECM integrity and skin resilience, were linked to protective effects. Despite these insights, many genetic associations remain poorly understood, highlighting substantial gaps in knowledge and the need for more comprehensive genetic research into skin ageing.\n\n\n\n**Question:**\nWhich genes identified in this study are also linked in the integrated evidence to skin development or skin-related biological processes?",
+  "vector_context": "--- Abstract 1 (PMID: 38342585, relevance: 4.5549) ---\nSkin is an organ having a crucial role in the protection of muscle, bone, and internal organs and undergoing continuous self-renewal and aged. The growing interest in the prevention of skin aging and rejuvenation has sparked a surge of industrial and research studies focusing on the biological and transcriptional changes that occur during skin development and aging. In this study, the aim is to identify transcriptional differences between two main types of human skin cells: the human dermal fibroblasts (HDFs) and the human epidermis keratinocytes (HEKs) isolated from 30 neonatal and 30 adults (old) skin. Through differentially expressed gene (DEG) profiling using DEseq2, 604 up-, and 769 down-regulated genes are identified in the old group. A functional analysis using Metascape Gene Ontology and Reactome pathways revealed systematic transcriptomic shifts in key skin formation and maintenance markers, alongside a distinct difference in HOX gene families crucial for embryonic development and diverse biological processes. Among the 39 human HOX gene family, ten posterior HOX genes (HOXA10, 11, 13, HOXB13, HOXC11, and HOXD9-13) are significantly downregulated, and anterior 25 genes (HOXA2-7, HOXB1-9, HOXC4-6 and 8-9, and HOXD1,3,4 and 8) are upregulated, especially in the old HDFs. The study successfully demonstrates the correlation between HOX genes and the skin aging process, providing strong evidence that HOX genes are proposed as a new marker for skin aging assessment.\n\n--- Abstract 2 (PMID: 41417529, relevance: 2.9052) ---\nOBJECTIVE: The aim of this systematic review and meta-analysis was to identify genetic variants associated with skin barrier dysfunction and analyze their contribution to the development of atopic dermatitis (AD). DATA SOURCE: A comprehensive search of six databases (2002-2022) yielded 20 eligible casecontrol studies involving European and Asian populations. DATA SYNTHESIS: Meta-analyses revealed significant associations between AD and specific variants in the FLG, SPINK5, LAMA3, HRNR, and COL8A1 genes. Notably, FLG variants such as R501X, 3321delA, and rs61816761 showed high odds ratios (up to OR=11.22), particularly in Spanish and Korean populations. SPINK5 variants including A1103G and G1258A were also significantly associated, especially in Asian cohorts. CONCLUSIONS: Variants affecting skin barrier integrity are strongly linked to AD susceptibility. These findings confirm the role of genetic factors across diverse populations and support translational strategies such as genetic screening, early diagnosis, and personalized treatment in pediatric dermatology.\n\n--- Abstract 3 (PMID: 40751759, relevance: 2.8836) ---\nSkin ageing is a multifaceted process influenced by both intrinsic genetic factors and extrinsic environmental exposures. This review explores the genetic variants and molecular mechanisms underlying skin ageing phenotypes, while identifying gaps in current research to inform future studies. A systematic search of the Scopus and Web of Science databases was conducted, with articles screened based on criteria including a focus on human genetic association studies and indexing in either Scopus or the Institute for Scientific Information (ISI) Web of Science. The quality of included studies was assessed using the Q-Genie tool. Thirteen studies met the inclusion criteria, collectively analysing 115 single nucleotide polymorphisms (SNPs) across 99 genes. The OCA2 gene emerged as the most frequently investigated, consistently linked to hyperpigmentation. Overall, findings indicate that skin ageing phenotypes are associated with genes involved in collagen metabolism, melanogenesis, oxidative stress, and mechanical properties of the skin. Notably, SPATA33 rs35063026 and IRF4 rs12203592 polymorphisms exhibit pleiotropic effects, contributing to both wrinkling and pigmentation changes. Interestingly, some variants, such as SPTLC1 rs7042102 and REEP3 rs11961184, display paradoxical effects, underscoring the complexity of genetic modulation. Genes implicated in extracellular matrix (ECM) degradation, such as SMYD3, and those responsive to environmental pollutants, like CYP1A1, were associated with increased skin sagging. Conversely, variants in genes such as COL1A2 and COL13A1, which support ECM integrity and skin resilience, were linked to protective effects. Despite these insights, many genetic associations remain poorly understood, highlighting substantial gaps in knowledge and the need for more comprehensive genetic research into skin ageing.\n\n"
+}

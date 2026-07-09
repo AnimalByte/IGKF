@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41417529",
+    "42147184",
+    "41733882",
+    "42203178",
+    "42060917",
+    "34984527",
+    "42267557",
+    "39245941",
+    "33593615",
+    "41951638",
+    "39267058",
+    "38706793",
+    "41751509",
+    "40134218",
+    "39103847"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q122.json",
+      "question_id": "Q122",
+      "sha256": "5648cc1ef81115bdc3bf78474464cc0e26ef70e9003233c057dbc01ea579cc05"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q122.json",
+      "question_id": "Q122",
+      "sha256": "9b83c6011e9d0fc53270f46703d8144b6bb0e77ff7198a7bf9137848ddca4e8b"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does this study provide evidence for genes associated with frontal fibrosing alopecia? If not, state that this phenotype is outside the study scope.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.6253,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does this study provide evidence for genes associated with frontal fibrosing alopecia? If not, state that this phenotype is outside the study scope.",
+  "parsed_answer": "The study does not provide evidence for genes associated with frontal fibrosing alopecia. This phenotype is outside the study scope.",
+  "question_id": "Q122",
+  "question_text": "Does this study provide evidence for genes associated with frontal fibrosing alopecia? If not, state that this phenotype is outside the study scope.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 25,
+    "prompt_token_count": 1295,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The study does not provide evidence for genes associated with frontal fibrosing alopecia. This phenotype is outside the study scope."
+      }
+    ],
+    "created": 1783564384,
+    "id": "cmpl-f5a84a5f-3f39-4a0c-a9dd-bf7214d305ac",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 25,
+      "prompt_tokens": 1274,
+      "total_tokens": 1299
+    }
+  },
+  "reranker_scores": [
+    -0.7095015048980713,
+    -0.8837500810623169,
+    -4.408576011657715
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      36.09049987792969,
+      36.28516387939453,
+      36.417274475097656,
+      36.61773681640625,
+      36.82780456542969,
+      37.149436950683594,
+      37.80207061767578,
+      37.867191314697266,
+      38.004119873046875,
+      38.100826263427734,
+      38.5579948425293,
+      38.595619201660156,
+      38.725486755371094,
+      39.09077072143555,
+      39.29181671142578
+    ],
+    "candidate_pmids": [
+      "41417529",
+      "42147184",
+      "41733882",
+      "42203178",
+      "42060917",
+      "34984527",
+      "42267557",
+      "39245941",
+      "33593615",
+      "41951638",
+      "39267058",
+      "38706793",
+      "41751509",
+      "40134218",
+      "39103847"
+    ],
+    "expanded_retrieval_query": "Does this study provide evidence for genes associated with frontal fibrosing alopecia? If not, state that this phenotype is outside the study scope.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 40134218, relevance: -0.7095) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42203178, relevance: -0.8838) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n--- Abstract 3 (PMID: 41751509, relevance: -4.4086) ---\nBACKGROUND/OBJECTIVES: Autism spectrum disorder (ASD) is a heritable neurodevelopmental condition that displays heterogeneity in both presentation and etiology, and often presents with concomitant communication difficulties. The hypothesis behind the New Jersey Language and Autism Genetic Study is that genetic heterogeneity for component phenotypes of ASD may be reduced relative to the disorder as a whole. We previously published an initial phase of this study with family recruitment that used very restricted inclusion/exclusion criteria for both autism and language deficits. Here, we present an expanded sample that includes a wider range of phenotypic presentations in the autism and language domains. METHODS: Bioinformatics tools focusing on variant prioritization were used to identify candidate risk genes. RESULTS: Our previous findings on 15q and 16q, connecting ASD and oral/written communication, are only relevant to the narrow ASD and language impairment phenotypes, though addition of families did reduce both critical regions. After variant and gene prioritization, we determined a set of ten and six top candidate risk genes with a strong association with language impairment and reading impairment, respectively. The top candidate genes include both genes previously implicated in neurodevelopmental disorders (e.g., ZNF774 and DNAH3) and genes not previously reported but with strong evidence of being involved in neurodevelopmental phenotypes. CONCLUSIONS: Our analysis elucidates the genetic architecture and interaction of ASD and language-related phenotypes. In addition, we reported a number of high-confidence candidate genes within the top linkage regions. These genes will provide insights into the genetic etiology of neurodevelopmental disorders.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does this study provide evidence for genes associated with frontal fibrosing alopecia? If not, state that this phenotype is outside the study scope.",
+    "rerank_seconds": 0.3334,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3491,
+    "score_max": -0.7095015048980713,
+    "score_mean": -2.000609199206034,
+    "scores": [
+      -0.7095015048980713,
+      -0.8837500810623169,
+      -4.408576011657715
+    ],
+    "selected_abstracts": [
+      "Androgenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.",
+      "BACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.",
+      "BACKGROUND/OBJECTIVES: Autism spectrum disorder (ASD) is a heritable neurodevelopmental condition that displays heterogeneity in both presentation and etiology, and often presents with concomitant communication difficulties. The hypothesis behind the New Jersey Language and Autism Genetic Study is that genetic heterogeneity for component phenotypes of ASD may be reduced relative to the disorder as a whole. We previously published an initial phase of this study with family recruitment that used very restricted inclusion/exclusion criteria for both autism and language deficits. Here, we present an expanded sample that includes a wider range of phenotypic presentations in the autism and language domains. METHODS: Bioinformatics tools focusing on variant prioritization were used to identify candidate risk genes. RESULTS: Our previous findings on 15q and 16q, connecting ASD and oral/written communication, are only relevant to the narrow ASD and language impairment phenotypes, though addition of families did reduce both critical regions. After variant and gene prioritization, we determined a set of ten and six top candidate risk genes with a strong association with language impairment and reading impairment, respectively. The top candidate genes include both genes previously implicated in neurodevelopmental disorders (e.g., ZNF774 and DNAH3) and genes not previously reported but with strong evidence of being involved in neurodevelopmental phenotypes. CONCLUSIONS: Our analysis elucidates the genetic architecture and interaction of ASD and language-related phenotypes. In addition, we reported a number of high-confidence candidate genes within the top linkage regions. These genes will provide insights into the genetic etiology of neurodevelopmental disorders."
+    ],
+    "selected_pmids": [
+      "40134218",
+      "42203178",
+      "41751509"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0156
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q122.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "40134218",
+    "42203178",
+    "41751509"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:33:05.394340+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 40134218, relevance: -0.7095) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42203178, relevance: -0.8838) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n--- Abstract 3 (PMID: 41751509, relevance: -4.4086) ---\nBACKGROUND/OBJECTIVES: Autism spectrum disorder (ASD) is a heritable neurodevelopmental condition that displays heterogeneity in both presentation and etiology, and often presents with concomitant communication difficulties. The hypothesis behind the New Jersey Language and Autism Genetic Study is that genetic heterogeneity for component phenotypes of ASD may be reduced relative to the disorder as a whole. We previously published an initial phase of this study with family recruitment that used very restricted inclusion/exclusion criteria for both autism and language deficits. Here, we present an expanded sample that includes a wider range of phenotypic presentations in the autism and language domains. METHODS: Bioinformatics tools focusing on variant prioritization were used to identify candidate risk genes. RESULTS: Our previous findings on 15q and 16q, connecting ASD and oral/written communication, are only relevant to the narrow ASD and language impairment phenotypes, though addition of families did reduce both critical regions. After variant and gene prioritization, we determined a set of ten and six top candidate risk genes with a strong association with language impairment and reading impairment, respectively. The top candidate genes include both genes previously implicated in neurodevelopmental disorders (e.g., ZNF774 and DNAH3) and genes not previously reported but with strong evidence of being involved in neurodevelopmental phenotypes. CONCLUSIONS: Our analysis elucidates the genetic architecture and interaction of ASD and language-related phenotypes. In addition, we reported a number of high-confidence candidate genes within the top linkage regions. These genes will provide insights into the genetic etiology of neurodevelopmental disorders.\n\n\n\n**Question:**\nDoes this study provide evidence for genes associated with frontal fibrosing alopecia? If not, state that this phenotype is outside the study scope.",
+  "vector_context": "--- Abstract 1 (PMID: 40134218, relevance: -0.7095) ---\nAndrogenetic alopecia is a highly heritable trait. However, much of our understanding about the genetics of male-pattern baldness comes from individuals of European descent. Here, we examined a dataset comprising 2,136 men from Ghana, Nigeria, Senegal, and South Africa that were genotyped using the Men of African Descent and Carcinoma of the Prostate Array. We first tested how genetic predictions of baldness generalize from Europe to Africa and found that polygenic scores from European genome-wide association studies (GWASs) yielded area under the curve statistics that ranged from 0.513 to 0.546, indicating that genetic predictions of baldness generalized poorly from European to African populations. Subsequently, we conducted an African GWAS of androgenetic alopecia, focusing on self-reported baldness patterns at age 45. After correcting for age at recruitment, population structure, and study site, we identified 266 moderately significant associations, 51 of which were independent (p < 10(-5), r(2) < 0.2). Most baldness associations were autosomal, and the X chromosome does not seem to have a large impact on baldness in African men. Although Neanderthal alleles have previously been associated with skin and hair phenotypes, within the limits of statistical power, we did not find evidence that continental differences in the genetic architecture of baldness are due to Neanderthal introgression. While most loci that are associated with androgenetic alopecia do not have large integrative haplotype scores or fixation index statistics, multiple baldness-associated SNPs near the EDA2R and AR genes have large allele frequency differences between continents. Collectively, our findings illustrate how population genetic differences contribute to the limited portability of polygenic predictions across ancestries.\n\n--- Abstract 2 (PMID: 42203178, relevance: -0.8838) ---\nBACKGROUND: Transcriptome-wide association studies (TWAS) identify genetically regulated expression (GReX) components and can pinpoint causal genes in genome-wide association studies but are often limited by a single-cell context. OBJECTIVE: We hypothesized that modeling GReX across multiple conditions could enhance power to identify causal genes for complex inflammatory diseases. METHODS: We conducted TWAS on 400 transcriptomes under 8 proinflammatory cytokine stimulations in keratinocytes, modeling GReX for 18,599 genes against genome-wide association studies from 7 inflammatory skin diseases: atopic dermatitis, psoriasis, acne, alopecia areata, systemic sclerosis, systemic lupus erythematosus, and vitiligo. RESULTS: Our TWAS identified 274 loci from the 7 diseases that harbor a single significant TWAS gene association. We nominated causal genes and their associated proinflammatory cytokine stimuli, including ERAP2 for psoriasis with IL-17A + TNF-alpha stimulation; WNT10A for acne with IFN-gamma stimulation; and RAET1L, MAP3K11, and ITGAM for alopecia areata, acne, and systemic lupus erythematosus, respectively, with TNF stimulation. Notably, our TWAS-identified genes showed overwhelming evidence of colocalization with genome-wide association study signals (P = 1.03 x 10(-15)), and our method successfully captured >85% of all genes with colocalizing expression quantitative trait loci. Single-cell-resolution spatial profiling further demonstrated the modulation of TWAS signals in keratinocytes by close proximity to TNF/IL-17-expressing cells in psoriatic skin. CONCLUSION: Modeling gene expression across relevant cellular states substantially improves the power and resolution of TWAS.\n\n--- Abstract 3 (PMID: 41751509, relevance: -4.4086) ---\nBACKGROUND/OBJECTIVES: Autism spectrum disorder (ASD) is a heritable neurodevelopmental condition that displays heterogeneity in both presentation and etiology, and often presents with concomitant communication difficulties. The hypothesis behind the New Jersey Language and Autism Genetic Study is that genetic heterogeneity for component phenotypes of ASD may be reduced relative to the disorder as a whole. We previously published an initial phase of this study with family recruitment that used very restricted inclusion/exclusion criteria for both autism and language deficits. Here, we present an expanded sample that includes a wider range of phenotypic presentations in the autism and language domains. METHODS: Bioinformatics tools focusing on variant prioritization were used to identify candidate risk genes. RESULTS: Our previous findings on 15q and 16q, connecting ASD and oral/written communication, are only relevant to the narrow ASD and language impairment phenotypes, though addition of families did reduce both critical regions. After variant and gene prioritization, we determined a set of ten and six top candidate risk genes with a strong association with language impairment and reading impairment, respectively. The top candidate genes include both genes previously implicated in neurodevelopmental disorders (e.g., ZNF774 and DNAH3) and genes not previously reported but with strong evidence of being involved in neurodevelopmental phenotypes. CONCLUSIONS: Our analysis elucidates the genetic architecture and interaction of ASD and language-related phenotypes. In addition, we reported a number of high-confidence candidate genes within the top linkage regions. These genes will provide insights into the genetic etiology of neurodevelopmental disorders.\n\n"
+}

@@ -1,0 +1,154 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q061.json",
+      "question_id": "Q061",
+      "sha256": "751b8c085ba7c4ec0d701b1cd296dffd2b1e62492f16c7209a8da2c79b624de4"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q061.json",
+      "question_id": "Q061",
+      "sha256": "62900826edd3b69c07df2e4670ca31ea67e4201daa876bccccabe8a5e93a11ee"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 2.8165,
+  "git_commit": null,
+  "graph_context": "Entity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Summarize the evidence linking SRD5A2 to androgenetic alopecia.",
+  "parsed_answer": "The evidence linking **SRD5A2** to **androgenetic alopecia** is as follows:\n\n1. **Gene Function**: SRD5A2 encodes a protein involved in the **testosterone biosynthetic process** and **steroid metabolic process**, which are critical for androgen production. Androgens, such as dihydrotestosterone (DHT), play a key role in hair growth and maintenance.\n\n2. **Drug Evidence**: \n   - **Finasteride**, a drug that inhibits **steroid 5-alpha-reductase** (the enzyme encoded by SRD5A2), is used to treat **androgenetic alopecia**. This indicates that the activity of SRD5A2 is directly linked to the pathophysiology of androgenetic alopecia.\n   - **Dutasteride**, another inhibitor of steroid 5-alpha-reductase, is also associated with the treatment of androgenetic alopecia, further supporting the role of SRD5A2 in this condition.\n\n3. **Disease Associations**: \n   - SRD5A2 is associated with **androgenetic alopecia** in the **Open Targets** database with a score of **0.701**, indicating a strong evidence-based link between the gene and the disease.\n\nIn summary, SRD5A2 is implicated in androgenetic alopecia through its role in androgen biosynthesis and its inhibition by drugs like finasteride and dutasteride, which are used to treat the condition.",
+  "question_id": "Q061",
+  "question_text": "Summarize the evidence linking SRD5A2 to androgenetic alopecia.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 313,
+    "prompt_token_count": 615,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The evidence linking **SRD5A2** to **androgenetic alopecia** is as follows:\n\n1. **Gene Function**: SRD5A2 encodes a protein involved in the **testosterone biosynthetic process** and **steroid metabolic process**, which are critical for androgen production. Androgens, such as dihydrotestosterone (DHT), play a key role in hair growth and maintenance.\n\n2. **Drug Evidence**: \n   - **Finasteride**, a drug that inhibits **steroid 5-alpha-reductase** (the enzyme encoded by SRD5A2), is used to treat **androgenetic alopecia**. This indicates that the activity of SRD5A2 is directly linked to the pathophysiology of androgenetic alopecia.\n   - **Dutasteride**, another inhibitor of steroid 5-alpha-reductase, is also associated with the treatment of androgenetic alopecia, further supporting the role of SRD5A2 in this condition.\n\n3. **Disease Associations**: \n   - SRD5A2 is associated with **androgenetic alopecia** in the **Open Targets** database with a score of **0.701**, indicating a strong evidence-based link between the gene and the disease.\n\nIn summary, SRD5A2 is implicated in androgenetic alopecia through its role in androgen biosynthesis and its inhibition by drugs like finasteride and dutasteride, which are used to treat the condition."
+      }
+    ],
+    "created": 1783559084,
+    "id": "cmpl-c75f2c0f-f83c-4978-997e-81177e52f936",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 313,
+      "prompt_tokens": 594,
+      "total_tokens": 907
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+    "found_specific_entity": true,
+    "graph_context": "Entity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma",
+    "graph_context_length": 1614,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0109,
+    "original_retrieval_query": "Summarize the evidence linking SRD5A2 to androgenetic alopecia.",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "summarize"
+      },
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "srd5a2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "androgenetic alopecia"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0109,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q061.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T01:04:47.588331+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: SRD5A2 (Type: Gene)\n  - Gene Pathways: Androgen biosynthesis\n  - Associated Phenotypes: Abnormality of the genital system, Hypoplasia of penis, Abnormal scrotum morphology\n  - Targeted by Drugs: DUTASTERIDE, FINASTERIDE, ABIRATERONE ACETATE\n  - GO Functions/Processes: 3-oxo-5-alpha-steroid 4-dehydrogenase activity, endoplasmic reticulum membrane, testosterone biosynthetic process, steroid metabolic process, cell-cell signaling\n  - Interacts With (PPI): DKK2 (experimental: 0, database: 0), SH3GL2 (experimental: 0, database: 0), FOXA1 (experimental: 0, database: 0), PTCH1 (experimental: 0, database: 0), DHRS7 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: 46,XY disorder of sex development due to 5-alpha-reductase 2 deficiency (score: 0.835), androgenetic alopecia (score: 0.701), benign prostatic hyperplasia (score: 0.631), prostate carcinoma (score: 0.615), prostate cancer (score: 0.572)\n  - Open Targets Drug Evidence: DUTASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for Abdominal obesity; Azoospermia; COVID-19; Kennedy disease; Urinary retention; FINASTERIDE | phase APPROVAL | Steroid 5-alpha-reductase 2 inhibitor | action=INHIBITOR | target=3-oxo-5-alpha-steroid 4-dehydrogenase 2 | for Hematuria; Hirsutism; acne; androgenetic alopecia; benign prostatic hyperplasia; ABIRATERONE | phase APPROVAL | Steroid 5-alpha-reductase inhibitor | action=INHIBITOR | target=Steroid 5-alpha-reductase | for bone fracture; cancer; fallopian tube cancer; hematopoietic and lymphoid cell neoplasm; lymphoma\n\n**Question:**\nSummarize the evidence linking SRD5A2 to androgenetic alopecia.",
+  "vector_context": ""
+}

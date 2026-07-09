@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q135",
+      "randomization_seed": "20260706:Q135:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q135",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q135",
+      "error": null,
+      "id": "batch_req_6a4f85d4dbc08190bd5a0676986b3163",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594597,
+          "created_at": 1783594535,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0ba7f3ab7c2365f9006a4f7e276c0881968cd4e1fa1263ee1b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q135"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0ba7f3ab7c2365f9006a4f7e2935c881969ebe14866db3cb60",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":2,\"rationale\":\"Partially addresses rs6152/AR/androgen biology and attempts to distinguish direct versus inferred evidence, but largely ignores the graph evidence requested.\"},\"biomedical_factual_correctness\":{\"score\":1,\"rationale\":\"Incorrectly states there are no direct annotations connecting rs6152 to AR despite the graph's implicated-gene annotation, and cites literature details not present in the supplied abstracts.\"},\"completeness\":{\"score\":1,\"rationale\":\"Omits key graph evidence including rs6152 implicated gene AR, Open Targets androgen-related diseases, AR drug evidence, and listed pathways.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Correctly notes lack of rs6152 mention in the supplied literature, but then invents unsupported literature-based AR pathway claims.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Directly addresses the requested connection and separates direct annotations from inferred pathway-level links.\"},\"biomedical_factual_correctness\":{\"score\":3,\"rationale\":\"Correctly identifies rs6152 as implicated in AR and cites androgen-related diseases/drugs/pathways, but overstates variant-level drug effects and treats PPI/GO annotations as if they directly apply to rs6152 rather than likely AR-level annotations.\"},\"completeness\":{\"score\":3,\"rationale\":\"Includes many important graph components, but omits the key literature conclusion that the supplied abstracts do not mention rs6152 and only support AR/androgen biology broadly.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Uses some speculative language, but makes unsupported mechanistic inferences about rs6152 influencing AR signaling, RBL1, and drug response.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0ba7f3ab7c2365f9006a4f7e570ddc8196a8cf518ff3e991df",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3751,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 1408,
+            "output_tokens_details": {
+              "reasoning_tokens": 1034
+            },
+            "total_tokens": 5159
+          },
+          "user": null
+        },
+        "request_id": "9b49959e-dcdf-4693-aa06-9d998299d82f",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partially addresses rs6152/AR/androgen biology and attempts to distinguish direct versus inferred evidence, but largely ignores the graph evidence requested.",
+      "score": 2.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Incorrectly states there are no direct annotations connecting rs6152 to AR despite the graph's implicated-gene annotation, and cites literature details not present in the supplied abstracts.",
+      "score": 1.0
+    },
+    "completeness": {
+      "rationale": "Omits key graph evidence including rs6152 implicated gene AR, Open Targets androgen-related diseases, AR drug evidence, and listed pathways.",
+      "score": 1.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Correctly notes lack of rs6152 mention in the supplied literature, but then invents unsupported literature-based AR pathway claims.",
+      "score": 2.0
+    }
+  },
+  "question_id": "Q135",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q135.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.764418+00:00"
+}

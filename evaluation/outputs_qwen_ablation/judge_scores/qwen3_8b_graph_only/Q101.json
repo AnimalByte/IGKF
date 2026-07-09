@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q101",
+      "randomization_seed": "20260706:Q101:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q101",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q101",
+      "error": null,
+      "id": "batch_req_6a4f85d2fb6c8190afb2e46770609708",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578972,
+          "created_at": 1783578946,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0735c6b436010fc4006a4f4142c24c81979674702561a89183",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q101"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0735c6b436010fc4006a4f41524af08197b1423806adcd03bc",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by listing the genes connected to the Wnt signaling pathway in the graph.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Matches the associated genes provided in the reference graph context.\"},\"completeness\":{\"score\":5,\"rationale\":\"Includes all listed graph-associated genes without omission.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Provides a definitive answer appropriately supported by the supplied graph evidence.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Addresses Wnt-related genes but relies on literature context rather than the integrated graph and gives a partial list.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"Includes some correct genes such as LGR4 and ZNRF3, but uses non-specific or unsupported entries such as RSPO, FZD, and RNF43, and misses many graph-associated genes.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits most genes listed in the graph context, including KREMEN1, FAM53B, LRP6, WNT3, DKK2, AMER1, TMEM131L, WNT10A, WNT6, FZD7, and TLE4.\"},\"uncertainty_abstention\":{\"score\":2,\"rationale\":\"Presents unsupported graph connections confidently and does not qualify that some listed entities are not the graph genes.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0735c6b436010fc4006a4f415812c08197a4116374111ba2e2",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2023,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 843,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 2866
+          },
+          "user": null
+        },
+        "request_id": "4197f6c1-75f9-4fa8-aad3-1791942827ad",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers the question by listing the genes connected to the Wnt signaling pathway in the graph.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Matches the associated genes provided in the reference graph context.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Includes all listed graph-associated genes without omission.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Provides a definitive answer appropriately supported by the supplied graph evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q101",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q101.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.751718+00:00"
+}

@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "multi_hop_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41093938",
+    "41991632",
+    "42345162",
+    "41241001",
+    "37140276",
+    "42378331",
+    "41640146",
+    "39361099",
+    "41218118",
+    "42378135",
+    "40868166",
+    "38447543",
+    "39529066",
+    "42268900",
+    "42255426"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q136.json",
+      "question_id": "Q136",
+      "sha256": "f30bc3b0a122b417d647c13f9a9606db91d4cae9cd9a4e3b49ac49a3c0ab9553"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q136.json",
+      "question_id": "Q136",
+      "sha256": "0692a7634e413177b9762804fc2590504edf75831cb6993013c89aea9e17097a"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.0338,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent.",
+  "parsed_answer": "The integrated evidence does not support a connection between EDA2R and both Wnt signaling and androgen metabolism. The provided literature context does not mention EDA2R (Estrogen Dominant Receptor) in relation to either Wnt signaling or androgen metabolism. Therefore, no supported links can be described for this connection.",
+  "question_id": "Q136",
+  "question_text": "Does the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 66,
+    "prompt_token_count": 1336,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated evidence does not support a connection between EDA2R and both Wnt signaling and androgen metabolism. The provided literature context does not mention EDA2R (Estrogen Dominant Receptor) in relation to either Wnt signaling or androgen metabolism. Therefore, no supported links can be described for this connection."
+      }
+    ],
+    "created": 1783564442,
+    "id": "cmpl-6b3f94d1-b330-43b6-b18d-b764ee2412b1",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 66,
+      "prompt_tokens": 1315,
+      "total_tokens": 1381
+    }
+  },
+  "reranker_scores": [
+    -3.4223926067352295,
+    -3.747396945953369,
+    -4.797149658203125
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      35.19981384277344,
+      40.994415283203125,
+      41.30217361450195,
+      41.40756607055664,
+      42.19544982910156,
+      42.239402770996094,
+      42.24604415893555,
+      42.292510986328125,
+      42.37047576904297,
+      42.463890075683594,
+      42.78777313232422,
+      42.88819885253906,
+      43.157073974609375,
+      43.16669464111328,
+      43.233821868896484
+    ],
+    "candidate_pmids": [
+      "41093938",
+      "41991632",
+      "42345162",
+      "41241001",
+      "37140276",
+      "42378331",
+      "41640146",
+      "39361099",
+      "41218118",
+      "42378135",
+      "40868166",
+      "38447543",
+      "39529066",
+      "42268900",
+      "42255426"
+    ],
+    "expanded_retrieval_query": "Does the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41093938, relevance: -3.4224) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n--- Abstract 2 (PMID: 41991632, relevance: -3.7474) ---\nBACKGROUND: Type 2 Diabetes Mellitus (T2DM) is linked to increased risk of neurocognitive decline, depressive symptoms, and diminished quality of life (QoL). Neuroinflammatory mechanisms and deregulation of the Wnt signaling pathway may contribute to these complications. The purpose of this study is to examine the involvement of Wnt signaling pathway along with neuroinflammatory biomarkers during cognitive impairment and depression in T2DM patients. METHODS: A single centre case-control study was conducted involving 128 participants, including 64 T2DM patients and 64 healthy volunteers. Demographic, clinical, and biochemical data were collected. Cognitive function, depression and QoL were assessed using Montreal Cognitive Assessment (MoCA), Patient Health Questionnaire-9 (PHQ-9), and World Health Organization Quality of Life-Brief version (WHOQOL-BREF) standardized tests respectively. Serum levels of interleukin-6 (IL-6), interleukin-1\ua7b5 (IL-1\ua7b5), tumor necrosis factor-alpha (TNF-alpha), Wingless-Type-1 (Wnt1), porcupine (PORCN), and R-Spondin-2 (RSPO2) were measured using ELISA. RESULTS: T2DM patients showed significantly reduced scores in MoCA, higher scores in PHQ-9 and reduced WHOQOL-BREF scores compared to healthy controls. Serum IL-1\ua7b5 were significantly elevated, while serum Wnt1, PORCN and RSPO2 levels were significantly reduced in T2DM group. ROC analysis revealed excellent diagnostic accuracy for IL-1\ua7b5 and good discriminatory performance for Wnt1, PORCN and RSPO2. CONCLUSION: T2DM patients indicated cognitive impairment, depressive symptoms with reduced QoL. The presence of neuroinflammation and impaired Wnt signaling pathway suggest a potential biological link underlying neurobehavioral complications in T2DM. Considering the increasing burden of diabetes related neurobehavioral complication, integration of Wnt signaling and neuroinflammatory biomarkers into research may enhance early identification and facilitate appropriate and timely intervention strategies.\n\n--- Abstract 3 (PMID: 42378331, relevance: -4.7971) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent.",
+    "rerank_seconds": 0.3364,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3535,
+    "score_max": -3.4223926067352295,
+    "score_mean": -3.9889797369639077,
+    "scores": [
+      -3.4223926067352295,
+      -3.747396945953369,
+      -4.797149658203125
+    ],
+    "selected_abstracts": [
+      "Endometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.",
+      "BACKGROUND: Type 2 Diabetes Mellitus (T2DM) is linked to increased risk of neurocognitive decline, depressive symptoms, and diminished quality of life (QoL). Neuroinflammatory mechanisms and deregulation of the Wnt signaling pathway may contribute to these complications. The purpose of this study is to examine the involvement of Wnt signaling pathway along with neuroinflammatory biomarkers during cognitive impairment and depression in T2DM patients. METHODS: A single centre case-control study was conducted involving 128 participants, including 64 T2DM patients and 64 healthy volunteers. Demographic, clinical, and biochemical data were collected. Cognitive function, depression and QoL were assessed using Montreal Cognitive Assessment (MoCA), Patient Health Questionnaire-9 (PHQ-9), and World Health Organization Quality of Life-Brief version (WHOQOL-BREF) standardized tests respectively. Serum levels of interleukin-6 (IL-6), interleukin-1\ua7b5 (IL-1\ua7b5), tumor necrosis factor-alpha (TNF-alpha), Wingless-Type-1 (Wnt1), porcupine (PORCN), and R-Spondin-2 (RSPO2) were measured using ELISA. RESULTS: T2DM patients showed significantly reduced scores in MoCA, higher scores in PHQ-9 and reduced WHOQOL-BREF scores compared to healthy controls. Serum IL-1\ua7b5 were significantly elevated, while serum Wnt1, PORCN and RSPO2 levels were significantly reduced in T2DM group. ROC analysis revealed excellent diagnostic accuracy for IL-1\ua7b5 and good discriminatory performance for Wnt1, PORCN and RSPO2. CONCLUSION: T2DM patients indicated cognitive impairment, depressive symptoms with reduced QoL. The presence of neuroinflammation and impaired Wnt signaling pathway suggest a potential biological link underlying neurobehavioral complications in T2DM. Considering the increasing burden of diabetes related neurobehavioral complication, integration of Wnt signaling and neuroinflammatory biomarkers into research may enhance early identification and facilitate appropriate and timely intervention strategies.",
+      "The WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated."
+    ],
+    "selected_pmids": [
+      "41093938",
+      "41991632",
+      "42378331"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0169
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q136.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41093938",
+    "41991632",
+    "42378331"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:34:03.968444+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41093938, relevance: -3.4224) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n--- Abstract 2 (PMID: 41991632, relevance: -3.7474) ---\nBACKGROUND: Type 2 Diabetes Mellitus (T2DM) is linked to increased risk of neurocognitive decline, depressive symptoms, and diminished quality of life (QoL). Neuroinflammatory mechanisms and deregulation of the Wnt signaling pathway may contribute to these complications. The purpose of this study is to examine the involvement of Wnt signaling pathway along with neuroinflammatory biomarkers during cognitive impairment and depression in T2DM patients. METHODS: A single centre case-control study was conducted involving 128 participants, including 64 T2DM patients and 64 healthy volunteers. Demographic, clinical, and biochemical data were collected. Cognitive function, depression and QoL were assessed using Montreal Cognitive Assessment (MoCA), Patient Health Questionnaire-9 (PHQ-9), and World Health Organization Quality of Life-Brief version (WHOQOL-BREF) standardized tests respectively. Serum levels of interleukin-6 (IL-6), interleukin-1\ua7b5 (IL-1\ua7b5), tumor necrosis factor-alpha (TNF-alpha), Wingless-Type-1 (Wnt1), porcupine (PORCN), and R-Spondin-2 (RSPO2) were measured using ELISA. RESULTS: T2DM patients showed significantly reduced scores in MoCA, higher scores in PHQ-9 and reduced WHOQOL-BREF scores compared to healthy controls. Serum IL-1\ua7b5 were significantly elevated, while serum Wnt1, PORCN and RSPO2 levels were significantly reduced in T2DM group. ROC analysis revealed excellent diagnostic accuracy for IL-1\ua7b5 and good discriminatory performance for Wnt1, PORCN and RSPO2. CONCLUSION: T2DM patients indicated cognitive impairment, depressive symptoms with reduced QoL. The presence of neuroinflammation and impaired Wnt signaling pathway suggest a potential biological link underlying neurobehavioral complications in T2DM. Considering the increasing burden of diabetes related neurobehavioral complication, integration of Wnt signaling and neuroinflammatory biomarkers into research may enhance early identification and facilitate appropriate and timely intervention strategies.\n\n--- Abstract 3 (PMID: 42378331, relevance: -4.7971) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n\n\n**Question:**\nDoes the integrated evidence support a connection between EDA2R and both Wnt signaling and androgen metabolism? Describe only supported links and state when a connection is absent.",
+  "vector_context": "--- Abstract 1 (PMID: 41093938, relevance: -3.4224) ---\nEndometriosis is a common estrogen-dependent inflammatory disease, yet its complex etiology is not fully understood. Endocrine Disrupting Chemicals (EDCs) exposure disrupts human reproduction, but studies on mixed EDCs and endometriosis risk are Limited. The study Analyzed 2,644 women, assessing 12 phthalates, 8 polycyclic aromatic hydrocarbons, And 6 phytoestrogens in a representative US population. Various statistical models (generalized linear model, partial least squares discriminant analysis, weighted quantile sum, quantile g-computation, restricted cubic spline) were used to explore the link between EDC exposure and endometriosis risk, with mediating effects of lipid metabolism and inflammatory biomarkers examined. Biological mechanisms were identified through an integrated strategy involving target analysis of key chemicals and endometriosis intersections, network establishment, pathway analysis, and target validation. Various statistical models revealed that the gut microbiota metabolite enterolactone (ENL) was negatively associated with endometriosis, while the PAH metabolite 1-Hydroxyphenanthrene (1-OHPHE) was positively associated. Mediation analysis showed that uric acid (UA) and ferritin (Fer) were associated with mediating pathways in the relationships between ENL And decreased risk, And 1-OHPHE and increased risk, respectively. Network and target analysis indicated that ENL affects risk via ESR1, while 1-OHPHE disturbs it through GRB2. ENL can bind to XDH, inhibiting UA production. ENL supplementation may mitigate PAH-induced risks through the PI3K-Akt pathway. In conclusion, higher ENL levels were associated with reduced endometriosis risk, while 1-OHPHE was associated with increased prevalence. Inflammatory mediators UA And Fer demonstrated potential mediating associations in these relationships. ENL levels may be associated with attenuation of 1-OHPHE associations with endometriosis, potentially through gut microbiota-related pathways. These findings emphasize the role of environmental and microbiome interactions in modulating endometriosis risk.\n\n--- Abstract 2 (PMID: 41991632, relevance: -3.7474) ---\nBACKGROUND: Type 2 Diabetes Mellitus (T2DM) is linked to increased risk of neurocognitive decline, depressive symptoms, and diminished quality of life (QoL). Neuroinflammatory mechanisms and deregulation of the Wnt signaling pathway may contribute to these complications. The purpose of this study is to examine the involvement of Wnt signaling pathway along with neuroinflammatory biomarkers during cognitive impairment and depression in T2DM patients. METHODS: A single centre case-control study was conducted involving 128 participants, including 64 T2DM patients and 64 healthy volunteers. Demographic, clinical, and biochemical data were collected. Cognitive function, depression and QoL were assessed using Montreal Cognitive Assessment (MoCA), Patient Health Questionnaire-9 (PHQ-9), and World Health Organization Quality of Life-Brief version (WHOQOL-BREF) standardized tests respectively. Serum levels of interleukin-6 (IL-6), interleukin-1\ua7b5 (IL-1\ua7b5), tumor necrosis factor-alpha (TNF-alpha), Wingless-Type-1 (Wnt1), porcupine (PORCN), and R-Spondin-2 (RSPO2) were measured using ELISA. RESULTS: T2DM patients showed significantly reduced scores in MoCA, higher scores in PHQ-9 and reduced WHOQOL-BREF scores compared to healthy controls. Serum IL-1\ua7b5 were significantly elevated, while serum Wnt1, PORCN and RSPO2 levels were significantly reduced in T2DM group. ROC analysis revealed excellent diagnostic accuracy for IL-1\ua7b5 and good discriminatory performance for Wnt1, PORCN and RSPO2. CONCLUSION: T2DM patients indicated cognitive impairment, depressive symptoms with reduced QoL. The presence of neuroinflammation and impaired Wnt signaling pathway suggest a potential biological link underlying neurobehavioral complications in T2DM. Considering the increasing burden of diabetes related neurobehavioral complication, integration of Wnt signaling and neuroinflammatory biomarkers into research may enhance early identification and facilitate appropriate and timely intervention strategies.\n\n--- Abstract 3 (PMID: 42378331, relevance: -4.7971) ---\nThe WNT signaling pathway regulates cell proliferation and stem cell maintenance. Its sustained and inappropriate activation results in excessive cell division and cancer. WNT signaling is activated upon interaction of the soluble WNT ligand with the Frizzled (FZD) receptor. The RING E3 ubiquitin ligases RNF43 and ZNRF3 promote the ubiquitylation and internalization of FZD, thereby turning off WNT signaling, and their inactivation causes cancer. Here, we identified the determinants of ubiquitin transfer by ZNRF3 and RNF43 and report the structure of the RING domain from ZNRF3. We found that the RING domain was monomeric and that RING dimerization was not required for its ubiquitin ligase activity. However, the ectodomain of ZNRF3 dimerizes, and our data supported a model in which the cytoplasmic domains are in close proximity in cells and interact, even though RING dimerization was not required for ubiquitin transfer. Our studies provide a framework for understanding how the E3 ubiquitin ligase activity of ZNRF3 and RNF43 is regulated.\n\n"
+}

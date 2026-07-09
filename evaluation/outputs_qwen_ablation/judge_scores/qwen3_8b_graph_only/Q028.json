@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q028",
+      "randomization_seed": "20260706:Q028:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q028",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q028",
+      "error": null,
+      "id": "batch_req_6a4f85ce064081908d1b23a07be69433",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594589,
+          "created_at": 1783594457,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_063ffe78da2e317d006a4f7dd921ec8193b4fea0aab57c21bc",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q028"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_063ffe78da2e317d006a4f7dda6ad88193b8dc872a97aa1e54",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\n  \"answers\": [\n    {\n      \"answer_id\": \"AB1\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly provides a numeric answer to the p-value question.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 2,\n        \"rationale\": \"The value 0.007 appears in the evidence as an Open Targets association score, not as a reported p-value; treating it as a p-value is unsupported.\"\n      },\n      \"completeness\": {\n        \"score\": 3,\n        \"rationale\": \"Provides a value but omits the important distinction that the evidence does not explicitly report a p-value.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 1,\n        \"rationale\": \"Asserts an unsupported p-value without qualification.\"\n      }\n    },\n    {\n      \"answer_id\": \"AB2\",\n      \"answer_relevance\": {\n        \"score\": 5,\n        \"rationale\": \"Directly addresses whether a p-value is reported.\"\n      },\n      \"biomedical_factual_correctness\": {\n        \"score\": 4,\n        \"rationale\": \"Correctly notes that no p-value for rs1160312 and androgenetic alopecia is reported in the study abstracts, though it overlooks that the graph context lists an association score.\"\n      },\n      \"completeness\": {\n        \"score\": 4,\n        \"rationale\": \"Gives an appropriate abstaining answer, but would be more complete if it distinguished the available association score from a p-value.\"\n      },\n      \"uncertainty_abstention\": {\n        \"score\": 4,\n        \"rationale\": \"Appropriately refrains from inventing a p-value, though its wording is somewhat overbroad about no association being mentioned.\"\n      }\n    }\n  ]\n}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_063ffe78da2e317d006a4f7e4f054881938eb980096d1cef91",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1970,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 3372,
+            "output_tokens_details": {
+              "reasoning_tokens": 2972
+            },
+            "total_tokens": 5342
+          },
+          "user": null
+        },
+        "request_id": "76aaa01a-711b-4320-94b0-6bd6b559a750",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly provides a numeric answer to the p-value question.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "The value 0.007 appears in the evidence as an Open Targets association score, not as a reported p-value; treating it as a p-value is unsupported.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Provides a value but omits the important distinction that the evidence does not explicitly report a p-value.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Asserts an unsupported p-value without qualification.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q028",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q028.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.723224+00:00"
+}

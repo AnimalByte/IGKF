@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "out_of_scope_or_insufficient",
+    "category": "general_biomedical_control",
+    "expected_behavior": "abstain_or_qualify",
+    "manual_review_required": true
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42389788",
+    "39578099",
+    "41034211",
+    "42215996",
+    "41426430",
+    "41390056",
+    "36864135",
+    "42239206",
+    "41951763",
+    "41152659",
+    "42151137",
+    "40950440",
+    "42135153",
+    "40107452",
+    "38037023"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q192.json",
+      "question_id": "Q192",
+      "sha256": "15530f144def909dd4f77c1c13d89cb0a220a9526593a79bad160503d3c88883"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q192.json",
+      "question_id": "Q192",
+      "sha256": "299039e5fc0097ff97de7591e3210238b88a36a793af708d3460fa92cfb14429"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Does the integrated data include evolutionary-conservation evidence for the LGR4 locus? If so, summarize it; otherwise state the limitation.",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.2586,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Does the integrated data include evolutionary-conservation evidence for the LGR4 locus? If so, summarize it; otherwise state the limitation.",
+  "parsed_answer": "The integrated data do not include evolutionary-conservation evidence for the LGR4 locus. The literature context provided focuses on the structural and functional roles of LGR4 in Wnt/beta-catenin signaling and its involvement in atherosclerosis, but it does not mention any evolutionary conservation analysis or related findings for the LGR4 gene. Therefore, the limitation is that the data do not address evolutionary-conservation evidence for the LGR4 locus.",
+  "question_id": "Q192",
+  "question_text": "Does the integrated data include evolutionary-conservation evidence for the LGR4 locus? If so, summarize it; otherwise state the limitation.",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 90,
+    "prompt_token_count": 1322,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The integrated data do not include evolutionary-conservation evidence for the LGR4 locus. The literature context provided focuses on the structural and functional roles of LGR4 in Wnt/beta-catenin signaling and its involvement in atherosclerosis, but it does not mention any evolutionary conservation analysis or related findings for the LGR4 gene. Therefore, the limitation is that the data do not address evolutionary-conservation evidence for the LGR4 locus."
+      }
+    ],
+    "created": 1783564712,
+    "id": "cmpl-4ef3288d-5287-4c54-a8f6-46bbd176f4c1",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 90,
+      "prompt_tokens": 1301,
+      "total_tokens": 1391
+    }
+  },
+  "reranker_scores": [
+    -3.0451722145080566,
+    -5.047083854675293,
+    -6.611339569091797
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      43.92345428466797,
+      44.00874328613281,
+      44.656036376953125,
+      45.64300537109375,
+      45.8364143371582,
+      45.93296813964844,
+      46.08005905151367,
+      46.44685363769531,
+      46.483062744140625,
+      46.90046691894531,
+      47.418643951416016,
+      47.57015609741211,
+      47.592132568359375,
+      47.829673767089844,
+      47.8829460144043
+    ],
+    "candidate_pmids": [
+      "42389788",
+      "39578099",
+      "41034211",
+      "42215996",
+      "41426430",
+      "41390056",
+      "36864135",
+      "42239206",
+      "41951763",
+      "41152659",
+      "42151137",
+      "40950440",
+      "42135153",
+      "40107452",
+      "38037023"
+    ],
+    "expanded_retrieval_query": "Does the integrated data include evolutionary-conservation evidence for the LGR4 locus? If so, summarize it; otherwise state the limitation.",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41034211, relevance: -3.0452) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 2 (PMID: 42389788, relevance: -5.0471) ---\nBACKGROUND: Monocyte-derived macrophages play a significant role in the initiation and progression of atherosclerosis by transforming into lipid-laden foam cells and regulating vascular inflammation. However, the molecular mechanisms that regulate macrophage lipid accumulation, phenotype, efferocytic capacity, and atherosclerosis are incompletely understood. Our preliminary studies revealed increased expression of LGR4 (leucine-rich repeat-containing G protein-coupled receptor 4) in human atherosclerotic arteries. Additional experiments demonstrated increased LGR4 levels in atherogenic oxidized low-density lipoprotein-treated macrophages. However, the macrophage-specific role of LGR4 in atherogenesis has never been investigated. METHODS: To investigate the role of myeloid cell Lgr4 in atherosclerosis development, myeloid cell-specific Lgr4 knockout (Lgr4(f/f) LysM Cre(+/-), Lgr4(DeltaM)) and littermate control Lgr4(f/f) (Lgr4(WT)) mice were injected intraperitoneally with hPCSK9-AAV8 and fed a Western diet for 16 weeks. Various in vitro cell-based assays, molecular biology techniques, and immunohistological approaches were used to evaluate the functional roles of macrophage Lgr4 and underlying signaling mechanisms. RESULTS: Oil red O staining of whole aortas and aortic root sections demonstrated reduced atherosclerosis in Lgr4(DeltaM) mice compared with sex-matched Lgr4(WT) mice. However, no changes in circulating monocyte frequencies were detected. Histochemical staining performed on aortic root sections revealed smaller necrotic cores and higher collagen content in Lgr4(DeltaM) mice. Additionally, Lgr4(DeltaM) mice exhibited lower fat mass and blood glucose levels, while plasma total cholesterol was comparable to that of control mice. Further in vitro and ex vivo studies demonstrated reduced lipid accumulation, enhanced efferocytic capacity, a suppressed proinflammatory phenotype, and attenuated expression of different low-density lipoprotein uptake genes in Lgr4-deficient macrophages. Moreover, Lgr4 knockout macrophages displayed increased cholesterol efflux capacity and reduced activation of oxidized low-density lipoprotein-induced Wnt/beta-catenin signaling. CONCLUSIONS: These findings suggest that myeloid cell Lgr4 contributes to atherosclerotic lesion formation via stimulating macrophage lipid accumulation, impairing efferocytic capacity, and promoting a proinflammatory phenotype. Collectively, these results identify macrophage LGR4 as a novel therapeutic target for atherosclerosis.\n\n--- Abstract 3 (PMID: 36864135, relevance: -6.6113) ---\nIdentifying genetic determinants of reproductive success may highlight mechanisms underlying fertility and identify alleles under present-day selection. Using data in 785,604 individuals of European ancestry, we identified 43 genomic loci associated with either number of children ever born (NEB) or childlessness. These loci span diverse aspects of reproductive biology, including puberty timing, age at first birth, sex hormone regulation, endometriosis and age at menopause. Missense variants in ARHGAP27 were associated with higher NEB but shorter reproductive lifespan, suggesting a trade-off at this locus between reproductive ageing and intensity. Other genes implicated by coding variants include PIK3IP1, ZFP82 and LRP4, and our results suggest a new role for the melanocortin 1 receptor (MC1R) in reproductive biology. As NEB is one component of evolutionary fitness, our identified associations indicate loci under present-day natural selection. Integration with data from historical selection scans highlighted an allele in the FADS1/2 gene locus that has been under selection for thousands of years and remains so today. Collectively, our findings demonstrate that a broad range of biological mechanisms contribute to reproductive success.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Does the integrated data include evolutionary-conservation evidence for the LGR4 locus? If so, summarize it; otherwise state the limitation.",
+    "rerank_seconds": 0.3432,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3595,
+    "score_max": -3.0451722145080566,
+    "score_mean": -4.901198546091716,
+    "scores": [
+      -3.0451722145080566,
+      -5.047083854675293,
+      -6.611339569091797
+    ],
+    "selected_abstracts": [
+      "Leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.",
+      "BACKGROUND: Monocyte-derived macrophages play a significant role in the initiation and progression of atherosclerosis by transforming into lipid-laden foam cells and regulating vascular inflammation. However, the molecular mechanisms that regulate macrophage lipid accumulation, phenotype, efferocytic capacity, and atherosclerosis are incompletely understood. Our preliminary studies revealed increased expression of LGR4 (leucine-rich repeat-containing G protein-coupled receptor 4) in human atherosclerotic arteries. Additional experiments demonstrated increased LGR4 levels in atherogenic oxidized low-density lipoprotein-treated macrophages. However, the macrophage-specific role of LGR4 in atherogenesis has never been investigated. METHODS: To investigate the role of myeloid cell Lgr4 in atherosclerosis development, myeloid cell-specific Lgr4 knockout (Lgr4(f/f) LysM Cre(+/-), Lgr4(DeltaM)) and littermate control Lgr4(f/f) (Lgr4(WT)) mice were injected intraperitoneally with hPCSK9-AAV8 and fed a Western diet for 16 weeks. Various in vitro cell-based assays, molecular biology techniques, and immunohistological approaches were used to evaluate the functional roles of macrophage Lgr4 and underlying signaling mechanisms. RESULTS: Oil red O staining of whole aortas and aortic root sections demonstrated reduced atherosclerosis in Lgr4(DeltaM) mice compared with sex-matched Lgr4(WT) mice. However, no changes in circulating monocyte frequencies were detected. Histochemical staining performed on aortic root sections revealed smaller necrotic cores and higher collagen content in Lgr4(DeltaM) mice. Additionally, Lgr4(DeltaM) mice exhibited lower fat mass and blood glucose levels, while plasma total cholesterol was comparable to that of control mice. Further in vitro and ex vivo studies demonstrated reduced lipid accumulation, enhanced efferocytic capacity, a suppressed proinflammatory phenotype, and attenuated expression of different low-density lipoprotein uptake genes in Lgr4-deficient macrophages. Moreover, Lgr4 knockout macrophages displayed increased cholesterol efflux capacity and reduced activation of oxidized low-density lipoprotein-induced Wnt/beta-catenin signaling. CONCLUSIONS: These findings suggest that myeloid cell Lgr4 contributes to atherosclerotic lesion formation via stimulating macrophage lipid accumulation, impairing efferocytic capacity, and promoting a proinflammatory phenotype. Collectively, these results identify macrophage LGR4 as a novel therapeutic target for atherosclerosis.",
+      "Identifying genetic determinants of reproductive success may highlight mechanisms underlying fertility and identify alleles under present-day selection. Using data in 785,604 individuals of European ancestry, we identified 43 genomic loci associated with either number of children ever born (NEB) or childlessness. These loci span diverse aspects of reproductive biology, including puberty timing, age at first birth, sex hormone regulation, endometriosis and age at menopause. Missense variants in ARHGAP27 were associated with higher NEB but shorter reproductive lifespan, suggesting a trade-off at this locus between reproductive ageing and intensity. Other genes implicated by coding variants include PIK3IP1, ZFP82 and LRP4, and our results suggest a new role for the melanocortin 1 receptor (MC1R) in reproductive biology. As NEB is one component of evolutionary fitness, our identified associations indicate loci under present-day natural selection. Integration with data from historical selection scans highlighted an allele in the FADS1/2 gene locus that has been under selection for thousands of years and remains so today. Collectively, our findings demonstrate that a broad range of biological mechanisms contribute to reproductive success."
+    ],
+    "selected_pmids": [
+      "41034211",
+      "42389788",
+      "36864135"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0161
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q192.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41034211",
+    "42389788",
+    "36864135"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:38:33.935456+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41034211, relevance: -3.0452) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 2 (PMID: 42389788, relevance: -5.0471) ---\nBACKGROUND: Monocyte-derived macrophages play a significant role in the initiation and progression of atherosclerosis by transforming into lipid-laden foam cells and regulating vascular inflammation. However, the molecular mechanisms that regulate macrophage lipid accumulation, phenotype, efferocytic capacity, and atherosclerosis are incompletely understood. Our preliminary studies revealed increased expression of LGR4 (leucine-rich repeat-containing G protein-coupled receptor 4) in human atherosclerotic arteries. Additional experiments demonstrated increased LGR4 levels in atherogenic oxidized low-density lipoprotein-treated macrophages. However, the macrophage-specific role of LGR4 in atherogenesis has never been investigated. METHODS: To investigate the role of myeloid cell Lgr4 in atherosclerosis development, myeloid cell-specific Lgr4 knockout (Lgr4(f/f) LysM Cre(+/-), Lgr4(DeltaM)) and littermate control Lgr4(f/f) (Lgr4(WT)) mice were injected intraperitoneally with hPCSK9-AAV8 and fed a Western diet for 16 weeks. Various in vitro cell-based assays, molecular biology techniques, and immunohistological approaches were used to evaluate the functional roles of macrophage Lgr4 and underlying signaling mechanisms. RESULTS: Oil red O staining of whole aortas and aortic root sections demonstrated reduced atherosclerosis in Lgr4(DeltaM) mice compared with sex-matched Lgr4(WT) mice. However, no changes in circulating monocyte frequencies were detected. Histochemical staining performed on aortic root sections revealed smaller necrotic cores and higher collagen content in Lgr4(DeltaM) mice. Additionally, Lgr4(DeltaM) mice exhibited lower fat mass and blood glucose levels, while plasma total cholesterol was comparable to that of control mice. Further in vitro and ex vivo studies demonstrated reduced lipid accumulation, enhanced efferocytic capacity, a suppressed proinflammatory phenotype, and attenuated expression of different low-density lipoprotein uptake genes in Lgr4-deficient macrophages. Moreover, Lgr4 knockout macrophages displayed increased cholesterol efflux capacity and reduced activation of oxidized low-density lipoprotein-induced Wnt/beta-catenin signaling. CONCLUSIONS: These findings suggest that myeloid cell Lgr4 contributes to atherosclerotic lesion formation via stimulating macrophage lipid accumulation, impairing efferocytic capacity, and promoting a proinflammatory phenotype. Collectively, these results identify macrophage LGR4 as a novel therapeutic target for atherosclerosis.\n\n--- Abstract 3 (PMID: 36864135, relevance: -6.6113) ---\nIdentifying genetic determinants of reproductive success may highlight mechanisms underlying fertility and identify alleles under present-day selection. Using data in 785,604 individuals of European ancestry, we identified 43 genomic loci associated with either number of children ever born (NEB) or childlessness. These loci span diverse aspects of reproductive biology, including puberty timing, age at first birth, sex hormone regulation, endometriosis and age at menopause. Missense variants in ARHGAP27 were associated with higher NEB but shorter reproductive lifespan, suggesting a trade-off at this locus between reproductive ageing and intensity. Other genes implicated by coding variants include PIK3IP1, ZFP82 and LRP4, and our results suggest a new role for the melanocortin 1 receptor (MC1R) in reproductive biology. As NEB is one component of evolutionary fitness, our identified associations indicate loci under present-day natural selection. Integration with data from historical selection scans highlighted an allele in the FADS1/2 gene locus that has been under selection for thousands of years and remains so today. Collectively, our findings demonstrate that a broad range of biological mechanisms contribute to reproductive success.\n\n\n\n**Question:**\nDoes the integrated data include evolutionary-conservation evidence for the LGR4 locus? If so, summarize it; otherwise state the limitation.",
+  "vector_context": "--- Abstract 1 (PMID: 41034211, relevance: -3.0452) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 2 (PMID: 42389788, relevance: -5.0471) ---\nBACKGROUND: Monocyte-derived macrophages play a significant role in the initiation and progression of atherosclerosis by transforming into lipid-laden foam cells and regulating vascular inflammation. However, the molecular mechanisms that regulate macrophage lipid accumulation, phenotype, efferocytic capacity, and atherosclerosis are incompletely understood. Our preliminary studies revealed increased expression of LGR4 (leucine-rich repeat-containing G protein-coupled receptor 4) in human atherosclerotic arteries. Additional experiments demonstrated increased LGR4 levels in atherogenic oxidized low-density lipoprotein-treated macrophages. However, the macrophage-specific role of LGR4 in atherogenesis has never been investigated. METHODS: To investigate the role of myeloid cell Lgr4 in atherosclerosis development, myeloid cell-specific Lgr4 knockout (Lgr4(f/f) LysM Cre(+/-), Lgr4(DeltaM)) and littermate control Lgr4(f/f) (Lgr4(WT)) mice were injected intraperitoneally with hPCSK9-AAV8 and fed a Western diet for 16 weeks. Various in vitro cell-based assays, molecular biology techniques, and immunohistological approaches were used to evaluate the functional roles of macrophage Lgr4 and underlying signaling mechanisms. RESULTS: Oil red O staining of whole aortas and aortic root sections demonstrated reduced atherosclerosis in Lgr4(DeltaM) mice compared with sex-matched Lgr4(WT) mice. However, no changes in circulating monocyte frequencies were detected. Histochemical staining performed on aortic root sections revealed smaller necrotic cores and higher collagen content in Lgr4(DeltaM) mice. Additionally, Lgr4(DeltaM) mice exhibited lower fat mass and blood glucose levels, while plasma total cholesterol was comparable to that of control mice. Further in vitro and ex vivo studies demonstrated reduced lipid accumulation, enhanced efferocytic capacity, a suppressed proinflammatory phenotype, and attenuated expression of different low-density lipoprotein uptake genes in Lgr4-deficient macrophages. Moreover, Lgr4 knockout macrophages displayed increased cholesterol efflux capacity and reduced activation of oxidized low-density lipoprotein-induced Wnt/beta-catenin signaling. CONCLUSIONS: These findings suggest that myeloid cell Lgr4 contributes to atherosclerotic lesion formation via stimulating macrophage lipid accumulation, impairing efferocytic capacity, and promoting a proinflammatory phenotype. Collectively, these results identify macrophage LGR4 as a novel therapeutic target for atherosclerosis.\n\n--- Abstract 3 (PMID: 36864135, relevance: -6.6113) ---\nIdentifying genetic determinants of reproductive success may highlight mechanisms underlying fertility and identify alleles under present-day selection. Using data in 785,604 individuals of European ancestry, we identified 43 genomic loci associated with either number of children ever born (NEB) or childlessness. These loci span diverse aspects of reproductive biology, including puberty timing, age at first birth, sex hormone regulation, endometriosis and age at menopause. Missense variants in ARHGAP27 were associated with higher NEB but shorter reproductive lifespan, suggesting a trade-off at this locus between reproductive ageing and intensity. Other genes implicated by coding variants include PIK3IP1, ZFP82 and LRP4, and our results suggest a new role for the melanocortin 1 receptor (MC1R) in reproductive biology. As NEB is one component of evolutionary fitness, our identified associations indicate loci under present-day natural selection. Integration with data from historical selection scans highlighted an allele in the FADS1/2 gene locus that has been under selection for thousands of years and remains so today. Collectively, our findings demonstrate that a broad range of biological mechanisms contribute to reproductive success.\n\n"
+}

@@ -1,0 +1,166 @@
+{
+  "benchmark_annotations": {
+    "answerability": "literature",
+    "category": "literature_synthesis",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q163.json",
+      "question_id": "Q163",
+      "sha256": "9e62907fb094bc41096b7e343e1faed7be98ce4c0be0bef3a3065d10782e9d6b"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q163.json",
+      "question_id": "Q163",
+      "sha256": "010950c311100f604024f408ce2e5d6027d8c95e4d2e8cd1902de6b6955e31de"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.8107,
+  "git_commit": null,
+  "graph_context": "Entity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+  "parsed_answer": "The provided IGKF graph context does not include any evidence connecting FOXA2 to hair density, hair thickness, or hair-follicle biology. The interactions listed for FOXA2 are with other genes and proteins, but none of these interactions are associated with hair-related traits or biological processes in the given data. Therefore, based on the supplied information, there is no direct or indirect link between FOXA2 and hair biology.",
+  "question_id": "Q163",
+  "question_text": "What evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 86,
+    "prompt_token_count": 214,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The provided IGKF graph context does not include any evidence connecting FOXA2 to hair density, hair thickness, or hair-follicle biology. The interactions listed for FOXA2 are with other genes and proteins, but none of these interactions are associated with hair-related traits or biological processes in the given data. Therefore, based on the supplied information, there is no direct or indirect link between FOXA2 and hair biology."
+      }
+    ],
+    "created": 1783563443,
+    "id": "cmpl-8b7de3c4-a646-4c71-988c-660f78e3ab93",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 86,
+      "prompt_tokens": 193,
+      "total_tokens": 279
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)",
+    "graph_context_length": 238,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0134,
+    "original_retrieval_query": "What evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "evidence"
+      },
+      {
+        "label": "ENTITY",
+        "text": "integrated data"
+      },
+      {
+        "label": "ENTITY",
+        "text": "literature"
+      },
+      {
+        "label": "ENTITY",
+        "text": "foxa2"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair density"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair thickness"
+      },
+      {
+        "label": "ENTITY",
+        "text": "hair-follicle biology"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0134,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q163.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:17:24.482786+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: FOXA2 (Type: Gene)\n  - Interacts With (PPI): H1-0 (experimental: 0, database: 0), CYP3A7 (experimental: 0, database: 0), FFAR1 (experimental: 0, database: 0), JAG1 (experimental: 0, database: 0), TNF (experimental: 0, database: 0)\n\n**Question:**\nWhat evidence in the integrated data or literature connects FOXA2 to hair density, hair thickness, or hair-follicle biology?",
+  "vector_context": ""
+}

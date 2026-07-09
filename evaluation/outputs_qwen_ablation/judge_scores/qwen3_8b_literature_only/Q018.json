@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q018",
+      "randomization_seed": "20260706:Q018:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q018",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q018",
+      "error": null,
+      "id": "batch_req_6a4f85cd7a5c8190b1ba7ccdc8bcd536",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594479,
+          "created_at": 1783594456,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0c7dcc41b570220f006a4f7dd8a2248196b5549ece6e4d6df0",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q018"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0c7dcc41b570220f006a4f7dd9d7648196a5cee8c047a1f0c6",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether the provided evidence supports an association between rs756853 and androgenetic alopecia.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied context does not mention evidence linking rs756853 to androgenetic alopecia.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the key conclusion, though it could be slightly more explicit that the AGA abstract does not discuss rs756853 and the graph context lacks an AGA link.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from claiming an association in the absence of supporting evidence.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers the question by stating that no evidence links rs756853 to androgenetic alopecia in the provided data.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the reference packet, which contains no rs756853-androgenetic alopecia association.\"},\"completeness\":{\"score\":4,\"rationale\":\"Captures the main conclusion but focuses on the graph context and does not explicitly mention the literature abstracts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Correctly avoids overstating unsupported findings and frames the conclusion as based on available data.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0c7dcc41b570220f006a4f7de4b0b88196862b7e2b53f03cb7",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2566,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 608,
+            "output_tokens_details": {
+              "reasoning_tokens": 304
+            },
+            "total_tokens": 3174
+          },
+          "user": null
+        },
+        "request_id": "9ff447da-d5a7-4f2f-a948-c8fde1a76227",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses whether the provided evidence supports an association between rs756853 and androgenetic alopecia.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Accurately states that the supplied context does not mention evidence linking rs756853 to androgenetic alopecia.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Provides the key conclusion, though it could be slightly more explicit that the AGA abstract does not discuss rs756853 and the graph context lacks an AGA link.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from claiming an association in the absence of supporting evidence.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q018",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q018.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.719398+00:00"
+}

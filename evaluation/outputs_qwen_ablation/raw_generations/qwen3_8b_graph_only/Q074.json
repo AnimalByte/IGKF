@@ -1,0 +1,150 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q074.json",
+      "question_id": "Q074",
+      "sha256": "5653e70c8911ea4df9a64e661ed9bc4300ba2725a63f41a04c0a1cf1b6e45dd7"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q074.json",
+      "question_id": "Q074",
+      "sha256": "68d70d49c9a6ef6715173c8704fbdd52958a0c91fe935402ed02f60217e6be4d"
+    }
+  ],
+  "condition": "qwen3_8b_graph_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": null,
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 0.3295,
+  "git_commit": null,
+  "graph_context": "Entity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which pathways in the integrated graph include WNT10A?",
+  "parsed_answer": "The pathways in the integrated graph that include WNT10A are:\n\n- Class B/2 (Secretin family receptors)\n- WNT ligand biogenesis and trafficking",
+  "question_id": "Q074",
+  "question_text": "Which pathways in the integrated graph include WNT10A?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 35,
+    "prompt_token_count": 399,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "The pathways in the integrated graph that include WNT10A are:\n\n- Class B/2 (Secretin family receptors)\n- WNT ligand biogenesis and trafficking"
+      }
+    ],
+    "created": 1783559125,
+    "id": "cmpl-0d0fa079-d465-4160-8b36-af2b58522d79",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 35,
+      "prompt_tokens": 378,
+      "total_tokens": 413
+    }
+  },
+  "reranker_scores": [],
+  "retrieval_metadata": {
+    "candidate_pmids": [],
+    "expanded_retrieval_query": null,
+    "final_context": "Graph Context:\nEntity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)",
+    "found_specific_entity": true,
+    "graph_context": "Entity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)",
+    "graph_context_length": 920,
+    "graph_context_present": true,
+    "graph_retrieval_seconds": 0.0099,
+    "original_retrieval_query": "Which pathways in the integrated graph include WNT10A?",
+    "resolved_entities": [
+      {
+        "label": "ENTITY",
+        "text": "pathways"
+      },
+      {
+        "label": "ENTITY",
+        "text": "integrated graph"
+      },
+      {
+        "label": "ENTITY",
+        "text": "wnt10a"
+      }
+    ],
+    "retrieval_mode": "graph_only",
+    "retrieval_total_seconds": 0.0099,
+    "scores": [],
+    "selected_abstracts": [],
+    "selected_pmids": [],
+    "vector_context_present": false
+  },
+  "retrieval_mode": "graph_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_graph_only/Q074.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied IGKF graph context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T01:05:25.465153+00:00",
+  "user_prompt": "Please answer the user's question using the supplied IGKF graph context.\n\n**Graph Context (Structured Data):**\nEntity: WNT10A (Type: Gene)\n  - Gene Pathways: Class B/2 (Secretin family receptors), WNT ligand biogenesis and trafficking\n  - Associated Phenotypes: Abnormal morphology of female internal genitalia, enamel hypoplasia, Agenesis of mandibular premolar\n  - GO Functions/Processes: epidermis morphogenesis, tongue development, sebaceous gland development, cellular response to transforming growth factor beta stimulus, hair follicle morphogenesis\n  - Interacts With (PPI): ITGB4 (experimental: 0, database: 0), CCND1 (experimental: 0, database: 0), GSK3A (experimental: 104, database: 0), FST (experimental: 0, database: 0), USP37 (experimental: 0, database: 0)\n  - Open Targets Disease Associations: odonto-onycho-dermal dysplasia (score: 0.799), tooth agenesis, selective, 4 (score: 0.779), Sch\u00f6pf-Schulz-Passarge syndrome (score: 0.769), tooth agenesis (score: 0.587), ectodermal dysplasia WNT10A related (score: 0.573)\n\n**Question:**\nWhich pathways in the integrated graph include WNT10A?",
+  "vector_context": ""
+}

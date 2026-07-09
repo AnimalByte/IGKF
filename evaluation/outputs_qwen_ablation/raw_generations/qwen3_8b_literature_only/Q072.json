@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "42089627",
+    "41218118",
+    "32193494",
+    "42147184",
+    "41258626",
+    "42330953",
+    "41797924",
+    "24410847",
+    "42230622",
+    "35638461",
+    "39529066",
+    "41503465",
+    "41443981",
+    "42113256",
+    "41354990"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q072.json",
+      "question_id": "Q072",
+      "sha256": "ff97c6079661169f012d04a026906e76039c7acc75c5097f69c83d2df0dfce8f"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q072.json",
+      "question_id": "Q072",
+      "sha256": "8dfbfbbddc70f6fe2267b2e6072f3574bf19254d6a02744134b6af57e46cff18"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to WNT10A in this study?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.2098,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to WNT10A in this study?",
+  "parsed_answer": "None of the variants annotated as high impact are mapped to WNT10A in this study. The provided literature context does not mention any specific variants related to WNT10A in the study described in Abstract 3. The study focuses on autism spectrum disorders (ASDs) and identifies novel DNA variations in genes associated with ASD, but it does not reference WNT10A or its variants.",
+  "question_id": "Q072",
+  "question_text": "Which variants annotated as high impact, if any, are mapped to WNT10A in this study?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 82,
+    "prompt_token_count": 1395,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "None of the variants annotated as high impact are mapped to WNT10A in this study. The provided literature context does not mention any specific variants related to WNT10A in the study described in Abstract 3. The study focuses on autism spectrum disorders (ASDs) and identifies novel DNA variations in genes associated with ASD, but it does not reference WNT10A or its variants."
+      }
+    ],
+    "created": 1783564170,
+    "id": "cmpl-5e0f3b85-bfb3-47b3-aad0-ffd692afd306",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 82,
+      "prompt_tokens": 1374,
+      "total_tokens": 1456
+    }
+  },
+  "reranker_scores": [
+    -1.983481764793396,
+    -2.7126612663269043,
+    -3.864424705505371
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      40.53019332885742,
+      41.0321044921875,
+      42.30598831176758,
+      43.0308723449707,
+      43.3828010559082,
+      44.037654876708984,
+      44.05259704589844,
+      44.325286865234375,
+      44.675636291503906,
+      44.86103439331055,
+      45.127342224121094,
+      45.204471588134766,
+      45.33436584472656,
+      45.591453552246094,
+      45.729774475097656
+    ],
+    "candidate_pmids": [
+      "42089627",
+      "41218118",
+      "32193494",
+      "42147184",
+      "41258626",
+      "42330953",
+      "41797924",
+      "24410847",
+      "42230622",
+      "35638461",
+      "39529066",
+      "41503465",
+      "41443981",
+      "42113256",
+      "41354990"
+    ],
+    "expanded_retrieval_query": "Which variants annotated as high impact, if any, are mapped to WNT10A in this study?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 42089627, relevance: -1.9835) ---\nWNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.\n\n--- Abstract 2 (PMID: 41258626, relevance: -2.7127) ---\nOBJECTIVE: Choriocarcinoma has a high propensity for distant metastasis, imposing a substantial psychological burden on patients. Unveiling the molecular mechanisms underlying tumor invasion and metastasis holds great clinical significance. METHODS: Immunohistochemistry was employed to detect WNT6 expression in normal early pregnancy villi, regressive hydatidiform moles, malignant hydatidiform moles and gestational trophoblastic neoplasia. Quantitation of mRNA expression by real-time PCR and Western blotting were utilized to quantify WNT6 expression in human chorionic trophoblastic cells and choriocarcinoma cells. Lentiviruses were used to construct stable cell models with either overexpressed or knocked-down WNT6, aiming to explore the impact of WNT6 expression on cell proliferation, migration, and invasion. RESULTS: The expression of WNT6 was significantly higher in malignant tissues and cells compared to normal counterparts. In the malignant hydatidiform mole group, WNT6 expression was correlated with tumor metastasis and the FIGO anatomical stage. Kaplan-Meier survival curve analysis indicated that the disease progression time of the high-WNT6-expression subgroup in the malignant hydatidiform mole group was notably shorter than that of the low-expression subgroup. CCK-8 assay, wound healing assay, and Transwell assays demonstrated that overexpression of WNT6 could enhance the proliferation, migration, and invasion of HTR-8 cells. Conversely, interfering with WNT6 expression led to opposite outcomes. CONCLUSION: High WNT6 expression is associated with tumor progression and poor prognosis. WNT6 is involved in the development of gestational trophoblastic diseases and can serve as a reference biomarker for disease progression and prognosis assessment.\n\n--- Abstract 3 (PMID: 24410847, relevance: -3.8644) ---\nBACKGROUND: Autism spectrum disorders (ASDs) comprise a range of neurodevelopmental conditions of varying severity, characterized by marked qualitative difficulties in social relatedness, communication, and behavior. Despite overwhelming evidence of high heritability, results from genetic studies to date show that ASD etiology is extremely heterogeneous and only a fraction of autism genes have been discovered. METHODS: To help unravel this genetic complexity, we performed whole exome sequencing on 100 ASD individuals from 40 families with multiple distantly related affected individuals. All families contained a minimum of one pair of ASD cousins. Each individual was captured with the Agilent SureSelect Human All Exon kit, sequenced on the Illumina Hiseq 2000, and the resulting data processed and annotated with Burrows-Wheeler Aligner (BWA), Genome Analysis Toolkit (GATK), and SeattleSeq. Genotyping information on each family was utilized in order to determine genomic regions that were identical by descent (IBD). Variants identified by exome sequencing which occurred in IBD regions and present in all affected individuals within each family were then evaluated to determine which may potentially be disease related. Nucleotide alterations that were novel and rare (minor allele frequency, MAF, less than 0.05) and predicted to be detrimental, either by altering amino acids or splicing patterns, were prioritized. RESULTS: We identified numerous potentially damaging, ASD associated risk variants in genes previously unrelated to autism. A subset of these genes has been implicated in other neurobehavioral disorders including depression (SLIT3), epilepsy (CLCN2, PRICKLE1), intellectual disability (AP4M1), schizophrenia (WDR60), and Tourette syndrome (OFCC1). Additional alterations were found in previously reported autism candidate genes, including three genes with alterations in multiple families (CEP290, CSMD1, FAT1, and STXBP5). Compiling a list of ASD candidate genes from the literature, we determined that variants occurred in ASD candidate genes 1.65 times more frequently than in random genes captured by exome sequencing (P = 8.55 x 10-5). CONCLUSIONS: By studying these unique pedigrees, we have identified novel DNA variations related to ASD, demonstrated that exome sequencing in extended families is a powerful tool for ASD candidate gene discovery, and provided further evidence of an underlying genetic component to a wide range of neurodevelopmental and neuropsychiatric diseases.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "Which variants annotated as high impact, if any, are mapped to WNT10A in this study?",
+    "rerank_seconds": 0.3326,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3491,
+    "score_max": -1.983481764793396,
+    "score_mean": -2.8535225788752236,
+    "scores": [
+      -1.983481764793396,
+      -2.7126612663269043,
+      -3.864424705505371
+    ],
+    "selected_abstracts": [
+      "WNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.",
+      "OBJECTIVE: Choriocarcinoma has a high propensity for distant metastasis, imposing a substantial psychological burden on patients. Unveiling the molecular mechanisms underlying tumor invasion and metastasis holds great clinical significance. METHODS: Immunohistochemistry was employed to detect WNT6 expression in normal early pregnancy villi, regressive hydatidiform moles, malignant hydatidiform moles and gestational trophoblastic neoplasia. Quantitation of mRNA expression by real-time PCR and Western blotting were utilized to quantify WNT6 expression in human chorionic trophoblastic cells and choriocarcinoma cells. Lentiviruses were used to construct stable cell models with either overexpressed or knocked-down WNT6, aiming to explore the impact of WNT6 expression on cell proliferation, migration, and invasion. RESULTS: The expression of WNT6 was significantly higher in malignant tissues and cells compared to normal counterparts. In the malignant hydatidiform mole group, WNT6 expression was correlated with tumor metastasis and the FIGO anatomical stage. Kaplan-Meier survival curve analysis indicated that the disease progression time of the high-WNT6-expression subgroup in the malignant hydatidiform mole group was notably shorter than that of the low-expression subgroup. CCK-8 assay, wound healing assay, and Transwell assays demonstrated that overexpression of WNT6 could enhance the proliferation, migration, and invasion of HTR-8 cells. Conversely, interfering with WNT6 expression led to opposite outcomes. CONCLUSION: High WNT6 expression is associated with tumor progression and poor prognosis. WNT6 is involved in the development of gestational trophoblastic diseases and can serve as a reference biomarker for disease progression and prognosis assessment.",
+      "BACKGROUND: Autism spectrum disorders (ASDs) comprise a range of neurodevelopmental conditions of varying severity, characterized by marked qualitative difficulties in social relatedness, communication, and behavior. Despite overwhelming evidence of high heritability, results from genetic studies to date show that ASD etiology is extremely heterogeneous and only a fraction of autism genes have been discovered. METHODS: To help unravel this genetic complexity, we performed whole exome sequencing on 100 ASD individuals from 40 families with multiple distantly related affected individuals. All families contained a minimum of one pair of ASD cousins. Each individual was captured with the Agilent SureSelect Human All Exon kit, sequenced on the Illumina Hiseq 2000, and the resulting data processed and annotated with Burrows-Wheeler Aligner (BWA), Genome Analysis Toolkit (GATK), and SeattleSeq. Genotyping information on each family was utilized in order to determine genomic regions that were identical by descent (IBD). Variants identified by exome sequencing which occurred in IBD regions and present in all affected individuals within each family were then evaluated to determine which may potentially be disease related. Nucleotide alterations that were novel and rare (minor allele frequency, MAF, less than 0.05) and predicted to be detrimental, either by altering amino acids or splicing patterns, were prioritized. RESULTS: We identified numerous potentially damaging, ASD associated risk variants in genes previously unrelated to autism. A subset of these genes has been implicated in other neurobehavioral disorders including depression (SLIT3), epilepsy (CLCN2, PRICKLE1), intellectual disability (AP4M1), schizophrenia (WDR60), and Tourette syndrome (OFCC1). Additional alterations were found in previously reported autism candidate genes, including three genes with alterations in multiple families (CEP290, CSMD1, FAT1, and STXBP5). Compiling a list of ASD candidate genes from the literature, we determined that variants occurred in ASD candidate genes 1.65 times more frequently than in random genes captured by exome sequencing (P = 8.55 x 10-5). CONCLUSIONS: By studying these unique pedigrees, we have identified novel DNA variations related to ASD, demonstrated that exome sequencing in extended families is a powerful tool for ASD candidate gene discovery, and provided further evidence of an underlying genetic component to a wide range of neurodevelopmental and neuropsychiatric diseases."
+    ],
+    "selected_pmids": [
+      "42089627",
+      "41258626",
+      "24410847"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0164
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q072.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "42089627",
+    "41258626",
+    "24410847"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:29:31.717172+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 42089627, relevance: -1.9835) ---\nWNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.\n\n--- Abstract 2 (PMID: 41258626, relevance: -2.7127) ---\nOBJECTIVE: Choriocarcinoma has a high propensity for distant metastasis, imposing a substantial psychological burden on patients. Unveiling the molecular mechanisms underlying tumor invasion and metastasis holds great clinical significance. METHODS: Immunohistochemistry was employed to detect WNT6 expression in normal early pregnancy villi, regressive hydatidiform moles, malignant hydatidiform moles and gestational trophoblastic neoplasia. Quantitation of mRNA expression by real-time PCR and Western blotting were utilized to quantify WNT6 expression in human chorionic trophoblastic cells and choriocarcinoma cells. Lentiviruses were used to construct stable cell models with either overexpressed or knocked-down WNT6, aiming to explore the impact of WNT6 expression on cell proliferation, migration, and invasion. RESULTS: The expression of WNT6 was significantly higher in malignant tissues and cells compared to normal counterparts. In the malignant hydatidiform mole group, WNT6 expression was correlated with tumor metastasis and the FIGO anatomical stage. Kaplan-Meier survival curve analysis indicated that the disease progression time of the high-WNT6-expression subgroup in the malignant hydatidiform mole group was notably shorter than that of the low-expression subgroup. CCK-8 assay, wound healing assay, and Transwell assays demonstrated that overexpression of WNT6 could enhance the proliferation, migration, and invasion of HTR-8 cells. Conversely, interfering with WNT6 expression led to opposite outcomes. CONCLUSION: High WNT6 expression is associated with tumor progression and poor prognosis. WNT6 is involved in the development of gestational trophoblastic diseases and can serve as a reference biomarker for disease progression and prognosis assessment.\n\n--- Abstract 3 (PMID: 24410847, relevance: -3.8644) ---\nBACKGROUND: Autism spectrum disorders (ASDs) comprise a range of neurodevelopmental conditions of varying severity, characterized by marked qualitative difficulties in social relatedness, communication, and behavior. Despite overwhelming evidence of high heritability, results from genetic studies to date show that ASD etiology is extremely heterogeneous and only a fraction of autism genes have been discovered. METHODS: To help unravel this genetic complexity, we performed whole exome sequencing on 100 ASD individuals from 40 families with multiple distantly related affected individuals. All families contained a minimum of one pair of ASD cousins. Each individual was captured with the Agilent SureSelect Human All Exon kit, sequenced on the Illumina Hiseq 2000, and the resulting data processed and annotated with Burrows-Wheeler Aligner (BWA), Genome Analysis Toolkit (GATK), and SeattleSeq. Genotyping information on each family was utilized in order to determine genomic regions that were identical by descent (IBD). Variants identified by exome sequencing which occurred in IBD regions and present in all affected individuals within each family were then evaluated to determine which may potentially be disease related. Nucleotide alterations that were novel and rare (minor allele frequency, MAF, less than 0.05) and predicted to be detrimental, either by altering amino acids or splicing patterns, were prioritized. RESULTS: We identified numerous potentially damaging, ASD associated risk variants in genes previously unrelated to autism. A subset of these genes has been implicated in other neurobehavioral disorders including depression (SLIT3), epilepsy (CLCN2, PRICKLE1), intellectual disability (AP4M1), schizophrenia (WDR60), and Tourette syndrome (OFCC1). Additional alterations were found in previously reported autism candidate genes, including three genes with alterations in multiple families (CEP290, CSMD1, FAT1, and STXBP5). Compiling a list of ASD candidate genes from the literature, we determined that variants occurred in ASD candidate genes 1.65 times more frequently than in random genes captured by exome sequencing (P = 8.55 x 10-5). CONCLUSIONS: By studying these unique pedigrees, we have identified novel DNA variations related to ASD, demonstrated that exome sequencing in extended families is a powerful tool for ASD candidate gene discovery, and provided further evidence of an underlying genetic component to a wide range of neurodevelopmental and neuropsychiatric diseases.\n\n\n\n**Question:**\nWhich variants annotated as high impact, if any, are mapped to WNT10A in this study?",
+  "vector_context": "--- Abstract 1 (PMID: 42089627, relevance: -1.9835) ---\nWNT10A mutations, a major genetic determinant of dental agenesis and ectodermal dysplasia, exert profound effects on craniofacial development. Although classified as rare disorders, these mutations account for more than half of oligodontia cases, reflecting their critical role. The associated phenotypes span a broad clinical spectrum, ranging from isolated tooth agenesis to complex multisystem disorders, including hypodontia, enamel and root defects, palmoplantar keratoderma, alopecia, nail dystrophy, skin xerosis, hypohidrosis, eyelid cysts, and skin cancer, skeletal abnormalities and impaired bone homeostasis, underscoring their systemic impact. This review synthesizes current biological and clinical knowledge by linking phenotypes of WNT10A mutations to disruptions in Wnt/beta-catenin signaling and its interactions with BMP, SMAD, RANK/RANKL/OPG, VEGF, and other regulatory pathways. Altered pathway activity affects key processes in tooth morphogenesis, osteogenesis, cellular proliferation, and tissue maintenance, offering mechanistic explanations for the heterogeneity and severity of patient presentations. A clearer understanding of these pathways is essential for improving diagnosis and management of WNT10A-associated oligodontia, particularly in treatment planning for growth-dependent interventions, regenerative strategies, and implant rehabilitation. Despite significant progress, critical gaps remain in defining the molecular basis of variable expressivity and genotype-phenotype relationships. Elucidating these mechanisms will be pivotal for advancing precision approaches in dental and craniofacial care.\n\n--- Abstract 2 (PMID: 41258626, relevance: -2.7127) ---\nOBJECTIVE: Choriocarcinoma has a high propensity for distant metastasis, imposing a substantial psychological burden on patients. Unveiling the molecular mechanisms underlying tumor invasion and metastasis holds great clinical significance. METHODS: Immunohistochemistry was employed to detect WNT6 expression in normal early pregnancy villi, regressive hydatidiform moles, malignant hydatidiform moles and gestational trophoblastic neoplasia. Quantitation of mRNA expression by real-time PCR and Western blotting were utilized to quantify WNT6 expression in human chorionic trophoblastic cells and choriocarcinoma cells. Lentiviruses were used to construct stable cell models with either overexpressed or knocked-down WNT6, aiming to explore the impact of WNT6 expression on cell proliferation, migration, and invasion. RESULTS: The expression of WNT6 was significantly higher in malignant tissues and cells compared to normal counterparts. In the malignant hydatidiform mole group, WNT6 expression was correlated with tumor metastasis and the FIGO anatomical stage. Kaplan-Meier survival curve analysis indicated that the disease progression time of the high-WNT6-expression subgroup in the malignant hydatidiform mole group was notably shorter than that of the low-expression subgroup. CCK-8 assay, wound healing assay, and Transwell assays demonstrated that overexpression of WNT6 could enhance the proliferation, migration, and invasion of HTR-8 cells. Conversely, interfering with WNT6 expression led to opposite outcomes. CONCLUSION: High WNT6 expression is associated with tumor progression and poor prognosis. WNT6 is involved in the development of gestational trophoblastic diseases and can serve as a reference biomarker for disease progression and prognosis assessment.\n\n--- Abstract 3 (PMID: 24410847, relevance: -3.8644) ---\nBACKGROUND: Autism spectrum disorders (ASDs) comprise a range of neurodevelopmental conditions of varying severity, characterized by marked qualitative difficulties in social relatedness, communication, and behavior. Despite overwhelming evidence of high heritability, results from genetic studies to date show that ASD etiology is extremely heterogeneous and only a fraction of autism genes have been discovered. METHODS: To help unravel this genetic complexity, we performed whole exome sequencing on 100 ASD individuals from 40 families with multiple distantly related affected individuals. All families contained a minimum of one pair of ASD cousins. Each individual was captured with the Agilent SureSelect Human All Exon kit, sequenced on the Illumina Hiseq 2000, and the resulting data processed and annotated with Burrows-Wheeler Aligner (BWA), Genome Analysis Toolkit (GATK), and SeattleSeq. Genotyping information on each family was utilized in order to determine genomic regions that were identical by descent (IBD). Variants identified by exome sequencing which occurred in IBD regions and present in all affected individuals within each family were then evaluated to determine which may potentially be disease related. Nucleotide alterations that were novel and rare (minor allele frequency, MAF, less than 0.05) and predicted to be detrimental, either by altering amino acids or splicing patterns, were prioritized. RESULTS: We identified numerous potentially damaging, ASD associated risk variants in genes previously unrelated to autism. A subset of these genes has been implicated in other neurobehavioral disorders including depression (SLIT3), epilepsy (CLCN2, PRICKLE1), intellectual disability (AP4M1), schizophrenia (WDR60), and Tourette syndrome (OFCC1). Additional alterations were found in previously reported autism candidate genes, including three genes with alterations in multiple families (CEP290, CSMD1, FAT1, and STXBP5). Compiling a list of ASD candidate genes from the literature, we determined that variants occurred in ASD candidate genes 1.65 times more frequently than in random genes captured by exome sequencing (P = 8.55 x 10-5). CONCLUSIONS: By studying these unique pedigrees, we have identified novel DNA variations related to ASD, demonstrated that exome sequencing in extended families is a powerful tool for ASD candidate gene discovery, and provided further evidence of an underlying genetic component to a wide range of neurodevelopmental and neuropsychiatric diseases.\n\n"
+}

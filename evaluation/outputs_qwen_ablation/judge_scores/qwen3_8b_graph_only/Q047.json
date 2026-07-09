@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_direct",
+    "category": "variant_interpretation",
+    "expected_behavior": "answer",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q047",
+      "randomization_seed": "20260706:Q047:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q047",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q047",
+      "error": null,
+      "id": "batch_req_6a4f85cf68cc8190a15624417fa4465f",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594500,
+          "created_at": 1783594472,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_04c614ca1e1f1c6a006a4f7de8e2a88196869b8b6c00381235",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q047"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_04c614ca1e1f1c6a006a4f7de9e0cc81968e9ea4a39812b7a0",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses whether rs7313338 is supported as being in a regulatory element.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes that the supplied evidence does not mention rs7313338 or a regulatory element for it.\"},\"completeness\":{\"score\":4,\"rationale\":\"Provides the key conclusion but does not explicitly consider both graph and vector contexts.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains rather than inventing an unsupported regulatory element.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers that the provided data do not allow determination.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the reference evidence, which contains no rs7313338 regulatory-element information.\"},\"completeness\":{\"score\":4,\"rationale\":\"Covers the essential conclusion, though it could more explicitly mention that no element is identified anywhere in the integrated evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Properly qualifies the lack of evidence and avoids unsupported claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_04c614ca1e1f1c6a006a4f7dfc29a88196ad77317d8d1275fc",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2493,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 781,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3274
+          },
+          "user": null
+        },
+        "request_id": "84f45e4a-0b2f-41fb-acfb-827ff137bb83",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers that the provided data do not allow determination.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Consistent with the reference evidence, which contains no rs7313338 regulatory-element information.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the essential conclusion, though it could more explicitly mention that no element is identified anywhere in the integrated evidence.",
+      "score": 4.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Properly qualifies the lack of evidence and avoids unsupported claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q047",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q047.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.730761+00:00"
+}

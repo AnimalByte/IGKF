@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q111",
+      "randomization_seed": "20260706:Q111:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q111",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q111",
+      "error": null,
+      "id": "batch_req_6a4f85d397c481908674173c51f18a00",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783578989,
+          "created_at": 1783578959,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_00dfcad868ef50f9006a4f414fb79c8195818dc33700e59c38",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q111"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_00dfcad868ef50f9006a4f416179a48195bd1fd566c57914a8",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether any drugs are linked to Hedgehog pathway genes or targets in the provided integrated evidence.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately states that the supplied graph has no relevant data and the abstracts mention pathway components but no drugs.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key point that no drug links are supported and briefly explains the evidence basis.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from naming unsupported drugs and qualifies the conclusion based on provided data.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":3,\"rationale\":\"Partially addresses the question by reporting the graph result, but does not explicitly answer for the integrated data or mention drugs.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Factually matches the graph context, which states that no relevant data were found.\"},\"completeness\":{\"score\":2,\"rationale\":\"Omits the vector context and does not explicitly conclude that no drugs are linked in the integrated data.\"},\"uncertainty_abstention\":{\"score\":4,\"rationale\":\"Does not invent unsupported links, but the abstention is narrowly limited to the graph rather than the full evidence packet.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_00dfcad868ef50f9006a4f4168d5d881959c4fc7def745a60b",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1534,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 706,
+            "output_tokens_details": {
+              "reasoning_tokens": 412
+            },
+            "total_tokens": 2240
+          },
+          "user": null
+        },
+        "request_id": "4aad206b-2898-921f-a4bd-fa9546260cd8",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Partially addresses the question by reporting the graph result, but does not explicitly answer for the integrated data or mention drugs.",
+      "score": 3.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Factually matches the graph context, which states that no relevant data were found.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Omits the vector context and does not explicitly conclude that no drugs are linked in the integrated data.",
+      "score": 2.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not invent unsupported links, but the abstention is narrowly limited to the graph rather than the full evidence packet.",
+      "score": 4.0
+    }
+  },
+  "question_id": "Q111",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q111.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.755615+00:00"
+}

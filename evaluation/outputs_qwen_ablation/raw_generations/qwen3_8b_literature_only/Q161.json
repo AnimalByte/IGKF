@@ -1,0 +1,212 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "benchmark_hash": "0d580ed22d406e810f63299bbaabd0ebf8dd8958e69c6cfef0ec2fe086de5a1b",
+  "candidate_pmids": [
+    "41034211",
+    "41522353",
+    "39529066",
+    "41954225",
+    "42389788",
+    "41629625",
+    "41152659",
+    "40042548",
+    "40001587",
+    "41218118",
+    "39436449",
+    "41056281",
+    "42203310",
+    "42146354",
+    "40887336"
+  ],
+  "canonical_reference_paths": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_baseline/Q161.json",
+      "question_id": "Q161",
+      "sha256": "98c736efbd325a93df49b2da4696f75e4d22c86f666174b06a797c71d56179c4"
+    },
+    {
+      "condition": "qwen3_8b_igkf",
+      "path": "evaluation/outputs/raw_generations/qwen3_8b_igkf/Q161.json",
+      "question_id": "Q161",
+      "sha256": "790284fa5025a6de84e6f0499d7d444f4c33705700ca50556bd6c6f1985ca93d"
+    }
+  ],
+  "condition": "qwen3_8b_literature_only",
+  "config_hash": "2731aecf19555210b1a6d4078c6a29c079d18ba1113891a3a30196c5809a4249",
+  "error": null,
+  "expanded_retrieval_query": "What is known about LGR4's role in hair-follicle stem-cell biology, based on the integrated evidence?",
+  "generation_parameters": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "hardware_execution": "gpu_offload",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_family": "qwen3",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "provider": "llama_cpp",
+    "quantization": "Q4_K_M",
+    "seed": 20260706,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false,
+    "tokenizer_identifier": "Qwen/Qwen3-8B"
+  },
+  "generation_seconds": 1.647,
+  "git_commit": null,
+  "graph_context": "",
+  "model_name": "Qwen3-8B",
+  "original_retrieval_query": "What is known about LGR4's role in hair-follicle stem-cell biology, based on the integrated evidence?",
+  "parsed_answer": "Based on the integrated evidence from the provided literature context, there is **no direct information** about LGR4's role in hair-follicle stem-cell biology. The available studies focus on LGR4's involvement in the Wnt/beta-catenin signaling pathway, its interaction with R-spondin (RSPO) and ZNRF3, and its role in atherosclerosis and cancer. However, none of the abstracts mention or discuss LGR4's function in hair-follicle stem cells. Therefore, the current evidence does not support any conclusions about LGR4's role in this specific biological context.",
+  "question_id": "Q161",
+  "question_text": "What is known about LGR4's role in hair-follicle stem-cell biology, based on the integrated evidence?",
+  "qwen_metadata": {
+    "batch_size": 512,
+    "context_length": 32768,
+    "flash_attention": true,
+    "generation": {
+      "max_output_tokens": 768,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "temperature": 0.3,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "gguf_filename": "Qwen3-8B-Q4_K_M.gguf",
+    "gpu_layers": -1,
+    "inference_backend": "llama-cpp-python",
+    "inference_backend_version": "0.3.33",
+    "local_model_path": "models/Qwen3-8B-Q4_K_M.gguf",
+    "micro_batch_size": 128,
+    "model_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "model_identifier": "Qwen/Qwen3-8B-GGUF",
+    "model_name": "Qwen3-8B",
+    "output_token_count": 129,
+    "prompt_token_count": 1384,
+    "quantization": "Q4_K_M",
+    "requested_output_tokens": 768,
+    "thinking_disable_mechanism": "transformers_tokenizer_apply_chat_template_enable_thinking_false_then_llama_cpp_completion",
+    "thinking_mode": false
+  },
+  "raw_model_output": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "text": "Based on the integrated evidence from the provided literature context, there is **no direct information** about LGR4's role in hair-follicle stem-cell biology. The available studies focus on LGR4's involvement in the Wnt/beta-catenin signaling pathway, its interaction with R-spondin (RSPO) and ZNRF3, and its role in atherosclerosis and cancer. However, none of the abstracts mention or discuss LGR4's function in hair-follicle stem cells. Therefore, the current evidence does not support any conclusions about LGR4's role in this specific biological context."
+      }
+    ],
+    "created": 1783564567,
+    "id": "cmpl-d6be876f-0b78-4b3f-96c1-05a73e5c2a35",
+    "model": "models/Qwen3-8B-Q4_K_M.gguf",
+    "object": "text_completion",
+    "usage": {
+      "completion_tokens": 129,
+      "prompt_tokens": 1363,
+      "total_tokens": 1492
+    }
+  },
+  "reranker_scores": [
+    0.8978328704833984,
+    0.8752819299697876,
+    -0.48598188161849976
+  ],
+  "retrieval_metadata": {
+    "candidate_count": 15,
+    "candidate_distances": [
+      28.359317779541016,
+      30.493906021118164,
+      33.97718048095703,
+      34.02593231201172,
+      34.5318603515625,
+      34.80260467529297,
+      34.89505386352539,
+      35.52698516845703,
+      35.617130279541016,
+      35.88764190673828,
+      35.920616149902344,
+      35.957733154296875,
+      36.55790710449219,
+      36.98609924316406,
+      37.30541229248047
+    ],
+    "candidate_pmids": [
+      "41034211",
+      "41522353",
+      "39529066",
+      "41954225",
+      "42389788",
+      "41629625",
+      "41152659",
+      "40042548",
+      "40001587",
+      "41218118",
+      "39436449",
+      "41056281",
+      "42203310",
+      "42146354",
+      "40887336"
+    ],
+    "expanded_retrieval_query": "What is known about LGR4's role in hair-follicle stem-cell biology, based on the integrated evidence?",
+    "final_context": "Literature Context:\n--- Abstract 1 (PMID: 41034211, relevance: 0.8978) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 2 (PMID: 42389788, relevance: 0.8753) ---\nBACKGROUND: Monocyte-derived macrophages play a significant role in the initiation and progression of atherosclerosis by transforming into lipid-laden foam cells and regulating vascular inflammation. However, the molecular mechanisms that regulate macrophage lipid accumulation, phenotype, efferocytic capacity, and atherosclerosis are incompletely understood. Our preliminary studies revealed increased expression of LGR4 (leucine-rich repeat-containing G protein-coupled receptor 4) in human atherosclerotic arteries. Additional experiments demonstrated increased LGR4 levels in atherogenic oxidized low-density lipoprotein-treated macrophages. However, the macrophage-specific role of LGR4 in atherogenesis has never been investigated. METHODS: To investigate the role of myeloid cell Lgr4 in atherosclerosis development, myeloid cell-specific Lgr4 knockout (Lgr4(f/f) LysM Cre(+/-), Lgr4(DeltaM)) and littermate control Lgr4(f/f) (Lgr4(WT)) mice were injected intraperitoneally with hPCSK9-AAV8 and fed a Western diet for 16 weeks. Various in vitro cell-based assays, molecular biology techniques, and immunohistological approaches were used to evaluate the functional roles of macrophage Lgr4 and underlying signaling mechanisms. RESULTS: Oil red O staining of whole aortas and aortic root sections demonstrated reduced atherosclerosis in Lgr4(DeltaM) mice compared with sex-matched Lgr4(WT) mice. However, no changes in circulating monocyte frequencies were detected. Histochemical staining performed on aortic root sections revealed smaller necrotic cores and higher collagen content in Lgr4(DeltaM) mice. Additionally, Lgr4(DeltaM) mice exhibited lower fat mass and blood glucose levels, while plasma total cholesterol was comparable to that of control mice. Further in vitro and ex vivo studies demonstrated reduced lipid accumulation, enhanced efferocytic capacity, a suppressed proinflammatory phenotype, and attenuated expression of different low-density lipoprotein uptake genes in Lgr4-deficient macrophages. Moreover, Lgr4 knockout macrophages displayed increased cholesterol efflux capacity and reduced activation of oxidized low-density lipoprotein-induced Wnt/beta-catenin signaling. CONCLUSIONS: These findings suggest that myeloid cell Lgr4 contributes to atherosclerotic lesion formation via stimulating macrophage lipid accumulation, impairing efferocytic capacity, and promoting a proinflammatory phenotype. Collectively, these results identify macrophage LGR4 as a novel therapeutic target for atherosclerosis.\n\n--- Abstract 3 (PMID: 41522353, relevance: -0.4860) ---\nR-spondins are a family of four secretory proteins reported to be Wnt agonists. Among them, R-spondin 4 (RSPO4) is unique, with the lowest binding affinity towards ZNRF3/RNF43 and the lowest efficacy in regulating Wnt/beta-catenin signaling. RSPO4 has been shown to play important roles in nail development, liver fibrogenesis and periodontitis, while its role in cancerous context remains largely unknown. In this study, we performed multi-omic analysis on transcriptional expression and methylation pattern of RSPO4. In vitro cell-based assays were performed to evaluate the functionality of RSPO4. Through cancer epigenomics, we identified RSPO4 as a candidate tumor suppressor with tumor-specific epigenetic inactivation. We further found that RSPO4 is readily expressed in human normal tissues, but frequently downregulated or silenced in multiple cancer types due to its promoter CpG methylation. Functional studies showed that RSPO4 inhibited tumor cell proliferation, migration, invasion and stemness, through antagonizing canonical and non-canonical Wnt signaling. Mechanistically, RSPO4 exerted suppressive effects on Wnt signaling in an LGR4/5- and ZNRF3- dependent manner, through promoting LRP6 degradation and ZNRF3 stabilization. Our study revealed a novel role of RSPO4 as a tumor suppressor through antagonizing Wnt signaling, which provides important implications for development of diagnostic biomarkers and targeted therapy.\n\n",
+    "found_specific_entity": false,
+    "graph_context": "",
+    "graph_context_length": 0,
+    "graph_context_present": false,
+    "original_retrieval_query": "What is known about LGR4's role in hair-follicle stem-cell biology, based on the integrated evidence?",
+    "rerank_seconds": 0.3323,
+    "reranked_count": 3,
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "resolved_entities": [],
+    "retrieval_mode": "literature_only",
+    "retrieval_total_seconds": 0.3481,
+    "score_max": 0.8978328704833984,
+    "score_mean": 0.42904430627822876,
+    "scores": [
+      0.8978328704833984,
+      0.8752819299697876,
+      -0.48598188161849976
+    ],
+    "selected_abstracts": [
+      "Leucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.",
+      "BACKGROUND: Monocyte-derived macrophages play a significant role in the initiation and progression of atherosclerosis by transforming into lipid-laden foam cells and regulating vascular inflammation. However, the molecular mechanisms that regulate macrophage lipid accumulation, phenotype, efferocytic capacity, and atherosclerosis are incompletely understood. Our preliminary studies revealed increased expression of LGR4 (leucine-rich repeat-containing G protein-coupled receptor 4) in human atherosclerotic arteries. Additional experiments demonstrated increased LGR4 levels in atherogenic oxidized low-density lipoprotein-treated macrophages. However, the macrophage-specific role of LGR4 in atherogenesis has never been investigated. METHODS: To investigate the role of myeloid cell Lgr4 in atherosclerosis development, myeloid cell-specific Lgr4 knockout (Lgr4(f/f) LysM Cre(+/-), Lgr4(DeltaM)) and littermate control Lgr4(f/f) (Lgr4(WT)) mice were injected intraperitoneally with hPCSK9-AAV8 and fed a Western diet for 16 weeks. Various in vitro cell-based assays, molecular biology techniques, and immunohistological approaches were used to evaluate the functional roles of macrophage Lgr4 and underlying signaling mechanisms. RESULTS: Oil red O staining of whole aortas and aortic root sections demonstrated reduced atherosclerosis in Lgr4(DeltaM) mice compared with sex-matched Lgr4(WT) mice. However, no changes in circulating monocyte frequencies were detected. Histochemical staining performed on aortic root sections revealed smaller necrotic cores and higher collagen content in Lgr4(DeltaM) mice. Additionally, Lgr4(DeltaM) mice exhibited lower fat mass and blood glucose levels, while plasma total cholesterol was comparable to that of control mice. Further in vitro and ex vivo studies demonstrated reduced lipid accumulation, enhanced efferocytic capacity, a suppressed proinflammatory phenotype, and attenuated expression of different low-density lipoprotein uptake genes in Lgr4-deficient macrophages. Moreover, Lgr4 knockout macrophages displayed increased cholesterol efflux capacity and reduced activation of oxidized low-density lipoprotein-induced Wnt/beta-catenin signaling. CONCLUSIONS: These findings suggest that myeloid cell Lgr4 contributes to atherosclerotic lesion formation via stimulating macrophage lipid accumulation, impairing efferocytic capacity, and promoting a proinflammatory phenotype. Collectively, these results identify macrophage LGR4 as a novel therapeutic target for atherosclerosis.",
+      "R-spondins are a family of four secretory proteins reported to be Wnt agonists. Among them, R-spondin 4 (RSPO4) is unique, with the lowest binding affinity towards ZNRF3/RNF43 and the lowest efficacy in regulating Wnt/beta-catenin signaling. RSPO4 has been shown to play important roles in nail development, liver fibrogenesis and periodontitis, while its role in cancerous context remains largely unknown. In this study, we performed multi-omic analysis on transcriptional expression and methylation pattern of RSPO4. In vitro cell-based assays were performed to evaluate the functionality of RSPO4. Through cancer epigenomics, we identified RSPO4 as a candidate tumor suppressor with tumor-specific epigenetic inactivation. We further found that RSPO4 is readily expressed in human normal tissues, but frequently downregulated or silenced in multiple cancer types due to its promoter CpG methylation. Functional studies showed that RSPO4 inhibited tumor cell proliferation, migration, invasion and stemness, through antagonizing canonical and non-canonical Wnt signaling. Mechanistically, RSPO4 exerted suppressive effects on Wnt signaling in an LGR4/5- and ZNRF3- dependent manner, through promoting LRP6 degradation and ZNRF3 stabilization. Our study revealed a novel role of RSPO4 as a tumor suppressor through antagonizing Wnt signaling, which provides important implications for development of diagnostic biomarkers and targeted therapy."
+    ],
+    "selected_pmids": [
+      "41034211",
+      "42389788",
+      "41522353"
+    ],
+    "vector_context_present": true,
+    "vector_retrieval_seconds": 0.0157
+  },
+  "retrieval_mode": "literature_only",
+  "retrieval_package_path": "evaluation/outputs_qwen_ablation/retrieval_packages/qwen3_8b_literature_only/Q161.json",
+  "schema_version": "qwen_ablation_generation_v1",
+  "selected_pmids": [
+    "41034211",
+    "42389788",
+    "41522353"
+  ],
+  "system_prompt": "You are an expert biomedical research assistant. Answer the user's question using only the supplied literature context. If the context is insufficient, say so clearly.",
+  "timestamp": "2026-07-09T02:36:08.809071+00:00",
+  "user_prompt": "Please answer the user's question using the supplied literature context.\n\n**Literature Context (Retrieved Abstracts):**\n--- Abstract 1 (PMID: 41034211, relevance: 0.8978) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 2 (PMID: 42389788, relevance: 0.8753) ---\nBACKGROUND: Monocyte-derived macrophages play a significant role in the initiation and progression of atherosclerosis by transforming into lipid-laden foam cells and regulating vascular inflammation. However, the molecular mechanisms that regulate macrophage lipid accumulation, phenotype, efferocytic capacity, and atherosclerosis are incompletely understood. Our preliminary studies revealed increased expression of LGR4 (leucine-rich repeat-containing G protein-coupled receptor 4) in human atherosclerotic arteries. Additional experiments demonstrated increased LGR4 levels in atherogenic oxidized low-density lipoprotein-treated macrophages. However, the macrophage-specific role of LGR4 in atherogenesis has never been investigated. METHODS: To investigate the role of myeloid cell Lgr4 in atherosclerosis development, myeloid cell-specific Lgr4 knockout (Lgr4(f/f) LysM Cre(+/-), Lgr4(DeltaM)) and littermate control Lgr4(f/f) (Lgr4(WT)) mice were injected intraperitoneally with hPCSK9-AAV8 and fed a Western diet for 16 weeks. Various in vitro cell-based assays, molecular biology techniques, and immunohistological approaches were used to evaluate the functional roles of macrophage Lgr4 and underlying signaling mechanisms. RESULTS: Oil red O staining of whole aortas and aortic root sections demonstrated reduced atherosclerosis in Lgr4(DeltaM) mice compared with sex-matched Lgr4(WT) mice. However, no changes in circulating monocyte frequencies were detected. Histochemical staining performed on aortic root sections revealed smaller necrotic cores and higher collagen content in Lgr4(DeltaM) mice. Additionally, Lgr4(DeltaM) mice exhibited lower fat mass and blood glucose levels, while plasma total cholesterol was comparable to that of control mice. Further in vitro and ex vivo studies demonstrated reduced lipid accumulation, enhanced efferocytic capacity, a suppressed proinflammatory phenotype, and attenuated expression of different low-density lipoprotein uptake genes in Lgr4-deficient macrophages. Moreover, Lgr4 knockout macrophages displayed increased cholesterol efflux capacity and reduced activation of oxidized low-density lipoprotein-induced Wnt/beta-catenin signaling. CONCLUSIONS: These findings suggest that myeloid cell Lgr4 contributes to atherosclerotic lesion formation via stimulating macrophage lipid accumulation, impairing efferocytic capacity, and promoting a proinflammatory phenotype. Collectively, these results identify macrophage LGR4 as a novel therapeutic target for atherosclerosis.\n\n--- Abstract 3 (PMID: 41522353, relevance: -0.4860) ---\nR-spondins are a family of four secretory proteins reported to be Wnt agonists. Among them, R-spondin 4 (RSPO4) is unique, with the lowest binding affinity towards ZNRF3/RNF43 and the lowest efficacy in regulating Wnt/beta-catenin signaling. RSPO4 has been shown to play important roles in nail development, liver fibrogenesis and periodontitis, while its role in cancerous context remains largely unknown. In this study, we performed multi-omic analysis on transcriptional expression and methylation pattern of RSPO4. In vitro cell-based assays were performed to evaluate the functionality of RSPO4. Through cancer epigenomics, we identified RSPO4 as a candidate tumor suppressor with tumor-specific epigenetic inactivation. We further found that RSPO4 is readily expressed in human normal tissues, but frequently downregulated or silenced in multiple cancer types due to its promoter CpG methylation. Functional studies showed that RSPO4 inhibited tumor cell proliferation, migration, invasion and stemness, through antagonizing canonical and non-canonical Wnt signaling. Mechanistically, RSPO4 exerted suppressive effects on Wnt signaling in an LGR4/5- and ZNRF3- dependent manner, through promoting LRP6 degradation and ZNRF3 stabilization. Our study revealed a novel role of RSPO4 as a tumor suppressor through antagonizing Wnt signaling, which provides important implications for development of diagnostic biomarkers and targeted therapy.\n\n\n\n**Question:**\nWhat is known about LGR4's role in hair-follicle stem-cell biology, based on the integrated evidence?",
+  "vector_context": "--- Abstract 1 (PMID: 41034211, relevance: 0.8978) ---\nLeucine-rich repeat-containing G protein-coupled receptor 4 (LGR4) plays a critical role in regulating the wingless-related integration site (Wnt) signaling pathway and is essential for organ development and carcinogenesis. LGR4, along with its ligand R-spondin (RSPO), potentiates Wnt/beta-catenin signaling by recruiting its signaling suppressor, E3 ligase Zinc and Ring Finger 3 (ZNRF3), and inducing its membrane clearance. However, detailed mechanisms underlying this process remain unknown. In this study, we present the cryo-electron microscopy structures of human LGR4, the LGR4-RSPO2 and LGR4-RSPO2-ZNRF3 complexes. Upon RSPO2 binding, LGR4 undergoes no significant conformational changes in its transmembrane and extracellular domain structures or their relative orientations. LGR4, RSPO2, and ZNRF3 assemble into a 2:2:2 complex with the ZNRF3 dimer enclosed at the center. This ternary arrangement and forced dimerization of ZNRF3 likely underpin how LGR4 and RSPO2 potentiate Wnt/beta-catenin signaling by sequestering ZNRF3 from Wnt receptors and facilitating its auto-inactivation. This study provides a structural basis for understanding the regulatory mechanism of Wnt/beta-catenin signaling through the LGR4-RSPO2-ZNRF3 pathway and may offer opportunities for future drug development targeting this axis.\n\n--- Abstract 2 (PMID: 42389788, relevance: 0.8753) ---\nBACKGROUND: Monocyte-derived macrophages play a significant role in the initiation and progression of atherosclerosis by transforming into lipid-laden foam cells and regulating vascular inflammation. However, the molecular mechanisms that regulate macrophage lipid accumulation, phenotype, efferocytic capacity, and atherosclerosis are incompletely understood. Our preliminary studies revealed increased expression of LGR4 (leucine-rich repeat-containing G protein-coupled receptor 4) in human atherosclerotic arteries. Additional experiments demonstrated increased LGR4 levels in atherogenic oxidized low-density lipoprotein-treated macrophages. However, the macrophage-specific role of LGR4 in atherogenesis has never been investigated. METHODS: To investigate the role of myeloid cell Lgr4 in atherosclerosis development, myeloid cell-specific Lgr4 knockout (Lgr4(f/f) LysM Cre(+/-), Lgr4(DeltaM)) and littermate control Lgr4(f/f) (Lgr4(WT)) mice were injected intraperitoneally with hPCSK9-AAV8 and fed a Western diet for 16 weeks. Various in vitro cell-based assays, molecular biology techniques, and immunohistological approaches were used to evaluate the functional roles of macrophage Lgr4 and underlying signaling mechanisms. RESULTS: Oil red O staining of whole aortas and aortic root sections demonstrated reduced atherosclerosis in Lgr4(DeltaM) mice compared with sex-matched Lgr4(WT) mice. However, no changes in circulating monocyte frequencies were detected. Histochemical staining performed on aortic root sections revealed smaller necrotic cores and higher collagen content in Lgr4(DeltaM) mice. Additionally, Lgr4(DeltaM) mice exhibited lower fat mass and blood glucose levels, while plasma total cholesterol was comparable to that of control mice. Further in vitro and ex vivo studies demonstrated reduced lipid accumulation, enhanced efferocytic capacity, a suppressed proinflammatory phenotype, and attenuated expression of different low-density lipoprotein uptake genes in Lgr4-deficient macrophages. Moreover, Lgr4 knockout macrophages displayed increased cholesterol efflux capacity and reduced activation of oxidized low-density lipoprotein-induced Wnt/beta-catenin signaling. CONCLUSIONS: These findings suggest that myeloid cell Lgr4 contributes to atherosclerotic lesion formation via stimulating macrophage lipid accumulation, impairing efferocytic capacity, and promoting a proinflammatory phenotype. Collectively, these results identify macrophage LGR4 as a novel therapeutic target for atherosclerosis.\n\n--- Abstract 3 (PMID: 41522353, relevance: -0.4860) ---\nR-spondins are a family of four secretory proteins reported to be Wnt agonists. Among them, R-spondin 4 (RSPO4) is unique, with the lowest binding affinity towards ZNRF3/RNF43 and the lowest efficacy in regulating Wnt/beta-catenin signaling. RSPO4 has been shown to play important roles in nail development, liver fibrogenesis and periodontitis, while its role in cancerous context remains largely unknown. In this study, we performed multi-omic analysis on transcriptional expression and methylation pattern of RSPO4. In vitro cell-based assays were performed to evaluate the functionality of RSPO4. Through cancer epigenomics, we identified RSPO4 as a candidate tumor suppressor with tumor-specific epigenetic inactivation. We further found that RSPO4 is readily expressed in human normal tissues, but frequently downregulated or silenced in multiple cancer types due to its promoter CpG methylation. Functional studies showed that RSPO4 inhibited tumor cell proliferation, migration, invasion and stemness, through antagonizing canonical and non-canonical Wnt signaling. Mechanistically, RSPO4 exerted suppressive effects on Wnt signaling in an LGR4/5- and ZNRF3- dependent manner, through promoting LRP6 degradation and ZNRF3 stabilization. Our study revealed a novel role of RSPO4 as a tumor suppressor through antagonizing Wnt signaling, which provides important implications for development of diagnostic biomarkers and targeted therapy.\n\n"
+}

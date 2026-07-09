@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "gene_interpretation",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_graph_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB1",
+      "condition": "qwen3_8b_graph_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q058",
+      "randomization_seed": "20260706:Q058:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB1",
+    "custom_id": "qwen_ablation_answer_quality::Q058",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q058",
+      "error": null,
+      "id": "batch_req_6a4f85cff7cc8190829d3468b6e4b7d7",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594586,
+          "created_at": 1783594556,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0be8fe8e4d112bc9006a4f7e3c55b08197b963e72d7a7affd4",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q058"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0be8fe8e4d112bc9006a4f7e3e46688197ab970381bfc50c76",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly answers whether EDA2R is linked to hair-loss treatments.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Consistent with the supplied evidence, which does not connect EDA2R to minoxidil, DPSC-Exos, MK-801, or other hair-loss treatments.\"},\"completeness\":{\"score\":5,\"rationale\":\"Covers the key conclusion that no treatment link is supported by the available evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately abstains from making unsupported treatment claims.\"}},{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses the question and states that no direct treatment link is supported.\"},\"biomedical_factual_correctness\":{\"score\":4,\"rationale\":\"Main conclusion is accurate, but it introduces bacterial extracellular vesicles/SoEVs, which are not present in the supplied evidence.\"},\"completeness\":{\"score\":4,\"rationale\":\"Mentions relevant hair-loss treatments from the context, but includes one unsupported extra item.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies that the supplied context does not support a direct EDA2R-treatment link.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0be8fe8e4d112bc9006a4f7e50e70c8197980013eb13936bdb",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2215,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 718,
+            "output_tokens_details": {
+              "reasoning_tokens": 430
+            },
+            "total_tokens": 2933
+          },
+          "user": null
+        },
+        "request_id": "f6c91ad0-7e53-4e8f-8a7b-47aaaf4fc750",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly answers whether EDA2R is linked to hair-loss treatments.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "Consistent with the supplied evidence, which does not connect EDA2R to minoxidil, DPSC-Exos, MK-801, or other hair-loss treatments.",
+      "score": 5.0
+    },
+    "completeness": {
+      "rationale": "Covers the key conclusion that no treatment link is supported by the available evidence.",
+      "score": 5.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Appropriately abstains from making unsupported treatment claims.",
+      "score": 5.0
+    }
+  },
+  "question_id": "Q058",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q058.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.734901+00:00"
+}

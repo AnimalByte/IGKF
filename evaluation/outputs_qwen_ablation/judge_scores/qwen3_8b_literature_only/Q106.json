@@ -1,0 +1,159 @@
+{
+  "benchmark_annotations": {
+    "answerability": "graph_plus_literature",
+    "category": "pathway_reasoning",
+    "expected_behavior": "answer_with_qualification",
+    "manual_review_required": false
+  },
+  "condition": "qwen3_8b_literature_only",
+  "error": null,
+  "factual_correctness_evaluable": true,
+  "judge_batch_metadata": {
+    "anonymous_answer_mapping": {
+      "answer_id": "AB2",
+      "condition": "qwen3_8b_literature_only",
+      "pass": "qwen_ablation_answer_quality",
+      "question_id": "Q106",
+      "randomization_seed": "20260706:Q106:qwen_ablation_answer_quality"
+    },
+    "answer_id": "AB2",
+    "custom_id": "qwen_ablation_answer_quality::Q106",
+    "manifest": "evaluation/outputs_qwen_ablation/batch_metadata/qwen_ablation_answer_quality_1783564995_manifest.json",
+    "raw_judge_response": {
+      "custom_id": "qwen_ablation_answer_quality::Q106",
+      "error": null,
+      "id": "batch_req_6a4f85d32e448190b1f84ff6cffd42f9",
+      "response": {
+        "body": {
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1783594520,
+          "created_at": 1783594486,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "id": "resp_0453857728e6b20d006a4f7df6389c819581ffd9cc8696855b",
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 16384,
+          "max_tool_calls": null,
+          "metadata": {
+            "pass": "qwen_ablation_answer_quality",
+            "question_id": "Q106"
+          },
+          "model": "gpt-5.5-2026-04-23",
+          "moderation": null,
+          "object": "response",
+          "output": [
+            {
+              "content": [],
+              "id": "rs_0453857728e6b20d006a4f7df758088195b345e370d2a79bac",
+              "summary": [],
+              "type": "reasoning"
+            },
+            {
+              "content": [
+                {
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"answer_id\":\"AB2\",\"answer_relevance\":{\"score\":5,\"rationale\":\"Directly addresses androgen/DHT effects on hair follicles and cycling.\"},\"biomedical_factual_correctness\":{\"score\":2,\"rationale\":\"General DHT/5-alpha-reductase concepts are plausible, but the cited DPSC-Exos/DHT evidence and detailed mechanisms are not present in the supplied evidence packet.\"},\"completeness\":{\"score\":3,\"rationale\":\"Provides a mechanistic narrative, but it is not grounded in the available evidence and adds unsupported study-specific details.\"},\"uncertainty_abstention\":{\"score\":1,\"rationale\":\"Does not acknowledge that the provided evidence lacks relevant androgen-metabolism data and instead presents unsupported conclusions as evidence-based.\"}},{\"answer_id\":\"AB1\",\"answer_relevance\":{\"score\":4,\"rationale\":\"Appropriately responds that relevant evidence is lacking, though it focuses only on the graph context and does not mention the vector abstracts.\"},\"biomedical_factual_correctness\":{\"score\":5,\"rationale\":\"Accurately notes the absence of relevant graph data and avoids unsupported biomedical claims.\"},\"completeness\":{\"score\":3,\"rationale\":\"Correctly abstains but could have noted that the vector context provides only minimal, nonspecific hormone-related information and no androgen-metabolism pathway evidence.\"},\"uncertainty_abstention\":{\"score\":5,\"rationale\":\"Appropriately qualifies the answer and abstains from making unsupported claims.\"}}]}",
+                  "type": "output_text"
+                }
+              ],
+              "id": "msg_0453857728e6b20d006a4f7e0d277c8195a39eea72ae44f6f8",
+              "phase": "final_answer",
+              "role": "assistant",
+              "status": "completed",
+              "type": "message"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": "24h",
+          "reasoning": {
+            "context": "current_turn",
+            "effort": "high",
+            "mode": "standard",
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "status": "completed",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "text"
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tool_usage": {
+            "image_gen": {
+              "input_tokens": 0,
+              "input_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "output_tokens": 0,
+              "output_tokens_details": {
+                "image_tokens": 0,
+                "text_tokens": 0
+              },
+              "total_tokens": 0
+            },
+            "web_search": {
+              "num_requests": 0
+            }
+          },
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 0.98,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2297,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 826,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 3123
+          },
+          "user": null
+        },
+        "request_id": "8fd1bb7f-64d2-4503-b710-17ece5412daf",
+        "status_code": 200
+      }
+    }
+  },
+  "judge_model": "gpt-5.5-2026-04-23",
+  "judge_pass": "qwen_ablation_answer_quality",
+  "parsed_scores": {
+    "answer_relevance": {
+      "rationale": "Directly addresses androgen/DHT effects on hair follicles and cycling.",
+      "score": 5.0
+    },
+    "biomedical_factual_correctness": {
+      "rationale": "General DHT/5-alpha-reductase concepts are plausible, but the cited DPSC-Exos/DHT evidence and detailed mechanisms are not present in the supplied evidence packet.",
+      "score": 2.0
+    },
+    "completeness": {
+      "rationale": "Provides a mechanistic narrative, but it is not grounded in the available evidence and adds unsupported study-specific details.",
+      "score": 3.0
+    },
+    "uncertainty_abstention": {
+      "rationale": "Does not acknowledge that the provided evidence lacks relevant androgen-metabolism data and instead presents unsupported conclusions as evidence-based.",
+      "score": 1.0
+    }
+  },
+  "question_id": "Q106",
+  "reference_evidence_packet_id": "evaluation/outputs/retrieval_packages/Q106.json",
+  "schema_version": "qwen_ablation_judge_batch_v1",
+  "timestamp": "2026-07-09T11:29:08.753565+00:00"
+}
